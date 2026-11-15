@@ -30,10 +30,10 @@ $colors = @{
 function Label($parent, [string]$content, [int]$x,[int]$y,[int]$w,[int]$h,[int]$font,[bool]$strong,$fg) {
     $l=New-Object System.Windows.Forms.Label
     $l.Text=$content
-    $l.Location=New-Object System.Drawing.Point($x,$y)
-    $l.Size=New-Object System.Drawing.Size($w,$h)
+    $l.Location=[System.Drawing.Point]::new($x,$y)
+    $l.Size=[System.Drawing.Size]::new($w,$h)
     $weight=if($strong){[System.Drawing.FontStyle]::Bold}else{[System.Drawing.FontStyle]::Regular}
-    $l.Font=New-Object System.Drawing.Font('Segoe UI',$font,$weight)
+    $l.Font=[System.Drawing.Font]::new('Segoe UI',$font,$weight)
     $l.ForeColor=$fg
     $l.BackColor=[System.Drawing.Color]::Transparent
     $parent.Controls.Add($l)
@@ -42,11 +42,11 @@ function Label($parent, [string]$content, [int]$x,[int]$y,[int]$w,[int]$h,[int]$
 function Button($parent,[string]$content,[int]$x,[int]$y,[int]$w,[int]$h,$bg) {
     $b=New-Object System.Windows.Forms.Button
     $b.Text=$content
-    $b.Location=New-Object System.Drawing.Point($x,$y)
-    $b.Size=New-Object System.Drawing.Size($w,$h)
+    $b.Location=[System.Drawing.Point]::new($x,$y)
+    $b.Size=[System.Drawing.Size]::new($w,$h)
     $b.BackColor=$bg
     $b.ForeColor=$colors.pale
-    $b.Font=New-Object System.Drawing.Font('Segoe UI',10,[System.Drawing.FontStyle]::Bold)
+    $b.Font=[System.Drawing.Font]::new('Segoe UI',10,[System.Drawing.FontStyle]::Bold)
     $b.FlatStyle=[System.Windows.Forms.FlatStyle]::Flat
     $b.FlatAppearance.BorderSize=0
     $b.Cursor=[System.Windows.Forms.Cursors]::Hand
@@ -135,7 +135,7 @@ function Set-Mode {
 
 $form=New-Object System.Windows.Forms.Form
 $form.Text='Tokyo World Launcher'
-$form.ClientSize=New-Object System.Drawing.Size(880,535)
+$form.ClientSize=[System.Drawing.Size]::new(880,535)
 $form.StartPosition=[System.Windows.Forms.FormStartPosition]::CenterScreen
 $form.FormBorderStyle=[System.Windows.Forms.FormBorderStyle]::FixedSingle
 $form.MaximizeBox=$false
@@ -143,13 +143,13 @@ $form.BackColor=$colors.bg
 $form.ForeColor=$colors.pale
 
 $side=New-Object System.Windows.Forms.Panel
-$side.Location=New-Object System.Drawing.Point(0,0)
-$side.Size=New-Object System.Drawing.Size(320,535)
+$side.Location=[System.Drawing.Point]::new(0,0)
+$side.Size=[System.Drawing.Size]::new(320,535)
 $side.BackColor=$colors.side
 $form.Controls.Add($side)
 $accent=New-Object System.Windows.Forms.Panel
-$accent.Location=New-Object System.Drawing.Point(0,0)
-$accent.Size=New-Object System.Drawing.Size(320,5)
+$accent.Location=[System.Drawing.Point]::new(0,0)
+$accent.Size=[System.Drawing.Size]::new(320,5)
 $accent.BackColor=$colors.red
 $side.Controls.Add($accent)
 [void](Label $side 'TOKYO' 26 79 265 59 34 $true $colors.pale)
@@ -164,32 +164,32 @@ $side.Controls.Add($accent)
 
 $script:premium=New-Object System.Windows.Forms.RadioButton
 $script:premium.Text='Premium / Microsoft'
-$script:premium.Location=New-Object System.Drawing.Point(355,125)
-$script:premium.Size=New-Object System.Drawing.Size(245,30)
-$script:premium.Font=New-Object System.Drawing.Font('Segoe UI',11,[System.Drawing.FontStyle]::Bold)
+$script:premium.Location=[System.Drawing.Point]::new(355,125)
+$script:premium.Size=[System.Drawing.Size]::new(245,30)
+$script:premium.Font=[System.Drawing.Font]::new('Segoe UI',11,[System.Drawing.FontStyle]::Bold)
 $script:premium.ForeColor=$colors.pale
 $form.Controls.Add($script:premium)
 $script:offline=New-Object System.Windows.Forms.RadioButton
 $script:offline.Text='Offline / Nick'
-$script:offline.Location=New-Object System.Drawing.Point(616,125)
-$script:offline.Size=New-Object System.Drawing.Size(200,30)
-$script:offline.Font=New-Object System.Drawing.Font('Segoe UI',11,[System.Drawing.FontStyle]::Bold)
+$script:offline.Location=[System.Drawing.Point]::new(616,125)
+$script:offline.Size=[System.Drawing.Size]::new(200,30)
+$script:offline.Font=[System.Drawing.Font]::new('Segoe UI',11,[System.Drawing.FontStyle]::Bold)
 $script:offline.ForeColor=$colors.pale
 $form.Controls.Add($script:offline)
 $script:caption=Label $form 'Konto Premium' 355 178 472 22 10 $false $colors.gray
 
 $script:accounts=New-Object System.Windows.Forms.ComboBox
-$script:accounts.Location=New-Object System.Drawing.Point(355,203)
-$script:accounts.Size=New-Object System.Drawing.Size(467,30)
+$script:accounts.Location=[System.Drawing.Point]::new(355,203)
+$script:accounts.Size=[System.Drawing.Size]::new(467,30)
 $script:accounts.DropDownStyle=[System.Windows.Forms.ComboBoxStyle]::DropDown
-$script:accounts.Font=New-Object System.Drawing.Font('Segoe UI',12)
+$script:accounts.Font=[System.Drawing.Font]::new('Segoe UI',12)
 $script:accounts.BackColor=$colors.field
 $script:accounts.ForeColor=$colors.pale
 $form.Controls.Add($script:accounts)
 $script:nick=New-Object System.Windows.Forms.TextBox
-$script:nick.Location=New-Object System.Drawing.Point(355,203)
-$script:nick.Size=New-Object System.Drawing.Size(467,31)
-$script:nick.Font=New-Object System.Drawing.Font('Segoe UI',12)
+$script:nick.Location=[System.Drawing.Point]::new(355,203)
+$script:nick.Size=[System.Drawing.Size]::new(467,31)
+$script:nick.Font=[System.Drawing.Font]::new('Segoe UI',12)
 $script:nick.BackColor=$colors.field
 $script:nick.ForeColor=$colors.pale
 $script:nick.BorderStyle=[System.Windows.Forms.BorderStyle]::FixedSingle
