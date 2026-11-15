@@ -1,5 +1,20 @@
 # Tokyo World — Expert Fun Modpack
 
+## Tokyo World Launcher v1.2 — automatyczna naprawa bazowych modów
+
+**Poprawiony EXE:** [GitHub Actions — działająca kompilacja v1.2](https://github.com/onenightintokyo/Tokyo-World/actions/runs/43756562340).
+
+Jeżeli exact-mod installer nie znajduje części 66 bazowych JAR-ów na Modrinth, launcher:
+1. automatycznie sprawdza własny folder mods i istniejącą lokalną instancję Minecrafta;
+2. automatycznie wykrywa ZIP oryginalnego Tokyo World w Pobrane/Pulpit/Dokumenty;
+3. w razie potrzeby pokazuje okno wyboru ZIP;
+4. importuje wyłącznie pliki o zgodnych sumach SHA-1, bez nadpisywania światów i innych modów.
+
+Launcher nadal uruchamia Minecraft i Forge samodzielnie, bez Prism. Stara instancja może być jedynie **jednorazowym źródłem importu**. Zmiana nie wymaga usuwania już pobranych plików ani ponownej instalacji od zera.
+
+[Instrukcja naprawy błędu brakujących modów](docs/TOKYO_WORLD_BASE_MOD_RECOVERY_v1.2.md)
+
+
 ## Tokyo World Launcher v1.1 — uproszczony wygląd
 
 **Gotowy Windows EXE:** [Pobierz z udanej kompilacji GitHub Actions](https://github.com/onenightintokyo/Tokyo-World/actions/runs/43755226737).
