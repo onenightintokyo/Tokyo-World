@@ -1,8 +1,9 @@
 {
 	filename: "tokyo_start"
+	title: "Tokyo World — Początek"
 	group: "A110000000000001"
 	id: "A120000000000001"
-	icon: { id: "minecraft:crafting_table" }
+	icon: "minecraft:crafting_table"
 	order_index: 0
 	images: [
 		{
@@ -18,14 +19,16 @@
 	quests: [
 		{
 			id: "A130000000000001"
+			title: "Pierwszy surowiec"
+			description: ["Zbierz drewno. Każda fabryka zaczyna się od prostych narzędzi."]
 			x: 0.0d
 			y: 0.0d
-			icon: { id: "minecraft:oak_log" }
+			icon: "minecraft:oak_log"
 			tasks: [
 				{
 					id: "A140000000000001"
 					type: "item"
-					item: { count: 1, id: "minecraft:oak_log" }
+					item: "minecraft:oak_log"
 					count: 8L
 					consume_items: false
 				}
@@ -34,22 +37,24 @@
 				{
 					id: "A150000000000001"
 					type: "item"
-					item: { count: 1, id: "minecraft:bread" }
+					item: "minecraft:bread"
 					count: 4
 				}
 			]
 		}
 		{
 			id: "A130000000000002"
+			title: "Warsztat inżyniera"
+			description: ["Przygotuj stół rzemieślniczy i zorganizuj miejsce pracy."]
 			x: 3.5d
 			y: 0.0d
-			icon: { id: "minecraft:crafting_table" }
+			icon: "minecraft:crafting_table"
 			dependencies: ["A130000000000001"]
 			tasks: [
 				{
 					id: "A140000000000002"
 					type: "item"
-					item: { count: 1, id: "minecraft:crafting_table" }
+					item: "minecraft:crafting_table"
 					count: 1L
 					consume_items: false
 				}
@@ -58,22 +63,24 @@
 				{
 					id: "A150000000000002"
 					type: "item"
-					item: { count: 1, id: "minecraft:torch" }
+					item: "minecraft:torch"
 					count: 16
 				}
 			]
 		}
 		{
 			id: "A130000000000003"
+			title: "Kamienne fundamenty"
+			description: ["Zbierz bruk na pierwszy piec i budynki."]
 			x: 7.0d
 			y: 0.0d
-			icon: { id: "minecraft:cobblestone" }
+			icon: "minecraft:cobblestone"
 			dependencies: ["A130000000000002"]
 			tasks: [
 				{
 					id: "A140000000000003"
 					type: "item"
-					item: { count: 1, id: "minecraft:cobblestone" }
+					item: "minecraft:cobblestone"
 					count: 32L
 					consume_items: false
 				}
@@ -82,22 +89,24 @@
 				{
 					id: "A150000000000003"
 					type: "item"
-					item: { count: 1, id: "minecraft:coal" }
+					item: "minecraft:coal"
 					count: 8
 				}
 			]
 		}
 		{
 			id: "A130000000000004"
+			title: "Pierwsze wytapianie"
+			description: ["Uruchom piec i rozpocznij przetwarzanie materiałów."]
 			x: 10.5d
 			y: 0.0d
-			icon: { id: "minecraft:furnace" }
+			icon: "minecraft:furnace"
 			dependencies: ["A130000000000003"]
 			tasks: [
 				{
 					id: "A140000000000004"
 					type: "item"
-					item: { count: 1, id: "minecraft:furnace" }
+					item: "minecraft:furnace"
 					count: 1L
 					consume_items: false
 				}
@@ -106,22 +115,24 @@
 				{
 					id: "A150000000000004"
 					type: "item"
-					item: { count: 1, id: "minecraft:iron_ingot" }
+					item: "minecraft:iron_ingot"
 					count: 2
 				}
 			]
 		}
 		{
 			id: "A130000000000005"
+			title: "Era żelaza"
+			description: ["Żelazo posłuży do narzędzi, mechanizmów i późniejszej energetyki."]
 			x: 0.0d
 			y: 3.0d
-			icon: { id: "minecraft:iron_ingot" }
+			icon: "minecraft:iron_ingot"
 			dependencies: ["A130000000000004"]
 			tasks: [
 				{
 					id: "A140000000000005"
 					type: "item"
-					item: { count: 1, id: "minecraft:iron_ingot" }
+					item: "minecraft:iron_ingot"
 					count: 16L
 					consume_items: false
 				}
@@ -130,22 +141,24 @@
 				{
 					id: "A150000000000005"
 					type: "item"
-					item: { count: 1, id: "minecraft:redstone" }
+					item: "minecraft:redstone"
 					count: 8
 				}
 			]
 		}
 		{
 			id: "A130000000000006"
+			title: "Miedź dla przemysłu"
+			description: ["Zgromadź miedź do przewodów oraz konstrukcji technologicznych."]
 			x: 3.5d
 			y: 3.0d
-			icon: { id: "minecraft:copper_ingot" }
+			icon: "minecraft:copper_ingot"
 			dependencies: ["A130000000000005"]
 			tasks: [
 				{
 					id: "A140000000000006"
 					type: "item"
-					item: { count: 1, id: "minecraft:copper_ingot" }
+					item: "minecraft:copper_ingot"
 					count: 16L
 					consume_items: false
 				}
@@ -154,22 +167,24 @@
 				{
 					id: "A150000000000006"
 					type: "item"
-					item: { count: 1, id: "minecraft:coal" }
+					item: "minecraft:coal"
 					count: 12
 				}
 			]
 		}
 		{
 			id: "A130000000000007"
+			title: "Sygnał Redstone"
+			description: ["Pierwszy krok do logiki automatyzacji."]
 			x: 7.0d
 			y: 3.0d
-			icon: { id: "minecraft:redstone" }
+			icon: "minecraft:redstone"
 			dependencies: ["A130000000000006"]
 			tasks: [
 				{
 					id: "A140000000000007"
 					type: "item"
-					item: { count: 1, id: "minecraft:redstone" }
+					item: "minecraft:redstone"
 					count: 16L
 					consume_items: false
 				}
@@ -178,22 +193,24 @@
 				{
 					id: "A150000000000007"
 					type: "item"
-					item: { count: 1, id: "minecraft:lapis_lazuli" }
+					item: "minecraft:lapis_lazuli"
 					count: 8
 				}
 			]
 		}
 		{
 			id: "A130000000000008"
+			title: "Kolejny etap"
+			description: ["Przygotuj podstawowy zasobnik. Od teraz możesz rozwijać logistykę i farmy."]
 			x: 10.5d
 			y: 3.0d
-			icon: { id: "minecraft:hopper" }
+			icon: "minecraft:hopper"
 			dependencies: ["A130000000000007"]
 			tasks: [
 				{
 					id: "A140000000000008"
 					type: "item"
-					item: { count: 1, id: "minecraft:hopper" }
+					item: "minecraft:hopper"
 					count: 1L
 					consume_items: false
 				}
@@ -202,7 +219,7 @@
 				{
 					id: "A150000000000008"
 					type: "item"
-					item: { count: 1, id: "minecraft:chest" }
+					item: "minecraft:chest"
 					count: 2
 				}
 			]
