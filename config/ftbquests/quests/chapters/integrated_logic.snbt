@@ -1,10 +1,10 @@
 {
 	filename: "integrated_logic"
-	title: "Integrated Dynamics — Automatyka logiczna"
-	group: "A110000000000001"
+	title: "&b&l06 &r&fIntegrated: Logika"
+	group: "A110000000000002"
 	id: "A12000000000000A"
 	icon: "integrateddynamics:logic_programmer"
-	order_index: 9
+	order_index: 5
 	images: [
 		{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
 	]
