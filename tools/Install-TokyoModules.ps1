@@ -25,9 +25,16 @@ if ($config.minecraft -ne '1.20.1' -or $config.loader -ne 'forge') {
 $existing = @(Get-ChildItem -LiteralPath $modsDir -Filter '*.jar' -File | Select-Object -ExpandProperty Name)
 $script:planned = @{}
 $script:planning = @{}
+$script:completed = @{}
 $script:projectCache = @{}
 $script:versionCache = @{}
 $script:knownExisting = @{
+    'ae2' = '^(appliedenergistics2|ae2)[-_]'
+    'applied-energistics-2' = '^(appliedenergistics2|ae2)[-_]'
+    'guideme' = '^guideme[-_]'
+    'applied-mekanistics' = '^Applied[-_]Mekanistics[-_]'
+    'rftools-utility' = '^rftoolsutility[-_]'
+    'rftools-power' = '^rftoolspower[-_]'
     'mekanism' = '^Mekanism[-_]'
     'create' = '^create[-_]'
     'architectury-api' = '^architectury[-_]'
@@ -62,15 +69,31 @@ function Existing-Matches([string]$slug, [string]$customRegex) {
     foreach ($name in $existing) { if ($name -match $pat) { return $true } }
     return $false
 }
+function Expand-Versions($value) {
+    # Windows PowerShell 5.1 sometimes treats a JSON array as one nested object.
+    # Flatten exactly one level before filtering versions or dependencies.
+    foreach ($entry in @($value)) {
+        if ($null -eq $entry) { continue }
+        if ($entry -is [System.Array]) {
+            foreach ($child in $entry) {
+                if ($null -ne $child) { Write-Output $child }
+            }
+        } else {
+            Write-Output $entry
+        }
+    }
+}
 function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versionNeed, [string]$matchRegex) {
     $project = Get-ModrinthJson ('project/' + [uri]::EscapeDataString($projectRef))
     if ($project.project_type -ne 'mod') { throw "Not a mod: $projectRef" }
     $slug = [string]$project.slug
+    $projectId = [string]$project.id
+    if ($script:completed.ContainsKey($projectId)) { return }
     if (Existing-Matches $slug $matchRegex) {
         Write-Host "[Tokyo World] Already installed: $slug"
+        $script:completed[$projectId] = $true
         return
     }
-    $projectId = [string]$project.id
     if ($script:planned.ContainsKey($projectId)) { return }
     if ($script:planning.ContainsKey($projectId)) { return }
     $script:planning[$projectId] = $true
@@ -81,14 +104,20 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
         } else {
             $query = 'project/' + [uri]::EscapeDataString($projectId) +
                 '/version?game_versions=%5B%221.20.1%22%5D&loaders=%5B%22forge%22%5D'
-            $versions = @(Get-ModrinthJson $query)
+            $rawVersions = Get-ModrinthJson $query
+            $versions = @(Expand-Versions $rawVersions)
             $filtered = @($versions | Where-Object {
+                $_ -isnot [System.Array] -and
                 $_.game_versions -contains '1.20.1' -and $_.loaders -contains 'forge' -and
                 $_.version_type -eq 'release' -and
                 ([string]::IsNullOrWhiteSpace($versionNeed) -or $_.version_number -match [regex]::Escape($versionNeed))
             } | Sort-Object date_published -Descending)
             if ($filtered.Count -lt 1) { throw "No matching release for $slug / Forge 1.20.1 / $versionNeed" }
             $version = $filtered[0]
+        }
+        if ($null -eq $version -or $version -is [System.Array] -or
+            @($version.version_number).Count -ne 1) {
+            throw "Ambiguous or malformed Modrinth version response for $slug"
         }
         if ($version.game_versions -notcontains '1.20.1' -or $version.loaders -notcontains 'forge') {
             throw "Incompatible version selected for $slug"
@@ -107,6 +136,16 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
         if ($uri.Scheme -ne 'https' -or $uri.Host -notin @('cdn.modrinth.com','cdn-raw.modrinth.com')) {
             throw "Unexpected download host for ${slug}: $($uri.Host)"
         }
+        $existingTarget = Join-Path $modsDir $filename
+        if (Test-Path -LiteralPath $existingTarget -PathType Leaf) {
+            $fileHash = (Get-FileHash -LiteralPath $existingTarget -Algorithm SHA512).Hash
+            if ($fileHash -ine [string]$file.hashes.sha512) {
+                throw "Existing JAR has different checksum (not overwritten): $filename"
+            }
+            $script:completed[$projectId] = $true
+            Write-Host "[Tokyo World] Already installed (SHA-512): $filename"
+            return
+        }
         $script:planned[$projectId] = [pscustomobject]@{
             name = [string]$project.title
             slug = $slug
@@ -115,7 +154,7 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
             url = [string]$file.url
             sha512 = [string]$file.hashes.sha512
         }
-        foreach ($dep in @($version.dependencies)) {
+        foreach ($dep in @(Expand-Versions $version.dependencies)) {
             if ($null -eq $dep -or $dep.dependency_type -ne 'required') { continue }
             if ($dep.project_id) {
                 Queue-Mod ([string]$dep.project_id) '' '' ''
@@ -124,6 +163,7 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
                 Queue-Mod ([string]$depVersion.project_id) ([string]$dep.version_id) '' ''
             }
         }
+        $script:completed[$projectId] = $true
     } finally {
         [void]$script:planning.Remove($projectId)
     }
