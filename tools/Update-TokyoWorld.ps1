@@ -116,6 +116,74 @@ catch {
     Write-Warning ('[Tokyo World] Optional visual setup skipped: ' + $_.Exception.Message)
 }
 
+
+# Some client installations have TokyoWorld_Visuals.zip present but not enabled.
+# KubeJS can expose assets in its own assets/ folder even without that selection.
+# Import only the six owned PNG files; no third-party mods or saves are touched.
+try {
+    $visualZip = Join-Path $GameDir 'resourcepacks\TokyoWorld_Visuals.zip'
+    if (Test-Path -LiteralPath $visualZip -PathType Leaf) {
+        Add-Type -AssemblyName System.IO.Compression.FileSystem
+        $zip = [System.IO.Compression.ZipFile]::OpenRead($visualZip)
+        try {
+            $assetList = @(
+                'assets/tokyoworld/textures/gui/main_menu.png',
+                'assets/tokyoworld/textures/gui/logo.png',
+                'assets/tokyoworld/textures/gui/quests/tech_automation.png',
+                'assets/tokyoworld/textures/gui/quests/magic_arcana.png',
+                'assets/tokyoworld/textures/gui/quests/exploration_adventure.png',
+                'assets/tokyoworld/textures/gui/quests/building_farming.png'
+            )
+            $assetChanged = 0
+            foreach ($asset in $assetList) {
+                $entry = $zip.GetEntry($asset)
+                if ($null -eq $entry) {
+                    Write-Warning "[Tokyo World] Image not found inside resource pack: $asset"
+                    continue
+                }
+                $relative = ('kubejs\' + $asset.Replace('/', '\'))
+                $destination = Join-Path $GameDir $relative
+                $parent = Split-Path -Parent $destination
+                if (!(Test-Path -LiteralPath $parent)) {
+                    New-Item -ItemType Directory -Path $parent -Force | Out-Null
+                }
+                $same = $false
+                if (Test-Path -LiteralPath $destination -PathType Leaf) {
+                    $existing = Get-Item -LiteralPath $destination
+                    if ($existing.Length -eq $entry.Length) {
+                        $stream = $entry.Open()
+                        $sha = [System.Security.Cryptography.SHA256]::Create()
+                        try {
+                            $remoteHash = [BitConverter]::ToString($sha.ComputeHash($stream)).Replace('-', '')
+                        } finally {
+                            $sha.Dispose()
+                            $stream.Dispose()
+                        }
+                        $localHash = (Get-FileHash -LiteralPath $destination -Algorithm SHA256).Hash
+                        $same = $remoteHash -eq $localHash
+                    }
+                    if (-not $same) {
+                        $backup = Join-Path $backupRoot $relative
+                        New-Item -ItemType Directory -Path (Split-Path -Parent $backup) -Force | Out-Null
+                        Copy-Item -LiteralPath $destination -Destination $backup -Force
+                    }
+                }
+                if (-not $same) {
+                    [System.IO.Compression.ZipFileExtensions]::ExtractToFile($entry, $destination, $true)
+                    $assetChanged++
+                }
+            }
+            Write-Host "[Tokyo World] Quest GUI images ready: $assetChanged updated."
+        } finally {
+            $zip.Dispose()
+        }
+    } else {
+        Write-Warning '[Tokyo World] TokyoWorld_Visuals.zip not found: chapter images unavailable.'
+    }
+} catch {
+    Write-Warning ('[Tokyo World] Quest image import skipped: ' + $_.Exception.Message)
+}
+
 Write-Host "[Tokyo World] Done. Files copied: $changed"
 Write-Host "[Tokyo World] Mods are NOT updated by this script. Packwiz will handle that later."
 exit 0
