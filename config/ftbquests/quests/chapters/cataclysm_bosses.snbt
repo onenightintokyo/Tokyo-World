@@ -1,10 +1,10 @@
 {
 	filename: "cataclysm_bosses"
-	title: "Cataclysm — Trofea bossow"
-	group: "A110000000000001"
+	title: "&c&l03 &r&fCataclysm: Bossowie"
+	group: "A110000000000006"
 	id: "A120000000000018"
 	icon: "minecraft:nether_star"
-	order_index: 23
+	order_index: 2
 	images: [{ image: "tokyoworld:textures/gui/quests/exploration_adventure.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
 	quests: [
 		{
