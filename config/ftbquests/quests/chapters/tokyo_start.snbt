@@ -3,15 +3,17 @@
 	title: "&6&lPierwszy ślad"
 	group: "A110000000000001"
 	id: "A120000000000001"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "minecraft:crafting_table"
-	order_index: 0
+	order_index: 34
 	images: [
 		{
-			image: "tokyoworld:textures/gui/main_menu.png"
-			width: 12.0d
-			height: 6.0d
-			x: 2.5d
-			y: -6.0d
+			image: "tokyoworld:textures/gui/quests/tokyo_early.png"
+			width: 20.0d
+			height: 7.0d
+			x: -2.0d
+			y: -9.0d
 			order: -1
 		}
 	]
@@ -19,6 +21,10 @@
 	quests: [
 		{
 			id: "A130000000000001"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pierwszy surowiec"
 			description: ["Nie ma jeszcze fabryki, tylko kawałek ziemi i pomysł. Wszystko zaczyna się od prostego warsztatu. Zacznij od sprawy „Pierwszy surowiec”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -37,6 +43,10 @@
 		}
 		{
 			id: "A130000000000002"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Warsztat inżyniera"
 			description: ["W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać. Warto teraz pomyśleć o „Warsztat inżyniera”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 1.0d
@@ -56,6 +66,10 @@
 		}
 		{
 			id: "A130000000000003"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kamienne fundamenty"
 			description: ["Na początku każda zdobycz może zdecydować, czy przetrwasz kolejną noc. Zapisz w planie „Kamienne fundamenty”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
 			x: 15.0d
@@ -75,6 +89,10 @@
 		}
 		{
 			id: "A130000000000004"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pierwsze wytapianie"
 			description: ["Warsztat powoli przestaje być prowizorką. Warto zatroszczyć się o kolejny szczegół. Tym razem liczy się „Pierwsze wytapianie”. Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później."]
 			x: 1.0d
@@ -94,6 +112,10 @@
 		}
 		{
 			id: "A130000000000005"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Era żelaza"
 			description: ["Wcześniej zamknąłeś już sprawę „Kamienne fundamenty”. Zanim ruszysz dalej, doprowadź do porządku swoje najbliższe otoczenie. W notatkach pojawia się „Era żelaza”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 15.0d
@@ -113,6 +135,10 @@
 		}
 		{
 			id: "A130000000000006"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Miedź dla przemysłu"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Miedź dla przemysłu”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -132,6 +158,10 @@
 		}
 		{
 			id: "A130000000000007"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Sygnał Redstone"
 			description: ["W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać. Warto teraz pomyśleć o „Sygnał Redstone”. Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później."]
 			x: 8.0d
@@ -151,6 +181,10 @@
 		}
 		{
 			id: "A130000000000008"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kolejny etap"
 			description: ["Masz już miejsce, do którego można wrócić po każdej wyprawie. Ostatni sprawdzian to „Kolejny etap”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

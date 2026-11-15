@@ -3,15 +3,17 @@
 	title: "&6&lZiemia i zapasy"
 	group: "A110000000000001"
 	id: "A120000000000004"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "minecraft:wheat"
-	order_index: 1
+	order_index: 32
 	images: [
 		{
-			image: "tokyoworld:textures/gui/quests/building_farming.png"
-			width: 12.0d
-			height: 6.0d
-			x: 2.5d
-			y: -6.0d
+			image: "tokyoworld:textures/gui/quests/tokyo_early.png"
+			width: 20.0d
+			height: 7.0d
+			x: -2.0d
+			y: -9.0d
 			order: -1
 		}
 	]
@@ -19,6 +21,10 @@
 	quests: [
 		{
 			id: "A130000000000019"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zasiej przyszłość"
 			description: ["Nikt nie postawi wielkiej fabryki o pustym żołądku. Zacznij od gospodarstwa, które utrzyma całą ekipę. Zacznij od sprawy „Zasiej przyszłość”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -38,6 +44,10 @@
 		}
 		{
 			id: "A13000000000001A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Warzywniak"
 			description: ["W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać. Warto teraz pomyśleć o „Warzywniak”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 1.0d
@@ -57,6 +67,10 @@
 		}
 		{
 			id: "A13000000000001B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Automatyczny odbiór"
 			description: ["Na początku każda zdobycz może zdecydować, czy przetrwasz kolejną noc. Zapisz w planie „Automatyczny odbiór”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
 			x: 15.0d
@@ -76,6 +90,10 @@
 		}
 		{
 			id: "A13000000000001C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Gotowanie w dużej skali"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Gotowanie w dużej skali”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -95,6 +113,10 @@
 		}
 		{
 			id: "A13000000000001D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magiczna uprawa"
 			description: ["Wcześniej zamknąłeś już sprawę „Gotowanie w dużej skali”. Zanim ruszysz dalej, doprowadź do porządku swoje najbliższe otoczenie. W notatkach pojawia się „Magiczna uprawa”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 8.0d
@@ -114,6 +136,10 @@
 		}
 		{
 			id: "A13000000000001E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magazyn zbiorów"
 			description: ["Zbiory stały się pewnym zapleczem, a nie kwestią szczęścia. Ostatni sprawdzian to „Magazyn zbiorów”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

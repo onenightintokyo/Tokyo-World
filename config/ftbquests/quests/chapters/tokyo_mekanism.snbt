@@ -1,17 +1,19 @@
 {
 	filename: "tokyo_mekanism"
 	title: "&c&lIskra elektryczności"
-	group: "A110000000000003"
+	group: "A110000000000002"
 	id: "A120000000000003"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "mekanism:metallurgic_infuser"
-	order_index: 0
+	order_index: 33
 	images: [
 		{
-			image: "tokyoworld:textures/gui/quests/tech_automation.png"
-			width: 12.0d
-			height: 6.0d
-			x: 2.5d
-			y: -6.0d
+			image: "tokyoworld:textures/gui/quests/tokyo_mid.png"
+			width: 20.0d
+			height: 7.0d
+			x: -2.0d
+			y: -9.0d
 			order: -1
 		}
 	]
@@ -19,6 +21,10 @@
 	quests: [
 		{
 			id: "A130000000000011"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wprowadzenie do Mekanism"
 			description: ["Przekładnie mają swoje ograniczenia. Prąd otwiera technologie, o których zwykły warsztat może tylko pomarzyć. Zacznij od sprawy „Wprowadzenie do Mekanism”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -38,6 +44,10 @@
 		}
 		{
 			id: "A130000000000012"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wzbogacony Redstone"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Wzbogacony Redstone”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -57,6 +67,10 @@
 		}
 		{
 			id: "A130000000000013"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Podstawowe obwody"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Podstawowe obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -76,6 +90,10 @@
 		}
 		{
 			id: "A130000000000014"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stalowa infrastruktura"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Stalowa infrastruktura”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -95,6 +113,10 @@
 		}
 		{
 			id: "A130000000000015"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Komora wzbogacania"
 			description: ["Wcześniej zamknąłeś już sprawę „Podstawowe obwody”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Komora wzbogacania”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -114,6 +136,10 @@
 		}
 		{
 			id: "A130000000000016"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kruszarka"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kruszarka”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -133,6 +159,10 @@
 		}
 		{
 			id: "A130000000000017"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Szybsza fabryka"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Szybsza fabryka”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 8.0d
@@ -152,6 +182,10 @@
 		}
 		{
 			id: "A130000000000018"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magazyn energii"
 			description: ["Energia przestała być ciekawostką, a stała się częścią codziennej pracy. Ostatni sprawdzian to „Magazyn energii”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

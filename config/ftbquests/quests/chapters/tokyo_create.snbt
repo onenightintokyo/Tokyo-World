@@ -1,17 +1,19 @@
 {
 	filename: "tokyo_create"
 	title: "&b&lPierwsze obroty"
-	group: "A110000000000002"
+	group: "A110000000000001"
 	id: "A120000000000002"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "create:andesite_alloy"
-	order_index: 0
+	order_index: 31
 	images: [
 		{
-			image: "tokyoworld:textures/gui/quests/tech_automation.png"
-			width: 12.0d
-			height: 6.0d
-			x: 2.5d
-			y: -6.0d
+			image: "tokyoworld:textures/gui/quests/tokyo_early.png"
+			width: 20.0d
+			height: 7.0d
+			x: -2.0d
+			y: -9.0d
 			order: -1
 		}
 	]
@@ -19,6 +21,10 @@
 	quests: [
 		{
 			id: "A130000000000009"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stop andezytowy"
 			description: ["Koła zębate wyglądają niepozornie. Dopiero połączone z napędem pokazują, do czego naprawdę są zdolne. Zacznij od sprawy „Stop andezytowy”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -38,6 +44,10 @@
 		}
 		{
 			id: "A13000000000000A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wały napędowe"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Wały napędowe”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
@@ -57,6 +67,10 @@
 		}
 		{
 			id: "A13000000000000B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przekładnie"
 			description: ["Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Przekładnie”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
@@ -76,6 +90,10 @@
 		}
 		{
 			id: "A13000000000000C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wytwarzanie obrotów"
 			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Wytwarzanie obrotów”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
@@ -95,6 +113,10 @@
 		}
 		{
 			id: "A13000000000000D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Mechaniczna prasa"
 			description: ["Wcześniej zamknąłeś już sprawę „Przekładnie”. W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Mechaniczna prasa”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
@@ -114,6 +136,10 @@
 		}
 		{
 			id: "A13000000000000E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przenośniki"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Przenośniki”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -133,6 +159,10 @@
 		}
 		{
 			id: "A13000000000000F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Mieszalnik"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Mieszalnik”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 8.0d
@@ -152,6 +182,10 @@
 		}
 		{
 			id: "A130000000000010"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Precyzyjne mechanizmy"
 			description: ["Zamiast nosić wszystko ręcznie, możesz zdać się na pracujące mechanizmy. Ostatni sprawdzian to „Precyzyjne mechanizmy”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
