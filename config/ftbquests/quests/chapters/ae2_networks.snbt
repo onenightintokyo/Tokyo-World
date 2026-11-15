@@ -1,0 +1,187 @@
+{
+	filename: "ae2_networks"
+	title: "Applied Energistics 2 — Cyfrowa siec"
+	group: "A110000000000001"
+	id: "A120000000000015"
+	icon: "ae2:controller"
+	order_index: 20
+	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
+	quests: [
+		{
+			id: "A130000000000117"
+			title: "Krysztaly Certus"
+			description: ["Zbuduj kolejny etap Tokyo World: Krysztaly Certus. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 7.0d
+			y: 0.0d
+			icon: "ae2:certus_quartz_crystal"
+			dependencies: ["A130000000000018", "A130000000000044"]
+			tasks: [{ id: "A140000000000117" type: "item" item: "ae2:certus_quartz_crystal" count: 24L consume_items: false }]
+			rewards: [{ id: "A150000000000117" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000118"
+			title: "Ladowanie krysztalow"
+			description: ["Zbuduj kolejny etap Tokyo World: Ladowanie krysztalow. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 0.0d
+			y: 4.0d
+			icon: "ae2:charged_certus_quartz_crystal"
+			dependencies: ["A130000000000117"]
+			tasks: [{ id: "A140000000000118" type: "item" item: "ae2:charged_certus_quartz_crystal" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000118" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A130000000000119"
+			title: "Paliwo sieci Fluix"
+			description: ["Zbuduj kolejny etap Tokyo World: Paliwo sieci Fluix. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 4.5d
+			y: 4.0d
+			icon: "ae2:fluix_crystal"
+			dependencies: ["A130000000000117"]
+			tasks: [{ id: "A140000000000119" type: "item" item: "ae2:fluix_crystal" count: 12L consume_items: false }]
+			rewards: [{ id: "A150000000000119" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A13000000000011A"
+			title: "Prasa obwodow"
+			description: ["Zbuduj kolejny etap Tokyo World: Prasa obwodow. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 9.0d
+			y: 4.0d
+			icon: "ae2:inscriber"
+			dependencies: ["A130000000000117"]
+			tasks: [{ id: "A14000000000011A" type: "item" item: "ae2:inscriber" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000011A" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A13000000000011B"
+			title: "Procesory logiczne"
+			description: ["Zbuduj kolejny etap Tokyo World: Procesory logiczne. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 13.5d
+			y: 4.0d
+			icon: "ae2:logic_processor"
+			dependencies: ["A130000000000117"]
+			tasks: [{ id: "A14000000000011B" type: "item" item: "ae2:logic_processor" count: 8L consume_items: false }]
+			rewards: [{ id: "A15000000000011B" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A13000000000011C"
+			title: "Procesory obliczeniowe"
+			description: ["Zbuduj kolejny etap Tokyo World: Procesory obliczeniowe. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 0.0d
+			y: 7.5d
+			icon: "ae2:calculation_processor"
+			dependencies: ["A130000000000118"]
+			tasks: [{ id: "A14000000000011C" type: "item" item: "ae2:calculation_processor" count: 8L consume_items: false }]
+			rewards: [{ id: "A15000000000011C" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A13000000000011D"
+			title: "Procesory inzynierskie"
+			description: ["Zbuduj kolejny etap Tokyo World: Procesory inzynierskie. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 4.5d
+			y: 7.5d
+			icon: "ae2:engineering_processor"
+			dependencies: ["A130000000000119"]
+			tasks: [{ id: "A14000000000011D" type: "item" item: "ae2:engineering_processor" count: 8L consume_items: false }]
+			rewards: [{ id: "A15000000000011D" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A13000000000011E"
+			title: "Zasilanie sieci"
+			description: ["Zbuduj kolejny etap Tokyo World: Zasilanie sieci. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 9.0d
+			y: 7.5d
+			icon: "ae2:energy_acceptor"
+			dependencies: ["A13000000000011A"]
+			tasks: [{ id: "A14000000000011E" type: "item" item: "ae2:energy_acceptor" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000011E" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A13000000000011F"
+			title: "Kontroler ME"
+			description: ["Zbuduj kolejny etap Tokyo World: Kontroler ME. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 13.5d
+			y: 7.5d
+			icon: "ae2:controller"
+			dependencies: ["A13000000000011B"]
+			tasks: [{ id: "A14000000000011F" type: "item" item: "ae2:controller" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000011F" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A130000000000120"
+			title: "Szafa dyskow"
+			description: ["Zbuduj kolejny etap Tokyo World: Szafa dyskow. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 0.0d
+			y: 11.0d
+			icon: "ae2:drive"
+			dependencies: ["A13000000000011C"]
+			tasks: [{ id: "A140000000000120" type: "item" item: "ae2:drive" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000120" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000121"
+			title: "Terminal sieci"
+			description: ["Zbuduj kolejny etap Tokyo World: Terminal sieci. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 4.5d
+			y: 11.0d
+			icon: "ae2:terminal"
+			dependencies: ["A13000000000011D"]
+			tasks: [{ id: "A140000000000121" type: "item" item: "ae2:terminal" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000121" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A130000000000122"
+			title: "Terminal craftingu"
+			description: ["Zbuduj kolejny etap Tokyo World: Terminal craftingu. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 9.0d
+			y: 11.0d
+			icon: "ae2:crafting_terminal"
+			dependencies: ["A13000000000011E"]
+			tasks: [{ id: "A140000000000122" type: "item" item: "ae2:crafting_terminal" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000122" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A130000000000123"
+			title: "Automatyzacja tworzenia"
+			description: ["Zbuduj kolejny etap Tokyo World: Automatyzacja tworzenia. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 13.5d
+			y: 11.0d
+			icon: "ae2:molecular_assembler"
+			dependencies: ["A13000000000011F"]
+			tasks: [{ id: "A140000000000123" type: "item" item: "ae2:molecular_assembler" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000123" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000124"
+			title: "Wzorce automatyzacji"
+			description: ["Zbuduj kolejny etap Tokyo World: Wzorce automatyzacji. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 0.0d
+			y: 14.5d
+			icon: "ae2:pattern_provider"
+			dependencies: ["A130000000000120"]
+			tasks: [{ id: "A140000000000124" type: "item" item: "ae2:pattern_provider" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000124" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A130000000000125"
+			title: "Interfejs sieci"
+			description: ["Zbuduj kolejny etap Tokyo World: Interfejs sieci. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 4.5d
+			y: 14.5d
+			icon: "ae2:interface"
+			dependencies: ["A130000000000121"]
+			tasks: [{ id: "A140000000000125" type: "item" item: "ae2:interface" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000125" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A130000000000126"
+			title: "Polaczenie kwantowe"
+			description: ["Zbuduj kolejny etap Tokyo World: Polaczenie kwantowe. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 7.0d
+			y: 19.0d
+			icon: "ae2:quantum_ring"
+			dependencies: ["A130000000000122", "A130000000000123", "A130000000000124", "A130000000000125"]
+			tasks: [{ id: "A140000000000126" type: "item" item: "ae2:quantum_ring" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000126" type: "item" item: "minecraft:netherite_scrap" count: 1 }, { id: "A160000000000126" type: "item" item: "minecraft:diamond" count: 5 }]
+		}
+	]
+}
