@@ -21,7 +21,7 @@
 			id: "A130000000000009"
 			title: "Stop andezytowy"
 			description: ["Pierwszy materiał napędzający mechaniczne maszyny Create."]
-			x: 0.0d
+			x: 7.0d
 			y: 0.0d
 			icon: "create:andesite_alloy"
 			dependencies: ["A130000000000005"]
@@ -30,25 +30,18 @@
 					id: "A140000000000009"
 					type: "item"
 					item: "create:andesite_alloy"
-					count: 8L
+					count: 12L
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000009"
-					type: "item"
-					item: "minecraft:iron_ingot"
-					count: 4
-				}
-			]
+			rewards: [{ id: "A150000000000009" type: "item" item: "minecraft:glowstone_dust" count: 9 }]
 		}
 		{
 			id: "A13000000000000A"
 			title: "Wały napędowe"
 			description: ["Zbuduj wały do przesyłania energii obrotowej."]
-			x: 3.5d
-			y: 0.0d
+			x: 0.0d
+			y: 4.0d
 			icon: "create:shaft"
 			dependencies: ["A130000000000009"]
 			tasks: [
@@ -56,27 +49,20 @@
 					id: "A14000000000000A"
 					type: "item"
 					item: "create:shaft"
-					count: 8L
+					count: 12L
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000000A"
-					type: "item"
-					item: "minecraft:redstone"
-					count: 8
-				}
-			]
+			rewards: [{ id: "A15000000000000A" type: "item" item: "minecraft:lapis_lazuli" count: 5 }]
 		}
 		{
 			id: "A13000000000000B"
 			title: "Przekładnie"
 			description: ["Przełóż obroty na praktyczne układy maszynowe."]
-			x: 7.0d
-			y: 0.0d
+			x: 4.5d
+			y: 4.0d
 			icon: "create:cogwheel"
-			dependencies: ["A13000000000000A"]
+			dependencies: ["A130000000000009"]
 			tasks: [
 				{
 					id: "A14000000000000B"
@@ -86,23 +72,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000000B"
-					type: "item"
-					item: "minecraft:iron_ingot"
-					count: 4
-				}
-			]
+			rewards: [{ id: "A15000000000000B" type: "item" item: "minecraft:ender_pearl" count: 5 }]
 		}
 		{
 			id: "A13000000000000C"
 			title: "Wytwarzanie obrotów"
 			description: ["Zbuduj koło wodne i podłącz prostą linię produkcyjną."]
-			x: 10.5d
-			y: 0.0d
+			x: 9.0d
+			y: 4.0d
 			icon: "create:water_wheel"
-			dependencies: ["A13000000000000B"]
+			dependencies: ["A130000000000009"]
 			tasks: [
 				{
 					id: "A14000000000000C"
@@ -112,23 +91,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000000C"
-					type: "item"
-					item: "minecraft:bucket"
-					count: 2
-				}
-			]
+			rewards: [{ id: "A15000000000000C" type: "item" item: "minecraft:glowstone_dust" count: 5 }]
 		}
 		{
 			id: "A13000000000000D"
 			title: "Mechaniczna prasa"
 			description: ["Wprowadź automatyczne prasowanie metali."]
-			x: 0.0d
-			y: 3.0d
+			x: 13.5d
+			y: 4.0d
 			icon: "create:mechanical_press"
-			dependencies: ["A13000000000000C"]
+			dependencies: ["A130000000000009"]
 			tasks: [
 				{
 					id: "A14000000000000D"
@@ -138,23 +110,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000000D"
-					type: "item"
-					item: "minecraft:gold_ingot"
-					count: 2
-				}
-			]
+			rewards: [{ id: "A15000000000000D" type: "item" item: "minecraft:experience_bottle" count: 9 }]
 		}
 		{
 			id: "A13000000000000E"
 			title: "Przenośniki"
 			description: ["Przenieś transport przedmiotów z rąk gracza na taśmociągi."]
-			x: 3.5d
-			y: 3.0d
+			x: 0.0d
+			y: 7.5d
 			icon: "create:belt_connector"
-			dependencies: ["A13000000000000D"]
+			dependencies: ["A13000000000000A"]
 			tasks: [
 				{
 					id: "A14000000000000E"
@@ -164,23 +129,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000000E"
-					type: "item"
-					item: "minecraft:iron_ingot"
-					count: 6
-				}
-			]
+			rewards: [{ id: "A15000000000000E" type: "item" item: "minecraft:ender_pearl" count: 5 }]
 		}
 		{
 			id: "A13000000000000F"
 			title: "Mieszalnik"
 			description: ["Rozpocznij mieszanie materiałów w systemie Create."]
-			x: 7.0d
-			y: 3.0d
+			x: 4.5d
+			y: 7.5d
 			icon: "create:mechanical_mixer"
-			dependencies: ["A13000000000000E"]
+			dependencies: ["A13000000000000B"]
 			tasks: [
 				{
 					id: "A14000000000000F"
@@ -190,23 +148,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000000F"
-					type: "item"
-					item: "minecraft:blaze_powder"
-					count: 4
-				}
-			]
+			rewards: [{ id: "A15000000000000F" type: "item" item: "minecraft:glowstone_dust" count: 5 }]
 		}
 		{
 			id: "A130000000000010"
 			title: "Precyzyjne mechanizmy"
 			description: ["Automatyzacja produkcji precyzyjnych elementów będzie potrzebna w dalszej progresji."]
-			x: 10.5d
-			y: 3.0d
+			x: 7.0d
+			y: 12.0d
 			icon: "create:precision_mechanism"
-			dependencies: ["A13000000000000F"]
+			dependencies: ["A13000000000000C", "A13000000000000D", "A13000000000000E", "A13000000000000F"]
 			tasks: [
 				{
 					id: "A140000000000010"
@@ -216,14 +167,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000010"
-					type: "item"
-					item: "minecraft:diamond"
-					count: 2
-				}
-			]
+			rewards: [{ id: "A150000000000010" type: "item" item: "minecraft:diamond" count: 5 } { id: "A160000000000010" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
