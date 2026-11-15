@@ -404,8 +404,8 @@
         "match": "^(dungeoncrawl|dungeon[-_]crawl)[-_ .]"
       },
       {
-        "project": "repurposed-structures",
-        "label": "Repurposed Structures — więcej lokacji",
+        "project": "repurposed-structures-forge",
+        "label": "Repurposed Structures — odmiany struktur i lochów (Forge)",
         "match": "^(repurposed_structures|repurposed[-_]structures)[-_ .]"
       },
       {
