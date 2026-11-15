@@ -49,10 +49,21 @@ internal sealed class LauncherWindow : Form
         BackColor = Bg;
         ForeColor = Ink;
         Font = new Font("Segoe UI", 10);
-        Icon = SystemIcons.Application;
+        Icon = TokyoBranding.LoadIcon();
 
         var hero = new TokyoArtPanel { Location = new Point(0, 0), Size = new Size(900, 310) };
         Controls.Add(hero);
+        // Display the same TW crest used in the EXE and Minecraft taskbar.
+        var brand = new PictureBox
+        {
+            Image = TokyoBranding.LoadLogo(),
+            SizeMode = PictureBoxSizeMode.Zoom,
+            BackColor = Color.Transparent,
+            Location = new Point(18, 16),
+            Size = new Size(80, 80)
+        };
+        hero.Controls.Add(brand);
+        brand.BringToFront();
         gear.Text = "⚙";
         gear.Font = new Font("Segoe UI Symbol", 22, FontStyle.Regular);
         gear.TextAlign = ContentAlignment.MiddleCenter;
@@ -288,6 +299,7 @@ internal sealed class LauncherWindow : Form
             var sync = new GitHubSynchronizer(settings.GetToken(), settings.Repository);
             await sync.SynchronizeAsync(root, reporter);
             PostInstallTweaks.Apply(root, reporter);
+            TokyoBranding.CopyLogoToGame(root, reporter);
 
             // Recover already-owned original mod files before querying Modrinth.
             // This is a one-time IMPORT, not an ongoing Prism dependency.
