@@ -3,7 +3,7 @@
   "name": "Tokyo World — Technology Expansion",
   "minecraft": "1.20.1",
   "loader": "forge",
-  "note": "MEGA 2026 expansion candidate set: 66 projects, Modrinth-sourced. Installer must resolve exact Forge 1.20.1 versions and required dependencies at install time. Some candidates are unverified or may not exist for this loader and must be skipped and reported, never installed with incorrect loader. Create add-ons require manual compatibility review for Create 6.0.8. Existing mods/files/worlds must not be replaced.",
+  "note": "MEGA repair-dependencies profile adds Iron's Lib 1.20.1-2.3.0, playerAnimator Forge 1.0.2-rc1+1.20, and Extended AE 1.4.18, needed by Iron's Spells and ExtendedAE Plus. Pinned verified Modrinth IDs. These were omitted from the initial Mega installation because the external metadata did not list all required dependencies.",
   "profiles": {
     "tech-core": [
       {
@@ -521,6 +521,26 @@
         "project": "delightful",
         "label": "Delightful — rozwinięcie Farmer's Delight",
         "match": "^delightful[-_ .]"
+      }
+    ],
+    "repair-dependencies": [
+      {
+        "project": "irons-lib",
+        "label": "Iron's Lib 1.20.1-2.3.0 (wymagane przez Iron's Spells)",
+        "versionId": "IptroA3L",
+        "match": "^irons[_-]lib[-_].*\\.jar$"
+      },
+      {
+        "project": "playeranimator",
+        "label": "playerAnimator Forge 1.0.2-rc1+1.20 (wymagane przez Iron's Spells)",
+        "versionId": "xe2EVE6q",
+        "match": "^(player-animation-lib|playeranimator|player[_-]animator)[-_].*\\.jar$"
+      },
+      {
+        "project": "extended-ae",
+        "label": "Extended AE 1.20-1.4.18-forge (expatternprovider dla ExtendedAE Plus)",
+        "versionId": "uq3lO4ER",
+        "match": "^ExtendedAE-1\\.20-[0-9].*\\.jar$"
       }
     ]
   }
