@@ -1,0 +1,189 @@
+{
+	filename: "industrial_farming"
+	title: "Industrial Foregoing — Farmy przemysłowe"
+	group: "A110000000000001"
+	id: "A120000000000008"
+	icon: "industrialforegoing:plant_gatherer"
+	order_index: 7
+	images: [
+		{ image: "tokyoworld:textures/gui/quests/building_farming.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
+	]
+	quests: [
+		{
+			id: "A130000000000055"
+			title: "Pierwsza rama maszynowa"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: pierwsza rama maszynowa. To etap 1 z 16 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 0.0d
+			icon: "industrialforegoing:machine_frame_pity"
+			dependencies: ["A130000000000018"]
+			tasks: [{ id: "A140000000000055" type: "item" item: "industrialforegoing:machine_frame_pity" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000055" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000056"
+			title: "Lateks i plastik"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: lateks i plastik. To etap 2 z 16 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 0.0d
+			icon: "industrialforegoing:latex_processing_unit"
+			dependencies: ["A130000000000055"]
+			tasks: [{ id: "A140000000000056" type: "item" item: "industrialforegoing:latex_processing_unit" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000056" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000057"
+			title: "Płyty plastikowe"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: płyty plastikowe. To etap 3 z 16 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 0.0d
+			icon: "industrialforegoing:plastic"
+			dependencies: ["A130000000000056"]
+			tasks: [{ id: "A140000000000057" type: "item" item: "industrialforegoing:plastic" count: 16L consume_items: false }]
+			rewards: [{ id: "A150000000000057" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000058"
+			title: "Rama prosta"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: rama prosta. To etap 4 z 16 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 0.0d
+			icon: "industrialforegoing:machine_frame_simple"
+			dependencies: ["A130000000000057"]
+			tasks: [{ id: "A140000000000058" type: "item" item: "industrialforegoing:machine_frame_simple" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000058" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000059"
+			title: "Automatyczny siewnik"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: automatyczny siewnik. To etap 5 z 16 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 0.0d
+			icon: "industrialforegoing:plant_sower"
+			dependencies: ["A130000000000058"]
+			tasks: [{ id: "A140000000000059" type: "item" item: "industrialforegoing:plant_sower" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000059" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A13000000000005A"
+			title: "Automatyczny zbiór"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: automatyczny zbiór. To etap 6 z 16 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 3.0d
+			icon: "industrialforegoing:plant_gatherer"
+			dependencies: ["A130000000000059"]
+			tasks: [{ id: "A14000000000005A" type: "item" item: "industrialforegoing:plant_gatherer" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000005A" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A13000000000005B"
+			title: "Automatyczne karmienie"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: automatyczne karmienie. To etap 7 z 16 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 3.0d
+			icon: "industrialforegoing:animal_feeder"
+			dependencies: ["A13000000000005A"]
+			tasks: [{ id: "A14000000000005B" type: "item" item: "industrialforegoing:animal_feeder" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000005B" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000005C"
+			title: "Kruszarka mobów"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: kruszarka mobów. To etap 8 z 16 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 3.0d
+			icon: "industrialforegoing:mob_crusher"
+			dependencies: ["A13000000000005B"]
+			tasks: [{ id: "A14000000000005C" type: "item" item: "industrialforegoing:mob_crusher" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000005C" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A13000000000005D"
+			title: "Przetwarzanie mobów"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: przetwarzanie mobów. To etap 9 z 16 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 3.0d
+			icon: "industrialforegoing:mob_slaughter_factory"
+			dependencies: ["A13000000000005C"]
+			tasks: [{ id: "A14000000000005D" type: "item" item: "industrialforegoing:mob_slaughter_factory" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000005D" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A13000000000005E"
+			title: "Duplikacja mobów"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: duplikacja mobów. To etap 10 z 16 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 3.0d
+			icon: "industrialforegoing:mob_duplicator"
+			dependencies: ["A13000000000005D"]
+			tasks: [{ id: "A14000000000005E" type: "item" item: "industrialforegoing:mob_duplicator" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000005E" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000005F"
+			title: "Komora rozpuszczania"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: komora rozpuszczania. To etap 11 z 16 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 6.0d
+			icon: "industrialforegoing:dissolution_chamber"
+			dependencies: ["A13000000000005E"]
+			tasks: [{ id: "A14000000000005F" type: "item" item: "industrialforegoing:dissolution_chamber" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000005F" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000060"
+			title: "Laser górniczy"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: laser górniczy. To etap 12 z 16 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 6.0d
+			icon: "industrialforegoing:laser_drill"
+			dependencies: ["A13000000000005F"]
+			tasks: [{ id: "A140000000000060" type: "item" item: "industrialforegoing:laser_drill" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000060" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000061"
+			title: "Logistyka czarnej dziury"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: logistyka czarnej dziury. To etap 13 z 16 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 6.0d
+			icon: "industrialforegoing:black_hole_controller"
+			dependencies: ["A130000000000060"]
+			tasks: [{ id: "A140000000000061" type: "item" item: "industrialforegoing:black_hole_controller" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000061" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000062"
+			title: "Rama zaawansowana"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: rama zaawansowana. To etap 14 z 16 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 6.0d
+			icon: "industrialforegoing:machine_frame_advanced"
+			dependencies: ["A130000000000061"]
+			tasks: [{ id: "A140000000000062" type: "item" item: "industrialforegoing:machine_frame_advanced" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000062" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000063"
+			title: "Pole energetyczne"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: pole energetyczne. To etap 15 z 16 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 6.0d
+			icon: "industrialforegoing:energy_field_provider"
+			dependencies: ["A130000000000062"]
+			tasks: [{ id: "A140000000000063" type: "item" item: "industrialforegoing:energy_field_provider" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000063" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000064"
+			title: "Biopaliwo przemysłowe"
+			description: ["Fabryki rolnicze i automatyzacja mobów. Wytwórz lub zdobądź: biopaliwo przemysłowe. To etap 16 z 16 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 9.0d
+			icon: "industrialforegoing:biofuel_generator"
+			dependencies: ["A130000000000063"]
+			tasks: [{ id: "A140000000000064" type: "item" item: "industrialforegoing:biofuel_generator" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000064" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+	]
+}
