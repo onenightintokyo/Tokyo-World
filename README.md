@@ -1,25 +1,30 @@
 # Tokyo World — Expert Fun Technology Modpack
 
-Minecraft **1.20.1**, Forge **47.4.28**. Technologia i automatyzacja są głównym rdzeniem; eksploracja, bossowie, magia, farming i budowanie uzupełniają progresję.
+**Minecraft 1.20.1 · Forge 47.4.28 · Tech / Automation / Adventure / Magic / Farming**
 
-## Aktualny stan: v0.5 — TESTY
+Paczka dla znajomych, w której głównym celem jest rozbudowa fabryk, rozwiązywanie problemów logistycznych i wieloetapowa progresja technologiczna.
 
-- **326 questów / 24 rozdziały**, w większości rozłożone na cztery gałęzie
-- KubeJS: autorskie receptury między Create, Mekanism, Ender IO, AE2, Draconic Evolution, Powah i innymi
-- FancyMenu: dedykowany plik `config/fancymenu/customization/tokyo_world.txt` i przygotowana grafika Tokyo World
-- Automatyczna synchronizacja GitHub → Prism Launcher przed uruchomieniem
-- Moduły instalowane dodatkowo: `INSTALUJ_TECH_LAB.cmd` i `INSTALUJ_DUNGEONY.cmd`
+## Aktualizacja v0.7 — do testowania
 
-**Nie jest to ukończona, przetestowana paczka do dystrybucji.** Logi zgłaszają problemy Cucumber/NuclearCraft, a menu wymaga testu po aktualizacji.
+- **518 questów i 36 rozdziałów** — +192 nowe zadania, +12 rozdziałów, 6 tematycznych kategorii
+- Cztery równoległe gałęzie w nowych projektach i duży finał odblokowywany po ukończeniu 11 projektów
+- 5 nowych nie-stockowych receptur KubeJS: AE2 × Mekanism × Ender IO × Industrial Foregoing × Powah
+- **10 kolejnych modów do wyboru**, w trzech opcjonalnych pakietach:
+  - `INSTALUJ_FABRYKI.cmd` — Thermal Dynamics / Innovation / Integration / Cultivation
+  - `INSTALUJ_AUTOMATYKE.cmd` — Advanced Peripherals, CC:C Bridge, Create Enchantment Industry
+  - `INSTALUJ_SUROWCE.cmd` — Applied Flux, Hostile Neural Networks, Thermal's Delight
+- Skrypt przed uruchomieniem gry pobiera pliki questów i receptury, **ale nie instaluje nowych modów JAR automatycznie**.
+- RAM i istniejące światy nie są modyfikowane.
 
-## FancyMenu i questbook — UI v0.6
+**Etap testowy:** nowy questbook, KubeJS i nowe profile nie zostały jeszcze sprawdzone w działającym Minecraft. Kopia świata przed instalacją nowych modów jest wymagana.
 
-- FancyMenu: domyślnie ukryty pasek edycji w trybie modpacka. Przełączanie skrótami `FANCYMENU_EDYCJA.cmd` i `FANCYMENU_GRA.cmd`.
-- Questbook: 326 questów, 24 rozdziały, **6 tematycznych grup** z kolorami i numeracją, poprawiony błąd `Thermal & Metallurgy`.
-- [Instrukcja interfejsu v0.6](docs/QUESTBOOK_UI_v0.6.md)
+## Dokumentacja
 
-## Instrukcja aktualizacji
+- [Tokyo World v0.7 — nowe questy i kolejne mody](docs/TOKYO_WORLD_v0.7.md)
+- [FancyMenu i interfejs FTB Quests](docs/QUESTBOOK_UI_v0.6.md)
+- [Automatyczna synchronizacja z GitHub](docs/AUTOMATYCZNE_AKTUALIZACJE.md)
+- [Poprzednia wersja](docs/TOKYO_WORLD_v0.5.md)
 
-[Tokyo World v0.5 — instalacja i lista zmian](docs/TOKYO_WORLD_v0.5.md)
+## Najbliższy etap
 
-Starsza dokumentacja: [v0.4](docs/TECH_EXPANSION_v0.4.md), [automatyczna synchronizacja](docs/AUTOMATYCZNE_AKTUALIZACJE.md).
+Test nowych 518 questów, uruchomienie profili Fabryki/Automatyka/Surowce pojedynczo, potem zadania specyficzne dla potwierdzonych nowych modów i testy balansu energetycznego.
