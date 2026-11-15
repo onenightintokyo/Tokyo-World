@@ -35,6 +35,7 @@ $script:knownExisting = @{
     'applied-mekanistics' = '^Applied[-_]Mekanistics[-_]'
     'rftools-utility' = '^rftoolsutility[-_]'
     'rftools-power' = '^rftoolspower[-_]'
+    'thermals-delight' = '^((Thermal.s Delight)|(thermals[-_]delight))[ _.\-].*\.jar$'
     'mekanism' = '^Mekanism[-_]'
     'create' = '^create[-_]'
     'architectury-api' = '^architectury[-_]'
@@ -58,15 +59,21 @@ function Get-ModrinthJson([string]$path) {
     return Invoke-RestMethod -Uri $uri -Method Get -TimeoutSec 40 -Headers @{ 'User-Agent' = 'TokyoWorldModpack/0.4 (modpack setup)' }
 }
 function Existing-Matches([string]$slug, [string]$customRegex) {
-    $pat = $customRegex
-    if ([string]::IsNullOrWhiteSpace($pat) -and $script:knownExisting.ContainsKey($slug)) {
-        $pat = $script:knownExisting[$slug]
+    # Both explicit patterns and known upstream filenames count as installed.
+    $patterns = New-Object 'System.Collections.Generic.List[string]'
+    if (-not [string]::IsNullOrWhiteSpace($customRegex)) { $patterns.Add($customRegex) }
+    if ($script:knownExisting.ContainsKey($slug)) {
+        $patterns.Add($script:knownExisting[$slug])
     }
-    if ([string]::IsNullOrWhiteSpace($pat)) {
+    if ($patterns.Count -eq 0) {
         $normalized = ($slug -replace '[-_ ]','')
-        $pat = '^' + [regex]::Escape($normalized) + '[-_]'
+        $patterns.Add(('^' + [regex]::Escape($normalized) + '[-_]'))
     }
-    foreach ($name in $existing) { if ($name -match $pat) { return $true } }
+    foreach ($name in $existing) {
+        foreach ($pat in $patterns) {
+            if ($name -match $pat) { return $true }
+        }
+    }
     return $false
 }
 function Expand-Versions($value) {
@@ -128,9 +135,22 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
             throw "No SHA-512 verified JAR for $slug"
         }
         $file = $jar[0]
-        $filename = [IO.Path]::GetFileName([string]$file.filename)
-        if ($filename -ne [string]$file.filename -or $filename -notmatch '^[a-zA-Z0-9_\-+.() ]+\.jar$') {
-            throw "Unsafe or invalid filename for $slug"
+        # Preserve valid upstream names including "Thermal's Delight 1.20.1 R.1.0.jar".
+        # Reject path separators, invalid Windows filename characters, control
+        # characters, reserved device names, and all non-JAR extensions.
+        $filename = [string]$file.filename
+        $invalidWindowsName = @($filename.ToCharArray() | Where-Object {
+            [int][char]$_ -lt 32 -or '<>:"/\|?*'.Contains([string]$_)
+        }).Count -gt 0
+        $reserved = $filename -match '^(CON|PRN|AUX|NUL|COM[1-9]|LPT[1-9])(?:\..*)?$'
+        if ([string]::IsNullOrWhiteSpace($filename) -or
+            $filename -ne [IO.Path]::GetFileName($filename) -or
+            $filename -notmatch '(?i)\.jar$' -or
+            $filename -match '\p{C}' -or
+            $filename.EndsWith(' ') -or
+            $filename.EndsWith('.') -or
+            $filename.Length -gt 200 -or $reserved -or $invalidWindowsName) {
+            throw "Unsafe or invalid JAR filename for $($slug): $filename"
         }
         $uri = [Uri]$file.url
         if ($uri.Scheme -ne 'https' -or $uri.Host -notin @('cdn.modrinth.com','cdn-raw.modrinth.com')) {
