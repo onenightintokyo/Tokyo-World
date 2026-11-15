@@ -19,297 +19,405 @@ internal sealed class LauncherWindow : Form
     private readonly LauncherSettings settings = LauncherSettings.Load();
     private readonly MinecraftEngine engine = new();
 
-    private readonly TextBox folderBox = new();
-    private readonly TextBox githubTokenBox = new();
-    private readonly TextBox nicknameBox = new();
-    private readonly RadioButton microsoftRadio = new();
-    private readonly RadioButton offlineRadio = new();
-    private readonly CheckBox allModsBox = new();
-    private readonly NumericUpDown ram = new();
-    private readonly TextBox log = new();
-    private readonly ProgressBar progressBar = new();
-    private readonly Label state = new();
-    private readonly Button installButton = new();
-    private readonly Button playButton = new();
+    private readonly TextBox nickname = new();
+    private readonly RadioButton premium = new();
+    private readonly RadioButton offline = new();
+    private readonly TrackBar ramSlider = new();
+    private readonly Label ramValue = new();
+    private readonly Label status = new();
+    private readonly ProgressBar progress = new();
+    private readonly Button play = new();
+    private readonly Label gear = new();
+    private readonly List<string> logs = new();
     private bool busy;
+    private bool changingMode;
 
-    private static readonly Color Background = Color.FromArgb(12, 13, 21);
-    private static readonly Color PanelColor = Color.FromArgb(25, 27, 39);
-    private static readonly Color TextColor = Color.FromArgb(243, 242, 249);
-    private static readonly Color Muted = Color.FromArgb(162, 163, 180);
-    private static readonly Color Accent = Color.FromArgb(230, 57, 80);
+    private static readonly Color Bg = Color.FromArgb(11, 13, 22);
+    private static readonly Color Surface = Color.FromArgb(28, 30, 43);
+    private static readonly Color Ink = Color.FromArgb(247, 246, 250);
+    private static readonly Color Gray = Color.FromArgb(159, 164, 180);
+    private static readonly Color Red = Color.FromArgb(231, 49, 74);
+    private static readonly Color Cyan = Color.FromArgb(72, 227, 222);
 
     public LauncherWindow()
     {
-        Text = "TOKYO WORLD | Niezależny Launcher";
-        ClientSize = new Size(990, 720);
+        Text = "TOKYO WORLD";
+        ClientSize = new Size(900, 602);
         StartPosition = FormStartPosition.CenterScreen;
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
-        BackColor = Background;
-        ForeColor = TextColor;
+        BackColor = Bg;
+        ForeColor = Ink;
         Font = new Font("Segoe UI", 10);
+        Icon = SystemIcons.Application;
 
-        var side = new Panel { Left = 0, Top = 0, Width = 285, Height = 720, BackColor = PanelColor };
-        Controls.Add(side);
-        side.Controls.Add(new Panel { Left = 0, Top = 0, Width = 285, Height = 5, BackColor = Accent });
-        AddText(side, "TOKYO", 22, 82, 250, 60, 33, true, TextColor);
-        AddText(side, "WORLD", 22, 135, 250, 65, 33, true, Accent);
-        AddText(side, "TECH // EXPERT // ADVENTURE", 23, 207, 250, 24, 9, false, Muted);
-        AddText(side, "Minecraft 1.20.1", 23, 319, 255, 28, 14, true, TextColor);
-        AddText(side, "Forge 47.4.28", 23, 352, 240, 28, 11, false, Muted);
-        AddText(side, "Bez Prism i zewnętrznego launchera", 23, 633, 250, 44, 9, false, Muted);
-        AddText(side, "TOKYO WORLD 1.0", 23, 592, 252, 28, 12, true, TextColor);
+        var hero = new TokyoArtPanel { Location = new Point(0, 0), Size = new Size(900, 310) };
+        Controls.Add(hero);
+        gear.Text = "⚙";
+        gear.Font = new Font("Segoe UI Symbol", 22, FontStyle.Regular);
+        gear.TextAlign = ContentAlignment.MiddleCenter;
+        gear.ForeColor = Ink;
+        gear.BackColor = Color.FromArgb(36, 38, 51);
+        gear.SetBounds(834, 17, 48, 44);
+        gear.Cursor = Cursors.Hand;
+        gear.Click += (_, _) => OpenSettings();
+        Controls.Add(gear);
+        gear.BringToFront();
 
-        AddText(this, "URUCHOM GRĘ", 314, 20, 625, 42, 22, true, TextColor);
-        AddText(this, "Instalacja, aktualizacja i logowanie w jednym programie.", 315, 65, 630, 24, 10, false, Muted);
-
-        AddText(this, "Folder instalacji gry", 315, 102, 430, 23, 10, false, Muted);
-        SetupInput(folderBox, 315, 128, 518);
-        folderBox.Text = settings.InstallDirectory;
-        AddButton(this, "WYBIERZ", 842, 127, 116, 34, PanelColor, (_, _) => PickFolder());
-
-        AddText(this, "Repozytorium GitHub (prywatne — token z dostępem Contents: Read)", 315, 176, 635, 24, 9, false, Muted);
-        SetupInput(githubTokenBox, 315, 201, 643);
-        githubTokenBox.UseSystemPasswordChar = true;
-        githubTokenBox.Text = settings.GetToken();
-        AddText(this, "Token szyfrowany przez Windows DPAPI. Nigdy nie umieszczaj go w pliku EXE.", 315, 241, 639, 21, 8, false, Muted);
-
-        AddText(this, "LOGOWANIE", 315, 273, 290, 24, 10, true, TextColor);
-        microsoftRadio.SetBounds(315, 306, 250, 28);
-        microsoftRadio.Text = "Premium / Microsoft";
-        microsoftRadio.Checked = settings.UseMicrosoft;
-        microsoftRadio.ForeColor = TextColor;
-        microsoftRadio.BackColor = Background;
-        Controls.Add(microsoftRadio);
-        offlineRadio.SetBounds(585, 306, 260, 28);
-        offlineRadio.Text = "Offline / własny nick";
-        offlineRadio.Checked = !settings.UseMicrosoft;
-        offlineRadio.ForeColor = TextColor;
-        offlineRadio.BackColor = Background;
-        Controls.Add(offlineRadio);
-
-        SetupInput(nicknameBox, 315, 341, 330);
-        nicknameBox.Text = settings.OfflineNickname;
-        nicknameBox.PlaceholderText = "Nick 3–16 znaków";
-        AddButton(this, "ZALOGUJ MICROSOFT", 663, 340, 295, 35, PanelColor, async (_, _) =>
+        AddLabel("NICK MINECRAFT", 46, 329, 320, 23, 10, true, Gray);
+        nickname.SetBounds(46, 359, 353, 42);
+        nickname.BackColor = Surface;
+        nickname.ForeColor = Ink;
+        nickname.Font = new Font("Segoe UI Semibold", 15);
+        nickname.BorderStyle = BorderStyle.FixedSingle;
+        nickname.MaxLength = 16;
+        nickname.TextChanged += (_, _) =>
         {
-            if (busy) return;
-            await RunBusy(async () =>
-            {
-                WriteLog("Uruchamiam oficjalne logowanie Minecraft/Microsoft...");
-                var user = await engine.ChangeMicrosoftAccountAsync();
-                WriteLog("Zalogowano konto premium: " + user);
-            });
-        });
-
-        allModsBox.SetBounds(315, 400, 435, 26);
-        allModsBox.Text = "Pełny modpack: MEGA + WAVE + aktualizacje";
-        allModsBox.ForeColor = TextColor;
-        allModsBox.Checked = settings.InstallAllModules;
-        Controls.Add(allModsBox);
-
-        AddText(this, "RAM (MB)", 779, 399, 90, 25, 10, false, Muted);
-        ram.SetBounds(866, 398, 91, 30);
-        ram.Minimum = 2048;
-        ram.Maximum = 32768;
-        ram.Increment = 512;
-        ram.Value = Math.Clamp(settings.RamMb, (int)ram.Minimum, (int)ram.Maximum);
-        ram.BackColor = PanelColor;
-        ram.ForeColor = TextColor;
-        Controls.Add(ram);
-
-        installButton.Text = "POBIERZ / AKTUALIZUJ";
-        StyleButton(installButton, 315, 452, 265, 47, PanelColor);
-        installButton.Click += async (_, _) =>
-        {
-            if (busy) return;
-            await RunBusy(async () => await InstallEverything());
+            if (!changingMode && offline.Checked)
+                settings.OfflineNickname = nickname.Text;
         };
+        Controls.Add(nickname);
 
-        playButton.Text = "GRAJ W TOKYO WORLD";
-        StyleButton(playButton, 595, 452, 363, 47, Accent);
-        playButton.Click += async (_, _) =>
+        AddLabel("RAM", 452, 329, 200, 23, 10, true, Gray);
+        ramSlider.SetBounds(444, 360, 314, 42);
+        ramSlider.Minimum = 2;
+        ramSlider.Maximum = 24;
+        ramSlider.TickFrequency = 2;
+        ramSlider.LargeChange = 2;
+        ramSlider.SmallChange = 1;
+        ramSlider.AutoSize = false;
+        ramSlider.Height = 45;
+        ramSlider.Value = Math.Clamp((int)Math.Round(settings.RamMb / 1024.0), 2, 24);
+        ramSlider.BackColor = Bg;
+        ramSlider.TickStyle = TickStyle.BottomRight;
+        ramValue.SetBounds(762, 356, 105, 39);
+        ramValue.TextAlign = ContentAlignment.MiddleRight;
+        ramValue.ForeColor = Cyan;
+        ramValue.Font = new Font("Segoe UI", 16, FontStyle.Bold);
+        ramValue.Text = $"{ramSlider.Value} GB";
+        ramSlider.ValueChanged += (_, _) =>
         {
-            if (busy) return;
-            await RunBusy(async () =>
-            {
-                var root = await InstallEverything();
-                var session = await engine.PlayAsync(root, (int)ram.Value,
-                    microsoftRadio.Checked, nicknameBox.Text.Trim(), CreateProgress());
-                WriteLog("Wystartowała gra (PID " + session.Id + ").");
-            });
+            ramValue.Text = $"{ramSlider.Value} GB";
+            settings.RamMb = ramSlider.Value * 1024;
         };
+        Controls.Add(ramSlider);
+        Controls.Add(ramValue);
 
-        AddButton(this, "IMPORTUJ STARĄ PACZKĘ ZIP", 315, 508, 272, 32, PanelColor, async (_, _) =>
-        {
-            if (busy) return;
-            using var chooser = new OpenFileDialog { Filter = "Paczka ZIP (*.zip)|*.zip", Title = "Wybierz oryginalne Tokyo_World_Forge_1.20.1.zip" };
-            if (chooser.ShowDialog(this) != DialogResult.OK) return;
-            await RunBusy(async () =>
-            {
-                string root = SelectedRoot();
-                await Task.Run(() => ModpackInstaller.ImportOriginalZip(chooser.FileName, root, CreateProgress()));
-                WriteLog("Oryginalne pliki modów zaimportowano. Teraz kliknij GRAJ.");
-            });
-        });
-        AddButton(this, "OTWÓRZ FOLDER", 602, 508, 174, 32, PanelColor, (_, _) =>
-        {
-            Directory.CreateDirectory(SelectedRoot());
-            Process.Start(new ProcessStartInfo { FileName = SelectedRoot(), UseShellExecute = true });
-        });
-        AddButton(this, "DZIENNIKI", 790, 508, 168, 32, PanelColor, (_, _) =>
-        {
-            string path = Path.Combine(SelectedRoot(), ".tokyo");
-            Directory.CreateDirectory(path);
-            Process.Start(new ProcessStartInfo { FileName = path, UseShellExecute = true });
-        });
+        premium.Text = "PREMIUM / MICROSOFT";
+        premium.SetBounds(46, 409, 230, 28);
+        premium.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+        premium.ForeColor = Gray;
+        premium.BackColor = Bg;
+        offline.Text = "OFFLINE / NICK";
+        offline.SetBounds(288, 409, 184, 28);
+        offline.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+        offline.ForeColor = Gray;
+        offline.BackColor = Bg;
+        premium.CheckedChanged += (_, _) => UpdateMode();
+        offline.CheckedChanged += (_, _) => UpdateMode();
+        Controls.Add(premium);
+        Controls.Add(offline);
 
-        progressBar.SetBounds(315, 566, 643, 14);
-        progressBar.Style = ProgressBarStyle.Blocks;
-        Controls.Add(progressBar);
-        state.SetBounds(316, 588, 630, 24);
-        state.Text = "Gotowy do instalacji";
-        state.ForeColor = Muted;
-        Controls.Add(state);
-        log.SetBounds(315, 621, 643, 78);
-        log.Multiline = true;
-        log.ReadOnly = true;
-        log.ScrollBars = ScrollBars.Vertical;
-        log.BackColor = PanelColor;
-        log.ForeColor = TextColor;
-        log.BorderStyle = BorderStyle.None;
-        log.Font = new Font("Consolas", 8);
-        Controls.Add(log);
+        play.Text = "GRAJ";
+        play.SetBounds(46, 453, 808, 66);
+        play.FlatStyle = FlatStyle.Flat;
+        play.FlatAppearance.BorderSize = 0;
+        play.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 76, 104);
+        play.BackColor = Red;
+        play.ForeColor = Color.White;
+        play.Font = new Font("Segoe UI Black", 23, FontStyle.Bold);
+        play.Cursor = Cursors.Hand;
+        play.Click += async (_, _) => await StartGame();
+        Controls.Add(play);
+
+        progress.SetBounds(46, 542, 808, 8);
+        progress.Style = ProgressBarStyle.Blocks;
+        Controls.Add(progress);
+        status.SetBounds(46, 559, 807, 28);
+        status.ForeColor = Gray;
+        status.Text = "Gotowy do gry";
+        status.Font = new Font("Segoe UI", 9);
+        status.TextAlign = ContentAlignment.MiddleCenter;
+        status.Cursor = Cursors.Hand;
+        status.Click += (_, _) => ShowLogs();
+        Controls.Add(status);
+
+        premium.Checked = settings.UseMicrosoft;
+        offline.Checked = !settings.UseMicrosoft;
+        UpdateMode();
 
         Shown += (_, _) =>
         {
-            WriteLog("Witaj w niezależnym Tokyo World Launcher.");
-            WriteLog("Wybierz katalog. Repozytorium prywatne wymaga tokenu GitHub (Contents: Read).");
+            if (!settings.FirstRunCompleted)
+                OpenSettings(firstRun: true);
         };
-        FormClosing += (_, _) => SavePreferences();
+        FormClosing += (_, _) => SaveState();
     }
 
-    private static void AddText(Control parent, string text, int x, int y, int w, int h, float size, bool bold, Color color)
+    private void AddLabel(string value, int x, int y, int w, int h, int size, bool bold, Color color)
     {
-        parent.Controls.Add(new Label {
-            Text = text, Left = x, Top = y, Width = w, Height = h,
+        Controls.Add(new Label
+        {
+            Text = value, Left = x, Top = y, Width = w, Height = h,
             Font = new Font("Segoe UI", size, bold ? FontStyle.Bold : FontStyle.Regular),
-            ForeColor = color, BackColor = Color.Transparent
+            ForeColor = color, BackColor = Bg
         });
     }
 
-    private void SetupInput(TextBox input, int x, int y, int w)
+    private void UpdateMode()
     {
-        input.SetBounds(x, y, w, 32);
-        input.Font = new Font("Segoe UI", 10);
-        input.BackColor = PanelColor;
-        input.ForeColor = TextColor;
-        input.BorderStyle = BorderStyle.FixedSingle;
-        Controls.Add(input);
+        changingMode = true;
+        bool isPremium = premium.Checked;
+        nickname.ReadOnly = isPremium;
+        nickname.Text = isPremium
+            ? (string.IsNullOrWhiteSpace(settings.PremiumNickname) ? "Konto Microsoft" : settings.PremiumNickname)
+            : settings.OfflineNickname;
+        nickname.BackColor = isPremium ? Color.FromArgb(21, 24, 36) : Surface;
+        nickname.ForeColor = isPremium && string.IsNullOrWhiteSpace(settings.PremiumNickname) ? Gray : Ink;
+        premium.ForeColor = isPremium ? Cyan : Gray;
+        offline.ForeColor = isPremium ? Gray : Cyan;
+        settings.UseMicrosoft = isPremium;
+        changingMode = false;
     }
 
-    private void StyleButton(Button button, int x, int y, int w, int h, Color bg)
+    private void SaveState()
     {
-        button.SetBounds(x, y, w, h);
-        button.BackColor = bg;
-        button.ForeColor = TextColor;
-        button.FlatStyle = FlatStyle.Flat;
-        button.FlatAppearance.BorderSize = 0;
-        button.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-        button.Cursor = Cursors.Hand;
-        Controls.Add(button);
-    }
-
-    private Button AddButton(Control parent, string text, int x, int y, int w, int h, Color bg, EventHandler click)
-    {
-        var button = new Button { Text = text };
-        StyleButton(button, x, y, w, h, bg);
-        button.Click += click;
-        return button;
-    }
-
-    private void PickFolder()
-    {
-        using var choose = new FolderBrowserDialog
-        {
-            Description = "Wybierz folder instalacji Tokyo World (nie wybieraj C:\\ ani Windows).",
-            ShowNewFolderButton = true,
-            InitialDirectory = Directory.Exists(folderBox.Text) ? folderBox.Text : Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)
-        };
-        if (choose.ShowDialog(this) == DialogResult.OK) folderBox.Text = choose.SelectedPath;
-    }
-
-    private string SelectedRoot()
-    {
-        var root = Path.GetFullPath(Environment.ExpandEnvironmentVariables(folderBox.Text.Trim()));
-        if (root == Path.GetPathRoot(root) ||
-            root.Equals(Environment.GetFolderPath(Environment.SpecialFolder.Windows), StringComparison.OrdinalIgnoreCase))
-            throw new InvalidOperationException("Wybierz osobny folder gry, a nie katalog główny dysku lub Windows.");
-        return root;
-    }
-
-    private void SavePreferences()
-    {
-        settings.InstallDirectory = folderBox.Text;
-        settings.OfflineNickname = nicknameBox.Text;
-        settings.UseMicrosoft = microsoftRadio.Checked;
-        settings.InstallAllModules = allModsBox.Checked;
-        settings.RamMb = (int)ram.Value;
-        settings.SetToken(githubTokenBox.Text);
+        settings.RamMb = ramSlider.Value * 1024;
+        settings.UseMicrosoft = premium.Checked;
+        if (offline.Checked) settings.OfflineNickname = nickname.Text.Trim();
         settings.Save();
     }
 
-    private IProgress<string> CreateProgress() => new Progress<string>(WriteLog);
-
-    private void WriteLog(string message)
+    private string GameRoot()
     {
-        if (InvokeRequired) { BeginInvoke(() => WriteLog(message)); return; }
-        var line = "[" + DateTime.Now.ToString("HH:mm:ss") + "] " + message;
-        log.AppendText(line + Environment.NewLine);
-        if (log.TextLength > 30000) log.Text = log.Text[^18000..];
-        state.Text = message.Length > 88 ? message[..88] + "..." : message;
-    }
-
-    private async Task<string> InstallEverything()
-    {
-        SavePreferences();
-        string root = SelectedRoot();
-        Directory.CreateDirectory(root);
-        var progress = CreateProgress();
-        var synchronizer = new GitHubSynchronizer(settings.GetToken());
-        await synchronizer.SynchronizeAsync(root, progress);
-        PostInstallTweaks.Apply(root, progress);
-
-        var modInstaller = new ModpackInstaller();
-        var report = await modInstaller.InstallAsync(root, allModsBox.Checked, progress);
-        WriteLog($"Mody: dodano {report.Installed}; brakujące oryginalne: {report.MissingBase}; pominięte dodatki: {report.SkippedOptional}");
-        if (report.MissingBase > 0)
-            throw new InvalidOperationException($"{report.MissingBase} bazowych modów nie ma na Modrinth. Importuj oryginalny ZIP przyciskiem w launcherze, a następnie ponów instalację.");
-        await engine.PrepareGameAsync(root, progress);
+        string value = settings.InstallDirectory;
+        if (string.IsNullOrWhiteSpace(value))
+            throw new InvalidOperationException("Wybierz folder instalacji w ustawieniach (⚙).");
+        string root = Path.GetFullPath(Environment.ExpandEnvironmentVariables(value));
+        if (root == Path.GetPathRoot(root) ||
+            root.Equals(Environment.GetFolderPath(Environment.SpecialFolder.Windows), StringComparison.OrdinalIgnoreCase))
+            throw new InvalidOperationException("Nie można instalować gry bezpośrednio na dysku lub w folderze Windows.");
         return root;
     }
 
-    private async Task RunBusy(Func<Task> operation)
+    private IProgress<string> Reporter() => new Progress<string>(SetStatus);
+
+    private void SetStatus(string value)
     {
+        if (IsDisposed) return;
+        if (InvokeRequired) { BeginInvoke(() => SetStatus(value)); return; }
+        string line = $"[{DateTime.Now:HH:mm:ss}] {value}";
+        logs.Add(line);
+        if (logs.Count > 1200) logs.RemoveRange(0, 500);
+        status.Text = value.Length > 116 ? value[..113] + "..." : value;
+    }
+
+    private void ShowLogs()
+    {
+        using var dialog = new Form
+        {
+            Text = "Tokyo World — dziennik",
+            StartPosition = FormStartPosition.CenterParent,
+            Size = new Size(800, 460),
+            BackColor = Bg
+        };
+        var contents = new TextBox
+        {
+            Multiline = true, ReadOnly = true, ScrollBars = ScrollBars.Both,
+            WordWrap = false, Dock = DockStyle.Fill,
+            BackColor = Surface, ForeColor = Ink,
+            Font = new Font("Consolas", 9),
+            Text = string.Join(Environment.NewLine, logs)
+        };
+        dialog.Controls.Add(contents);
+        dialog.ShowDialog(this);
+    }
+
+    private void OpenSettings(bool firstRun = false)
+    {
+        if (busy) return;
+        using var dialog = new SettingsWindow(settings, firstRun);
+        if (dialog.ShowDialog(this) == DialogResult.OK)
+        {
+            settings.FirstRunCompleted = true;
+            settings.Save();
+            SetStatus("Ustawienia zapisane.");
+        }
+    }
+
+    private async Task StartGame()
+    {
+        if (busy) return;
+        if (!settings.FirstRunCompleted)
+        {
+            OpenSettings(firstRun: true);
+            if (!settings.FirstRunCompleted) return;
+        }
+        if (offline.Checked && !System.Text.RegularExpressions.Regex.IsMatch(
+                nickname.Text.Trim(), @"\A[A-Za-z0-9_]{3,16}\z"))
+        {
+            MessageBox.Show(this, "Nick może mieć od 3 do 16 znaków: A-Z, cyfry lub _.",
+                "Tokyo World", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            return;
+        }
+
         busy = true;
-        installButton.Enabled = playButton.Enabled = false;
-        progressBar.Style = ProgressBarStyle.Marquee;
+        play.Enabled = false;
+        gear.Enabled = false;
+        progress.Style = ProgressBarStyle.Marquee;
         try
         {
-            await operation();
-            WriteLog("Operacja zakończona.");
+            SaveState();
+            var reporter = Reporter();
+
+            // Log in FIRST so the selected premium nickname is visible on the main screen.
+            if (premium.Checked)
+            {
+                SetStatus("Otwieram bezpieczne logowanie Microsoft...");
+                string user = await engine.LoginMicrosoftAsync();
+                settings.PremiumNickname = user;
+                nickname.Text = user;
+                nickname.ForeColor = Ink;
+                settings.Save();
+                SetStatus("Zalogowano Microsoft: " + user);
+            }
+
+            string root = GameRoot();
+            Directory.CreateDirectory(root);
+            SetStatus("Sprawdzam aktualizacje Tokyo World...");
+            var sync = new GitHubSynchronizer(settings.GetToken(), settings.Repository);
+            await sync.SynchronizeAsync(root, reporter);
+            PostInstallTweaks.Apply(root, reporter);
+
+            var modpack = new ModpackInstaller();
+            var report = await modpack.InstallAsync(root, settings.InstallAllModules, reporter);
+            SetStatus($"Mody: +{report.Installed}, pominięto {report.SkippedOptional}, brakujących bazowych {report.MissingBase}.");
+            if (report.MissingBase > 0)
+                throw new InvalidOperationException(
+                    "Brakuje części oryginalnych modów Tokyo World. Aby uniknąć crasha, wymagany jest import bazowej paczki ZIP. Szczegóły w dzienniku i dokumentacji.");
+
+            await engine.PrepareGameAsync(root, reporter);
+            var process = await engine.PlayAsync(root, settings.RamMb,
+                premium.Checked, settings.OfflineNickname.Trim(), reporter);
+            SetStatus($"Uruchomiono Tokyo World! PID {process.Id}.");
         }
         catch (Exception ex)
         {
-            WriteLog("BŁĄD: " + ex.Message);
-            MessageBox.Show(this, ex.Message, "Tokyo World — błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            SetStatus("BŁĄD: " + ex.Message);
+            MessageBox.Show(this, ex.Message, "Tokyo World — uruchomienie nieudane",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         finally
         {
-            progressBar.Style = ProgressBarStyle.Blocks;
-            installButton.Enabled = playButton.Enabled = true;
+            progress.Style = ProgressBarStyle.Blocks;
+            play.Enabled = true;
+            gear.Enabled = true;
             busy = false;
         }
+    }
+}
+
+internal sealed class SettingsWindow : Form
+{
+    private readonly LauncherSettings settings;
+    private readonly TextBox folder = new();
+    private readonly TextBox repository = new();
+    private readonly TextBox token = new();
+    private readonly CheckBox allMods = new();
+    private readonly Button save = new();
+
+    public SettingsWindow(LauncherSettings data, bool firstRun)
+    {
+        settings = data;
+        Text = firstRun ? "Tokyo World — pierwsza konfiguracja" : "Tokyo World — ustawienia";
+        ClientSize = new Size(650, 406);
+        StartPosition = FormStartPosition.CenterParent;
+        FormBorderStyle = FormBorderStyle.FixedDialog;
+        MaximizeBox = false;
+        MinimizeBox = false;
+        BackColor = Color.FromArgb(15, 17, 28);
+        ForeColor = Color.White;
+        Font = new Font("Segoe UI", 10);
+
+        Label("Folder instalacji", 25, 24, 420);
+        Field(folder, 25, 51, 472, data.InstallDirectory);
+        var browse = ActionButton("...", 510, 51, 108);
+        browse.Click += (_, _) =>
+        {
+            using var dlg = new FolderBrowserDialog
+            {
+                Description = "Wybierz folder Tokyo World",
+                ShowNewFolderButton = true
+            };
+            if (dlg.ShowDialog(this) == DialogResult.OK) folder.Text = dlg.SelectedPath;
+        };
+
+        Label("Repozytorium plików paczki (właściciel/nazwa)", 25, 110, 590);
+        Field(repository, 25, 138, 593, data.Repository);
+        Label("Publiczne repo dystrybucyjne nie wymaga tokenu u znajomych.", 25, 175, 610, color: Color.FromArgb(155, 165, 182));
+
+        Label("Token GitHub — tylko gdy repo jest prywatne", 25, 208, 595);
+        Field(token, 25, 236, 593, data.GetToken());
+        token.UseSystemPasswordChar = true;
+        Label("Nie umieszczaj własnego tokenu w EXE ani nie przesyłaj go znajomym.", 25, 272, 610, color: Color.FromArgb(155, 165, 182));
+
+        allMods.Text = "Pełna paczka (MEGA + WAVE)";
+        allMods.SetBounds(25, 303, 590, 26);
+        allMods.ForeColor = Color.White;
+        allMods.Checked = data.InstallAllModules;
+        Controls.Add(allMods);
+
+        save = ActionButton("ZAPISZ", 25, 348, 593);
+        save.BackColor = Color.FromArgb(224, 48, 74);
+        save.Click += (_, _) =>
+        {
+            if (!System.Text.RegularExpressions.Regex.IsMatch(repository.Text.Trim(),
+                @"\A[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\z"))
+            {
+                MessageBox.Show("Podaj repozytorium w formacie użytkownik/nazwa.");
+                return;
+            }
+            if (folder.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Wybierz folder instalacji.");
+                return;
+            }
+            data.InstallDirectory = folder.Text.Trim();
+            data.Repository = repository.Text.Trim();
+            data.SetToken(token.Text);
+            data.InstallAllModules = allMods.Checked;
+            DialogResult = DialogResult.OK;
+            Close();
+        };
+    }
+
+    private void Label(string text, int x, int y, int width, Color? color = null)
+    {
+        Controls.Add(new Label
+        {
+            Text = text, Left = x, Top = y, Width = width, Height = 26,
+            ForeColor = color ?? Color.FromArgb(238, 239, 244)
+        });
+    }
+    private void Field(TextBox input, int x, int y, int width, string value)
+    {
+        input.SetBounds(x, y, width, 33);
+        input.Text = value;
+        input.ForeColor = Color.White;
+        input.BackColor = Color.FromArgb(33, 36, 52);
+        input.BorderStyle = BorderStyle.FixedSingle;
+        Controls.Add(input);
+    }
+    private Button ActionButton(string text, int x, int y, int width)
+    {
+        var b = new Button
+        {
+            Text = text, Left = x, Top = y, Width = width, Height = 35,
+            ForeColor = Color.White, BackColor = Color.FromArgb(41, 44, 60),
+            FlatStyle = FlatStyle.Flat, Cursor = Cursors.Hand
+        };
+        b.FlatAppearance.BorderSize = 0;
+        Controls.Add(b);
+        return b;
     }
 }
