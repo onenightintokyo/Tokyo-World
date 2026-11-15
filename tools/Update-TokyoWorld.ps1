@@ -94,16 +94,43 @@ try {
         foreach ($block in $blocks) {
             if ($block.Value -match 'background_type = image' -and
                 $block.Value -match 'tokyo_world_menu_background\.png') {
-                $fixed = $block.Value.Replace('1true2', 'show_background = true').Replace('show_background = false', 'show_background = true')
+                # This old layout provides button positions. The independent
+                # tokyo_world.txt layout owns the background, so they cannot fight.
+                $newLayout = Join-Path $GameDir 'config\fancymenu\customization\tokyo_world.txt'
+                $enabled = !(Test-Path -LiteralPath $newLayout -PathType Leaf)
+                $fixed = $block.Value.Replace('1true2', 'show_background = false')
+                if ($enabled) {
+                    $fixed = $fixed.Replace('show_background = false', 'show_background = true')
+                } else {
+                    $fixed = $fixed.Replace('show_background = true', 'show_background = false')
+                }
                 $after = $after.Replace($block.Value, $fixed)
             }
         }
         $buttons = [regex]::Matches($after, '(?ms)^vanilla_button \{.*?^\}')
+        $labels = @{
+            'mc_titlescreen_singleplayer_button' = 'Rozpocznij przygode'
+            'mc_titlescreen_multiplayer_button' = 'Graj ze znajomymi'
+            'mc_titlescreen_options_button' = 'Ustawienia'
+            'mc_titlescreen_quit_button' = 'Wyjdz z gry'
+            'titlescreen_mods_button' = 'Lista modow'
+        }
         foreach ($button in $buttons) {
-            if ($button.Value -match 'instance_identifier = minecraft_logo_widget' -or
-                $button.Value -match 'instance_identifier = minecraft_splash_widget') {
-                $after = $after.Replace($button.Value, $button.Value.Replace('is_hidden = false','is_hidden = true'))
+            $modified = $button.Value
+            if ($modified -match 'instance_identifier = minecraft_logo_widget' -or
+                $modified -match 'instance_identifier = minecraft_splash_widget') {
+                $modified = $modified.Replace('is_hidden = false','is_hidden = true')
             }
+            foreach ($id in @($labels.Keys)) {
+                if ($modified -match ('(?m)^\s*instance_identifier = ' + [regex]::Escape($id) + '\s*$')) {
+                    if ($modified -match '(?m)^\s*label =') {
+                        $modified = [regex]::Replace($modified, '(?m)^(\s*label =).*$', '$1 ' + $labels[$id])
+                    } else {
+                        $modified = $modified.Replace('  element_type = vanilla_button', "  element_type = vanilla_button" + [Environment]::NewLine + "  label = " + $labels[$id])
+                    }
+                }
+            }
+            $after = $after.Replace($button.Value, $modified)
         }
         Write-IfChanged $menuRel $after
     }
@@ -116,6 +143,10 @@ try {
         $after = [regex]::Replace($before, $pattern, $newValue)
         Write-IfChanged $optionsRel $after
     }
+
+    $newLayout = Join-Path $GameDir 'config\fancymenu\customization\tokyo_world.txt'
+    Write-Host ("[Tokyo World] FancyMenu independent title layout installed: " + (Test-Path -LiteralPath $newLayout -PathType Leaf))
+    Write-Host ("[Tokyo World] FancyMenu background PNG available: " + (Test-Path -LiteralPath $background -PathType Leaf))
 } catch { Write-Warning "[Tokyo World] FancyMenu repair skipped: $($_.Exception.Message)" }
 
 # KubeJS exposes quest images as client resources. The existing ZIP is the image source.
