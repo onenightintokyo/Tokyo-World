@@ -481,27 +481,27 @@
         "match": "^(decorativeblocks|decorative[-_]blocks)[-_ .]"
       },
       {
-        "project": "mcw-bridges",
+        "project": "macaws-bridges",
         "label": "Macaw's Bridges",
         "match": "^(mcw[-_]bridges|macaws[-_]bridges)[-_ .]"
       },
       {
-        "project": "mcw-furniture",
+        "project": "macaws-furniture",
         "label": "Macaw's Furniture",
         "match": "^(mcw[-_]furniture|macaws[-_]furniture)[-_ .]"
       },
       {
-        "project": "mcw-doors",
+        "project": "macaws-doors",
         "label": "Macaw's Doors",
         "match": "^(mcw[-_]doors|macaws[-_]doors)[-_ .]"
       },
       {
-        "project": "mcw-roofs",
+        "project": "macaws-roofs",
         "label": "Macaw's Roofs",
         "match": "^(mcw[-_]roofs|macaws[-_]roofs)[-_ .]"
       },
       {
-        "project": "mcw-windows",
+        "project": "macaws-windows",
         "label": "Macaw's Windows",
         "match": "^(mcw[-_]windows|macaws[-_]windows)[-_ .]"
       },
