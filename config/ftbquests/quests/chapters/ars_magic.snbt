@@ -1,10 +1,10 @@
 {
 	filename: "ars_magic"
-	title: "Ars Nouveau — Magia użytkowa"
-	group: "A110000000000001"
+	title: "&d&l02 &r&fArs Nouveau: Zaklęcia"
+	group: "A110000000000005"
 	id: "A12000000000000C"
 	icon: "ars_nouveau:novice_spell_book"
-	order_index: 11
+	order_index: 1
 	images: [
 		{ image: "tokyoworld:textures/gui/quests/magic_arcana.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
 	]
