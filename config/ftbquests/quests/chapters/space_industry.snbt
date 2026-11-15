@@ -1,14 +1,20 @@
 {
 	filename: "space_industry"
 	title: "&9&lBilet poza atmosferę"
-	group: "A110000000000007"
+	group: "A110000000000003"
 	id: "A12000000000000F"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "ad_astra:nasa_workbench"
-	order_index: 0
-	images: [ { image: "tokyoworld:textures/gui/quests/exploration_adventure.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
+	order_index: 28
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000BD"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stal kosmiczna"
 			description: ["Zwykły warsztat nie przetrwa w próżni. Zbuduj sprzęt, od którego będzie zależało twoje bezpieczeństwo. Zacznij od sprawy „Stal kosmiczna”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A1300000000000BE"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Płyty kosmiczne"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Płyty kosmiczne”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A1300000000000BF"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kompresor technologiczny"
 			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Kompresor technologiczny”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A1300000000000C0"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Generator wyprawowy"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Generator wyprawowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A1300000000000C1"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Warsztat rakietowy"
 			description: ["Wcześniej zamknąłeś już sprawę „Kompresor technologiczny”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Warsztat rakietowy”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A1300000000000C2"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rafineria paliwa"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Rafineria paliwa”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A1300000000000C3"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Sprzęt tlenowy"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Sprzęt tlenowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A1300000000000C4"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ładowarka tlenu"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ładowarka tlenu”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A1300000000000C5"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Dystrybucja tlenu"
 			description: ["Wcześniej zamknąłeś już sprawę „Ładowarka tlenu”. Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Dystrybucja tlenu”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A1300000000000C6"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Silnik rakietowy"
 			description: ["Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Silnik rakietowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A1300000000000C7"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stateczniki rakiety"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Stateczniki rakiety”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A1300000000000C8"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Dziób rakiety"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Dziób rakiety”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A1300000000000C9"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kosmiczne panele"
 			description: ["Wcześniej zamknąłeś już sprawę „Stateczniki rakiety”. Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Kosmiczne panele”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A1300000000000CA"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pompa wodna"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Pompa wodna”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A1300000000000CB"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Paliwo kriogeniczne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Paliwo kriogeniczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A1300000000000CC"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Okablowanie kosmiczne"
 			description: ["Rakieta przestaje być marzeniem zapisanym na kartce. Ostatni sprawdzian to „Okablowanie kosmiczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
