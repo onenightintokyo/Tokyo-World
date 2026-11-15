@@ -1,0 +1,211 @@
+{
+	filename: "tokyo_start"
+	group: "A110000000000001"
+	id: "A120000000000001"
+	icon: { id: "minecraft:crafting_table" }
+	order_index: 0
+	images: [
+		{
+			image: "tokyoworld:textures/gui/main_menu.png"
+			width: 12.0d
+			height: 6.0d
+			x: 2.5d
+			y: -6.0d
+			order: -1
+		}
+	]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "A130000000000001"
+			x: 0.0d
+			y: 0.0d
+			icon: { id: "minecraft:oak_log" }
+			tasks: [
+				{
+					id: "A140000000000001"
+					type: "item"
+					item: { count: 1, id: "minecraft:oak_log" }
+					count: 8L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000001"
+					type: "item"
+					item: { count: 1, id: "minecraft:bread" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "A130000000000002"
+			x: 3.5d
+			y: 0.0d
+			icon: { id: "minecraft:crafting_table" }
+			dependencies: ["A130000000000001"]
+			tasks: [
+				{
+					id: "A140000000000002"
+					type: "item"
+					item: { count: 1, id: "minecraft:crafting_table" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000002"
+					type: "item"
+					item: { count: 1, id: "minecraft:torch" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "A130000000000003"
+			x: 7.0d
+			y: 0.0d
+			icon: { id: "minecraft:cobblestone" }
+			dependencies: ["A130000000000002"]
+			tasks: [
+				{
+					id: "A140000000000003"
+					type: "item"
+					item: { count: 1, id: "minecraft:cobblestone" }
+					count: 32L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000003"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "A130000000000004"
+			x: 10.5d
+			y: 0.0d
+			icon: { id: "minecraft:furnace" }
+			dependencies: ["A130000000000003"]
+			tasks: [
+				{
+					id: "A140000000000004"
+					type: "item"
+					item: { count: 1, id: "minecraft:furnace" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000004"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "A130000000000005"
+			x: 0.0d
+			y: 3.0d
+			icon: { id: "minecraft:iron_ingot" }
+			dependencies: ["A130000000000004"]
+			tasks: [
+				{
+					id: "A140000000000005"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 16L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000005"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "A130000000000006"
+			x: 3.5d
+			y: 3.0d
+			icon: { id: "minecraft:copper_ingot" }
+			dependencies: ["A130000000000005"]
+			tasks: [
+				{
+					id: "A140000000000006"
+					type: "item"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					count: 16L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000006"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal" }
+					count: 12
+				}
+			]
+		}
+		{
+			id: "A130000000000007"
+			x: 7.0d
+			y: 3.0d
+			icon: { id: "minecraft:redstone" }
+			dependencies: ["A130000000000006"]
+			tasks: [
+				{
+					id: "A140000000000007"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 16L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000007"
+					type: "item"
+					item: { count: 1, id: "minecraft:lapis_lazuli" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "A130000000000008"
+			x: 10.5d
+			y: 3.0d
+			icon: { id: "minecraft:hopper" }
+			dependencies: ["A130000000000007"]
+			tasks: [
+				{
+					id: "A140000000000008"
+					type: "item"
+					item: { count: 1, id: "minecraft:hopper" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000008"
+					type: "item"
+					item: { count: 1, id: "minecraft:chest" }
+					count: 2
+				}
+			]
+		}
+	]
+}
