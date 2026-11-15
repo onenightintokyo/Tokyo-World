@@ -1,0 +1,233 @@
+{
+	filename: "mekanism_industry"
+	title: "Mekanism — Zaawansowana fabryka"
+	group: "A110000000000001"
+	id: "A120000000000006"
+	icon: "mekanism:advanced_control_circuit"
+	order_index: 5
+	images: [
+		{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
+	]
+	quests: [
+		{
+			id: "A130000000000031"
+			title: "Kable energetyczne"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: kable energetyczne. To etap 1 z 20 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 0.0d
+			icon: "mekanism:basic_universal_cable"
+			dependencies: ["A130000000000018"]
+			tasks: [{ id: "A140000000000031" type: "item" item: "mekanism:basic_universal_cable" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000031" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000032"
+			title: "Obwody zaawansowane"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: obwody zaawansowane. To etap 2 z 20 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 0.0d
+			icon: "mekanism:advanced_control_circuit"
+			dependencies: ["A130000000000031"]
+			tasks: [{ id: "A140000000000032" type: "item" item: "mekanism:advanced_control_circuit" count: 4L consume_items: false }]
+			rewards: [{ id: "A150000000000032" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000033"
+			title: "Elitarne obwody"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: elitarne obwody. To etap 3 z 20 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 0.0d
+			icon: "mekanism:elite_control_circuit"
+			dependencies: ["A130000000000032"]
+			tasks: [{ id: "A140000000000033" type: "item" item: "mekanism:elite_control_circuit" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000033" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000034"
+			title: "Obwody najwyższej klasy"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: obwody najwyższej klasy. To etap 4 z 20 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 0.0d
+			icon: "mekanism:ultimate_control_circuit"
+			dependencies: ["A130000000000033"]
+			tasks: [{ id: "A140000000000034" type: "item" item: "mekanism:ultimate_control_circuit" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000034" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000035"
+			title: "Kompresor osmu"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: kompresor osmu. To etap 5 z 20 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 0.0d
+			icon: "mekanism:osmium_compressor"
+			dependencies: ["A130000000000034"]
+			tasks: [{ id: "A140000000000035" type: "item" item: "mekanism:osmium_compressor" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000035" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000036"
+			title: "Separator elektrolityczny"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: separator elektrolityczny. To etap 6 z 20 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 3.0d
+			icon: "mekanism:electrolytic_separator"
+			dependencies: ["A130000000000035"]
+			tasks: [{ id: "A140000000000036" type: "item" item: "mekanism:electrolytic_separator" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000036" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000037"
+			title: "Utleniacz chemiczny"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: utleniacz chemiczny. To etap 7 z 20 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 3.0d
+			icon: "mekanism:chemical_oxidizer"
+			dependencies: ["A130000000000036"]
+			tasks: [{ id: "A140000000000037" type: "item" item: "mekanism:chemical_oxidizer" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000037" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000038"
+			title: "Infuzor chemiczny"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: infuzor chemiczny. To etap 8 z 20 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 3.0d
+			icon: "mekanism:chemical_infuser"
+			dependencies: ["A130000000000037"]
+			tasks: [{ id: "A140000000000038" type: "item" item: "mekanism:chemical_infuser" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000038" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000039"
+			title: "Komora reakcji"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: komora reakcji. To etap 9 z 20 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 3.0d
+			icon: "mekanism:pressurized_reaction_chamber"
+			dependencies: ["A130000000000038"]
+			tasks: [{ id: "A140000000000039" type: "item" item: "mekanism:pressurized_reaction_chamber" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000039" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A13000000000003A"
+			title: "Kondensacja gazów"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: kondensacja gazów. To etap 10 z 20 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 3.0d
+			icon: "mekanism:rotary_condensentrator"
+			dependencies: ["A130000000000039"]
+			tasks: [{ id: "A14000000000003A" type: "item" item: "mekanism:rotary_condensentrator" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000003A" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000003B"
+			title: "Rozpuszczanie chemiczne"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: rozpuszczanie chemiczne. To etap 11 z 20 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 6.0d
+			icon: "mekanism:chemical_dissolution_chamber"
+			dependencies: ["A13000000000003A"]
+			tasks: [{ id: "A14000000000003B" type: "item" item: "mekanism:chemical_dissolution_chamber" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000003B" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A13000000000003C"
+			title: "Krystalizacja chemiczna"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: krystalizacja chemiczna. To etap 12 z 20 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 6.0d
+			icon: "mekanism:chemical_crystallizer"
+			dependencies: ["A13000000000003B"]
+			tasks: [{ id: "A14000000000003C" type: "item" item: "mekanism:chemical_crystallizer" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000003C" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A13000000000003D"
+			title: "Zbiornik płynów"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: zbiornik płynów. To etap 13 z 20 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 6.0d
+			icon: "mekanism:basic_fluid_tank"
+			dependencies: ["A13000000000003C"]
+			tasks: [{ id: "A14000000000003D" type: "item" item: "mekanism:basic_fluid_tank" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000003D" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000003E"
+			title: "Magazyn energii"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: magazyn energii. To etap 14 z 20 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 6.0d
+			icon: "mekanism:advanced_energy_cube"
+			dependencies: ["A13000000000003D"]
+			tasks: [{ id: "A14000000000003E" type: "item" item: "mekanism:advanced_energy_cube" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000003E" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A13000000000003F"
+			title: "Ogromny akumulator"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: ogromny akumulator. To etap 15 z 20 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 6.0d
+			icon: "mekanism:ultimate_energy_cube"
+			dependencies: ["A13000000000003E"]
+			tasks: [{ id: "A14000000000003F" type: "item" item: "mekanism:ultimate_energy_cube" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000003F" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000040"
+			title: "Sortowanie materiałów"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: sortowanie materiałów. To etap 16 z 20 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 9.0d
+			icon: "mekanism:logistical_sorter"
+			dependencies: ["A13000000000003F"]
+			tasks: [{ id: "A140000000000040" type: "item" item: "mekanism:logistical_sorter" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000040" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000041"
+			title: "Cyfrowa koparka"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: cyfrowa koparka. To etap 17 z 20 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 9.0d
+			icon: "mekanism:digital_miner"
+			dependencies: ["A130000000000040"]
+			tasks: [{ id: "A140000000000041" type: "item" item: "mekanism:digital_miner" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000041" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000042"
+			title: "Transport kwantowy"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: transport kwantowy. To etap 18 z 20 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 9.0d
+			icon: "mekanism:quantum_entangloporter"
+			dependencies: ["A130000000000041"]
+			tasks: [{ id: "A140000000000042" type: "item" item: "mekanism:quantum_entangloporter" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000042" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000043"
+			title: "Sieć QIO"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: sieć qio. To etap 19 z 20 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 9.0d
+			icon: "mekanism:qio_drive_array"
+			dependencies: ["A130000000000042"]
+			tasks: [{ id: "A140000000000043" type: "item" item: "mekanism:qio_drive_array" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000043" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000044"
+			title: "Teleportacja technologiczna"
+			description: ["Elektronika, przetwarzanie i logistyka. Wytwórz lub zdobądź: teleportacja technologiczna. To etap 20 z 20 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 9.0d
+			icon: "mekanism:teleporter"
+			dependencies: ["A130000000000043"]
+			tasks: [{ id: "A140000000000044" type: "item" item: "mekanism:teleporter" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000044" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+	]
+}
