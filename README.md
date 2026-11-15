@@ -1,5 +1,19 @@
 # Tokyo World — Expert Fun Modpack
 
+## Tokyo World Launcher v1.1 — uproszczony wygląd
+
+**Gotowy Windows EXE:** [Pobierz z udanej kompilacji GitHub Actions](https://github.com/onenightintokyo/Tokyo-World/actions/runs/43755226737).
+
+- Ekran w klimacie Tokyo World (Tokio, czerwone słońce, torii i neony).
+- **Nick, RAM (2–24 GB), tryb Microsoft/Offline i jeden przycisk GRAJ.**
+- Po autoryzacji Microsoft launcher aktualizuje nick na nazwę zalogowanego profilu Minecraft.
+- Token GitHub, katalog instalacji i konfiguracja modułów są ukryte pod ikoną ⚙.
+- **Nie osadzamy prywatnego tokenu w EXE.** Dodano mechanizm publikowania do osobnego publicznego repozytorium klienta, aby znajomi mogli pobierać aktualizacje bez kluczy (wymaga jednorazowego skonfigurowania przez właściciela).
+- [Instrukcja nowego launchera i dystrybucji dla znajomych](docs/TOKYO_WORLD_SIMPLE_LAUNCHER_v1.1.md).
+
+**Status:** wersja 1.1 pomyślnie skompilowana na Windows, lecz wymaga testu logowania i instalacji modów w docelowym systemie.
+
+
 ## NOWY: Tokyo World Launcher 1.0 (bez Prism)
 
 **Samodzielny, skompilowany EXE dla Windows x64:** `TokyoWorldLauncher.exe` (GitHub Actions build udany).
