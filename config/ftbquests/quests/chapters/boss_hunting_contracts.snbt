@@ -1,0 +1,187 @@
+{
+	filename: "boss_hunting_contracts"
+	title: "&c&l05 &r&fKontrakty na bossów"
+	group: "A110000000000006"
+	id: "A120000000000023"
+	icon: "minecraft:nether_star"
+	order_index: 4
+	images: [{ image: "tokyoworld:textures/gui/quests/exploration_adventure.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	quests: [
+		{
+			id: "A1300000000001E7"
+			title: "Zapasy ekspedycji"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 1/16: Zapasy ekspedycji. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 7.0d
+			y: 0.0d
+			icon: "minecraft:golden_carrot"
+			dependencies: ["A130000000000146", "A1300000000000DA"]
+			tasks: [{ id: "A1400000000001E7" type: "item" item: "minecraft:golden_carrot" count: 48L consume_items: false }, { id: "A1800000000001E7" type: "item" item: "minecraft:torch" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001E7" type: "item" item: "minecraft:golden_carrot" count: 8 }]
+		}
+		{
+			id: "A1300000000001E8"
+			title: "Żelazne wsparcie"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 2/16: Żelazne wsparcie. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 4.0d
+			icon: "minecraft:iron_ingot"
+			dependencies: ["A1300000000001E7"]
+			tasks: [{ id: "A1400000000001E8" type: "item" item: "minecraft:iron_ingot" count: 64L consume_items: false }, { id: "A1800000000001E8" type: "item" item: "minecraft:torch" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001E8" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A1300000000001E9"
+			title: "Obsydian ochronny"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 3/16: Obsydian ochronny. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 4.0d
+			icon: "minecraft:obsidian"
+			dependencies: ["A1300000000001E7"]
+			tasks: [{ id: "A1400000000001E9" type: "item" item: "minecraft:obsidian" count: 48L consume_items: false }, { id: "A1800000000001E9" type: "item" item: "minecraft:torch" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001E9" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A1300000000001EA"
+			title: "Złote jabłka"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 4/16: Złote jabłka. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 4.0d
+			icon: "minecraft:golden_apple"
+			dependencies: ["A1300000000001E7"]
+			tasks: [{ id: "A1400000000001EA" type: "item" item: "minecraft:golden_apple" count: 12L consume_items: false }, { id: "A1800000000001EA" type: "item" item: "minecraft:golden_carrot" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001EA" type: "item" item: "minecraft:emerald" count: 8 }]
+		}
+		{
+			id: "A1300000000001EB"
+			title: "Ogniste różdżki"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 5/16: Ogniste różdżki. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 4.0d
+			icon: "minecraft:blaze_rod"
+			dependencies: ["A1300000000001E7"]
+			tasks: [{ id: "A1400000000001EB" type: "item" item: "minecraft:blaze_rod" count: 32L consume_items: false }, { id: "A1800000000001EB" type: "item" item: "minecraft:golden_carrot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001EB" type: "item" item: "minecraft:diamond" count: 1 }]
+		}
+		{
+			id: "A1300000000001EC"
+			title: "Perły Endera"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 6/16: Perły Endera. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 8.0d
+			icon: "minecraft:ender_pearl"
+			dependencies: ["A1300000000001E8"]
+			tasks: [{ id: "A1400000000001EC" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }, { id: "A1800000000001EC" type: "item" item: "minecraft:golden_carrot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001EC" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+		}
+		{
+			id: "A1300000000001ED"
+			title: "Diamentowe wyposażenie"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 7/16: Diamentowe wyposażenie. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 8.0d
+			icon: "minecraft:diamond"
+			dependencies: ["A1300000000001E9"]
+			tasks: [{ id: "A1400000000001ED" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1800000000001ED" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001ED" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A1300000000001EE"
+			title: "Netherit do pancerzy"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 8/16: Netherit do pancerzy. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 8.0d
+			icon: "minecraft:netherite_ingot"
+			dependencies: ["A1300000000001EA"]
+			tasks: [{ id: "A1400000000001EE" type: "item" item: "minecraft:netherite_ingot" count: 4L consume_items: false }, { id: "A1800000000001EE" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001EE" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A1300000000001EF"
+			title: "Metal starożytnych"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 9/16: Metal starożytnych. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 8.0d
+			icon: "cataclysm:ancient_metal_ingot"
+			dependencies: ["A1300000000001EB"]
+			tasks: [{ id: "A1400000000001EF" type: "item" item: "cataclysm:ancient_metal_ingot" count: 8L consume_items: false }, { id: "A1800000000001EF" type: "item" item: "minecraft:iron_ingot" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001EF" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A1300000000001F0"
+			title: "Gwiazda Netheru"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 10/16: Gwiazda Netheru. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 12.0d
+			icon: "minecraft:nether_star"
+			dependencies: ["A1300000000001EC"]
+			tasks: [{ id: "A1400000000001F0" type: "item" item: "minecraft:nether_star" count: 2L consume_items: false }, { id: "A1800000000001F0" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001F0" type: "item" item: "minecraft:diamond" count: 1 }]
+		}
+		{
+			id: "A1300000000001F1"
+			title: "Metal Ignitium"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 11/16: Metal Ignitium. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 12.0d
+			icon: "cataclysm:ignitium_ingot"
+			dependencies: ["A1300000000001ED"]
+			tasks: [{ id: "A1400000000001F1" type: "item" item: "cataclysm:ignitium_ingot" count: 6L consume_items: false }, { id: "A1800000000001F1" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001F1" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+		}
+		{
+			id: "A1300000000001F2"
+			title: "Głowa smoka"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 12/16: Głowa smoka. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 12.0d
+			icon: "minecraft:dragon_head"
+			dependencies: ["A1300000000001EE"]
+			tasks: [{ id: "A1400000000001F2" type: "item" item: "minecraft:dragon_head" count: 1L consume_items: false }, { id: "A1800000000001F2" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001F2" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A1300000000001F3"
+			title: "Metal Cursium"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 13/16: Metal Cursium. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 12.0d
+			icon: "cataclysm:cursium_ingot"
+			dependencies: ["A1300000000001EF"]
+			tasks: [{ id: "A1400000000001F3" type: "item" item: "cataclysm:cursium_ingot" count: 4L consume_items: false }, { id: "A1800000000001F3" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }]
+			rewards: [{ id: "A1500000000001F3" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+		}
+		{
+			id: "A1300000000001F4"
+			title: "Materiały jaskiniowe"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 14/16: Materiały jaskiniowe. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 16.0d
+			icon: "alexscaves:galena"
+			dependencies: ["A1300000000001F0"]
+			tasks: [{ id: "A1400000000001F4" type: "item" item: "alexscaves:galena" count: 48L consume_items: false }, { id: "A1800000000001F4" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }]
+			rewards: [{ id: "A1500000000001F4" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A1300000000001F5"
+			title: "Płytki syntetyczne"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 15/16: Płytki syntetyczne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 16.0d
+			icon: "alexscaves:polymer_plate"
+			dependencies: ["A1300000000001F1"]
+			tasks: [{ id: "A1400000000001F5" type: "item" item: "alexscaves:polymer_plate" count: 24L consume_items: false }, { id: "A1800000000001F5" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }]
+			rewards: [{ id: "A1500000000001F5" type: "item" item: "minecraft:diamond" count: 1 }]
+		}
+		{
+			id: "A1300000000001F6"
+			title: "TOKYO BOSS COUNCIL"
+			description: ["Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe. ETAP 16/16: TOKYO BOSS COUNCIL. Wykonaj oba cele materiałowe. Nagroda finałowa po ukończeniu wszystkich czterech gałęzi."]
+			x: 7.0d
+			y: 21.5d
+			icon: "minecraft:nether_star"
+			dependencies: ["A1300000000001F4", "A1300000000001F5", "A1300000000001F2", "A1300000000001F3"]
+			tasks: [{ id: "A1400000000001F6" type: "item" item: "minecraft:nether_star" count: 4L consume_items: false }, { id: "A1800000000001F6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001F6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001F6" type: "item" item: "minecraft:totem_of_undying" count: 2 }, { id: "A1600000000001F6" type: "item" item: "minecraft:golden_apple" count: 2 }]
+		}
+	]
+}
