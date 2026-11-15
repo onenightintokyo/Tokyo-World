@@ -28,7 +28,7 @@ function Write-IfChanged([string]$relative, [string]$content) {
     $old = [System.IO.File]::ReadAllText($dest)
     if ($old -cne $content) {
         Backup-File $relative $dest
-        [System.IO.File]::WriteAllText($dest, $content, (New-Object System.Text.UTF8Encoding($false)))
+        [System.IO.File]::WriteAllText($dest, $content, ([System.Text.UTF8Encoding]::new($false)))
         Write-Host "[Tokyo World] Repaired: $relative"
     }
 }
