@@ -139,7 +139,7 @@
 			icon: "integrateddynamics:menril_log"
 			dependencies: ["A13000000000007C", "A13000000000007D", "A13000000000007E", "A13000000000007F"]
 			tasks: [{ id: "A140000000000080" type: "item" item: "integrateddynamics:menril_log" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000080" type: "item" item: "minecraft:diamond" count: 6 } { id: "A160000000000080" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000080" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A160000000000080" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
