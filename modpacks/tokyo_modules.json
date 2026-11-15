@@ -880,6 +880,16 @@
         "project": "entitytexturefeatures",
         "label": "Entity Texture Features — warianty tekstur (opcjonalnie)",
         "match": "^(ETF|entity_texture_features)[-_.]"
+      },
+      {
+        "project": "3dskinlayers",
+        "label": "3D Skin Layers — przestrzenne skiny graczy (opcjonalnie)",
+        "match": "^(skinlayers3d|3dskinlayers)[-_.]"
+      },
+      {
+        "project": "not-enough-animations",
+        "label": "Not Enough Animations — płynniejsze animacje postaci (opcjonalnie)",
+        "match": "^(notenoughanimations|NotEnoughAnimations)[-_.]"
       }
     ],
     "visual-shaders": [
