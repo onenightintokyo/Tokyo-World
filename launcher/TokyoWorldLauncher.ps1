@@ -20,41 +20,41 @@ try {
 } catch {}
 
 $colors = @{
-    bg = [Drawing.Color]::FromArgb(12,13,20)
-    side = [Drawing.Color]::FromArgb(22,24,34)
-    field = [Drawing.Color]::FromArgb(31,34,46)
-    red = [Drawing.Color]::FromArgb(225,55,76)
-    pale = [Drawing.Color]::FromArgb(240,240,246)
-    gray = [Drawing.Color]::FromArgb(155,158,171)
+    bg = [System.Drawing.Color]::FromArgb(12,13,20)
+    side = [System.Drawing.Color]::FromArgb(22,24,34)
+    field = [System.Drawing.Color]::FromArgb(31,34,46)
+    red = [System.Drawing.Color]::FromArgb(225,55,76)
+    pale = [System.Drawing.Color]::FromArgb(240,240,246)
+    gray = [System.Drawing.Color]::FromArgb(155,158,171)
 }
 function Label($parent, [string]$content, [int]$x,[int]$y,[int]$w,[int]$h,[int]$font,[bool]$strong,$fg) {
-    $l=New-Object Windows.Forms.Label
+    $l=New-Object System.Windows.Forms.Label
     $l.Text=$content
-    $l.Location=New-Object Drawing.Point($x,$y)
-    $l.Size=New-Object Drawing.Size($w,$h)
-    $weight=if($strong){[Drawing.FontStyle]::Bold}else{[Drawing.FontStyle]::Regular}
-    $l.Font=New-Object Drawing.Font('Segoe UI',$font,$weight)
+    $l.Location=New-Object System.Drawing.Point($x,$y)
+    $l.Size=New-Object System.Drawing.Size($w,$h)
+    $weight=if($strong){[System.Drawing.FontStyle]::Bold}else{[System.Drawing.FontStyle]::Regular}
+    $l.Font=New-Object System.Drawing.Font('Segoe UI',$font,$weight)
     $l.ForeColor=$fg
-    $l.BackColor=[Drawing.Color]::Transparent
+    $l.BackColor=[System.Drawing.Color]::Transparent
     $parent.Controls.Add($l)
     return $l
 }
 function Button($parent,[string]$content,[int]$x,[int]$y,[int]$w,[int]$h,$bg) {
-    $b=New-Object Windows.Forms.Button
+    $b=New-Object System.Windows.Forms.Button
     $b.Text=$content
-    $b.Location=New-Object Drawing.Point($x,$y)
-    $b.Size=New-Object Drawing.Size($w,$h)
+    $b.Location=New-Object System.Drawing.Point($x,$y)
+    $b.Size=New-Object System.Drawing.Size($w,$h)
     $b.BackColor=$bg
     $b.ForeColor=$colors.pale
-    $b.Font=New-Object Drawing.Font('Segoe UI',10,[Drawing.FontStyle]::Bold)
-    $b.FlatStyle=[Windows.Forms.FlatStyle]::Flat
+    $b.Font=New-Object System.Drawing.Font('Segoe UI',10,[System.Drawing.FontStyle]::Bold)
+    $b.FlatStyle=[System.Windows.Forms.FlatStyle]::Flat
     $b.FlatAppearance.BorderSize=0
-    $b.Cursor=[Windows.Forms.Cursors]::Hand
+    $b.Cursor=[System.Windows.Forms.Cursors]::Hand
     $parent.Controls.Add($b)
     return $b
 }
 function ErrorBox([string]$message) {
-    [Windows.Forms.MessageBox]::Show($message,'Tokyo World','OK','Error') | Out-Null
+    [System.Windows.Forms.MessageBox]::Show($message,'Tokyo World','OK','Error') | Out-Null
 }
 function Save-Preferences {
     try {
@@ -64,7 +64,7 @@ function Save-Preferences {
         $account=if($script:accounts){[string]$script:accounts.Text}else{''}
         $data=[ordered]@{prismExe=$script:prismExe;mode=$mode;nick=$nick;account=$account}
         $json=ConvertTo-Json -InputObject $data
-        [IO.File]::WriteAllText($script:settingsPath,$json,(New-Object Text.UTF8Encoding($false)))
+        [IO.File]::WriteAllText($script:settingsPath,$json,([System.Text.UTF8Encoding]::new($false)))
     } catch {}
 }
 function Find-Prism {
@@ -74,6 +74,7 @@ function Find-Prism {
     if($command){$paths.Add($command.Source)}
     if($env:LOCALAPPDATA){
         $paths.Add((Join-Path $env:LOCALAPPDATA 'Programs\PrismLauncher\prismlauncher.exe'))
+        $paths.Add((Join-Path $env:LOCALAPPDATA 'Programs\Prism Launcher\prismlauncher.exe'))
         $paths.Add((Join-Path $env:LOCALAPPDATA 'PrismLauncher\prismlauncher.exe'))
     }
     if($env:ProgramFiles){$paths.Add((Join-Path $env:ProgramFiles 'PrismLauncher\prismlauncher.exe'))}
@@ -87,10 +88,10 @@ function Find-Prism {
             return $true
         }
     }
-    $fileDialog=New-Object Windows.Forms.OpenFileDialog
+    $fileDialog=New-Object System.Windows.Forms.OpenFileDialog
     $fileDialog.Title='Wybierz plik prismlauncher.exe'
     $fileDialog.Filter='Prism Launcher|prismlauncher.exe|Pliki EXE|*.exe'
-    if($fileDialog.ShowDialog() -eq [Windows.Forms.DialogResult]::OK){
+    if($fileDialog.ShowDialog() -eq [System.Windows.Forms.DialogResult]::OK){
         $script:prismExe=$fileDialog.FileName
         Save-Preferences
         return $true
@@ -132,23 +133,23 @@ function Set-Mode {
     Save-Preferences
 }
 
-$form=New-Object Windows.Forms.Form
+$form=New-Object System.Windows.Forms.Form
 $form.Text='Tokyo World Launcher'
-$form.ClientSize=New-Object Drawing.Size(880,535)
-$form.StartPosition=[Windows.Forms.FormStartPosition]::CenterScreen
-$form.FormBorderStyle=[Windows.Forms.FormBorderStyle]::FixedSingle
+$form.ClientSize=New-Object System.Drawing.Size(880,535)
+$form.StartPosition=[System.Windows.Forms.FormStartPosition]::CenterScreen
+$form.FormBorderStyle=[System.Windows.Forms.FormBorderStyle]::FixedSingle
 $form.MaximizeBox=$false
 $form.BackColor=$colors.bg
 $form.ForeColor=$colors.pale
 
-$side=New-Object Windows.Forms.Panel
-$side.Location=New-Object Drawing.Point(0,0)
-$side.Size=New-Object Drawing.Size(320,535)
+$side=New-Object System.Windows.Forms.Panel
+$side.Location=New-Object System.Drawing.Point(0,0)
+$side.Size=New-Object System.Drawing.Size(320,535)
 $side.BackColor=$colors.side
 $form.Controls.Add($side)
-$accent=New-Object Windows.Forms.Panel
-$accent.Location=New-Object Drawing.Point(0,0)
-$accent.Size=New-Object Drawing.Size(320,5)
+$accent=New-Object System.Windows.Forms.Panel
+$accent.Location=New-Object System.Drawing.Point(0,0)
+$accent.Size=New-Object System.Drawing.Size(320,5)
 $accent.BackColor=$colors.red
 $side.Controls.Add($accent)
 [void](Label $side 'TOKYO' 26 79 265 59 34 $true $colors.pale)
@@ -161,37 +162,37 @@ $side.Controls.Add($accent)
 [void](Label $form 'URUCHOM GRĘ' 355 29 500 50 23 $true $colors.pale)
 [void](Label $form 'Wybierz tryb logowania i rozpocznij przygodę.' 355 80 500 25 10 $false $colors.gray)
 
-$script:premium=New-Object Windows.Forms.RadioButton
+$script:premium=New-Object System.Windows.Forms.RadioButton
 $script:premium.Text='Premium / Microsoft'
-$script:premium.Location=New-Object Drawing.Point(355,125)
-$script:premium.Size=New-Object Drawing.Size(245,30)
-$script:premium.Font=New-Object Drawing.Font('Segoe UI',11,[Drawing.FontStyle]::Bold)
+$script:premium.Location=New-Object System.Drawing.Point(355,125)
+$script:premium.Size=New-Object System.Drawing.Size(245,30)
+$script:premium.Font=New-Object System.Drawing.Font('Segoe UI',11,[System.Drawing.FontStyle]::Bold)
 $script:premium.ForeColor=$colors.pale
 $form.Controls.Add($script:premium)
-$script:offline=New-Object Windows.Forms.RadioButton
+$script:offline=New-Object System.Windows.Forms.RadioButton
 $script:offline.Text='Offline / Nick'
-$script:offline.Location=New-Object Drawing.Point(616,125)
-$script:offline.Size=New-Object Drawing.Size(200,30)
-$script:offline.Font=New-Object Drawing.Font('Segoe UI',11,[Drawing.FontStyle]::Bold)
+$script:offline.Location=New-Object System.Drawing.Point(616,125)
+$script:offline.Size=New-Object System.Drawing.Size(200,30)
+$script:offline.Font=New-Object System.Drawing.Font('Segoe UI',11,[System.Drawing.FontStyle]::Bold)
 $script:offline.ForeColor=$colors.pale
 $form.Controls.Add($script:offline)
 $script:caption=Label $form 'Konto Premium' 355 178 472 22 10 $false $colors.gray
 
-$script:accounts=New-Object Windows.Forms.ComboBox
-$script:accounts.Location=New-Object Drawing.Point(355,203)
-$script:accounts.Size=New-Object Drawing.Size(467,30)
-$script:accounts.DropDownStyle=[Windows.Forms.ComboBoxStyle]::DropDown
-$script:accounts.Font=New-Object Drawing.Font('Segoe UI',12)
+$script:accounts=New-Object System.Windows.Forms.ComboBox
+$script:accounts.Location=New-Object System.Drawing.Point(355,203)
+$script:accounts.Size=New-Object System.Drawing.Size(467,30)
+$script:accounts.DropDownStyle=[System.Windows.Forms.ComboBoxStyle]::DropDown
+$script:accounts.Font=New-Object System.Drawing.Font('Segoe UI',12)
 $script:accounts.BackColor=$colors.field
 $script:accounts.ForeColor=$colors.pale
 $form.Controls.Add($script:accounts)
-$script:nick=New-Object Windows.Forms.TextBox
-$script:nick.Location=New-Object Drawing.Point(355,203)
-$script:nick.Size=New-Object Drawing.Size(467,31)
-$script:nick.Font=New-Object Drawing.Font('Segoe UI',12)
+$script:nick=New-Object System.Windows.Forms.TextBox
+$script:nick.Location=New-Object System.Drawing.Point(355,203)
+$script:nick.Size=New-Object System.Drawing.Size(467,31)
+$script:nick.Font=New-Object System.Drawing.Font('Segoe UI',12)
 $script:nick.BackColor=$colors.field
 $script:nick.ForeColor=$colors.pale
-$script:nick.BorderStyle=[Windows.Forms.BorderStyle]::FixedSingle
+$script:nick.BorderStyle=[System.Windows.Forms.BorderStyle]::FixedSingle
 $form.Controls.Add($script:nick)
 $script:hint=Label $form '' 355 243 471 51 9 $false $colors.gray
 
@@ -234,7 +235,7 @@ $login.Add_Click({
     try{
         if(-not (Find-Prism)){return}
         Start-Process -FilePath $script:prismExe -WorkingDirectory (Split-Path $script:prismExe -Parent)|Out-Null
-        [Windows.Forms.MessageBox]::Show('W Prism otwórz Konta > Zarządzaj kontami > Dodaj Microsoft. Po logowaniu kliknij ODŚWIEŻ KONTA.','Tokyo World','OK','Information')|Out-Null
+        [System.Windows.Forms.MessageBox]::Show('W Prism otwórz Konta > Zarządzaj kontami > Dodaj Microsoft. Po logowaniu kliknij ODŚWIEŻ KONTA.','Tokyo World','OK','Information')|Out-Null
     }catch{ErrorBox $_.Exception.Message}
 })
 $refresh.Add_Click({Reload-MicrosoftAccounts;$script:status.Text='Odświeżono listę kont Prism.'})
