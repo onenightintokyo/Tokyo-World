@@ -84,10 +84,11 @@ internal sealed class MinecraftEngine
             MinimumRamMb = 512,
             MaximumRamMb = ramMb,
             GameLauncherName = "TokyoWorldLauncher",
-            GameLauncherVersion = "1.0"
+            GameLauncherVersion = "1.4"
         });
         if (!command.Start()) throw new InvalidOperationException("Nie udało się uruchomić procesu Minecraft.");
-        log.Report("Minecraft uruchomiony. PID " + command.Id);
+        TokyoBranding.WatchMinecraftWindow(command, log);
+        log.Report("Minecraft uruchomiony z ikoną Tokyo World TW. PID " + command.Id);
         return command;
     }
 }
