@@ -101,7 +101,7 @@ internal sealed class TokyoArtPanel : Panel
         }
 
         using (var veil = new LinearGradientBrush(new Rectangle(0, 0, 900, 310),
-                   Color.FromArgb(72, 7, 11, 23), Color.FromArgb(50, 12, 13, 27), 0))
+                   Color.FromArgb(72, 7, 11, 23), Color.FromArgb(50, 12, 13, 27), 0f))
             g.FillRectangle(veil, 0, 0, 900, 310);
 
         using (var name = new Font("Segoe UI Black", 64f, FontStyle.Bold, GraphicsUnit.Pixel))
