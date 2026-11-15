@@ -1,0 +1,165 @@
+{
+	filename: "metallurgy"
+	title: "Thermal & Metallurgy — Stopy"
+	group: "A110000000000001"
+	id: "A120000000000013"
+	icon: "thermal:tin_ingot"
+	order_index: 18
+	images: [ { image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
+	quests: [
+		{
+			id: "A1300000000000FB"
+			title: "Cyna"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: cyna. Element 1 z 14 tej ścieżki."]
+			x: 0.0d
+			y: 0.0d
+			icon: "thermal:tin_ingot"
+			dependencies: ["A130000000000006"]
+			tasks: [{ id: "A1400000000000FB" type: "item" item: "thermal:tin_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000000FB" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000FC"
+			title: "Ołów"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: ołów. Element 2 z 14 tej ścieżki."]
+			x: 3.5d
+			y: 0.0d
+			icon: "thermal:lead_ingot"
+			dependencies: ["A1300000000000FB"]
+			tasks: [{ id: "A1400000000000FC" type: "item" item: "thermal:lead_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000000FC" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000FD"
+			title: "Nikiel"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: nikiel. Element 3 z 14 tej ścieżki."]
+			x: 7.0d
+			y: 0.0d
+			icon: "thermal:nickel_ingot"
+			dependencies: ["A1300000000000FC"]
+			tasks: [{ id: "A1400000000000FD" type: "item" item: "thermal:nickel_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000000FD" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000FE"
+			title: "Srebro"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: srebro. Element 4 z 14 tej ścieżki."]
+			x: 10.5d
+			y: 0.0d
+			icon: "thermal:silver_ingot"
+			dependencies: ["A1300000000000FD"]
+			tasks: [{ id: "A1400000000000FE" type: "item" item: "thermal:silver_ingot" count: 12L consume_items: false }]
+			rewards: [{ id: "A1500000000000FE" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000000FF"
+			title: "Elektrum"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: elektrum. Element 5 z 14 tej ścieżki."]
+			x: 14.0d
+			y: 0.0d
+			icon: "thermal:electrum_ingot"
+			dependencies: ["A1300000000000FE"]
+			tasks: [{ id: "A1400000000000FF" type: "item" item: "thermal:electrum_ingot" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000000FF" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000100"
+			title: "Brąz"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: brąz. Element 6 z 14 tej ścieżki."]
+			x: 0.0d
+			y: 3.0d
+			icon: "thermal:bronze_ingot"
+			dependencies: ["A1300000000000FF"]
+			tasks: [{ id: "A140000000000100" type: "item" item: "thermal:bronze_ingot" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000100" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A130000000000101"
+			title: "Invar"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: invar. Element 7 z 14 tej ścieżki."]
+			x: 3.5d
+			y: 3.0d
+			icon: "thermal:invar_ingot"
+			dependencies: ["A130000000000100"]
+			tasks: [{ id: "A140000000000101" type: "item" item: "thermal:invar_ingot" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000101" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000102"
+			title: "Rudy cyny"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: rudy cyny. Element 8 z 14 tej ścieżki."]
+			x: 7.0d
+			y: 3.0d
+			icon: "thermal:tin_ore"
+			dependencies: ["A130000000000101"]
+			tasks: [{ id: "A140000000000102" type: "item" item: "thermal:tin_ore" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000102" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A130000000000103"
+			title: "Rudy srebra"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: rudy srebra. Element 9 z 14 tej ścieżki."]
+			x: 10.5d
+			y: 3.0d
+			icon: "thermal:silver_ore"
+			dependencies: ["A130000000000102"]
+			tasks: [{ id: "A140000000000103" type: "item" item: "thermal:silver_ore" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000103" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000104"
+			title: "Rudy niklu"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: rudy niklu. Element 10 z 14 tej ścieżki."]
+			x: 14.0d
+			y: 3.0d
+			icon: "thermal:nickel_ore"
+			dependencies: ["A130000000000103"]
+			tasks: [{ id: "A140000000000104" type: "item" item: "thermal:nickel_ore" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000104" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A130000000000105"
+			title: "Rudy ołowiu"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: rudy ołowiu. Element 11 z 14 tej ścieżki."]
+			x: 0.0d
+			y: 6.0d
+			icon: "thermal:lead_ore"
+			dependencies: ["A130000000000104"]
+			tasks: [{ id: "A140000000000105" type: "item" item: "thermal:lead_ore" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000105" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000106"
+			title: "Apatyt"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: apatyt. Element 12 z 14 tej ścieżki."]
+			x: 3.5d
+			y: 6.0d
+			icon: "thermal:apatite_ore"
+			dependencies: ["A130000000000105"]
+			tasks: [{ id: "A140000000000106" type: "item" item: "thermal:apatite_ore" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000106" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A130000000000107"
+			title: "Cynober"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: cynober. Element 13 z 14 tej ścieżki."]
+			x: 7.0d
+			y: 6.0d
+			icon: "thermal:cinnabar_ore"
+			dependencies: ["A130000000000106"]
+			tasks: [{ id: "A140000000000107" type: "item" item: "thermal:cinnabar_ore" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000107" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000108"
+			title: "Siarka"
+			description: ["Przemysłowe stopy, rudy i podstawy metalurgii. Pozyskaj lub wytwórz: siarka. Element 14 z 14 tej ścieżki."]
+			x: 10.5d
+			y: 6.0d
+			icon: "thermal:sulfur_ore"
+			dependencies: ["A130000000000107"]
+			tasks: [{ id: "A140000000000108" type: "item" item: "thermal:sulfur_ore" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000108" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+	]
+}
