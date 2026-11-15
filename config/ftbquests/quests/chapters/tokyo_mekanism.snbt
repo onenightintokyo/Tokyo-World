@@ -1,6 +1,6 @@
 {
 	filename: "tokyo_mekanism"
-	title: "Mekanism — Elektryfikacja"
+	title: "&6&l03 &r&fMekanism: Elektryfikacja"
 	group: "A110000000000001"
 	id: "A120000000000003"
 	icon: "mekanism:metallurgic_infuser"
