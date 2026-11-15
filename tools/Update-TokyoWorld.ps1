@@ -70,6 +70,52 @@ foreach ($folder in $ManagedFolders) {
     }
 }
 
+
+# Optional visual setup for existing Tokyo World installations. Keep edits surgical,
+# back up each changed file and never block Minecraft startup if a layout differs.
+try {
+    $layout = Join-Path $GameDir 'config\fancymenu\customization\title_screen_layout.txt'
+    $menuImage = Join-Path $GameDir 'config\fancymenu\assets\tokyo_world_menu_background.png'
+    if ((Test-Path -LiteralPath $layout -PathType Leaf) -and (Test-Path -LiteralPath $menuImage -PathType Leaf)) {
+        $before = [System.IO.File]::ReadAllText($layout)
+        $needle = '(?ms)(menu_background\s*\{\s*instance_identifier\s*=\s*[^\r\n]+\r?\n\s*background_type\s*=\s*image\s*\r?\n\s*show_background\s*=\s*)false(\s*\r?\n\s*image_path\s*=\s*\[source:local\]/config/fancymenu/assets/tokyo_world_menu_background\.png)'
+        $after = [System.Text.RegularExpressions.Regex]::Replace($before, $needle, '1true2')
+        if ($after -cne $before) {
+            $relative = 'config\fancymenu\customization\title_screen_layout.txt'
+            $backup = Join-Path $backupRoot $relative
+            New-Item -ItemType Directory -Force -Path (Split-Path -Parent $backup) | Out-Null
+            Copy-Item -LiteralPath $layout -Destination $backup -Force
+            [System.IO.File]::WriteAllText($layout, $after, (New-Object System.Text.UTF8Encoding($false)))
+            Write-Host '[Tokyo World] FancyMenu: activated Tokyo World background.'
+        }
+    }
+
+    $pack = Join-Path $GameDir 'resourcepacks\TokyoWorld_Visuals.zip'
+    $options = Join-Path $GameDir 'options.txt'
+    if ((Test-Path -LiteralPath $pack -PathType Leaf) -and (Test-Path -LiteralPath $options -PathType Leaf)) {
+        $before = [System.IO.File]::ReadAllText($options)
+        $pattern = '(?m)^resourcePacks:(\[[^\r\n]*\])'
+        $match = [System.Text.RegularExpressions.Regex]::Match($before, $pattern)
+        if ($match.Success) {
+            $names = @($match.Groups[1].Value | ConvertFrom-Json)
+            $wanted = 'file/TokyoWorld_Visuals.zip'
+            if ($names -notcontains $wanted) {
+                $names = @($names) + @($wanted)
+                $serialized = ConvertTo-Json -InputObject $names -Compress
+                $after = $before.Substring(0, $match.Index) + 'resourcePacks:' + $serialized + $before.Substring($match.Index + $match.Length)
+                $backup = Join-Path $backupRoot 'options.txt'
+                New-Item -ItemType Directory -Force -Path (Split-Path -Parent $backup) | Out-Null
+                Copy-Item -LiteralPath $options -Destination $backup -Force
+                [System.IO.File]::WriteAllText($options, $after, (New-Object System.Text.UTF8Encoding($false)))
+                Write-Host '[Tokyo World] Enabled TokyoWorld_Visuals resource pack.'
+            }
+        }
+    }
+}
+catch {
+    Write-Warning ('[Tokyo World] Optional visual setup skipped: ' + $_.Exception.Message)
+}
+
 Write-Host "[Tokyo World] Done. Files copied: $changed"
 Write-Host "[Tokyo World] Mods are NOT updated by this script. Packwiz will handle that later."
 exit 0
