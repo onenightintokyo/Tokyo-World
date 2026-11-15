@@ -1,10 +1,10 @@
 {
 	filename: "immersive_industry"
-	title: "Immersive Engineering — Stal i przemysł"
-	group: "A110000000000001"
+	title: "&b&l03 &r&fImmersive Engineering"
+	group: "A110000000000002"
 	id: "A120000000000007"
 	icon: "immersiveengineering:blast_furnace"
-	order_index: 6
+	order_index: 2
 	images: [
 		{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
 	]
