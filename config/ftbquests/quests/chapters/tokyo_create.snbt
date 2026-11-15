@@ -1,0 +1,212 @@
+{
+	filename: "tokyo_create"
+	group: "A110000000000001"
+	id: "A120000000000002"
+	icon: { id: "create:andesite_alloy" }
+	order_index: 1
+	images: [
+		{
+			image: "tokyoworld:textures/gui/quests/tech_automation.png"
+			width: 12.0d
+			height: 6.0d
+			x: 2.5d
+			y: -6.0d
+			order: -1
+		}
+	]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "A130000000000009"
+			x: 0.0d
+			y: 0.0d
+			icon: { id: "create:andesite_alloy" }
+			dependencies: ["A130000000000005"]
+			tasks: [
+				{
+					id: "A140000000000009"
+					type: "item"
+					item: { count: 1, id: "create:andesite_alloy" }
+					count: 8L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000009"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "A13000000000000A"
+			x: 3.5d
+			y: 0.0d
+			icon: { id: "create:shaft" }
+			dependencies: ["A130000000000009"]
+			tasks: [
+				{
+					id: "A14000000000000A"
+					type: "item"
+					item: { count: 1, id: "create:shaft" }
+					count: 8L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000000A"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "A13000000000000B"
+			x: 7.0d
+			y: 0.0d
+			icon: { id: "create:cogwheel" }
+			dependencies: ["A13000000000000A"]
+			tasks: [
+				{
+					id: "A14000000000000B"
+					type: "item"
+					item: { count: 1, id: "create:cogwheel" }
+					count: 8L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000000B"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "A13000000000000C"
+			x: 10.5d
+			y: 0.0d
+			icon: { id: "create:water_wheel" }
+			dependencies: ["A13000000000000B"]
+			tasks: [
+				{
+					id: "A14000000000000C"
+					type: "item"
+					item: { count: 1, id: "create:water_wheel" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000000C"
+					type: "item"
+					item: { count: 1, id: "minecraft:bucket" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "A13000000000000D"
+			x: 0.0d
+			y: 3.0d
+			icon: { id: "create:mechanical_press" }
+			dependencies: ["A13000000000000C"]
+			tasks: [
+				{
+					id: "A14000000000000D"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_press" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000000D"
+					type: "item"
+					item: { count: 1, id: "minecraft:gold_ingot" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "A13000000000000E"
+			x: 3.5d
+			y: 3.0d
+			icon: { id: "create:belt_connector" }
+			dependencies: ["A13000000000000D"]
+			tasks: [
+				{
+					id: "A14000000000000E"
+					type: "item"
+					item: { count: 1, id: "create:belt_connector" }
+					count: 4L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000000E"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 6
+				}
+			]
+		}
+		{
+			id: "A13000000000000F"
+			x: 7.0d
+			y: 3.0d
+			icon: { id: "create:mechanical_mixer" }
+			dependencies: ["A13000000000000E"]
+			tasks: [
+				{
+					id: "A14000000000000F"
+					type: "item"
+					item: { count: 1, id: "create:mechanical_mixer" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000000F"
+					type: "item"
+					item: { count: 1, id: "minecraft:blaze_powder" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "A130000000000010"
+			x: 10.5d
+			y: 3.0d
+			icon: { id: "create:precision_mechanism" }
+			dependencies: ["A13000000000000F"]
+			tasks: [
+				{
+					id: "A140000000000010"
+					type: "item"
+					item: { count: 1, id: "create:precision_mechanism" }
+					count: 2L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000010"
+					type: "item"
+					item: { count: 1, id: "minecraft:diamond" }
+					count: 2
+				}
+			]
+		}
+	]
+}
