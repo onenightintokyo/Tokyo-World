@@ -160,38 +160,26 @@ try {
 } catch { Write-Warning "[Tokyo World] Quest artwork import skipped: $($_.Exception.Message)" }
 
 
-# Tokyo World Expert Fun tuning: retain existing mod defaults except for selected keys.
-# More expensive Digital Miner, faster operation, easier JEI filters and modest power tuning.
+# Non-stock Expert Fun tuning using keys confirmed in the player's existing 1.20.1 configs.
+# All edits are backed up and do not modify world saves.
 try {
     $usageRel = 'config\Mekanism\machine-usage.toml'
     $usageFile = Join-Path $GameDir $usageRel
     if (Test-Path -LiteralPath $usageFile -PathType Leaf) {
-        $text = [System.IO.File]::ReadAllText($usageFile)
-        $text = [regex]::Replace($text, '(?m)^(\s*digitalMiner\s*=\s*")[0-9]+("\s*)
-Write-Host "[Tokyo World] Safe config sync complete. Extra mods require a separate installation step."
-exit 0
-, '120002')
-        $text = [regex]::Replace($text, '(?m)^(\s*crusher\s*=\s*")[0-9]+("\s*)
-Write-Host "[Tokyo World] Safe config sync complete. Extra mods require a separate installation step."
-exit 0
-, '1652')
-        Write-IfChanged $usageRel $text
+        $original = [System.IO.File]::ReadAllText($usageFile)
+        $modified = $original.Replace('digitalMiner = "1000"', 'digitalMiner = "2000"')
+        $modified = $modified.Replace('crusher = "50"', 'crusher = "65"')
+        Write-IfChanged $usageRel $modified
     }
     $generalRel = 'config\Mekanism\general.toml'
     $generalFile = Join-Path $GameDir $generalRel
     if (Test-Path -LiteralPath $generalFile -PathType Leaf) {
-        $text = [System.IO.File]::ReadAllText($generalFile)
-        $text = [regex]::Replace($text, '(?m)^(\s*easyMinerFilters\s*=\s*)false(\s*)
-Write-Host "[Tokyo World] Safe config sync complete. Extra mods require a separate installation step."
-exit 0
-, '1true2')
-        $text = [regex]::Replace($text, '(?m)^(\s*ticksPerMine\s*=\s*)80(\s*)
-Write-Host "[Tokyo World] Safe config sync complete. Extra mods require a separate installation step."
-exit 0
-, '1602')
-        Write-IfChanged $generalRel $text
+        $original = [System.IO.File]::ReadAllText($generalFile)
+        $modified = $original.Replace('easyMinerFilters = false', 'easyMinerFilters = true')
+        $modified = $modified.Replace('ticksPerMine = 80', 'ticksPerMine = 60')
+        Write-IfChanged $generalRel $modified
     }
-} catch { Write-Warning "[Tokyo World] Mekanism tuning skipped: $($_.Exception.Message)" }
+} catch { Write-Warning "[Tokyo World] Mekanism Expert Fun settings skipped: $($_.Exception.Message)" }
 
 Write-Host "[Tokyo World] Done. Files copied: $copied"
 Write-Host "[Tokyo World] Safe config sync complete. Extra mods require a separate installation step."
