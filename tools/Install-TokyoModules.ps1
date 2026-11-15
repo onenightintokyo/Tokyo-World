@@ -260,16 +260,33 @@ if (!$Apply) {
 $staging = Join-Path $GameDir '.tokyo-world-mod-staging'
 New-Item -Path $staging -ItemType Directory -Force | Out-Null
 $added = New-Object 'System.Collections.Generic.List[string]'
+$installedSuccessfully = $false
 try {
     foreach ($mod in $toInstall) {
         $target = Join-Path $modsDir $mod.filename
         if (Test-Path -LiteralPath $target) { throw "File already exists: $target" }
         $temp = Join-Path $staging $mod.filename
-        Write-Host "[Tokyo World] Downloading $($mod.filename)"
-        Invoke-WebRequest -Uri $mod.url -UseBasicParsing -TimeoutSec 120 -OutFile $temp
-        if ((Get-FileHash -LiteralPath $temp -Algorithm SHA512).Hash -ine $mod.sha512) {
-            throw "SHA-512 checksum mismatch: $($mod.filename)"
+        if ((Test-Path -LiteralPath $temp -PathType Leaf) -and
+            (Get-FileHash -LiteralPath $temp -Algorithm SHA512).Hash -ieq $mod.sha512) {
+            Write-Host "[Tokyo World] Cached verified JAR: $($mod.filename)"
+            continue
         }
+        $done = $false
+        foreach ($attempt in 1..3) {
+            try {
+                Write-Host "[Tokyo World] Downloading $($mod.filename) [attempt $attempt/3]"
+                Invoke-WebRequest -Uri $mod.url -UseBasicParsing -TimeoutSec 180 -OutFile $temp
+                if ((Get-FileHash -LiteralPath $temp -Algorithm SHA512).Hash -ine $mod.sha512) {
+                    throw "SHA-512 checksum mismatch: $($mod.filename)"
+                }
+                $done = $true
+                break
+            } catch {
+                Write-Warning ("[Tokyo World] Download failed " + $mod.filename + " - " + $_.Exception.Message)
+                if (Test-Path -LiteralPath $temp) { Remove-Item -LiteralPath $temp -Force }
+            }
+        }
+        if (-not $done) { throw "Could not download and verify $($mod.filename) after 3 attempts" }
     }
     foreach ($mod in $toInstall) {
         $target = Join-Path $modsDir $mod.filename
@@ -280,6 +297,7 @@ try {
     New-Item -Path $lockdir -ItemType Directory -Force | Out-Null
     $lockfile = Join-Path $lockdir ('installed-' + $Profile.ToLowerInvariant() + '.json')
     ConvertTo-Json -InputObject $toInstall -Depth 8 | Out-File -LiteralPath $lockfile -Encoding UTF8
+    $installedSuccessfully = $true
     Write-Host "[Tokyo World] INSTALLED $($toInstall.Count) JAR files with verified SHA-512."
     Write-Host "[Tokyo World] Restart the instance. If Forge reports a dependency error, share the Prism log."
 } catch {
@@ -287,5 +305,9 @@ try {
     Write-Error "[Tokyo World] Install cancelled / rolled back: $($_.Exception.Message)"
     exit 1
 } finally {
-    if (Test-Path -LiteralPath $staging) { Remove-Item -LiteralPath $staging -Force -Recurse -ErrorAction SilentlyContinue }
+    # Keep verified downloads in staging on failure, allowing a retry without
+    # downloading dozens of unchanged JARs again. Remove only after success.
+    if ($installedSuccessfully -and (Test-Path -LiteralPath $staging)) {
+        Remove-Item -LiteralPath $staging -Force -Recurse -ErrorAction SilentlyContinue
+    }
 }
