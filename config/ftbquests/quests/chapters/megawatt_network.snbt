@@ -10,7 +10,7 @@
 		{
 			id: "A130000000000187"
 			title: "Pierwsze kable"
-			description: ["Mały generator przestaje wystarczać, kiedy baza żyje także w nocy. Pomyśl o rezerwie mocy. Zacznij od „Pierwsze kable”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Mały generator przestaje wystarczać, kiedy baza żyje także w nocy. Pomyśl o rezerwie mocy. Zacznij od sprawy „Pierwsze kable”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "powah:energy_cable_starter"
@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000188"
 			title: "Rezerwa energii"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Rezerwa energii” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Rezerwa energii”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 4.0d
 			icon: "powah:energy_cell_starter"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000189"
 			title: "Stalowe obudowy"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Stalowe obudowy” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Stalowe obudowy”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mekanism:steel_casing"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000018A"
 			title: "Generatory cieplne"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Generatory cieplne” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Generatory cieplne”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 8.0d
 			icon: "powah:thermo_generator_starter"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000018B"
 			title: "Panele słoneczne"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Panele słoneczne” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Stalowe obudowy”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Panele słoneczne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 8.0d
 			icon: "powah:solar_panel_starter"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000018C"
 			title: "Elektroliza wodna"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Elektroliza wodna” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Elektroliza wodna”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 12.0d
 			icon: "mekanism:electrolytic_separator"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000018D"
 			title: "Sfery energetyczne"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Sfery energetyczne” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Sfery energetyczne”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 12.0d
 			icon: "powah:energizing_orb"
@@ -87,7 +87,7 @@
 		{
 			id: "A13000000000018E"
 			title: "Pręty energetyczne"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Pręty energetyczne” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Pręty energetyczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "powah:energizing_rod_starter"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000018F"
 			title: "Reaktory startowe"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Reaktory startowe” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Pręty energetyczne”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Reaktory startowe”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 20.0d
 			icon: "powah:reactor_starter"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000190"
 			title: "Reaktory podstawowe"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Reaktory podstawowe” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Reaktory podstawowe”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 20.0d
 			icon: "powah:reactor_basic"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000191"
 			title: "Reaktory utwardzane"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Reaktory utwardzane” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Reaktory utwardzane”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 24.0d
 			icon: "powah:reactor_hardened"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000192"
 			title: "Magazyny FE"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Magazyny FE” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Magazyny FE”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 24.0d
 			icon: "mekanism:advanced_energy_cube"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000193"
 			title: "Reaktory Blazing"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Reaktory Blazing” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Reaktory utwardzane”. Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Reaktory Blazing”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 28.0d
 			icon: "powah:reactor_blazing"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000194"
 			title: "Reaktory Niotic"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Reaktory Niotic” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Reaktory Niotic”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 28.0d
 			icon: "powah:reactor_niotic"
@@ -164,7 +164,7 @@
 		{
 			id: "A130000000000195"
 			title: "Reaktory Nitro"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Reaktory Nitro” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Reaktory Nitro”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "powah:reactor_nitro"
@@ -175,7 +175,7 @@
 		{
 			id: "A130000000000196"
 			title: "TOKYO ENERGY GRID"
-			description: ["Możesz rozbudowywać zakład bez ciągłego strachu przed brakiem energii. Ostatnia próba to „TOKYO ENERGY GRID”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Możesz rozbudowywać zakład bez ciągłego strachu przed brakiem energii. Ostatni sprawdzian to „TOKYO ENERGY GRID”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "mekanism:ultimate_energy_cube"

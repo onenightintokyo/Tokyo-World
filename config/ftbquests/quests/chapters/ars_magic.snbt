@@ -12,7 +12,7 @@
 		{
 			id: "A130000000000091"
 			title: "Pierwsza księga zaklęć"
-			description: ["Pierwszy czar jest tylko obietnicą. Prawdziwa sztuka polega na zrozumieniu Source i własnych możliwości. Zacznij od „Pierwsza księga zaklęć”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Pierwszy czar jest tylko obietnicą. Prawdziwa sztuka polega na zrozumieniu Source i własnych możliwości. Zacznij od sprawy „Pierwsza księga zaklęć”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "ars_nouveau:novice_spell_book"
@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000092"
 			title: "Klejnot źródła"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Klejnot źródła” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Klejnot źródła”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 4.0d
 			icon: "ars_nouveau:source_gem"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000093"
 			title: "Magazyn Source"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Magazyn Source” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Magazyn Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 4.0d
 			icon: "ars_nouveau:source_jar"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000094"
 			title: "Komora nasycania"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Komora nasycania” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Komora nasycania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "ars_nouveau:imbuement_chamber"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000095"
 			title: "Aparat zaklinania"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Aparat zaklinania” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Magazyn Source”. Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Aparat zaklinania”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 8.0d
 			icon: "ars_nouveau:enchanting_apparatus"
@@ -67,7 +67,7 @@
 		{
 			id: "A130000000000096"
 			title: "Magiczne piedestały"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Magiczne piedestały” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Magiczne piedestały”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 12.0d
 			icon: "ars_nouveau:arcane_pedestal"
@@ -78,7 +78,7 @@
 		{
 			id: "A130000000000097"
 			title: "Rdzeń magiczny"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Rdzeń magiczny” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Rdzeń magiczny”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "ars_nouveau:arcane_core"
@@ -89,7 +89,7 @@
 		{
 			id: "A130000000000098"
 			title: "Przekazywanie Source"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Przekazywanie Source” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Przekazywanie Source”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "ars_nouveau:relay"
@@ -100,7 +100,7 @@
 		{
 			id: "A130000000000099"
 			title: "Zbieracz Source"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Zbieracz Source” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Przekazywanie Source”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Zbieracz Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 20.0d
 			icon: "ars_nouveau:relay_collector"
@@ -111,7 +111,7 @@
 		{
 			id: "A13000000000009A"
 			title: "Farma energii magicznej"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Farma energii magicznej” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Farma energii magicznej”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "ars_nouveau:agronomic_sourcelink"
@@ -122,7 +122,7 @@
 		{
 			id: "A13000000000009B"
 			title: "Wieża zaklęć"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Wieża zaklęć” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Wieża zaklęć”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 24.0d
 			icon: "ars_nouveau:spell_turret"
@@ -133,7 +133,7 @@
 		{
 			id: "A13000000000009C"
 			title: "Pryzmat zaklęć"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Pryzmat zaklęć” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Pryzmat zaklęć”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 24.0d
 			icon: "ars_nouveau:spell_prism"
@@ -144,7 +144,7 @@
 		{
 			id: "A13000000000009D"
 			title: "Zaawansowane zaklęcia"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Zaawansowane zaklęcia” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Wieża zaklęć”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Zaawansowane zaklęcia”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "ars_nouveau:apprentice_spell_book"
@@ -155,7 +155,7 @@
 		{
 			id: "A13000000000009E"
 			title: "Magiczny magazyn"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Magiczny magazyn” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Magiczny magazyn”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 28.0d
 			icon: "ars_nouveau:storage_lectern"
@@ -166,7 +166,7 @@
 		{
 			id: "A13000000000009F"
 			title: "Arcymag"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Arcymag” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Arcymag”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "ars_nouveau:archmage_spell_book"
@@ -177,7 +177,7 @@
 		{
 			id: "A1300000000000A0"
 			title: "Miecz zaklinacza"
-			description: ["Księga przestała być zabawką, a stała się prawdziwym narzędziem. Ostatnia próba to „Miecz zaklinacza”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Księga przestała być zabawką, a stała się prawdziwym narzędziem. Ostatni sprawdzian to „Miecz zaklinacza”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "ars_nouveau:enchanters_sword"

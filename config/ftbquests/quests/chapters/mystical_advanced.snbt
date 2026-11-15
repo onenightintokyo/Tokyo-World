@@ -10,7 +10,7 @@
 		{
 			id: "A1300000000000A1"
 			title: "Esencja Inferium"
-			description: ["Niektóre plony dają więcej niż jedzenie. Magia roślin wymaga jednak cierpliwości i właściwego podłoża. Zacznij od „Esencja Inferium”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Niektóre plony dają więcej niż jedzenie. Magia roślin wymaga jednak cierpliwości i właściwego podłoża. Zacznij od sprawy „Esencja Inferium”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "mysticalagriculture:inferium_essence"
@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000000A2"
 			title: "Kryształy Prosperity"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Kryształy Prosperity” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Kryształy Prosperity”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 4.0d
 			icon: "mysticalagriculture:prosperity_gemstone"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000000A3"
 			title: "Kryształ infuzji"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Kryształ infuzji” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Kryształ infuzji”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mysticalagriculture:infusion_crystal"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000000A4"
 			title: "Pierwsze podłoże esencji"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Pierwsze podłoże esencji” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Pierwsze podłoże esencji”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 8.0d
 			icon: "mysticalagriculture:inferium_farmland"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000000A5"
 			title: "Ulepszone podłoże esencji"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Ulepszone podłoże esencji” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Kryształ infuzji”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Ulepszone podłoże esencji”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 8.0d
 			icon: "mysticalagriculture:prudentium_farmland"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000000A6"
 			title: "Ołtarz infuzji"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Ołtarz infuzji” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Ołtarz infuzji”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 12.0d
 			icon: "mysticalagriculture:infusion_altar"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000000A7"
 			title: "Piedestały infuzji"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Piedestały infuzji” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Piedestały infuzji”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 12.0d
 			icon: "mysticalagriculture:infusion_pedestal"
@@ -87,7 +87,7 @@
 		{
 			id: "A1300000000000A8"
 			title: "Naczynie esencji"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Naczynie esencji” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Naczynie esencji”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "mysticalagriculture:essence_vessel"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000000A9"
 			title: "Przerób nasion"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Przerób nasion” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Naczynie esencji”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Przerób nasion”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 20.0d
 			icon: "mysticalagriculture:seed_reprocessor"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000000AA"
 			title: "Żniwiarz mistyczny"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Żniwiarz mistyczny” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Żniwiarz mistyczny”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 20.0d
 			icon: "mysticalagriculture:harvester"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000000AB"
 			title: "Esencja Tertium"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Esencja Tertium” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Esencja Tertium”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 24.0d
 			icon: "mysticalagriculture:tertium_essence"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000000AC"
 			title: "Esencja Imperium"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Esencja Imperium” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Esencja Imperium”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 24.0d
 			icon: "mysticalagriculture:imperium_essence"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000000AD"
 			title: "Esencja Supremium"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Esencja Supremium” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Esencja Tertium”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Esencja Supremium”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 28.0d
 			icon: "mysticalagriculture:supremium_essence"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000000AE"
 			title: "Supremium farmland"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Supremium farmland” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Supremium farmland”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 28.0d
 			icon: "mysticalagriculture:supremium_farmland"
@@ -164,7 +164,7 @@
 		{
 			id: "A1300000000000AF"
 			title: "Mistrzowski kryształ"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Mistrzowski kryształ” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Mistrzowski kryształ”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "mysticalagriculture:master_infusion_crystal"
@@ -175,7 +175,7 @@
 		{
 			id: "A1300000000000B0"
 			title: "Piedestał przebudzenia"
-			description: ["Twoje pola potrafią produkować materiały, których kiedyś trzeba było szukać godzinami. Ostatnia próba to „Piedestał przebudzenia”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Twoje pola potrafią produkować materiały, których kiedyś trzeba było szukać godzinami. Ostatni sprawdzian to „Piedestał przebudzenia”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "mysticalagriculture:awakening_pedestal"

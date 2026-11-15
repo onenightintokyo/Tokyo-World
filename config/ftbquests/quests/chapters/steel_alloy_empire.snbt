@@ -10,7 +10,7 @@
 		{
 			id: "A130000000000177"
 			title: "Pierwsza huta"
-			description: ["Najlepsze konstrukcje potrzebują materiałów, których nie znajdziesz w gotowej skrzyni. Zbuduj własne zaplecze hutnicze. Zacznij od „Pierwsza huta”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Najlepsze konstrukcje potrzebują materiałów, których nie znajdziesz w gotowej skrzyni. Zbuduj własne zaplecze hutnicze. Zacznij od sprawy „Pierwsza huta”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "immersiveengineering:blast_furnace"
@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000178"
 			title: "Stal konstrukcyjna"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Stal konstrukcyjna” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Stal konstrukcyjna”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "immersiveengineering:ingot_steel"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000179"
 			title: "Warsztat obróbki"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Warsztat obróbki” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Warsztat obróbki”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "immersiveengineering:workbench"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000017A"
 			title: "Cewki wysokiego napięcia"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Cewki wysokiego napięcia” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Cewki wysokiego napięcia”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "immersiveengineering:capacitor_hv"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000017B"
 			title: "Kruszenie przemysłowe"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Kruszenie przemysłowe” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Warsztat obróbki”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Kruszenie przemysłowe”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "immersiveengineering:crusher"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000017C"
 			title: "Prasy hutnicze"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Prasy hutnicze” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Prasy hutnicze”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 12.0d
 			icon: "immersiveengineering:metal_press"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000017D"
 			title: "Kondensatory Ender IO"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Kondensatory Ender IO” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Kondensatory Ender IO”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "enderio:basic_capacitor"
@@ -87,7 +87,7 @@
 		{
 			id: "A13000000000017E"
 			title: "Obudowy wielofunkcyjne"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Obudowy wielofunkcyjne” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Obudowy wielofunkcyjne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "enderio:void_chassis"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000017F"
 			title: "Wytapiacz stopów"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Wytapiacz stopów” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Obudowy wielofunkcyjne”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Wytapiacz stopów”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 20.0d
 			icon: "enderio:alloy_smelter"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000180"
 			title: "Młyny SAG"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Młyny SAG” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Młyny SAG”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "enderio:sag_mill"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000181"
 			title: "Stopy przewodzące"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Stopy przewodzące” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Stopy przewodzące”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 24.0d
 			icon: "enderio:conductive_alloy_ingot"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000182"
 			title: "Stopy energetyczne"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Stopy energetyczne” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Stopy energetyczne”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 24.0d
 			icon: "enderio:energetic_alloy_ingot"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000183"
 			title: "Stopy pulsujące"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Stopy pulsujące” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Stopy przewodzące”. Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Stopy pulsujące”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "enderio:vibrant_alloy_ingot"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000184"
 			title: "Elektrum techniczne"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Elektrum techniczne” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Elektrum techniczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 28.0d
 			icon: "thermal:electrum_ingot"
@@ -164,7 +164,7 @@
 		{
 			id: "A130000000000185"
 			title: "Invar specjalistyczny"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Invar specjalistyczny” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Invar specjalistyczny”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "thermal:invar_ingot"
@@ -175,7 +175,7 @@
 		{
 			id: "A130000000000186"
 			title: "TOKYO ALLOY CONGLOMERATE"
-			description: ["Jesteś przygotowany na maszyny wymagające naprawdę wyjątkowych stopów. Ostatnia próba to „TOKYO ALLOY CONGLOMERATE”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Jesteś przygotowany na maszyny wymagające naprawdę wyjątkowych stopów. Ostatni sprawdzian to „TOKYO ALLOY CONGLOMERATE”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "enderio:alloy_smelter"

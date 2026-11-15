@@ -20,7 +20,7 @@
 		{
 			id: "A130000000000019"
 			title: "Zasiej przyszłość"
-			description: ["Nikt nie postawi wielkiej fabryki o pustym żołądku. Zacznij od gospodarstwa, które utrzyma całą ekipę. Zacznij od „Zasiej przyszłość”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Nikt nie postawi wielkiej fabryki o pustym żołądku. Zacznij od gospodarstwa, które utrzyma całą ekipę. Zacznij od sprawy „Zasiej przyszłość”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "minecraft:wheat"
@@ -39,7 +39,7 @@
 		{
 			id: "A13000000000001A"
 			title: "Warzywniak"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Warzywniak” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Warzywniak”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:carrot"
@@ -58,7 +58,7 @@
 		{
 			id: "A13000000000001B"
 			title: "Automatyczny odbiór"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Automatyczny odbiór” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Automatyczny odbiór”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
 			x: 15.0d
 			y: 4.0d
 			icon: "minecraft:hopper"
@@ -77,7 +77,7 @@
 		{
 			id: "A13000000000001C"
 			title: "Gotowanie w dużej skali"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Gotowanie w dużej skali” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Gotowanie w dużej skali”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 8.0d
 			icon: "farmersdelight:cooking_pot"
@@ -96,7 +96,7 @@
 		{
 			id: "A13000000000001D"
 			title: "Magiczna uprawa"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Magiczna uprawa” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Gotowanie w dużej skali”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Magiczna uprawa”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 8.0d
 			y: 12.0d
 			icon: "mysticalagriculture:inferium_essence"
@@ -115,7 +115,7 @@
 		{
 			id: "A13000000000001E"
 			title: "Magazyn zbiorów"
-			description: ["Zbiory stały się pewnym zapleczem, a nie kwestią szczęścia. Ostatnia próba to „Magazyn zbiorów”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Zbiory stały się pewnym zapleczem, a nie kwestią szczęścia. Ostatni sprawdzian to „Magazyn zbiorów”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 16.0d
 			icon: "minecraft:barrel"

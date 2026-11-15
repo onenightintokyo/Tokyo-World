@@ -20,7 +20,7 @@
 		{
 			id: "A130000000000011"
 			title: "Wprowadzenie do Mekanism"
-			description: ["Przekładnie mają swoje ograniczenia. Prąd otwiera technologie, o których zwykły warsztat może tylko pomarzyć. Zacznij od „Wprowadzenie do Mekanism”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Przekładnie mają swoje ograniczenia. Prąd otwiera technologie, o których zwykły warsztat może tylko pomarzyć. Zacznij od sprawy „Wprowadzenie do Mekanism”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "mekanism:metallurgic_infuser"
@@ -39,7 +39,7 @@
 		{
 			id: "A130000000000012"
 			title: "Wzbogacony Redstone"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Wzbogacony Redstone” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Wzbogacony Redstone”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "mekanism:enriched_redstone"
@@ -58,7 +58,7 @@
 		{
 			id: "A130000000000013"
 			title: "Podstawowe obwody"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Podstawowe obwody” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Podstawowe obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mekanism:basic_control_circuit"
@@ -77,7 +77,7 @@
 		{
 			id: "A130000000000014"
 			title: "Stalowa infrastruktura"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Stalowa infrastruktura” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Stalowa infrastruktura”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "mekanism:steel_casing"
@@ -96,7 +96,7 @@
 		{
 			id: "A130000000000015"
 			title: "Komora wzbogacania"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Komora wzbogacania” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Podstawowe obwody”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Komora wzbogacania”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "mekanism:enrichment_chamber"
@@ -115,7 +115,7 @@
 		{
 			id: "A130000000000016"
 			title: "Kruszarka"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Kruszarka” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kruszarka”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 12.0d
 			icon: "mekanism:crusher"
@@ -134,7 +134,7 @@
 		{
 			id: "A130000000000017"
 			title: "Szybsza fabryka"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Szybsza fabryka” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Szybsza fabryka”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 8.0d
 			y: 16.0d
 			icon: "mekanism:basic_crushing_factory"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000018"
 			title: "Magazyn energii"
-			description: ["Energia przestała być ciekawostką, a stała się częścią codziennej pracy. Ostatnia próba to „Magazyn energii”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Energia przestała być ciekawostką, a stała się częścią codziennej pracy. Ostatni sprawdzian to „Magazyn energii”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 20.0d
 			icon: "mekanism:basic_energy_cube"

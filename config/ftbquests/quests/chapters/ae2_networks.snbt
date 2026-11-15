@@ -10,7 +10,7 @@
 		{
 			id: "A130000000000117"
 			title: "Krysztaly Certus"
-			description: ["Magazyn może zapamiętać więcej, niż potrafisz policzyć. Zacznij od kryształów i naucz je współpracować. Zacznij od „Krysztaly Certus”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Magazyn może zapamiętać więcej, niż potrafisz policzyć. Zacznij od kryształów i naucz je współpracować. Zacznij od sprawy „Krysztaly Certus”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "ae2:certus_quartz_crystal"
@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000118"
 			title: "Ladowanie krysztalow"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Ladowanie krysztalow” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Ladowanie krysztalow”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 4.0d
 			icon: "ae2:charged_certus_quartz_crystal"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000119"
 			title: "Paliwo sieci Fluix"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Paliwo sieci Fluix” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Paliwo sieci Fluix”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 4.0d
 			icon: "ae2:fluix_crystal"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000011A"
 			title: "Prasa obwodow"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Prasa obwodow” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Prasa obwodow”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 8.0d
 			icon: "ae2:inscriber"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000011B"
 			title: "Procesory logiczne"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Procesory logiczne” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Paliwo sieci Fluix”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Procesory logiczne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 8.0d
 			icon: "ae2:logic_processor"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000011C"
 			title: "Procesory obliczeniowe"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Procesory obliczeniowe” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Procesory obliczeniowe”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 12.0d
 			icon: "ae2:calculation_processor"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000011D"
 			title: "Procesory inzynierskie"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Procesory inzynierskie” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Procesory inzynierskie”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 12.0d
 			icon: "ae2:engineering_processor"
@@ -87,7 +87,7 @@
 		{
 			id: "A13000000000011E"
 			title: "Zasilanie sieci"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Zasilanie sieci” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zasilanie sieci”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "ae2:energy_acceptor"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000011F"
 			title: "Kontroler ME"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Kontroler ME” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Zasilanie sieci”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Kontroler ME”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 20.0d
 			icon: "ae2:controller"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000120"
 			title: "Szafa dyskow"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Szafa dyskow” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Szafa dyskow”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 20.0d
 			icon: "ae2:drive"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000121"
 			title: "Terminal sieci"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Terminal sieci” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Terminal sieci”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 24.0d
 			icon: "ae2:terminal"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000122"
 			title: "Terminal craftingu"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Terminal craftingu” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Terminal craftingu”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 24.0d
 			icon: "ae2:crafting_terminal"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000123"
 			title: "Automatyzacja tworzenia"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Automatyzacja tworzenia” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Terminal sieci”. Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Automatyzacja tworzenia”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 28.0d
 			icon: "ae2:molecular_assembler"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000124"
 			title: "Wzorce automatyzacji"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Wzorce automatyzacji” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Wzorce automatyzacji”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 28.0d
 			icon: "ae2:pattern_provider"
@@ -164,7 +164,7 @@
 		{
 			id: "A130000000000125"
 			title: "Interfejs sieci"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Interfejs sieci” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejs sieci”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "ae2:interface"
@@ -175,7 +175,7 @@
 		{
 			id: "A130000000000126"
 			title: "Polaczenie kwantowe"
-			description: ["Sieć ME pozwala myśleć o produkcji, nie o szukaniu przedmiotów. Ostatnia próba to „Polaczenie kwantowe”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Sieć ME pozwala myśleć o produkcji, nie o szukaniu przedmiotów. Ostatni sprawdzian to „Polaczenie kwantowe”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "ae2:quantum_ring"

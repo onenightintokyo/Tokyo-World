@@ -10,7 +10,7 @@
 		{
 			id: "A130000000000127"
 			title: "Ziarna nieskonczonosci"
-			description: ["Zwykły piec nie przygotuje każdego materiału. W tej części fabryki trzeba cierpliwie łączyć zaawansowane składniki. Zacznij od „Ziarna nieskonczonosci”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Zwykły piec nie przygotuje każdego materiału. W tej części fabryki trzeba cierpliwie łączyć zaawansowane składniki. Zacznij od sprawy „Ziarna nieskonczonosci”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "enderio:grain_of_infinity"
@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000128"
 			title: "Podstawowy kondensator"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Podstawowy kondensator” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Podstawowy kondensator”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "enderio:basic_capacitor"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000129"
 			title: "Wielofunkcyjna obudowa"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Wielofunkcyjna obudowa” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Wielofunkcyjna obudowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "enderio:void_chassis"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000012A"
 			title: "Przemyslowy wytapiacz"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Przemyslowy wytapiacz” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Przemyslowy wytapiacz”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "enderio:alloy_smelter"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000012B"
 			title: "Mlyn SAG"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Mlyn SAG” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Wielofunkcyjna obudowa”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Mlyn SAG”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "enderio:sag_mill"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000012C"
 			title: "Generator Stirlinga"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Generator Stirlinga” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Generator Stirlinga”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 12.0d
 			icon: "enderio:stirling_generator"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000012D"
 			title: "Stop przewodzacy"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Stop przewodzacy” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Stop przewodzacy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 16.0d
 			icon: "enderio:conductive_alloy_ingot"
@@ -87,7 +87,7 @@
 		{
 			id: "A13000000000012E"
 			title: "Stop energetyczny"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Stop energetyczny” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Stop energetyczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 16.0d
 			icon: "enderio:energetic_alloy_ingot"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000012F"
 			title: "Stop pulsujacy"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Stop pulsujacy” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Stop przewodzacy”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Stop pulsujacy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 20.0d
 			icon: "enderio:vibrant_alloy_ingot"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000130"
 			title: "Rurociag przedmiotow"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Rurociag przedmiotow” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Rurociag przedmiotow”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "enderio:item_conduit"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000131"
 			title: "Energia przez conduit"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Energia przez conduit” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Energia przez conduit”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 24.0d
 			icon: "enderio:conductive_alloy_energy_conduit"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000132"
 			title: "Rzemioslo automatyczne"
-			description: ["Potrafisz wytwarzać stopy, od których zależą najlepsze urządzenia. Ostatnia próba to „Rzemioslo automatyczne”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Potrafisz wytwarzać stopy, od których zależą najlepsze urządzenia. Ostatni sprawdzian to „Rzemioslo automatyczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 28.0d
 			icon: "enderio:crafter"

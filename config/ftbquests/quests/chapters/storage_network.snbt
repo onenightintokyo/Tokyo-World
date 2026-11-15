@@ -10,7 +10,7 @@
 		{
 			id: "A1300000000000DB"
 			title: "Narzędzie magazynowe"
-			description: ["Najważniejszy przedmiot zawsze jest w ostatniej skrzyni. Można to zmienić, jeśli magazyn zacznie działać jak system. Zacznij od „Narzędzie magazynowe”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Najważniejszy przedmiot zawsze jest w ostatniej skrzyni. Można to zmienić, jeśli magazyn zacznie działać jak system. Zacznij od sprawy „Narzędzie magazynowe”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "sophisticatedstorage:storage_tool"
@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000000DC"
 			title: "Złącze magazynu"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Złącze magazynu” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Złącze magazynu”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 4.0d
 			icon: "sophisticatedstorage:storage_connector"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000000DD"
 			title: "Kontroler magazynu"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Kontroler magazynu” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Kontroler magazynu”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 4.0d
 			icon: "sophisticatedstorage:controller"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000000DE"
 			title: "Wejście i wyjście"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Wejście i wyjście” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Wejście i wyjście”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 8.0d
 			icon: "sophisticatedstorage:storage_io"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000000DF"
 			title: "Wejście magazynu"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Wejście magazynu” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Kontroler magazynu”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Wejście magazynu”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 8.0d
 			icon: "sophisticatedstorage:storage_input"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000000E0"
 			title: "Wyjście magazynu"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Wyjście magazynu” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Wyjście magazynu”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 12.0d
 			icon: "sophisticatedstorage:storage_output"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000000E1"
 			title: "Pierwszy plecak"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Pierwszy plecak” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Pierwszy plecak”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 12.0d
 			icon: "sophisticatedbackpacks:backpack"
@@ -87,7 +87,7 @@
 		{
 			id: "A1300000000000E2"
 			title: "Plecak miedziany"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Plecak miedziany” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Plecak miedziany”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "sophisticatedbackpacks:copper_backpack"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000000E3"
 			title: "Plecak żelazny"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Plecak żelazny” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Plecak miedziany”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Plecak żelazny”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 20.0d
 			icon: "sophisticatedbackpacks:iron_backpack"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000000E4"
 			title: "Plecak diamentowy"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Plecak diamentowy” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Plecak diamentowy”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 20.0d
 			icon: "sophisticatedbackpacks:diamond_backpack"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000000E5"
 			title: "Automatyczny odbiór"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Automatyczny odbiór” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Automatyczny odbiór”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 24.0d
 			icon: "sophisticatedbackpacks:advanced_pickup_upgrade"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000000E6"
 			title: "Zaawansowany filtr"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Zaawansowany filtr” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Zaawansowany filtr”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 24.0d
 			icon: "sophisticatedbackpacks:advanced_filter_upgrade"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000000E7"
 			title: "Crafting w plecaku"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Crafting w plecaku” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Automatyczny odbiór”. Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Crafting w plecaku”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 28.0d
 			icon: "sophisticatedbackpacks:crafting_upgrade"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000000E8"
 			title: "Kompaktowanie w plecaku"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Kompaktowanie w plecaku” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Kompaktowanie w plecaku”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 28.0d
 			icon: "sophisticatedbackpacks:advanced_compacting_upgrade"
@@ -164,7 +164,7 @@
 		{
 			id: "A1300000000000E9"
 			title: "Automatyczne uzupełnianie"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Automatyczne uzupełnianie” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Automatyczne uzupełnianie”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "sophisticatedbackpacks:refill_upgrade"
@@ -175,7 +175,7 @@
 		{
 			id: "A1300000000000EA"
 			title: "Usuwanie nadwyżek"
-			description: ["Teraz łatwiej odnaleźć materiały niż zgubić je między skrzyniami. Ostatnia próba to „Usuwanie nadwyżek”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Teraz łatwiej odnaleźć materiały niż zgubić je między skrzyniami. Ostatni sprawdzian to „Usuwanie nadwyżek”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "sophisticatedbackpacks:void_upgrade"

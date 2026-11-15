@@ -10,7 +10,7 @@
 		{
 			id: "A130000000000133"
 			title: "Slady draconium"
-			description: ["Wszystkie wcześniejsze projekty prowadziły do materiałów, których zwykła technologia nie potrafi okiełznać. Zacznij od „Slady draconium”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Wszystkie wcześniejsze projekty prowadziły do materiałów, których zwykła technologia nie potrafi okiełznać. Zacznij od sprawy „Slady draconium”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "draconicevolution:draconium_dust"
@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000134"
 			title: "Rafinacja draconium"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Rafinacja draconium” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Rafinacja draconium”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 1.0d
 			y: 4.0d
 			icon: "draconicevolution:draconium_ingot"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000135"
 			title: "Rdzenie draconium"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Rdzenie draconium” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Rdzenie draconium”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 15.0d
 			y: 4.0d
 			icon: "draconicevolution:draconium_core"
@@ -43,7 +43,7 @@
 		{
 			id: "A130000000000136"
 			title: "Pierwsze iniektory"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Pierwsze iniektory” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Pierwsze iniektory”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
 			y: 8.0d
 			icon: "draconicevolution:basic_crafting_injector"
@@ -54,7 +54,7 @@
 		{
 			id: "A130000000000137"
 			title: "Rdzen syntezy"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Rdzen syntezy” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Rdzenie draconium”. Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Rdzen syntezy”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
 			y: 8.0d
 			icon: "draconicevolution:crafting_core"
@@ -65,7 +65,7 @@
 		{
 			id: "A130000000000138"
 			title: "Bezprzewodowe przesylanie energii"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Bezprzewodowe przesylanie energii” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Bezprzewodowe przesylanie energii”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 12.0d
 			icon: "draconicevolution:basic_relay_crystal"
@@ -76,7 +76,7 @@
 		{
 			id: "A130000000000139"
 			title: "Przebudzone draconium"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Przebudzone draconium” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Przebudzone draconium”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
 			y: 16.0d
 			icon: "draconicevolution:awakened_draconium_ingot"
@@ -87,7 +87,7 @@
 		{
 			id: "A13000000000013A"
 			title: "Przebudzony rdzen"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Przebudzony rdzen” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Przebudzony rdzen”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
 			y: 16.0d
 			icon: "draconicevolution:awakened_core"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000013B"
 			title: "Iniektory wyzszej klasy"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Iniektory wyzszej klasy” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Przebudzone draconium”. Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Iniektory wyzszej klasy”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 1.0d
 			y: 20.0d
 			icon: "draconicevolution:awakened_crafting_injector"
@@ -109,7 +109,7 @@
 		{
 			id: "A13000000000013C"
 			title: "Magazyn olbrzymiej mocy"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Magazyn olbrzymiej mocy” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Magazyn olbrzymiej mocy”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 15.0d
 			y: 20.0d
 			icon: "draconicevolution:draconic_energy_core"
@@ -120,7 +120,7 @@
 		{
 			id: "A13000000000013D"
 			title: "Zaawansowany teleport"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Zaawansowany teleport” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zaawansowany teleport”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 24.0d
 			icon: "draconicevolution:advanced_dislocator"
@@ -131,7 +131,7 @@
 		{
 			id: "A13000000000013E"
 			title: "Zwyciestwo nad chaosem"
-			description: ["Masz w rękach potęgę, której użycie wymaga rozsądku. Ostatnia próba to „Zwyciestwo nad chaosem”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Masz w rękach potęgę, której użycie wymaga rozsądku. Ostatni sprawdzian to „Zwyciestwo nad chaosem”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 28.0d
 			icon: "draconicevolution:chaos_shard"

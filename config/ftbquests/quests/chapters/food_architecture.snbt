@@ -10,7 +10,7 @@
 		{
 			id: "A130000000000109"
 			title: "Deska do krojenia"
-			description: ["Złóż bazę, w której naprawdę warto mieszkać. Warsztat potrzebuje kuchni, schowków i miejsca na odpoczynek. Zacznij od „Deska do krojenia”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Złóż bazę, w której naprawdę warto mieszkać. Warsztat potrzebuje kuchni, schowków i miejsca na odpoczynek. Zacznij od sprawy „Deska do krojenia”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "farmersdelight:cutting_board"
@@ -21,7 +21,7 @@
 		{
 			id: "A13000000000010A"
 			title: "Patelnia"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Patelnia” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Patelnia”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 4.0d
 			icon: "farmersdelight:skillet"
@@ -32,7 +32,7 @@
 		{
 			id: "A13000000000010B"
 			title: "Piec kuchenny"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Piec kuchenny” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Piec kuchenny”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 4.0d
 			icon: "farmersdelight:stove"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000010C"
 			title: "Garnek do gotowania"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Garnek do gotowania” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Garnek do gotowania”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 8.0d
 			icon: "farmersdelight:cooking_pot"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000010D"
 			title: "Ryż"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Ryż” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Piec kuchenny”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Ryż”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 8.0d
 			icon: "farmersdelight:rice"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000010E"
 			title: "Pomidory"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Pomidory” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Pomidory”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 12.0d
 			icon: "farmersdelight:tomato"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000010F"
 			title: "Kapusta"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Kapusta” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Kapusta”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 12.0d
 			icon: "farmersdelight:cabbage"
@@ -87,7 +87,7 @@
 		{
 			id: "A130000000000110"
 			title: "Ciasto na wypiek"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Ciasto na wypiek” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ciasto na wypiek”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "farmersdelight:pie_crust"
@@ -98,7 +98,7 @@
 		{
 			id: "A130000000000111"
 			title: "Szuflada magazynowa"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Szuflada magazynowa” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Ciasto na wypiek”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Szuflada magazynowa”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 20.0d
 			icon: "functionalstorage:oak_1"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000112"
 			title: "Cztery szuflady"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Cztery szuflady” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Cztery szuflady”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 20.0d
 			icon: "functionalstorage:oak_4"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000113"
 			title: "Gabloty na wyposażenie"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Gabloty na wyposażenie” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Gabloty na wyposażenie”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 24.0d
 			icon: "functionalstorage:armory_cabinet"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000114"
 			title: "Kompaktowa przechowalnia"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Kompaktowa przechowalnia” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Kompaktowa przechowalnia”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 24.0d
 			icon: "functionalstorage:compacting_drawer"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000115"
 			title: "Kosz na plony"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Kosz na plony” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kosz na plony”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 28.0d
 			icon: "farmersdelight:wooden_basket"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000116"
 			title: "Kuchenne szafki"
-			description: ["Dom jest gotowy, a wyprawy nie muszą zaczynać się od szukania jedzenia. Ostatnia próba to „Kuchenne szafki”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Dom jest gotowy, a wyprawy nie muszą zaczynać się od szukania jedzenia. Ostatni sprawdzian to „Kuchenne szafki”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 32.0d
 			icon: "farmersdelight:oak_cabinet"

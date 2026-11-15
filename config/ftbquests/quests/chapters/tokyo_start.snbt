@@ -20,7 +20,7 @@
 		{
 			id: "A130000000000001"
 			title: "Pierwszy surowiec"
-			description: ["Nie ma jeszcze fabryki, tylko kawałek ziemi i pomysł. Wszystko zaczyna się od prostego warsztatu. Zacznij od „Pierwszy surowiec”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Nie ma jeszcze fabryki, tylko kawałek ziemi i pomysł. Wszystko zaczyna się od prostego warsztatu. Zacznij od sprawy „Pierwszy surowiec”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "minecraft:oak_log"
@@ -38,7 +38,7 @@
 		{
 			id: "A130000000000002"
 			title: "Warsztat inżyniera"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Warsztat inżyniera” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Warsztat inżyniera”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:crafting_table"
@@ -57,7 +57,7 @@
 		{
 			id: "A130000000000003"
 			title: "Kamienne fundamenty"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Kamienne fundamenty” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Kamienne fundamenty”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
 			x: 15.0d
 			y: 4.0d
 			icon: "minecraft:cobblestone"
@@ -76,7 +76,7 @@
 		{
 			id: "A130000000000004"
 			title: "Pierwsze wytapianie"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Pierwsze wytapianie” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Pierwsze wytapianie”. Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później."]
 			x: 1.0d
 			y: 8.0d
 			icon: "minecraft:furnace"
@@ -95,7 +95,7 @@
 		{
 			id: "A130000000000005"
 			title: "Era żelaza"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Era żelaza” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Kamienne fundamenty”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Era żelaza”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 15.0d
 			y: 8.0d
 			icon: "minecraft:iron_ingot"
@@ -114,7 +114,7 @@
 		{
 			id: "A130000000000006"
 			title: "Miedź dla przemysłu"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Miedź dla przemysłu” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Miedź dla przemysłu”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 12.0d
 			icon: "minecraft:copper_ingot"
@@ -133,7 +133,7 @@
 		{
 			id: "A130000000000007"
 			title: "Sygnał Redstone"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Sygnał Redstone” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Sygnał Redstone”. Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później."]
 			x: 8.0d
 			y: 16.0d
 			icon: "minecraft:redstone"
@@ -152,7 +152,7 @@
 		{
 			id: "A130000000000008"
 			title: "Kolejny etap"
-			description: ["Masz już miejsce, do którego można wrócić po każdej wyprawie. Ostatnia próba to „Kolejny etap”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Masz już miejsce, do którego można wrócić po każdej wyprawie. Ostatni sprawdzian to „Kolejny etap”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 20.0d
 			icon: "minecraft:hopper"

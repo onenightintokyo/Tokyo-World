@@ -12,7 +12,7 @@
 		{
 			id: "A130000000000045"
 			title: "Wielki piec"
-			description: ["Wielkie konstrukcje nie wybaczają prowizorki. Czas poznać stal, przewody i potężne urządzenia przemysłowe. Zacznij od „Wielki piec”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Wielkie konstrukcje nie wybaczają prowizorki. Czas poznać stal, przewody i potężne urządzenia przemysłowe. Zacznij od sprawy „Wielki piec”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "immersiveengineering:blast_furnace"
@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000046"
 			title: "Produkcja stali"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Produkcja stali” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Produkcja stali”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "immersiveengineering:ingot_steel"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000047"
 			title: "Warsztat inżyniera"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Warsztat inżyniera” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Warsztat inżyniera”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "immersiveengineering:workbench"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000048"
 			title: "Przewody miedziane"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Przewody miedziane” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Przewody miedziane”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "immersiveengineering:wirecoil_copper"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000049"
 			title: "Złącza niskiego napięcia"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Złącza niskiego napięcia” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Warsztat inżyniera”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Złącza niskiego napięcia”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "immersiveengineering:connector_lv"
@@ -67,7 +67,7 @@
 		{
 			id: "A13000000000004A"
 			title: "Akumulator LV"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Akumulator LV” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Akumulator LV”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 12.0d
 			icon: "immersiveengineering:capacitor_lv"
@@ -78,7 +78,7 @@
 		{
 			id: "A13000000000004B"
 			title: "Akumulator MV"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Akumulator MV” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Akumulator MV”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "immersiveengineering:capacitor_mv"
@@ -89,7 +89,7 @@
 		{
 			id: "A13000000000004C"
 			title: "Akumulator HV"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Akumulator HV” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Akumulator HV”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "immersiveengineering:capacitor_hv"
@@ -100,7 +100,7 @@
 		{
 			id: "A13000000000004D"
 			title: "Przemysłowy rurociąg"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Przemysłowy rurociąg” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Akumulator HV”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Przemysłowy rurociąg”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 20.0d
 			icon: "immersiveengineering:fluid_pipe"
@@ -111,7 +111,7 @@
 		{
 			id: "A13000000000004E"
 			title: "Pompa przemysłowa"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Pompa przemysłowa” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Pompa przemysłowa”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "immersiveengineering:fluid_pump"
@@ -122,7 +122,7 @@
 		{
 			id: "A13000000000004F"
 			title: "Prasa ciężka"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Prasa ciężka” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Prasa ciężka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 24.0d
 			icon: "immersiveengineering:metal_press"
@@ -133,7 +133,7 @@
 		{
 			id: "A130000000000050"
 			title: "Kruszarka wieloblokowa"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Kruszarka wieloblokowa” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Kruszarka wieloblokowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 24.0d
 			icon: "immersiveengineering:crusher"
@@ -144,7 +144,7 @@
 		{
 			id: "A130000000000051"
 			title: "Rafineria"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Rafineria” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Prasa ciężka”. Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Rafineria”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "immersiveengineering:refinery"
@@ -155,7 +155,7 @@
 		{
 			id: "A130000000000052"
 			title: "Generator Diesla"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Generator Diesla” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Generator Diesla”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 28.0d
 			icon: "immersiveengineering:diesel_generator"
@@ -166,7 +166,7 @@
 		{
 			id: "A130000000000053"
 			title: "Piec łukowy"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Piec łukowy” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Piec łukowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "immersiveengineering:arc_furnace"
@@ -177,7 +177,7 @@
 		{
 			id: "A130000000000054"
 			title: "Wiertło geologiczne"
-			description: ["Huta staje się mocnym fundamentem dla kolejnych planów. Ostatnia próba to „Wiertło geologiczne”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Huta staje się mocnym fundamentem dla kolejnych planów. Ostatni sprawdzian to „Wiertło geologiczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "immersiveengineering:sample_drill"

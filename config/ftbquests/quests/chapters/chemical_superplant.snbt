@@ -10,7 +10,7 @@
 		{
 			id: "A130000000000167"
 			title: "Bezpieczna stal"
-			description: ["Rudy kryją w sobie więcej, niż daje zwykłe przetopienie. Chemia pozwoli odzyskać to, co wcześniej trafiało na straty. Zacznij od „Bezpieczna stal”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Rudy kryją w sobie więcej, niż daje zwykłe przetopienie. Chemia pozwoli odzyskać to, co wcześniej trafiało na straty. Zacznij od sprawy „Bezpieczna stal”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "mekanism:ingot_steel"
@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000168"
 			title: "Obudowy aparatury"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Obudowy aparatury” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Obudowy aparatury”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "mekanism:steel_casing"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000169"
 			title: "Układy sterujące"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Układy sterujące” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Układy sterujące”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mekanism:advanced_control_circuit"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000016A"
 			title: "Zaawansowany infuzor"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Zaawansowany infuzor” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Zaawansowany infuzor”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "mekanism:metallurgic_infuser"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000016B"
 			title: "Komora wzbogacania"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Komora wzbogacania” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Układy sterujące”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Komora wzbogacania”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "mekanism:enrichment_chamber"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000016C"
 			title: "Separator gazów"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Separator gazów” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Separator gazów”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 12.0d
 			icon: "mekanism:electrolytic_separator"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000016D"
 			title: "Utlenianie"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Utlenianie” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Utlenianie”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "mekanism:chemical_oxidizer"
@@ -87,7 +87,7 @@
 		{
 			id: "A13000000000016E"
 			title: "Mieszanie chemiczne"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Mieszanie chemiczne” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Mieszanie chemiczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "mekanism:chemical_infuser"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000016F"
 			title: "Kompresja osmu"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Kompresja osmu” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Mieszanie chemiczne”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Kompresja osmu”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 20.0d
 			icon: "mekanism:osmium_compressor"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000170"
 			title: "Komora reakcji"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Komora reakcji” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Komora reakcji”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "mekanism:pressurized_reaction_chamber"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000171"
 			title: "Skraplanie gazów"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Skraplanie gazów” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Skraplanie gazów”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 24.0d
 			icon: "mekanism:rotary_condensentrator"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000172"
 			title: "Rozpuszczanie rud"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Rozpuszczanie rud” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Rozpuszczanie rud”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 24.0d
 			icon: "mekanism:chemical_dissolution_chamber"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000173"
 			title: "Krystalizacja"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Krystalizacja” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Skraplanie gazów”. Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Krystalizacja”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "mekanism:chemical_crystallizer"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000174"
 			title: "Magazyny surowców"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Magazyny surowców” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Magazyny surowców”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 28.0d
 			icon: "mekanism:basic_fluid_tank"
@@ -164,7 +164,7 @@
 		{
 			id: "A130000000000175"
 			title: "Sterowniki najwyższej klasy"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Sterowniki najwyższej klasy” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sterowniki najwyższej klasy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "mekanism:ultimate_control_circuit"
@@ -175,7 +175,7 @@
 		{
 			id: "A130000000000176"
 			title: "TOKYO CHEMICAL WORKS"
-			description: ["Laboratorium pracuje jak część fabryki, nie odizolowana ciekawostka. Ostatnia próba to „TOKYO CHEMICAL WORKS”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Laboratorium pracuje jak część fabryki, nie odizolowana ciekawostka. Ostatni sprawdzian to „TOKYO CHEMICAL WORKS”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "mekanism:chemical_infuser"

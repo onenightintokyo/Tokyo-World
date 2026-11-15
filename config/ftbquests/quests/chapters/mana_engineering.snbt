@@ -10,7 +10,7 @@
 		{
 			id: "A1300000000001C7"
 			title: "Kwiaty magiczne"
-			description: ["Rytuał i maszyna nie muszą ze sobą walczyć. Spróbuj połączyć ich moc w jednym projekcie. Zacznij od „Kwiaty magiczne”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Rytuał i maszyna nie muszą ze sobą walczyć. Spróbuj połączyć ich moc w jednym projekcie. Zacznij od sprawy „Kwiaty magiczne”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "botania:white_mystical_flower"
@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000001C8"
 			title: "Rozpraszacze many"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Rozpraszacze many” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Rozpraszacze many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 4.0d
 			icon: "botania:mana_spreader"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000001C9"
 			title: "Zbiorniki many"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Zbiorniki many” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Zbiorniki many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 4.0d
 			icon: "botania:mana_pool"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000001CA"
 			title: "Diamenty many"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Diamenty many” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Diamenty many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "botania:mana_diamond"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000001CB"
 			title: "Stal manowa"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Stal manowa” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Zbiorniki many”. Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Stal manowa”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 8.0d
 			icon: "botania:manasteel_ingot"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000001CC"
 			title: "Runiczne ołtarze"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Runiczne ołtarze” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Runiczne ołtarze”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 12.0d
 			icon: "botania:runic_altar"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000001CD"
 			title: "Pylony many"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Pylony many” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Pylony many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "botania:mana_pylon"
@@ -87,7 +87,7 @@
 		{
 			id: "A1300000000001CE"
 			title: "Ołtarz Terrasteel"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Ołtarz Terrasteel” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ołtarz Terrasteel”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "botania:terra_plate"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000001CF"
 			title: "Słoiki Source"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Słoiki Source” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Ołtarz Terrasteel”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Słoiki Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 20.0d
 			icon: "ars_nouveau:source_jar"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000001D0"
 			title: "Komory nasycania"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Komory nasycania” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Komory nasycania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "ars_nouveau:imbuement_chamber"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000001D1"
 			title: "Kamienie Source"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Kamienie Source” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Kamienie Source”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 24.0d
 			icon: "ars_nouveau:source_gem"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000001D2"
 			title: "Przekaźniki Source"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Przekaźniki Source” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Przekaźniki Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 24.0d
 			icon: "ars_nouveau:relay"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000001D3"
 			title: "Aparaty zaklinania"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Aparaty zaklinania” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Kamienie Source”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Aparaty zaklinania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "ars_nouveau:enchanting_apparatus"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000001D4"
 			title: "Zaklęte piedestały"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Zaklęte piedestały” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Zaklęte piedestały”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 28.0d
 			icon: "ars_nouveau:arcane_pedestal"
@@ -164,7 +164,7 @@
 		{
 			id: "A1300000000001D5"
 			title: "Wytwórnie Terrasteel"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Wytwórnie Terrasteel” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Wytwórnie Terrasteel”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "botania:terrasteel_ingot"
@@ -175,7 +175,7 @@
 		{
 			id: "A1300000000001D6"
 			title: "TOKYO ARCANE FOUNDRY"
-			description: ["Znalezienie wspólnego języka dla magii i techniki otwiera nowe drogi. Ostatnia próba to „TOKYO ARCANE FOUNDRY”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Znalezienie wspólnego języka dla magii i techniki otwiera nowe drogi. Ostatni sprawdzian to „TOKYO ARCANE FOUNDRY”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "ars_nouveau:archmage_spell_book"

@@ -12,7 +12,7 @@
 		{
 			id: "A130000000000075"
 			title: "Kabel logiczny"
-			description: ["Nie musisz stać przy każdej maszynie. Naucz się przekazywać informację, zanim zbudujesz większy system. Zacznij od „Kabel logiczny”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Nie musisz stać przy każdej maszynie. Naucz się przekazywać informację, zanim zbudujesz większy system. Zacznij od sprawy „Kabel logiczny”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "integrateddynamics:cable"
@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000076"
 			title: "Programowanie logiki"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Programowanie logiki” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Programowanie logiki”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 4.0d
 			icon: "integrateddynamics:logic_programmer"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000077"
 			title: "Karty zmiennych"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Karty zmiennych” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Karty zmiennych”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 4.0d
 			icon: "integrateddynamics:variable"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000078"
 			title: "Magazyn zmiennych"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Magazyn zmiennych” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Magazyn zmiennych”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 8.0d
 			icon: "integrateddynamics:variablestore"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000079"
 			title: "Bateria sieciowa"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Bateria sieciowa” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Karty zmiennych”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Bateria sieciowa”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 8.0d
 			icon: "integrateddynamics:energy_battery"
@@ -67,7 +67,7 @@
 		{
 			id: "A13000000000007A"
 			title: "Generator logiczny"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Generator logiczny” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Generator logiczny”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 12.0d
 			icon: "integrateddynamics:coal_generator"
@@ -78,7 +78,7 @@
 		{
 			id: "A13000000000007B"
 			title: "Materializacja zmiennych"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Materializacja zmiennych” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Materializacja zmiennych”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 16.0d
 			icon: "integrateddynamics:materializer"
@@ -89,7 +89,7 @@
 		{
 			id: "A13000000000007C"
 			title: "Proxy sygnałów"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Proxy sygnałów” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Proxy sygnałów”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 16.0d
 			icon: "integrateddynamics:proxy"
@@ -100,7 +100,7 @@
 		{
 			id: "A13000000000007D"
 			title: "Kryształy Menril"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Kryształy Menril” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Materializacja zmiennych”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Kryształy Menril”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 20.0d
 			icon: "integrateddynamics:crystalized_menril_chunk"
@@ -111,7 +111,7 @@
 		{
 			id: "A13000000000007E"
 			title: "Kryształy Chorus"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Kryształy Chorus” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Kryształy Chorus”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 20.0d
 			icon: "integrateddynamics:crystalized_chorus_chunk"
@@ -122,7 +122,7 @@
 		{
 			id: "A13000000000007F"
 			title: "Programowanie mobilne"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Programowanie mobilne” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Programowanie mobilne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 24.0d
 			icon: "integrateddynamics:portable_logic_programmer"
@@ -133,7 +133,7 @@
 		{
 			id: "A130000000000080"
 			title: "Drewno Menril"
-			description: ["Sygnał wykonuje za ciebie pracę, która kiedyś wymagała kilkunastu przełączników. Ostatnia próba to „Drewno Menril”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Sygnał wykonuje za ciebie pracę, która kiedyś wymagała kilkunastu przełączników. Ostatni sprawdzian to „Drewno Menril”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 28.0d
 			icon: "integrateddynamics:menril_log"

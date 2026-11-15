@@ -10,7 +10,7 @@
 		{
 			id: "A1300000000000FB"
 			title: "Cyna"
-			description: ["Nie każdy metal nadaje się do każdej maszyny. Czas zrozumieć, kiedy liczy się skład materiału, a nie jego ilość. Zacznij od „Cyna”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Nie każdy metal nadaje się do każdej maszyny. Czas zrozumieć, kiedy liczy się skład materiału, a nie jego ilość. Zacznij od sprawy „Cyna”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "thermal:tin_ingot"
@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000000FC"
 			title: "Ołów"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Ołów” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Ołów”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "thermal:lead_ingot"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000000FD"
 			title: "Nikiel"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Nikiel” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Nikiel”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "thermal:nickel_ingot"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000000FE"
 			title: "Srebro"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Srebro” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Srebro”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "thermal:silver_ingot"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000000FF"
 			title: "Elektrum"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Elektrum” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Nikiel”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Elektrum”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "thermal:electrum_ingot"
@@ -65,7 +65,7 @@
 		{
 			id: "A130000000000100"
 			title: "Brąz"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Brąz” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Brąz”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 12.0d
 			icon: "thermal:bronze_ingot"
@@ -76,7 +76,7 @@
 		{
 			id: "A130000000000101"
 			title: "Invar"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Invar” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Invar”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "thermal:invar_ingot"
@@ -87,7 +87,7 @@
 		{
 			id: "A130000000000102"
 			title: "Rudy cyny"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Rudy cyny” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Rudy cyny”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "thermal:tin_ore"
@@ -98,7 +98,7 @@
 		{
 			id: "A130000000000103"
 			title: "Rudy srebra"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Rudy srebra” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Rudy cyny”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Rudy srebra”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 20.0d
 			icon: "thermal:silver_ore"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000104"
 			title: "Rudy niklu"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Rudy niklu” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Rudy niklu”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "thermal:nickel_ore"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000105"
 			title: "Rudy ołowiu"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Rudy ołowiu” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Rudy ołowiu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 24.0d
 			icon: "thermal:lead_ore"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000106"
 			title: "Apatyt"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Apatyt” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Apatyt”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 24.0d
 			icon: "thermal:apatite_ore"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000107"
 			title: "Cynober"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Cynober” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Cynober”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 28.0d
 			icon: "thermal:cinnabar_ore"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000108"
 			title: "Siarka"
-			description: ["Zamiast przypadkowych sztabek masz materiały dobrane do zadania. Ostatnia próba to „Siarka”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Zamiast przypadkowych sztabek masz materiały dobrane do zadania. Ostatni sprawdzian to „Siarka”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 32.0d
 			icon: "thermal:sulfur_ore"

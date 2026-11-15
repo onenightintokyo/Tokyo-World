@@ -10,7 +10,7 @@
 		{
 			id: "A1300000000000BD"
 			title: "Stal kosmiczna"
-			description: ["Zwykły warsztat nie przetrwa w próżni. Zbuduj sprzęt, od którego będzie zależało twoje bezpieczeństwo. Zacznij od „Stal kosmiczna”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Zwykły warsztat nie przetrwa w próżni. Zbuduj sprzęt, od którego będzie zależało twoje bezpieczeństwo. Zacznij od sprawy „Stal kosmiczna”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "ad_astra:steel_ingot"
@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000000BE"
 			title: "Płyty kosmiczne"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Płyty kosmiczne” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Płyty kosmiczne”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
 			y: 4.0d
 			icon: "ad_astra:steel_plate"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000000BF"
 			title: "Kompresor technologiczny"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Kompresor technologiczny” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Kompresor technologiczny”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
 			y: 4.0d
 			icon: "ad_astra:compressor"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000000C0"
 			title: "Generator wyprawowy"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Generator wyprawowy” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Generator wyprawowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
 			y: 8.0d
 			icon: "ad_astra:coal_generator"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000000C1"
 			title: "Warsztat rakietowy"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Warsztat rakietowy” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Kompresor technologiczny”. Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Warsztat rakietowy”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
 			y: 8.0d
 			icon: "ad_astra:nasa_workbench"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000000C2"
 			title: "Rafineria paliwa"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Rafineria paliwa” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Rafineria paliwa”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
 			y: 12.0d
 			icon: "ad_astra:fuel_refinery"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000000C3"
 			title: "Sprzęt tlenowy"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Sprzęt tlenowy” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Sprzęt tlenowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
 			y: 12.0d
 			icon: "ad_astra:oxygen_gear"
@@ -87,7 +87,7 @@
 		{
 			id: "A1300000000000C4"
 			title: "Ładowarka tlenu"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Ładowarka tlenu” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ładowarka tlenu”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "ad_astra:oxygen_loader"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000000C5"
 			title: "Dystrybucja tlenu"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Dystrybucja tlenu” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Ładowarka tlenu”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Dystrybucja tlenu”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
 			y: 20.0d
 			icon: "ad_astra:oxygen_distributor"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000000C6"
 			title: "Silnik rakietowy"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Silnik rakietowy” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Silnik rakietowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
 			y: 20.0d
 			icon: "ad_astra:steel_engine"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000000C7"
 			title: "Stateczniki rakiety"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Stateczniki rakiety” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Stateczniki rakiety”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
 			y: 24.0d
 			icon: "ad_astra:rocket_fin"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000000C8"
 			title: "Dziób rakiety"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Dziób rakiety” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Dziób rakiety”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
 			y: 24.0d
 			icon: "ad_astra:rocket_nose_cone"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000000C9"
 			title: "Kosmiczne panele"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Kosmiczne panele” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Stateczniki rakiety”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Kosmiczne panele”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
 			y: 28.0d
 			icon: "ad_astra:solar_panel"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000000CA"
 			title: "Pompa wodna"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Pompa wodna” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Pompa wodna”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
 			y: 28.0d
 			icon: "ad_astra:water_pump"
@@ -164,7 +164,7 @@
 		{
 			id: "A1300000000000CB"
 			title: "Paliwo kriogeniczne"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Paliwo kriogeniczne” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Paliwo kriogeniczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "ad_astra:cryo_fuel"
@@ -175,7 +175,7 @@
 		{
 			id: "A1300000000000CC"
 			title: "Okablowanie kosmiczne"
-			description: ["Rakieta przestaje być marzeniem zapisanym na kartce. Ostatnia próba to „Okablowanie kosmiczne”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Rakieta przestaje być marzeniem zapisanym na kartce. Ostatni sprawdzian to „Okablowanie kosmiczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "ad_astra:steel_cable"

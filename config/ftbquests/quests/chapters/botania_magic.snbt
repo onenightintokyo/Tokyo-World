@@ -12,7 +12,7 @@
 		{
 			id: "A130000000000081"
 			title: "Kwiaty mistyczne"
-			description: ["Nie każda energia płynie kablem. W tym świecie kwiaty potrafią zasilać własne urządzenia. Zacznij od „Kwiaty mistyczne”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Nie każda energia płynie kablem. W tym świecie kwiaty potrafią zasilać własne urządzenia. Zacznij od sprawy „Kwiaty mistyczne”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "botania:white_mystical_flower"
@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000082"
 			title: "Rozpraszacz many"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Rozpraszacz many” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Rozpraszacz many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 4.0d
 			icon: "botania:mana_spreader"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000083"
 			title: "Zbiornik many"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Zbiornik many” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Zbiornik many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 4.0d
 			icon: "botania:mana_pool"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000084"
 			title: "Diament many"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Diament many” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Diament many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "botania:mana_diamond"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000085"
 			title: "Stal many"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Stal many” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Zbiornik many”. Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Stal many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 8.0d
 			icon: "botania:manasteel_ingot"
@@ -67,7 +67,7 @@
 		{
 			id: "A130000000000086"
 			title: "Ołtarz runiczny"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Ołtarz runiczny” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Ołtarz runiczny”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 12.0d
 			icon: "botania:runic_altar"
@@ -78,7 +78,7 @@
 		{
 			id: "A130000000000087"
 			title: "Płyta przemian"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Płyta przemian” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Płyta przemian”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "botania:terra_plate"
@@ -89,7 +89,7 @@
 		{
 			id: "A130000000000088"
 			title: "Dystrybutor many"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Dystrybutor many” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Dystrybutor many”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "botania:mana_distributor"
@@ -100,7 +100,7 @@
 		{
 			id: "A130000000000089"
 			title: "Pylon many"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Pylon many” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Dystrybutor many”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Pylon many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 20.0d
 			icon: "botania:mana_pylon"
@@ -111,7 +111,7 @@
 		{
 			id: "A13000000000008A"
 			title: "Elficki rozpraszacz"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Elficki rozpraszacz” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Elficki rozpraszacz”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "botania:elven_spreader"
@@ -122,7 +122,7 @@
 		{
 			id: "A13000000000008B"
 			title: "Mana i energia FE"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Mana i energia FE” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Mana i energia FE”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 24.0d
 			icon: "botania:mana_fluxfield"
@@ -133,7 +133,7 @@
 		{
 			id: "A13000000000008C"
 			title: "Magazyn Corporea"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Magazyn Corporea” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Magazyn Corporea”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 24.0d
 			icon: "botania:corporea_spark"
@@ -144,7 +144,7 @@
 		{
 			id: "A13000000000008D"
 			title: "Pylon Gai"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Pylon Gai” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Mana i energia FE”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Pylon Gai”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "botania:gaia_pylon"
@@ -155,7 +155,7 @@
 		{
 			id: "A13000000000008E"
 			title: "Terrasteel"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Terrasteel” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Terrasteel”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 28.0d
 			icon: "botania:terrasteel_ingot"
@@ -166,7 +166,7 @@
 		{
 			id: "A13000000000008F"
 			title: "Rozpraszacz Gai"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Rozpraszacz Gai” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Rozpraszacz Gai”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "botania:gaia_spreader"
@@ -177,7 +177,7 @@
 		{
 			id: "A130000000000090"
 			title: "Zaklinanie many"
-			description: ["Mana zaczyna przypominać kolejną gałąź twojej technologii. Ostatnia próba to „Zaklinanie many”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Mana zaczyna przypominać kolejną gałąź twojej technologii. Ostatni sprawdzian to „Zaklinanie many”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "botania:enchanter"

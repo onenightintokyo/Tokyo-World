@@ -10,7 +10,7 @@
 		{
 			id: "A1300000000001F7"
 			title: "Plan rozbudowy fabryki"
-			description: ["Fabryki, wyprawy, pola i magia muszą w końcu zadziałać jako jedna całość. To wspólne dzieło całej ekipy. Zacznij od „Plan rozbudowy fabryki”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Fabryki, wyprawy, pola i magia muszą w końcu zadziałać jako jedna całość. To wspólne dzieło całej ekipy. Zacznij od sprawy „Plan rozbudowy fabryki”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "minecraft:iron_block"
@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000001F8"
 			title: "Magazyny produkcyjne"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Magazyny produkcyjne” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Magazyny produkcyjne”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:hopper"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000001F9"
 			title: "Ramy technologiczne"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Ramy technologiczne” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Ramy technologiczne”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mekanism:steel_casing"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000001FA"
 			title: "Precyzja Create"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Precyzja Create” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Precyzja Create”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
 			y: 8.0d
 			icon: "create:precision_mechanism"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000001FB"
 			title: "Kontrolery AE2"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Kontrolery AE2” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Ramy technologiczne”. Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Kontrolery AE2”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
 			y: 8.0d
 			icon: "ae2:controller"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000001FC"
 			title: "Procesory najwyższej klasy"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Procesory najwyższej klasy” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Procesory najwyższej klasy”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 1.0d
 			y: 12.0d
 			icon: "mekanism:ultimate_control_circuit"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000001FD"
 			title: "Zasobniki energii"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Zasobniki energii” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Zasobniki energii”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 15.0d
 			y: 12.0d
 			icon: "mekanism:ultimate_energy_cube"
@@ -87,7 +87,7 @@
 		{
 			id: "A1300000000001FE"
 			title: "Reaktory Powah"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Reaktory Powah” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Reaktory Powah”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "powah:reactor_nitro"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000001FF"
 			title: "Automatyzacja procesów"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Automatyzacja procesów” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Reaktory Powah”. Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Automatyzacja procesów”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 1.0d
 			y: 20.0d
 			icon: "ae2:pattern_provider"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000200"
 			title: "Infrastruktura EnderIO"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Infrastruktura EnderIO” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Infrastruktura EnderIO”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 15.0d
 			y: 20.0d
 			icon: "enderio:alloy_smelter"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000201"
 			title: "Draconium"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Draconium” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Draconium”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 1.0d
 			y: 24.0d
 			icon: "draconicevolution:draconium_ingot"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000202"
 			title: "Energia drakońska"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Energia drakońska” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Energia drakońska”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 15.0d
 			y: 24.0d
 			icon: "draconicevolution:draconic_energy_core"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000203"
 			title: "Maszyny chemiczne"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Maszyny chemiczne” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Draconium”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Maszyny chemiczne”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
 			y: 28.0d
 			icon: "mekanism:chemical_crystallizer"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000204"
 			title: "Fabryka agrarna"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Fabryka agrarna” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Fabryka agrarna”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
 			y: 28.0d
 			icon: "industrialforegoing:plant_gatherer"
@@ -164,7 +164,7 @@
 		{
 			id: "A130000000000205"
 			title: "Transport kwantowy"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Transport kwantowy” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Transport kwantowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "mekanism:quantum_entangloporter"
@@ -175,7 +175,7 @@
 		{
 			id: "A130000000000206"
 			title: "ZŁOTA ERA TOKYO WORLD"
-			description: ["Zbudowaliście coś więcej niż najdroższą maszynę. Zbudowaliście własny świat. Ostatnia próba to „ZŁOTA ERA TOKYO WORLD”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Zbudowaliście coś więcej niż najdroższą maszynę. Zbudowaliście własny świat. Ostatni sprawdzian to „ZŁOTA ERA TOKYO WORLD”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "draconicevolution:crafting_core"

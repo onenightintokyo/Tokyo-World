@@ -10,7 +10,7 @@
 		{
 			id: "A1300000000000CD"
 			title: "Stół speleologa"
-			description: ["Pod powierzchnią kryją się miejsca, w których nawet dobry sprzęt bywa niewystarczający. Przygotuj się na nieznane. Zacznij od „Stół speleologa”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Pod powierzchnią kryją się miejsca, w których nawet dobry sprzęt bywa niewystarczający. Przygotuj się na nieznane. Zacznij od sprawy „Stół speleologa”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "alexscaves:spelunkery_table"
@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000000CE"
 			title: "Skała galenowa"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Skała galenowa” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Skała galenowa”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
 			y: 4.0d
 			icon: "alexscaves:galena"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000000CF"
 			title: "Przysmak biomowy"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Przysmak biomowy” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Przysmak biomowy”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
 			y: 4.0d
 			icon: "alexscaves:biome_treat"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000000D0"
 			title: "Pancerz nurka"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Pancerz nurka” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Pancerz nurka”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
 			y: 8.0d
 			icon: "alexscaves:diving_chestplate"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000000D1"
 			title: "Rdzeń wulkaniczny"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Rdzeń wulkaniczny” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Przysmak biomowy”. Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Rdzeń wulkaniczny”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
 			y: 8.0d
 			icon: "alexscaves:volcanic_core"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000000D2"
 			title: "Materiały syntetyczne"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Materiały syntetyczne” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Materiały syntetyczne”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
 			y: 12.0d
 			icon: "alexscaves:polymer_plate"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000000D3"
 			title: "Ochrona przed skażeniem"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Ochrona przed skażeniem” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Ochrona przed skażeniem”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
 			y: 12.0d
 			icon: "alexscaves:hazmat_chestplate"
@@ -87,7 +87,7 @@
 		{
 			id: "A1300000000000D4"
 			title: "Piec jądrowy"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Piec jądrowy” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Piec jądrowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "alexscaves:nuclear_furnace"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000000D5"
 			title: "Rdzeń rozszczepienia"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Rdzeń rozszczepienia” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Piec jądrowy”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Rdzeń rozszczepienia”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
 			y: 20.0d
 			icon: "alexscaves:fissile_core"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000000D6"
 			title: "Rdzeń teleportacji"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Rdzeń teleportacji” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Rdzeń teleportacji”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
 			y: 20.0d
 			icon: "alexscaves:telecore"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000000D7"
 			title: "Klejnot okultystyczny"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Klejnot okultystyczny” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Klejnot okultystyczny”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
 			y: 24.0d
 			icon: "alexscaves:occult_gem"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000000D8"
 			title: "Świetlista esencja"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Świetlista esencja” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Świetlista esencja”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
 			y: 24.0d
 			icon: "alexscaves:radiant_essence"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000000D9"
 			title: "Konsola z jaskini"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Konsola z jaskini” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Konsola z jaskini”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 28.0d
 			icon: "alexscaves:game_controller"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000000DA"
 			title: "Pociąg prehistoryczny"
-			description: ["Wracasz z wyprawy bogatszy o rzeczy, których nie znajdziesz na powierzchni. Ostatnia próba to „Pociąg prehistoryczny”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Wracasz z wyprawy bogatszy o rzeczy, których nie znajdziesz na powierzchni. Ostatni sprawdzian to „Pociąg prehistoryczny”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 32.0d
 			icon: "alexscaves:dinosaur_train"

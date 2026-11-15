@@ -10,7 +10,7 @@
 		{
 			id: "A1300000000001E7"
 			title: "Zapasy ekspedycji"
-			description: ["Niektóre trofea zdobywa się tylko dzięki dobremu przygotowaniu i współpracy. Podejmij ryzyko, ale nie lekceważ przeciwnika. Zacznij od „Zapasy ekspedycji”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Niektóre trofea zdobywa się tylko dzięki dobremu przygotowaniu i współpracy. Podejmij ryzyko, ale nie lekceważ przeciwnika. Zacznij od sprawy „Zapasy ekspedycji”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "minecraft:golden_carrot"
@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000001E8"
 			title: "Żelazne wsparcie"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Żelazne wsparcie” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Żelazne wsparcie”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:iron_ingot"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000001E9"
 			title: "Obsydian ochronny"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Obsydian ochronny” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Obsydian ochronny”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
 			y: 4.0d
 			icon: "minecraft:obsidian"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000001EA"
 			title: "Złote jabłka"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Złote jabłka” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Złote jabłka”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
 			y: 8.0d
 			icon: "minecraft:golden_apple"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000001EB"
 			title: "Ogniste różdżki"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Ogniste różdżki” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Obsydian ochronny”. Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Ogniste różdżki”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
 			y: 8.0d
 			icon: "minecraft:blaze_rod"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000001EC"
 			title: "Perły Endera"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Perły Endera” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Perły Endera”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
 			y: 12.0d
 			icon: "minecraft:ender_pearl"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000001ED"
 			title: "Diamentowe wyposażenie"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Diamentowe wyposażenie” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Diamentowe wyposażenie”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
 			y: 12.0d
 			icon: "minecraft:diamond"
@@ -87,7 +87,7 @@
 		{
 			id: "A1300000000001EE"
 			title: "Netherit do pancerzy"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Netherit do pancerzy” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Netherit do pancerzy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "minecraft:netherite_ingot"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000001EF"
 			title: "Metal starożytnych"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Metal starożytnych” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Netherit do pancerzy”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Metal starożytnych”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
 			y: 20.0d
 			icon: "cataclysm:ancient_metal_ingot"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000001F0"
 			title: "Gwiazda Netheru"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Gwiazda Netheru” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Gwiazda Netheru”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
 			y: 20.0d
 			icon: "minecraft:nether_star"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000001F1"
 			title: "Metal Ignitium"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Metal Ignitium” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Metal Ignitium”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
 			y: 24.0d
 			icon: "cataclysm:ignitium_ingot"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000001F2"
 			title: "Głowa smoka"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Głowa smoka” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Głowa smoka”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
 			y: 24.0d
 			icon: "minecraft:dragon_head"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000001F3"
 			title: "Metal Cursium"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Metal Cursium” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Metal Ignitium”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Metal Cursium”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
 			y: 28.0d
 			icon: "cataclysm:cursium_ingot"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000001F4"
 			title: "Materiały jaskiniowe"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Materiały jaskiniowe” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Materiały jaskiniowe”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
 			y: 28.0d
 			icon: "alexscaves:galena"
@@ -164,7 +164,7 @@
 		{
 			id: "A1300000000001F5"
 			title: "Płytki syntetyczne"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Płytki syntetyczne” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Płytki syntetyczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "alexscaves:polymer_plate"
@@ -175,7 +175,7 @@
 		{
 			id: "A1300000000001F6"
 			title: "TOKYO BOSS COUNCIL"
-			description: ["Masz dowód, że nawet największe legendy można pokonać. Ostatnia próba to „TOKYO BOSS COUNCIL”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Masz dowód, że nawet największe legendy można pokonać. Ostatni sprawdzian to „TOKYO BOSS COUNCIL”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "minecraft:nether_star"

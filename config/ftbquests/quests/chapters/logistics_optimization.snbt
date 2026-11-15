@@ -10,7 +10,7 @@
 		{
 			id: "A1300000000001A7"
 			title: "Lejki transportowe"
-			description: ["Najmocniejsza maszyna nie pomoże, jeśli surowiec utknie w rurze. Zajmij się miejscami, które dotąd blokowały produkcję. Zacznij od „Lejki transportowe”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Najmocniejsza maszyna nie pomoże, jeśli surowiec utknie w rurze. Zajmij się miejscami, które dotąd blokowały produkcję. Zacznij od sprawy „Lejki transportowe”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "minecraft:hopper"
@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000001A8"
 			title: "Pojemniki buforowe"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Pojemniki buforowe” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Pojemniki buforowe”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:barrel"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000001A9"
 			title: "Rury przedmiotów"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Rury przedmiotów” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Rury przedmiotów”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 4.0d
 			icon: "pipez:item_pipe"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000001AA"
 			title: "Rury płynów"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Rury płynów” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Rury płynów”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 8.0d
 			icon: "pipez:fluid_pipe"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000001AB"
 			title: "Rury energii"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Rury energii” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Rury przedmiotów”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Rury energii”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 8.0d
 			icon: "pipez:energy_pipe"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000001AC"
 			title: "Rury gazów"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Rury gazów” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Rury gazów”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 12.0d
 			icon: "pipez:gas_pipe"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000001AD"
 			title: "Rury uniwersalne"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Rury uniwersalne” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Rury uniwersalne”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 12.0d
 			icon: "pipez:universal_pipe"
@@ -87,7 +87,7 @@
 		{
 			id: "A1300000000001AE"
 			title: "Zaawansowane ulepszenia"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Zaawansowane ulepszenia” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zaawansowane ulepszenia”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "pipez:advanced_upgrade"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000001AF"
 			title: "Sortowanie sieci"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Sortowanie sieci” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Zaawansowane ulepszenia”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Sortowanie sieci”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 20.0d
 			icon: "mekanism:logistical_sorter"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000001B0"
 			title: "System XNet"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „System XNet” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „System XNet”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 20.0d
 			icon: "xnet:controller"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000001B1"
 			title: "Złącza XNet"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Złącza XNet” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Złącza XNet”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 24.0d
 			icon: "xnet:connector"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000001B2"
 			title: "Kontroler składu"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Kontroler składu” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Kontroler składu”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 24.0d
 			icon: "sophisticatedstorage:controller"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000001B3"
 			title: "Cztery szuflady"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Cztery szuflady” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Złącza XNet”. Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Cztery szuflady”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 28.0d
 			icon: "functionalstorage:oak_4"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000001B4"
 			title: "Narzędzie magazynowe"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Narzędzie magazynowe” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Narzędzie magazynowe”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 28.0d
 			icon: "sophisticatedstorage:storage_tool"
@@ -164,7 +164,7 @@
 		{
 			id: "A1300000000001B5"
 			title: "Interfejsy ME"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Interfejsy ME” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejsy ME”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "ae2:interface"
@@ -175,7 +175,7 @@
 		{
 			id: "A1300000000001B6"
 			title: "TOKYO FREIGHT HUB"
-			description: ["System dowozi wszystko na czas, nawet gdy fabryka pracuje na pełnych obrotach. Ostatnia próba to „TOKYO FREIGHT HUB”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["System dowozi wszystko na czas, nawet gdy fabryka pracuje na pełnych obrotach. Ostatni sprawdzian to „TOKYO FREIGHT HUB”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "mekanism:quantum_entangloporter"

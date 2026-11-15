@@ -10,7 +10,7 @@
 		{
 			id: "A130000000000147"
 			title: "Projekt hali"
-			description: ["Warsztat robi się za ciasny. Potrzebujesz przestrzeni, w której kilka procesów może pracować równocześnie. Zacznij od „Projekt hali”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Warsztat robi się za ciasny. Potrzebujesz przestrzeni, w której kilka procesów może pracować równocześnie. Zacznij od sprawy „Projekt hali”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "minecraft:iron_block"
@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000148"
 			title: "Wały produkcyjne"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Wały produkcyjne” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Wały produkcyjne”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
 			y: 4.0d
 			icon: "create:shaft"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000149"
 			title: "Napęd mechaniczny"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Napęd mechaniczny” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Napęd mechaniczny”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
 			y: 4.0d
 			icon: "create:water_wheel"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000014A"
 			title: "Prasy przemysłowe"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Prasy przemysłowe” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Prasy przemysłowe”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
 			y: 8.0d
 			icon: "create:mechanical_press"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000014B"
 			title: "Ramiona robotyczne"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Ramiona robotyczne” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Napęd mechaniczny”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Ramiona robotyczne”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
 			y: 8.0d
 			icon: "create:deployer"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000014C"
 			title: "Taśmociąg główny"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Taśmociąg główny” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Taśmociąg główny”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
 			y: 12.0d
 			icon: "create:belt_connector"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000014D"
 			title: "Bufory materiałowe"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Bufory materiałowe” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Bufory materiałowe”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
 			y: 12.0d
 			icon: "minecraft:hopper"
@@ -87,7 +87,7 @@
 		{
 			id: "A13000000000014E"
 			title: "Sortery produkcyjne"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Sortery produkcyjne” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sortery produkcyjne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "create:brass_funnel"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000014F"
 			title: "Kruszenie na skalę"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Kruszenie na skalę” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Sortery produkcyjne”. Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Kruszenie na skalę”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
 			y: 20.0d
 			icon: "mekanism:crusher"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000150"
 			title: "Automatyczne mieszanie"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Automatyczne mieszanie” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Automatyczne mieszanie”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
 			y: 20.0d
 			icon: "create:mechanical_mixer"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000151"
 			title: "Fabryczne obudowy"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Fabryczne obudowy” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Fabryczne obudowy”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
 			y: 24.0d
 			icon: "mekanism:steel_casing"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000152"
 			title: "Montaż precyzyjny"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Montaż precyzyjny” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Montaż precyzyjny”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
 			y: 24.0d
 			icon: "create:precision_mechanism"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000153"
 			title: "Crafting modułowy"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Crafting modułowy” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Fabryczne obudowy”. Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Crafting modułowy”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
 			y: 28.0d
 			icon: "create:mechanical_crafter"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000154"
 			title: "Zaawansowany sorter"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Zaawansowany sorter” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Zaawansowany sorter”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
 			y: 28.0d
 			icon: "mekanism:logistical_sorter"
@@ -164,7 +164,7 @@
 		{
 			id: "A130000000000155"
 			title: "Cyfrowy terminal"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Cyfrowy terminal” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Cyfrowy terminal”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 32.0d
 			icon: "ae2:crafting_terminal"
@@ -175,7 +175,7 @@
 		{
 			id: "A130000000000156"
 			title: "TOKYO MEGAFABRYKA"
-			description: ["Wielka fabryka nabiera własnego rytmu, a ty możesz myśleć o kolejnych projektach. Ostatnia próba to „TOKYO MEGAFABRYKA”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Wielka fabryka nabiera własnego rytmu, a ty możesz myśleć o kolejnych projektach. Ostatni sprawdzian to „TOKYO MEGAFABRYKA”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 36.0d
 			icon: "mekanism:basic_crushing_factory"

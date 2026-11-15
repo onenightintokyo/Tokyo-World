@@ -12,7 +12,7 @@
 		{
 			id: "A130000000000031"
 			title: "Kable energetyczne"
-			description: ["Sama kruszarka nie zbuduje potężnego zakładu. Najważniejsze jest to, co dzieje się między kolejnymi urządzeniami. Zacznij od „Kable energetyczne”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Sama kruszarka nie zbuduje potężnego zakładu. Najważniejsze jest to, co dzieje się między kolejnymi urządzeniami. Zacznij od sprawy „Kable energetyczne”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "mekanism:basic_universal_cable"
@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000032"
 			title: "Obwody zaawansowane"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Obwody zaawansowane” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Obwody zaawansowane”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "mekanism:advanced_control_circuit"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000033"
 			title: "Elitarne obwody"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Elitarne obwody” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Elitarne obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mekanism:elite_control_circuit"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000034"
 			title: "Obwody najwyższej klasy"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Obwody najwyższej klasy” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Obwody najwyższej klasy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "mekanism:ultimate_control_circuit"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000035"
 			title: "Kompresor osmu"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Kompresor osmu” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Elitarne obwody”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Kompresor osmu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "mekanism:osmium_compressor"
@@ -67,7 +67,7 @@
 		{
 			id: "A130000000000036"
 			title: "Separator elektrolityczny"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Separator elektrolityczny” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Separator elektrolityczny”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 12.0d
 			icon: "mekanism:electrolytic_separator"
@@ -78,7 +78,7 @@
 		{
 			id: "A130000000000037"
 			title: "Utleniacz chemiczny"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Utleniacz chemiczny” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Utleniacz chemiczny”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "mekanism:chemical_oxidizer"
@@ -89,7 +89,7 @@
 		{
 			id: "A130000000000038"
 			title: "Infuzor chemiczny"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Infuzor chemiczny” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Infuzor chemiczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 16.0d
 			icon: "mekanism:chemical_infuser"
@@ -100,7 +100,7 @@
 		{
 			id: "A130000000000039"
 			title: "Komora reakcji"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Komora reakcji” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Utleniacz chemiczny”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Komora reakcji”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 16.0d
 			icon: "mekanism:pressurized_reaction_chamber"
@@ -111,7 +111,7 @@
 		{
 			id: "A13000000000003A"
 			title: "Kondensacja gazów"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Kondensacja gazów” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kondensacja gazów”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 20.0d
 			icon: "mekanism:rotary_condensentrator"
@@ -122,7 +122,7 @@
 		{
 			id: "A13000000000003B"
 			title: "Rozpuszczanie chemiczne"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Rozpuszczanie chemiczne” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Rozpuszczanie chemiczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 24.0d
 			icon: "mekanism:chemical_dissolution_chamber"
@@ -133,7 +133,7 @@
 		{
 			id: "A13000000000003C"
 			title: "Krystalizacja chemiczna"
-			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Krystalizacja chemiczna” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Krystalizacja chemiczna”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 24.0d
 			icon: "mekanism:chemical_crystallizer"
@@ -144,7 +144,7 @@
 		{
 			id: "A13000000000003D"
 			title: "Zbiornik płynów"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Zbiornik płynów” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Rozpuszczanie chemiczne”. Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Zbiornik płynów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "mekanism:basic_fluid_tank"
@@ -155,7 +155,7 @@
 		{
 			id: "A13000000000003E"
 			title: "Magazyn energii"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Magazyn energii” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Magazyn energii”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 28.0d
 			icon: "mekanism:advanced_energy_cube"
@@ -166,7 +166,7 @@
 		{
 			id: "A13000000000003F"
 			title: "Ogromny akumulator"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Ogromny akumulator” i zachowaj trochę na dalszą rozbudowę."]
+			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Ogromny akumulator”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 32.0d
 			icon: "mekanism:ultimate_energy_cube"
@@ -177,7 +177,7 @@
 		{
 			id: "A130000000000040"
 			title: "Sortowanie materiałów"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Sortowanie materiałów” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Sortowanie materiałów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 32.0d
 			icon: "mekanism:logistical_sorter"
@@ -188,7 +188,7 @@
 		{
 			id: "A130000000000041"
 			title: "Cyfrowa koparka"
-			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Cyfrowa koparka” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Ogromny akumulator”. Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Cyfrowa koparka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 36.0d
 			icon: "mekanism:digital_miner"
@@ -199,7 +199,7 @@
 		{
 			id: "A130000000000042"
 			title: "Transport kwantowy"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Transport kwantowy” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Transport kwantowy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 36.0d
 			icon: "mekanism:quantum_entangloporter"
@@ -210,7 +210,7 @@
 		{
 			id: "A130000000000043"
 			title: "Sieć QIO"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Sieć QIO” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sieć QIO”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 40.0d
 			icon: "mekanism:qio_drive_array"
@@ -221,7 +221,7 @@
 		{
 			id: "A130000000000044"
 			title: "Teleportacja technologiczna"
-			description: ["Procesy zaczynają się zazębiać i każda maszyna ma swoje miejsce. Ostatnia próba to „Teleportacja technologiczna”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Procesy zaczynają się zazębiać i każda maszyna ma swoje miejsce. Ostatni sprawdzian to „Teleportacja technologiczna”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 44.0d
 			icon: "mekanism:teleporter"

@@ -10,7 +10,7 @@
 		{
 			id: "A1300000000000B1"
 			title: "Leśne gniazdo"
-			description: ["Pszczoły nie znają grafiku pracownika, a jednak dostarczają niesamowite zasoby. Przygotuj im odpowiednie warunki. Zacznij od „Leśne gniazdo”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			description: ["Pszczoły nie znają grafiku pracownika, a jednak dostarczają niesamowite zasoby. Przygotuj im odpowiednie warunki. Zacznij od sprawy „Leśne gniazdo”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
 			y: 0.0d
 			icon: "productivebees:oak_wood_nest"
@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000000B2"
 			title: "Gniazdo trzmieli"
-			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Gniazdo trzmieli” i daj sobie chwilę na sprawdzenie efektu."]
+			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Gniazdo trzmieli”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 4.0d
 			icon: "productivebees:bumble_bee_nest"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000000B3"
 			title: "Łapacz pszczół"
-			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Łapacz pszczół” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Łapacz pszczół”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 4.0d
 			icon: "productivebees:catcher"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000000B4"
 			title: "Pasieka bambusowa"
-			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Pasieka bambusowa” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Pasieka bambusowa”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 8.0d
 			icon: "productivebees:bamboo_hive"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000000B5"
 			title: "Wirówka miodowa"
-			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Wirówka miodowa” — teraz pracujesz już nad prawdziwym systemem."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Łapacz pszczół”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Wirówka miodowa”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 8.0d
 			icon: "productivebees:centrifuge"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000000B6"
 			title: "Wirówka elektryczna"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Wirówka elektryczna” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Wirówka elektryczna”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 12.0d
 			icon: "productivebees:powered_centrifuge"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000000B7"
 			title: "Rozlewnia miodu"
-			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Rozlewnia miodu” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Rozlewnia miodu”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 16.0d
 			icon: "productivebees:bottler"
@@ -87,7 +87,7 @@
 		{
 			id: "A1300000000000B8"
 			title: "Rozmnażanie pszczół"
-			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Rozmnażanie pszczół” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Rozmnażanie pszczół”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 16.0d
 			icon: "productivebees:breeding_chamber"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000000B9"
 			title: "Wirówka podgrzewana"
-			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Wirówka podgrzewana” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			description: ["Wcześniej udało ci się już zamknąć temat „Rozlewnia miodu”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Wirówka podgrzewana”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 20.0d
 			icon: "productivebees:heated_centrifuge"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000000BA"
 			title: "Energia z miodu"
-			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Energia z miodu” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Energia z miodu”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 20.0d
 			icon: "productivebees:honey_generator"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000000BB"
 			title: "Specjalne gniazdo"
-			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Specjalne gniazdo” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Specjalne gniazdo”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
 			y: 24.0d
 			icon: "productivebees:sugarbag_nest"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000000BC"
 			title: "Legendarna pasieka"
-			description: ["Pasieka stała się częścią twojego systemu produkcji. Ostatnia próba to „Legendarna pasieka”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			description: ["Pasieka stała się częścią twojego systemu produkcji. Ostatni sprawdzian to „Legendarna pasieka”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 28.0d
 			icon: "productivebees:dragon_egg_hive"
