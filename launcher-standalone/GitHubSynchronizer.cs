@@ -41,7 +41,7 @@ internal sealed class GitHubSynchronizer
     {
         progress.Report("GitHub: sprawdzam najnowszy stan paczki...");
         using var response = await http.GetAsync(
-            $"https://api.github.com/repos/{Repo}/git/trees/main?recursive=1", cancellation);
+            $"https://api.github.com/repos/{repo}/git/trees/main?recursive=1", cancellation);
         if (response.StatusCode is HttpStatusCode.NotFound or HttpStatusCode.Unauthorized or HttpStatusCode.Forbidden)
             throw new InvalidOperationException("Nie można odczytać aktualizacji z GitHuba. Ustaw publiczne repozytorium dystrybucyjne lub podaj własny token z uprawnieniem Contents: Read w ustawieniach (⚙). Nie umieszczaj tokenu w EXE.");
         response.EnsureSuccessStatusCode();
@@ -96,7 +96,7 @@ internal sealed class GitHubSynchronizer
     private async Task<byte[]> DownloadBlobAsync(string sha, CancellationToken cancellation)
     {
         using var resp = await http.GetAsync(
-            $"https://api.github.com/repos/{Repo}/git/blobs/{sha}", cancellation);
+            $"https://api.github.com/repos/{repo}/git/blobs/{sha}", cancellation);
         resp.EnsureSuccessStatusCode();
         using var doc = JsonDocument.Parse(await resp.Content.ReadAsStreamAsync(cancellation));
         string encoding = doc.RootElement.GetProperty("encoding").GetString() ?? "";
