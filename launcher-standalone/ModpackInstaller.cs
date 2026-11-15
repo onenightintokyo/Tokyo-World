@@ -69,6 +69,10 @@ internal sealed class ModpackInstaller
                 }
             }
         }
+        // Reconcile pinned mod compatibility after optional modules have been resolved.
+        // This fixes Delightful 3.8.1 vs End\u0027s Delight 2.4 and duplicate IntegratedTerminals.
+        await ModCompatibilityRepair.ApplyAsync(gameDir, progress, cancellation);
+
         string reportDir = Path.Combine(gameDir, ".tokyo");
         Directory.CreateDirectory(reportDir);
         await File.WriteAllLinesAsync(Path.Combine(reportDir, "missing-mods.txt"), skipped, cancellation);
