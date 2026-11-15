@@ -183,7 +183,7 @@
 			icon: "ars_nouveau:enchanters_sword"
 			dependencies: ["A13000000000009C", "A13000000000009D", "A13000000000009E", "A13000000000009F"]
 			tasks: [{ id: "A1400000000000A0" type: "item" item: "ars_nouveau:enchanters_sword" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000A0" type: "item" item: "minecraft:enchanted_golden_apple" count: 1 } { id: "A1600000000000A0" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1500000000000A0" type: "item" item: "minecraft:enchanted_golden_apple" count: 1 }, { id: "A1600000000000A0" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
