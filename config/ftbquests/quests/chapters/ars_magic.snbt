@@ -1,16 +1,22 @@
 {
 	filename: "ars_magic"
 	title: "&d&lKsięga zaklęć"
-	group: "A110000000000006"
+	group: "A110000000000002"
 	id: "A12000000000000C"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "ars_nouveau:novice_spell_book"
 	order_index: 1
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/magic_arcana.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }
 	]
 	quests: [
 		{
 			id: "A130000000000091"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pierwsza księga zaklęć"
 			description: ["Pierwszy czar jest tylko obietnicą. Prawdziwa sztuka polega na zrozumieniu Source i własnych możliwości. Zacznij od sprawy „Pierwsza księga zaklęć”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -22,6 +28,10 @@
 		}
 		{
 			id: "A130000000000092"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Klejnot źródła"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Klejnot źródła”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
@@ -33,6 +43,10 @@
 		}
 		{
 			id: "A130000000000093"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magazyn Source"
 			description: ["Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Magazyn Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
@@ -44,6 +58,10 @@
 		}
 		{
 			id: "A130000000000094"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Komora nasycania"
 			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Komora nasycania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
@@ -55,6 +73,10 @@
 		}
 		{
 			id: "A130000000000095"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Aparat zaklinania"
 			description: ["Wcześniej zamknąłeś już sprawę „Magazyn Source”. W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Aparat zaklinania”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
@@ -66,6 +88,10 @@
 		}
 		{
 			id: "A130000000000096"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magiczne piedestały"
 			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Magiczne piedestały”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
@@ -77,6 +103,10 @@
 		}
 		{
 			id: "A130000000000097"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rdzeń magiczny"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Rdzeń magiczny”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
@@ -88,6 +118,10 @@
 		}
 		{
 			id: "A130000000000098"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przekazywanie Source"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Przekazywanie Source”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -99,6 +133,10 @@
 		}
 		{
 			id: "A130000000000099"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zbieracz Source"
 			description: ["Wcześniej zamknąłeś już sprawę „Przekazywanie Source”. Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Zbieracz Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
@@ -110,6 +148,10 @@
 		}
 		{
 			id: "A13000000000009A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Farma energii magicznej"
 			description: ["W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Farma energii magicznej”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
@@ -121,6 +163,10 @@
 		}
 		{
 			id: "A13000000000009B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wieża zaklęć"
 			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Wieża zaklęć”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
@@ -132,6 +178,10 @@
 		}
 		{
 			id: "A13000000000009C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pryzmat zaklęć"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Pryzmat zaklęć”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
@@ -143,6 +193,10 @@
 		}
 		{
 			id: "A13000000000009D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zaawansowane zaklęcia"
 			description: ["Wcześniej zamknąłeś już sprawę „Wieża zaklęć”. Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Zaawansowane zaklęcia”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
@@ -154,6 +208,10 @@
 		}
 		{
 			id: "A13000000000009E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magiczny magazyn"
 			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Magiczny magazyn”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
@@ -165,6 +223,10 @@
 		}
 		{
 			id: "A13000000000009F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Arcymag"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Arcymag”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -176,6 +238,10 @@
 		}
 		{
 			id: "A1300000000000A0"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Miecz zaklinacza"
 			description: ["Księga przestała być zabawką, a stała się prawdziwym narzędziem. Ostatni sprawdzian to „Miecz zaklinacza”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
