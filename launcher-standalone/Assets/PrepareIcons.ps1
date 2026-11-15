@@ -15,17 +15,17 @@ if (-not (Test-Path -LiteralPath $source)) {
     [System.IO.File]::ReadAllText($source).Trim()
 )
 if ($bytes.Length -lt 1000 -or
-    [Convert]::ToHexString($bytes[0..7]) -ne '89504E470D0A1A0A') {
+    [BitConverter]::ToString($bytes, 0, 8) -ne '89-50-4E-47-0D-0A-1A-0A') {
     throw 'TW icon source is not a valid PNG header.'
 }
 [System.IO.File]::WriteAllBytes($png, $bytes)
 
-$inputStream = New-Object System.IO.MemoryStream(,$bytes)
+$inputStream = [System.IO.MemoryStream]::new($bytes)
 $image = [System.Drawing.Image]::FromStream($inputStream)
 $iconImages = New-Object 'System.Collections.Generic.List[object]'
 try {
     foreach ($size in @(16, 24, 32, 48, 64, 128, 256)) {
-        $bitmap = New-Object System.Drawing.Bitmap($size, $size)
+        $bitmap = [System.Drawing.Bitmap]::new($size, $size)
         $graphics = [System.Drawing.Graphics]::FromImage($bitmap)
         try {
             $graphics.Clear([System.Drawing.Color]::Transparent)
@@ -34,7 +34,7 @@ try {
             $graphics.PixelOffsetMode = [System.Drawing.Drawing2D.PixelOffsetMode]::HighQuality
             $graphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::HighQuality
             $graphics.DrawImage($image, 0, 0, $size, $size)
-            $imageStream = New-Object System.IO.MemoryStream
+            $imageStream = [System.IO.MemoryStream]::new()
             $bitmap.Save($imageStream, [System.Drawing.Imaging.ImageFormat]::Png)
             $iconImages.Add([PSCustomObject]@{
                 Size = $size
@@ -47,8 +47,8 @@ try {
         }
     }
 
-    $out = New-Object System.IO.MemoryStream
-    $writer = New-Object System.IO.BinaryWriter($out)
+    $out = [System.IO.MemoryStream]::new()
+    $writer = [System.IO.BinaryWriter]::new($out)
     try {
         $writer.Write([UInt16]0)       # Reserved.
         $writer.Write([UInt16]1)       # ICO, not CUR.
