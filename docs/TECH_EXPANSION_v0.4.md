@@ -18,6 +18,16 @@ Minecraft **1.20.1**, Forge **47.4.28**. Wszystkie mody z dodatkowego etapu są 
 4. W menu głównym powinno być tło z napisem Tokyo World. W FTB Quests powinno być 20 rozdziałów.
 5. Po aktualizacji uruchom Minecraft ponownie, jeśli pierwsze uruchomienie używało starego skryptu sprzed `git pull`.
 
+## Instalacja jednym dwuklikiem (wygodniejsza niż PowerShell)
+
+Po tym, jak Prism pobierze najnowsze zmiany z GitHuba, zamknij Minecraft i otwórz folder `C:\Tokyo-World`. Znajdziesz w nim:
+
+- `INSTALUJ_TECH_CORE.cmd` — podstawowe technologie
+- `INSTALUJ_TECH_EXPANDED.cmd` — dodatkowe technologie i reaktory (zawiera Core)
+- `INSTALUJ_BOSSOWIE.cmd` — Cataclysm
+
+Pliki CMD tylko uruchamiają opisany poniżej instalator PowerShell, który pobiera zweryfikowane mody. **Zawsze rób kopię świata przed zmianą zestawu modów.** Jeżeli instalator zakończy się błędem, nie usuwaj już obecnych modów — przekaż komunikat z okna.
+
 ## Krok 2 — nowe mody techniczne
 
 **Nie są jeszcze instalowane automatycznie przy Play.** Instalator jest **opcjonalny**, pobiera mody z Modrinth i deklarowane wymagane zależności, filtruje do Forge 1.20.1, weryfikuje SHA-512 i nie nadpisuje istniejących modów. Domyślnie wypisuje tylko plan. Nie uruchamiaj profili rozszerzających na jedynym egzemplarzu ważnego świata bez kopii zapasowej.
