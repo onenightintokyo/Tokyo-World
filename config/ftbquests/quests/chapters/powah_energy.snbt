@@ -183,7 +183,7 @@
 			icon: "powah:reactor_nitro"
 			dependencies: ["A130000000000070", "A130000000000071", "A130000000000072", "A130000000000073"]
 			tasks: [{ id: "A140000000000074" type: "item" item: "powah:reactor_nitro" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000074" type: "item" item: "minecraft:diamond" count: 6 } { id: "A160000000000074" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000074" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A160000000000074" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
