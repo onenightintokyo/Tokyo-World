@@ -183,7 +183,7 @@
 			icon: "immersiveengineering:sample_drill"
 			dependencies: ["A130000000000050", "A130000000000051", "A130000000000052", "A130000000000053"]
 			tasks: [{ id: "A140000000000054" type: "item" item: "immersiveengineering:sample_drill" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000054" type: "item" item: "minecraft:diamond" count: 6 } { id: "A160000000000054" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000054" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A160000000000054" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
