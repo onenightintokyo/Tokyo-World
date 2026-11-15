@@ -1,29 +1,27 @@
-# Tokyo World — Expert Fun Technology Modpack
+# Tokyo World — Expert Fun Modpack
 
-**Minecraft 1.20.1 · Forge 47.4.28 · Tech · Automation · Explore · Magic · Farming**
+**Minecraft 1.20.1 · Forge 47.4.28 · Technology · Automation · Magic · Exploration**
 
-Autorska paczka Minecraft dla znajomych, oparta na rozbudowanych fabrykach i wieloetapowej progresji technologicznej.
+Modpack Tokyo World dla znajomych, z rozbudowaną progresją technologiczną, automatyką fabryk, magią, bossami i własnymi questami.
 
-## v0.8 — MEGA EXPANSION
+## NOWOŚĆ v0.9 — launcher Tokyo World
 
-**Nowy zbiorczy instalator:** `INSTALUJ_TOKYO_MEGA.cmd`
+**`TOKYO_LAUNCHER.cmd`** — graficzny launcher Windows w czarno-czerwonym stylu.
 
-- **66 kandydatów na dodatkowe mody:** 27 technologicznych, 8 magicznych, 18 eksploracyjnych, 13 budowlano-farmingowych.
-- Profil `Mega` uwzględnia również wcześniejsze moduły Tokyo World i pomija już zainstalowane mody.
-- Instalator sprawdza zgodność z Forge 1.20.1 i wymagane zależności, pobiera tylko pliki JAR z SHA-512, zapisuje raport niedostępnych wydań.
-- Niekompatybilne lub niedostępne dodatki są zgłaszane, a nie wymuszane. Nie podmienia istniejących JAR-ów, nie zmienia RAM ani save'ów.
-- Pobranie jest wznawialne dzięki zachowaniu zweryfikowanych plików w katalogu staging.
-- Questbook z v0.7: **518 zadań / 36 rozdziałów**, własne receptury KubeJS i konfiguracja FancyMenu.
+- **Premium / Microsoft:** wybór konta z Prism Launcher; logowanie Microsoft obsługuje oficjalny Prism.
+- **Offline / Nick:** dowolny poprawny nick Minecraft w oficjalnym trybie offline Prism. Tryb nie zastępuje licencji i nie wpuszcza na serwery premium.
+- Przycisk graj, aktualizacja z GitHub, nowe mody i folder gry.
+- Bez Pythona, haseł i kopiowania tokenów. Korzysta z istniejącej instancji Prism.
 
-**Nie oznacza to jeszcze 66 nowych aktywnych modów:** dopóki nie uruchomisz instalatora na Windowsie, aktualizujemy wyłącznie repozytorium. Końcowa liczba zainstalowanych modów zależy od dostępnych wydań i już posiadanych plików. Zgodność całej instancji wymaga testu.
+**`INSTALUJ_TOKYO_WAVE.cmd`** — 36 nowych kandydatów na mody (11 technicznych, 8 mobów/bossów, 8 eksploracyjnych i 9 usprawnień). Instalator dobiera dostępne wydania dla Forge 1.20.1, pomija już posiadane dodatki i sprawdza SHA-512. Nie gwarantuje zgodności wszystkich addonów Create 6.0.8.
 
-## Jak uruchomić MEGA?
+[Instrukcja startu launchera i modów WAVE v0.9](docs/TOKYO_WORLD_LAUNCHER_WAVE_v0.9.md)
 
-1. Zamknij grę i zduplikuj instancję w Prism Launcher, wykonaj backup świata.
-2. W PowerShell: `git -C "C:\Tokyo-World" pull --ff-only origin main`.
-3. Otwórz `C:\Tokyo-World\INSTALUJ_TOKYO_MEGA.cmd`, sprawdź plan i potwierdź `T`.
-4. Przetestuj uruchomienie Minecrafta na kopii instancji.
+## Wcześniejsze aktualizacje
 
-[Pełna instrukcja Tokyo World MEGA v0.8](docs/TOKYO_WORLD_MEGA_v0.8.md)
+- [MEGA v0.8 — duża rozbudowa](docs/TOKYO_WORLD_MEGA_v0.8.md)
+- [Questbook v0.7 — 518 zadań / 36 rozdziałów](docs/TOKYO_WORLD_v0.7.md)
+- [UI FancyMenu i księgi questów](docs/QUESTBOOK_UI_v0.6.md)
+- [Automatyczna aktualizacja](docs/AUTOMATYCZNE_AKTUALIZACJE.md)
 
-Starsza dokumentacja: [v0.7](docs/TOKYO_WORLD_v0.7.md) · [Questbook / FancyMenu](docs/QUESTBOOK_UI_v0.6.md) · [Automatyczne aktualizacje](docs/AUTOMATYCZNE_AKTUALIZACJE.md)
+**Status:** Kod launchera i lista modów są zapisane na GitHubie, ale nie zostały jeszcze przetestowane na komputerze użytkownika. Przed dodaniem nowych modów zrób kopię instancji i świata. RAM pozostaje według ustawień Prism.
