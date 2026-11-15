@@ -8,7 +8,7 @@ namespace TokyoWorldLauncher;
 
 internal sealed class GitHubSynchronizer
 {
-    private const string Repo = "onenightintokyo/Tokyo-World";
+    private readonly string repo;
     private readonly HttpClient http = new() { Timeout = TimeSpan.FromMinutes(3) };
 
     private static readonly string[] Managed = {
@@ -19,9 +19,12 @@ internal sealed class GitHubSynchronizer
         ["modpacks/base_mod_hashes.txt"] = ".tokyo/base_mod_hashes.txt"
     };
 
-    public GitHubSynchronizer(string token)
+    public GitHubSynchronizer(string token, string repository)
     {
-        http.DefaultRequestHeaders.UserAgent.ParseAdd("TokyoWorldIndependentLauncher/1.0");
+        if (!System.Text.RegularExpressions.Regex.IsMatch(repository ?? "", @"\A[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\z"))
+            throw new ArgumentException("Podaj repozytorium w formacie uzytkownik/nazwa.", nameof(repository));
+        repo = repository;
+        http.DefaultRequestHeaders.UserAgent.ParseAdd("TokyoWorldIndependentLauncher/1.1");
         http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.github+json"));
         http.DefaultRequestHeaders.Add("X-GitHub-Api-Version", "2022-11-28");
         if (!string.IsNullOrWhiteSpace(token))
@@ -40,7 +43,7 @@ internal sealed class GitHubSynchronizer
         using var response = await http.GetAsync(
             $"https://api.github.com/repos/{Repo}/git/trees/main?recursive=1", cancellation);
         if (response.StatusCode is HttpStatusCode.NotFound or HttpStatusCode.Unauthorized or HttpStatusCode.Forbidden)
-            throw new InvalidOperationException("Brak dostępu do repozytorium Tokyo World. Jest prywatne: podaj token GitHub z uprawnieniem Contents: Read. Token pozostaje na Twoim komputerze.");
+            throw new InvalidOperationException("Nie można odczytać aktualizacji z GitHuba. Ustaw publiczne repozytorium dystrybucyjne lub podaj własny token z uprawnieniem Contents: Read w ustawieniach (⚙). Nie umieszczaj tokenu w EXE.");
         response.EnsureSuccessStatusCode();
         using var tree = JsonDocument.Parse(await response.Content.ReadAsStreamAsync(cancellation));
         if (tree.RootElement.TryGetProperty("truncated", out var trunc) && trunc.GetBoolean())
