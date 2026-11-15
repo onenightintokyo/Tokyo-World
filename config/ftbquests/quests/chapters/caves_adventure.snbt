@@ -1,0 +1,165 @@
+{
+	filename: "caves_adventure"
+	title: "Alex's Caves — Głębokie ekspedycje"
+	group: "A110000000000001"
+	id: "A120000000000010"
+	icon: "alexscaves:spelunkery_table"
+	order_index: 15
+	images: [ { image: "tokyoworld:textures/gui/quests/exploration_adventure.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
+	quests: [
+		{
+			id: "A1300000000000CD"
+			title: "Stół speleologa"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: stół speleologa. Element 1 z 14 tej ścieżki."]
+			x: 0.0d
+			y: 0.0d
+			icon: "alexscaves:spelunkery_table"
+			dependencies: ["A130000000000008"]
+			tasks: [{ id: "A1400000000000CD" type: "item" item: "alexscaves:spelunkery_table" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000CD" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000CE"
+			title: "Skała galenowa"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: skała galenowa. Element 2 z 14 tej ścieżki."]
+			x: 3.5d
+			y: 0.0d
+			icon: "alexscaves:galena"
+			dependencies: ["A1300000000000CD"]
+			tasks: [{ id: "A1400000000000CE" type: "item" item: "alexscaves:galena" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000000CE" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000CF"
+			title: "Przysmak biomowy"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: przysmak biomowy. Element 3 z 14 tej ścieżki."]
+			x: 7.0d
+			y: 0.0d
+			icon: "alexscaves:biome_treat"
+			dependencies: ["A1300000000000CE"]
+			tasks: [{ id: "A1400000000000CF" type: "item" item: "alexscaves:biome_treat" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000CF" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000D0"
+			title: "Pancerz nurka"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: pancerz nurka. Element 4 z 14 tej ścieżki."]
+			x: 10.5d
+			y: 0.0d
+			icon: "alexscaves:diving_chestplate"
+			dependencies: ["A1300000000000CF"]
+			tasks: [{ id: "A1400000000000D0" type: "item" item: "alexscaves:diving_chestplate" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000D0" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000000D1"
+			title: "Rdzeń wulkaniczny"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: rdzeń wulkaniczny. Element 5 z 14 tej ścieżki."]
+			x: 14.0d
+			y: 0.0d
+			icon: "alexscaves:volcanic_core"
+			dependencies: ["A1300000000000D0"]
+			tasks: [{ id: "A1400000000000D1" type: "item" item: "alexscaves:volcanic_core" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000D1" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000D2"
+			title: "Materiały syntetyczne"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: materiały syntetyczne. Element 6 z 14 tej ścieżki."]
+			x: 0.0d
+			y: 3.0d
+			icon: "alexscaves:polymer_plate"
+			dependencies: ["A1300000000000D1"]
+			tasks: [{ id: "A1400000000000D2" type: "item" item: "alexscaves:polymer_plate" count: 4L consume_items: false }]
+			rewards: [{ id: "A1500000000000D2" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000D3"
+			title: "Ochrona przed skażeniem"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: ochrona przed skażeniem. Element 7 z 14 tej ścieżki."]
+			x: 3.5d
+			y: 3.0d
+			icon: "alexscaves:hazmat_chestplate"
+			dependencies: ["A1300000000000D2"]
+			tasks: [{ id: "A1400000000000D3" type: "item" item: "alexscaves:hazmat_chestplate" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000D3" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000D4"
+			title: "Piec jądrowy"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: piec jądrowy. Element 8 z 14 tej ścieżki."]
+			x: 7.0d
+			y: 3.0d
+			icon: "alexscaves:nuclear_furnace"
+			dependencies: ["A1300000000000D3"]
+			tasks: [{ id: "A1400000000000D4" type: "item" item: "alexscaves:nuclear_furnace" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000D4" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000000D5"
+			title: "Rdzeń rozszczepienia"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: rdzeń rozszczepienia. Element 9 z 14 tej ścieżki."]
+			x: 10.5d
+			y: 3.0d
+			icon: "alexscaves:fissile_core"
+			dependencies: ["A1300000000000D4"]
+			tasks: [{ id: "A1400000000000D5" type: "item" item: "alexscaves:fissile_core" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000D5" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000D6"
+			title: "Rdzeń teleportacji"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: rdzeń teleportacji. Element 10 z 14 tej ścieżki."]
+			x: 14.0d
+			y: 3.0d
+			icon: "alexscaves:telecore"
+			dependencies: ["A1300000000000D5"]
+			tasks: [{ id: "A1400000000000D6" type: "item" item: "alexscaves:telecore" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000D6" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000D7"
+			title: "Klejnot okultystyczny"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: klejnot okultystyczny. Element 11 z 14 tej ścieżki."]
+			x: 0.0d
+			y: 6.0d
+			icon: "alexscaves:occult_gem"
+			dependencies: ["A1300000000000D6"]
+			tasks: [{ id: "A1400000000000D7" type: "item" item: "alexscaves:occult_gem" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000D7" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000D8"
+			title: "Świetlista esencja"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: świetlista esencja. Element 12 z 14 tej ścieżki."]
+			x: 3.5d
+			y: 6.0d
+			icon: "alexscaves:radiant_essence"
+			dependencies: ["A1300000000000D7"]
+			tasks: [{ id: "A1400000000000D8" type: "item" item: "alexscaves:radiant_essence" count: 2L consume_items: false }]
+			rewards: [{ id: "A1500000000000D8" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000000D9"
+			title: "Konsola z jaskini"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: konsola z jaskini. Element 13 z 14 tej ścieżki."]
+			x: 7.0d
+			y: 6.0d
+			icon: "alexscaves:game_controller"
+			dependencies: ["A1300000000000D8"]
+			tasks: [{ id: "A1400000000000D9" type: "item" item: "alexscaves:game_controller" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000D9" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000DA"
+			title: "Pociąg prehistoryczny"
+			description: ["Eksploracja podziemnych biomów, rzadkich minerałów i technologii. Pozyskaj lub wytwórz: pociąg prehistoryczny. Element 14 z 14 tej ścieżki."]
+			x: 10.5d
+			y: 6.0d
+			icon: "alexscaves:dinosaur_train"
+			dependencies: ["A1300000000000D9"]
+			tasks: [{ id: "A1400000000000DA" type: "item" item: "alexscaves:dinosaur_train" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000DA" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+	]
+}
