@@ -183,7 +183,7 @@
 			icon: "industrialforegoing:biofuel_generator"
 			dependencies: ["A130000000000060", "A130000000000061", "A130000000000062", "A130000000000063"]
 			tasks: [{ id: "A140000000000064" type: "item" item: "industrialforegoing:biofuel_generator" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000064" type: "item" item: "minecraft:diamond" count: 6 } { id: "A160000000000064" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000064" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A160000000000064" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
