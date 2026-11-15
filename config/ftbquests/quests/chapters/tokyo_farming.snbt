@@ -129,7 +129,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A15000000000001E" type: "item" item: "minecraft:golden_carrot" count: 16 } { id: "A16000000000001E" type: "item" item: "minecraft:golden_apple" count: 2 }]
+			rewards: [{ id: "A15000000000001E" type: "item" item: "minecraft:golden_carrot" count: 16 }, { id: "A16000000000001E" type: "item" item: "minecraft:golden_apple" count: 2 }]
 		}
 	]
 }
