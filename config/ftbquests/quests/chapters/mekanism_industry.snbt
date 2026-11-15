@@ -1,10 +1,10 @@
 {
 	filename: "mekanism_industry"
-	title: "Mekanism — Zaawansowana fabryka"
-	group: "A110000000000001"
+	title: "&b&l02 &r&fMekanism: Przemysł"
+	group: "A110000000000002"
 	id: "A120000000000006"
 	icon: "mekanism:advanced_control_circuit"
-	order_index: 5
+	order_index: 1
 	images: [
 		{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
 	]
