@@ -38,7 +38,22 @@ internal static class LauncherAutoUpdater
             runId = run.GetProperty("id").GetInt64();
             break;
         }
-        if (runId == 0 || runId <= settings.LastLauncherRunId) return false;
+        if (runId == 0) return false;
+        string runningExe = Environment.ProcessPath ?? "";
+        if (runId <= settings.LastLauncherRunId)
+        {
+            if (string.IsNullOrEmpty(settings.PendingUpdateHash) || !File.Exists(runningExe))
+                return false;
+            await using var running = File.OpenRead(runningExe);
+            string runningHash = Convert.ToHexString(await SHA256.HashDataAsync(running));
+            if (runningHash.Equals(settings.PendingUpdateHash, StringComparison.OrdinalIgnoreCase))
+            {
+                settings.PendingUpdateHash = "";
+                settings.Save();
+                return false;
+            }
+            report.Report("Ponawiam aktualizację, której wcześniej nie udało się zastosować.");
+        }
         using var artifacts = await GetJson(http, api + "/actions/runs/" + runId + "/artifacts?per_page=30");
         JsonElement selected = default;
         foreach (var artifact in artifacts.RootElement.GetProperty("artifacts").EnumerateArray())
@@ -93,11 +108,26 @@ internal static class LauncherAutoUpdater
             }
 
             string current = Environment.ProcessPath ?? throw new InvalidOperationException("Nie znam ścieżki EXE.");
+            var runningVersion = FileVersionInfo.GetVersionInfo(current).FileVersion;
+            var downloadedVersion = FileVersionInfo.GetVersionInfo(next).FileVersion;
+            if (Version.TryParse(runningVersion, out var currentNumber) &&
+                Version.TryParse(downloadedVersion, out var downloadedNumber) &&
+                downloadedNumber < currentNumber)
+            {
+                // Never downgrade to an older successful build from main.
+                report.Report("Nowszy launcher jest już zainstalowany — pomijam starszy build.");
+                settings.LastLauncherRunId = runId;
+                settings.PendingUpdateHash = "";
+                settings.Save();
+                return false;
+            }
             using var currentStream = File.OpenRead(current);
             using var newStream = File.OpenRead(next);
             string currentHash = Convert.ToHexString(await SHA256.HashDataAsync(currentStream));
             string newHash = Convert.ToHexString(await SHA256.HashDataAsync(newStream));
             settings.LastLauncherRunId = runId;
+            settings.PendingUpdateHash = currentHash.Equals(newHash, StringComparison.OrdinalIgnoreCase)
+                ? "" : newHash;
             settings.Save();
             if (currentHash.Equals(newHash, StringComparison.OrdinalIgnoreCase))
             {
