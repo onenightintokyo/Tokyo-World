@@ -10,6 +10,10 @@ internal sealed class LauncherSettings
         Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TokyoWorld");
     public string OfflineNickname { get; set; } = "TokyoPlayer";
     public bool UseMicrosoft { get; set; } = true;
+    public string PremiumNickname { get; set; } = "";
+    // Friends can use a separate PUBLIC read-only distribution repository,
+    // while the owner's original Tokyo-World source remains private.
+    public string Repository { get; set; } = "onenightintokyo/Tokyo-World";
     public bool InstallAllModules { get; set; } = true;
     public int RamMb { get; set; } = 4096;
     public string GitHubTokenEncrypted { get; set; } = "";
