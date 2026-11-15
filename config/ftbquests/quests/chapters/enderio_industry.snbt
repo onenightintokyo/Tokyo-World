@@ -1,0 +1,143 @@
+{
+	filename: "enderio_industry"
+	title: "Ender IO — Fabryka stopow"
+	group: "A110000000000001"
+	id: "A120000000000016"
+	icon: "enderio:alloy_smelter"
+	order_index: 21
+	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
+	quests: [
+		{
+			id: "A130000000000127"
+			title: "Ziarna nieskonczonosci"
+			description: ["Zbuduj kolejny etap Tokyo World: Ziarna nieskonczonosci. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 7.0d
+			y: 0.0d
+			icon: "enderio:grain_of_infinity"
+			dependencies: ["A130000000000010", "A130000000000030"]
+			tasks: [{ id: "A140000000000127" type: "item" item: "enderio:grain_of_infinity" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000127" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000128"
+			title: "Podstawowy kondensator"
+			description: ["Zbuduj kolejny etap Tokyo World: Podstawowy kondensator. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 0.0d
+			y: 4.0d
+			icon: "enderio:basic_capacitor"
+			dependencies: ["A130000000000127"]
+			tasks: [{ id: "A140000000000128" type: "item" item: "enderio:basic_capacitor" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000128" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A130000000000129"
+			title: "Wielofunkcyjna obudowa"
+			description: ["Zbuduj kolejny etap Tokyo World: Wielofunkcyjna obudowa. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 4.5d
+			y: 4.0d
+			icon: "enderio:void_chassis"
+			dependencies: ["A130000000000127"]
+			tasks: [{ id: "A140000000000129" type: "item" item: "enderio:void_chassis" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000129" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A13000000000012A"
+			title: "Przemyslowy wytapiacz"
+			description: ["Zbuduj kolejny etap Tokyo World: Przemyslowy wytapiacz. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 9.0d
+			y: 4.0d
+			icon: "enderio:alloy_smelter"
+			dependencies: ["A130000000000127"]
+			tasks: [{ id: "A14000000000012A" type: "item" item: "enderio:alloy_smelter" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000012A" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A13000000000012B"
+			title: "Mlyn SAG"
+			description: ["Zbuduj kolejny etap Tokyo World: Mlyn SAG. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 13.5d
+			y: 4.0d
+			icon: "enderio:sag_mill"
+			dependencies: ["A130000000000127"]
+			tasks: [{ id: "A14000000000012B" type: "item" item: "enderio:sag_mill" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000012B" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A13000000000012C"
+			title: "Generator Stirlinga"
+			description: ["Zbuduj kolejny etap Tokyo World: Generator Stirlinga. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 0.0d
+			y: 7.5d
+			icon: "enderio:stirling_generator"
+			dependencies: ["A130000000000128"]
+			tasks: [{ id: "A14000000000012C" type: "item" item: "enderio:stirling_generator" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000012C" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A13000000000012D"
+			title: "Stop przewodzacy"
+			description: ["Zbuduj kolejny etap Tokyo World: Stop przewodzacy. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 4.5d
+			y: 7.5d
+			icon: "enderio:conductive_alloy_ingot"
+			dependencies: ["A130000000000129"]
+			tasks: [{ id: "A14000000000012D" type: "item" item: "enderio:conductive_alloy_ingot" count: 8L consume_items: false }]
+			rewards: [{ id: "A15000000000012D" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A13000000000012E"
+			title: "Stop energetyczny"
+			description: ["Zbuduj kolejny etap Tokyo World: Stop energetyczny. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 9.0d
+			y: 7.5d
+			icon: "enderio:energetic_alloy_ingot"
+			dependencies: ["A13000000000012A"]
+			tasks: [{ id: "A14000000000012E" type: "item" item: "enderio:energetic_alloy_ingot" count: 8L consume_items: false }]
+			rewards: [{ id: "A15000000000012E" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A13000000000012F"
+			title: "Stop pulsujacy"
+			description: ["Zbuduj kolejny etap Tokyo World: Stop pulsujacy. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 13.5d
+			y: 7.5d
+			icon: "enderio:vibrant_alloy_ingot"
+			dependencies: ["A13000000000012B"]
+			tasks: [{ id: "A14000000000012F" type: "item" item: "enderio:vibrant_alloy_ingot" count: 4L consume_items: false }]
+			rewards: [{ id: "A15000000000012F" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A130000000000130"
+			title: "Rurociag przedmiotow"
+			description: ["Zbuduj kolejny etap Tokyo World: Rurociag przedmiotow. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 0.0d
+			y: 11.0d
+			icon: "enderio:item_conduit"
+			dependencies: ["A13000000000012C"]
+			tasks: [{ id: "A140000000000130" type: "item" item: "enderio:item_conduit" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000130" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000131"
+			title: "Energia przez conduit"
+			description: ["Zbuduj kolejny etap Tokyo World: Energia przez conduit. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 4.5d
+			y: 11.0d
+			icon: "enderio:conductive_alloy_energy_conduit"
+			dependencies: ["A13000000000012D"]
+			tasks: [{ id: "A140000000000131" type: "item" item: "enderio:conductive_alloy_energy_conduit" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000131" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A130000000000132"
+			title: "Rzemioslo automatyczne"
+			description: ["Zbuduj kolejny etap Tokyo World: Rzemioslo automatyczne. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 7.0d
+			y: 15.5d
+			icon: "enderio:crafter"
+			dependencies: ["A13000000000012E", "A13000000000012F", "A130000000000130", "A130000000000131"]
+			tasks: [{ id: "A140000000000132" type: "item" item: "enderio:crafter" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000132" type: "item" item: "minecraft:netherite_scrap" count: 1 }, { id: "A160000000000132" type: "item" item: "minecraft:diamond" count: 5 }]
+		}
+	]
+}
