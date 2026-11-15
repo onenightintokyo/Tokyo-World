@@ -1,10 +1,10 @@
 {
 	filename: "draconic_endgame"
-	title: "Draconic Evolution — Endgame"
-	group: "A110000000000001"
+	title: "&e&l05 &r&fDraconic: Endgame"
+	group: "A110000000000003"
 	id: "A120000000000017"
 	icon: "draconicevolution:draconium_core"
-	order_index: 22
+	order_index: 4
 	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
 	quests: [
 		{
