@@ -1,0 +1,187 @@
+{
+	filename: "mystical_advanced"
+	title: "Mystical Agriculture — Surowce z farm"
+	group: "A110000000000001"
+	id: "A12000000000000D"
+	icon: "mysticalagriculture:infusion_altar"
+	order_index: 12
+	images: [ { image: "tokyoworld:textures/gui/quests/building_farming.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
+	quests: [
+		{
+			id: "A1300000000000A1"
+			title: "Esencja Inferium"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: esencja inferium. Element 1 z 16 tej ścieżki."]
+			x: 0.0d
+			y: 0.0d
+			icon: "mysticalagriculture:inferium_essence"
+			dependencies: ["A13000000000001E"]
+			tasks: [{ id: "A1400000000000A1" type: "item" item: "mysticalagriculture:inferium_essence" count: 32L consume_items: false }]
+			rewards: [{ id: "A1500000000000A1" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000A2"
+			title: "Kryształy Prosperity"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: kryształy prosperity. Element 2 z 16 tej ścieżki."]
+			x: 3.5d
+			y: 0.0d
+			icon: "mysticalagriculture:prosperity_gemstone"
+			dependencies: ["A1300000000000A1"]
+			tasks: [{ id: "A1400000000000A2" type: "item" item: "mysticalagriculture:prosperity_gemstone" count: 4L consume_items: false }]
+			rewards: [{ id: "A1500000000000A2" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000A3"
+			title: "Kryształ infuzji"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: kryształ infuzji. Element 3 z 16 tej ścieżki."]
+			x: 7.0d
+			y: 0.0d
+			icon: "mysticalagriculture:infusion_crystal"
+			dependencies: ["A1300000000000A2"]
+			tasks: [{ id: "A1400000000000A3" type: "item" item: "mysticalagriculture:infusion_crystal" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000A3" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000A4"
+			title: "Pierwsze podłoże esencji"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: pierwsze podłoże esencji. Element 4 z 16 tej ścieżki."]
+			x: 10.5d
+			y: 0.0d
+			icon: "mysticalagriculture:inferium_farmland"
+			dependencies: ["A1300000000000A3"]
+			tasks: [{ id: "A1400000000000A4" type: "item" item: "mysticalagriculture:inferium_farmland" count: 4L consume_items: false }]
+			rewards: [{ id: "A1500000000000A4" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000000A5"
+			title: "Ulepszone podłoże esencji"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: ulepszone podłoże esencji. Element 5 z 16 tej ścieżki."]
+			x: 14.0d
+			y: 0.0d
+			icon: "mysticalagriculture:prudentium_farmland"
+			dependencies: ["A1300000000000A4"]
+			tasks: [{ id: "A1400000000000A5" type: "item" item: "mysticalagriculture:prudentium_farmland" count: 4L consume_items: false }]
+			rewards: [{ id: "A1500000000000A5" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000A6"
+			title: "Ołtarz infuzji"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: ołtarz infuzji. Element 6 z 16 tej ścieżki."]
+			x: 0.0d
+			y: 3.0d
+			icon: "mysticalagriculture:infusion_altar"
+			dependencies: ["A1300000000000A5"]
+			tasks: [{ id: "A1400000000000A6" type: "item" item: "mysticalagriculture:infusion_altar" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000A6" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000A7"
+			title: "Piedestały infuzji"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: piedestały infuzji. Element 7 z 16 tej ścieżki."]
+			x: 3.5d
+			y: 3.0d
+			icon: "mysticalagriculture:infusion_pedestal"
+			dependencies: ["A1300000000000A6"]
+			tasks: [{ id: "A1400000000000A7" type: "item" item: "mysticalagriculture:infusion_pedestal" count: 4L consume_items: false }]
+			rewards: [{ id: "A1500000000000A7" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000A8"
+			title: "Naczynie esencji"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: naczynie esencji. Element 8 z 16 tej ścieżki."]
+			x: 7.0d
+			y: 3.0d
+			icon: "mysticalagriculture:essence_vessel"
+			dependencies: ["A1300000000000A7"]
+			tasks: [{ id: "A1400000000000A8" type: "item" item: "mysticalagriculture:essence_vessel" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000A8" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000000A9"
+			title: "Przerób nasion"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: przerób nasion. Element 9 z 16 tej ścieżki."]
+			x: 10.5d
+			y: 3.0d
+			icon: "mysticalagriculture:seed_reprocessor"
+			dependencies: ["A1300000000000A8"]
+			tasks: [{ id: "A1400000000000A9" type: "item" item: "mysticalagriculture:seed_reprocessor" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000A9" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000AA"
+			title: "Żniwiarz mistyczny"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: żniwiarz mistyczny. Element 10 z 16 tej ścieżki."]
+			x: 14.0d
+			y: 3.0d
+			icon: "mysticalagriculture:harvester"
+			dependencies: ["A1300000000000A9"]
+			tasks: [{ id: "A1400000000000AA" type: "item" item: "mysticalagriculture:harvester" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000AA" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000AB"
+			title: "Esencja Tertium"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: esencja tertium. Element 11 z 16 tej ścieżki."]
+			x: 0.0d
+			y: 6.0d
+			icon: "mysticalagriculture:tertium_essence"
+			dependencies: ["A1300000000000AA"]
+			tasks: [{ id: "A1400000000000AB" type: "item" item: "mysticalagriculture:tertium_essence" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000000AB" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000AC"
+			title: "Esencja Imperium"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: esencja imperium. Element 12 z 16 tej ścieżki."]
+			x: 3.5d
+			y: 6.0d
+			icon: "mysticalagriculture:imperium_essence"
+			dependencies: ["A1300000000000AB"]
+			tasks: [{ id: "A1400000000000AC" type: "item" item: "mysticalagriculture:imperium_essence" count: 4L consume_items: false }]
+			rewards: [{ id: "A1500000000000AC" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000000AD"
+			title: "Esencja Supremium"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: esencja supremium. Element 13 z 16 tej ścieżki."]
+			x: 7.0d
+			y: 6.0d
+			icon: "mysticalagriculture:supremium_essence"
+			dependencies: ["A1300000000000AC"]
+			tasks: [{ id: "A1400000000000AD" type: "item" item: "mysticalagriculture:supremium_essence" count: 2L consume_items: false }]
+			rewards: [{ id: "A1500000000000AD" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000AE"
+			title: "Supremium farmland"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: supremium farmland. Element 14 z 16 tej ścieżki."]
+			x: 10.5d
+			y: 6.0d
+			icon: "mysticalagriculture:supremium_farmland"
+			dependencies: ["A1300000000000AD"]
+			tasks: [{ id: "A1400000000000AE" type: "item" item: "mysticalagriculture:supremium_farmland" count: 2L consume_items: false }]
+			rewards: [{ id: "A1500000000000AE" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000AF"
+			title: "Mistrzowski kryształ"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: mistrzowski kryształ. Element 15 z 16 tej ścieżki."]
+			x: 14.0d
+			y: 6.0d
+			icon: "mysticalagriculture:master_infusion_crystal"
+			dependencies: ["A1300000000000AE"]
+			tasks: [{ id: "A1400000000000AF" type: "item" item: "mysticalagriculture:master_infusion_crystal" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000AF" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000B0"
+			title: "Piedestał przebudzenia"
+			description: ["Odnawialne surowce i inteligentne uprawy. Pozyskaj lub wytwórz: piedestał przebudzenia. Element 16 z 16 tej ścieżki."]
+			x: 0.0d
+			y: 9.0d
+			icon: "mysticalagriculture:awakening_pedestal"
+			dependencies: ["A1300000000000AF"]
+			tasks: [{ id: "A1400000000000B0" type: "item" item: "mysticalagriculture:awakening_pedestal" count: 2L consume_items: false }]
+			rewards: [{ id: "A1500000000000B0" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+	]
+}
