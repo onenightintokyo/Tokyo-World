@@ -1,5 +1,14 @@
 # Tokyo World — Expert Fun Modpack
 
+## Tokyo World — narracyjna progresja i kolejna seria modów
+
+**Nowy questbook:** 518 questów, 36 rozdziałów, **8 fabularnych kategorii**. Poprawiono opisy, połączono zadania w przechodzące przez rozgałęzienia drzewka i dodano 36 prób praktycznych w zaawansowanych projektach. Zachowano identyfikatory i dawne nagrody.
+
+**Chapter Expansion:** 15 nowych propozycji Forge 1.20.1 (Tinkers' Construct, Rats, EvilCraft, Nature's Aura, Productive Trees, Bumblezone i inne). Mody są w manifeście; instalacja przez `INSTALUJ_ROZDZIALY.cmd` albo aktualizator niezależnego launchera z włączonym pełnym zestawem. Backup świata i test zgodności nadal wymagane.
+
+[Opis nowych drzewek, kategorii oraz instrukcja instalacji](docs/TOKYO_WORLD_QUEST_OVERHAUL_v1.md)
+
+
 ## Tokyo World Launcher v1.2 — automatyczna naprawa bazowych modów
 
 **Poprawiony EXE:** [GitHub Actions — działająca kompilacja v1.2](https://github.com/onenightintokyo/Tokyo-World/actions/runs/43756562340).
