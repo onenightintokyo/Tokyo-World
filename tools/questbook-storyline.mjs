@@ -90,37 +90,38 @@ function tree(n){
  nodes[n-1]={parents:[n-2],x:8,y:(row+1)*4,role:"final"};
  return nodes;
 }
-const stems=[
- "Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj ",
- "Nie wszystko da się zrobić jedną maszyną. Zajmij się ",
- "Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu ",
- "Nie przyspieszaj na siłę. Tu warto dopracować ",
- "Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje ",
- "Zanim rozstawisz resztę warsztatu, uporządkuj ",
- "W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać ",
- "Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na ",
- "Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o ",
- "Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się "
+const situations=[
+ "Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat ",
+ "Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest ",
+ "Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się ",
+ "Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o ",
+ "Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat ",
+ "Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy ",
+ "Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się ",
+ "Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż ",
+ "Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie ",
+ "Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest "
 ];
-const endings=[
- " i pomyśl, jak ten element przyda ci się przy następnej budowie.",
- " — kiedy zabraknie go później, cała linia stanie w miejscu.",
- " i spróbuj od razu znaleźć dla tego zastosowanie w bazie.",
- " na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie.",
- " zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć.",
- " i zachowaj trochę na dalszą rozbudowę.",
- " zamiast szukać obejścia przy każdym nowym urządzeniu.",
- " — teraz pracujesz już nad prawdziwym systemem.",
- " i daj sobie chwilę na sprawdzenie efektu.",
- " zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."
-];
+const chapterVoices={
+ 1:["Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć.","Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później.","Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."],
+ 2:["Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm.","Dobrze, żeby materiał nie zatrzymywał się w połowie drogi.","Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."],
+ 3:["W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości.","Zanim odpalisz wielką linię, przygotuj solidne komponenty.","Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."],
+ 4:["Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś.","Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę.","Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."],
+ 5:["Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach.","Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić.","Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."],
+ 6:["Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości.","Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie.","Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."],
+ 7:["Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć.","Nie wszystko, co świeci w ciemności, jest skarbem.","Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."],
+ 8:["Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie.","Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat.","Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
+};
 function narrative(spec,names,node,i){
  const title="„"+names[i]+"”";
- if(node.role==="root")return spec[3]+" Zacznij od "+title+". Bez tego reszta planu zostanie tylko ładnym szkicem.";
- if(node.role==="join")return "Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. "+title+" pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa.";
- if(node.role==="final")return spec[4]+" Ostatnia próba to "+title+". Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej.";
- const k=(i*7+spec[1])%stems.length;
- return stems[k]+title+endings[(i*3+spec[1])%endings.length];
+ if(node.role==="root")return spec[3]+" Zacznij od sprawy "+title+". Bez tego dalsze pomysły zostałyby tylko szkicem.";
+ if(node.role==="join")return "Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o "+title+". Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem.";
+ if(node.role==="final")return spec[4]+" Ostatni sprawdzian to "+title+". Niech będzie dowodem na to, że cała wcześniejsza praca miała sens.";
+ const k=(i*7+spec[1])%situations.length;
+ const voice=chapterVoices[spec[1]][(i+spec[1])%3];
+ const prev=node.parents.length ? names[node.parents[0]] : "";
+ const bridge=(i%4===0 && prev)?"Wcześniej udało ci się już zamknąć temat „"+prev+"”. ":"";
+ return bridge+situations[k]+title+". "+voice;
 }
 const localized=new Map();
 for(const spec of specs){
