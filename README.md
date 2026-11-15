@@ -12,6 +12,12 @@ Minecraft **1.20.1**, Forge **47.4.28**. Technologia i automatyzacja są główn
 
 **Nie jest to ukończona, przetestowana paczka do dystrybucji.** Logi zgłaszają problemy Cucumber/NuclearCraft, a menu wymaga testu po aktualizacji.
 
+## FancyMenu i questbook — UI v0.6
+
+- FancyMenu: domyślnie ukryty pasek edycji w trybie modpacka. Przełączanie skrótami `FANCYMENU_EDYCJA.cmd` i `FANCYMENU_GRA.cmd`.
+- Questbook: 326 questów, 24 rozdziały, **6 tematycznych grup** z kolorami i numeracją, poprawiony błąd `Thermal & Metallurgy`.
+- [Instrukcja interfejsu v0.6](docs/QUESTBOOK_UI_v0.6.md)
+
 ## Instrukcja aktualizacji
 
 [Tokyo World v0.5 — instalacja i lista zmian](docs/TOKYO_WORLD_v0.5.md)
