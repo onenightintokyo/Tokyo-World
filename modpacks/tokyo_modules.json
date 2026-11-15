@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "name": "Tokyo World — Technology Expansion",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "note": "Profile installer is opt-in. It downloads current compatible Forge 1.20.1 files from Modrinth, validates SHA-512, preserves existing mods and never touches saves. Treat as testing until a fully pinned lockfile is produced.",
+  "profiles": {
+    "tech-core": [
+      {
+        "project": "ae2",
+        "label": "Applied Energistics 2",
+        "match": "^(ae2|appliedenergistics2)[-_].*\\.jar$"
+      },
+      {
+        "project": "enderio",
+        "label": "Ender IO",
+        "match": "^enderio[-_].*\\.jar$"
+      },
+      {
+        "project": "mekanism-generators",
+        "label": "Mekanism Generators",
+        "match": "^mekanismgenerators[-_].*\\.jar$",
+        "version": "10.4.16.80"
+      },
+      {
+        "project": "mekanism-tools",
+        "label": "Mekanism Tools",
+        "match": "^mekanismtools[-_].*\\.jar$",
+        "version": "10.4.16.80"
+      },
+      {
+        "project": "mekanism-additions",
+        "label": "Mekanism Additions",
+        "match": "^mekanismadditions[-_].*\\.jar$",
+        "version": "10.4.16.80"
+      },
+      {
+        "project": "thermal-expansion",
+        "label": "Thermal Expansion",
+        "match": "^thermal_expansion[-_].*\\.jar$"
+      },
+      {
+        "project": "pneumaticcraft-repressurized",
+        "label": "PneumaticCraft: Repressurized",
+        "match": "^pneumaticcraft[-_].*\\.jar$"
+      }
+    ],
+    "tech-expanded": [
+      {
+        "project": "integrated-crafting",
+        "label": "Integrated Crafting",
+        "match": "^integratedcrafting[-_].*\\.jar$"
+      },
+      {
+        "project": "integrated-terminals",
+        "label": "Integrated Terminals",
+        "match": "^integratedterminals[-_].*\\.jar$"
+      },
+      {
+        "project": "rftools-builder",
+        "label": "RFTools Builder",
+        "match": "^rftoolsbuilder[-_].*\\.jar$"
+      },
+      {
+        "project": "extreme-reactors",
+        "label": "Extreme Reactors",
+        "match": "^extremereactors[-_].*\\.jar$"
+      },
+      {
+        "project": "nuclearcraft-neoteric",
+        "label": "NuclearCraft Neoteric",
+        "match": "^nuclearcraft[-_].*\\.jar$"
+      },
+      {
+        "project": "draconic-evolution",
+        "label": "Draconic Evolution",
+        "match": "^draconicevolution[-_].*\\.jar$"
+      },
+      {
+        "project": "create-steam-n-rails",
+        "label": "Create: Steam 'n' Rails (Create 6)",
+        "match": "^railways[-_].*\\.jar$",
+        "versionId": "TYMKdZTh"
+      }
+    ],
+    "adventure": [
+      {
+        "project": "l_enders-cataclysm",
+        "label": "L_Ender's Cataclysm",
+        "match": "^(L_Enders_Cataclysm|cataclysm)[-_].*\\.jar$"
+      }
+    ]
+  }
+}
