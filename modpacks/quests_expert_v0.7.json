@@ -1,0 +1,1163 @@
+{
+  "version": 1,
+  "baseQuestCount": 326,
+  "questsPerChapter": 16,
+  "chapters": [
+    {
+      "slug": "mega_factory",
+      "title": "🏭 Megafabryka Tokyo",
+      "group": 2,
+      "order": 6,
+      "icon": "create:mechanical_crafter",
+      "image": "tech_automation",
+      "gates": [
+        48,
+        68
+      ],
+      "reward": "create:precision_mechanism",
+      "focus": "Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej.",
+      "entries": [
+        {
+          "title": "Projekt hali",
+          "item": "minecraft:iron_block",
+          "amount": 8
+        },
+        {
+          "title": "Wały produkcyjne",
+          "item": "create:shaft",
+          "amount": 32
+        },
+        {
+          "title": "Napęd mechaniczny",
+          "item": "create:water_wheel",
+          "amount": 4
+        },
+        {
+          "title": "Prasy przemysłowe",
+          "item": "create:mechanical_press",
+          "amount": 4
+        },
+        {
+          "title": "Ramiona robotyczne",
+          "item": "create:deployer",
+          "amount": 4
+        },
+        {
+          "title": "Taśmociąg główny",
+          "item": "create:belt_connector",
+          "amount": 32
+        },
+        {
+          "title": "Bufory materiałowe",
+          "item": "minecraft:hopper",
+          "amount": 16
+        },
+        {
+          "title": "Sortery produkcyjne",
+          "item": "create:brass_funnel",
+          "amount": 12
+        },
+        {
+          "title": "Kruszenie na skalę",
+          "item": "mekanism:crusher",
+          "amount": 2
+        },
+        {
+          "title": "Automatyczne mieszanie",
+          "item": "create:mechanical_mixer",
+          "amount": 4
+        },
+        {
+          "title": "Fabryczne obudowy",
+          "item": "mekanism:steel_casing",
+          "amount": 12
+        },
+        {
+          "title": "Montaż precyzyjny",
+          "item": "create:precision_mechanism",
+          "amount": 12
+        },
+        {
+          "title": "Crafting modułowy",
+          "item": "create:mechanical_crafter",
+          "amount": 16
+        },
+        {
+          "title": "Zaawansowany sorter",
+          "item": "mekanism:logistical_sorter",
+          "amount": 4
+        },
+        {
+          "title": "Cyfrowy terminal",
+          "item": "ae2:crafting_terminal",
+          "amount": 2
+        },
+        {
+          "title": "TOKYO MEGAFABRYKA",
+          "item": "mekanism:basic_crushing_factory",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "slug": "factory_logic",
+      "title": "🖥️ Sterowanie fabryką",
+      "group": 2,
+      "order": 7,
+      "icon": "integrateddynamics:logic_programmer",
+      "image": "tech_automation",
+      "gates": [
+        128,
+        48
+      ],
+      "reward": "ae2:engineering_processor",
+      "focus": "Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne.",
+      "entries": [
+        {
+          "title": "Pierwszy sygnał",
+          "item": "minecraft:repeater",
+          "amount": 16
+        },
+        {
+          "title": "Czujniki sieci",
+          "item": "minecraft:comparator",
+          "amount": 16
+        },
+        {
+          "title": "Przekaźniki danych",
+          "item": "integrateddynamics:cable",
+          "amount": 24
+        },
+        {
+          "title": "Programowanie reguł",
+          "item": "integrateddynamics:logic_programmer",
+          "amount": 2
+        },
+        {
+          "title": "Pamięć zmiennych",
+          "item": "integrateddynamics:variable",
+          "amount": 16
+        },
+        {
+          "title": "Magazyn logiki",
+          "item": "integrateddynamics:variablestore",
+          "amount": 4
+        },
+        {
+          "title": "Zasilanie sterowników",
+          "item": "integrateddynamics:energy_battery",
+          "amount": 4
+        },
+        {
+          "title": "Przekierowania sieci",
+          "item": "integrateddynamics:proxy",
+          "amount": 4
+        },
+        {
+          "title": "Serwer sterujący",
+          "item": "ae2:controller",
+          "amount": 2
+        },
+        {
+          "title": "Procesory logiczne",
+          "item": "ae2:logic_processor",
+          "amount": 16
+        },
+        {
+          "title": "Procesory obliczeń",
+          "item": "ae2:calculation_processor",
+          "amount": 12
+        },
+        {
+          "title": "Procesory projektowe",
+          "item": "ae2:engineering_processor",
+          "amount": 12
+        },
+        {
+          "title": "Terminale sterujące",
+          "item": "ae2:terminal",
+          "amount": 4
+        },
+        {
+          "title": "Magistrala sygnałów",
+          "item": "xnet:connector",
+          "amount": 16
+        },
+        {
+          "title": "Kontroler kanałów",
+          "item": "xnet:controller",
+          "amount": 2
+        },
+        {
+          "title": "CENTRALNY SYSTEM STEROWANIA",
+          "item": "ae2:pattern_provider",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "slug": "chemical_superplant",
+      "title": "⚗️ Kompleks chemiczny",
+      "group": 2,
+      "order": 8,
+      "icon": "mekanism:chemical_dissolution_chamber",
+      "image": "tech_automation",
+      "gates": [
+        68,
+        84
+      ],
+      "reward": "mekanism:advanced_control_circuit",
+      "focus": "Chemia wieloetapowa: przygotowanie, rozkład, krystalizacja i dystrybucja.",
+      "entries": [
+        {
+          "title": "Bezpieczna stal",
+          "item": "mekanism:ingot_steel",
+          "amount": 32
+        },
+        {
+          "title": "Obudowy aparatury",
+          "item": "mekanism:steel_casing",
+          "amount": 12
+        },
+        {
+          "title": "Układy sterujące",
+          "item": "mekanism:advanced_control_circuit",
+          "amount": 12
+        },
+        {
+          "title": "Zaawansowany infuzor",
+          "item": "mekanism:metallurgic_infuser",
+          "amount": 4
+        },
+        {
+          "title": "Komora wzbogacania",
+          "item": "mekanism:enrichment_chamber",
+          "amount": 4
+        },
+        {
+          "title": "Separator gazów",
+          "item": "mekanism:electrolytic_separator",
+          "amount": 2
+        },
+        {
+          "title": "Utlenianie",
+          "item": "mekanism:chemical_oxidizer",
+          "amount": 2
+        },
+        {
+          "title": "Mieszanie chemiczne",
+          "item": "mekanism:chemical_infuser",
+          "amount": 2
+        },
+        {
+          "title": "Kompresja osmu",
+          "item": "mekanism:osmium_compressor",
+          "amount": 2
+        },
+        {
+          "title": "Komora reakcji",
+          "item": "mekanism:pressurized_reaction_chamber",
+          "amount": 2
+        },
+        {
+          "title": "Skraplanie gazów",
+          "item": "mekanism:rotary_condensentrator",
+          "amount": 2
+        },
+        {
+          "title": "Rozpuszczanie rud",
+          "item": "mekanism:chemical_dissolution_chamber",
+          "amount": 2
+        },
+        {
+          "title": "Krystalizacja",
+          "item": "mekanism:chemical_crystallizer",
+          "amount": 2
+        },
+        {
+          "title": "Magazyny surowców",
+          "item": "mekanism:basic_fluid_tank",
+          "amount": 8
+        },
+        {
+          "title": "Sterowniki najwyższej klasy",
+          "item": "mekanism:ultimate_control_circuit",
+          "amount": 8
+        },
+        {
+          "title": "TOKYO CHEMICAL WORKS",
+          "item": "mekanism:chemical_infuser",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "slug": "steel_alloy_empire",
+      "title": "🔩 Imperium stopów",
+      "group": 2,
+      "order": 9,
+      "icon": "enderio:alloy_smelter",
+      "image": "tech_automation",
+      "gates": [
+        306,
+        84
+      ],
+      "reward": "enderio:vibrant_alloy_ingot",
+      "focus": "Połącz hutnictwo, stopy Ender IO i ciężki przemysł.",
+      "entries": [
+        {
+          "title": "Pierwsza huta",
+          "item": "immersiveengineering:blast_furnace",
+          "amount": 2
+        },
+        {
+          "title": "Stal konstrukcyjna",
+          "item": "immersiveengineering:ingot_steel",
+          "amount": 48
+        },
+        {
+          "title": "Warsztat obróbki",
+          "item": "immersiveengineering:workbench",
+          "amount": 2
+        },
+        {
+          "title": "Cewki wysokiego napięcia",
+          "item": "immersiveengineering:capacitor_hv",
+          "amount": 2
+        },
+        {
+          "title": "Kruszenie przemysłowe",
+          "item": "immersiveengineering:crusher",
+          "amount": 2
+        },
+        {
+          "title": "Prasy hutnicze",
+          "item": "immersiveengineering:metal_press",
+          "amount": 2
+        },
+        {
+          "title": "Kondensatory Ender IO",
+          "item": "enderio:basic_capacitor",
+          "amount": 16
+        },
+        {
+          "title": "Obudowy wielofunkcyjne",
+          "item": "enderio:void_chassis",
+          "amount": 12
+        },
+        {
+          "title": "Wytapiacz stopów",
+          "item": "enderio:alloy_smelter",
+          "amount": 4
+        },
+        {
+          "title": "Młyny SAG",
+          "item": "enderio:sag_mill",
+          "amount": 4
+        },
+        {
+          "title": "Stopy przewodzące",
+          "item": "enderio:conductive_alloy_ingot",
+          "amount": 24
+        },
+        {
+          "title": "Stopy energetyczne",
+          "item": "enderio:energetic_alloy_ingot",
+          "amount": 24
+        },
+        {
+          "title": "Stopy pulsujące",
+          "item": "enderio:vibrant_alloy_ingot",
+          "amount": 16
+        },
+        {
+          "title": "Elektrum techniczne",
+          "item": "thermal:electrum_ingot",
+          "amount": 24
+        },
+        {
+          "title": "Invar specjalistyczny",
+          "item": "thermal:invar_ingot",
+          "amount": 32
+        },
+        {
+          "title": "TOKYO ALLOY CONGLOMERATE",
+          "item": "enderio:alloy_smelter",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "slug": "megawatt_network",
+      "title": "⚡ Sieć energetyczna FE",
+      "group": 3,
+      "order": 5,
+      "icon": "powah:reactor_nitro",
+      "image": "tech_automation",
+      "gates": [
+        116,
+        68
+      ],
+      "reward": "powah:energizing_rod_starter",
+      "focus": "Zbuduj sieć z reaktorami, magazynowaniem i bezpieczną redundancją.",
+      "entries": [
+        {
+          "title": "Pierwsze kable",
+          "item": "powah:energy_cable_starter",
+          "amount": 64
+        },
+        {
+          "title": "Rezerwa energii",
+          "item": "powah:energy_cell_starter",
+          "amount": 8
+        },
+        {
+          "title": "Stalowe obudowy",
+          "item": "mekanism:steel_casing",
+          "amount": 16
+        },
+        {
+          "title": "Generatory cieplne",
+          "item": "powah:thermo_generator_starter",
+          "amount": 8
+        },
+        {
+          "title": "Panele słoneczne",
+          "item": "powah:solar_panel_starter",
+          "amount": 8
+        },
+        {
+          "title": "Elektroliza wodna",
+          "item": "mekanism:electrolytic_separator",
+          "amount": 4
+        },
+        {
+          "title": "Sfery energetyczne",
+          "item": "powah:energizing_orb",
+          "amount": 4
+        },
+        {
+          "title": "Pręty energetyczne",
+          "item": "powah:energizing_rod_starter",
+          "amount": 12
+        },
+        {
+          "title": "Reaktory startowe",
+          "item": "powah:reactor_starter",
+          "amount": 4
+        },
+        {
+          "title": "Reaktory podstawowe",
+          "item": "powah:reactor_basic",
+          "amount": 4
+        },
+        {
+          "title": "Reaktory utwardzane",
+          "item": "powah:reactor_hardened",
+          "amount": 2
+        },
+        {
+          "title": "Magazyny FE",
+          "item": "mekanism:advanced_energy_cube",
+          "amount": 6
+        },
+        {
+          "title": "Reaktory Blazing",
+          "item": "powah:reactor_blazing",
+          "amount": 2
+        },
+        {
+          "title": "Reaktory Niotic",
+          "item": "powah:reactor_niotic",
+          "amount": 2
+        },
+        {
+          "title": "Reaktory Nitro",
+          "item": "powah:reactor_nitro",
+          "amount": 1
+        },
+        {
+          "title": "TOKYO ENERGY GRID",
+          "item": "mekanism:ultimate_energy_cube",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "slug": "me_data_center",
+      "title": "💾 Centrum danych ME",
+      "group": 3,
+      "order": 6,
+      "icon": "ae2:controller",
+      "image": "tech_automation",
+      "gates": [
+        294,
+        234
+      ],
+      "reward": "ae2:fluix_crystal",
+      "focus": "Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur.",
+      "entries": [
+        {
+          "title": "Kwarc Certus",
+          "item": "ae2:certus_quartz_crystal",
+          "amount": 64
+        },
+        {
+          "title": "Kwarc ładowany",
+          "item": "ae2:charged_certus_quartz_crystal",
+          "amount": 24
+        },
+        {
+          "title": "Kryształy Fluix",
+          "item": "ae2:fluix_crystal",
+          "amount": 32
+        },
+        {
+          "title": "Prasy procesorów",
+          "item": "ae2:inscriber",
+          "amount": 4
+        },
+        {
+          "title": "Procesory logiczne",
+          "item": "ae2:logic_processor",
+          "amount": 24
+        },
+        {
+          "title": "Procesory kalkulacyjne",
+          "item": "ae2:calculation_processor",
+          "amount": 24
+        },
+        {
+          "title": "Procesory inżynieryjne",
+          "item": "ae2:engineering_processor",
+          "amount": 24
+        },
+        {
+          "title": "Zasilanie ME",
+          "item": "ae2:energy_acceptor",
+          "amount": 4
+        },
+        {
+          "title": "Kontrolery ME",
+          "item": "ae2:controller",
+          "amount": 4
+        },
+        {
+          "title": "Szafy nośników",
+          "item": "ae2:drive",
+          "amount": 8
+        },
+        {
+          "title": "Terminale ME",
+          "item": "ae2:terminal",
+          "amount": 4
+        },
+        {
+          "title": "Terminale rzemiosła",
+          "item": "ae2:crafting_terminal",
+          "amount": 4
+        },
+        {
+          "title": "Automatyczne składanie",
+          "item": "ae2:molecular_assembler",
+          "amount": 12
+        },
+        {
+          "title": "Dostawcy wzorców",
+          "item": "ae2:pattern_provider",
+          "amount": 8
+        },
+        {
+          "title": "Interfejsy produkcyjne",
+          "item": "ae2:interface",
+          "amount": 8
+        },
+        {
+          "title": "TOKYO DATA CENTER",
+          "item": "ae2:quantum_ring",
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "slug": "logistics_optimization",
+      "title": "📦 Optymalizacja logistyki",
+      "group": 3,
+      "order": 7,
+      "icon": "pipez:universal_pipe",
+      "image": "tech_automation",
+      "gates": [
+        250,
+        234
+      ],
+      "reward": "minecraft:shulker_shell",
+      "focus": "Przepustowość, filtry, buforowanie i zarządzanie zasobami.",
+      "entries": [
+        {
+          "title": "Lejki transportowe",
+          "item": "minecraft:hopper",
+          "amount": 48
+        },
+        {
+          "title": "Pojemniki buforowe",
+          "item": "minecraft:barrel",
+          "amount": 32
+        },
+        {
+          "title": "Rury przedmiotów",
+          "item": "pipez:item_pipe",
+          "amount": 64
+        },
+        {
+          "title": "Rury płynów",
+          "item": "pipez:fluid_pipe",
+          "amount": 48
+        },
+        {
+          "title": "Rury energii",
+          "item": "pipez:energy_pipe",
+          "amount": 48
+        },
+        {
+          "title": "Rury gazów",
+          "item": "pipez:gas_pipe",
+          "amount": 24
+        },
+        {
+          "title": "Rury uniwersalne",
+          "item": "pipez:universal_pipe",
+          "amount": 24
+        },
+        {
+          "title": "Zaawansowane ulepszenia",
+          "item": "pipez:advanced_upgrade",
+          "amount": 8
+        },
+        {
+          "title": "Sortowanie sieci",
+          "item": "mekanism:logistical_sorter",
+          "amount": 6
+        },
+        {
+          "title": "System XNet",
+          "item": "xnet:controller",
+          "amount": 2
+        },
+        {
+          "title": "Złącza XNet",
+          "item": "xnet:connector",
+          "amount": 24
+        },
+        {
+          "title": "Kontroler składu",
+          "item": "sophisticatedstorage:controller",
+          "amount": 2
+        },
+        {
+          "title": "Cztery szuflady",
+          "item": "functionalstorage:oak_4",
+          "amount": 16
+        },
+        {
+          "title": "Narzędzie magazynowe",
+          "item": "sophisticatedstorage:storage_tool",
+          "amount": 4
+        },
+        {
+          "title": "Interfejsy ME",
+          "item": "ae2:interface",
+          "amount": 8
+        },
+        {
+          "title": "TOKYO FREIGHT HUB",
+          "item": "mekanism:quantum_entangloporter",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "slug": "automation_agriculture",
+      "title": "🌾 Rolnictwo autonomiczne",
+      "group": 4,
+      "order": 5,
+      "icon": "industrialforegoing:plant_gatherer",
+      "image": "building_farming",
+      "gates": [
+        100,
+        176
+      ],
+      "reward": "mysticalagriculture:imperium_essence",
+      "focus": "Pola bez obsługi ręcznej, esencje, przerób i logistyka zbiorów.",
+      "entries": [
+        {
+          "title": "Plony bazowe",
+          "item": "minecraft:wheat",
+          "amount": 192
+        },
+        {
+          "title": "Warzywa kuchenne",
+          "item": "minecraft:carrot",
+          "amount": 128
+        },
+        {
+          "title": "Nawóz dla pól",
+          "item": "minecraft:bone_meal",
+          "amount": 96
+        },
+        {
+          "title": "Lejki zbiorów",
+          "item": "minecraft:hopper",
+          "amount": 32
+        },
+        {
+          "title": "Ramy maszynowe",
+          "item": "industrialforegoing:machine_frame_pity",
+          "amount": 8
+        },
+        {
+          "title": "Przetwarzanie lateksu",
+          "item": "industrialforegoing:latex_processing_unit",
+          "amount": 4
+        },
+        {
+          "title": "Tworzywa sztuczne",
+          "item": "industrialforegoing:plastic",
+          "amount": 48
+        },
+        {
+          "title": "Siewniki automatyczne",
+          "item": "industrialforegoing:plant_sower",
+          "amount": 4
+        },
+        {
+          "title": "Żniwiarki automatyczne",
+          "item": "industrialforegoing:plant_gatherer",
+          "amount": 4
+        },
+        {
+          "title": "Farmland Inferium",
+          "item": "mysticalagriculture:inferium_farmland",
+          "amount": 16
+        },
+        {
+          "title": "Esencje Inferium",
+          "item": "mysticalagriculture:inferium_essence",
+          "amount": 128
+        },
+        {
+          "title": "Piedestały infuzji",
+          "item": "mysticalagriculture:infusion_pedestal",
+          "amount": 8
+        },
+        {
+          "title": "Ołtarze infuzji",
+          "item": "mysticalagriculture:infusion_altar",
+          "amount": 2
+        },
+        {
+          "title": "Esencje Tertium",
+          "item": "mysticalagriculture:tertium_essence",
+          "amount": 48
+        },
+        {
+          "title": "Esencje Imperium",
+          "item": "mysticalagriculture:imperium_essence",
+          "amount": 24
+        },
+        {
+          "title": "TOKYO AGRICULTURE COMPLEX",
+          "item": "industrialforegoing:plant_gatherer",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "slug": "mana_engineering",
+      "title": "🔮 Technomagia produkcyjna",
+      "group": 5,
+      "order": 2,
+      "icon": "botania:mana_pool",
+      "image": "magic_arcana",
+      "gates": [
+        144,
+        160
+      ],
+      "reward": "botania:mana_diamond",
+      "focus": "Fabryka oparta na manie, Source i automatyzacji magicznej.",
+      "entries": [
+        {
+          "title": "Kwiaty magiczne",
+          "item": "botania:white_mystical_flower",
+          "amount": 24
+        },
+        {
+          "title": "Rozpraszacze many",
+          "item": "botania:mana_spreader",
+          "amount": 4
+        },
+        {
+          "title": "Zbiorniki many",
+          "item": "botania:mana_pool",
+          "amount": 6
+        },
+        {
+          "title": "Diamenty many",
+          "item": "botania:mana_diamond",
+          "amount": 12
+        },
+        {
+          "title": "Stal manowa",
+          "item": "botania:manasteel_ingot",
+          "amount": 24
+        },
+        {
+          "title": "Runiczne ołtarze",
+          "item": "botania:runic_altar",
+          "amount": 2
+        },
+        {
+          "title": "Pylony many",
+          "item": "botania:mana_pylon",
+          "amount": 4
+        },
+        {
+          "title": "Ołtarz Terrasteel",
+          "item": "botania:terra_plate",
+          "amount": 2
+        },
+        {
+          "title": "Słoiki Source",
+          "item": "ars_nouveau:source_jar",
+          "amount": 8
+        },
+        {
+          "title": "Komory nasycania",
+          "item": "ars_nouveau:imbuement_chamber",
+          "amount": 4
+        },
+        {
+          "title": "Kamienie Source",
+          "item": "ars_nouveau:source_gem",
+          "amount": 48
+        },
+        {
+          "title": "Przekaźniki Source",
+          "item": "ars_nouveau:relay",
+          "amount": 8
+        },
+        {
+          "title": "Aparaty zaklinania",
+          "item": "ars_nouveau:enchanting_apparatus",
+          "amount": 2
+        },
+        {
+          "title": "Zaklęte piedestały",
+          "item": "ars_nouveau:arcane_pedestal",
+          "amount": 8
+        },
+        {
+          "title": "Wytwórnie Terrasteel",
+          "item": "botania:terrasteel_ingot",
+          "amount": 8
+        },
+        {
+          "title": "TOKYO ARCANE FOUNDRY",
+          "item": "ars_nouveau:archmage_spell_book",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "slug": "orbital_outpost",
+      "title": "🚀 Kolonia orbitalna",
+      "group": 6,
+      "order": 3,
+      "icon": "ad_astra:nasa_workbench",
+      "image": "exploration_adventure",
+      "gates": [
+        204,
+        84
+      ],
+      "reward": "minecraft:ender_pearl",
+      "focus": "Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych.",
+      "entries": [
+        {
+          "title": "Stal lotnicza",
+          "item": "ad_astra:steel_ingot",
+          "amount": 64
+        },
+        {
+          "title": "Płyty poszycia",
+          "item": "ad_astra:steel_plate",
+          "amount": 48
+        },
+        {
+          "title": "Prasy komponentów",
+          "item": "ad_astra:compressor",
+          "amount": 4
+        },
+        {
+          "title": "Silniki rakietowe",
+          "item": "ad_astra:steel_engine",
+          "amount": 4
+        },
+        {
+          "title": "Stateczniki",
+          "item": "ad_astra:rocket_fin",
+          "amount": 16
+        },
+        {
+          "title": "Stoły NASA",
+          "item": "ad_astra:nasa_workbench",
+          "amount": 2
+        },
+        {
+          "title": "Rafinerie paliwa",
+          "item": "ad_astra:fuel_refinery",
+          "amount": 4
+        },
+        {
+          "title": "Generator bazy",
+          "item": "ad_astra:coal_generator",
+          "amount": 6
+        },
+        {
+          "title": "Urządzenia tlenowe",
+          "item": "ad_astra:oxygen_gear",
+          "amount": 8
+        },
+        {
+          "title": "Ładowarki tlenu",
+          "item": "ad_astra:oxygen_loader",
+          "amount": 4
+        },
+        {
+          "title": "Dystrybutory tlenu",
+          "item": "ad_astra:oxygen_distributor",
+          "amount": 4
+        },
+        {
+          "title": "Pompy wodne",
+          "item": "ad_astra:water_pump",
+          "amount": 4
+        },
+        {
+          "title": "Kable infrastruktury",
+          "item": "ad_astra:steel_cable",
+          "amount": 48
+        },
+        {
+          "title": "Panele solarne",
+          "item": "ad_astra:solar_panel",
+          "amount": 8
+        },
+        {
+          "title": "Sterowniki zaawansowane",
+          "item": "mekanism:advanced_control_circuit",
+          "amount": 16
+        },
+        {
+          "title": "TOKYO ORBITAL BASE",
+          "item": "ad_astra:oxygen_distributor",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "slug": "boss_hunting_contracts",
+      "title": "🗡️ Kontrakty na bossów",
+      "group": 6,
+      "order": 4,
+      "icon": "minecraft:nether_star",
+      "image": "exploration_adventure",
+      "gates": [
+        326,
+        218
+      ],
+      "reward": "minecraft:totem_of_undying",
+      "focus": "Polowania, przygotowanie ekwipunku i nagrody za wyprawy drużynowe.",
+      "entries": [
+        {
+          "title": "Zapasy ekspedycji",
+          "item": "minecraft:golden_carrot",
+          "amount": 48
+        },
+        {
+          "title": "Żelazne wsparcie",
+          "item": "minecraft:iron_ingot",
+          "amount": 64
+        },
+        {
+          "title": "Obsydian ochronny",
+          "item": "minecraft:obsidian",
+          "amount": 48
+        },
+        {
+          "title": "Złote jabłka",
+          "item": "minecraft:golden_apple",
+          "amount": 12
+        },
+        {
+          "title": "Ogniste różdżki",
+          "item": "minecraft:blaze_rod",
+          "amount": 32
+        },
+        {
+          "title": "Perły Endera",
+          "item": "minecraft:ender_pearl",
+          "amount": 24
+        },
+        {
+          "title": "Diamentowe wyposażenie",
+          "item": "minecraft:diamond",
+          "amount": 32
+        },
+        {
+          "title": "Netherit do pancerzy",
+          "item": "minecraft:netherite_ingot",
+          "amount": 4
+        },
+        {
+          "title": "Metal starożytnych",
+          "item": "cataclysm:ancient_metal_ingot",
+          "amount": 8
+        },
+        {
+          "title": "Gwiazda Netheru",
+          "item": "minecraft:nether_star",
+          "amount": 2
+        },
+        {
+          "title": "Metal Ignitium",
+          "item": "cataclysm:ignitium_ingot",
+          "amount": 6
+        },
+        {
+          "title": "Głowa smoka",
+          "item": "minecraft:dragon_head",
+          "amount": 1
+        },
+        {
+          "title": "Metal Cursium",
+          "item": "cataclysm:cursium_ingot",
+          "amount": 4
+        },
+        {
+          "title": "Materiały jaskiniowe",
+          "item": "alexscaves:galena",
+          "amount": 48
+        },
+        {
+          "title": "Płytki syntetyczne",
+          "item": "alexscaves:polymer_plate",
+          "amount": 24
+        },
+        {
+          "title": "TOKYO BOSS COUNCIL",
+          "item": "minecraft:nether_star",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "slug": "tokyo_ultimate_project",
+      "title": "🏆 Tokyo World: Finał Expert",
+      "group": 3,
+      "order": 8,
+      "icon": "draconicevolution:crafting_core",
+      "image": "tech_automation",
+      "gates": [
+        306,
+        318,
+        266,
+        116,
+        326
+      ],
+      "reward": "minecraft:netherite_scrap",
+      "focus": "Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory.",
+      "entries": [
+        {
+          "title": "Plan rozbudowy fabryki",
+          "item": "minecraft:iron_block",
+          "amount": 32
+        },
+        {
+          "title": "Magazyny produkcyjne",
+          "item": "minecraft:hopper",
+          "amount": 48
+        },
+        {
+          "title": "Ramy technologiczne",
+          "item": "mekanism:steel_casing",
+          "amount": 16
+        },
+        {
+          "title": "Precyzja Create",
+          "item": "create:precision_mechanism",
+          "amount": 24
+        },
+        {
+          "title": "Kontrolery AE2",
+          "item": "ae2:controller",
+          "amount": 4
+        },
+        {
+          "title": "Procesory najwyższej klasy",
+          "item": "mekanism:ultimate_control_circuit",
+          "amount": 12
+        },
+        {
+          "title": "Zasobniki energii",
+          "item": "mekanism:ultimate_energy_cube",
+          "amount": 4
+        },
+        {
+          "title": "Reaktory Powah",
+          "item": "powah:reactor_nitro",
+          "amount": 2
+        },
+        {
+          "title": "Automatyzacja procesów",
+          "item": "ae2:pattern_provider",
+          "amount": 8
+        },
+        {
+          "title": "Infrastruktura EnderIO",
+          "item": "enderio:alloy_smelter",
+          "amount": 4
+        },
+        {
+          "title": "Draconium",
+          "item": "draconicevolution:draconium_ingot",
+          "amount": 24
+        },
+        {
+          "title": "Energia drakońska",
+          "item": "draconicevolution:draconic_energy_core",
+          "amount": 1
+        },
+        {
+          "title": "Maszyny chemiczne",
+          "item": "mekanism:chemical_crystallizer",
+          "amount": 4
+        },
+        {
+          "title": "Fabryka agrarna",
+          "item": "industrialforegoing:plant_gatherer",
+          "amount": 8
+        },
+        {
+          "title": "Transport kwantowy",
+          "item": "mekanism:quantum_entangloporter",
+          "amount": 4
+        },
+        {
+          "title": "ZŁOTA ERA TOKYO WORLD",
+          "item": "draconicevolution:crafting_core",
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "notes": "All item IDs are already present in the original 24 Tokyo World chapters or base Minecraft. Each quest uses a primary item plus a tiered resource contribution; quest IDs continue from 326, keeping earlier progress. New optional mods are NOT required by these quests."
+}
