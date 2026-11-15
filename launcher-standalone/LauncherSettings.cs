@@ -18,6 +18,9 @@ internal sealed class LauncherSettings
     public bool InstallAllModules { get; set; } = true;
     public int RamMb { get; set; } = 10240;
     public bool OptimizeGraphics { get; set; } = true;
+    public bool ExtraVisualMods { get; set; } = false;
+    public bool EnableShaders { get; set; } = false;
+    public long LastLauncherRunId { get; set; } = 0;
     public bool LightweightMode { get; set; } = false;
     public bool LightweightPromptShown { get; set; } = false;
     public bool PerfMigrationCompleted { get; set; } = false;

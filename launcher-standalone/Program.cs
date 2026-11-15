@@ -25,7 +25,7 @@ internal sealed class LauncherWindow : Form
     private readonly TrackBar ramSlider = new();
     private readonly Label ramValue = new();
     private readonly Label status = new();
-    private readonly ProgressBar progress = new();
+    private readonly TokyoProgressBar progress = new();
     private readonly Button play = new();
     private readonly Label gear = new();
     private readonly List<string> logs = new();
@@ -92,13 +92,13 @@ internal sealed class LauncherWindow : Form
         AddLabel("RAM", 452, 329, 200, 23, 10, true, Gray);
         ramSlider.SetBounds(444, 360, 314, 42);
         ramSlider.Minimum = 2;
-        ramSlider.Maximum = 24;
+        ramSlider.Maximum = 16;
         ramSlider.TickFrequency = 2;
         ramSlider.LargeChange = 2;
         ramSlider.SmallChange = 1;
         ramSlider.AutoSize = false;
         ramSlider.Height = 45;
-        ramSlider.Value = Math.Clamp((int)Math.Round(settings.RamMb / 1024.0), 2, 24);
+        ramSlider.Value = Math.Clamp((int)Math.Round(settings.RamMb / 1024.0), 2, 16);
         ramSlider.BackColor = Bg;
         ramSlider.TickStyle = TickStyle.BottomRight;
         ramValue.SetBounds(762, 356, 105, 39);
@@ -141,12 +141,13 @@ internal sealed class LauncherWindow : Form
         play.Click += async (_, _) => await StartGame();
         Controls.Add(play);
 
-        progress.SetBounds(46, 542, 808, 8);
-        progress.Style = ProgressBarStyle.Blocks;
+        progress.SetBounds(46, 542, 808, 24);
+        progress.Click += (_, _) => ShowLogs();
         Controls.Add(progress);
         status.SetBounds(46, 559, 807, 28);
         status.ForeColor = Gray;
         status.Text = "Gotowy do gry";
+        status.Visible = false; // The modern launcher shows only the visual progress bar.
         status.Font = new Font("Segoe UI", 9);
         status.TextAlign = ContentAlignment.MiddleCenter;
         status.Cursor = Cursors.Hand;
@@ -157,12 +158,43 @@ internal sealed class LauncherWindow : Form
         offline.Checked = !settings.UseMicrosoft;
         UpdateMode();
 
-        Shown += (_, _) =>
+        Shown += async (_, _) =>
         {
             if (!settings.FirstRunCompleted)
                 OpenSettings(firstRun: true);
+            if (settings.FirstRunCompleted)
+                await CheckLauncherUpdateAsync();
         };
         FormClosing += (_, _) => SaveState();
+    }
+
+    private async Task CheckLauncherUpdateAsync()
+    {
+        if (busy) return;
+        busy = true;
+        play.Enabled = false;
+        gear.Enabled = false;
+        try
+        {
+            progress.Progress = 5;
+            bool restart = await LauncherAutoUpdater.TryUpdateAsync(settings, Reporter());
+            if (restart)
+            {
+                Application.Exit();
+                return;
+            }
+        }
+        catch (Exception ex)
+        {
+            SetStatus("Sprawdzenie EXE: " + ex.Message);
+        }
+        finally
+        {
+            busy = false;
+            play.Enabled = true;
+            gear.Enabled = true;
+            progress.Progress = 0;
+        }
     }
 
     private void AddLabel(string value, int x, int y, int w, int h, int size, bool bold, Color color)
@@ -221,6 +253,16 @@ internal sealed class LauncherWindow : Form
         logs.Add(line);
         if (logs.Count > 1200) logs.RemoveRange(0, 500);
         status.Text = value.Length > 116 ? value[..113] + "..." : value;
+        // Quiet, percentage-only UI. The full diagnostic log is still available by
+        // clicking the progress bar.
+        if (value.StartsWith("Aktualizacja:", StringComparison.Ordinal))
+            progress.Progress = Math.Min(28, progress.Progress + 1);
+        else if (value.StartsWith("Dodatek:", StringComparison.Ordinal) ||
+                 value.StartsWith("Baza modów:", StringComparison.Ordinal))
+            progress.Progress = Math.Min(69, Math.Max(32, progress.Progress + 1));
+        else if (value.StartsWith("Forge:", StringComparison.Ordinal) ||
+                 value.StartsWith("Minecraft:", StringComparison.Ordinal))
+            progress.Progress = Math.Min(95, Math.Max(72, progress.Progress + 1));
     }
 
     private void ShowLogs()
@@ -275,7 +317,7 @@ internal sealed class LauncherWindow : Form
         busy = true;
         play.Enabled = false;
         gear.Enabled = false;
-        progress.Style = ProgressBarStyle.Marquee;
+        progress.Progress = 2;
         try
         {
             SaveState();
@@ -298,8 +340,10 @@ internal sealed class LauncherWindow : Form
             SetStatus("Sprawdzam aktualizacje Tokyo World...");
             var sync = new GitHubSynchronizer(settings.GetToken(), settings.Repository);
             await sync.SynchronizeAsync(root, reporter);
+            progress.Progress = Math.Max(progress.Progress, 25);
             PostInstallTweaks.Apply(root, reporter);
             TokyoBranding.CopyLogoToGame(root, reporter);
+            TokyoQuestBanners.Install(root, reporter);
 
             // Recover already-owned original mod files before querying Modrinth.
             // This is a one-time IMPORT, not an ongoing Prism dependency.
@@ -320,7 +364,14 @@ internal sealed class LauncherWindow : Form
             // Apply the lightweight policy before and after sync to prevent JAR reinstallation.
             TokyoOptimization.ApplyModPolicy(root, settings.LightweightMode, reporter);
             var modpack = new ModpackInstaller();
-            var report = await modpack.InstallAsync(root, settings.InstallAllModules, settings.LightweightMode, reporter);
+            var report = await modpack.InstallAsync(root, settings.InstallAllModules, settings.LightweightMode,
+                settings.ExtraVisualMods, settings.EnableShaders, reporter);
+            if (settings.EnableShaders)
+            {
+                try { await TokyoShaderInstaller.InstallAsync(root, reporter); }
+                catch (Exception ex) { SetStatus("Shadery opcjonalne: " + ex.Message); }
+            }
+            progress.Progress = Math.Max(progress.Progress, 70);
 
             if (!settings.LightweightMode && !settings.LightweightPromptShown && TokyoOptimization.HasEveryCompat(root))
             {
@@ -372,8 +423,10 @@ internal sealed class LauncherWindow : Form
 
             SetStatus("Wszystkie 66 oryginalnych modów są zweryfikowane — przygotowuję Forge...");
             await engine.PrepareGameAsync(root, reporter);
+            progress.Progress = 95;
             var process = await engine.PlayAsync(root, settings.RamMb,
                 premium.Checked, settings.OfflineNickname.Trim(), reporter);
+            progress.Progress = 100;
             SetStatus($"Uruchomiono Tokyo World! PID {process.Id}.");
         }
         catch (Exception ex)
@@ -384,7 +437,7 @@ internal sealed class LauncherWindow : Form
         }
         finally
         {
-            progress.Style = ProgressBarStyle.Blocks;
+            if (progress.Progress != 100) progress.Progress = 0;
             play.Enabled = true;
             gear.Enabled = true;
             busy = false;
@@ -401,13 +454,15 @@ internal sealed class SettingsWindow : Form
     private readonly CheckBox allMods = new();
     private readonly CheckBox optimize = new();
     private readonly CheckBox lightweight = new();
+    private readonly CheckBox extraVisuals = new();
+    private readonly CheckBox shaders = new();
     private readonly Button save = new();
 
     public SettingsWindow(LauncherSettings data, bool firstRun)
     {
         settings = data;
         Text = firstRun ? "Tokyo World — pierwsza konfiguracja" : "Tokyo World — ustawienia";
-        ClientSize = new Size(650, 552);
+        ClientSize = new Size(650, 638);
         StartPosition = FormStartPosition.CenterParent;
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
@@ -458,7 +513,19 @@ internal sealed class SettingsWindow : Form
         Label("UWAGA: z wyłączonym modem nie otwieraj istniejących światów, tylko testuj menu.",
             25, 394, 615, color: Color.FromArgb(237, 182, 109));
 
-        var restore = ActionButton("PRZYWRÓĆ PRZED OPTYMALIZACJĄ", 25, 435, 593);
+        extraVisuals.Text = "Dodatkowe modele i tekstury (opcjonalne)";
+        extraVisuals.SetBounds(25, 425, 590, 27);
+        extraVisuals.ForeColor = Color.White;
+        extraVisuals.Checked = data.ExtraVisualMods;
+        Controls.Add(extraVisuals);
+
+        shaders.Text = "Oculus + Complementary Reimagined (domyślnie wyłączone)";
+        shaders.SetBounds(25, 460, 590, 27);
+        shaders.ForeColor = Color.White;
+        shaders.Checked = data.EnableShaders;
+        Controls.Add(shaders);
+
+        var restore = ActionButton("PRZYWRÓĆ PRZED OPTYMALIZACJĄ", 25, 505, 593);
         restore.Click += (_, _) =>
         {
             if (MessageBox.Show(this,
@@ -484,7 +551,7 @@ internal sealed class SettingsWindow : Form
             }
         };
 
-        save = ActionButton("ZAPISZ", 25, 484, 593);
+        save = ActionButton("ZAPISZ", 25, 556, 593);
         save.BackColor = Color.FromArgb(224, 48, 74);
         save.Click += (_, _) =>
         {
@@ -505,6 +572,8 @@ internal sealed class SettingsWindow : Form
             data.InstallAllModules = allMods.Checked;
             data.OptimizeGraphics = optimize.Checked;
             data.LightweightMode = lightweight.Checked;
+            data.ExtraVisualMods = extraVisuals.Checked;
+            data.EnableShaders = shaders.Checked;
             DialogResult = DialogResult.OK;
             Close();
         };
