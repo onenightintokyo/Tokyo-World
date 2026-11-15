@@ -1,14 +1,20 @@
 {
 	filename: "draconic_endgame"
 	title: "&5&lMoc smoków"
-	group: "A110000000000008"
+	group: "A110000000000003"
 	id: "A120000000000017"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "draconicevolution:draconium_core"
-	order_index: 0
-	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
+	order_index: 10
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000133"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Slady draconium"
 			description: ["Wszystkie wcześniejsze projekty prowadziły do materiałów, których zwykła technologia nie potrafi okiełznać. Zacznij od sprawy „Slady draconium”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A130000000000134"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rafinacja draconium"
 			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Rafinacja draconium”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A130000000000135"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rdzenie draconium"
 			description: ["Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Rdzenie draconium”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A130000000000136"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pierwsze iniektory"
 			description: ["Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Pierwsze iniektory”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A130000000000137"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rdzen syntezy"
 			description: ["Wcześniej zamknąłeś już sprawę „Rdzenie draconium”. Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Rdzen syntezy”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A130000000000138"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Bezprzewodowe przesylanie energii"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Bezprzewodowe przesylanie energii”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A130000000000139"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przebudzone draconium"
 			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Przebudzone draconium”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A13000000000013A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przebudzony rdzen"
 			description: ["Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Przebudzony rdzen”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A13000000000013B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Iniektory wyzszej klasy"
 			description: ["Wcześniej zamknąłeś już sprawę „Przebudzone draconium”. Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Iniektory wyzszej klasy”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A13000000000013C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magazyn olbrzymiej mocy"
 			description: ["Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Magazyn olbrzymiej mocy”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A13000000000013D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zaawansowany teleport"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zaawansowany teleport”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A13000000000013E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zwyciestwo nad chaosem"
 			description: ["Masz w rękach potęgę, której użycie wymaga rozsądku. Ostatni sprawdzian to „Zwyciestwo nad chaosem”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

@@ -3,14 +3,20 @@
 	title: "&b&lLinia, która nie śpi"
 	group: "A110000000000002"
 	id: "A120000000000005"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "create:deployer"
-	order_index: 1
+	order_index: 9
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }
 	]
 	quests: [
 		{
 			id: "A13000000000001F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Mechaniczne ramię"
 			description: ["Niewielki warsztat zaczyna przypominać halę. Spróbuj połączyć urządzenia, by nie potrzebowały ciebie przy każdym ruchu. Zacznij od sprawy „Mechaniczne ramię”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -22,6 +28,10 @@
 		}
 		{
 			id: "A130000000000020"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Automatyczny crafting"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Automatyczny crafting”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
@@ -33,6 +43,10 @@
 		}
 		{
 			id: "A130000000000021"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Mosiężny lejek"
 			description: ["Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Mosiężny lejek”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
@@ -44,6 +58,10 @@
 		}
 		{
 			id: "A130000000000022"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Inteligentny zsyp"
 			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Inteligentny zsyp”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
@@ -55,6 +73,10 @@
 		}
 		{
 			id: "A130000000000023"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wiertło mechaniczne"
 			description: ["Wcześniej zamknąłeś już sprawę „Mosiężny lejek”. W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Wiertło mechaniczne”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
@@ -66,6 +88,10 @@
 		}
 		{
 			id: "A130000000000024"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Mechaniczny żniwiarz"
 			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Mechaniczny żniwiarz”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
@@ -77,6 +103,10 @@
 		}
 		{
 			id: "A130000000000025"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Mobilny interfejs magazynu"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Mobilny interfejs magazynu”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
@@ -88,6 +118,10 @@
 		}
 		{
 			id: "A130000000000026"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zbiornik cieczy"
 			description: ["Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Zbiornik cieczy”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
@@ -99,6 +133,10 @@
 		}
 		{
 			id: "A130000000000027"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pompa Create"
 			description: ["Wcześniej zamknąłeś już sprawę „Mobilny interfejs magazynu”. Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Pompa Create”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
@@ -110,6 +148,10 @@
 		}
 		{
 			id: "A130000000000028"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Koła kruszące"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Koła kruszące”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -121,6 +163,10 @@
 		}
 		{
 			id: "A130000000000029"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kontroler obrotów"
 			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Kontroler obrotów”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
@@ -132,6 +178,10 @@
 		}
 		{
 			id: "A13000000000002A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Sekwencyjna przekładnia"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Sekwencyjna przekładnia”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
@@ -143,6 +193,10 @@
 		}
 		{
 			id: "A13000000000002B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Automatyczne manipulatory"
 			description: ["Wcześniej zamknąłeś już sprawę „Kontroler obrotów”. Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Automatyczne manipulatory”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
@@ -154,6 +208,10 @@
 		}
 		{
 			id: "A13000000000002C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Silnik parowy"
 			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Silnik parowy”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
@@ -165,6 +223,10 @@
 		}
 		{
 			id: "A13000000000002D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Palnik Blaze"
 			description: ["W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Palnik Blaze”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
@@ -176,6 +238,10 @@
 		}
 		{
 			id: "A13000000000002E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ekrany fabryczne"
 			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Ekrany fabryczne”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
@@ -187,6 +253,10 @@
 		}
 		{
 			id: "A13000000000002F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Sieć kolejowa"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sieć kolejowa”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -198,6 +268,10 @@
 		}
 		{
 			id: "A130000000000030"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rurociągi płynów"
 			description: ["Jedna maszyna przekazuje pracę następnej. Tak zaczyna się prawdziwa automatyzacja. Ostatni sprawdzian to „Rurociągi płynów”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

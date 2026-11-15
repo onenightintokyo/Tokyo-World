@@ -1,14 +1,20 @@
 {
 	filename: "caves_adventure"
 	title: "&9&lGłębiej niż zwykle"
-	group: "A110000000000007"
+	group: "A110000000000001"
 	id: "A120000000000010"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "alexscaves:spelunkery_table"
-	order_index: 1
-	images: [ { image: "tokyoworld:textures/gui/quests/exploration_adventure.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
+	order_index: 7
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_early.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000CD"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stół speleologa"
 			description: ["Pod powierzchnią kryją się miejsca, w których nawet dobry sprzęt bywa niewystarczający. Przygotuj się na nieznane. Zacznij od sprawy „Stół speleologa”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A1300000000000CE"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Skała galenowa"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Skała galenowa”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A1300000000000CF"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przysmak biomowy"
 			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Przysmak biomowy”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A1300000000000D0"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pancerz nurka"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Pancerz nurka”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A1300000000000D1"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rdzeń wulkaniczny"
 			description: ["Wcześniej zamknąłeś już sprawę „Przysmak biomowy”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Rdzeń wulkaniczny”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A1300000000000D2"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Materiały syntetyczne"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Materiały syntetyczne”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A1300000000000D3"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ochrona przed skażeniem"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Ochrona przed skażeniem”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A1300000000000D4"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Piec jądrowy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Piec jądrowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A1300000000000D5"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rdzeń rozszczepienia"
 			description: ["Wcześniej zamknąłeś już sprawę „Piec jądrowy”. Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Rdzeń rozszczepienia”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A1300000000000D6"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rdzeń teleportacji"
 			description: ["Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Rdzeń teleportacji”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A1300000000000D7"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Klejnot okultystyczny"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Klejnot okultystyczny”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A1300000000000D8"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Świetlista esencja"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Świetlista esencja”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A1300000000000D9"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Konsola z jaskini"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Konsola z jaskini”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A1300000000000DA"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pociąg prehistoryczny"
 			description: ["Wracasz z wyprawy bogatszy o rzeczy, których nie znajdziesz na powierzchni. Ostatni sprawdzian to „Pociąg prehistoryczny”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
