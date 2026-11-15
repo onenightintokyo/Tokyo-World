@@ -205,7 +205,7 @@
 			icon: "create:fluid_pipe"
 			dependencies: ["A13000000000002C", "A13000000000002D", "A13000000000002E", "A13000000000002F"]
 			tasks: [{ id: "A140000000000030" type: "item" item: "create:fluid_pipe" count: 18L consume_items: false }]
-			rewards: [{ id: "A150000000000030" type: "item" item: "minecraft:diamond" count: 5 } { id: "A160000000000030" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000030" type: "item" item: "minecraft:diamond" count: 5 }, { id: "A160000000000030" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
