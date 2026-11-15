@@ -14,6 +14,7 @@ internal sealed class ModpackInstaller
     private readonly HashSet<string> resolving = new(StringComparer.OrdinalIgnoreCase);
     private readonly List<string> skipped = new();
     private string modsDir = "";
+    private bool suppressEveryCompat;
     private IProgress<string>? status;
     private CancellationToken cancel;
 
@@ -23,9 +24,10 @@ internal sealed class ModpackInstaller
     }
 
     public async Task<ModInstallResult> InstallAsync(string gameDir, bool includeAllModules,
-        IProgress<string> progress, CancellationToken cancellation = default)
+        bool lightweightMode, IProgress<string> progress, CancellationToken cancellation = default)
     {
         modsDir = Path.Combine(gameDir, "mods");
+        suppressEveryCompat = lightweightMode;
         Directory.CreateDirectory(modsDir);
         status = progress;
         cancel = cancellation;
@@ -135,6 +137,9 @@ internal sealed class ModpackInstaller
 
     private async Task InstallProjectAsync(string projectRef, string versionId, string versionNeed, string matchPattern)
     {
+        // Never reinstall an intentionally disabled optional mod on update.
+        if (suppressEveryCompat && (projectRef.Equals("every-compat", StringComparison.OrdinalIgnoreCase)
+            || projectRef.Equals("everycomp", StringComparison.OrdinalIgnoreCase))) return;
         if (processed.Contains(projectRef) || resolving.Contains(projectRef)) return;
         resolving.Add(projectRef);
         try
