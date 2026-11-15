@@ -181,7 +181,7 @@
 			icon: "sophisticatedbackpacks:void_upgrade"
 			dependencies: ["A1300000000000E6", "A1300000000000E7", "A1300000000000E8", "A1300000000000E9"]
 			tasks: [{ id: "A1400000000000EA" type: "item" item: "sophisticatedbackpacks:void_upgrade" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000EA" type: "item" item: "minecraft:diamond" count: 6 } { id: "A1600000000000EA" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1500000000000EA" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A1600000000000EA" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
