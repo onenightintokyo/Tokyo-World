@@ -1,5 +1,17 @@
 # Tokyo World — Expert Fun Modpack
 
+## Tokyo World Launcher v1.3 — poprawka konfliktu modów
+
+**Nowy Windows EXE:** [Tokyo World Launcher v1.3 — udany build](https://github.com/onenightintokyo/Tokyo-World/actions/runs/43761751355).
+
+- Naprawiono **Delightful 3.8.1** → wymagany **End's Delight 2.5+**. Launcher pobiera zweryfikowany End's Delight 2.6 dla Forge 1.20.1 i przenosi starą wersję 2.4 do kopii zapasowej.
+- Naprawiono równoczesne ładowanie `IntegratedTerminals-1.20.1-1.7.0.jar` oraz `IntegratedTerminals-1.20.1-1.7.1.jar` — starszy plik jest archiwizowany.
+- Poprawki są uruchamiane przy kliknięciu **GRAJ** po synchronizacji modów; nie modyfikują `saves/`.
+- **Wymagany nowy EXE**: poprzednia wersja launchera nie posiada automatycznego mechanizmu podmiany JAR.
+
+[Dokumentacja, wersja ręczna i kopie zapasowe](docs/TOKYO_WORLD_DELIGHT_COMPATIBILITY_v1.3.md).
+
+
 ## Tokyo World — narracyjna progresja i kolejna seria modów
 
 **Nowy questbook:** 518 questów, 36 rozdziałów, **8 fabularnych kategorii**. Poprawiono opisy, połączono zadania w przechodzące przez rozgałęzienia drzewka i dodano 36 prób praktycznych w zaawansowanych projektach. Zachowano identyfikatory i dawne nagrody.
