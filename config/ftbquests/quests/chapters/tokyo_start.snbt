@@ -21,7 +21,7 @@
 			id: "A130000000000001"
 			title: "Pierwszy surowiec"
 			description: ["Zbierz drewno. Każda fabryka zaczyna się od prostych narzędzi."]
-			x: 0.0d
+			x: 7.0d
 			y: 0.0d
 			icon: "minecraft:oak_log"
 			tasks: [
@@ -29,25 +29,18 @@
 					id: "A140000000000001"
 					type: "item"
 					item: "minecraft:oak_log"
-					count: 8L
+					count: 12L
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000001"
-					type: "item"
-					item: "minecraft:bread"
-					count: 4
-				}
-			]
+			rewards: [{ id: "A150000000000001" type: "item" item: "minecraft:glowstone_dust" count: 9 }]
 		}
 		{
 			id: "A130000000000002"
 			title: "Warsztat inżyniera"
 			description: ["Przygotuj stół rzemieślniczy i zorganizuj miejsce pracy."]
-			x: 3.5d
-			y: 0.0d
+			x: 0.0d
+			y: 4.0d
 			icon: "minecraft:crafting_table"
 			dependencies: ["A130000000000001"]
 			tasks: [
@@ -59,23 +52,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000002"
-					type: "item"
-					item: "minecraft:torch"
-					count: 16
-				}
-			]
+			rewards: [{ id: "A150000000000002" type: "item" item: "minecraft:lapis_lazuli" count: 5 }]
 		}
 		{
 			id: "A130000000000003"
 			title: "Kamienne fundamenty"
 			description: ["Zbierz bruk na pierwszy piec i budynki."]
-			x: 7.0d
-			y: 0.0d
+			x: 4.5d
+			y: 4.0d
 			icon: "minecraft:cobblestone"
-			dependencies: ["A130000000000002"]
+			dependencies: ["A130000000000001"]
 			tasks: [
 				{
 					id: "A140000000000003"
@@ -85,23 +71,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000003"
-					type: "item"
-					item: "minecraft:coal"
-					count: 8
-				}
-			]
+			rewards: [{ id: "A150000000000003" type: "item" item: "minecraft:ender_pearl" count: 5 }]
 		}
 		{
 			id: "A130000000000004"
 			title: "Pierwsze wytapianie"
 			description: ["Uruchom piec i rozpocznij przetwarzanie materiałów."]
-			x: 10.5d
-			y: 0.0d
+			x: 9.0d
+			y: 4.0d
 			icon: "minecraft:furnace"
-			dependencies: ["A130000000000003"]
+			dependencies: ["A130000000000001"]
 			tasks: [
 				{
 					id: "A140000000000004"
@@ -111,101 +90,73 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000004"
-					type: "item"
-					item: "minecraft:iron_ingot"
-					count: 2
-				}
-			]
+			rewards: [{ id: "A150000000000004" type: "item" item: "minecraft:glowstone_dust" count: 5 }]
 		}
 		{
 			id: "A130000000000005"
 			title: "Era żelaza"
 			description: ["Żelazo posłuży do narzędzi, mechanizmów i późniejszej energetyki."]
-			x: 0.0d
-			y: 3.0d
+			x: 13.5d
+			y: 4.0d
 			icon: "minecraft:iron_ingot"
-			dependencies: ["A130000000000004"]
+			dependencies: ["A130000000000001"]
 			tasks: [
 				{
 					id: "A140000000000005"
 					type: "item"
 					item: "minecraft:iron_ingot"
-					count: 16L
+					count: 24L
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000005"
-					type: "item"
-					item: "minecraft:redstone"
-					count: 8
-				}
-			]
+			rewards: [{ id: "A150000000000005" type: "item" item: "minecraft:experience_bottle" count: 9 }]
 		}
 		{
 			id: "A130000000000006"
 			title: "Miedź dla przemysłu"
 			description: ["Zgromadź miedź do przewodów oraz konstrukcji technologicznych."]
-			x: 3.5d
-			y: 3.0d
+			x: 0.0d
+			y: 7.5d
 			icon: "minecraft:copper_ingot"
-			dependencies: ["A130000000000005"]
+			dependencies: ["A130000000000002"]
 			tasks: [
 				{
 					id: "A140000000000006"
 					type: "item"
 					item: "minecraft:copper_ingot"
-					count: 16L
+					count: 24L
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000006"
-					type: "item"
-					item: "minecraft:coal"
-					count: 12
-				}
-			]
+			rewards: [{ id: "A150000000000006" type: "item" item: "minecraft:ender_pearl" count: 5 }]
 		}
 		{
 			id: "A130000000000007"
 			title: "Sygnał Redstone"
 			description: ["Pierwszy krok do logiki automatyzacji."]
-			x: 7.0d
-			y: 3.0d
+			x: 4.5d
+			y: 7.5d
 			icon: "minecraft:redstone"
-			dependencies: ["A130000000000006"]
+			dependencies: ["A130000000000003"]
 			tasks: [
 				{
 					id: "A140000000000007"
 					type: "item"
 					item: "minecraft:redstone"
-					count: 16L
+					count: 24L
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000007"
-					type: "item"
-					item: "minecraft:lapis_lazuli"
-					count: 8
-				}
-			]
+			rewards: [{ id: "A150000000000007" type: "item" item: "minecraft:glowstone_dust" count: 5 }]
 		}
 		{
 			id: "A130000000000008"
 			title: "Kolejny etap"
 			description: ["Przygotuj podstawowy zasobnik. Od teraz możesz rozwijać logistykę i farmy."]
-			x: 10.5d
-			y: 3.0d
+			x: 7.0d
+			y: 12.0d
 			icon: "minecraft:hopper"
-			dependencies: ["A130000000000007"]
+			dependencies: ["A130000000000004", "A130000000000005", "A130000000000006", "A130000000000007"]
 			tasks: [
 				{
 					id: "A140000000000008"
@@ -215,14 +166,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000008"
-					type: "item"
-					item: "minecraft:chest"
-					count: 2
-				}
-			]
+			rewards: [{ id: "A150000000000008" type: "item" item: "minecraft:diamond" count: 5 } { id: "A160000000000008" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
