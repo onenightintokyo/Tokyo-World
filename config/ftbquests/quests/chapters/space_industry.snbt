@@ -11,177 +11,177 @@
 			id: "A1300000000000BD"
 			title: "Stal kosmiczna"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: stal kosmiczna. Element 1 z 16 tej ścieżki."]
-			x: 0.0d
+			x: 7.0d
 			y: 0.0d
 			icon: "ad_astra:steel_ingot"
 			dependencies: ["A130000000000018"]
-			tasks: [{ id: "A1400000000000BD" type: "item" item: "ad_astra:steel_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A1500000000000BD" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+			tasks: [{ id: "A1400000000000BD" type: "item" item: "ad_astra:steel_ingot" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000000BD" type: "item" item: "minecraft:golden_carrot" count: 8 }]
 		}
 		{
 			id: "A1300000000000BE"
 			title: "Płyty kosmiczne"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: płyty kosmiczne. Element 2 z 16 tej ścieżki."]
-			x: 3.5d
-			y: 0.0d
+			x: 0.0d
+			y: 4.0d
 			icon: "ad_astra:steel_plate"
 			dependencies: ["A1300000000000BD"]
-			tasks: [{ id: "A1400000000000BE" type: "item" item: "ad_astra:steel_plate" count: 8L consume_items: false }]
-			rewards: [{ id: "A1500000000000BE" type: "item" item: "minecraft:redstone" count: 4 }]
+			tasks: [{ id: "A1400000000000BE" type: "item" item: "ad_astra:steel_plate" count: 12L consume_items: false }]
+			rewards: [{ id: "A1500000000000BE" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A1300000000000BF"
 			title: "Kompresor technologiczny"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: kompresor technologiczny. Element 3 z 16 tej ścieżki."]
-			x: 7.0d
-			y: 0.0d
+			x: 4.5d
+			y: 4.0d
 			icon: "ad_astra:compressor"
-			dependencies: ["A1300000000000BE"]
+			dependencies: ["A1300000000000BD"]
 			tasks: [{ id: "A1400000000000BF" type: "item" item: "ad_astra:compressor" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000BF" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+			rewards: [{ id: "A1500000000000BF" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A1300000000000C0"
 			title: "Generator wyprawowy"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: generator wyprawowy. Element 4 z 16 tej ścieżki."]
-			x: 10.5d
-			y: 0.0d
+			x: 9.0d
+			y: 4.0d
 			icon: "ad_astra:coal_generator"
-			dependencies: ["A1300000000000BF"]
+			dependencies: ["A1300000000000BD"]
 			tasks: [{ id: "A1400000000000C0" type: "item" item: "ad_astra:coal_generator" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C0" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A1500000000000C0" type: "item" item: "minecraft:golden_carrot" count: 4 }]
 		}
 		{
 			id: "A1300000000000C1"
 			title: "Warsztat rakietowy"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: warsztat rakietowy. Element 5 z 16 tej ścieżki."]
-			x: 14.0d
-			y: 0.0d
+			x: 13.5d
+			y: 4.0d
 			icon: "ad_astra:nasa_workbench"
-			dependencies: ["A1300000000000C0"]
+			dependencies: ["A1300000000000BD"]
 			tasks: [{ id: "A1400000000000C1" type: "item" item: "ad_astra:nasa_workbench" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C1" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+			rewards: [{ id: "A1500000000000C1" type: "item" item: "minecraft:glowstone_dust" count: 8 }]
 		}
 		{
 			id: "A1300000000000C2"
 			title: "Rafineria paliwa"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: rafineria paliwa. Element 6 z 16 tej ścieżki."]
 			x: 0.0d
-			y: 3.0d
+			y: 7.5d
 			icon: "ad_astra:fuel_refinery"
-			dependencies: ["A1300000000000C1"]
+			dependencies: ["A1300000000000BE"]
 			tasks: [{ id: "A1400000000000C2" type: "item" item: "ad_astra:fuel_refinery" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C2" type: "item" item: "minecraft:redstone" count: 4 }]
+			rewards: [{ id: "A1500000000000C2" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A1300000000000C3"
 			title: "Sprzęt tlenowy"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: sprzęt tlenowy. Element 7 z 16 tej ścieżki."]
-			x: 3.5d
-			y: 3.0d
+			x: 4.5d
+			y: 7.5d
 			icon: "ad_astra:oxygen_gear"
-			dependencies: ["A1300000000000C2"]
+			dependencies: ["A1300000000000BF"]
 			tasks: [{ id: "A1400000000000C3" type: "item" item: "ad_astra:oxygen_gear" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C3" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+			rewards: [{ id: "A1500000000000C3" type: "item" item: "minecraft:golden_carrot" count: 4 }]
 		}
 		{
 			id: "A1300000000000C4"
 			title: "Ładowarka tlenu"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: ładowarka tlenu. Element 8 z 16 tej ścieżki."]
-			x: 7.0d
-			y: 3.0d
+			x: 9.0d
+			y: 7.5d
 			icon: "ad_astra:oxygen_loader"
-			dependencies: ["A1300000000000C3"]
+			dependencies: ["A1300000000000C0"]
 			tasks: [{ id: "A1400000000000C4" type: "item" item: "ad_astra:oxygen_loader" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C4" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A1500000000000C4" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
 		}
 		{
 			id: "A1300000000000C5"
 			title: "Dystrybucja tlenu"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: dystrybucja tlenu. Element 9 z 16 tej ścieżki."]
-			x: 10.5d
-			y: 3.0d
+			x: 13.5d
+			y: 7.5d
 			icon: "ad_astra:oxygen_distributor"
-			dependencies: ["A1300000000000C4"]
+			dependencies: ["A1300000000000C1"]
 			tasks: [{ id: "A1400000000000C5" type: "item" item: "ad_astra:oxygen_distributor" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C5" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+			rewards: [{ id: "A1500000000000C5" type: "item" item: "minecraft:ender_pearl" count: 8 }]
 		}
 		{
 			id: "A1300000000000C6"
 			title: "Silnik rakietowy"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: silnik rakietowy. Element 10 z 16 tej ścieżki."]
-			x: 14.0d
-			y: 3.0d
+			x: 0.0d
+			y: 11.0d
 			icon: "ad_astra:steel_engine"
-			dependencies: ["A1300000000000C5"]
+			dependencies: ["A1300000000000C2"]
 			tasks: [{ id: "A1400000000000C6" type: "item" item: "ad_astra:steel_engine" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C6" type: "item" item: "minecraft:redstone" count: 4 }]
+			rewards: [{ id: "A1500000000000C6" type: "item" item: "minecraft:golden_carrot" count: 4 }]
 		}
 		{
 			id: "A1300000000000C7"
 			title: "Stateczniki rakiety"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: stateczniki rakiety. Element 11 z 16 tej ścieżki."]
-			x: 0.0d
-			y: 6.0d
+			x: 4.5d
+			y: 11.0d
 			icon: "ad_astra:rocket_fin"
-			dependencies: ["A1300000000000C6"]
+			dependencies: ["A1300000000000C3"]
 			tasks: [{ id: "A1400000000000C7" type: "item" item: "ad_astra:rocket_fin" count: 4L consume_items: false }]
-			rewards: [{ id: "A1500000000000C7" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+			rewards: [{ id: "A1500000000000C7" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
 		}
 		{
 			id: "A1300000000000C8"
 			title: "Dziób rakiety"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: dziób rakiety. Element 12 z 16 tej ścieżki."]
-			x: 3.5d
-			y: 6.0d
+			x: 9.0d
+			y: 11.0d
 			icon: "ad_astra:rocket_nose_cone"
-			dependencies: ["A1300000000000C7"]
+			dependencies: ["A1300000000000C4"]
 			tasks: [{ id: "A1400000000000C8" type: "item" item: "ad_astra:rocket_nose_cone" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C8" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A1500000000000C8" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A1300000000000C9"
 			title: "Kosmiczne panele"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: kosmiczne panele. Element 13 z 16 tej ścieżki."]
-			x: 7.0d
-			y: 6.0d
+			x: 13.5d
+			y: 11.0d
 			icon: "ad_astra:solar_panel"
-			dependencies: ["A1300000000000C8"]
+			dependencies: ["A1300000000000C5"]
 			tasks: [{ id: "A1400000000000C9" type: "item" item: "ad_astra:solar_panel" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C9" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+			rewards: [{ id: "A1500000000000C9" type: "item" item: "minecraft:experience_bottle" count: 8 }]
 		}
 		{
 			id: "A1300000000000CA"
 			title: "Pompa wodna"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: pompa wodna. Element 14 z 16 tej ścieżki."]
-			x: 10.5d
-			y: 6.0d
+			x: 0.0d
+			y: 14.5d
 			icon: "ad_astra:water_pump"
-			dependencies: ["A1300000000000C9"]
+			dependencies: ["A1300000000000C6"]
 			tasks: [{ id: "A1400000000000CA" type: "item" item: "ad_astra:water_pump" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000CA" type: "item" item: "minecraft:redstone" count: 4 }]
+			rewards: [{ id: "A1500000000000CA" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
 		}
 		{
 			id: "A1300000000000CB"
 			title: "Paliwo kriogeniczne"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: paliwo kriogeniczne. Element 15 z 16 tej ścieżki."]
-			x: 14.0d
-			y: 6.0d
+			x: 4.5d
+			y: 14.5d
 			icon: "ad_astra:cryo_fuel"
-			dependencies: ["A1300000000000CA"]
+			dependencies: ["A1300000000000C7"]
 			tasks: [{ id: "A1400000000000CB" type: "item" item: "ad_astra:cryo_fuel" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000CB" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+			rewards: [{ id: "A1500000000000CB" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A1300000000000CC"
 			title: "Okablowanie kosmiczne"
 			description: ["Rozwój technologii rakietowej, tlenu i paliw. Pozyskaj lub wytwórz: okablowanie kosmiczne. Element 16 z 16 tej ścieżki."]
-			x: 0.0d
-			y: 9.0d
+			x: 7.0d
+			y: 19.0d
 			icon: "ad_astra:steel_cable"
-			dependencies: ["A1300000000000CB"]
-			tasks: [{ id: "A1400000000000CC" type: "item" item: "ad_astra:steel_cable" count: 12L consume_items: false }]
-			rewards: [{ id: "A1500000000000CC" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			dependencies: ["A1300000000000C8", "A1300000000000C9", "A1300000000000CA", "A1300000000000CB"]
+			tasks: [{ id: "A1400000000000CC" type: "item" item: "ad_astra:steel_cable" count: 18L consume_items: false }]
+			rewards: [{ id: "A1500000000000CC" type: "item" item: "minecraft:totem_of_undying" count: 1 } { id: "A1600000000000CC" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
