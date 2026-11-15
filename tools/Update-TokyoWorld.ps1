@@ -233,6 +233,41 @@ try {
     }
 } catch { Write-Warning "[Tokyo World] Mekanism Expert Fun settings skipped: $($_.Exception.Message)" }
 
+# FancyMenu modpack mode: hide the editing menu bar and its hotkeys.
+# A local marker allows the owner to reopen the editor when needed.
+try {
+    $fmRel = 'config\fancymenu\options.txt'
+    $fmPath = Join-Path $GameDir $fmRel
+    $editMarker = Join-Path $GameDir '.tokyo-world-state\fancymenu_edit_mode'
+    if (Test-Path -LiteralPath $fmPath -PathType Leaf) {
+        $fmBefore = [System.IO.File]::ReadAllText($fmPath)
+        $fmAfter = $fmBefore
+        $editMode = Test-Path -LiteralPath $editMarker -PathType Leaf
+        $modeValue = if ($editMode) { 'false' } else { 'true' }
+        $overlayValue = if ($editMode) { 'true' } else { 'false' }
+        $fmAfter = [regex]::Replace(
+            $fmAfter,
+            "(?m)^B:modpack_mode\s*=\s*'(?:true|false)';",
+            ("B:modpack_mode = '" + $modeValue + "';")
+        )
+        if ($fmAfter -notmatch '(?m)^B:modpack_mode\s*=') {
+            $fmAfter = $fmAfter.Replace('##[customization]', "##[customization]" + [Environment]::NewLine + "B:modpack_mode = '" + $modeValue + "';")
+        }
+        $fmAfter = [regex]::Replace(
+            $fmAfter,
+            "(?m)^B:show_customization_overlay\s*=\s*'(?:true|false)';",
+            ("B:show_customization_overlay = '" + $overlayValue + "';")
+        )
+        $fmAfter = $fmAfter.Replace("B:show_welcome_screen = 'true';", "B:show_welcome_screen = 'false';")
+        Write-IfChanged $fmRel $fmAfter
+        Write-Host ("[Tokyo World] FancyMenu editing bar: " + $(if ($editMode) { 'EDIT MODE' } else { 'HIDDEN (modpack mode)' }))
+    } else {
+        Write-Warning "[Tokyo World] FancyMenu options not found; skipping modpack mode."
+    }
+} catch {
+    Write-Warning ("[Tokyo World] FancyMenu modpack mode not applied: " + $_.Exception.Message)
+}
+
 Write-Host "[Tokyo World] Done. Files copied: $copied"
 Write-Host "[Tokyo World] Safe config sync complete. Extra mods require a separate installation step."
 exit 0
