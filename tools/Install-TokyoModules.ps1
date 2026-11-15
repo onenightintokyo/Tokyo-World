@@ -1,7 +1,7 @@
 # Tokyo World optional expansion installer — Windows PowerShell 5.1+
 # Preview by default; use -Apply to install. Existing mods, saves, configs are untouched.
 param(
-    [ValidateSet('Core','Expanded','Adventure','Lab','World','Factory','Automation','Resources','Repair','Mega','All')][string]$Profile = 'Core',
+    [ValidateSet('Core','Expanded','Adventure','Lab','World','Factory','Automation','Resources','Repair','Wave','Mega','All')][string]$Profile = 'Core',
     [switch]$Apply,
     [string]$GameDir = ''
 )
@@ -201,12 +201,15 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
 $wanted = @()
 $megaGroups = @('tech-core','tech-expanded','tech-lab','world-explore',
                 'factory-next','automation-next','resources-next','repair-dependencies',
-                'mega-technology','mega-magic','mega-adventure','mega-building')
+                'mega-technology','mega-magic','mega-adventure','mega-building',
+                'wave-industry','wave-bosses','wave-world','wave-quality')
 foreach ($name in @('tech-core','tech-expanded','adventure','tech-lab','world-explore',
                     'factory-next','automation-next','resources-next','repair-dependencies',
-                    'mega-technology','mega-magic','mega-adventure','mega-building')) {
+                    'mega-technology','mega-magic','mega-adventure','mega-building',
+                    'wave-industry','wave-bosses','wave-world','wave-quality')) {
     $use = ($Profile -eq 'All') -or
         ($Profile -eq 'Mega' -and $name -in $megaGroups) -or
+        ($Profile -eq 'Wave' -and $name -in @('wave-industry','wave-bosses','wave-world','wave-quality')) -or
         ($Profile -eq 'Core' -and $name -eq 'tech-core') -or
         ($Profile -eq 'Expanded' -and $name -in @('tech-core','tech-expanded')) -or
         ($Profile -eq 'Adventure' -and $name -eq 'adventure') -or
@@ -221,7 +224,7 @@ foreach ($name in @('tech-core','tech-expanded','adventure','tech-lab','world-ex
 Write-Host "[Tokyo World] Profile=$Profile, Minecraft=1.20.1, Forge, apply=$Apply"
 Write-Host "[Tokyo World] Resolving versions and required dependencies from Modrinth..."
 foreach ($mod in $wanted) {
-    if ($Profile -notin @('Mega','All')) {
+    if ($Profile -notin @('Mega','Wave','All')) {
         Queue-Mod ([string]$mod.project) ([string]$mod.versionId) ([string]$mod.version) ([string]$mod.match)
         continue
     }
@@ -246,7 +249,7 @@ foreach ($mod in $wanted) {
     }
 }
 $toInstall = @($script:planned.Values | Sort-Object name)
-if ($Profile -in @('Mega','All')) {
+if ($Profile -in @('Mega','Wave','All')) {
     Write-Host ("[Tokyo World] Requested projects: {0}; planned JARs (incl. dependencies): {1}; unavailable: {2}" -f $wanted.Count, $toInstall.Count, $script:unavailable.Count)
     if ($script:unavailable.Count) {
         $report = Join-Path $GameDir '.tokyo-world-mega-skipped.txt'
