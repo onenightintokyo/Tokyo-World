@@ -1,0 +1,187 @@
+{
+	filename: "mega_factory"
+	title: "&b&l07 &r&fMegafabryka Tokyo"
+	group: "A110000000000002"
+	id: "A120000000000019"
+	icon: "create:mechanical_crafter"
+	order_index: 6
+	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	quests: [
+		{
+			id: "A130000000000147"
+			title: "Projekt hali"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 1/16: Projekt hali. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 7.0d
+			y: 0.0d
+			icon: "minecraft:iron_block"
+			dependencies: ["A130000000000030", "A130000000000044"]
+			tasks: [{ id: "A140000000000147" type: "item" item: "minecraft:iron_block" count: 8L consume_items: false }, { id: "A180000000000147" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000147" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000148"
+			title: "Wały produkcyjne"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 2/16: Wały produkcyjne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 4.0d
+			icon: "create:shaft"
+			dependencies: ["A130000000000147"]
+			tasks: [{ id: "A140000000000148" type: "item" item: "create:shaft" count: 32L consume_items: false }, { id: "A180000000000148" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000148" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A130000000000149"
+			title: "Napęd mechaniczny"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 3/16: Napęd mechaniczny. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 4.0d
+			icon: "create:water_wheel"
+			dependencies: ["A130000000000147"]
+			tasks: [{ id: "A140000000000149" type: "item" item: "create:water_wheel" count: 4L consume_items: false }, { id: "A180000000000149" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000149" type: "item" item: "create:andesite_alloy" count: 4 }]
+		}
+		{
+			id: "A13000000000014A"
+			title: "Prasy przemysłowe"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 4/16: Prasy przemysłowe. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 4.0d
+			icon: "create:mechanical_press"
+			dependencies: ["A130000000000147"]
+			tasks: [{ id: "A14000000000014A" type: "item" item: "create:mechanical_press" count: 4L consume_items: false }, { id: "A18000000000014A" type: "item" item: "minecraft:copper_ingot" count: 8L consume_items: false }]
+			rewards: [{ id: "A15000000000014A" type: "item" item: "minecraft:golden_carrot" count: 8 }]
+		}
+		{
+			id: "A13000000000014B"
+			title: "Ramiona robotyczne"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 5/16: Ramiona robotyczne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 4.0d
+			icon: "create:deployer"
+			dependencies: ["A130000000000147"]
+			tasks: [{ id: "A14000000000014B" type: "item" item: "create:deployer" count: 4L consume_items: false }, { id: "A18000000000014B" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A15000000000014B" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A13000000000014C"
+			title: "Taśmociąg główny"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 6/16: Taśmociąg główny. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 8.0d
+			icon: "create:belt_connector"
+			dependencies: ["A130000000000148"]
+			tasks: [{ id: "A14000000000014C" type: "item" item: "create:belt_connector" count: 32L consume_items: false }, { id: "A18000000000014C" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A15000000000014C" type: "item" item: "minecraft:diamond" count: 1 }]
+		}
+		{
+			id: "A13000000000014D"
+			title: "Bufory materiałowe"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 7/16: Bufory materiałowe. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 8.0d
+			icon: "minecraft:hopper"
+			dependencies: ["A130000000000149"]
+			tasks: [{ id: "A14000000000014D" type: "item" item: "minecraft:hopper" count: 16L consume_items: false }, { id: "A18000000000014D" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A15000000000014D" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A13000000000014E"
+			title: "Sortery produkcyjne"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 8/16: Sortery produkcyjne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 8.0d
+			icon: "create:brass_funnel"
+			dependencies: ["A13000000000014A"]
+			tasks: [{ id: "A14000000000014E" type: "item" item: "create:brass_funnel" count: 12L consume_items: false }, { id: "A18000000000014E" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A15000000000014E" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A13000000000014F"
+			title: "Kruszenie na skalę"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 9/16: Kruszenie na skalę. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 8.0d
+			icon: "mekanism:crusher"
+			dependencies: ["A13000000000014B"]
+			tasks: [{ id: "A14000000000014F" type: "item" item: "mekanism:crusher" count: 2L consume_items: false }, { id: "A18000000000014F" type: "item" item: "minecraft:iron_ingot" count: 24L consume_items: false }]
+			rewards: [{ id: "A15000000000014F" type: "item" item: "create:andesite_alloy" count: 4 }]
+		}
+		{
+			id: "A130000000000150"
+			title: "Automatyczne mieszanie"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 10/16: Automatyczne mieszanie. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 12.0d
+			icon: "create:mechanical_mixer"
+			dependencies: ["A13000000000014C"]
+			tasks: [{ id: "A140000000000150" type: "item" item: "create:mechanical_mixer" count: 4L consume_items: false }, { id: "A180000000000150" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
+			rewards: [{ id: "A150000000000150" type: "item" item: "minecraft:golden_carrot" count: 8 }]
+		}
+		{
+			id: "A130000000000151"
+			title: "Fabryczne obudowy"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 11/16: Fabryczne obudowy. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 12.0d
+			icon: "mekanism:steel_casing"
+			dependencies: ["A13000000000014D"]
+			tasks: [{ id: "A140000000000151" type: "item" item: "mekanism:steel_casing" count: 12L consume_items: false }, { id: "A180000000000151" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
+			rewards: [{ id: "A150000000000151" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A130000000000152"
+			title: "Montaż precyzyjny"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 12/16: Montaż precyzyjny. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 12.0d
+			icon: "create:precision_mechanism"
+			dependencies: ["A13000000000014E"]
+			tasks: [{ id: "A140000000000152" type: "item" item: "create:precision_mechanism" count: 12L consume_items: false }, { id: "A180000000000152" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
+			rewards: [{ id: "A150000000000152" type: "item" item: "minecraft:diamond" count: 1 }]
+		}
+		{
+			id: "A130000000000153"
+			title: "Crafting modułowy"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 13/16: Crafting modułowy. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 12.0d
+			icon: "create:mechanical_crafter"
+			dependencies: ["A13000000000014F"]
+			tasks: [{ id: "A140000000000153" type: "item" item: "create:mechanical_crafter" count: 16L consume_items: false }, { id: "A180000000000153" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
+			rewards: [{ id: "A150000000000153" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000154"
+			title: "Zaawansowany sorter"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 14/16: Zaawansowany sorter. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 16.0d
+			icon: "mekanism:logistical_sorter"
+			dependencies: ["A130000000000150"]
+			tasks: [{ id: "A140000000000154" type: "item" item: "mekanism:logistical_sorter" count: 4L consume_items: false }, { id: "A180000000000154" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
+			rewards: [{ id: "A150000000000154" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A130000000000155"
+			title: "Cyfrowy terminal"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 15/16: Cyfrowy terminal. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 16.0d
+			icon: "ae2:crafting_terminal"
+			dependencies: ["A130000000000151"]
+			tasks: [{ id: "A140000000000155" type: "item" item: "ae2:crafting_terminal" count: 2L consume_items: false }, { id: "A180000000000155" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
+			rewards: [{ id: "A150000000000155" type: "item" item: "create:andesite_alloy" count: 4 }]
+		}
+		{
+			id: "A130000000000156"
+			title: "TOKYO MEGAFABRYKA"
+			description: ["Przemysł na wielką skalę: od pierwszej linii do fabryki wielomaszynowej. ETAP 16/16: TOKYO MEGAFABRYKA. Wykonaj oba cele materiałowe. Nagroda finałowa po ukończeniu wszystkich czterech gałęzi."]
+			x: 7.0d
+			y: 21.5d
+			icon: "mekanism:basic_crushing_factory"
+			dependencies: ["A130000000000154", "A130000000000155", "A130000000000152", "A130000000000153"]
+			tasks: [{ id: "A140000000000156" type: "item" item: "mekanism:basic_crushing_factory" count: 4L consume_items: false }, { id: "A180000000000156" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A190000000000156" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000156" type: "item" item: "create:precision_mechanism" count: 4 }, { id: "A160000000000156" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+		}
+	]
+}
