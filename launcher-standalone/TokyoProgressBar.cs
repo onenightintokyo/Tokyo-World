@@ -7,6 +7,7 @@ namespace TokyoWorldLauncher;
 internal sealed class TokyoProgressBar : Control
 {
     private int progress;
+    [System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
     public int Progress
     {
         get => progress;
