@@ -1,10 +1,10 @@
 {
 	filename: "food_architecture"
-	title: "Budowanie — Kuchnia i osada"
-	group: "A110000000000001"
+	title: "&a&l05 &r&fKuchnia i budowanie"
+	group: "A110000000000004"
 	id: "A120000000000014"
 	icon: "farmersdelight:stove"
-	order_index: 19
+	order_index: 4
 	images: [ { image: "tokyoworld:textures/gui/quests/building_farming.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
 	quests: [
 		{
