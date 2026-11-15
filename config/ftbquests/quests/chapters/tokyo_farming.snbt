@@ -1,0 +1,164 @@
+{
+	filename: "tokyo_farming"
+	group: "A110000000000001"
+	id: "A120000000000004"
+	icon: { id: "minecraft:wheat" }
+	order_index: 3
+	images: [
+		{
+			image: "tokyoworld:textures/gui/quests/building_farming.png"
+			width: 12.0d
+			height: 6.0d
+			x: 2.5d
+			y: -6.0d
+			order: -1
+		}
+	]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "A130000000000019"
+			x: 0.0d
+			y: 0.0d
+			icon: { id: "minecraft:wheat" }
+			dependencies: ["A130000000000004"]
+			tasks: [
+				{
+					id: "A140000000000019"
+					type: "item"
+					item: { count: 1, id: "minecraft:wheat" }
+					count: 32L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000019"
+					type: "item"
+					item: { count: 1, id: "minecraft:bread" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "A13000000000001A"
+			x: 3.5d
+			y: 0.0d
+			icon: { id: "minecraft:carrot" }
+			dependencies: ["A130000000000019"]
+			tasks: [
+				{
+					id: "A14000000000001A"
+					type: "item"
+					item: { count: 1, id: "minecraft:carrot" }
+					count: 16L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000001A"
+					type: "item"
+					item: { count: 1, id: "minecraft:bone_meal" }
+					count: 12
+				}
+			]
+		}
+		{
+			id: "A13000000000001B"
+			x: 7.0d
+			y: 0.0d
+			icon: { id: "minecraft:hopper" }
+			dependencies: ["A13000000000001A"]
+			tasks: [
+				{
+					id: "A14000000000001B"
+					type: "item"
+					item: { count: 1, id: "minecraft:hopper" }
+					count: 4L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000001B"
+					type: "item"
+					item: { count: 1, id: "minecraft:chest" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "A13000000000001C"
+			x: 10.5d
+			y: 0.0d
+			icon: { id: "farmersdelight:cooking_pot" }
+			dependencies: ["A13000000000001B"]
+			tasks: [
+				{
+					id: "A14000000000001C"
+					type: "item"
+					item: { count: 1, id: "farmersdelight:cooking_pot" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000001C"
+					type: "item"
+					item: { count: 1, id: "minecraft:coal" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "A13000000000001D"
+			x: 0.0d
+			y: 3.0d
+			icon: { id: "mysticalagriculture:inferium_essence" }
+			dependencies: ["A13000000000001C"]
+			tasks: [
+				{
+					id: "A14000000000001D"
+					type: "item"
+					item: { count: 1, id: "mysticalagriculture:inferium_essence" }
+					count: 32L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000001D"
+					type: "item"
+					item: { count: 1, id: "minecraft:bone_meal" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "A13000000000001E"
+			x: 3.5d
+			y: 3.0d
+			icon: { id: "minecraft:barrel" }
+			dependencies: ["A13000000000001D"]
+			tasks: [
+				{
+					id: "A14000000000001E"
+					type: "item"
+					item: { count: 1, id: "minecraft:barrel" }
+					count: 8L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A15000000000001E"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 6
+				}
+			]
+		}
+	]
+}
