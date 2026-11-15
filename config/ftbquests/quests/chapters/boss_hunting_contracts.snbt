@@ -87,12 +87,12 @@
 		{
 			id: "A1300000000001EE"
 			title: "Netherit do pancerzy"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Netherit do pancerzy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Netherit do pancerzy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 16.0d
 			icon: "minecraft:netherite_ingot"
 			dependencies: ["A1300000000001EC", "A1300000000001ED"]
-			tasks: [{ id: "A1400000000001EE" type: "item" item: "minecraft:netherite_ingot" count: 4L consume_items: false }, { id: "A1800000000001EE" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			tasks: [{ id: "A1400000000001EE" type: "item" item: "minecraft:netherite_ingot" count: 4L consume_items: false }, { id: "A1800000000001EE" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }, { id: "A1D00000000001EE" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001EE" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
@@ -164,23 +164,23 @@
 		{
 			id: "A1300000000001F5"
 			title: "Płytki syntetyczne"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Płytki syntetyczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Płytki syntetyczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 32.0d
 			icon: "alexscaves:polymer_plate"
 			dependencies: ["A1300000000001F3", "A1300000000001F4"]
-			tasks: [{ id: "A1400000000001F5" type: "item" item: "alexscaves:polymer_plate" count: 24L consume_items: false }, { id: "A1800000000001F5" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }]
+			tasks: [{ id: "A1400000000001F5" type: "item" item: "alexscaves:polymer_plate" count: 24L consume_items: false }, { id: "A1800000000001F5" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1D00000000001F5" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001F5" type: "item" item: "minecraft:diamond" count: 1 }]
 		}
 		{
 			id: "A1300000000001F6"
 			title: "TOKYO BOSS COUNCIL"
-			description: ["Masz dowód, że nawet największe legendy można pokonać. Ostatni sprawdzian to „TOKYO BOSS COUNCIL”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
+			description: ["Masz dowód, że nawet największe legendy można pokonać. Ostatni sprawdzian to „TOKYO BOSS COUNCIL”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 36.0d
 			icon: "minecraft:nether_star"
 			dependencies: ["A1300000000001F5"]
-			tasks: [{ id: "A1400000000001F6" type: "item" item: "minecraft:nether_star" count: 4L consume_items: false }, { id: "A1800000000001F6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001F6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			tasks: [{ id: "A1400000000001F6" type: "item" item: "minecraft:nether_star" count: 4L consume_items: false }, { id: "A1800000000001F6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001F6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D00000000001F6" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001F6" type: "item" item: "minecraft:totem_of_undying" count: 2 }, { id: "A1600000000001F6" type: "item" item: "minecraft:golden_apple" count: 2 }]
 		}
 	]

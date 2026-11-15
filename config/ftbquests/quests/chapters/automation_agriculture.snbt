@@ -87,12 +87,12 @@
 		{
 			id: "A1300000000001BE"
 			title: "Siewniki automatyczne"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Siewniki automatyczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Siewniki automatyczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Uruchom farmę na próbę i upewnij się, że sama zbiera albo przygotowuje plony. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 16.0d
 			icon: "industrialforegoing:plant_sower"
 			dependencies: ["A1300000000001BC", "A1300000000001BD"]
-			tasks: [{ id: "A1400000000001BE" type: "item" item: "industrialforegoing:plant_sower" count: 4L consume_items: false }, { id: "A1800000000001BE" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			tasks: [{ id: "A1400000000001BE" type: "item" item: "industrialforegoing:plant_sower" count: 4L consume_items: false }, { id: "A1800000000001BE" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }, { id: "A1D00000000001BE" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001BE" type: "item" item: "mysticalagriculture:inferium_essence" count: 4 }]
 		}
 		{
@@ -164,23 +164,23 @@
 		{
 			id: "A1300000000001C5"
 			title: "Esencje Imperium"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Esencje Imperium”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Esencje Imperium”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Uruchom farmę na próbę i upewnij się, że sama zbiera albo przygotowuje plony. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 32.0d
 			icon: "mysticalagriculture:imperium_essence"
 			dependencies: ["A1300000000001C3", "A1300000000001C4"]
-			tasks: [{ id: "A1400000000001C5" type: "item" item: "mysticalagriculture:imperium_essence" count: 24L consume_items: false }, { id: "A1800000000001C5" type: "item" item: "minecraft:golden_carrot" count: 32L consume_items: false }]
+			tasks: [{ id: "A1400000000001C5" type: "item" item: "mysticalagriculture:imperium_essence" count: 24L consume_items: false }, { id: "A1800000000001C5" type: "item" item: "minecraft:golden_carrot" count: 32L consume_items: false }, { id: "A1D00000000001C5" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001C5" type: "item" item: "minecraft:golden_carrot" count: 4 }]
 		}
 		{
 			id: "A1300000000001C6"
 			title: "TOKYO AGRICULTURE COMPLEX"
-			description: ["Gospodarstwo pracuje, nawet kiedy cała ekipa odkrywa nowe miejsca. Ostatni sprawdzian to „TOKYO AGRICULTURE COMPLEX”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
+			description: ["Gospodarstwo pracuje, nawet kiedy cała ekipa odkrywa nowe miejsca. Ostatni sprawdzian to „TOKYO AGRICULTURE COMPLEX”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Uruchom farmę na próbę i upewnij się, że sama zbiera albo przygotowuje plony. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 36.0d
 			icon: "industrialforegoing:plant_gatherer"
 			dependencies: ["A1300000000001C5"]
-			tasks: [{ id: "A1400000000001C6" type: "item" item: "industrialforegoing:plant_gatherer" count: 8L consume_items: false }, { id: "A1800000000001C6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001C6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			tasks: [{ id: "A1400000000001C6" type: "item" item: "industrialforegoing:plant_gatherer" count: 8L consume_items: false }, { id: "A1800000000001C6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001C6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D00000000001C6" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001C6" type: "item" item: "mysticalagriculture:imperium_essence" count: 4 }, { id: "A1600000000001C6" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]

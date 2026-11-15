@@ -87,12 +87,12 @@
 		{
 			id: "A1300000000001AE"
 			title: "Zaawansowane ulepszenia"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zaawansowane ulepszenia”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zaawansowane ulepszenia”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 16.0d
 			icon: "pipez:advanced_upgrade"
 			dependencies: ["A1300000000001AC", "A1300000000001AD"]
-			tasks: [{ id: "A1400000000001AE" type: "item" item: "pipez:advanced_upgrade" count: 8L consume_items: false }, { id: "A1800000000001AE" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
+			tasks: [{ id: "A1400000000001AE" type: "item" item: "pipez:advanced_upgrade" count: 8L consume_items: false }, { id: "A1800000000001AE" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }, { id: "A1D00000000001AE" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001AE" type: "item" item: "minecraft:emerald" count: 4 }]
 		}
 		{
@@ -164,23 +164,23 @@
 		{
 			id: "A1300000000001B5"
 			title: "Interfejsy ME"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejsy ME”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejsy ME”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 32.0d
 			icon: "ae2:interface"
 			dependencies: ["A1300000000001B3", "A1300000000001B4"]
-			tasks: [{ id: "A1400000000001B5" type: "item" item: "ae2:interface" count: 8L consume_items: false }, { id: "A1800000000001B5" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
+			tasks: [{ id: "A1400000000001B5" type: "item" item: "ae2:interface" count: 8L consume_items: false }, { id: "A1800000000001B5" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A1D00000000001B5" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001B5" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 		{
 			id: "A1300000000001B6"
 			title: "TOKYO FREIGHT HUB"
-			description: ["System dowozi wszystko na czas, nawet gdy fabryka pracuje na pełnych obrotach. Ostatni sprawdzian to „TOKYO FREIGHT HUB”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
+			description: ["System dowozi wszystko na czas, nawet gdy fabryka pracuje na pełnych obrotach. Ostatni sprawdzian to „TOKYO FREIGHT HUB”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 36.0d
 			icon: "mekanism:quantum_entangloporter"
 			dependencies: ["A1300000000001B5"]
-			tasks: [{ id: "A1400000000001B6" type: "item" item: "mekanism:quantum_entangloporter" count: 2L consume_items: false }, { id: "A1800000000001B6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001B6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			tasks: [{ id: "A1400000000001B6" type: "item" item: "mekanism:quantum_entangloporter" count: 2L consume_items: false }, { id: "A1800000000001B6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001B6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D00000000001B6" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001B6" type: "item" item: "minecraft:shulker_shell" count: 4 }, { id: "A1600000000001B6" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]

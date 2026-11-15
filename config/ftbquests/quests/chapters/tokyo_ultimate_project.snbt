@@ -87,12 +87,12 @@
 		{
 			id: "A1300000000001FE"
 			title: "Reaktory Powah"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Reaktory Powah”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Reaktory Powah”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź całą konstrukcję z ekipą. Dopiero gdy działa naprawdę, potwierdź ukończenie. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 16.0d
 			icon: "powah:reactor_nitro"
 			dependencies: ["A1300000000001FC", "A1300000000001FD"]
-			tasks: [{ id: "A1400000000001FE" type: "item" item: "powah:reactor_nitro" count: 2L consume_items: false }, { id: "A1800000000001FE" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
+			tasks: [{ id: "A1400000000001FE" type: "item" item: "powah:reactor_nitro" count: 2L consume_items: false }, { id: "A1800000000001FE" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }, { id: "A1D00000000001FE" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001FE" type: "item" item: "minecraft:emerald" count: 4 }]
 		}
 		{
@@ -164,23 +164,23 @@
 		{
 			id: "A130000000000205"
 			title: "Transport kwantowy"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Transport kwantowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Transport kwantowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź całą konstrukcję z ekipą. Dopiero gdy działa naprawdę, potwierdź ukończenie. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 32.0d
 			icon: "mekanism:quantum_entangloporter"
 			dependencies: ["A130000000000203", "A130000000000204"]
-			tasks: [{ id: "A140000000000205" type: "item" item: "mekanism:quantum_entangloporter" count: 4L consume_items: false }, { id: "A180000000000205" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
+			tasks: [{ id: "A140000000000205" type: "item" item: "mekanism:quantum_entangloporter" count: 4L consume_items: false }, { id: "A180000000000205" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A1D0000000000205" type: "checkmark" }]
 			rewards: [{ id: "A150000000000205" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 		{
 			id: "A130000000000206"
 			title: "ZŁOTA ERA TOKYO WORLD"
-			description: ["Zbudowaliście coś więcej niż najdroższą maszynę. Zbudowaliście własny świat. Ostatni sprawdzian to „ZŁOTA ERA TOKYO WORLD”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
+			description: ["Zbudowaliście coś więcej niż najdroższą maszynę. Zbudowaliście własny świat. Ostatni sprawdzian to „ZŁOTA ERA TOKYO WORLD”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Sprawdź całą konstrukcję z ekipą. Dopiero gdy działa naprawdę, potwierdź ukończenie. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 36.0d
 			icon: "draconicevolution:crafting_core"
 			dependencies: ["A130000000000205"]
-			tasks: [{ id: "A140000000000206" type: "item" item: "draconicevolution:crafting_core" count: 2L consume_items: false }, { id: "A180000000000206" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A190000000000206" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			tasks: [{ id: "A140000000000206" type: "item" item: "draconicevolution:crafting_core" count: 2L consume_items: false }, { id: "A180000000000206" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A190000000000206" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D0000000000206" type: "checkmark" }]
 			rewards: [{ id: "A150000000000206" type: "item" item: "minecraft:netherite_scrap" count: 4 }, { id: "A160000000000206" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]

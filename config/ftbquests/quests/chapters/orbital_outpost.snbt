@@ -87,12 +87,12 @@
 		{
 			id: "A1300000000001DE"
 			title: "Generator bazy"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Generator bazy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Generator bazy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 16.0d
 			icon: "ad_astra:coal_generator"
 			dependencies: ["A1300000000001DC", "A1300000000001DD"]
-			tasks: [{ id: "A1400000000001DE" type: "item" item: "ad_astra:coal_generator" count: 6L consume_items: false }, { id: "A1800000000001DE" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			tasks: [{ id: "A1400000000001DE" type: "item" item: "ad_astra:coal_generator" count: 6L consume_items: false }, { id: "A1800000000001DE" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }, { id: "A1D00000000001DE" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001DE" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 		{
@@ -164,23 +164,23 @@
 		{
 			id: "A1300000000001E5"
 			title: "Sterowniki zaawansowane"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sterowniki zaawansowane”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sterowniki zaawansowane”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 32.0d
 			icon: "mekanism:advanced_control_circuit"
 			dependencies: ["A1300000000001E3", "A1300000000001E4"]
-			tasks: [{ id: "A1400000000001E5" type: "item" item: "mekanism:advanced_control_circuit" count: 16L consume_items: false }, { id: "A1800000000001E5" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }]
+			tasks: [{ id: "A1400000000001E5" type: "item" item: "mekanism:advanced_control_circuit" count: 16L consume_items: false }, { id: "A1800000000001E5" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1D00000000001E5" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001E5" type: "item" item: "minecraft:emerald" count: 4 }]
 		}
 		{
 			id: "A1300000000001E6"
 			title: "TOKYO ORBITAL BASE"
-			description: ["Pierwsza kosmiczna baza nie jest już tylko prowizorycznym obozem. Ostatni sprawdzian to „TOKYO ORBITAL BASE”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
+			description: ["Pierwsza kosmiczna baza nie jest już tylko prowizorycznym obozem. Ostatni sprawdzian to „TOKYO ORBITAL BASE”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 36.0d
 			icon: "ad_astra:oxygen_distributor"
 			dependencies: ["A1300000000001E5"]
-			tasks: [{ id: "A1400000000001E6" type: "item" item: "ad_astra:oxygen_distributor" count: 8L consume_items: false }, { id: "A1800000000001E6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001E6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			tasks: [{ id: "A1400000000001E6" type: "item" item: "ad_astra:oxygen_distributor" count: 8L consume_items: false }, { id: "A1800000000001E6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001E6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D00000000001E6" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001E6" type: "item" item: "minecraft:ender_pearl" count: 2 }, { id: "A1600000000001E6" type: "item" item: "minecraft:golden_apple" count: 2 }]
 		}
 	]

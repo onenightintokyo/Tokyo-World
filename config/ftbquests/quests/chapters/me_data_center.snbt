@@ -87,12 +87,12 @@
 		{
 			id: "A13000000000019E"
 			title: "Zasilanie ME"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zasilanie ME”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zasilanie ME”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 16.0d
 			icon: "ae2:energy_acceptor"
 			dependencies: ["A13000000000019C", "A13000000000019D"]
-			tasks: [{ id: "A14000000000019E" type: "item" item: "ae2:energy_acceptor" count: 4L consume_items: false }, { id: "A18000000000019E" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
+			tasks: [{ id: "A14000000000019E" type: "item" item: "ae2:energy_acceptor" count: 4L consume_items: false }, { id: "A18000000000019E" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }, { id: "A1D000000000019E" type: "checkmark" }]
 			rewards: [{ id: "A15000000000019E" type: "item" item: "ae2:fluix_crystal" count: 4 }]
 		}
 		{
@@ -164,23 +164,23 @@
 		{
 			id: "A1300000000001A5"
 			title: "Interfejsy produkcyjne"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejsy produkcyjne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejsy produkcyjne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 32.0d
 			icon: "ae2:interface"
 			dependencies: ["A1300000000001A3", "A1300000000001A4"]
-			tasks: [{ id: "A1400000000001A5" type: "item" item: "ae2:interface" count: 8L consume_items: false }, { id: "A1800000000001A5" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
+			tasks: [{ id: "A1400000000001A5" type: "item" item: "ae2:interface" count: 8L consume_items: false }, { id: "A1800000000001A5" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A1D00000000001A5" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001A5" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A1300000000001A6"
 			title: "TOKYO DATA CENTER"
-			description: ["Masz własne centrum danych, które może przygotować pracę całego zakładu. Ostatni sprawdzian to „TOKYO DATA CENTER”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
+			description: ["Masz własne centrum danych, które może przygotować pracę całego zakładu. Ostatni sprawdzian to „TOKYO DATA CENTER”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 36.0d
 			icon: "ae2:quantum_ring"
 			dependencies: ["A1300000000001A5"]
-			tasks: [{ id: "A1400000000001A6" type: "item" item: "ae2:quantum_ring" count: 16L consume_items: false }, { id: "A1800000000001A6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001A6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			tasks: [{ id: "A1400000000001A6" type: "item" item: "ae2:quantum_ring" count: 16L consume_items: false }, { id: "A1800000000001A6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001A6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D00000000001A6" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001A6" type: "item" item: "ae2:fluix_crystal" count: 4 }, { id: "A1600000000001A6" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]

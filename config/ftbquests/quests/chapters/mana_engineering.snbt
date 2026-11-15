@@ -87,12 +87,12 @@
 		{
 			id: "A1300000000001CE"
 			title: "Ołtarz Terrasteel"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ołtarz Terrasteel”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ołtarz Terrasteel”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przeprowadź proces magiczny i przekonaj się, że wszystkie jego elementy ze sobą współpracują. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 16.0d
 			icon: "botania:terra_plate"
 			dependencies: ["A1300000000001CC", "A1300000000001CD"]
-			tasks: [{ id: "A1400000000001CE" type: "item" item: "botania:terra_plate" count: 2L consume_items: false }, { id: "A1800000000001CE" type: "item" item: "minecraft:blaze_powder" count: 16L consume_items: false }]
+			tasks: [{ id: "A1400000000001CE" type: "item" item: "botania:terra_plate" count: 2L consume_items: false }, { id: "A1800000000001CE" type: "item" item: "minecraft:blaze_powder" count: 16L consume_items: false }, { id: "A1D00000000001CE" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001CE" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
 		}
 		{
@@ -164,23 +164,23 @@
 		{
 			id: "A1300000000001D5"
 			title: "Wytwórnie Terrasteel"
-			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Wytwórnie Terrasteel”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
+			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Wytwórnie Terrasteel”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przeprowadź proces magiczny i przekonaj się, że wszystkie jego elementy ze sobą współpracują. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 32.0d
 			icon: "botania:terrasteel_ingot"
 			dependencies: ["A1300000000001D3", "A1300000000001D4"]
-			tasks: [{ id: "A1400000000001D5" type: "item" item: "botania:terrasteel_ingot" count: 8L consume_items: false }, { id: "A1800000000001D5" type: "item" item: "botania:mana_diamond" count: 32L consume_items: false }]
+			tasks: [{ id: "A1400000000001D5" type: "item" item: "botania:terrasteel_ingot" count: 8L consume_items: false }, { id: "A1800000000001D5" type: "item" item: "botania:mana_diamond" count: 32L consume_items: false }, { id: "A1D00000000001D5" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001D5" type: "item" item: "minecraft:blaze_powder" count: 4 }]
 		}
 		{
 			id: "A1300000000001D6"
 			title: "TOKYO ARCANE FOUNDRY"
-			description: ["Znalezienie wspólnego języka dla magii i techniki otwiera nowe drogi. Ostatni sprawdzian to „TOKYO ARCANE FOUNDRY”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
+			description: ["Znalezienie wspólnego języka dla magii i techniki otwiera nowe drogi. Ostatni sprawdzian to „TOKYO ARCANE FOUNDRY”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Przeprowadź proces magiczny i przekonaj się, że wszystkie jego elementy ze sobą współpracują. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
 			y: 36.0d
 			icon: "ars_nouveau:archmage_spell_book"
 			dependencies: ["A1300000000001D5"]
-			tasks: [{ id: "A1400000000001D6" type: "item" item: "ars_nouveau:archmage_spell_book" count: 1L consume_items: false }, { id: "A1800000000001D6" type: "item" item: "botania:mana_diamond" count: 32L consume_items: false }, { id: "A1900000000001D6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			tasks: [{ id: "A1400000000001D6" type: "item" item: "ars_nouveau:archmage_spell_book" count: 1L consume_items: false }, { id: "A1800000000001D6" type: "item" item: "botania:mana_diamond" count: 32L consume_items: false }, { id: "A1900000000001D6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D00000000001D6" type: "checkmark" }]
 			rewards: [{ id: "A1500000000001D6" type: "item" item: "botania:mana_diamond" count: 4 }, { id: "A1600000000001D6" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
