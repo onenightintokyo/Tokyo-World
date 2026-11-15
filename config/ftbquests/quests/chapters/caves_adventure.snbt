@@ -159,7 +159,7 @@
 			icon: "alexscaves:dinosaur_train"
 			dependencies: ["A1300000000000D6", "A1300000000000D7", "A1300000000000D8", "A1300000000000D9"]
 			tasks: [{ id: "A1400000000000DA" type: "item" item: "alexscaves:dinosaur_train" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000DA" type: "item" item: "minecraft:totem_of_undying" count: 1 } { id: "A1600000000000DA" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1500000000000DA" type: "item" item: "minecraft:totem_of_undying" count: 1 }, { id: "A1600000000000DA" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
