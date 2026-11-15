@@ -21,7 +21,7 @@
 			id: "A130000000000011"
 			title: "Wprowadzenie do Mekanism"
 			description: ["Zbuduj metalurgiczny infuzor. To centralny początek chemii i elektroniki."]
-			x: 0.0d
+			x: 7.0d
 			y: 0.0d
 			icon: "mekanism:metallurgic_infuser"
 			dependencies: ["A130000000000010"]
@@ -34,21 +34,14 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000011"
-					type: "item"
-					item: "minecraft:redstone"
-					count: 12
-				}
-			]
+			rewards: [{ id: "A150000000000011" type: "item" item: "minecraft:glowstone_dust" count: 9 }]
 		}
 		{
 			id: "A130000000000012"
 			title: "Wzbogacony Redstone"
 			description: ["Usprawnij produkcję materiału do obwodów."]
-			x: 3.5d
-			y: 0.0d
+			x: 0.0d
+			y: 4.0d
 			icon: "mekanism:enriched_redstone"
 			dependencies: ["A130000000000011"]
 			tasks: [
@@ -60,23 +53,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000012"
-					type: "item"
-					item: "minecraft:gold_ingot"
-					count: 4
-				}
-			]
+			rewards: [{ id: "A150000000000012" type: "item" item: "minecraft:lapis_lazuli" count: 5 }]
 		}
 		{
 			id: "A130000000000013"
 			title: "Podstawowe obwody"
 			description: ["Wytwórz pierwszy zestaw obwodów sterujących."]
-			x: 7.0d
-			y: 0.0d
+			x: 4.5d
+			y: 4.0d
 			icon: "mekanism:basic_control_circuit"
-			dependencies: ["A130000000000012"]
+			dependencies: ["A130000000000011"]
 			tasks: [
 				{
 					id: "A140000000000013"
@@ -86,23 +72,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000013"
-					type: "item"
-					item: "minecraft:iron_ingot"
-					count: 8
-				}
-			]
+			rewards: [{ id: "A150000000000013" type: "item" item: "minecraft:ender_pearl" count: 5 }]
 		}
 		{
 			id: "A130000000000014"
 			title: "Stalowa infrastruktura"
 			description: ["Zbuduj stalową obudowę do bardziej zaawansowanych maszyn."]
-			x: 10.5d
-			y: 0.0d
+			x: 9.0d
+			y: 4.0d
 			icon: "mekanism:steel_casing"
-			dependencies: ["A130000000000013"]
+			dependencies: ["A130000000000011"]
 			tasks: [
 				{
 					id: "A140000000000014"
@@ -112,23 +91,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000014"
-					type: "item"
-					item: "minecraft:diamond"
-					count: 2
-				}
-			]
+			rewards: [{ id: "A150000000000014" type: "item" item: "minecraft:glowstone_dust" count: 5 }]
 		}
 		{
 			id: "A130000000000015"
 			title: "Komora wzbogacania"
 			description: ["Uruchom wydajniejsze przetwarzanie surowców."]
-			x: 0.0d
-			y: 3.0d
+			x: 13.5d
+			y: 4.0d
 			icon: "mekanism:enrichment_chamber"
-			dependencies: ["A130000000000014"]
+			dependencies: ["A130000000000011"]
 			tasks: [
 				{
 					id: "A140000000000015"
@@ -138,23 +110,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000015"
-					type: "item"
-					item: "minecraft:redstone"
-					count: 16
-				}
-			]
+			rewards: [{ id: "A150000000000015" type: "item" item: "minecraft:experience_bottle" count: 9 }]
 		}
 		{
 			id: "A130000000000016"
 			title: "Kruszarka"
 			description: ["Zwiększ możliwości przetwarzania materiałów."]
-			x: 3.5d
-			y: 3.0d
+			x: 0.0d
+			y: 7.5d
 			icon: "mekanism:crusher"
-			dependencies: ["A130000000000015"]
+			dependencies: ["A130000000000012"]
 			tasks: [
 				{
 					id: "A140000000000016"
@@ -164,23 +129,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000016"
-					type: "item"
-					item: "minecraft:gold_ingot"
-					count: 6
-				}
-			]
+			rewards: [{ id: "A150000000000016" type: "item" item: "minecraft:ender_pearl" count: 5 }]
 		}
 		{
 			id: "A130000000000017"
 			title: "Szybsza fabryka"
 			description: ["Zbuduj maszynę fabryczną z Mekanism."]
-			x: 7.0d
-			y: 3.0d
+			x: 4.5d
+			y: 7.5d
 			icon: "mekanism:basic_crushing_factory"
-			dependencies: ["A130000000000016"]
+			dependencies: ["A130000000000013"]
 			tasks: [
 				{
 					id: "A140000000000017"
@@ -190,23 +148,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000017"
-					type: "item"
-					item: "minecraft:diamond"
-					count: 3
-				}
-			]
+			rewards: [{ id: "A150000000000017" type: "item" item: "minecraft:glowstone_dust" count: 5 }]
 		}
 		{
 			id: "A130000000000018"
 			title: "Magazyn energii"
 			description: ["Zgromadź energię zanim ruszysz z następnymi etapami."]
-			x: 10.5d
-			y: 3.0d
+			x: 7.0d
+			y: 12.0d
 			icon: "mekanism:basic_energy_cube"
-			dependencies: ["A130000000000017"]
+			dependencies: ["A130000000000014", "A130000000000015", "A130000000000016", "A130000000000017"]
 			tasks: [
 				{
 					id: "A140000000000018"
@@ -216,14 +167,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000018"
-					type: "item"
-					item: "minecraft:gold_ingot"
-					count: 8
-				}
-			]
+			rewards: [{ id: "A150000000000018" type: "item" item: "minecraft:diamond" count: 5 } { id: "A160000000000018" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
