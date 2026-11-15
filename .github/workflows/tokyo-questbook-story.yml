@@ -1,0 +1,42 @@
+name: Rebuild Tokyo World Quest Storylines
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/questbook-storyline.mjs'
+
+permissions:
+  contents: write
+
+jobs:
+  questbook:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Rebuild all 36 FTB Quests chapters
+        run: node tools/questbook-storyline.mjs
+      - name: Inspect modified chapter count
+        shell: bash
+        run: |
+          git diff --stat
+          test -f docs/QUESTBOOK_STORY_AUDIT.md
+      - name: Commit questbook narrative and tree graph
+        shell: bash
+        run: |
+          git config user.name "Tokyo World Quest Builder"
+          git config user.email "tokyo-world-quests@users.noreply.github.com"
+          git add config/ftbquests/quests docs/QUESTBOOK_STORY_AUDIT.md
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Rebuild 518 Tokyo World quests as narrative progression trees"
+            git push origin HEAD:main
+          fi
