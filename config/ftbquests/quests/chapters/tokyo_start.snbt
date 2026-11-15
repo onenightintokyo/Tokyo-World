@@ -33,7 +33,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000001" type: "item" item: "minecraft:glowstone_dust" count: 9 }]
+			rewards: [{ id: "A150000000000001" type: "item" item: "minecraft:torch" count: 8 }]
 		}
 		{
 			id: "A130000000000002"
@@ -52,7 +52,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000002" type: "item" item: "minecraft:lapis_lazuli" count: 5 }]
+			rewards: [{ id: "A150000000000002" type: "item" item: "minecraft:bread" count: 3 }]
 		}
 		{
 			id: "A130000000000003"
@@ -71,7 +71,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000003" type: "item" item: "minecraft:ender_pearl" count: 5 }]
+			rewards: [{ id: "A150000000000003" type: "item" item: "minecraft:coal" count: 8 }]
 		}
 		{
 			id: "A130000000000004"
@@ -90,7 +90,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000004" type: "item" item: "minecraft:glowstone_dust" count: 5 }]
+			rewards: [{ id: "A150000000000004" type: "item" item: "minecraft:coal" count: 4 }]
 		}
 		{
 			id: "A130000000000005"
@@ -109,7 +109,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000005" type: "item" item: "minecraft:experience_bottle" count: 9 }]
+			rewards: [{ id: "A150000000000005" type: "item" item: "minecraft:redstone" count: 6 }]
 		}
 		{
 			id: "A130000000000006"
@@ -128,7 +128,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000006" type: "item" item: "minecraft:ender_pearl" count: 5 }]
+			rewards: [{ id: "A150000000000006" type: "item" item: "minecraft:lapis_lazuli" count: 6 }]
 		}
 		{
 			id: "A130000000000007"
@@ -147,7 +147,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000007" type: "item" item: "minecraft:glowstone_dust" count: 5 }]
+			rewards: [{ id: "A150000000000007" type: "item" item: "minecraft:experience_bottle" count: 3 }]
 		}
 		{
 			id: "A130000000000008"
@@ -166,7 +166,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000008" type: "item" item: "minecraft:diamond" count: 5 } { id: "A160000000000008" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000008" type: "item" item: "minecraft:diamond" count: 5 }, { id: "A160000000000008" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
