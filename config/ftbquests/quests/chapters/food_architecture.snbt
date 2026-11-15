@@ -1,0 +1,165 @@
+{
+	filename: "food_architecture"
+	title: "Budowanie — Kuchnia i osada"
+	group: "A110000000000001"
+	id: "A120000000000014"
+	icon: "farmersdelight:stove"
+	order_index: 19
+	images: [ { image: "tokyoworld:textures/gui/quests/building_farming.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
+	quests: [
+		{
+			id: "A130000000000109"
+			title: "Deska do krojenia"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: deska do krojenia. Element 1 z 14 tej ścieżki."]
+			x: 0.0d
+			y: 0.0d
+			icon: "farmersdelight:cutting_board"
+			dependencies: ["A130000000000019"]
+			tasks: [{ id: "A140000000000109" type: "item" item: "farmersdelight:cutting_board" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000109" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000010A"
+			title: "Patelnia"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: patelnia. Element 2 z 14 tej ścieżki."]
+			x: 3.5d
+			y: 0.0d
+			icon: "farmersdelight:skillet"
+			dependencies: ["A130000000000109"]
+			tasks: [{ id: "A14000000000010A" type: "item" item: "farmersdelight:skillet" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000010A" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A13000000000010B"
+			title: "Piec kuchenny"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: piec kuchenny. Element 3 z 14 tej ścieżki."]
+			x: 7.0d
+			y: 0.0d
+			icon: "farmersdelight:stove"
+			dependencies: ["A13000000000010A"]
+			tasks: [{ id: "A14000000000010B" type: "item" item: "farmersdelight:stove" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000010B" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000010C"
+			title: "Garnek do gotowania"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: garnek do gotowania. Element 4 z 14 tej ścieżki."]
+			x: 10.5d
+			y: 0.0d
+			icon: "farmersdelight:cooking_pot"
+			dependencies: ["A13000000000010B"]
+			tasks: [{ id: "A14000000000010C" type: "item" item: "farmersdelight:cooking_pot" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000010C" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A13000000000010D"
+			title: "Ryż"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: ryż. Element 5 z 14 tej ścieżki."]
+			x: 14.0d
+			y: 0.0d
+			icon: "farmersdelight:rice"
+			dependencies: ["A13000000000010C"]
+			tasks: [{ id: "A14000000000010D" type: "item" item: "farmersdelight:rice" count: 16L consume_items: false }]
+			rewards: [{ id: "A15000000000010D" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000010E"
+			title: "Pomidory"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: pomidory. Element 6 z 14 tej ścieżki."]
+			x: 0.0d
+			y: 3.0d
+			icon: "farmersdelight:tomato"
+			dependencies: ["A13000000000010D"]
+			tasks: [{ id: "A14000000000010E" type: "item" item: "farmersdelight:tomato" count: 16L consume_items: false }]
+			rewards: [{ id: "A15000000000010E" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A13000000000010F"
+			title: "Kapusta"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: kapusta. Element 7 z 14 tej ścieżki."]
+			x: 3.5d
+			y: 3.0d
+			icon: "farmersdelight:cabbage"
+			dependencies: ["A13000000000010E"]
+			tasks: [{ id: "A14000000000010F" type: "item" item: "farmersdelight:cabbage" count: 16L consume_items: false }]
+			rewards: [{ id: "A15000000000010F" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000110"
+			title: "Ciasto na wypiek"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: ciasto na wypiek. Element 8 z 14 tej ścieżki."]
+			x: 7.0d
+			y: 3.0d
+			icon: "farmersdelight:pie_crust"
+			dependencies: ["A13000000000010F"]
+			tasks: [{ id: "A140000000000110" type: "item" item: "farmersdelight:pie_crust" count: 4L consume_items: false }]
+			rewards: [{ id: "A150000000000110" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A130000000000111"
+			title: "Szuflada magazynowa"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: szuflada magazynowa. Element 9 z 14 tej ścieżki."]
+			x: 10.5d
+			y: 3.0d
+			icon: "functionalstorage:oak_1"
+			dependencies: ["A130000000000110"]
+			tasks: [{ id: "A140000000000111" type: "item" item: "functionalstorage:oak_1" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000111" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000112"
+			title: "Cztery szuflady"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: cztery szuflady. Element 10 z 14 tej ścieżki."]
+			x: 14.0d
+			y: 3.0d
+			icon: "functionalstorage:oak_4"
+			dependencies: ["A130000000000111"]
+			tasks: [{ id: "A140000000000112" type: "item" item: "functionalstorage:oak_4" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000112" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A130000000000113"
+			title: "Gabloty na wyposażenie"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: gabloty na wyposażenie. Element 11 z 14 tej ścieżki."]
+			x: 0.0d
+			y: 6.0d
+			icon: "functionalstorage:armory_cabinet"
+			dependencies: ["A130000000000112"]
+			tasks: [{ id: "A140000000000113" type: "item" item: "functionalstorage:armory_cabinet" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000113" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000114"
+			title: "Kompaktowa przechowalnia"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: kompaktowa przechowalnia. Element 12 z 14 tej ścieżki."]
+			x: 3.5d
+			y: 6.0d
+			icon: "functionalstorage:compacting_drawer"
+			dependencies: ["A130000000000113"]
+			tasks: [{ id: "A140000000000114" type: "item" item: "functionalstorage:compacting_drawer" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000114" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A130000000000115"
+			title: "Kosz na plony"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: kosz na plony. Element 13 z 14 tej ścieżki."]
+			x: 7.0d
+			y: 6.0d
+			icon: "farmersdelight:wooden_basket"
+			dependencies: ["A130000000000114"]
+			tasks: [{ id: "A140000000000115" type: "item" item: "farmersdelight:wooden_basket" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000115" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000116"
+			title: "Kuchenne szafki"
+			description: ["Rozbudowa bazy, gotowanie i infrastruktura osady. Pozyskaj lub wytwórz: kuchenne szafki. Element 14 z 14 tej ścieżki."]
+			x: 10.5d
+			y: 6.0d
+			icon: "farmersdelight:oak_cabinet"
+			dependencies: ["A130000000000115"]
+			tasks: [{ id: "A140000000000116" type: "item" item: "farmersdelight:oak_cabinet" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000116" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+	]
+}
