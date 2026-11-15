@@ -1,10 +1,10 @@
 {
 	filename: "logistics_pro"
-	title: "Logistyka — Rury i routery"
-	group: "A110000000000001"
+	title: "&e&l03 &r&fRury i routery"
+	group: "A110000000000003"
 	id: "A120000000000012"
 	icon: "pipez:universal_pipe"
-	order_index: 17
+	order_index: 2
 	images: [ { image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
 	quests: [
 		{
