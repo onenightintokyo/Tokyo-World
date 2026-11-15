@@ -1,0 +1,187 @@
+{
+	filename: "orbital_outpost"
+	title: "&c&l04 &r&fKolonia orbitalna"
+	group: "A110000000000006"
+	id: "A120000000000022"
+	icon: "ad_astra:nasa_workbench"
+	order_index: 3
+	images: [{ image: "tokyoworld:textures/gui/quests/exploration_adventure.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	quests: [
+		{
+			id: "A1300000000001D7"
+			title: "Stal lotnicza"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 1/16: Stal lotnicza. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 7.0d
+			y: 0.0d
+			icon: "ad_astra:steel_ingot"
+			dependencies: ["A1300000000000CC", "A130000000000054"]
+			tasks: [{ id: "A1400000000001D7" type: "item" item: "ad_astra:steel_ingot" count: 64L consume_items: false }, { id: "A1800000000001D7" type: "item" item: "minecraft:torch" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001D7" type: "item" item: "minecraft:diamond" count: 1 }]
+		}
+		{
+			id: "A1300000000001D8"
+			title: "Płyty poszycia"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 2/16: Płyty poszycia. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 4.0d
+			icon: "ad_astra:steel_plate"
+			dependencies: ["A1300000000001D7"]
+			tasks: [{ id: "A1400000000001D8" type: "item" item: "ad_astra:steel_plate" count: 48L consume_items: false }, { id: "A1800000000001D8" type: "item" item: "minecraft:torch" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001D8" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+		}
+		{
+			id: "A1300000000001D9"
+			title: "Prasy komponentów"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 3/16: Prasy komponentów. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 4.0d
+			icon: "ad_astra:compressor"
+			dependencies: ["A1300000000001D7"]
+			tasks: [{ id: "A1400000000001D9" type: "item" item: "ad_astra:compressor" count: 4L consume_items: false }, { id: "A1800000000001D9" type: "item" item: "minecraft:torch" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001D9" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A1300000000001DA"
+			title: "Silniki rakietowe"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 4/16: Silniki rakietowe. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 4.0d
+			icon: "ad_astra:steel_engine"
+			dependencies: ["A1300000000001D7"]
+			tasks: [{ id: "A1400000000001DA" type: "item" item: "ad_astra:steel_engine" count: 4L consume_items: false }, { id: "A1800000000001DA" type: "item" item: "minecraft:golden_carrot" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001DA" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+		}
+		{
+			id: "A1300000000001DB"
+			title: "Stateczniki"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 5/16: Stateczniki. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 4.0d
+			icon: "ad_astra:rocket_fin"
+			dependencies: ["A1300000000001D7"]
+			tasks: [{ id: "A1400000000001DB" type: "item" item: "ad_astra:rocket_fin" count: 16L consume_items: false }, { id: "A1800000000001DB" type: "item" item: "minecraft:golden_carrot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001DB" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A1300000000001DC"
+			title: "Stoły NASA"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 6/16: Stoły NASA. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 8.0d
+			icon: "ad_astra:nasa_workbench"
+			dependencies: ["A1300000000001D8"]
+			tasks: [{ id: "A1400000000001DC" type: "item" item: "ad_astra:nasa_workbench" count: 2L consume_items: false }, { id: "A1800000000001DC" type: "item" item: "minecraft:golden_carrot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001DC" type: "item" item: "minecraft:diamond" count: 1 }]
+		}
+		{
+			id: "A1300000000001DD"
+			title: "Rafinerie paliwa"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 7/16: Rafinerie paliwa. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 8.0d
+			icon: "ad_astra:fuel_refinery"
+			dependencies: ["A1300000000001D9"]
+			tasks: [{ id: "A1400000000001DD" type: "item" item: "ad_astra:fuel_refinery" count: 4L consume_items: false }, { id: "A1800000000001DD" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001DD" type: "item" item: "minecraft:golden_carrot" count: 8 }]
+		}
+		{
+			id: "A1300000000001DE"
+			title: "Generator bazy"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 8/16: Generator bazy. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 8.0d
+			icon: "ad_astra:coal_generator"
+			dependencies: ["A1300000000001DA"]
+			tasks: [{ id: "A1400000000001DE" type: "item" item: "ad_astra:coal_generator" count: 6L consume_items: false }, { id: "A1800000000001DE" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001DE" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A1300000000001DF"
+			title: "Urządzenia tlenowe"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 9/16: Urządzenia tlenowe. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 8.0d
+			icon: "ad_astra:oxygen_gear"
+			dependencies: ["A1300000000001DB"]
+			tasks: [{ id: "A1400000000001DF" type: "item" item: "ad_astra:oxygen_gear" count: 8L consume_items: false }, { id: "A1800000000001DF" type: "item" item: "minecraft:iron_ingot" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001DF" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A1300000000001E0"
+			title: "Ładowarki tlenu"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 10/16: Ładowarki tlenu. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 12.0d
+			icon: "ad_astra:oxygen_loader"
+			dependencies: ["A1300000000001DC"]
+			tasks: [{ id: "A1400000000001E0" type: "item" item: "ad_astra:oxygen_loader" count: 4L consume_items: false }, { id: "A1800000000001E0" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001E0" type: "item" item: "minecraft:emerald" count: 8 }]
+		}
+		{
+			id: "A1300000000001E1"
+			title: "Dystrybutory tlenu"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 11/16: Dystrybutory tlenu. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 12.0d
+			icon: "ad_astra:oxygen_distributor"
+			dependencies: ["A1300000000001DD"]
+			tasks: [{ id: "A1400000000001E1" type: "item" item: "ad_astra:oxygen_distributor" count: 4L consume_items: false }, { id: "A1800000000001E1" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001E1" type: "item" item: "minecraft:diamond" count: 1 }]
+		}
+		{
+			id: "A1300000000001E2"
+			title: "Pompy wodne"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 12/16: Pompy wodne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 12.0d
+			icon: "ad_astra:water_pump"
+			dependencies: ["A1300000000001DE"]
+			tasks: [{ id: "A1400000000001E2" type: "item" item: "ad_astra:water_pump" count: 4L consume_items: false }, { id: "A1800000000001E2" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001E2" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+		}
+		{
+			id: "A1300000000001E3"
+			title: "Kable infrastruktury"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 13/16: Kable infrastruktury. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 12.0d
+			icon: "ad_astra:steel_cable"
+			dependencies: ["A1300000000001DF"]
+			tasks: [{ id: "A1400000000001E3" type: "item" item: "ad_astra:steel_cable" count: 48L consume_items: false }, { id: "A1800000000001E3" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }]
+			rewards: [{ id: "A1500000000001E3" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A1300000000001E4"
+			title: "Panele solarne"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 14/16: Panele solarne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 16.0d
+			icon: "ad_astra:solar_panel"
+			dependencies: ["A1300000000001E0"]
+			tasks: [{ id: "A1400000000001E4" type: "item" item: "ad_astra:solar_panel" count: 8L consume_items: false }, { id: "A1800000000001E4" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }]
+			rewards: [{ id: "A1500000000001E4" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A1300000000001E5"
+			title: "Sterowniki zaawansowane"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 15/16: Sterowniki zaawansowane. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 16.0d
+			icon: "mekanism:advanced_control_circuit"
+			dependencies: ["A1300000000001E1"]
+			tasks: [{ id: "A1400000000001E5" type: "item" item: "mekanism:advanced_control_circuit" count: 16L consume_items: false }, { id: "A1800000000001E5" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }]
+			rewards: [{ id: "A1500000000001E5" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A1300000000001E6"
+			title: "TOKYO ORBITAL BASE"
+			description: ["Zaprojektuj fabrykę rakiet, tlenu, paliwa i urządzeń wyprawowych. ETAP 16/16: TOKYO ORBITAL BASE. Wykonaj oba cele materiałowe. Nagroda finałowa po ukończeniu wszystkich czterech gałęzi."]
+			x: 7.0d
+			y: 21.5d
+			icon: "ad_astra:oxygen_distributor"
+			dependencies: ["A1300000000001E4", "A1300000000001E5", "A1300000000001E2", "A1300000000001E3"]
+			tasks: [{ id: "A1400000000001E6" type: "item" item: "ad_astra:oxygen_distributor" count: 8L consume_items: false }, { id: "A1800000000001E6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001E6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001E6" type: "item" item: "minecraft:ender_pearl" count: 2 }, { id: "A1600000000001E6" type: "item" item: "minecraft:golden_apple" count: 2 }]
+		}
+	]
+}
