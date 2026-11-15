@@ -233,7 +233,7 @@ fs.writeFileSync(path.join(questRoot,"chapter_groups.snbt"),
 for(const [lang,labelIndex] of [["pl_pl",1],["en_us",2]]){
  const file=path.join(questRoot,"lang",lang+".snbt");
  let s=fs.readFileSync(file,"utf8");
- const oldEn=new Map([...s.matchAll(/^\tchapter\.(A120[0-9A-F]{12})\.title: "([^"]+)"/gm)].map(x=>[x[1],x[2].replace(/^&[0-9a-f]&l\d+\s+&r&f/,"")]));
+ const oldEn=new Map([...s.matchAll(/^\tchapter\.(A120[0-9A-F]{12})\.title: "([^"]+)"/gm)].map(x=>[x[1],x[2].replace(/^(?:&[0-9a-f]&l(?:\d+\s+&r&f)?)+/,"").replace(/^&r&f/,"")]));
  s=s.replace(/^\s*chapter_group\.A110[0-9A-F]{12}\.title: [^\r\n]*(?:\r?\n)?/gm,"");
  s=s.replace(/^\s*chapter\.A120[0-9A-F]{12}\.title: [^\r\n]*(?:\r?\n)?/gm,"");
  const rows=groups.map((g,i)=>"\tchapter_group."+uid("A110",i+1)+".title: "+JSON.stringify("&"+g[0]+"&l"+g[labelIndex]));
