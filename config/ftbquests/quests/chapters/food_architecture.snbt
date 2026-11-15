@@ -159,7 +159,7 @@
 			icon: "farmersdelight:oak_cabinet"
 			dependencies: ["A130000000000112", "A130000000000113", "A130000000000114", "A130000000000115"]
 			tasks: [{ id: "A140000000000116" type: "item" item: "farmersdelight:oak_cabinet" count: 2L consume_items: false }]
-			rewards: [{ id: "A150000000000116" type: "item" item: "minecraft:golden_apple" count: 2 } { id: "A160000000000116" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000116" type: "item" item: "minecraft:golden_apple" count: 2 }, { id: "A160000000000116" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
