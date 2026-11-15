@@ -1,0 +1,68 @@
+name: Publish curated Tokyo World client pack
+
+# Optional: run only after the owner has created a separate PUBLIC repository
+# and configured both a destination variable and a dedicated publish secret.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  client-pack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      DIST_REPO: ${{ vars.TOKYO_PUBLIC_REPO }}
+      PUBLISH_TOKEN: ${{ secrets.TOKYO_PUBLIC_PUBLISH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate destination
+        shell: bash
+        run: |
+          test -n "$DIST_REPO" || { echo "Set repository variable TOKYO_PUBLIC_REPO"; exit 1; }
+          test -n "$PUBLISH_TOKEN" || { echo "Set repository secret TOKYO_PUBLIC_PUBLISH_TOKEN"; exit 1; }
+          [[ "$DIST_REPO" =~ ^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$ ]] || exit 1
+          echo "Publishing CURATED client files (not repository source) to $DIST_REPO"
+
+      - name: Prepare client-only distribution files
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/clientpack/modpacks"
+          for folder in config defaultconfigs kubejs resourcepacks shaderpacks; do
+            if [ -d "$folder" ]; then cp -R "$folder" "$RUNNER_TEMP/clientpack/$folder"; fi
+          done
+          cp modpacks/tokyo_modules.json "$RUNNER_TEMP/clientpack/modpacks/"
+          cp modpacks/base_mod_hashes.txt "$RUNNER_TEMP/clientpack/modpacks/"
+          echo "Review all files before running; this job publishes selected pack configs PUBLICLY."
+          find "$RUNNER_TEMP/clientpack" -type f | wc -l
+
+      - name: Clone distribution repository and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          printf '#!/bin/sh\ncase "$1" in *Username*) echo "x-access-token";; *) echo "$PUBLISH_TOKEN";; esac\n' > auth.sh
+          chmod 700 auth.sh
+          export GIT_ASKPASS="$RUNNER_TEMP/auth.sh"
+          export GIT_TERMINAL_PROMPT=0
+          git clone --depth 1 "https://github.com/$DIST_REPO.git" public-pack
+          cd public-pack
+          for folder in config defaultconfigs kubejs resourcepacks shaderpacks; do
+            rm -rf "$folder"
+            if [ -d "$RUNNER_TEMP/clientpack/$folder" ]; then
+              cp -R "$RUNNER_TEMP/clientpack/$folder" "$folder"
+            fi
+          done
+          mkdir -p modpacks
+          cp "$RUNNER_TEMP/clientpack/modpacks/tokyo_modules.json" modpacks/
+          cp "$RUNNER_TEMP/clientpack/modpacks/base_mod_hashes.txt" modpacks/
+          git config user.name "Tokyo World Publisher"
+          git config user.email "tokyo-world-publisher@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to publish"
+          else
+            git commit -m "Update Tokyo World client pack from private source"
+            git push origin HEAD:main
+          fi
