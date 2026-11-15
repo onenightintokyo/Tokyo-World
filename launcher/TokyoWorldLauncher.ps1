@@ -64,12 +64,12 @@ function Save-Preferences {
         $account=if($script:accounts){[string]$script:accounts.Text}else{''}
         $data=[ordered]@{prismExe=$script:prismExe;mode=$mode;nick=$nick;account=$account}
         $json=ConvertTo-Json -InputObject $data
-        [IO.File]::WriteAllText($script:settingsPath,$json,([System.Text.UTF8Encoding]::new($false)))
+        [System.IO.File]::WriteAllText($script:settingsPath,$json,([System.Text.UTF8Encoding]::new($false)))
     } catch {}
 }
 function Find-Prism {
     if($script:prismExe -and (Test-Path -LiteralPath $script:prismExe -PathType Leaf)){return $true}
-    $paths=New-Object Collections.Generic.List[string]
+    $paths=[System.Collections.Generic.List[string]]::new()
     $command=Get-Command prismlauncher.exe -ErrorAction SilentlyContinue
     if($command){$paths.Add($command.Source)}
     if($env:LOCALAPPDATA){
@@ -157,6 +157,13 @@ $side.Controls.Add($accent)
 [void](Label $side 'EXPERT FUN // TECH // ADVENTURE' 28 197 285 23 9 $false $colors.gray)
 [void](Label $side 'Minecraft 1.20.1' 28 286 280 30 15 $true $colors.pale)
 [void](Label $side 'Forge 47.4.28' 28 318 280 25 11 $false $colors.gray)
+$modCount = 0
+try {
+    if(Test-Path -LiteralPath (Join-Path $script:gameDir 'mods')){
+        $modCount = @(Get-ChildItem -LiteralPath (Join-Path $script:gameDir 'mods') -Filter '*.jar' -File).Count
+    }
+} catch {}
+[void](Label $side ("Aktywne pliki modów: " + $modCount) 28 350 280 25 10 $false $colors.gray)
 [void](Label $side 'TOKYO WORLD v0.9' 28 461 280 22 11 $true $colors.pale)
 [void](Label $side 'Silnik gry: Prism Launcher' 28 489 280 22 9 $false $colors.gray)
 [void](Label $form 'URUCHOM GRĘ' 355 29 500 50 23 $true $colors.pale)
