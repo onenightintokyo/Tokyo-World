@@ -1,14 +1,20 @@
 {
 	filename: "mana_engineering"
 	title: "&d&lStal spotyka magię"
-	group: "A110000000000006"
+	group: "A110000000000003"
 	id: "A120000000000021"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "botania:mana_pool"
-	order_index: 2
-	images: [{ image: "tokyoworld:textures/gui/quests/magic_arcana.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	order_index: 19
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A1300000000001C7"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kwiaty magiczne"
 			description: ["Rytuał i maszyna nie muszą ze sobą walczyć. Spróbuj połączyć ich moc w jednym projekcie. Zacznij od sprawy „Kwiaty magiczne”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A1300000000001C8"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rozpraszacze many"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Rozpraszacze many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A1300000000001C9"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zbiorniki many"
 			description: ["Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Zbiorniki many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A1300000000001CA"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Diamenty many"
 			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Diamenty many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A1300000000001CB"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stal manowa"
 			description: ["Wcześniej zamknąłeś już sprawę „Zbiorniki many”. W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Stal manowa”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A1300000000001CC"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Runiczne ołtarze"
 			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Runiczne ołtarze”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A1300000000001CD"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pylony many"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Pylony many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A1300000000001CE"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ołtarz Terrasteel"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ołtarz Terrasteel”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przeprowadź proces magiczny i przekonaj się, że wszystkie jego elementy ze sobą współpracują. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A1300000000001CF"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Słoiki Source"
 			description: ["Wcześniej zamknąłeś już sprawę „Ołtarz Terrasteel”. Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Słoiki Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A1300000000001D0"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Komory nasycania"
 			description: ["W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Komory nasycania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A1300000000001D1"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kamienie Source"
 			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Kamienie Source”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A1300000000001D2"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przekaźniki Source"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Przekaźniki Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A1300000000001D3"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Aparaty zaklinania"
 			description: ["Wcześniej zamknąłeś już sprawę „Kamienie Source”. Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Aparaty zaklinania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A1300000000001D4"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zaklęte piedestały"
 			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Zaklęte piedestały”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A1300000000001D5"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wytwórnie Terrasteel"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Wytwórnie Terrasteel”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przeprowadź proces magiczny i przekonaj się, że wszystkie jego elementy ze sobą współpracują. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A1300000000001D6"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "TOKYO ARCANE FOUNDRY"
 			description: ["Znalezienie wspólnego języka dla magii i techniki otwiera nowe drogi. Ostatni sprawdzian to „TOKYO ARCANE FOUNDRY”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Przeprowadź proces magiczny i przekonaj się, że wszystkie jego elementy ze sobą współpracują. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
