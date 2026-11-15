@@ -1,6 +1,34 @@
 {
-	chapter_group.A110000000000001.title: "TOKYO WORLD | PROGRESSION"
-	chapter.A120000000000001.title: "Tokyo World — Getting Started"
+	chapter_group.A110000000000001.title: "&6&l01  GETTING STARTED"
+	chapter_group.A110000000000002.title: "&b&l02  TECHNOLOGY"
+	chapter_group.A110000000000003.title: "&e&l03  POWER AND STORAGE"
+	chapter_group.A110000000000004.title: "&a&l04  FARMING AND BUILDING"
+	chapter_group.A110000000000005.title: "&d&l05  MAGIC AND ALCHEMY"
+	chapter_group.A110000000000006.title: "&c&l06  EXPLORATION AND BOSSES"
+	chapter.A120000000000001.title: "&6&l01 &r&fGetting Started"
+	chapter.A120000000000002.title: "&6&l02 &r&fCreate: Mechanisms"
+	chapter.A120000000000003.title: "&6&l03 &r&fMekanism: Electrification"
+	chapter.A120000000000004.title: "&a&l01 &r&fFarming Basics"
+	chapter.A120000000000005.title: "&b&l01 &r&fCreate: Automation"
+	chapter.A120000000000006.title: "&b&l02 &r&fMekanism: Industry"
+	chapter.A120000000000007.title: "&b&l03 &r&fImmersive Engineering"
+	chapter.A120000000000008.title: "&a&l02 &r&fIndustrial Foregoing"
+	chapter.A120000000000009.title: "&e&l01 &r&fPowah: Energy"
+	chapter.A12000000000000A.title: "&b&l04 &r&fIntegrated: Logic"
+	chapter.A12000000000000B.title: "&d&l01 &r&fBotania: Mana"
+	chapter.A12000000000000C.title: "&d&l02 &r&fArs Nouveau: Spells"
+	chapter.A12000000000000D.title: "&a&l03 &r&fMystical Agriculture"
+	chapter.A12000000000000E.title: "&a&l04 &r&fProductive Bees"
+	chapter.A12000000000000F.title: "&c&l01 &r&fAd Astra: Space"
+	chapter.A120000000000010.title: "&c&l02 &r&fAlex's Caves"
+	chapter.A120000000000011.title: "&e&l02 &r&fStorage and Inventory"
+	chapter.A120000000000012.title: "&e&l03 &r&fPipes and Routers"
+	chapter.A120000000000013.title: "&b&l05 &r&fThermal: Metallurgy"
+	chapter.A120000000000014.title: "&a&l05 &r&fCooking and Building"
+	chapter.A120000000000015.title: "&e&l04 &r&fAE2: Digital Networks"
+	chapter.A120000000000016.title: "&b&l06 &r&fEnder IO: Alloys and Machines"
+	chapter.A120000000000017.title: "&e&l05 &r&fDraconic: Endgame"
+	chapter.A120000000000018.title: "&c&l03 &r&fCataclysm: Bosses"
 	quest.A130000000000001.title: "First material"
 	quest.A130000000000001.quest_desc: ["Collect wood. Every factory starts with basic tools."]
 	quest.A130000000000002.title: "Engineer’s workbench"
@@ -17,7 +45,6 @@
 	quest.A130000000000007.quest_desc: ["Take the first step toward automation logic."]
 	quest.A130000000000008.title: "Next stage"
 	quest.A130000000000008.quest_desc: ["Build a hopper to start automating logistics and farming."]
-	chapter.A120000000000002.title: "Create — Mechanical Factory"
 	quest.A130000000000009.title: "Andesite alloy"
 	quest.A130000000000009.quest_desc: ["The first building block for Create mechanical contraptions."]
 	quest.A13000000000000A.title: "Power shafts"
@@ -34,7 +61,6 @@
 	quest.A13000000000000F.quest_desc: ["Create your first mechanical mixing setup."]
 	quest.A130000000000010.title: "Precision mechanisms"
 	quest.A130000000000010.quest_desc: ["Precision components are essential for later tech progression."]
-	chapter.A120000000000003.title: "Mekanism — Electrification"
 	quest.A130000000000011.title: "Introduction to Mekanism"
 	quest.A130000000000011.quest_desc: ["Build the Metallurgic Infuser to begin chemistry and electronics."]
 	quest.A130000000000012.title: "Enriched Redstone"
@@ -51,7 +77,6 @@
 	quest.A130000000000017.quest_desc: ["Upgrade from single machines to a Mekanism factory."]
 	quest.A130000000000018.title: "Energy storage"
 	quest.A130000000000018.quest_desc: ["Buffer your energy before expanding further."]
-	chapter.A120000000000004.title: "Farming — Self Sufficiency"
 	quest.A130000000000019.title: "Plant the future"
 	quest.A130000000000019.quest_desc: ["Gather crops to begin a self-sufficient settlement."]
 	quest.A13000000000001A.title: "Vegetable garden"
