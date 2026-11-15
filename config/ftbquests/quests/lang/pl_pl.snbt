@@ -1,0 +1,67 @@
+{
+	chapter_group.A110000000000001.title: "TOKYO WORLD | PROGRESJA"
+	chapter.A120000000000001.title: "Tokyo World — Początek"
+	quest.A130000000000001.title: "Pierwszy surowiec"
+	quest.A130000000000001.quest_desc: ["Zbierz drewno. Każda fabryka zaczyna się od prostych narzędzi."]
+	quest.A130000000000002.title: "Warsztat inżyniera"
+	quest.A130000000000002.quest_desc: ["Przygotuj stół rzemieślniczy i zorganizuj miejsce pracy."]
+	quest.A130000000000003.title: "Kamienne fundamenty"
+	quest.A130000000000003.quest_desc: ["Zbierz bruk na pierwszy piec i budynki."]
+	quest.A130000000000004.title: "Pierwsze wytapianie"
+	quest.A130000000000004.quest_desc: ["Uruchom piec i rozpocznij przetwarzanie materiałów."]
+	quest.A130000000000005.title: "Era żelaza"
+	quest.A130000000000005.quest_desc: ["Żelazo posłuży do narzędzi, mechanizmów i późniejszej energetyki."]
+	quest.A130000000000006.title: "Miedź dla przemysłu"
+	quest.A130000000000006.quest_desc: ["Zgromadź miedź do przewodów oraz konstrukcji technologicznych."]
+	quest.A130000000000007.title: "Sygnał Redstone"
+	quest.A130000000000007.quest_desc: ["Pierwszy krok do logiki automatyzacji."]
+	quest.A130000000000008.title: "Kolejny etap"
+	quest.A130000000000008.quest_desc: ["Przygotuj podstawowy zasobnik. Od teraz możesz rozwijać logistykę i farmy."]
+	chapter.A120000000000002.title: "Create — Mechaniczna fabryka"
+	quest.A130000000000009.title: "Stop andezytowy"
+	quest.A130000000000009.quest_desc: ["Pierwszy materiał napędzający mechaniczne maszyny Create."]
+	quest.A13000000000000A.title: "Wały napędowe"
+	quest.A13000000000000A.quest_desc: ["Zbuduj wały do przesyłania energii obrotowej."]
+	quest.A13000000000000B.title: "Przekładnie"
+	quest.A13000000000000B.quest_desc: ["Przełóż obroty na praktyczne układy maszynowe."]
+	quest.A13000000000000C.title: "Wytwarzanie obrotów"
+	quest.A13000000000000C.quest_desc: ["Zbuduj koło wodne i podłącz prostą linię produkcyjną."]
+	quest.A13000000000000D.title: "Mechaniczna prasa"
+	quest.A13000000000000D.quest_desc: ["Wprowadź automatyczne prasowanie metali."]
+	quest.A13000000000000E.title: "Przenośniki"
+	quest.A13000000000000E.quest_desc: ["Przenieś transport przedmiotów z rąk gracza na taśmociągi."]
+	quest.A13000000000000F.title: "Mieszalnik"
+	quest.A13000000000000F.quest_desc: ["Rozpocznij mieszanie materiałów w systemie Create."]
+	quest.A130000000000010.title: "Precyzyjne mechanizmy"
+	quest.A130000000000010.quest_desc: ["Automatyzacja produkcji precyzyjnych elementów będzie potrzebna w dalszej progresji."]
+	chapter.A120000000000003.title: "Mekanism — Elektryfikacja"
+	quest.A130000000000011.title: "Wprowadzenie do Mekanism"
+	quest.A130000000000011.quest_desc: ["Zbuduj metalurgiczny infuzor. To centralny początek chemii i elektroniki."]
+	quest.A130000000000012.title: "Wzbogacony Redstone"
+	quest.A130000000000012.quest_desc: ["Usprawnij produkcję materiału do obwodów."]
+	quest.A130000000000013.title: "Podstawowe obwody"
+	quest.A130000000000013.quest_desc: ["Wytwórz pierwszy zestaw obwodów sterujących."]
+	quest.A130000000000014.title: "Stalowa infrastruktura"
+	quest.A130000000000014.quest_desc: ["Zbuduj stalową obudowę do bardziej zaawansowanych maszyn."]
+	quest.A130000000000015.title: "Komora wzbogacania"
+	quest.A130000000000015.quest_desc: ["Uruchom wydajniejsze przetwarzanie surowców."]
+	quest.A130000000000016.title: "Kruszarka"
+	quest.A130000000000016.quest_desc: ["Zwiększ możliwości przetwarzania materiałów."]
+	quest.A130000000000017.title: "Szybsza fabryka"
+	quest.A130000000000017.quest_desc: ["Zbuduj maszynę fabryczną z Mekanism."]
+	quest.A130000000000018.title: "Magazyn energii"
+	quest.A130000000000018.quest_desc: ["Zgromadź energię zanim ruszysz z następnymi etapami."]
+	chapter.A120000000000004.title: "Farming — Samowystarczalność"
+	quest.A130000000000019.title: "Zasiej przyszłość"
+	quest.A130000000000019.quest_desc: ["Zbierz plony na start samowystarczalnej kolonii."]
+	quest.A13000000000001A.title: "Warzywniak"
+	quest.A13000000000001A.quest_desc: ["Rozszerz produkcję żywności."]
+	quest.A13000000000001B.title: "Automatyczny odbiór"
+	quest.A13000000000001B.quest_desc: ["Zbieraj przedmioty przy pomocy lejów."]
+	quest.A13000000000001C.title: "Gotowanie w dużej skali"
+	quest.A13000000000001C.quest_desc: ["Postaw garnek z Farmer's Delight i rozbuduj kuchnię."]
+	quest.A13000000000001D.title: "Magiczna uprawa"
+	quest.A13000000000001D.quest_desc: ["Poznaj podstawy Mystical Agriculture."]
+	quest.A13000000000001E.title: "Magazyn zbiorów"
+	quest.A13000000000001E.quest_desc: ["Rozbuduj przestrzeń przechowywania produktów farmy."]
+}
