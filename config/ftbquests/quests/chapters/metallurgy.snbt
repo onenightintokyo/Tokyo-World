@@ -159,7 +159,7 @@
 			icon: "thermal:sulfur_ore"
 			dependencies: ["A130000000000104", "A130000000000105", "A130000000000106", "A130000000000107"]
 			tasks: [{ id: "A140000000000108" type: "item" item: "thermal:sulfur_ore" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000108" type: "item" item: "minecraft:diamond" count: 6 } { id: "A160000000000108" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000108" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A160000000000108" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
