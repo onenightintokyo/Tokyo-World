@@ -13,177 +13,177 @@
 			id: "A130000000000065"
 			title: "Pierwsze kable FE"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: pierwsze kable fe. To etap 1 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
+			x: 7.0d
 			y: 0.0d
 			icon: "powah:energy_cable_starter"
 			dependencies: ["A130000000000013"]
-			tasks: [{ id: "A140000000000065" type: "item" item: "powah:energy_cable_starter" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000065" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+			tasks: [{ id: "A140000000000065" type: "item" item: "powah:energy_cable_starter" count: 12L consume_items: false }]
+			rewards: [{ id: "A150000000000065" type: "item" item: "minecraft:experience_bottle" count: 8 }]
 		}
 		{
 			id: "A130000000000066"
 			title: "Generator paliwowy"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: generator paliwowy. To etap 2 z 16 w tej gałęzi Tokyo World."]
-			x: 3.5d
-			y: 0.0d
+			x: 0.0d
+			y: 4.0d
 			icon: "powah:furnator_starter"
 			dependencies: ["A130000000000065"]
 			tasks: [{ id: "A140000000000066" type: "item" item: "powah:furnator_starter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000066" type: "item" item: "minecraft:redstone" count: 3 }]
+			rewards: [{ id: "A150000000000066" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A130000000000067"
 			title: "Pierwsze panele słoneczne"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: pierwsze panele słoneczne. To etap 3 z 16 w tej gałęzi Tokyo World."]
-			x: 7.0d
-			y: 0.0d
+			x: 4.5d
+			y: 4.0d
 			icon: "powah:solar_panel_starter"
-			dependencies: ["A130000000000066"]
+			dependencies: ["A130000000000065"]
 			tasks: [{ id: "A140000000000067" type: "item" item: "powah:solar_panel_starter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000067" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+			rewards: [{ id: "A150000000000067" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
 		}
 		{
 			id: "A130000000000068"
 			title: "Generator termoelektryczny"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: generator termoelektryczny. To etap 4 z 16 w tej gałęzi Tokyo World."]
-			x: 10.5d
-			y: 0.0d
+			x: 9.0d
+			y: 4.0d
 			icon: "powah:thermo_generator_starter"
-			dependencies: ["A130000000000067"]
+			dependencies: ["A130000000000065"]
 			tasks: [{ id: "A140000000000068" type: "item" item: "powah:thermo_generator_starter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000068" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+			rewards: [{ id: "A150000000000068" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A130000000000069"
 			title: "Ogniwo energii"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: ogniwo energii. To etap 5 z 16 w tej gałęzi Tokyo World."]
-			x: 14.0d
-			y: 0.0d
+			x: 13.5d
+			y: 4.0d
 			icon: "powah:energy_cell_starter"
-			dependencies: ["A130000000000068"]
+			dependencies: ["A130000000000065"]
 			tasks: [{ id: "A140000000000069" type: "item" item: "powah:energy_cell_starter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000069" type: "item" item: "minecraft:redstone" count: 3 }]
+			rewards: [{ id: "A150000000000069" type: "item" item: "minecraft:glowstone_dust" count: 8 }]
 		}
 		{
 			id: "A13000000000006A"
 			title: "Sfera energetyzacji"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: sfera energetyzacji. To etap 6 z 16 w tej gałęzi Tokyo World."]
 			x: 0.0d
-			y: 3.0d
+			y: 7.5d
 			icon: "powah:energizing_orb"
-			dependencies: ["A130000000000069"]
+			dependencies: ["A130000000000066"]
 			tasks: [{ id: "A14000000000006A" type: "item" item: "powah:energizing_orb" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000006A" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+			rewards: [{ id: "A15000000000006A" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
 		}
 		{
 			id: "A13000000000006B"
 			title: "Pręty energii"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: pręty energii. To etap 7 z 16 w tej gałęzi Tokyo World."]
-			x: 3.5d
-			y: 3.0d
+			x: 4.5d
+			y: 7.5d
 			icon: "powah:energizing_rod_starter"
-			dependencies: ["A13000000000006A"]
+			dependencies: ["A130000000000067"]
 			tasks: [{ id: "A14000000000006B" type: "item" item: "powah:energizing_rod_starter" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000006B" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+			rewards: [{ id: "A15000000000006B" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A13000000000006C"
 			title: "Prosty reaktor"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: prosty reaktor. To etap 8 z 16 w tej gałęzi Tokyo World."]
-			x: 7.0d
-			y: 3.0d
+			x: 9.0d
+			y: 7.5d
 			icon: "powah:reactor_starter"
-			dependencies: ["A13000000000006B"]
+			dependencies: ["A130000000000068"]
 			tasks: [{ id: "A14000000000006C" type: "item" item: "powah:reactor_starter" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000006C" type: "item" item: "minecraft:redstone" count: 3 }]
+			rewards: [{ id: "A15000000000006C" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
 		}
 		{
 			id: "A13000000000006D"
 			title: "Sieć podstawowa"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: sieć podstawowa. To etap 9 z 16 w tej gałęzi Tokyo World."]
-			x: 10.5d
-			y: 3.0d
+			x: 13.5d
+			y: 7.5d
 			icon: "powah:energy_cable_basic"
-			dependencies: ["A13000000000006C"]
-			tasks: [{ id: "A14000000000006D" type: "item" item: "powah:energy_cable_basic" count: 8L consume_items: false }]
-			rewards: [{ id: "A15000000000006D" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+			dependencies: ["A130000000000069"]
+			tasks: [{ id: "A14000000000006D" type: "item" item: "powah:energy_cable_basic" count: 12L consume_items: false }]
+			rewards: [{ id: "A15000000000006D" type: "item" item: "minecraft:ender_pearl" count: 8 }]
 		}
 		{
 			id: "A13000000000006E"
 			title: "Pojemne ogniwo"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: pojemne ogniwo. To etap 10 z 16 w tej gałęzi Tokyo World."]
-			x: 14.0d
-			y: 3.0d
+			x: 0.0d
+			y: 11.0d
 			icon: "powah:energy_cell_basic"
-			dependencies: ["A13000000000006D"]
+			dependencies: ["A13000000000006A"]
 			tasks: [{ id: "A14000000000006E" type: "item" item: "powah:energy_cell_basic" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000006E" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+			rewards: [{ id: "A15000000000006E" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A13000000000006F"
 			title: "Reaktor podstawowy"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: reaktor podstawowy. To etap 11 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 6.0d
+			x: 4.5d
+			y: 11.0d
 			icon: "powah:reactor_basic"
-			dependencies: ["A13000000000006E"]
+			dependencies: ["A13000000000006B"]
 			tasks: [{ id: "A14000000000006F" type: "item" item: "powah:reactor_basic" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000006F" type: "item" item: "minecraft:redstone" count: 3 }]
+			rewards: [{ id: "A15000000000006F" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
 		}
 		{
 			id: "A130000000000070"
 			title: "Zdalna energia"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: zdalna energia. To etap 12 z 16 w tej gałęzi Tokyo World."]
-			x: 3.5d
-			y: 6.0d
+			x: 9.0d
+			y: 11.0d
 			icon: "powah:ender_cell_starter"
-			dependencies: ["A13000000000006F"]
+			dependencies: ["A13000000000006C"]
 			tasks: [{ id: "A140000000000070" type: "item" item: "powah:ender_cell_starter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000070" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+			rewards: [{ id: "A150000000000070" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A130000000000071"
 			title: "Reaktor wzmocniony"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: reaktor wzmocniony. To etap 13 z 16 w tej gałęzi Tokyo World."]
-			x: 7.0d
-			y: 6.0d
+			x: 13.5d
+			y: 11.0d
 			icon: "powah:reactor_hardened"
-			dependencies: ["A130000000000070"]
+			dependencies: ["A13000000000006D"]
 			tasks: [{ id: "A140000000000071" type: "item" item: "powah:reactor_hardened" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000071" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+			rewards: [{ id: "A150000000000071" type: "item" item: "minecraft:lapis_lazuli" count: 8 }]
 		}
 		{
 			id: "A130000000000072"
 			title: "Reaktor płomienny"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: reaktor płomienny. To etap 14 z 16 w tej gałęzi Tokyo World."]
-			x: 10.5d
-			y: 6.0d
+			x: 0.0d
+			y: 14.5d
 			icon: "powah:reactor_blazing"
-			dependencies: ["A130000000000071"]
+			dependencies: ["A13000000000006E"]
 			tasks: [{ id: "A140000000000072" type: "item" item: "powah:reactor_blazing" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000072" type: "item" item: "minecraft:redstone" count: 3 }]
+			rewards: [{ id: "A150000000000072" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
 		}
 		{
 			id: "A130000000000073"
 			title: "Reaktor Niotic"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: reaktor niotic. To etap 15 z 16 w tej gałęzi Tokyo World."]
-			x: 14.0d
-			y: 6.0d
+			x: 4.5d
+			y: 14.5d
 			icon: "powah:reactor_niotic"
-			dependencies: ["A130000000000072"]
+			dependencies: ["A13000000000006F"]
 			tasks: [{ id: "A140000000000073" type: "item" item: "powah:reactor_niotic" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000073" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+			rewards: [{ id: "A150000000000073" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A130000000000074"
 			title: "Energia najwyższego poziomu"
 			description: ["Systemy zasilania i magazynowania energii. Wytwórz lub zdobądź: energia najwyższego poziomu. To etap 16 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 9.0d
+			x: 7.0d
+			y: 19.0d
 			icon: "powah:reactor_nitro"
-			dependencies: ["A130000000000073"]
+			dependencies: ["A130000000000070", "A130000000000071", "A130000000000072", "A130000000000073"]
 			tasks: [{ id: "A140000000000074" type: "item" item: "powah:reactor_nitro" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000074" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+			rewards: [{ id: "A150000000000074" type: "item" item: "minecraft:diamond" count: 6 } { id: "A160000000000074" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
