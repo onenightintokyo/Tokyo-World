@@ -3,7 +3,7 @@
   "name": "Tokyo World — Technology Expansion",
   "minecraft": "1.20.1",
   "loader": "forge",
-  "note": "Opt-in modules. Tech Lab: AE2/Mekanism bridge and RFTools. World Explore: YUNG's redesigned structures (new chunks required). Select versions strictly for Forge 1.20.1, verify SHA-512; test on copied world first.",
+  "note": "Modules are optional, install in phases on a backed-up instance. Factory / Automation / Resources contain 10 additional Forge 1.20.1 projects; compatibility is not verified in the complete Tokyo World client. Preserve exact existing versions. Pinned Create-specific addons target Create 6.0.8.",
   "profiles": {
     "tech-core": [
       {
@@ -118,6 +118,65 @@
         "project": "yungs-better-strongholds",
         "label": "YUNG's Better Strongholds",
         "match": "^YungsBetterStrongholds[-_].*\\.jar$"
+      }
+    ],
+    "factory-next": [
+      {
+        "project": "thermal-dynamics",
+        "label": "Thermal Dynamics — transport energii i cieczy",
+        "match": "^thermal[_-]dynamics[-_].*\\.jar$"
+      },
+      {
+        "project": "thermal-innovation",
+        "label": "Thermal Innovation — zaawansowane urządzenia",
+        "match": "^thermal[_-]innovation[-_].*\\.jar$"
+      },
+      {
+        "project": "thermal-integration",
+        "label": "Thermal Integration — receptury integracyjne",
+        "match": "^thermal[_-]integration[-_].*\\.jar$"
+      },
+      {
+        "project": "thermal-cultivation",
+        "label": "Thermal Cultivation — farming",
+        "match": "^thermal[_-]cultivation[-_].*\\.jar$"
+      }
+    ],
+    "automation-next": [
+      {
+        "project": "advancedperipherals",
+        "versionId": "mIP0ApJY",
+        "label": "Advanced Peripherals — automatyka CC:Tweaked",
+        "match": "^advancedperipherals[-_].*\\.jar$"
+      },
+      {
+        "project": "cccbridge",
+        "versionId": "yxrimuPr",
+        "label": "CC:C Bridge 1.7.1 dla Create 6",
+        "match": "^cccbridge[-_].*\\.jar$"
+      },
+      {
+        "project": "create-enchantment-industry",
+        "versionId": "caLmFTZ1",
+        "label": "Create Enchantment Industry 1.4.1 — Create 6.0.8",
+        "match": "^create[_-]enchantment[_-]industry[-_].*\\.jar$"
+      }
+    ],
+    "resources-next": [
+      {
+        "project": "appflux",
+        "label": "Applied Flux — magazynowanie FE w AE2",
+        "match": "^(AppliedFlux|appflux)[-_].*\\.jar$"
+      },
+      {
+        "project": "hostile-neural-networks",
+        "label": "Hostile Neural Networks — symulowane farmy mobów",
+        "match": "^(HostileNeuralNetworks|hostile[_-]neural[_-]networks)[-_].*\\.jar$"
+      },
+      {
+        "project": "thermals-delight",
+        "label": "Thermal's Delight — integracja jedzenia",
+        "match": "^thermals[_-]delight[-_].*\\.jar$"
       }
     ]
   }
