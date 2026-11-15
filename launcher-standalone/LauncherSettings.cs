@@ -21,6 +21,7 @@ internal sealed class LauncherSettings
     public bool ExtraVisualMods { get; set; } = false;
     public bool EnableShaders { get; set; } = false;
     public long LastLauncherRunId { get; set; } = 0;
+    public string PendingUpdateHash { get; set; } = "";
     public bool LightweightMode { get; set; } = false;
     public bool LightweightPromptShown { get; set; } = false;
     public bool PerfMigrationCompleted { get; set; } = false;
