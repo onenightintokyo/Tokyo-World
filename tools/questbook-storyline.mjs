@@ -123,6 +123,23 @@ function narrative(spec,names,node,i){
  const bridge=(i%4===0 && prev)?"Wcześniej udało ci się już zamknąć temat „"+prev+"”. ":"";
  return bridge+situations[k]+title+". "+voice;
 }
+// Expert projects require a real, player-confirmed machine/expedition test at
+// branch junctions. We do not change existing item task IDs or completion data.
+const expertChapters=new Set([
+ "mega_factory","factory_logic","chemical_superplant","steel_alloy_empire",
+ "megawatt_network","me_data_center","logistics_optimization",
+ "automation_agriculture","mana_engineering","orbital_outpost",
+ "boss_hunting_contracts","tokyo_ultimate_project"
+]);
+const realWorldChecks={
+ 2:"Uruchom zbudowaną instalację i sprawdź, czy rzeczywiście przekazuje materiał dalej.",
+ 3:"Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni.",
+ 4:"Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy.",
+ 5:"Uruchom farmę na próbę i upewnij się, że sama zbiera albo przygotowuje plony.",
+ 6:"Przeprowadź proces magiczny i przekonaj się, że wszystkie jego elementy ze sobą współpracują.",
+ 7:"Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem.",
+ 8:"Sprawdź całą konstrukcję z ekipą. Dopiero gdy działa naprawdę, potwierdź ukończenie."
+};
 const localized=new Map();
 for(const spec of specs){
  const [slug,group,newTitle]=spec;
@@ -141,7 +158,9 @@ for(const spec of specs){
  const graph=tree(matches.length);
  const changed=matches.map((m,i)=>{
   let b=m[0],node=graph[i];
-  const desc=narrative(spec,names,node,i);
+  let desc=narrative(spec,names,node,i);
+  const manualTrial=expertChapters.has(slug) && (node.role==="join" || node.role==="final");
+  if(manualTrial) desc+=" "+realWorldChecks[group]+" Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku.";
   const text=/^\t\t\tdescription: \[[^\r\n]*\]/m;
   if(!text.test(b))throw Error("Unsupported description syntax: "+slug);
   b=b.replace(text,()=>"\t\t\tdescription: "+JSON.stringify([desc]));
@@ -155,6 +174,16 @@ for(const spec of specs){
    if(/^\t\t\tdependencies: \[[^\r\n]*\]/m.test(b))
       b=b.replace(/^\t\t\tdependencies: \[[^\r\n]*\]/m,()=>value);
    else b=b.replace(/^\t\t\ticon: "[^\r\n]*"/m,match=>match+"\n"+value);
+  }
+  if(manualTrial){
+   // Checkmark: player confirms the real build or expedition was tested.
+   // Task IDs are new A1D0... values; original A140/A180 tasks are untouched.
+   const manualId="A1D0"+ids[i].slice(4);
+   if(!b.includes('id: "'+manualId+'"')){
+     const taskLine=/^\t\t\ttasks: \[([^\r\n]*)\]/m;
+     if(!taskLine.test(b))throw Error("Cannot append trial task "+slug+" "+i);
+     b=b.replace(taskLine,(line,body)=>"\t\t\ttasks: ["+body+", { id: \""+manualId+"\" type: \"checkmark\" }]");
+   }
   }
   return b;
  });
