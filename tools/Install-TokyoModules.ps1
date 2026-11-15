@@ -1,7 +1,7 @@
 # Tokyo World optional expansion installer — Windows PowerShell 5.1+
 # Preview by default; use -Apply to install. Existing mods, saves, configs are untouched.
 param(
-    [ValidateSet('Core','Expanded','Adventure','Lab','World','Factory','Automation','Resources','All')][string]$Profile = 'Core',
+    [ValidateSet('Core','Expanded','Adventure','Lab','World','Factory','Automation','Resources','Mega','All')][string]$Profile = 'Core',
     [switch]$Apply,
     [string]$GameDir = ''
 )
@@ -28,6 +28,8 @@ $script:planning = @{}
 $script:completed = @{}
 $script:projectCache = @{}
 $script:versionCache = @{}
+$script:apiCache = @{}
+$script:unavailable = New-Object 'System.Collections.Generic.List[string]'
 $script:knownExisting = @{
     'ae2' = '^(appliedenergistics2|ae2)[-_]'
     'applied-energistics-2' = '^(appliedenergistics2|ae2)[-_]'
@@ -56,7 +58,12 @@ $script:knownExisting = @{
 }
 function Get-ModrinthJson([string]$path) {
     $uri = 'https://api.modrinth.com/v2/' + $path
-    return Invoke-RestMethod -Uri $uri -Method Get -TimeoutSec 40 -Headers @{ 'User-Agent' = 'TokyoWorldModpack/0.4 (modpack setup)' }
+    if ($script:apiCache.ContainsKey($uri)) { return $script:apiCache[$uri] }
+    $result = Invoke-RestMethod -Uri $uri -Method Get -TimeoutSec 50 -Headers @{
+        'User-Agent' = 'TokyoWorldModpack/0.8 (Forge 1.20.1 MEGA edition)'
+    }
+    $script:apiCache[$uri] = $result
+    return $result
 }
 function Existing-Matches([string]$slug, [string]$customRegex) {
     # Both explicit patterns and known upstream filenames count as installed.
@@ -189,8 +196,14 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
     }
 }
 $wanted = @()
-foreach ($name in @('tech-core','tech-expanded','adventure','tech-lab','world-explore','factory-next','automation-next','resources-next')) {
+$megaGroups = @('tech-core','tech-expanded','tech-lab','world-explore',
+                'factory-next','automation-next','resources-next',
+                'mega-technology','mega-magic','mega-adventure','mega-building')
+foreach ($name in @('tech-core','tech-expanded','adventure','tech-lab','world-explore',
+                    'factory-next','automation-next','resources-next',
+                    'mega-technology','mega-magic','mega-adventure','mega-building')) {
     $use = ($Profile -eq 'All') -or
+        ($Profile -eq 'Mega' -and $name -in $megaGroups) -or
         ($Profile -eq 'Core' -and $name -eq 'tech-core') -or
         ($Profile -eq 'Expanded' -and $name -in @('tech-core','tech-expanded')) -or
         ($Profile -eq 'Adventure' -and $name -eq 'adventure') -or
@@ -204,9 +217,39 @@ foreach ($name in @('tech-core','tech-expanded','adventure','tech-lab','world-ex
 Write-Host "[Tokyo World] Profile=$Profile, Minecraft=1.20.1, Forge, apply=$Apply"
 Write-Host "[Tokyo World] Resolving versions and required dependencies from Modrinth..."
 foreach ($mod in $wanted) {
-    Queue-Mod ([string]$mod.project) ([string]$mod.versionId) ([string]$mod.version) ([string]$mod.match)
+    if ($Profile -notin @('Mega','All')) {
+        Queue-Mod ([string]$mod.project) ([string]$mod.versionId) ([string]$mod.version) ([string]$mod.match)
+        continue
+    }
+
+    # MEGA should not fail at one project with no Forge release or absent Modrinth page.
+    # Restore the plan and completion cache to their previous state for that mod
+    # (including any dependencies queued before the failure).
+    $beforePlan = @($script:planned.Keys)
+    $beforeDone = @($script:completed.Keys)
+    try {
+        Queue-Mod ([string]$mod.project) ([string]$mod.versionId) ([string]$mod.version) ([string]$mod.match)
+    } catch {
+        foreach ($key in @($script:planned.Keys)) {
+            if ($beforePlan -notcontains $key) { [void]$script:planned.Remove($key) }
+        }
+        foreach ($key in @($script:completed.Keys)) {
+            if ($beforeDone -notcontains $key) { [void]$script:completed.Remove($key) }
+        }
+        $msg = ([string]$mod.project + ': ' + $_.Exception.Message)
+        $script:unavailable.Add($msg)
+        Write-Warning ("[Tokyo World] SKIPPED " + $msg)
+    }
 }
 $toInstall = @($script:planned.Values | Sort-Object name)
+if ($Profile -in @('Mega','All')) {
+    Write-Host ("[Tokyo World] Requested projects: {0}; planned JARs (incl. dependencies): {1}; unavailable: {2}" -f $wanted.Count, $toInstall.Count, $script:unavailable.Count)
+    if ($script:unavailable.Count) {
+        $report = Join-Path $GameDir '.tokyo-world-mega-skipped.txt'
+        $script:unavailable | Out-File -LiteralPath $report -Encoding UTF8
+        Write-Warning ("[Tokyo World] Missing/unavailable mods saved to: " + $report)
+    }
+}
 if ($toInstall.Count -eq 0) { Write-Host '[Tokyo World] All requested mods appear to be installed.'; exit 0 }
 foreach ($mod in $toInstall) { Write-Host ("  + {0} [{1}] -> {2}" -f $mod.name,$mod.version,$mod.filename) }
 Write-Host "[Tokyo World] New JAR files planned: $($toInstall.Count)"
