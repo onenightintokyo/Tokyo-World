@@ -183,7 +183,7 @@
 			icon: "botania:enchanter"
 			dependencies: ["A13000000000008C", "A13000000000008D", "A13000000000008E", "A13000000000008F"]
 			tasks: [{ id: "A140000000000090" type: "item" item: "botania:enchanter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000090" type: "item" item: "minecraft:enchanted_golden_apple" count: 1 } { id: "A160000000000090" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000090" type: "item" item: "minecraft:enchanted_golden_apple" count: 1 }, { id: "A160000000000090" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
