@@ -1,5 +1,18 @@
 # Tokyo World — Expert Fun Modpack
 
+## Tokyo World Launcher v1.4 — własne logo TW w launcherze i Minecraft
+
+**EXE z zaszytą ikoną TW:** [Pobierz skompilowaną wersję v1.4](https://github.com/onenightintokyo/Tokyo-World/actions/runs/43764424900).
+
+- Nowe logo TW dla pliku `TokyoWorldLauncher.exe`, skrótów, paska zadań i górnego rogu interfejsu.
+- Przy uruchomieniu gry launcher nadaje oknu Minecraft / Forge **własną ikonę TW przez Windows WM_SETICON** (odświeża ją w czasie pracy, gdy Minecraft zmienia ikonę).
+- Logo jest automatycznie kopiowane do zasobów FancyMenu i KubeJS (`tokyo_world_tw_logo.png`, `tw_logo.png`), bez ingerencji w zapisy.
+- Zasób ICO z 7 rozmiarami od 16 do 256 px jest **potwierdzony wewnątrz skompilowanego EXE**.
+- Aby mieć nową ikonę pliku EXE, **pobierz nowy EXE v1.4** — aktualizacje samego modpacka nie zmieniają starego pliku programu.
+
+[Instrukcja i stan testów logo TW v1.4](docs/TOKYO_WORLD_TW_ICONS_v1.4.md)
+
+
 ## Tokyo World Launcher v1.3 — poprawka konfliktu modów
 
 **Nowy Windows EXE:** [Tokyo World Launcher v1.3 — udany build](https://github.com/onenightintokyo/Tokyo-World/actions/runs/43761751355).
