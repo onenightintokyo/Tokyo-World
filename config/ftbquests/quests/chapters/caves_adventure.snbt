@@ -1,10 +1,10 @@
 {
 	filename: "caves_adventure"
-	title: "Alex's Caves — Głębokie ekspedycje"
-	group: "A110000000000001"
+	title: "&c&l02 &r&fAlex's Caves"
+	group: "A110000000000006"
 	id: "A120000000000010"
 	icon: "alexscaves:spelunkery_table"
-	order_index: 15
+	order_index: 1
 	images: [ { image: "tokyoworld:textures/gui/quests/exploration_adventure.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
 	quests: [
 		{
