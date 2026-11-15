@@ -1,0 +1,145 @@
+{
+	filename: "integrated_logic"
+	title: "Integrated Dynamics — Automatyka logiczna"
+	group: "A110000000000001"
+	id: "A12000000000000A"
+	icon: "integrateddynamics:logic_programmer"
+	order_index: 9
+	images: [
+		{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
+	]
+	quests: [
+		{
+			id: "A130000000000075"
+			title: "Kabel logiczny"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: kabel logiczny. To etap 1 z 12 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 0.0d
+			icon: "integrateddynamics:cable"
+			dependencies: ["A130000000000010"]
+			tasks: [{ id: "A140000000000075" type: "item" item: "integrateddynamics:cable" count: 12L consume_items: false }]
+			rewards: [{ id: "A150000000000075" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000076"
+			title: "Programowanie logiki"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: programowanie logiki. To etap 2 z 12 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 0.0d
+			icon: "integrateddynamics:logic_programmer"
+			dependencies: ["A130000000000075"]
+			tasks: [{ id: "A140000000000076" type: "item" item: "integrateddynamics:logic_programmer" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000076" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000077"
+			title: "Karty zmiennych"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: karty zmiennych. To etap 3 z 12 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 0.0d
+			icon: "integrateddynamics:variable"
+			dependencies: ["A130000000000076"]
+			tasks: [{ id: "A140000000000077" type: "item" item: "integrateddynamics:variable" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000077" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000078"
+			title: "Magazyn zmiennych"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: magazyn zmiennych. To etap 4 z 12 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 0.0d
+			icon: "integrateddynamics:variablestore"
+			dependencies: ["A130000000000077"]
+			tasks: [{ id: "A140000000000078" type: "item" item: "integrateddynamics:variablestore" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000078" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000079"
+			title: "Bateria sieciowa"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: bateria sieciowa. To etap 5 z 12 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 0.0d
+			icon: "integrateddynamics:energy_battery"
+			dependencies: ["A130000000000078"]
+			tasks: [{ id: "A140000000000079" type: "item" item: "integrateddynamics:energy_battery" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000079" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A13000000000007A"
+			title: "Generator logiczny"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: generator logiczny. To etap 6 z 12 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 3.0d
+			icon: "integrateddynamics:coal_generator"
+			dependencies: ["A130000000000079"]
+			tasks: [{ id: "A14000000000007A" type: "item" item: "integrateddynamics:coal_generator" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000007A" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A13000000000007B"
+			title: "Materializacja zmiennych"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: materializacja zmiennych. To etap 7 z 12 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 3.0d
+			icon: "integrateddynamics:materializer"
+			dependencies: ["A13000000000007A"]
+			tasks: [{ id: "A14000000000007B" type: "item" item: "integrateddynamics:materializer" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000007B" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000007C"
+			title: "Proxy sygnałów"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: proxy sygnałów. To etap 8 z 12 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 3.0d
+			icon: "integrateddynamics:proxy"
+			dependencies: ["A13000000000007B"]
+			tasks: [{ id: "A14000000000007C" type: "item" item: "integrateddynamics:proxy" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000007C" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A13000000000007D"
+			title: "Kryształy Menril"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: kryształy menril. To etap 9 z 12 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 3.0d
+			icon: "integrateddynamics:crystalized_menril_chunk"
+			dependencies: ["A13000000000007C"]
+			tasks: [{ id: "A14000000000007D" type: "item" item: "integrateddynamics:crystalized_menril_chunk" count: 8L consume_items: false }]
+			rewards: [{ id: "A15000000000007D" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A13000000000007E"
+			title: "Kryształy Chorus"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: kryształy chorus. To etap 10 z 12 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 3.0d
+			icon: "integrateddynamics:crystalized_chorus_chunk"
+			dependencies: ["A13000000000007D"]
+			tasks: [{ id: "A14000000000007E" type: "item" item: "integrateddynamics:crystalized_chorus_chunk" count: 8L consume_items: false }]
+			rewards: [{ id: "A15000000000007E" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000007F"
+			title: "Programowanie mobilne"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: programowanie mobilne. To etap 11 z 12 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 6.0d
+			icon: "integrateddynamics:portable_logic_programmer"
+			dependencies: ["A13000000000007E"]
+			tasks: [{ id: "A14000000000007F" type: "item" item: "integrateddynamics:portable_logic_programmer" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000007F" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000080"
+			title: "Drewno Menril"
+			description: ["Inteligentne sieci i logika. Wytwórz lub zdobądź: drewno menril. To etap 12 z 12 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 6.0d
+			icon: "integrateddynamics:menril_log"
+			dependencies: ["A13000000000007F"]
+			tasks: [{ id: "A140000000000080" type: "item" item: "integrateddynamics:menril_log" count: 16L consume_items: false }]
+			rewards: [{ id: "A150000000000080" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+	]
+}
