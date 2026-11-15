@@ -1,5 +1,8 @@
 {
 	chapter_groups: [
-		{ id: "A110000000000001" title: "TOKYO WORLD — PROGRESJA" }
+		{
+			id: "A110000000000001"
+			title: "TOKYO WORLD — PROGRESJA"
+		}
 	]
 }
