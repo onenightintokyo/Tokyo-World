@@ -58,6 +58,27 @@ foreach ($folder in $managed) {
         Write-Host "[Tokyo World] Updated: $relative"
     }
 }
+# Validate the Cucumber tag map before Minecraft starts. The old ZIP had an
+# invalid fragment after the closing brace and caused repeated recipe errors.
+try {
+    $cucumberRel = 'config\cucumber-tags.json'
+    $cucumberLocal = Join-Path $GameDir $cucumberRel
+    $cucumberRepo = Join-Path $RepoDir $cucumberRel
+    if ((Test-Path -LiteralPath $cucumberLocal -PathType Leaf) -and
+        (Test-Path -LiteralPath $cucumberRepo -PathType Leaf)) {
+        try {
+            $null = Get-Content -LiteralPath $cucumberLocal -Raw -Encoding UTF8 | ConvertFrom-Json -ErrorAction Stop
+            Write-Host "[Tokyo World] Cucumber JSON syntax: VALID before game start."
+        } catch {
+            Backup-File $cucumberRel $cucumberLocal
+            Copy-Item -LiteralPath $cucumberRepo -Destination $cucumberLocal -Force
+            Write-Warning "[Tokyo World] Malformed Cucumber JSON restored from repository."
+        }
+    }
+} catch {
+    Write-Warning ("[Tokyo World] Cannot verify Cucumber tag map: " + $_.Exception.Message)
+}
+
 # Repair options.txt damaged by previous updater. Do NOT change resource pack selection again.
 try {
     $relative = 'options.txt'
