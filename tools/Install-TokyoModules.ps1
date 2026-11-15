@@ -105,7 +105,7 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
         }
         $uri = [Uri]$file.url
         if ($uri.Scheme -ne 'https' -or $uri.Host -notin @('cdn.modrinth.com','cdn-raw.modrinth.com')) {
-            throw "Unexpected download host for $slug: $($uri.Host)"
+            throw "Unexpected download host for ${slug}: $($uri.Host)"
         }
         $script:planned[$projectId] = [pscustomobject]@{
             name = [string]$project.title
