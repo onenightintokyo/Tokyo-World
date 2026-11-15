@@ -90,18 +90,64 @@ function tree(n){
  nodes[n-1]={parents:[n-2],x:8,y:(row+1)*4,role:"final"};
  return nodes;
 }
-const situations=[
- "Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat ",
- "Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest ",
- "Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się ",
- "Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o ",
- "Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat ",
- "Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy ",
- "Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się ",
- "Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż ",
- "Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie ",
- "Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest "
-];
+const scenes={
+ 1:[
+  "Na początku każda zdobycz może zdecydować, czy przetrwasz kolejną noc.",
+  "Przy ognisku łatwo snuć wielkie plany, ale to małe rzeczy utrzymują je przy życiu.",
+  "Warsztat powoli przestaje być prowizorką. Warto zatroszczyć się o kolejny szczegół.",
+  "W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać.",
+  "Zanim ruszysz dalej, doprowadź do porządku swoje najbliższe otoczenie."
+ ],
+ 2:[
+  "W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę.",
+  "Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc.",
+  "Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk.",
+  "Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny.",
+  "Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia."
+ ],
+ 3:[
+  "Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca.",
+  "Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera.",
+  "Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji.",
+  "W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie.",
+  "Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu."
+ ],
+ 4:[
+  "Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować.",
+  "W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce.",
+  "Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji.",
+  "Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby.",
+  "Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka."
+ ],
+ 5:[
+  "Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan.",
+  "Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami.",
+  "Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień.",
+  "Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu.",
+  "Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie."
+ ],
+ 6:[
+  "Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty.",
+  "Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy.",
+  "Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników.",
+  "Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu.",
+  "W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany."
+ ],
+ 7:[
+  "Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt.",
+  "Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić.",
+  "Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć.",
+  "Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca.",
+  "Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale."
+ ],
+ 8:[
+  "Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane.",
+  "Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel.",
+  "Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów.",
+  "Tu nie wystarczy pojedyncze urządzenie. Cała ekipa musi wykonać swoją część pracy.",
+  "Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje."
+ ]
+};
 const chapterVoices={
  1:["Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć.","Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później.","Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."],
  2:["Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm.","Dobrze, żeby materiał nie zatrzymywał się w połowie drogi.","Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."],
@@ -117,11 +163,18 @@ function narrative(spec,names,node,i){
  if(node.role==="root")return spec[3]+" Zacznij od sprawy "+title+". Bez tego dalsze pomysły zostałyby tylko szkicem.";
  if(node.role==="join")return "Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o "+title+". Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem.";
  if(node.role==="final")return spec[4]+" Ostatni sprawdzian to "+title+". Niech będzie dowodem na to, że cała wcześniejsza praca miała sens.";
- const k=(i*7+spec[1])%situations.length;
+ const k=(i*7+spec[1])%scenes[spec[1]].length;
  const voice=chapterVoices[spec[1]][(i+spec[1])%3];
  const prev=node.parents.length ? names[node.parents[0]] : "";
- const bridge=(i%4===0 && prev)?"Wcześniej udało ci się już zamknąć temat „"+prev+"”. ":"";
- return bridge+situations[k]+title+". "+voice;
+ const bridge=(i%4===0 && prev)?"Wcześniej zamknąłeś już sprawę „"+prev+"”. ":"";
+ const links=[
+  "W notatkach pojawia się ",
+  "Kolejny punkt planu to ",
+  "Warto teraz pomyśleć o ",
+  "Zapisz w planie ",
+  "Tym razem liczy się "
+ ];
+ return bridge+scenes[spec[1]][k]+" "+links[(i+spec[1])%links.length]+title+". "+voice;
 }
 // Expert projects require a real, player-confirmed machine/expedition test at
 // branch junctions. We do not change existing item task IDs or completion data.
