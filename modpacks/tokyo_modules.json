@@ -380,8 +380,10 @@
       },
       {
         "project": "the-undergarden",
-        "label": "The Undergarden — mroczny wymiar",
-        "match": "^(undergarden|the[-_]undergarden)[-_ .]"
+        "label": "The Undergarden — wymiar podziemny (0.8.14 beta, Forge 1.20.1)",
+        "match": "^(undergarden|the[-_]undergarden)[-_ .]",
+        "versionId": "pXfmvzA9",
+        "note": "Verified official Modrinth beta for 1.20.1, Forge + NeoForge. The installer otherwise only accepts release channels."
       },
       {
         "project": "twilightforest",
