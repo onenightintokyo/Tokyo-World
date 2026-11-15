@@ -65,7 +65,7 @@ internal static class ModCompatibilityRepair
             // A transaction: download/verify first, then stash, then activate;
             // restore original JAR files if activating the replacement fails.
             string? target = replacement == null ? null :
-                Path.Combine(modsDir, Path.GetFileNameWithoutExtension(replacement).Replace(".verified", "") + ".jar");
+                Path.Combine(modsDir, Path.GetFileName(replacement)[..^".verified".Length]);
             var moved = new List<(string Source, string Backup)>();
             try
             {
