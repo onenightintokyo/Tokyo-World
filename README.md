@@ -1,5 +1,19 @@
 # Tokyo World — Expert Fun Modpack
 
+## NOWY: Tokyo World Launcher 1.0 (bez Prism)
+
+**Samodzielny, skompilowany EXE dla Windows x64:** `TokyoWorldLauncher.exe` (GitHub Actions build udany).
+
+- [Instrukcja instalacji, kont i aktualizacji](docs/TOKYO_WORLD_STANDALONE_LAUNCHER.md)
+- [Pobierz EXE z GitHub Actions — run 43721308731](https://github.com/onenightintokyo/Tokyo-World/actions/runs/43721308731)
+- Kod C#: [launcher-standalone](launcher-standalone)
+- Wybór folderu instalacji, automatyczna instalacja Minecraft 1.20.1 / Forge 47.4.28, Java, synchronizacja GitHub, podstawowe i opcjonalne mody, konta Microsoft / nickname offline
+- Nie wymaga Prism, Python ani uruchamiania PowerShell; program sam pobiera potrzebne pliki. Ponieważ repozytorium jest prywatne, dostęp do GitHub wymaga autoryzacji użytkownika (fine-grained token Contents: Read, zaszyfrowany w Windows DPAPI)
+- Hash-lock 66 bazowych modów: [modpacks/base_mod_hashes.txt](modpacks/base_mod_hashes.txt). Przy braku dokładnej wersji na Modrinth można zaimportować pierwotne ZIP.
+
+**Status:** EXE pomyślnie skompilowano w Windows CI. Pierwsza instalacja całego modpacka, logowanie Microsoft i start Forge na komputerze użytkownika nie są jeszcze przetestowane. Nie nadpisuje zapisów świata; zalecane jest wybranie nowego pustego folderu.
+
+
 **Minecraft 1.20.1 · Forge 47.4.28 · Technology · Automation · Magic · Exploration**
 
 Modpack Tokyo World dla znajomych, z rozbudowaną progresją technologiczną, automatyką fabryk, magią, bossami i własnymi questami.
