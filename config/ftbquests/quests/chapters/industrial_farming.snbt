@@ -1,10 +1,10 @@
 {
 	filename: "industrial_farming"
-	title: "Industrial Foregoing — Farmy przemysłowe"
-	group: "A110000000000001"
+	title: "&a&l02 &r&fIndustrial Foregoing"
+	group: "A110000000000004"
 	id: "A120000000000008"
 	icon: "industrialforegoing:plant_gatherer"
-	order_index: 7
+	order_index: 1
 	images: [
 		{ image: "tokyoworld:textures/gui/quests/building_farming.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
 	]
