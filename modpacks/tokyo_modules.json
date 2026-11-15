@@ -3,7 +3,7 @@
   "name": "Tokyo World — Technology Expansion",
   "minecraft": "1.20.1",
   "loader": "forge",
-  "note": "MEGA repair-dependencies profile adds Iron's Lib 1.20.1-2.3.0, playerAnimator Forge 1.0.2-rc1+1.20, and Extended AE 1.4.18, needed by Iron's Spells and ExtendedAE Plus. Pinned verified Modrinth IDs. These were omitted from the initial Mega installation because the external metadata did not list all required dependencies.",
+  "note": "Tokyo World WAVE: 36 candidate mods in industry/bosses/biomes/quality-of-life. All downloads are resolved for Forge 1.20.1 by Modrinth; missing projects may be skipped and should not be forcibly installed. Create 6.0.8 compatibility is not guaranteed merely by game version. No existing JARs or worlds overwritten.",
   "profiles": {
     "tech-core": [
       {
@@ -541,6 +541,198 @@
         "label": "Extended AE 1.20-1.4.18-forge (expatternprovider dla ExtendedAE Plus)",
         "versionId": "uq3lO4ER",
         "match": "^ExtendedAE-1\\.20-[0-9].*\\.jar$"
+      }
+    ],
+    "wave-industry": [
+      {
+        "project": "storagedrawers",
+        "label": "Storage Drawers — magazyny masowe",
+        "match": "^(StorageDrawers|storagedrawers)[-_ .]"
+      },
+      {
+        "project": "create-deco",
+        "label": "Create Deco — przemysłowe dekoracje",
+        "match": "^(createdeco|create_deco)[-_ .]"
+      },
+      {
+        "project": "create-connected",
+        "label": "Create: Connected — zaawansowane mechanizmy",
+        "match": "^(create_connected|createconnected)[-_ .]",
+        "note": "Addon Create — testuj z Create 6.0.8"
+      },
+      {
+        "project": "copycats",
+        "label": "Create: Copycats+ — części do konstrukcji",
+        "match": "^(copycats|copycatsplus)[-_ .]",
+        "note": "Addon Create — testuj z Create 6.0.8"
+      },
+      {
+        "project": "create-slice-and-dice",
+        "label": "Create Slice & Dice — automatyczna kuchnia",
+        "match": "^(sliceanddice|slice_and_dice)[-_ .]",
+        "note": "Addon Create — testuj z Create 6.0.8"
+      },
+      {
+        "project": "create-jetpack",
+        "label": "Create Jetpack — latanie parowe",
+        "match": "^(createjetpack|create_jetpack)[-_ .]",
+        "note": "Addon Create — testuj z Create 6.0.8"
+      },
+      {
+        "project": "immersive-aircraft",
+        "label": "Immersive Aircraft — samoloty",
+        "match": "^(immersive_aircraft|immersiveaircraft)[-_ .]"
+      },
+      {
+        "project": "toms-storage",
+        "label": "Tom's Simple Storage — sieci magazynowe",
+        "match": "^(toms_storage|tomsstorage)[-_ .]"
+      },
+      {
+        "project": "iron-chests-restocked",
+        "label": "Iron Chests — skrzynie poziomowane",
+        "match": "^(ironchests|iron_chests)[-_ .]"
+      },
+      {
+        "project": "trash-cans",
+        "label": "Trash Cans — automatyczne usuwanie nadmiaru",
+        "match": "^(trashcans|trash_cans)[-_ .]"
+      },
+      {
+        "project": "endertanks",
+        "label": "Ender Tanks — bezprzewodowe ciecze",
+        "match": "^(endertanks|endertanks)[-_ .]"
+      }
+    ],
+    "wave-bosses": [
+      {
+        "project": "alexs-mobs",
+        "label": "Alex's Mobs — nowe stworzenia",
+        "match": "^alexsmobs[-_ .]"
+      },
+      {
+        "project": "mowzies-mobs",
+        "label": "Mowzie's Mobs — minibossowie i walki",
+        "match": "^(mowziesmobs|mowzies_mobs)[-_ .]"
+      },
+      {
+        "project": "born-in-chaos",
+        "label": "Born in Chaos — trudniejsze potwory",
+        "match": "^(Born_in_Chaos|borninchaos)[-_ .]"
+      },
+      {
+        "project": "mutant-monsters",
+        "label": "Mutant Monsters — potężniejsze wersje mobów",
+        "match": "^(mutantmonsters|mutant_monsters)[-_ .]"
+      },
+      {
+        "project": "the-graveyard",
+        "label": "The Graveyard — cmentarze i lochy",
+        "match": "^(graveyard|the_graveyard)[-_ .]"
+      },
+      {
+        "project": "guard-villagers",
+        "label": "Guard Villagers — obrona wiosek",
+        "match": "^(guardvillagers|guard_villagers)[-_ .]"
+      },
+      {
+        "project": "better-combat",
+        "label": "Better Combat — nowa mechanika walki",
+        "match": "^(bettercombat|better_combat)[-_ .]"
+      },
+      {
+        "project": "aquaculture",
+        "label": "Aquaculture 2 — rybołówstwo i ekosystem",
+        "match": "^(aquaculture|Aquaculture)[-_ .]"
+      }
+    ],
+    "wave-world": [
+      {
+        "project": "biomes-o-plenty",
+        "label": "Biomes O' Plenty — dodatkowe biomy",
+        "match": "^(BiomesOPlenty|biomesoplenty)[-_ .]"
+      },
+      {
+        "project": "regions-unexplored",
+        "label": "Regions Unexplored — bogate biomy i roślinność",
+        "match": "^(regions_unexplored|regionsunexplored)[-_ .]"
+      },
+      {
+        "project": "natures-compass",
+        "label": "Nature's Compass — lokalizator biomów",
+        "match": "^(NaturesCompass|natures_compass)[-_ .]"
+      },
+      {
+        "project": "explorers-compass",
+        "label": "Explorer's Compass — lokalizator struktur",
+        "match": "^(ExplorersCompass|explorers_compass)[-_ .]"
+      },
+      {
+        "project": "lootr",
+        "label": "Lootr — osobny loot w skrzyniach dla graczy",
+        "match": "^lootr[-_ .]"
+      },
+      {
+        "project": "waystones",
+        "label": "Waystones — sieć teleportacji",
+        "match": "^waystones[-_ .]"
+      },
+      {
+        "project": "comforts",
+        "label": "Comforts — śpiwory i hamaki",
+        "match": "^comforts[-_ .]"
+      },
+      {
+        "project": "travelersbackpack",
+        "label": "Traveler's Backpack — wyprawy z plecakiem",
+        "match": "^(travelersbackpack|travelers_backpack)[-_ .]"
+      }
+    ],
+    "wave-quality": [
+      {
+        "project": "appleskin",
+        "label": "AppleSkin — informacje o jedzeniu",
+        "match": "^appleskin[-_ .]"
+      },
+      {
+        "project": "mouse-tweaks",
+        "label": "Mouse Tweaks — szybsza obsługa ekwipunku",
+        "match": "^MouseTweaks[-_ .]"
+      },
+      {
+        "project": "controlling",
+        "label": "Controlling — wyszukiwarka klawiszy",
+        "match": "^Controlling[-_ .]"
+      },
+      {
+        "project": "searchables",
+        "label": "Searchables — wyszukiwarka dla Controlling",
+        "match": "^Searchables[-_ .]"
+      },
+      {
+        "project": "better-advancements",
+        "label": "Better Advancements — przejrzyste osiągnięcia",
+        "match": "^BetterAdvancements[-_ .]"
+      },
+      {
+        "project": "ftb-chunks",
+        "label": "FTB Chunks — mapa i ochrona działek",
+        "match": "^ftb-chunks[-_ .]"
+      },
+      {
+        "project": "ftb-ultimine",
+        "label": "FTB Ultimine — zbiorowe kopanie",
+        "match": "^ftb-ultimine[-_ .]"
+      },
+      {
+        "project": "polymorph",
+        "label": "Polymorph — wybór konfliktujących receptur",
+        "match": "^polymorph[-_ .]"
+      },
+      {
+        "project": "crafting-tweaks",
+        "label": "Crafting Tweaks — wygodniejsze receptury",
+        "match": "^craftingtweaks[-_ .]"
       }
     ]
   }
