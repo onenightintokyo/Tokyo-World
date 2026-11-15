@@ -11,6 +11,7 @@ internal sealed class LauncherSettings
     public string OfflineNickname { get; set; } = "TokyoPlayer";
     public bool UseMicrosoft { get; set; } = true;
     public string PremiumNickname { get; set; } = "";
+    public bool FirstRunCompleted { get; set; } = false;
     // Friends can use a separate PUBLIC read-only distribution repository,
     // while the owner's original Tokyo-World source remains private.
     public string Repository { get; set; } = "onenightintokyo/Tokyo-World";
