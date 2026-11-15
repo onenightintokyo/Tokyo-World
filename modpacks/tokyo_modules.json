@@ -3,7 +3,7 @@
   "name": "Tokyo World — Technology Expansion",
   "minecraft": "1.20.1",
   "loader": "forge",
-  "note": "Modules are optional, install in phases on a backed-up instance. Factory / Automation / Resources contain 10 additional Forge 1.20.1 projects; compatibility is not verified in the complete Tokyo World client. Preserve exact existing versions. Pinned Create-specific addons target Create 6.0.8.",
+  "note": "MEGA 2026 expansion candidate set: 66 projects, Modrinth-sourced. Installer must resolve exact Forge 1.20.1 versions and required dependencies at install time. Some candidates are unverified or may not exist for this loader and must be skipped and reported, never installed with incorrect loader. Create add-ons require manual compatibility review for Create 6.0.8. Existing mods/files/worlds must not be replaced.",
   "profiles": {
     "tech-core": [
       {
@@ -177,6 +177,348 @@
         "project": "thermals-delight",
         "label": "Thermal's Delight — integracja jedzenia",
         "match": "^thermals[_-]delight[-_].*\\.jar$"
+      }
+    ],
+    "mega-technology": [
+      {
+        "project": "cc-tweaked",
+        "label": "CC: Tweaked — programowalne komputery i roboty",
+        "match": "^(cc[_ -]?tweaked|cc-tweaked)[-_ .]"
+      },
+      {
+        "project": "refined-storage",
+        "label": "Refined Storage — druga cyfrowa sieć magazynowa",
+        "match": "^refinedstorage[-_ .]"
+      },
+      {
+        "project": "mega",
+        "label": "MEGA Cells — wielkie dyski ME",
+        "match": "^(megacells|mega_cells|mega[-_]cells)[-_ .]"
+      },
+      {
+        "project": "advancedae",
+        "label": "Advanced AE — rozbudowana automatyzacja ME",
+        "match": "^(AdvancedAE|advancedae)[-_ .]"
+      },
+      {
+        "project": "super-factory-manager",
+        "label": "Super Factory Manager — programowanie fabryk",
+        "match": "^(SuperFactoryManager|super[_-]factory[_-]manager)[-_ .]"
+      },
+      {
+        "project": "iron-furnaces",
+        "label": "Iron Furnaces — piece wielopoziomowe",
+        "match": "^(ironfurnaces|iron[-_]furnaces)[-_ .]"
+      },
+      {
+        "project": "iron-jetpacks",
+        "label": "Iron Jetpacks — plecaki odrzutowe",
+        "match": "^(ironjetpacks|iron[-_]jetpacks)[-_ .]"
+      },
+      {
+        "project": "integrated-tunnels",
+        "label": "Integrated Tunnels — logistyka przez sieci",
+        "match": "^integratedtunnels[-_ .]"
+      },
+      {
+        "project": "rftools-storage",
+        "label": "RFTools Storage — cyfrowe magazyny",
+        "match": "^rftoolsstorage[-_ .]"
+      },
+      {
+        "project": "rftools-control",
+        "label": "RFTools Control — programowalne automaty",
+        "match": "^rftoolscontrol[-_ .]"
+      },
+      {
+        "project": "botany-pots",
+        "label": "Botany Pots — kompaktowe farmy",
+        "match": "^botanypots[-_ .]"
+      },
+      {
+        "project": "botany-trees",
+        "label": "Botany Trees — farmy drzew",
+        "match": "^botanytrees[-_ .]"
+      },
+      {
+        "project": "compact-machines",
+        "label": "Compact Machines — wielomaszynowe pokoje",
+        "match": "^(compactmachines|compact[-_]machines)[-_ .]"
+      },
+      {
+        "project": "entangled",
+        "label": "Entangled — bezprzewodowe linki do bloków",
+        "match": "^entangled[-_ .]"
+      },
+      {
+        "project": "building-gadgets",
+        "label": "Building Gadgets — narzędzia do budowy baz",
+        "match": "^(buildinggadgets|building[-_]gadgets)[-_ .]"
+      },
+      {
+        "project": "mining-gadgets",
+        "label": "Mining Gadgets — techniczne kopanie",
+        "match": "^(mininggadgets|mining[-_]gadgets)[-_ .]"
+      },
+      {
+        "project": "mob-grinding-utils",
+        "label": "Mob Grinding Utils — przemysłowe farmy mobów",
+        "match": "^(mobgrindingutils|mob[-_]grinding[-_]utils)[-_ .]"
+      },
+      {
+        "project": "flux-networks",
+        "label": "Flux Networks — bezprzewodowe FE",
+        "match": "^(fluxnetworks|flux[-_]networks)[-_ .]"
+      },
+      {
+        "project": "laserio",
+        "label": "LaserIO — laserowa logistyka fabryk",
+        "match": "^(laserio|laser[_-]io)[-_ .]"
+      },
+      {
+        "project": "applied-botanics",
+        "label": "Applied Botanics — sieci ME i mana",
+        "match": "^(appliedbotanics|applied[-_]botanics)[-_ .]"
+      },
+      {
+        "project": "ars-energistique",
+        "label": "Ars Énergistique — sieci ME i magia Source",
+        "match": "^(arsenergistique|ars[-_]energistique)[-_ .]"
+      },
+      {
+        "project": "extendedae-plus",
+        "label": "ExtendedAE Plus — maszyny ME i superautocrafting",
+        "match": "^(extendedaeplus|extendedae[-_]plus)[-_ .]"
+      },
+      {
+        "project": "ae2wtlib",
+        "label": "AE2 Wireless Terminals Library",
+        "match": "^(ae2wtlib|ae2[-_]wtlib)[-_ .]"
+      },
+      {
+        "project": "createaddition",
+        "label": "Create Crafts & Additions — prąd z obrotów",
+        "match": "^(createaddition|create[-_]crafts[-_]?additions)[-_ .]",
+        "note": "Addon Create: wymaga zgodności z Create 6.0.8"
+      },
+      {
+        "project": "create-handcrafted",
+        "label": "Create: Handcrafted — alternatywna obróbka",
+        "match": "^create[-_]handcrafted[-_ .]",
+        "note": "Sprawdzone wsparcie Create 6.0.8"
+      },
+      {
+        "project": "create-ore-excavation",
+        "label": "Create Ore Excavation — przemysłowe wydobycie",
+        "match": "^(createoreexcavation|create[-_]ore[-_]excavation)[-_ .]",
+        "note": "Addon Create: kontroluj zgodność z Create 6"
+      },
+      {
+        "project": "create-new-age",
+        "label": "Create: New Age — alternatywna energetyka",
+        "match": "^(create[-_]new[-_]age|create_new_age)[-_ .]",
+        "note": "Addon Create: kontroluj zgodność z Create 6"
+      }
+    ],
+    "mega-magic": [
+      {
+        "project": "occultism",
+        "label": "Occultism — duchy, wymiar wydobywczy i magazyny",
+        "match": "^occultism[-_ .]"
+      },
+      {
+        "project": "blood-magic",
+        "label": "Blood Magic — rytuały i alchemia",
+        "match": "^(bloodmagic|blood[-_]magic)[-_ .]"
+      },
+      {
+        "project": "irons-spells-n-spellbooks",
+        "label": "Iron's Spells 'n Spellbooks — bossowie i magia",
+        "match": "^(irons_spellbooks|irons[-_ ]spells)[-_ .]"
+      },
+      {
+        "project": "forbidden-arcanus",
+        "label": "Forbidden & Arcanus — artefakty i rytuały",
+        "match": "^(forbidden_arcanus|forbidden[-_]arcanus)[-_ .]"
+      },
+      {
+        "project": "hexerei",
+        "label": "Hexerei — wiedźmy i alchemia",
+        "match": "^hexerei[-_ .]"
+      },
+      {
+        "project": "apotheosis",
+        "label": "Apotheosis — rozbudowany loot i zaklinanie",
+        "match": "^Apotheosis[-_ .]"
+      },
+      {
+        "project": "artifacts",
+        "label": "Artifacts — rzadkie przedmioty ze struktur",
+        "match": "^artifacts[-_ .]"
+      },
+      {
+        "project": "reliquary-reincarnations",
+        "label": "Reliquary — magiczne narzędzia",
+        "match": "^(reliquary|xreliquary)[-_ .]"
+      }
+    ],
+    "mega-adventure": [
+      {
+        "project": "aether",
+        "label": "The Aether — wymiar, lochy i bossowie",
+        "match": "^(aether|the[-_]aether)[-_ .]"
+      },
+      {
+        "project": "blue-skies",
+        "label": "Blue Skies — dwa wymiary i bossowie",
+        "match": "^(blue[-_]skies|blueskies)[-_ .]"
+      },
+      {
+        "project": "deeperdarker",
+        "label": "Deeper and Darker — wymiar Otherside",
+        "match": "^(deeperdarker|deeper[-_]and[-_]darker)[-_ .]"
+      },
+      {
+        "project": "the-undergarden",
+        "label": "The Undergarden — mroczny wymiar",
+        "match": "^(undergarden|the[-_]undergarden)[-_ .]"
+      },
+      {
+        "project": "twilightforest",
+        "label": "Twilight Forest — wielka przygoda z bossami",
+        "match": "^(twilightforest|twilight[-_]forest)[-_ .]"
+      },
+      {
+        "project": "when-dungeons-arise",
+        "label": "When Dungeons Arise — wielkie lochy",
+        "match": "^(DungeonsArise|when[-_]dungeons[-_]arise)[-_ .]"
+      },
+      {
+        "project": "dungeons-plus",
+        "label": "Dungeons Plus — dodatkowe dungeony",
+        "match": "^(dungeonsplus|dungeons\\+|dungeons[-_]plus)[-_ .]"
+      },
+      {
+        "project": "dungeoncrawl",
+        "label": "Dungeon Crawl — rozbudowane podziemia",
+        "match": "^(dungeoncrawl|dungeon[-_]crawl)[-_ .]"
+      },
+      {
+        "project": "repurposed-structures",
+        "label": "Repurposed Structures — więcej lokacji",
+        "match": "^(repurposed_structures|repurposed[-_]structures)[-_ .]"
+      },
+      {
+        "project": "valhelsia-structures",
+        "label": "Valhelsia Structures — nowe lochy i ruiny",
+        "match": "^valhelsia_structures[-_ .]"
+      },
+      {
+        "project": "yungs-better-mineshafts",
+        "label": "YUNG's Better Mineshafts",
+        "match": "^YungsBetterMineshafts[-_ .]"
+      },
+      {
+        "project": "yungs-better-nether-fortresses",
+        "label": "YUNG's Better Nether Fortresses",
+        "match": "^YungsBetterNetherFortresses[-_ .]"
+      },
+      {
+        "project": "yungs-better-ocean-monuments",
+        "label": "YUNG's Better Ocean Monuments",
+        "match": "^YungsBetterOceanMonuments[-_ .]"
+      },
+      {
+        "project": "yungs-better-desert-temples",
+        "label": "YUNG's Better Desert Temples",
+        "match": "^YungsBetterDesertTemples[-_ .]"
+      },
+      {
+        "project": "yungs-better-jungle-temples",
+        "label": "YUNG's Better Jungle Temples",
+        "match": "^YungsBetterJungleTemples[-_ .]"
+      },
+      {
+        "project": "yungs-better-witch-huts",
+        "label": "YUNG's Better Witch Huts",
+        "match": "^YungsBetterWitchHuts[-_ .]"
+      },
+      {
+        "project": "yungs-bridges",
+        "label": "YUNG's Bridges",
+        "match": "^YungsBridges[-_ .]"
+      },
+      {
+        "project": "yungs-extras",
+        "label": "YUNG's Extras",
+        "match": "^YungsExtras[-_ .]"
+      }
+    ],
+    "mega-building": [
+      {
+        "project": "chipped",
+        "label": "Chipped — tysiące dekoracyjnych bloków",
+        "match": "^chipped[-_ .]"
+      },
+      {
+        "project": "rechiseled",
+        "label": "Rechiseled — warianty bloków",
+        "match": "^rechiseled[-_ .]"
+      },
+      {
+        "project": "framedblocks",
+        "label": "FramedBlocks — konstrukcje i kształty",
+        "match": "^framedblocks[-_ .]"
+      },
+      {
+        "project": "handcrafted",
+        "label": "Handcrafted — meble i dekoracje",
+        "match": "^handcrafted[-_ .]"
+      },
+      {
+        "project": "decorative-blocks",
+        "label": "Decorative Blocks — elementy budowlane",
+        "match": "^(decorativeblocks|decorative[-_]blocks)[-_ .]"
+      },
+      {
+        "project": "mcw-bridges",
+        "label": "Macaw's Bridges",
+        "match": "^(mcw[-_]bridges|macaws[-_]bridges)[-_ .]"
+      },
+      {
+        "project": "mcw-furniture",
+        "label": "Macaw's Furniture",
+        "match": "^(mcw[-_]furniture|macaws[-_]furniture)[-_ .]"
+      },
+      {
+        "project": "mcw-doors",
+        "label": "Macaw's Doors",
+        "match": "^(mcw[-_]doors|macaws[-_]doors)[-_ .]"
+      },
+      {
+        "project": "mcw-roofs",
+        "label": "Macaw's Roofs",
+        "match": "^(mcw[-_]roofs|macaws[-_]roofs)[-_ .]"
+      },
+      {
+        "project": "mcw-windows",
+        "label": "Macaw's Windows",
+        "match": "^(mcw[-_]windows|macaws[-_]windows)[-_ .]"
+      },
+      {
+        "project": "farmers-respite",
+        "label": "Farmer's Respite — dodatkowe rośliny i herbaty",
+        "match": "^(farmersrespite|farmers[-_]respite)[-_ .]"
+      },
+      {
+        "project": "cooking-for-blockheads",
+        "label": "Cooking for Blockheads — automatyczna kuchnia",
+        "match": "^(cookingforblockheads|cooking[-_]for[-_]blockheads)[-_ .]"
+      },
+      {
+        "project": "delightful",
+        "label": "Delightful — rozwinięcie Farmer's Delight",
+        "match": "^delightful[-_ .]"
       }
     ]
   }
