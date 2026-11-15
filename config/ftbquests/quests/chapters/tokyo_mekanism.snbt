@@ -39,7 +39,7 @@
 		{
 			id: "A130000000000012"
 			title: "Wzbogacony Redstone"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Wzbogacony Redstone”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Wzbogacony Redstone”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "mekanism:enriched_redstone"
@@ -58,7 +58,7 @@
 		{
 			id: "A130000000000013"
 			title: "Podstawowe obwody"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Podstawowe obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Podstawowe obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mekanism:basic_control_circuit"
@@ -77,7 +77,7 @@
 		{
 			id: "A130000000000014"
 			title: "Stalowa infrastruktura"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Stalowa infrastruktura”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Stalowa infrastruktura”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "mekanism:steel_casing"
@@ -96,7 +96,7 @@
 		{
 			id: "A130000000000015"
 			title: "Komora wzbogacania"
-			description: ["Wcześniej udało ci się już zamknąć temat „Podstawowe obwody”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Komora wzbogacania”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Wcześniej zamknąłeś już sprawę „Podstawowe obwody”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Komora wzbogacania”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "mekanism:enrichment_chamber"
@@ -134,7 +134,7 @@
 		{
 			id: "A130000000000017"
 			title: "Szybsza fabryka"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Szybsza fabryka”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Szybsza fabryka”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 8.0d
 			y: 16.0d
 			icon: "mekanism:basic_crushing_factory"

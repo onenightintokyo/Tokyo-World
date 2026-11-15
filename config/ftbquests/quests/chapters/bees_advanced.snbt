@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000000B2"
 			title: "Gniazdo trzmieli"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Gniazdo trzmieli”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Gniazdo trzmieli”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 4.0d
 			icon: "productivebees:bumble_bee_nest"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000000B3"
 			title: "Łapacz pszczół"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Łapacz pszczół”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Łapacz pszczół”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 4.0d
 			icon: "productivebees:catcher"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000000B4"
 			title: "Pasieka bambusowa"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Pasieka bambusowa”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Pasieka bambusowa”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 8.0d
 			icon: "productivebees:bamboo_hive"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000000B5"
 			title: "Wirówka miodowa"
-			description: ["Wcześniej udało ci się już zamknąć temat „Łapacz pszczół”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Wirówka miodowa”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Wcześniej zamknąłeś już sprawę „Łapacz pszczół”. Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Wirówka miodowa”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 8.0d
 			icon: "productivebees:centrifuge"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000000B7"
 			title: "Rozlewnia miodu"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Rozlewnia miodu”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Rozlewnia miodu”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 16.0d
 			icon: "productivebees:bottler"
@@ -87,7 +87,7 @@
 		{
 			id: "A1300000000000B8"
 			title: "Rozmnażanie pszczół"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Rozmnażanie pszczół”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Rozmnażanie pszczół”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 16.0d
 			icon: "productivebees:breeding_chamber"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000000B9"
 			title: "Wirówka podgrzewana"
-			description: ["Wcześniej udało ci się już zamknąć temat „Rozlewnia miodu”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Wirówka podgrzewana”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Wcześniej zamknąłeś już sprawę „Rozlewnia miodu”. Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Wirówka podgrzewana”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 20.0d
 			icon: "productivebees:heated_centrifuge"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000000BA"
 			title: "Energia z miodu"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Energia z miodu”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Energia z miodu”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 20.0d
 			icon: "productivebees:honey_generator"

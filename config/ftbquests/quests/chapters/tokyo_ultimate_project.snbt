@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000001F8"
 			title: "Magazyny produkcyjne"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Magazyny produkcyjne”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
+			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Magazyny produkcyjne”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:hopper"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000001F9"
 			title: "Ramy technologiczne"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Ramy technologiczne”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
+			description: ["Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Ramy technologiczne”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mekanism:steel_casing"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000001FA"
 			title: "Precyzja Create"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Precyzja Create”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
+			description: ["Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Precyzja Create”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
 			y: 8.0d
 			icon: "create:precision_mechanism"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000001FB"
 			title: "Kontrolery AE2"
-			description: ["Wcześniej udało ci się już zamknąć temat „Ramy technologiczne”. Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Kontrolery AE2”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
+			description: ["Wcześniej zamknąłeś już sprawę „Ramy technologiczne”. Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Kontrolery AE2”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
 			y: 8.0d
 			icon: "ae2:controller"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000001FC"
 			title: "Procesory najwyższej klasy"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Procesory najwyższej klasy”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
+			description: ["Tu nie wystarczy pojedyncze urządzenie. Cała ekipa musi wykonać swoją część pracy. Zapisz w planie „Procesory najwyższej klasy”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 1.0d
 			y: 12.0d
 			icon: "mekanism:ultimate_control_circuit"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000001FD"
 			title: "Zasobniki energii"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Zasobniki energii”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
+			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Zasobniki energii”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 15.0d
 			y: 12.0d
 			icon: "mekanism:ultimate_energy_cube"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000001FF"
 			title: "Automatyzacja procesów"
-			description: ["Wcześniej udało ci się już zamknąć temat „Reaktory Powah”. Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Automatyzacja procesów”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
+			description: ["Wcześniej zamknąłeś już sprawę „Reaktory Powah”. Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Automatyzacja procesów”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 1.0d
 			y: 20.0d
 			icon: "ae2:pattern_provider"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000200"
 			title: "Infrastruktura EnderIO"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Infrastruktura EnderIO”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
+			description: ["Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Infrastruktura EnderIO”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 15.0d
 			y: 20.0d
 			icon: "enderio:alloy_smelter"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000201"
 			title: "Draconium"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Draconium”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
+			description: ["Tu nie wystarczy pojedyncze urządzenie. Cała ekipa musi wykonać swoją część pracy. Zapisz w planie „Draconium”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 1.0d
 			y: 24.0d
 			icon: "draconicevolution:draconium_ingot"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000202"
 			title: "Energia drakońska"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Energia drakońska”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
+			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Energia drakońska”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 15.0d
 			y: 24.0d
 			icon: "draconicevolution:draconic_energy_core"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000203"
 			title: "Maszyny chemiczne"
-			description: ["Wcześniej udało ci się już zamknąć temat „Draconium”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Maszyny chemiczne”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
+			description: ["Wcześniej zamknąłeś już sprawę „Draconium”. Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Maszyny chemiczne”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
 			y: 28.0d
 			icon: "mekanism:chemical_crystallizer"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000204"
 			title: "Fabryka agrarna"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Fabryka agrarna”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
+			description: ["Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Fabryka agrarna”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
 			y: 28.0d
 			icon: "industrialforegoing:plant_gatherer"

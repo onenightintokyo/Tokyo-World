@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000000A2"
 			title: "Kryształy Prosperity"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Kryształy Prosperity”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Kryształy Prosperity”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 4.0d
 			icon: "mysticalagriculture:prosperity_gemstone"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000000A3"
 			title: "Kryształ infuzji"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Kryształ infuzji”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Kryształ infuzji”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mysticalagriculture:infusion_crystal"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000000A4"
 			title: "Pierwsze podłoże esencji"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Pierwsze podłoże esencji”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Pierwsze podłoże esencji”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 8.0d
 			icon: "mysticalagriculture:inferium_farmland"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000000A5"
 			title: "Ulepszone podłoże esencji"
-			description: ["Wcześniej udało ci się już zamknąć temat „Kryształ infuzji”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Ulepszone podłoże esencji”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Wcześniej zamknąłeś już sprawę „Kryształ infuzji”. Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Ulepszone podłoże esencji”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 8.0d
 			icon: "mysticalagriculture:prudentium_farmland"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000000A6"
 			title: "Ołtarz infuzji"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Ołtarz infuzji”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Ołtarz infuzji”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 12.0d
 			icon: "mysticalagriculture:infusion_altar"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000000A7"
 			title: "Piedestały infuzji"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Piedestały infuzji”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Piedestały infuzji”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 12.0d
 			icon: "mysticalagriculture:infusion_pedestal"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000000A9"
 			title: "Przerób nasion"
-			description: ["Wcześniej udało ci się już zamknąć temat „Naczynie esencji”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Przerób nasion”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Wcześniej zamknąłeś już sprawę „Naczynie esencji”. Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Przerób nasion”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 20.0d
 			icon: "mysticalagriculture:seed_reprocessor"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000000AA"
 			title: "Żniwiarz mistyczny"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Żniwiarz mistyczny”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Żniwiarz mistyczny”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 20.0d
 			icon: "mysticalagriculture:harvester"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000000AB"
 			title: "Esencja Tertium"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Esencja Tertium”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Esencja Tertium”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 24.0d
 			icon: "mysticalagriculture:tertium_essence"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000000AC"
 			title: "Esencja Imperium"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Esencja Imperium”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Esencja Imperium”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 24.0d
 			icon: "mysticalagriculture:imperium_essence"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000000AD"
 			title: "Esencja Supremium"
-			description: ["Wcześniej udało ci się już zamknąć temat „Esencja Tertium”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Esencja Supremium”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Wcześniej zamknąłeś już sprawę „Esencja Tertium”. Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Esencja Supremium”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 28.0d
 			icon: "mysticalagriculture:supremium_essence"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000000AE"
 			title: "Supremium farmland"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Supremium farmland”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Supremium farmland”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 28.0d
 			icon: "mysticalagriculture:supremium_farmland"

@@ -39,7 +39,7 @@
 		{
 			id: "A13000000000001A"
 			title: "Warzywniak"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Warzywniak”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
+			description: ["W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać. Warto teraz pomyśleć o „Warzywniak”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:carrot"
@@ -58,7 +58,7 @@
 		{
 			id: "A13000000000001B"
 			title: "Automatyczny odbiór"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Automatyczny odbiór”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
+			description: ["Na początku każda zdobycz może zdecydować, czy przetrwasz kolejną noc. Zapisz w planie „Automatyczny odbiór”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
 			x: 15.0d
 			y: 4.0d
 			icon: "minecraft:hopper"
@@ -96,7 +96,7 @@
 		{
 			id: "A13000000000001D"
 			title: "Magiczna uprawa"
-			description: ["Wcześniej udało ci się już zamknąć temat „Gotowanie w dużej skali”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Magiczna uprawa”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
+			description: ["Wcześniej zamknąłeś już sprawę „Gotowanie w dużej skali”. Zanim ruszysz dalej, doprowadź do porządku swoje najbliższe otoczenie. W notatkach pojawia się „Magiczna uprawa”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 8.0d
 			y: 12.0d
 			icon: "mysticalagriculture:inferium_essence"

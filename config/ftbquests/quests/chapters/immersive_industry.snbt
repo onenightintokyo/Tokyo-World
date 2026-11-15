@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000046"
 			title: "Produkcja stali"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Produkcja stali”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Produkcja stali”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "immersiveengineering:ingot_steel"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000047"
 			title: "Warsztat inżyniera"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Warsztat inżyniera”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Warsztat inżyniera”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "immersiveengineering:workbench"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000048"
 			title: "Przewody miedziane"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Przewody miedziane”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Przewody miedziane”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "immersiveengineering:wirecoil_copper"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000049"
 			title: "Złącza niskiego napięcia"
-			description: ["Wcześniej udało ci się już zamknąć temat „Warsztat inżyniera”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Złącza niskiego napięcia”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Wcześniej zamknąłeś już sprawę „Warsztat inżyniera”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Złącza niskiego napięcia”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "immersiveengineering:connector_lv"
@@ -67,7 +67,7 @@
 		{
 			id: "A13000000000004A"
 			title: "Akumulator LV"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Akumulator LV”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Akumulator LV”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 12.0d
 			icon: "immersiveengineering:capacitor_lv"
@@ -78,7 +78,7 @@
 		{
 			id: "A13000000000004B"
 			title: "Akumulator MV"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Akumulator MV”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Akumulator MV”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "immersiveengineering:capacitor_mv"
@@ -100,7 +100,7 @@
 		{
 			id: "A13000000000004D"
 			title: "Przemysłowy rurociąg"
-			description: ["Wcześniej udało ci się już zamknąć temat „Akumulator HV”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Przemysłowy rurociąg”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Wcześniej zamknąłeś już sprawę „Akumulator HV”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Przemysłowy rurociąg”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 20.0d
 			icon: "immersiveengineering:fluid_pipe"
@@ -111,7 +111,7 @@
 		{
 			id: "A13000000000004E"
 			title: "Pompa przemysłowa"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Pompa przemysłowa”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Pompa przemysłowa”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "immersiveengineering:fluid_pump"
@@ -122,7 +122,7 @@
 		{
 			id: "A13000000000004F"
 			title: "Prasa ciężka"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Prasa ciężka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Prasa ciężka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 24.0d
 			icon: "immersiveengineering:metal_press"
@@ -133,7 +133,7 @@
 		{
 			id: "A130000000000050"
 			title: "Kruszarka wieloblokowa"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Kruszarka wieloblokowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Kruszarka wieloblokowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 24.0d
 			icon: "immersiveengineering:crusher"
@@ -144,7 +144,7 @@
 		{
 			id: "A130000000000051"
 			title: "Rafineria"
-			description: ["Wcześniej udało ci się już zamknąć temat „Prasa ciężka”. Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Rafineria”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Wcześniej zamknąłeś już sprawę „Prasa ciężka”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Rafineria”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "immersiveengineering:refinery"
@@ -155,7 +155,7 @@
 		{
 			id: "A130000000000052"
 			title: "Generator Diesla"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Generator Diesla”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Generator Diesla”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 28.0d
 			icon: "immersiveengineering:diesel_generator"

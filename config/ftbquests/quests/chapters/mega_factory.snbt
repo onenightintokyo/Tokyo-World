@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000148"
 			title: "Wały produkcyjne"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Wały produkcyjne”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Wały produkcyjne”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
 			y: 4.0d
 			icon: "create:shaft"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000149"
 			title: "Napęd mechaniczny"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Napęd mechaniczny”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Napęd mechaniczny”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
 			y: 4.0d
 			icon: "create:water_wheel"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000014A"
 			title: "Prasy przemysłowe"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Prasy przemysłowe”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Prasy przemysłowe”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
 			y: 8.0d
 			icon: "create:mechanical_press"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000014B"
 			title: "Ramiona robotyczne"
-			description: ["Wcześniej udało ci się już zamknąć temat „Napęd mechaniczny”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Ramiona robotyczne”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Wcześniej zamknąłeś już sprawę „Napęd mechaniczny”. W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Ramiona robotyczne”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
 			y: 8.0d
 			icon: "create:deployer"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000014C"
 			title: "Taśmociąg główny"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Taśmociąg główny”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Taśmociąg główny”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
 			y: 12.0d
 			icon: "create:belt_connector"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000014D"
 			title: "Bufory materiałowe"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Bufory materiałowe”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Bufory materiałowe”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
 			y: 12.0d
 			icon: "minecraft:hopper"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000014F"
 			title: "Kruszenie na skalę"
-			description: ["Wcześniej udało ci się już zamknąć temat „Sortery produkcyjne”. Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Kruszenie na skalę”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Wcześniej zamknąłeś już sprawę „Sortery produkcyjne”. Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Kruszenie na skalę”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
 			y: 20.0d
 			icon: "mekanism:crusher"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000150"
 			title: "Automatyczne mieszanie"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Automatyczne mieszanie”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Automatyczne mieszanie”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
 			y: 20.0d
 			icon: "create:mechanical_mixer"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000151"
 			title: "Fabryczne obudowy"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Fabryczne obudowy”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Fabryczne obudowy”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
 			y: 24.0d
 			icon: "mekanism:steel_casing"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000152"
 			title: "Montaż precyzyjny"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Montaż precyzyjny”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Montaż precyzyjny”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
 			y: 24.0d
 			icon: "create:precision_mechanism"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000153"
 			title: "Crafting modułowy"
-			description: ["Wcześniej udało ci się już zamknąć temat „Fabryczne obudowy”. Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Crafting modułowy”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Wcześniej zamknąłeś już sprawę „Fabryczne obudowy”. Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Crafting modułowy”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
 			y: 28.0d
 			icon: "create:mechanical_crafter"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000154"
 			title: "Zaawansowany sorter"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Zaawansowany sorter”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Zaawansowany sorter”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
 			y: 28.0d
 			icon: "mekanism:logistical_sorter"

@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000082"
 			title: "Rozpraszacz many"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Rozpraszacz many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Rozpraszacz many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 4.0d
 			icon: "botania:mana_spreader"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000083"
 			title: "Zbiornik many"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Zbiornik many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Zbiornik many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 4.0d
 			icon: "botania:mana_pool"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000084"
 			title: "Diament many"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Diament many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Diament many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "botania:mana_diamond"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000085"
 			title: "Stal many"
-			description: ["Wcześniej udało ci się już zamknąć temat „Zbiornik many”. Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Stal many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Wcześniej zamknąłeś już sprawę „Zbiornik many”. W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Stal many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 8.0d
 			icon: "botania:manasteel_ingot"
@@ -67,7 +67,7 @@
 		{
 			id: "A130000000000086"
 			title: "Ołtarz runiczny"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Ołtarz runiczny”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Ołtarz runiczny”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 12.0d
 			icon: "botania:runic_altar"
@@ -78,7 +78,7 @@
 		{
 			id: "A130000000000087"
 			title: "Płyta przemian"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Płyta przemian”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Płyta przemian”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "botania:terra_plate"
@@ -100,7 +100,7 @@
 		{
 			id: "A130000000000089"
 			title: "Pylon many"
-			description: ["Wcześniej udało ci się już zamknąć temat „Dystrybutor many”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Pylon many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Wcześniej zamknąłeś już sprawę „Dystrybutor many”. Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Pylon many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 20.0d
 			icon: "botania:mana_pylon"
@@ -111,7 +111,7 @@
 		{
 			id: "A13000000000008A"
 			title: "Elficki rozpraszacz"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Elficki rozpraszacz”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Elficki rozpraszacz”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "botania:elven_spreader"
@@ -122,7 +122,7 @@
 		{
 			id: "A13000000000008B"
 			title: "Mana i energia FE"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Mana i energia FE”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Mana i energia FE”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 24.0d
 			icon: "botania:mana_fluxfield"
@@ -133,7 +133,7 @@
 		{
 			id: "A13000000000008C"
 			title: "Magazyn Corporea"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Magazyn Corporea”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Magazyn Corporea”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 24.0d
 			icon: "botania:corporea_spark"
@@ -144,7 +144,7 @@
 		{
 			id: "A13000000000008D"
 			title: "Pylon Gai"
-			description: ["Wcześniej udało ci się już zamknąć temat „Mana i energia FE”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Pylon Gai”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["Wcześniej zamknąłeś już sprawę „Mana i energia FE”. Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Pylon Gai”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "botania:gaia_pylon"
@@ -155,7 +155,7 @@
 		{
 			id: "A13000000000008E"
 			title: "Terrasteel"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Terrasteel”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Terrasteel”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 28.0d
 			icon: "botania:terrasteel_ingot"

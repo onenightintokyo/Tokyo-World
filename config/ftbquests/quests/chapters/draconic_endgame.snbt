@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000134"
 			title: "Rafinacja draconium"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Rafinacja draconium”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
+			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Rafinacja draconium”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 1.0d
 			y: 4.0d
 			icon: "draconicevolution:draconium_ingot"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000135"
 			title: "Rdzenie draconium"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Rdzenie draconium”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
+			description: ["Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Rdzenie draconium”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 15.0d
 			y: 4.0d
 			icon: "draconicevolution:draconium_core"
@@ -43,7 +43,7 @@
 		{
 			id: "A130000000000136"
 			title: "Pierwsze iniektory"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Pierwsze iniektory”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
+			description: ["Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Pierwsze iniektory”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
 			y: 8.0d
 			icon: "draconicevolution:basic_crafting_injector"
@@ -54,7 +54,7 @@
 		{
 			id: "A130000000000137"
 			title: "Rdzen syntezy"
-			description: ["Wcześniej udało ci się już zamknąć temat „Rdzenie draconium”. Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Rdzen syntezy”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
+			description: ["Wcześniej zamknąłeś już sprawę „Rdzenie draconium”. Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Rdzen syntezy”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
 			y: 8.0d
 			icon: "draconicevolution:crafting_core"
@@ -76,7 +76,7 @@
 		{
 			id: "A130000000000139"
 			title: "Przebudzone draconium"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Przebudzone draconium”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
+			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Przebudzone draconium”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
 			y: 16.0d
 			icon: "draconicevolution:awakened_draconium_ingot"
@@ -87,7 +87,7 @@
 		{
 			id: "A13000000000013A"
 			title: "Przebudzony rdzen"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Przebudzony rdzen”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
+			description: ["Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Przebudzony rdzen”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
 			y: 16.0d
 			icon: "draconicevolution:awakened_core"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000013B"
 			title: "Iniektory wyzszej klasy"
-			description: ["Wcześniej udało ci się już zamknąć temat „Przebudzone draconium”. Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Iniektory wyzszej klasy”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
+			description: ["Wcześniej zamknąłeś już sprawę „Przebudzone draconium”. Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Iniektory wyzszej klasy”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 1.0d
 			y: 20.0d
 			icon: "draconicevolution:awakened_crafting_injector"
@@ -109,7 +109,7 @@
 		{
 			id: "A13000000000013C"
 			title: "Magazyn olbrzymiej mocy"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Magazyn olbrzymiej mocy”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
+			description: ["Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Magazyn olbrzymiej mocy”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 15.0d
 			y: 20.0d
 			icon: "draconicevolution:draconic_energy_core"

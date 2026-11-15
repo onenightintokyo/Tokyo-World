@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000001B8"
 			title: "Warzywa kuchenne"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Warzywa kuchenne”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Warzywa kuchenne”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:carrot"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000001B9"
 			title: "Nawóz dla pól"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Nawóz dla pól”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Nawóz dla pól”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 4.0d
 			icon: "minecraft:bone_meal"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000001BA"
 			title: "Lejki zbiorów"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Lejki zbiorów”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Lejki zbiorów”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 8.0d
 			icon: "minecraft:hopper"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000001BB"
 			title: "Ramy maszynowe"
-			description: ["Wcześniej udało ci się już zamknąć temat „Nawóz dla pól”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Ramy maszynowe”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Wcześniej zamknąłeś już sprawę „Nawóz dla pól”. Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Ramy maszynowe”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 8.0d
 			icon: "industrialforegoing:machine_frame_pity"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000001BC"
 			title: "Przetwarzanie lateksu"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Przetwarzanie lateksu”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Przetwarzanie lateksu”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 12.0d
 			icon: "industrialforegoing:latex_processing_unit"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000001BD"
 			title: "Tworzywa sztuczne"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Tworzywa sztuczne”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Tworzywa sztuczne”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 12.0d
 			icon: "industrialforegoing:plastic"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000001BF"
 			title: "Żniwiarki automatyczne"
-			description: ["Wcześniej udało ci się już zamknąć temat „Siewniki automatyczne”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Żniwiarki automatyczne”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Wcześniej zamknąłeś już sprawę „Siewniki automatyczne”. Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Żniwiarki automatyczne”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 20.0d
 			icon: "industrialforegoing:plant_gatherer"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000001C0"
 			title: "Farmland Inferium"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Farmland Inferium”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Farmland Inferium”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 20.0d
 			icon: "mysticalagriculture:inferium_farmland"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000001C1"
 			title: "Esencje Inferium"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Esencje Inferium”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Esencje Inferium”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 24.0d
 			icon: "mysticalagriculture:inferium_essence"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000001C2"
 			title: "Piedestały infuzji"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Piedestały infuzji”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Piedestały infuzji”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 24.0d
 			icon: "mysticalagriculture:infusion_pedestal"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000001C3"
 			title: "Ołtarze infuzji"
-			description: ["Wcześniej udało ci się już zamknąć temat „Esencje Inferium”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Ołtarze infuzji”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Wcześniej zamknąłeś już sprawę „Esencje Inferium”. Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Ołtarze infuzji”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 28.0d
 			icon: "mysticalagriculture:infusion_altar"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000001C4"
 			title: "Esencje Tertium"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Esencje Tertium”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Esencje Tertium”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 28.0d
 			icon: "mysticalagriculture:tertium_essence"

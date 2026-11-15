@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000168"
 			title: "Obudowy aparatury"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Obudowy aparatury”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Obudowy aparatury”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "mekanism:steel_casing"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000169"
 			title: "Układy sterujące"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Układy sterujące”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Układy sterujące”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mekanism:advanced_control_circuit"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000016A"
 			title: "Zaawansowany infuzor"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Zaawansowany infuzor”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Zaawansowany infuzor”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "mekanism:metallurgic_infuser"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000016B"
 			title: "Komora wzbogacania"
-			description: ["Wcześniej udało ci się już zamknąć temat „Układy sterujące”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Komora wzbogacania”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Wcześniej zamknąłeś już sprawę „Układy sterujące”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Komora wzbogacania”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "mekanism:enrichment_chamber"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000016C"
 			title: "Separator gazów"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Separator gazów”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Separator gazów”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 12.0d
 			icon: "mekanism:electrolytic_separator"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000016D"
 			title: "Utlenianie"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Utlenianie”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Utlenianie”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "mekanism:chemical_oxidizer"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000016F"
 			title: "Kompresja osmu"
-			description: ["Wcześniej udało ci się już zamknąć temat „Mieszanie chemiczne”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Kompresja osmu”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Wcześniej zamknąłeś już sprawę „Mieszanie chemiczne”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Kompresja osmu”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 20.0d
 			icon: "mekanism:osmium_compressor"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000170"
 			title: "Komora reakcji"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Komora reakcji”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Komora reakcji”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "mekanism:pressurized_reaction_chamber"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000171"
 			title: "Skraplanie gazów"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Skraplanie gazów”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Skraplanie gazów”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 24.0d
 			icon: "mekanism:rotary_condensentrator"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000172"
 			title: "Rozpuszczanie rud"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Rozpuszczanie rud”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Rozpuszczanie rud”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 24.0d
 			icon: "mekanism:chemical_dissolution_chamber"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000173"
 			title: "Krystalizacja"
-			description: ["Wcześniej udało ci się już zamknąć temat „Skraplanie gazów”. Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Krystalizacja”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Wcześniej zamknąłeś już sprawę „Skraplanie gazów”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Krystalizacja”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "mekanism:chemical_crystallizer"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000174"
 			title: "Magazyny surowców"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Magazyny surowców”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Magazyny surowców”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 28.0d
 			icon: "mekanism:basic_fluid_tank"

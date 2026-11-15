@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000178"
 			title: "Stal konstrukcyjna"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Stal konstrukcyjna”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Stal konstrukcyjna”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "immersiveengineering:ingot_steel"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000179"
 			title: "Warsztat obróbki"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Warsztat obróbki”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Warsztat obróbki”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "immersiveengineering:workbench"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000017A"
 			title: "Cewki wysokiego napięcia"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Cewki wysokiego napięcia”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Cewki wysokiego napięcia”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "immersiveengineering:capacitor_hv"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000017B"
 			title: "Kruszenie przemysłowe"
-			description: ["Wcześniej udało ci się już zamknąć temat „Warsztat obróbki”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Kruszenie przemysłowe”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Wcześniej zamknąłeś już sprawę „Warsztat obróbki”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Kruszenie przemysłowe”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "immersiveengineering:crusher"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000017C"
 			title: "Prasy hutnicze"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Prasy hutnicze”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Prasy hutnicze”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 12.0d
 			icon: "immersiveengineering:metal_press"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000017D"
 			title: "Kondensatory Ender IO"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Kondensatory Ender IO”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Kondensatory Ender IO”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "enderio:basic_capacitor"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000017F"
 			title: "Wytapiacz stopów"
-			description: ["Wcześniej udało ci się już zamknąć temat „Obudowy wielofunkcyjne”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Wytapiacz stopów”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Wcześniej zamknąłeś już sprawę „Obudowy wielofunkcyjne”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Wytapiacz stopów”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 20.0d
 			icon: "enderio:alloy_smelter"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000180"
 			title: "Młyny SAG"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Młyny SAG”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Młyny SAG”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "enderio:sag_mill"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000181"
 			title: "Stopy przewodzące"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Stopy przewodzące”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Stopy przewodzące”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 24.0d
 			icon: "enderio:conductive_alloy_ingot"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000182"
 			title: "Stopy energetyczne"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Stopy energetyczne”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Stopy energetyczne”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 24.0d
 			icon: "enderio:energetic_alloy_ingot"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000183"
 			title: "Stopy pulsujące"
-			description: ["Wcześniej udało ci się już zamknąć temat „Stopy przewodzące”. Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Stopy pulsujące”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Wcześniej zamknąłeś już sprawę „Stopy przewodzące”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Stopy pulsujące”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "enderio:vibrant_alloy_ingot"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000184"
 			title: "Elektrum techniczne"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Elektrum techniczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Elektrum techniczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 28.0d
 			icon: "thermal:electrum_ingot"

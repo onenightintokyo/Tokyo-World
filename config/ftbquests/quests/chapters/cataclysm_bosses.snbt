@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000140"
 			title: "Przygotuj zaopatrzenie"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Przygotuj zaopatrzenie”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
+			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Przygotuj zaopatrzenie”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:golden_apple"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000141"
 			title: "Ekipa na bossa"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Ekipa na bossa”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
+			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Ekipa na bossa”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
 			y: 4.0d
 			icon: "minecraft:netherite_ingot"
@@ -43,7 +43,7 @@
 		{
 			id: "A130000000000142"
 			title: "Starozytny metal"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Starozytny metal”. Nie wszystko, co świeci w ciemności, jest skarbem."]
+			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Starozytny metal”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
 			y: 8.0d
 			icon: "cataclysm:ancient_metal_ingot"
@@ -54,7 +54,7 @@
 		{
 			id: "A130000000000143"
 			title: "Trofeum silnego przeciwnika"
-			description: ["Wcześniej udało ci się już zamknąć temat „Ekipa na bossa”. Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Trofeum silnego przeciwnika”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
+			description: ["Wcześniej zamknąłeś już sprawę „Ekipa na bossa”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Trofeum silnego przeciwnika”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
 			y: 8.0d
 			icon: "minecraft:nether_star"
@@ -76,7 +76,7 @@
 		{
 			id: "A130000000000145"
 			title: "Legendarny smok"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Legendarny smok”. Nie wszystko, co świeci w ciemności, jest skarbem."]
+			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Legendarny smok”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 8.0d
 			y: 16.0d
 			icon: "minecraft:dragon_head"

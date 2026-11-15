@@ -38,7 +38,7 @@
 		{
 			id: "A130000000000002"
 			title: "Warsztat inżyniera"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Warsztat inżyniera”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
+			description: ["W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać. Warto teraz pomyśleć o „Warsztat inżyniera”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:crafting_table"
@@ -57,7 +57,7 @@
 		{
 			id: "A130000000000003"
 			title: "Kamienne fundamenty"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Kamienne fundamenty”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
+			description: ["Na początku każda zdobycz może zdecydować, czy przetrwasz kolejną noc. Zapisz w planie „Kamienne fundamenty”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
 			x: 15.0d
 			y: 4.0d
 			icon: "minecraft:cobblestone"
@@ -76,7 +76,7 @@
 		{
 			id: "A130000000000004"
 			title: "Pierwsze wytapianie"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Pierwsze wytapianie”. Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później."]
+			description: ["Warsztat powoli przestaje być prowizorką. Warto zatroszczyć się o kolejny szczegół. Tym razem liczy się „Pierwsze wytapianie”. Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później."]
 			x: 1.0d
 			y: 8.0d
 			icon: "minecraft:furnace"
@@ -95,7 +95,7 @@
 		{
 			id: "A130000000000005"
 			title: "Era żelaza"
-			description: ["Wcześniej udało ci się już zamknąć temat „Kamienne fundamenty”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Era żelaza”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
+			description: ["Wcześniej zamknąłeś już sprawę „Kamienne fundamenty”. Zanim ruszysz dalej, doprowadź do porządku swoje najbliższe otoczenie. W notatkach pojawia się „Era żelaza”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 15.0d
 			y: 8.0d
 			icon: "minecraft:iron_ingot"
@@ -133,7 +133,7 @@
 		{
 			id: "A130000000000007"
 			title: "Sygnał Redstone"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Sygnał Redstone”. Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później."]
+			description: ["W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać. Warto teraz pomyśleć o „Sygnał Redstone”. Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później."]
 			x: 8.0d
 			y: 16.0d
 			icon: "minecraft:redstone"

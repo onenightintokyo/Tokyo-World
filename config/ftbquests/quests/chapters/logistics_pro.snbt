@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000000EC"
 			title: "Rury płynowe"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Rury płynowe”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
+			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Rury płynowe”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 4.0d
 			icon: "pipez:fluid_pipe"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000000ED"
 			title: "Rury energetyczne"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Rury energetyczne”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
+			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Rury energetyczne”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 4.0d
 			icon: "pipez:energy_pipe"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000000EE"
 			title: "Rurociągi gazowe"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Rurociągi gazowe”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
+			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Rurociągi gazowe”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 8.0d
 			icon: "pipez:gas_pipe"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000000EF"
 			title: "Rury uniwersalne"
-			description: ["Wcześniej udało ci się już zamknąć temat „Rury energetyczne”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Rury uniwersalne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
+			description: ["Wcześniej zamknąłeś już sprawę „Rury energetyczne”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Rury uniwersalne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 8.0d
 			icon: "pipez:universal_pipe"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000000F0"
 			title: "Pierwszy upgrade rur"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Pierwszy upgrade rur”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
+			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Pierwszy upgrade rur”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 12.0d
 			icon: "pipez:basic_upgrade"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000000F1"
 			title: "Usprawnione rury"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Usprawnione rury”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
+			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Usprawnione rury”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 12.0d
 			icon: "pipez:improved_upgrade"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000000F3"
 			title: "Najwyższa przepustowość"
-			description: ["Wcześniej udało ci się już zamknąć temat „Szybka logistyka”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Najwyższa przepustowość”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
+			description: ["Wcześniej zamknąłeś już sprawę „Szybka logistyka”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Najwyższa przepustowość”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 20.0d
 			icon: "pipez:ultimate_upgrade"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000000F4"
 			title: "Złącze XNet"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Złącze XNet”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
+			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Złącze XNet”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 20.0d
 			icon: "xnet:connector"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000000F5"
 			title: "Kontroler XNet"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Kontroler XNet”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
+			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Kontroler XNet”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 24.0d
 			icon: "xnet:controller"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000000F6"
 			title: "Zaawansowane złącze"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Zaawansowane złącze”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
+			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Zaawansowane złącze”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 24.0d
 			icon: "xnet:advanced_connector"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000000F7"
 			title: "Magazyn kompresyjny"
-			description: ["Wcześniej udało ci się już zamknąć temat „Kontroler XNet”. Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Magazyn kompresyjny”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
+			description: ["Wcześniej zamknąłeś już sprawę „Kontroler XNet”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Magazyn kompresyjny”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 28.0d
 			icon: "functionalstorage:compacting_drawer"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000000F8"
 			title: "Rozszerzenie magazynu"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Rozszerzenie magazynu”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
+			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Rozszerzenie magazynu”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 28.0d
 			icon: "functionalstorage:controller_extension"

@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000001D8"
 			title: "Płyty poszycia"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Płyty poszycia”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
+			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Płyty poszycia”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
 			y: 4.0d
 			icon: "ad_astra:steel_plate"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000001D9"
 			title: "Prasy komponentów"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Prasy komponentów”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
+			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Prasy komponentów”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
 			y: 4.0d
 			icon: "ad_astra:compressor"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000001DA"
 			title: "Silniki rakietowe"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Silniki rakietowe”. Nie wszystko, co świeci w ciemności, jest skarbem."]
+			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Silniki rakietowe”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
 			y: 8.0d
 			icon: "ad_astra:steel_engine"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000001DB"
 			title: "Stateczniki"
-			description: ["Wcześniej udało ci się już zamknąć temat „Prasy komponentów”. Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Stateczniki”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
+			description: ["Wcześniej zamknąłeś już sprawę „Prasy komponentów”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Stateczniki”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
 			y: 8.0d
 			icon: "ad_astra:rocket_fin"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000001DC"
 			title: "Stoły NASA"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Stoły NASA”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
+			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Stoły NASA”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
 			y: 12.0d
 			icon: "ad_astra:nasa_workbench"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000001DD"
 			title: "Rafinerie paliwa"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Rafinerie paliwa”. Nie wszystko, co świeci w ciemności, jest skarbem."]
+			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Rafinerie paliwa”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
 			y: 12.0d
 			icon: "ad_astra:fuel_refinery"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000001DF"
 			title: "Urządzenia tlenowe"
-			description: ["Wcześniej udało ci się już zamknąć temat „Generator bazy”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Urządzenia tlenowe”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
+			description: ["Wcześniej zamknąłeś już sprawę „Generator bazy”. Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Urządzenia tlenowe”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
 			y: 20.0d
 			icon: "ad_astra:oxygen_gear"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000001E0"
 			title: "Ładowarki tlenu"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Ładowarki tlenu”. Nie wszystko, co świeci w ciemności, jest skarbem."]
+			description: ["Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Ładowarki tlenu”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
 			y: 20.0d
 			icon: "ad_astra:oxygen_loader"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000001E1"
 			title: "Dystrybutory tlenu"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Dystrybutory tlenu”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
+			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Dystrybutory tlenu”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
 			y: 24.0d
 			icon: "ad_astra:oxygen_distributor"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000001E2"
 			title: "Pompy wodne"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Pompy wodne”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
+			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Pompy wodne”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
 			y: 24.0d
 			icon: "ad_astra:water_pump"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000001E3"
 			title: "Kable infrastruktury"
-			description: ["Wcześniej udało ci się już zamknąć temat „Dystrybutory tlenu”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Kable infrastruktury”. Nie wszystko, co świeci w ciemności, jest skarbem."]
+			description: ["Wcześniej zamknąłeś już sprawę „Dystrybutory tlenu”. Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Kable infrastruktury”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
 			y: 28.0d
 			icon: "ad_astra:steel_cable"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000001E4"
 			title: "Panele solarne"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Panele solarne”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
+			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Panele solarne”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
 			y: 28.0d
 			icon: "ad_astra:solar_panel"

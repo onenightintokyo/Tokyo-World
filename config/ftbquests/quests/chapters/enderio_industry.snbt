@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000128"
 			title: "Podstawowy kondensator"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Podstawowy kondensator”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Podstawowy kondensator”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "enderio:basic_capacitor"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000129"
 			title: "Wielofunkcyjna obudowa"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Wielofunkcyjna obudowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Wielofunkcyjna obudowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "enderio:void_chassis"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000012A"
 			title: "Przemyslowy wytapiacz"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Przemyslowy wytapiacz”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Przemyslowy wytapiacz”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "enderio:alloy_smelter"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000012B"
 			title: "Mlyn SAG"
-			description: ["Wcześniej udało ci się już zamknąć temat „Wielofunkcyjna obudowa”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Mlyn SAG”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Wcześniej zamknąłeś już sprawę „Wielofunkcyjna obudowa”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Mlyn SAG”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "enderio:sag_mill"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000012D"
 			title: "Stop przewodzacy"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Stop przewodzacy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Stop przewodzacy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 16.0d
 			icon: "enderio:conductive_alloy_ingot"
@@ -87,7 +87,7 @@
 		{
 			id: "A13000000000012E"
 			title: "Stop energetyczny"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Stop energetyczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Stop energetyczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 16.0d
 			icon: "enderio:energetic_alloy_ingot"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000012F"
 			title: "Stop pulsujacy"
-			description: ["Wcześniej udało ci się już zamknąć temat „Stop przewodzacy”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Stop pulsujacy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Wcześniej zamknąłeś już sprawę „Stop przewodzacy”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Stop pulsujacy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 20.0d
 			icon: "enderio:vibrant_alloy_ingot"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000130"
 			title: "Rurociag przedmiotow"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Rurociag przedmiotow”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Rurociag przedmiotow”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "enderio:item_conduit"

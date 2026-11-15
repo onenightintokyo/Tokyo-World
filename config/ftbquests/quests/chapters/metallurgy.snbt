@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000000FC"
 			title: "Ołów"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Ołów”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Ołów”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "thermal:lead_ingot"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000000FD"
 			title: "Nikiel"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Nikiel”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Nikiel”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "thermal:nickel_ingot"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000000FE"
 			title: "Srebro"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Srebro”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Srebro”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "thermal:silver_ingot"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000000FF"
 			title: "Elektrum"
-			description: ["Wcześniej udało ci się już zamknąć temat „Nikiel”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Elektrum”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Wcześniej zamknąłeś już sprawę „Nikiel”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Elektrum”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "thermal:electrum_ingot"
@@ -65,7 +65,7 @@
 		{
 			id: "A130000000000100"
 			title: "Brąz"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Brąz”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Brąz”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 12.0d
 			icon: "thermal:bronze_ingot"
@@ -76,7 +76,7 @@
 		{
 			id: "A130000000000101"
 			title: "Invar"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Invar”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Invar”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "thermal:invar_ingot"
@@ -98,7 +98,7 @@
 		{
 			id: "A130000000000103"
 			title: "Rudy srebra"
-			description: ["Wcześniej udało ci się już zamknąć temat „Rudy cyny”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Rudy srebra”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Wcześniej zamknąłeś już sprawę „Rudy cyny”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Rudy srebra”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 20.0d
 			icon: "thermal:silver_ore"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000104"
 			title: "Rudy niklu"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Rudy niklu”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Rudy niklu”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "thermal:nickel_ore"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000105"
 			title: "Rudy ołowiu"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Rudy ołowiu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Rudy ołowiu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 24.0d
 			icon: "thermal:lead_ore"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000106"
 			title: "Apatyt"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Apatyt”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Apatyt”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 24.0d
 			icon: "thermal:apatite_ore"

@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000066"
 			title: "Generator paliwowy"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Generator paliwowy”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
+			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Generator paliwowy”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 4.0d
 			icon: "powah:furnator_starter"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000067"
 			title: "Pierwsze panele słoneczne"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Pierwsze panele słoneczne”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
+			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Pierwsze panele słoneczne”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 4.0d
 			icon: "powah:solar_panel_starter"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000068"
 			title: "Generator termoelektryczny"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Generator termoelektryczny”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
+			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Generator termoelektryczny”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 8.0d
 			icon: "powah:thermo_generator_starter"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000069"
 			title: "Ogniwo energii"
-			description: ["Wcześniej udało ci się już zamknąć temat „Pierwsze panele słoneczne”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Ogniwo energii”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
+			description: ["Wcześniej zamknąłeś już sprawę „Pierwsze panele słoneczne”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Ogniwo energii”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 8.0d
 			icon: "powah:energy_cell_starter"
@@ -67,7 +67,7 @@
 		{
 			id: "A13000000000006A"
 			title: "Sfera energetyzacji"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Sfera energetyzacji”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
+			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Sfera energetyzacji”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 12.0d
 			icon: "powah:energizing_orb"
@@ -78,7 +78,7 @@
 		{
 			id: "A13000000000006B"
 			title: "Pręty energii"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Pręty energii”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
+			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Pręty energii”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 12.0d
 			icon: "powah:energizing_rod_starter"
@@ -100,7 +100,7 @@
 		{
 			id: "A13000000000006D"
 			title: "Sieć podstawowa"
-			description: ["Wcześniej udało ci się już zamknąć temat „Prosty reaktor”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Sieć podstawowa”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
+			description: ["Wcześniej zamknąłeś już sprawę „Prosty reaktor”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Sieć podstawowa”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
 			y: 20.0d
 			icon: "powah:energy_cable_basic"
@@ -111,7 +111,7 @@
 		{
 			id: "A13000000000006E"
 			title: "Pojemne ogniwo"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Pojemne ogniwo”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
+			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Pojemne ogniwo”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
 			y: 20.0d
 			icon: "powah:energy_cell_basic"
@@ -122,7 +122,7 @@
 		{
 			id: "A13000000000006F"
 			title: "Reaktor podstawowy"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Reaktor podstawowy”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
+			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Reaktor podstawowy”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
 			y: 24.0d
 			icon: "powah:reactor_basic"
@@ -133,7 +133,7 @@
 		{
 			id: "A130000000000070"
 			title: "Zdalna energia"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Zdalna energia”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
+			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Zdalna energia”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
 			y: 24.0d
 			icon: "powah:ender_cell_starter"
@@ -144,7 +144,7 @@
 		{
 			id: "A130000000000071"
 			title: "Reaktor wzmocniony"
-			description: ["Wcześniej udało ci się już zamknąć temat „Reaktor podstawowy”. Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Reaktor wzmocniony”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
+			description: ["Wcześniej zamknąłeś już sprawę „Reaktor podstawowy”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Reaktor wzmocniony”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
 			y: 28.0d
 			icon: "powah:reactor_hardened"
@@ -155,7 +155,7 @@
 		{
 			id: "A130000000000072"
 			title: "Reaktor płomienny"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Reaktor płomienny”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
+			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Reaktor płomienny”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
 			y: 28.0d
 			icon: "powah:reactor_blazing"

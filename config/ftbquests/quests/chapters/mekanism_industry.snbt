@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000032"
 			title: "Obwody zaawansowane"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Obwody zaawansowane”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Obwody zaawansowane”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 4.0d
 			icon: "mekanism:advanced_control_circuit"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000033"
 			title: "Elitarne obwody"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Elitarne obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Elitarne obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 4.0d
 			icon: "mekanism:elite_control_circuit"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000034"
 			title: "Obwody najwyższej klasy"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Obwody najwyższej klasy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Obwody najwyższej klasy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "mekanism:ultimate_control_circuit"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000035"
 			title: "Kompresor osmu"
-			description: ["Wcześniej udało ci się już zamknąć temat „Elitarne obwody”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Kompresor osmu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Wcześniej zamknąłeś już sprawę „Elitarne obwody”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Kompresor osmu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 8.0d
 			icon: "mekanism:osmium_compressor"
@@ -67,7 +67,7 @@
 		{
 			id: "A130000000000036"
 			title: "Separator elektrolityczny"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Separator elektrolityczny”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Separator elektrolityczny”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 12.0d
 			icon: "mekanism:electrolytic_separator"
@@ -78,7 +78,7 @@
 		{
 			id: "A130000000000037"
 			title: "Utleniacz chemiczny"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Utleniacz chemiczny”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Utleniacz chemiczny”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "mekanism:chemical_oxidizer"
@@ -89,7 +89,7 @@
 		{
 			id: "A130000000000038"
 			title: "Infuzor chemiczny"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Infuzor chemiczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Infuzor chemiczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 16.0d
 			icon: "mekanism:chemical_infuser"
@@ -100,7 +100,7 @@
 		{
 			id: "A130000000000039"
 			title: "Komora reakcji"
-			description: ["Wcześniej udało ci się już zamknąć temat „Utleniacz chemiczny”. Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Komora reakcji”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Wcześniej zamknąłeś już sprawę „Utleniacz chemiczny”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Komora reakcji”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 16.0d
 			icon: "mekanism:pressurized_reaction_chamber"
@@ -122,7 +122,7 @@
 		{
 			id: "A13000000000003B"
 			title: "Rozpuszczanie chemiczne"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Rozpuszczanie chemiczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Rozpuszczanie chemiczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 24.0d
 			icon: "mekanism:chemical_dissolution_chamber"
@@ -133,7 +133,7 @@
 		{
 			id: "A13000000000003C"
 			title: "Krystalizacja chemiczna"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Krystalizacja chemiczna”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Krystalizacja chemiczna”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 24.0d
 			icon: "mekanism:chemical_crystallizer"
@@ -144,7 +144,7 @@
 		{
 			id: "A13000000000003D"
 			title: "Zbiornik płynów"
-			description: ["Wcześniej udało ci się już zamknąć temat „Rozpuszczanie chemiczne”. Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Zbiornik płynów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["Wcześniej zamknąłeś już sprawę „Rozpuszczanie chemiczne”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Zbiornik płynów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "mekanism:basic_fluid_tank"
@@ -155,7 +155,7 @@
 		{
 			id: "A13000000000003E"
 			title: "Magazyn energii"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Magazyn energii”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Magazyn energii”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
 			y: 28.0d
 			icon: "mekanism:advanced_energy_cube"
@@ -166,7 +166,7 @@
 		{
 			id: "A13000000000003F"
 			title: "Ogromny akumulator"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Ogromny akumulator”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Ogromny akumulator”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
 			y: 32.0d
 			icon: "mekanism:ultimate_energy_cube"
@@ -177,7 +177,7 @@
 		{
 			id: "A130000000000040"
 			title: "Sortowanie materiałów"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Sortowanie materiałów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
+			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Sortowanie materiałów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
 			y: 32.0d
 			icon: "mekanism:logistical_sorter"
@@ -188,7 +188,7 @@
 		{
 			id: "A130000000000041"
 			title: "Cyfrowa koparka"
-			description: ["Wcześniej udało ci się już zamknąć temat „Ogromny akumulator”. Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Cyfrowa koparka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
+			description: ["Wcześniej zamknąłeś już sprawę „Ogromny akumulator”. Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Cyfrowa koparka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
 			y: 36.0d
 			icon: "mekanism:digital_miner"
@@ -199,7 +199,7 @@
 		{
 			id: "A130000000000042"
 			title: "Transport kwantowy"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Transport kwantowy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
+			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Transport kwantowy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
 			y: 36.0d
 			icon: "mekanism:quantum_entangloporter"

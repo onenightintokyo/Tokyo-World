@@ -39,7 +39,7 @@
 		{
 			id: "A13000000000000A"
 			title: "Wały napędowe"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Wały napędowe”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Wały napędowe”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
 			y: 4.0d
 			icon: "create:shaft"
@@ -58,7 +58,7 @@
 		{
 			id: "A13000000000000B"
 			title: "Przekładnie"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Przekładnie”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Przekładnie”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
 			y: 4.0d
 			icon: "create:cogwheel"
@@ -77,7 +77,7 @@
 		{
 			id: "A13000000000000C"
 			title: "Wytwarzanie obrotów"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Wytwarzanie obrotów”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Wytwarzanie obrotów”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
 			y: 8.0d
 			icon: "create:water_wheel"
@@ -96,7 +96,7 @@
 		{
 			id: "A13000000000000D"
 			title: "Mechaniczna prasa"
-			description: ["Wcześniej udało ci się już zamknąć temat „Przekładnie”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Mechaniczna prasa”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Wcześniej zamknąłeś już sprawę „Przekładnie”. W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Mechaniczna prasa”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
 			y: 8.0d
 			icon: "create:mechanical_press"
@@ -134,7 +134,7 @@
 		{
 			id: "A13000000000000F"
 			title: "Mieszalnik"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Mieszalnik”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Mieszalnik”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 8.0d
 			y: 16.0d
 			icon: "create:mechanical_mixer"

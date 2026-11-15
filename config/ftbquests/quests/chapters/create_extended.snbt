@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000020"
 			title: "Automatyczny crafting"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Automatyczny crafting”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Automatyczny crafting”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
 			y: 4.0d
 			icon: "create:mechanical_crafter"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000021"
 			title: "Mosiężny lejek"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Mosiężny lejek”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Mosiężny lejek”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
 			y: 4.0d
 			icon: "create:brass_funnel"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000022"
 			title: "Inteligentny zsyp"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Inteligentny zsyp”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Inteligentny zsyp”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
 			y: 8.0d
 			icon: "create:smart_chute"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000023"
 			title: "Wiertło mechaniczne"
-			description: ["Wcześniej udało ci się już zamknąć temat „Mosiężny lejek”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Wiertło mechaniczne”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Wcześniej zamknąłeś już sprawę „Mosiężny lejek”. W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Wiertło mechaniczne”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
 			y: 8.0d
 			icon: "create:mechanical_drill"
@@ -67,7 +67,7 @@
 		{
 			id: "A130000000000024"
 			title: "Mechaniczny żniwiarz"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Mechaniczny żniwiarz”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Mechaniczny żniwiarz”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
 			y: 12.0d
 			icon: "create:mechanical_harvester"
@@ -78,7 +78,7 @@
 		{
 			id: "A130000000000025"
 			title: "Mobilny interfejs magazynu"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Mobilny interfejs magazynu”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Mobilny interfejs magazynu”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
 			y: 12.0d
 			icon: "create:portable_storage_interface"
@@ -89,7 +89,7 @@
 		{
 			id: "A130000000000026"
 			title: "Zbiornik cieczy"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Zbiornik cieczy”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Zbiornik cieczy”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
 			y: 16.0d
 			icon: "create:fluid_tank"
@@ -100,7 +100,7 @@
 		{
 			id: "A130000000000027"
 			title: "Pompa Create"
-			description: ["Wcześniej udało ci się już zamknąć temat „Mobilny interfejs magazynu”. Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Pompa Create”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Wcześniej zamknąłeś już sprawę „Mobilny interfejs magazynu”. Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Pompa Create”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
 			y: 16.0d
 			icon: "create:mechanical_pump"
@@ -122,7 +122,7 @@
 		{
 			id: "A130000000000029"
 			title: "Kontroler obrotów"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Kontroler obrotów”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Kontroler obrotów”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
 			y: 24.0d
 			icon: "create:rotation_speed_controller"
@@ -133,7 +133,7 @@
 		{
 			id: "A13000000000002A"
 			title: "Sekwencyjna przekładnia"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Sekwencyjna przekładnia”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Sekwencyjna przekładnia”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
 			y: 24.0d
 			icon: "create:sequenced_gearshift"
@@ -144,7 +144,7 @@
 		{
 			id: "A13000000000002B"
 			title: "Automatyczne manipulatory"
-			description: ["Wcześniej udało ci się już zamknąć temat „Kontroler obrotów”. Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Automatyczne manipulatory”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Wcześniej zamknąłeś już sprawę „Kontroler obrotów”. Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Automatyczne manipulatory”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
 			y: 28.0d
 			icon: "create:mechanical_arm"
@@ -155,7 +155,7 @@
 		{
 			id: "A13000000000002C"
 			title: "Silnik parowy"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Silnik parowy”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Silnik parowy”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
 			y: 28.0d
 			icon: "create:steam_engine"
@@ -166,7 +166,7 @@
 		{
 			id: "A13000000000002D"
 			title: "Palnik Blaze"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Palnik Blaze”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Palnik Blaze”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
 			y: 32.0d
 			icon: "create:blaze_burner"
@@ -177,7 +177,7 @@
 		{
 			id: "A13000000000002E"
 			title: "Ekrany fabryczne"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Ekrany fabryczne”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Ekrany fabryczne”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
 			y: 32.0d
 			icon: "create:display_link"

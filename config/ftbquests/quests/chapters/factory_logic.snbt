@@ -21,7 +21,7 @@
 		{
 			id: "A130000000000158"
 			title: "Czujniki sieci"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Czujniki sieci”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Czujniki sieci”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:comparator"
@@ -32,7 +32,7 @@
 		{
 			id: "A130000000000159"
 			title: "Przekaźniki danych"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Przekaźniki danych”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Przekaźniki danych”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
 			y: 4.0d
 			icon: "integrateddynamics:cable"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000015A"
 			title: "Programowanie reguł"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Programowanie reguł”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Programowanie reguł”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
 			y: 8.0d
 			icon: "integrateddynamics:logic_programmer"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000015B"
 			title: "Pamięć zmiennych"
-			description: ["Wcześniej udało ci się już zamknąć temat „Przekaźniki danych”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Pamięć zmiennych”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Wcześniej zamknąłeś już sprawę „Przekaźniki danych”. W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Pamięć zmiennych”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
 			y: 8.0d
 			icon: "integrateddynamics:variable"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000015C"
 			title: "Magazyn logiki"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Magazyn logiki”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Magazyn logiki”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
 			y: 12.0d
 			icon: "integrateddynamics:variablestore"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000015D"
 			title: "Zasilanie sterowników"
-			description: ["Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Zasilanie sterowników”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Zasilanie sterowników”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
 			y: 12.0d
 			icon: "integrateddynamics:energy_battery"
@@ -98,7 +98,7 @@
 		{
 			id: "A13000000000015F"
 			title: "Serwer sterujący"
-			description: ["Wcześniej udało ci się już zamknąć temat „Przekierowania sieci”. Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Serwer sterujący”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Wcześniej zamknąłeś już sprawę „Przekierowania sieci”. Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Serwer sterujący”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
 			y: 20.0d
 			icon: "ae2:controller"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000160"
 			title: "Procesory logiczne"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Procesory logiczne”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Procesory logiczne”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
 			y: 20.0d
 			icon: "ae2:logic_processor"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000161"
 			title: "Procesory obliczeń"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Procesory obliczeń”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Procesory obliczeń”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
 			y: 24.0d
 			icon: "ae2:calculation_processor"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000162"
 			title: "Procesory projektowe"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Procesory projektowe”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
+			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Procesory projektowe”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
 			y: 24.0d
 			icon: "ae2:engineering_processor"
@@ -142,7 +142,7 @@
 		{
 			id: "A130000000000163"
 			title: "Terminale sterujące"
-			description: ["Wcześniej udało ci się już zamknąć temat „Procesory obliczeń”. Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Terminale sterujące”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
+			description: ["Wcześniej zamknąłeś już sprawę „Procesory obliczeń”. Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Terminale sterujące”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
 			y: 28.0d
 			icon: "ae2:terminal"
@@ -153,7 +153,7 @@
 		{
 			id: "A130000000000164"
 			title: "Magistrala sygnałów"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Magistrala sygnałów”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
+			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Magistrala sygnałów”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
 			y: 28.0d
 			icon: "xnet:connector"

@@ -21,7 +21,7 @@
 		{
 			id: "A13000000000010A"
 			title: "Patelnia"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Patelnia”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Patelnia”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 4.0d
 			icon: "farmersdelight:skillet"
@@ -32,7 +32,7 @@
 		{
 			id: "A13000000000010B"
 			title: "Piec kuchenny"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Piec kuchenny”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Piec kuchenny”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 4.0d
 			icon: "farmersdelight:stove"
@@ -43,7 +43,7 @@
 		{
 			id: "A13000000000010C"
 			title: "Garnek do gotowania"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Garnek do gotowania”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Garnek do gotowania”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 1.0d
 			y: 8.0d
 			icon: "farmersdelight:cooking_pot"
@@ -54,7 +54,7 @@
 		{
 			id: "A13000000000010D"
 			title: "Ryż"
-			description: ["Wcześniej udało ci się już zamknąć temat „Piec kuchenny”. Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Ryż”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Wcześniej zamknąłeś już sprawę „Piec kuchenny”. Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Ryż”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 15.0d
 			y: 8.0d
 			icon: "farmersdelight:rice"
@@ -65,7 +65,7 @@
 		{
 			id: "A13000000000010E"
 			title: "Pomidory"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Pomidory”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Pomidory”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 12.0d
 			icon: "farmersdelight:tomato"
@@ -76,7 +76,7 @@
 		{
 			id: "A13000000000010F"
 			title: "Kapusta"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Kapusta”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Kapusta”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 12.0d
 			icon: "farmersdelight:cabbage"
@@ -98,7 +98,7 @@
 		{
 			id: "A130000000000111"
 			title: "Szuflada magazynowa"
-			description: ["Wcześniej udało ci się już zamknąć temat „Ciasto na wypiek”. Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Szuflada magazynowa”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Wcześniej zamknąłeś już sprawę „Ciasto na wypiek”. Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Szuflada magazynowa”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 1.0d
 			y: 20.0d
 			icon: "functionalstorage:oak_1"
@@ -109,7 +109,7 @@
 		{
 			id: "A130000000000112"
 			title: "Cztery szuflady"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Cztery szuflady”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
+			description: ["Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Cztery szuflady”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
 			x: 15.0d
 			y: 20.0d
 			icon: "functionalstorage:oak_4"
@@ -120,7 +120,7 @@
 		{
 			id: "A130000000000113"
 			title: "Gabloty na wyposażenie"
-			description: ["Nie ma sensu przyspieszać, jeśli podstawy ciągle zawodzą. Wróć do sprawy „Gabloty na wyposażenie”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
+			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Gabloty na wyposażenie”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
 			x: 1.0d
 			y: 24.0d
 			icon: "functionalstorage:armory_cabinet"
@@ -131,7 +131,7 @@
 		{
 			id: "A130000000000114"
 			title: "Kompaktowa przechowalnia"
-			description: ["Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Kompaktowa przechowalnia”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
+			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Kompaktowa przechowalnia”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
 			x: 15.0d
 			y: 24.0d
 			icon: "functionalstorage:compacting_drawer"

@@ -21,7 +21,7 @@
 		{
 			id: "A1300000000001C8"
 			title: "Rozpraszacze many"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Rozpraszacze many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Rozpraszacze many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 4.0d
 			icon: "botania:mana_spreader"
@@ -32,7 +32,7 @@
 		{
 			id: "A1300000000001C9"
 			title: "Zbiorniki many"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Zbiorniki many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Zbiorniki many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 4.0d
 			icon: "botania:mana_pool"
@@ -43,7 +43,7 @@
 		{
 			id: "A1300000000001CA"
 			title: "Diamenty many"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Diamenty many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Diamenty many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "botania:mana_diamond"
@@ -54,7 +54,7 @@
 		{
 			id: "A1300000000001CB"
 			title: "Stal manowa"
-			description: ["Wcześniej udało ci się już zamknąć temat „Zbiorniki many”. Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Stal manowa”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Wcześniej zamknąłeś już sprawę „Zbiorniki many”. W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Stal manowa”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 8.0d
 			icon: "botania:manasteel_ingot"
@@ -65,7 +65,7 @@
 		{
 			id: "A1300000000001CC"
 			title: "Runiczne ołtarze"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Runiczne ołtarze”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Runiczne ołtarze”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 12.0d
 			icon: "botania:runic_altar"
@@ -76,7 +76,7 @@
 		{
 			id: "A1300000000001CD"
 			title: "Pylony many"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Pylony many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Pylony many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "botania:mana_pylon"
@@ -98,7 +98,7 @@
 		{
 			id: "A1300000000001CF"
 			title: "Słoiki Source"
-			description: ["Wcześniej udało ci się już zamknąć temat „Ołtarz Terrasteel”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Słoiki Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Wcześniej zamknąłeś już sprawę „Ołtarz Terrasteel”. Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Słoiki Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 20.0d
 			icon: "ars_nouveau:source_jar"
@@ -109,7 +109,7 @@
 		{
 			id: "A1300000000001D0"
 			title: "Komory nasycania"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Komory nasycania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Komory nasycania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "ars_nouveau:imbuement_chamber"
@@ -120,7 +120,7 @@
 		{
 			id: "A1300000000001D1"
 			title: "Kamienie Source"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Kamienie Source”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Kamienie Source”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 24.0d
 			icon: "ars_nouveau:source_gem"
@@ -131,7 +131,7 @@
 		{
 			id: "A1300000000001D2"
 			title: "Przekaźniki Source"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Przekaźniki Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Przekaźniki Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 24.0d
 			icon: "ars_nouveau:relay"
@@ -142,7 +142,7 @@
 		{
 			id: "A1300000000001D3"
 			title: "Aparaty zaklinania"
-			description: ["Wcześniej udało ci się już zamknąć temat „Kamienie Source”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Aparaty zaklinania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["Wcześniej zamknąłeś już sprawę „Kamienie Source”. Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Aparaty zaklinania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "ars_nouveau:enchanting_apparatus"
@@ -153,7 +153,7 @@
 		{
 			id: "A1300000000001D4"
 			title: "Zaklęte piedestały"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Zaklęte piedestały”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Zaklęte piedestały”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 28.0d
 			icon: "ars_nouveau:arcane_pedestal"

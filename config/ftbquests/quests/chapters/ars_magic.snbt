@@ -23,7 +23,7 @@
 		{
 			id: "A130000000000092"
 			title: "Klejnot źródła"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Klejnot źródła”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Klejnot źródła”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 4.0d
 			icon: "ars_nouveau:source_gem"
@@ -34,7 +34,7 @@
 		{
 			id: "A130000000000093"
 			title: "Magazyn Source"
-			description: ["Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Magazyn Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Magazyn Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 4.0d
 			icon: "ars_nouveau:source_jar"
@@ -45,7 +45,7 @@
 		{
 			id: "A130000000000094"
 			title: "Komora nasycania"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Komora nasycania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Komora nasycania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 8.0d
 			icon: "ars_nouveau:imbuement_chamber"
@@ -56,7 +56,7 @@
 		{
 			id: "A130000000000095"
 			title: "Aparat zaklinania"
-			description: ["Wcześniej udało ci się już zamknąć temat „Magazyn Source”. Nie wszystko musi powstawać od razu. Na dziś najważniejszy będzie temat „Aparat zaklinania”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Wcześniej zamknąłeś już sprawę „Magazyn Source”. W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Aparat zaklinania”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 8.0d
 			icon: "ars_nouveau:enchanting_apparatus"
@@ -67,7 +67,7 @@
 		{
 			id: "A130000000000096"
 			title: "Magiczne piedestały"
-			description: ["Fabryka rośnie szybciej niż plan na papierze. Następną sprawą do ogarnięcia jest „Magiczne piedestały”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Magiczne piedestały”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 12.0d
 			icon: "ars_nouveau:arcane_pedestal"
@@ -78,7 +78,7 @@
 		{
 			id: "A130000000000097"
 			title: "Rdzeń magiczny"
-			description: ["Niektórych odkryć łatwo nie docenić. Przyjrzyj się bliżej sprawie „Rdzeń magiczny”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Rdzeń magiczny”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 12.0d
 			icon: "ars_nouveau:arcane_core"
@@ -100,7 +100,7 @@
 		{
 			id: "A130000000000099"
 			title: "Zbieracz Source"
-			description: ["Wcześniej udało ci się już zamknąć temat „Przekazywanie Source”. Dobry pomysł potrzebuje czegoś więcej niż kilku skrzyń z częściami. Pora zająć się „Zbieracz Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Wcześniej zamknąłeś już sprawę „Przekazywanie Source”. Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Zbieracz Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 1.0d
 			y: 20.0d
 			icon: "ars_nouveau:relay_collector"
@@ -111,7 +111,7 @@
 		{
 			id: "A13000000000009A"
 			title: "Farma energii magicznej"
-			description: ["Ten fragment pracy może wydawać się niepozorny, ale szybko okaże się potrzebny. Na tapecie jest „Farma energii magicznej”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Farma energii magicznej”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 15.0d
 			y: 20.0d
 			icon: "ars_nouveau:agronomic_sourcelink"
@@ -122,7 +122,7 @@
 		{
 			id: "A13000000000009B"
 			title: "Wieża zaklęć"
-			description: ["Każda maszyna jest tylko jednym ogniwem większej całości. Teraz liczy się „Wieża zaklęć”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Wieża zaklęć”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 1.0d
 			y: 24.0d
 			icon: "ars_nouveau:spell_turret"
@@ -133,7 +133,7 @@
 		{
 			id: "A13000000000009C"
 			title: "Pryzmat zaklęć"
-			description: ["Zanim rozstawisz kolejne urządzenia, spójrz na to, czego wciąż brakuje. Tym razem chodzi o „Pryzmat zaklęć”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
+			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Pryzmat zaklęć”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
 			x: 15.0d
 			y: 24.0d
 			icon: "ars_nouveau:spell_prism"
@@ -144,7 +144,7 @@
 		{
 			id: "A13000000000009D"
 			title: "Zaawansowane zaklęcia"
-			description: ["Wcześniej udało ci się już zamknąć temat „Wieża zaklęć”. Najbardziej irytują te problemy, które wychodzą dopiero podczas pracy. Teraz na stole leży temat „Zaawansowane zaklęcia”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
+			description: ["Wcześniej zamknąłeś już sprawę „Wieża zaklęć”. Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Zaawansowane zaklęcia”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
 			x: 1.0d
 			y: 28.0d
 			icon: "ars_nouveau:apprentice_spell_book"
@@ -155,7 +155,7 @@
 		{
 			id: "A13000000000009E"
 			title: "Magiczny magazyn"
-			description: ["Właśnie takie rzeczy odróżniają działającą bazę od sterty maszyn. Najpierw rozwiąż „Magiczny magazyn”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
+			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Magiczny magazyn”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
 			x: 15.0d
 			y: 28.0d
 			icon: "ars_nouveau:storage_lectern"
