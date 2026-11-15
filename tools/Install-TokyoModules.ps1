@@ -1,7 +1,7 @@
 # Tokyo World optional expansion installer — Windows PowerShell 5.1+
 # Preview by default; use -Apply to install. Existing mods, saves, configs are untouched.
 param(
-    [ValidateSet('Core','Expanded','Adventure','Lab','World','All')][string]$Profile = 'Core',
+    [ValidateSet('Core','Expanded','Adventure','Lab','World','Factory','Automation','Resources','All')][string]$Profile = 'Core',
     [switch]$Apply,
     [string]$GameDir = ''
 )
@@ -169,13 +169,16 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
     }
 }
 $wanted = @()
-foreach ($name in @('tech-core','tech-expanded','adventure','tech-lab','world-explore')) {
+foreach ($name in @('tech-core','tech-expanded','adventure','tech-lab','world-explore','factory-next','automation-next','resources-next')) {
     $use = ($Profile -eq 'All') -or
         ($Profile -eq 'Core' -and $name -eq 'tech-core') -or
         ($Profile -eq 'Expanded' -and $name -in @('tech-core','tech-expanded')) -or
         ($Profile -eq 'Adventure' -and $name -eq 'adventure') -or
         ($Profile -eq 'Lab' -and $name -eq 'tech-lab') -or
-        ($Profile -eq 'World' -and $name -eq 'world-explore')
+        ($Profile -eq 'World' -and $name -eq 'world-explore') -or
+        ($Profile -eq 'Factory' -and $name -eq 'factory-next') -or
+        ($Profile -eq 'Automation' -and $name -eq 'automation-next') -or
+        ($Profile -eq 'Resources' -and $name -eq 'resources-next')
     if ($use) { $wanted += @($config.profiles.$name) }
 }
 Write-Host "[Tokyo World] Profile=$Profile, Minecraft=1.20.1, Forge, apply=$Apply"
