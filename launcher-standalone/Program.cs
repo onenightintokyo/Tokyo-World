@@ -279,6 +279,7 @@ internal sealed class LauncherWindow : Form
         var progress = CreateProgress();
         var synchronizer = new GitHubSynchronizer(settings.GetToken());
         await synchronizer.SynchronizeAsync(root, progress);
+        PostInstallTweaks.Apply(root, progress);
 
         var modInstaller = new ModpackInstaller();
         var report = await modInstaller.InstallAsync(root, allModsBox.Checked, progress);
