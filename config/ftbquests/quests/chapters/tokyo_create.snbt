@@ -1,10 +1,10 @@
 {
 	filename: "tokyo_create"
-	title: "&6&l02 &r&fCreate: Mechanika"
-	group: "A110000000000001"
+	title: "&b&lPierwsze obroty"
+	group: "A110000000000002"
 	id: "A120000000000002"
 	icon: "create:andesite_alloy"
-	order_index: 1
+	order_index: 0
 	images: [
 		{
 			image: "tokyoworld:textures/gui/quests/tech_automation.png"
@@ -20,8 +20,8 @@
 		{
 			id: "A130000000000009"
 			title: "Stop andezytowy"
-			description: ["Pierwszy materiał napędzający mechaniczne maszyny Create."]
-			x: 7.0d
+			description: ["Koła zębate wyglądają niepozornie. Dopiero połączone z napędem pokazują, do czego naprawdę są zdolne. Zacznij od „Stop andezytowy”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			x: 8.0d
 			y: 0.0d
 			icon: "create:andesite_alloy"
 			dependencies: ["A130000000000005"]
@@ -39,8 +39,8 @@
 		{
 			id: "A13000000000000A"
 			title: "Wały napędowe"
-			description: ["Zbuduj wały do przesyłania energii obrotowej."]
-			x: 0.0d
+			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Wały napędowe” i zachowaj trochę na dalszą rozbudowę."]
+			x: 1.0d
 			y: 4.0d
 			icon: "create:shaft"
 			dependencies: ["A130000000000009"]
@@ -58,8 +58,8 @@
 		{
 			id: "A13000000000000B"
 			title: "Przekładnie"
-			description: ["Przełóż obroty na praktyczne układy maszynowe."]
-			x: 4.5d
+			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Przekładnie” i daj sobie chwilę na sprawdzenie efektu."]
+			x: 15.0d
 			y: 4.0d
 			icon: "create:cogwheel"
 			dependencies: ["A130000000000009"]
@@ -77,11 +77,11 @@
 		{
 			id: "A13000000000000C"
 			title: "Wytwarzanie obrotów"
-			description: ["Zbuduj koło wodne i podłącz prostą linię produkcyjną."]
-			x: 9.0d
-			y: 4.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Wytwarzanie obrotów” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			x: 1.0d
+			y: 8.0d
 			icon: "create:water_wheel"
-			dependencies: ["A130000000000009"]
+			dependencies: ["A13000000000000A"]
 			tasks: [
 				{
 					id: "A14000000000000C"
@@ -96,11 +96,11 @@
 		{
 			id: "A13000000000000D"
 			title: "Mechaniczna prasa"
-			description: ["Wprowadź automatyczne prasowanie metali."]
-			x: 13.5d
-			y: 4.0d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Mechaniczna prasa” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			x: 15.0d
+			y: 8.0d
 			icon: "create:mechanical_press"
-			dependencies: ["A130000000000009"]
+			dependencies: ["A13000000000000B"]
 			tasks: [
 				{
 					id: "A14000000000000D"
@@ -115,11 +115,11 @@
 		{
 			id: "A13000000000000E"
 			title: "Przenośniki"
-			description: ["Przenieś transport przedmiotów z rąk gracza na taśmociągi."]
-			x: 0.0d
-			y: 7.5d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Przenośniki” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 12.0d
 			icon: "create:belt_connector"
-			dependencies: ["A13000000000000A"]
+			dependencies: ["A13000000000000C", "A13000000000000D"]
 			tasks: [
 				{
 					id: "A14000000000000E"
@@ -134,11 +134,11 @@
 		{
 			id: "A13000000000000F"
 			title: "Mieszalnik"
-			description: ["Rozpocznij mieszanie materiałów w systemie Create."]
-			x: 4.5d
-			y: 7.5d
+			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Mieszalnik” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			x: 8.0d
+			y: 16.0d
 			icon: "create:mechanical_mixer"
-			dependencies: ["A13000000000000B"]
+			dependencies: ["A13000000000000E"]
 			tasks: [
 				{
 					id: "A14000000000000F"
@@ -153,11 +153,11 @@
 		{
 			id: "A130000000000010"
 			title: "Precyzyjne mechanizmy"
-			description: ["Automatyzacja produkcji precyzyjnych elementów będzie potrzebna w dalszej progresji."]
-			x: 7.0d
-			y: 12.0d
+			description: ["Zamiast nosić wszystko ręcznie, możesz zdać się na pracujące mechanizmy. Ostatnia próba to „Precyzyjne mechanizmy”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			x: 8.0d
+			y: 20.0d
 			icon: "create:precision_mechanism"
-			dependencies: ["A13000000000000C", "A13000000000000D", "A13000000000000E", "A13000000000000F"]
+			dependencies: ["A13000000000000F"]
 			tasks: [
 				{
 					id: "A140000000000010"

@@ -1,7 +1,7 @@
 {
 	filename: "ars_magic"
-	title: "&d&l02 &r&fArs Nouveau: Zaklęcia"
-	group: "A110000000000005"
+	title: "&d&lKsięga zaklęć"
+	group: "A110000000000006"
 	id: "A12000000000000C"
 	icon: "ars_nouveau:novice_spell_book"
 	order_index: 1
@@ -12,8 +12,8 @@
 		{
 			id: "A130000000000091"
 			title: "Pierwsza księga zaklęć"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: pierwsza księga zaklęć. To etap 1 z 16 w tej gałęzi Tokyo World."]
-			x: 7.0d
+			description: ["Pierwszy czar jest tylko obietnicą. Prawdziwa sztuka polega na zrozumieniu Source i własnych możliwości. Zacznij od „Pierwsza księga zaklęć”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			x: 8.0d
 			y: 0.0d
 			icon: "ars_nouveau:novice_spell_book"
 			dependencies: ["A130000000000019"]
@@ -23,8 +23,8 @@
 		{
 			id: "A130000000000092"
 			title: "Klejnot źródła"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: klejnot źródła. To etap 2 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Klejnot źródła” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 1.0d
 			y: 4.0d
 			icon: "ars_nouveau:source_gem"
 			dependencies: ["A130000000000091"]
@@ -34,8 +34,8 @@
 		{
 			id: "A130000000000093"
 			title: "Magazyn Source"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: magazyn source. To etap 3 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Magazyn Source” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 15.0d
 			y: 4.0d
 			icon: "ars_nouveau:source_jar"
 			dependencies: ["A130000000000091"]
@@ -45,143 +45,143 @@
 		{
 			id: "A130000000000094"
 			title: "Komora nasycania"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: komora nasycania. To etap 4 z 16 w tej gałęzi Tokyo World."]
-			x: 9.0d
-			y: 4.0d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Komora nasycania” i zachowaj trochę na dalszą rozbudowę."]
+			x: 1.0d
+			y: 8.0d
 			icon: "ars_nouveau:imbuement_chamber"
-			dependencies: ["A130000000000091"]
+			dependencies: ["A130000000000092"]
 			tasks: [{ id: "A140000000000094" type: "item" item: "ars_nouveau:imbuement_chamber" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000094" type: "item" item: "minecraft:blaze_powder" count: 4 }]
 		}
 		{
 			id: "A130000000000095"
 			title: "Aparat zaklinania"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: aparat zaklinania. To etap 5 z 16 w tej gałęzi Tokyo World."]
-			x: 13.5d
-			y: 4.0d
+			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Aparat zaklinania” i daj sobie chwilę na sprawdzenie efektu."]
+			x: 15.0d
+			y: 8.0d
 			icon: "ars_nouveau:enchanting_apparatus"
-			dependencies: ["A130000000000091"]
+			dependencies: ["A130000000000093"]
 			tasks: [{ id: "A140000000000095" type: "item" item: "ars_nouveau:enchanting_apparatus" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000095" type: "item" item: "minecraft:experience_bottle" count: 8 }]
 		}
 		{
 			id: "A130000000000096"
 			title: "Magiczne piedestały"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: magiczne piedestały. To etap 6 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 7.5d
+			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Magiczne piedestały” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			x: 1.0d
+			y: 12.0d
 			icon: "ars_nouveau:arcane_pedestal"
-			dependencies: ["A130000000000092"]
+			dependencies: ["A130000000000094"]
 			tasks: [{ id: "A140000000000096" type: "item" item: "ars_nouveau:arcane_pedestal" count: 4L consume_items: false }]
 			rewards: [{ id: "A150000000000096" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
 		}
 		{
 			id: "A130000000000097"
 			title: "Rdzeń magiczny"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: rdzeń magiczny. To etap 7 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
-			y: 7.5d
+			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Rdzeń magiczny” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			x: 15.0d
+			y: 12.0d
 			icon: "ars_nouveau:arcane_core"
-			dependencies: ["A130000000000093"]
+			dependencies: ["A130000000000095"]
 			tasks: [{ id: "A140000000000097" type: "item" item: "ars_nouveau:arcane_core" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000097" type: "item" item: "minecraft:blaze_powder" count: 4 }]
 		}
 		{
 			id: "A130000000000098"
 			title: "Przekazywanie Source"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: przekazywanie source. To etap 8 z 16 w tej gałęzi Tokyo World."]
-			x: 9.0d
-			y: 7.5d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Przekazywanie Source” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 16.0d
 			icon: "ars_nouveau:relay"
-			dependencies: ["A130000000000094"]
+			dependencies: ["A130000000000096", "A130000000000097"]
 			tasks: [{ id: "A140000000000098" type: "item" item: "ars_nouveau:relay" count: 2L consume_items: false }]
 			rewards: [{ id: "A150000000000098" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A130000000000099"
 			title: "Zbieracz Source"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: zbieracz source. To etap 9 z 16 w tej gałęzi Tokyo World."]
-			x: 13.5d
-			y: 7.5d
+			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Zbieracz Source” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			x: 1.0d
+			y: 20.0d
 			icon: "ars_nouveau:relay_collector"
-			dependencies: ["A130000000000095"]
+			dependencies: ["A130000000000098"]
 			tasks: [{ id: "A140000000000099" type: "item" item: "ars_nouveau:relay_collector" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000099" type: "item" item: "minecraft:ender_pearl" count: 8 }]
 		}
 		{
 			id: "A13000000000009A"
 			title: "Farma energii magicznej"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: farma energii magicznej. To etap 10 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 11.0d
+			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Farma energii magicznej” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			x: 15.0d
+			y: 20.0d
 			icon: "ars_nouveau:agronomic_sourcelink"
-			dependencies: ["A130000000000096"]
+			dependencies: ["A130000000000098"]
 			tasks: [{ id: "A14000000000009A" type: "item" item: "ars_nouveau:agronomic_sourcelink" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000009A" type: "item" item: "minecraft:blaze_powder" count: 4 }]
 		}
 		{
 			id: "A13000000000009B"
 			title: "Wieża zaklęć"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: wieża zaklęć. To etap 11 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
-			y: 11.0d
+			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Wieża zaklęć” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			x: 1.0d
+			y: 24.0d
 			icon: "ars_nouveau:spell_turret"
-			dependencies: ["A130000000000097"]
+			dependencies: ["A130000000000099"]
 			tasks: [{ id: "A14000000000009B" type: "item" item: "ars_nouveau:spell_turret" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000009B" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A13000000000009C"
 			title: "Pryzmat zaklęć"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: pryzmat zaklęć. To etap 12 z 16 w tej gałęzi Tokyo World."]
-			x: 9.0d
-			y: 11.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Pryzmat zaklęć” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 15.0d
+			y: 24.0d
 			icon: "ars_nouveau:spell_prism"
-			dependencies: ["A130000000000098"]
+			dependencies: ["A13000000000009A"]
 			tasks: [{ id: "A14000000000009C" type: "item" item: "ars_nouveau:spell_prism" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000009C" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A13000000000009D"
 			title: "Zaawansowane zaklęcia"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: zaawansowane zaklęcia. To etap 13 z 16 w tej gałęzi Tokyo World."]
-			x: 13.5d
-			y: 11.0d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Zaawansowane zaklęcia” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 1.0d
+			y: 28.0d
 			icon: "ars_nouveau:apprentice_spell_book"
-			dependencies: ["A130000000000099"]
+			dependencies: ["A13000000000009B"]
 			tasks: [{ id: "A14000000000009D" type: "item" item: "ars_nouveau:apprentice_spell_book" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000009D" type: "item" item: "minecraft:amethyst_shard" count: 8 }]
 		}
 		{
 			id: "A13000000000009E"
 			title: "Magiczny magazyn"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: magiczny magazyn. To etap 14 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 14.5d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Magiczny magazyn” i zachowaj trochę na dalszą rozbudowę."]
+			x: 15.0d
+			y: 28.0d
 			icon: "ars_nouveau:storage_lectern"
-			dependencies: ["A13000000000009A"]
+			dependencies: ["A13000000000009C"]
 			tasks: [{ id: "A14000000000009E" type: "item" item: "ars_nouveau:storage_lectern" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000009E" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A13000000000009F"
 			title: "Arcymag"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: arcymag. To etap 15 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
-			y: 14.5d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Arcymag” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 32.0d
 			icon: "ars_nouveau:archmage_spell_book"
-			dependencies: ["A13000000000009B"]
+			dependencies: ["A13000000000009D", "A13000000000009E"]
 			tasks: [{ id: "A14000000000009F" type: "item" item: "ars_nouveau:archmage_spell_book" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000009F" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A1300000000000A0"
 			title: "Miecz zaklinacza"
-			description: ["Zaklęcia, źródło i automatyzacja magiczna. Wytwórz lub zdobądź: miecz zaklinacza. To etap 16 z 16 w tej gałęzi Tokyo World."]
-			x: 7.0d
-			y: 19.0d
+			description: ["Księga przestała być zabawką, a stała się prawdziwym narzędziem. Ostatnia próba to „Miecz zaklinacza”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			x: 8.0d
+			y: 36.0d
 			icon: "ars_nouveau:enchanters_sword"
-			dependencies: ["A13000000000009C", "A13000000000009D", "A13000000000009E", "A13000000000009F"]
+			dependencies: ["A13000000000009F"]
 			tasks: [{ id: "A1400000000000A0" type: "item" item: "ars_nouveau:enchanters_sword" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000A0" type: "item" item: "minecraft:enchanted_golden_apple" count: 1 }, { id: "A1600000000000A0" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}

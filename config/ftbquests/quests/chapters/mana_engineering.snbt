@@ -1,7 +1,7 @@
 {
 	filename: "mana_engineering"
-	title: "&d&l03 &r&fTechnomagia produkcyjna"
-	group: "A110000000000005"
+	title: "&d&lStal spotyka magię"
+	group: "A110000000000006"
 	id: "A120000000000021"
 	icon: "botania:mana_pool"
 	order_index: 2
@@ -10,8 +10,8 @@
 		{
 			id: "A1300000000001C7"
 			title: "Kwiaty magiczne"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 1/16: Kwiaty magiczne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 7.0d
+			description: ["Rytuał i maszyna nie muszą ze sobą walczyć. Spróbuj połączyć ich moc w jednym projekcie. Zacznij od „Kwiaty magiczne”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			x: 8.0d
 			y: 0.0d
 			icon: "botania:white_mystical_flower"
 			dependencies: ["A130000000000090", "A1300000000000A0"]
@@ -21,8 +21,8 @@
 		{
 			id: "A1300000000001C8"
 			title: "Rozpraszacze many"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 2/16: Rozpraszacze many. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Rozpraszacze many” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 1.0d
 			y: 4.0d
 			icon: "botania:mana_spreader"
 			dependencies: ["A1300000000001C7"]
@@ -32,8 +32,8 @@
 		{
 			id: "A1300000000001C9"
 			title: "Zbiorniki many"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 3/16: Zbiorniki many. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Zbiorniki many” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 15.0d
 			y: 4.0d
 			icon: "botania:mana_pool"
 			dependencies: ["A1300000000001C7"]
@@ -43,143 +43,143 @@
 		{
 			id: "A1300000000001CA"
 			title: "Diamenty many"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 4/16: Diamenty many. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 9.0d
-			y: 4.0d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Diamenty many” i zachowaj trochę na dalszą rozbudowę."]
+			x: 1.0d
+			y: 8.0d
 			icon: "botania:mana_diamond"
-			dependencies: ["A1300000000001C7"]
+			dependencies: ["A1300000000001C8"]
 			tasks: [{ id: "A1400000000001CA" type: "item" item: "botania:mana_diamond" count: 12L consume_items: false }, { id: "A1800000000001CA" type: "item" item: "minecraft:amethyst_shard" count: 8L consume_items: false }]
 			rewards: [{ id: "A1500000000001CA" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 		{
 			id: "A1300000000001CB"
 			title: "Stal manowa"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 5/16: Stal manowa. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 13.5d
-			y: 4.0d
+			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Stal manowa” i daj sobie chwilę na sprawdzenie efektu."]
+			x: 15.0d
+			y: 8.0d
 			icon: "botania:manasteel_ingot"
-			dependencies: ["A1300000000001C7"]
+			dependencies: ["A1300000000001C9"]
 			tasks: [{ id: "A1400000000001CB" type: "item" item: "botania:manasteel_ingot" count: 24L consume_items: false }, { id: "A1800000000001CB" type: "item" item: "minecraft:amethyst_shard" count: 16L consume_items: false }]
 			rewards: [{ id: "A1500000000001CB" type: "item" item: "minecraft:blaze_powder" count: 4 }]
 		}
 		{
 			id: "A1300000000001CC"
 			title: "Runiczne ołtarze"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 6/16: Runiczne ołtarze. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
-			y: 8.0d
+			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Runiczne ołtarze” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			x: 1.0d
+			y: 12.0d
 			icon: "botania:runic_altar"
-			dependencies: ["A1300000000001C8"]
+			dependencies: ["A1300000000001CA"]
 			tasks: [{ id: "A1400000000001CC" type: "item" item: "botania:runic_altar" count: 2L consume_items: false }, { id: "A1800000000001CC" type: "item" item: "minecraft:amethyst_shard" count: 16L consume_items: false }]
 			rewards: [{ id: "A1500000000001CC" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
 		}
 		{
 			id: "A1300000000001CD"
 			title: "Pylony many"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 7/16: Pylony many. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
-			y: 8.0d
+			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Pylony many” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			x: 15.0d
+			y: 12.0d
 			icon: "botania:mana_pylon"
-			dependencies: ["A1300000000001C9"]
+			dependencies: ["A1300000000001CB"]
 			tasks: [{ id: "A1400000000001CD" type: "item" item: "botania:mana_pylon" count: 4L consume_items: false }, { id: "A1800000000001CD" type: "item" item: "minecraft:blaze_powder" count: 16L consume_items: false }]
 			rewards: [{ id: "A1500000000001CD" type: "item" item: "botania:mana_diamond" count: 8 }]
 		}
 		{
 			id: "A1300000000001CE"
 			title: "Ołtarz Terrasteel"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 8/16: Ołtarz Terrasteel. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 9.0d
-			y: 8.0d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Ołtarz Terrasteel” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 16.0d
 			icon: "botania:terra_plate"
-			dependencies: ["A1300000000001CA"]
+			dependencies: ["A1300000000001CC", "A1300000000001CD"]
 			tasks: [{ id: "A1400000000001CE" type: "item" item: "botania:terra_plate" count: 2L consume_items: false }, { id: "A1800000000001CE" type: "item" item: "minecraft:blaze_powder" count: 16L consume_items: false }]
 			rewards: [{ id: "A1500000000001CE" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
 		}
 		{
 			id: "A1300000000001CF"
 			title: "Słoiki Source"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 9/16: Słoiki Source. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 13.5d
-			y: 8.0d
+			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Słoiki Source” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			x: 1.0d
+			y: 20.0d
 			icon: "ars_nouveau:source_jar"
-			dependencies: ["A1300000000001CB"]
+			dependencies: ["A1300000000001CE"]
 			tasks: [{ id: "A1400000000001CF" type: "item" item: "ars_nouveau:source_jar" count: 8L consume_items: false }, { id: "A1800000000001CF" type: "item" item: "minecraft:blaze_powder" count: 24L consume_items: false }]
 			rewards: [{ id: "A1500000000001CF" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 		{
 			id: "A1300000000001D0"
 			title: "Komory nasycania"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 10/16: Komory nasycania. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
-			y: 12.0d
+			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Komory nasycania” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			x: 15.0d
+			y: 20.0d
 			icon: "ars_nouveau:imbuement_chamber"
-			dependencies: ["A1300000000001CC"]
+			dependencies: ["A1300000000001CE"]
 			tasks: [{ id: "A1400000000001D0" type: "item" item: "ars_nouveau:imbuement_chamber" count: 4L consume_items: false }, { id: "A1800000000001D0" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
 			rewards: [{ id: "A1500000000001D0" type: "item" item: "minecraft:blaze_powder" count: 8 }]
 		}
 		{
 			id: "A1300000000001D1"
 			title: "Kamienie Source"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 11/16: Kamienie Source. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
-			y: 12.0d
+			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Kamienie Source” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			x: 1.0d
+			y: 24.0d
 			icon: "ars_nouveau:source_gem"
-			dependencies: ["A1300000000001CD"]
+			dependencies: ["A1300000000001CF"]
 			tasks: [{ id: "A1400000000001D1" type: "item" item: "ars_nouveau:source_gem" count: 48L consume_items: false }, { id: "A1800000000001D1" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
 			rewards: [{ id: "A1500000000001D1" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
 		}
 		{
 			id: "A1300000000001D2"
 			title: "Przekaźniki Source"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 12/16: Przekaźniki Source. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 9.0d
-			y: 12.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Przekaźniki Source” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 15.0d
+			y: 24.0d
 			icon: "ars_nouveau:relay"
-			dependencies: ["A1300000000001CE"]
+			dependencies: ["A1300000000001D0"]
 			tasks: [{ id: "A1400000000001D2" type: "item" item: "ars_nouveau:relay" count: 8L consume_items: false }, { id: "A1800000000001D2" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
 			rewards: [{ id: "A1500000000001D2" type: "item" item: "botania:mana_diamond" count: 4 }]
 		}
 		{
 			id: "A1300000000001D3"
 			title: "Aparaty zaklinania"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 13/16: Aparaty zaklinania. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 13.5d
-			y: 12.0d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Aparaty zaklinania” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 1.0d
+			y: 28.0d
 			icon: "ars_nouveau:enchanting_apparatus"
-			dependencies: ["A1300000000001CF"]
+			dependencies: ["A1300000000001D1"]
 			tasks: [{ id: "A1400000000001D3" type: "item" item: "ars_nouveau:enchanting_apparatus" count: 2L consume_items: false }, { id: "A1800000000001D3" type: "item" item: "botania:mana_diamond" count: 32L consume_items: false }]
 			rewards: [{ id: "A1500000000001D3" type: "item" item: "minecraft:amethyst_shard" count: 8 }]
 		}
 		{
 			id: "A1300000000001D4"
 			title: "Zaklęte piedestały"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 14/16: Zaklęte piedestały. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
-			y: 16.0d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Zaklęte piedestały” i zachowaj trochę na dalszą rozbudowę."]
+			x: 15.0d
+			y: 28.0d
 			icon: "ars_nouveau:arcane_pedestal"
-			dependencies: ["A1300000000001D0"]
+			dependencies: ["A1300000000001D2"]
 			tasks: [{ id: "A1400000000001D4" type: "item" item: "ars_nouveau:arcane_pedestal" count: 8L consume_items: false }, { id: "A1800000000001D4" type: "item" item: "botania:mana_diamond" count: 32L consume_items: false }]
 			rewards: [{ id: "A1500000000001D4" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 		{
 			id: "A1300000000001D5"
 			title: "Wytwórnie Terrasteel"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 15/16: Wytwórnie Terrasteel. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
-			y: 16.0d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Wytwórnie Terrasteel” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 32.0d
 			icon: "botania:terrasteel_ingot"
-			dependencies: ["A1300000000001D1"]
+			dependencies: ["A1300000000001D3", "A1300000000001D4"]
 			tasks: [{ id: "A1400000000001D5" type: "item" item: "botania:terrasteel_ingot" count: 8L consume_items: false }, { id: "A1800000000001D5" type: "item" item: "botania:mana_diamond" count: 32L consume_items: false }]
 			rewards: [{ id: "A1500000000001D5" type: "item" item: "minecraft:blaze_powder" count: 4 }]
 		}
 		{
 			id: "A1300000000001D6"
 			title: "TOKYO ARCANE FOUNDRY"
-			description: ["Fabryka oparta na manie, Source i automatyzacji magicznej. ETAP 16/16: TOKYO ARCANE FOUNDRY. Wykonaj oba cele materiałowe. Nagroda finałowa po ukończeniu wszystkich czterech gałęzi."]
-			x: 7.0d
-			y: 21.5d
+			description: ["Znalezienie wspólnego języka dla magii i techniki otwiera nowe drogi. Ostatnia próba to „TOKYO ARCANE FOUNDRY”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			x: 8.0d
+			y: 36.0d
 			icon: "ars_nouveau:archmage_spell_book"
-			dependencies: ["A1300000000001D4", "A1300000000001D5", "A1300000000001D2", "A1300000000001D3"]
+			dependencies: ["A1300000000001D5"]
 			tasks: [{ id: "A1400000000001D6" type: "item" item: "ars_nouveau:archmage_spell_book" count: 1L consume_items: false }, { id: "A1800000000001D6" type: "item" item: "botania:mana_diamond" count: 32L consume_items: false }, { id: "A1900000000001D6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
 			rewards: [{ id: "A1500000000001D6" type: "item" item: "botania:mana_diamond" count: 4 }, { id: "A1600000000001D6" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}

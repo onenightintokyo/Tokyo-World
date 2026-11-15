@@ -1,17 +1,17 @@
 {
 	filename: "bees_advanced"
-	title: "&a&l04 &r&fProductive Bees"
-	group: "A110000000000004"
+	title: "&a&lFabryka w ulu"
+	group: "A110000000000005"
 	id: "A12000000000000E"
 	icon: "productivebees:centrifuge"
-	order_index: 3
+	order_index: 2
 	images: [ { image: "tokyoworld:textures/gui/quests/building_farming.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000B1"
 			title: "Leśne gniazdo"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: leśne gniazdo. Element 1 z 12 tej ścieżki."]
-			x: 7.0d
+			description: ["Pszczoły nie znają grafiku pracownika, a jednak dostarczają niesamowite zasoby. Przygotuj im odpowiednie warunki. Zacznij od „Leśne gniazdo”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			x: 8.0d
 			y: 0.0d
 			icon: "productivebees:oak_wood_nest"
 			dependencies: ["A13000000000001A"]
@@ -21,8 +21,8 @@
 		{
 			id: "A1300000000000B2"
 			title: "Gniazdo trzmieli"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: gniazdo trzmieli. Element 2 z 12 tej ścieżki."]
-			x: 0.0d
+			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Gniazdo trzmieli” i daj sobie chwilę na sprawdzenie efektu."]
+			x: 1.0d
 			y: 4.0d
 			icon: "productivebees:bumble_bee_nest"
 			dependencies: ["A1300000000000B1"]
@@ -32,8 +32,8 @@
 		{
 			id: "A1300000000000B3"
 			title: "Łapacz pszczół"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: łapacz pszczół. Element 3 z 12 tej ścieżki."]
-			x: 4.5d
+			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Łapacz pszczół” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			x: 15.0d
 			y: 4.0d
 			icon: "productivebees:catcher"
 			dependencies: ["A1300000000000B1"]
@@ -43,99 +43,99 @@
 		{
 			id: "A1300000000000B4"
 			title: "Pasieka bambusowa"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: pasieka bambusowa. Element 4 z 12 tej ścieżki."]
-			x: 9.0d
-			y: 4.0d
+			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Pasieka bambusowa” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			x: 1.0d
+			y: 8.0d
 			icon: "productivebees:bamboo_hive"
-			dependencies: ["A1300000000000B1"]
+			dependencies: ["A1300000000000B2"]
 			tasks: [{ id: "A1400000000000B4" type: "item" item: "productivebees:bamboo_hive" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000B4" type: "item" item: "minecraft:golden_carrot" count: 4 }]
 		}
 		{
 			id: "A1300000000000B5"
 			title: "Wirówka miodowa"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: wirówka miodowa. Element 5 z 12 tej ścieżki."]
-			x: 13.5d
-			y: 4.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Wirówka miodowa” — teraz pracujesz już nad prawdziwym systemem."]
+			x: 15.0d
+			y: 8.0d
 			icon: "productivebees:centrifuge"
-			dependencies: ["A1300000000000B1"]
+			dependencies: ["A1300000000000B3"]
 			tasks: [{ id: "A1400000000000B5" type: "item" item: "productivebees:centrifuge" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000B5" type: "item" item: "minecraft:honeycomb" count: 8 }]
 		}
 		{
 			id: "A1300000000000B6"
 			title: "Wirówka elektryczna"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: wirówka elektryczna. Element 6 z 12 tej ścieżki."]
-			x: 0.0d
-			y: 7.5d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Wirówka elektryczna” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 12.0d
 			icon: "productivebees:powered_centrifuge"
-			dependencies: ["A1300000000000B2"]
+			dependencies: ["A1300000000000B4", "A1300000000000B5"]
 			tasks: [{ id: "A1400000000000B6" type: "item" item: "productivebees:powered_centrifuge" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000B6" type: "item" item: "minecraft:bone_meal" count: 4 }]
 		}
 		{
 			id: "A1300000000000B7"
 			title: "Rozlewnia miodu"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: rozlewnia miodu. Element 7 z 12 tej ścieżki."]
-			x: 4.5d
-			y: 7.5d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Rozlewnia miodu” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			x: 1.0d
+			y: 16.0d
 			icon: "productivebees:bottler"
-			dependencies: ["A1300000000000B3"]
+			dependencies: ["A1300000000000B6"]
 			tasks: [{ id: "A1400000000000B7" type: "item" item: "productivebees:bottler" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000B7" type: "item" item: "minecraft:golden_carrot" count: 4 }]
 		}
 		{
 			id: "A1300000000000B8"
 			title: "Rozmnażanie pszczół"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: rozmnażanie pszczół. Element 8 z 12 tej ścieżki."]
-			x: 9.0d
-			y: 7.5d
+			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Rozmnażanie pszczół” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			x: 15.0d
+			y: 16.0d
 			icon: "productivebees:breeding_chamber"
-			dependencies: ["A1300000000000B4"]
+			dependencies: ["A1300000000000B6"]
 			tasks: [{ id: "A1400000000000B8" type: "item" item: "productivebees:breeding_chamber" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000B8" type: "item" item: "minecraft:honeycomb" count: 4 }]
 		}
 		{
 			id: "A1300000000000B9"
 			title: "Wirówka podgrzewana"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: wirówka podgrzewana. Element 9 z 12 tej ścieżki."]
-			x: 13.5d
-			y: 7.5d
+			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Wirówka podgrzewana” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 1.0d
+			y: 20.0d
 			icon: "productivebees:heated_centrifuge"
-			dependencies: ["A1300000000000B5"]
+			dependencies: ["A1300000000000B7"]
 			tasks: [{ id: "A1400000000000B9" type: "item" item: "productivebees:heated_centrifuge" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000B9" type: "item" item: "minecraft:experience_bottle" count: 8 }]
 		}
 		{
 			id: "A1300000000000BA"
 			title: "Energia z miodu"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: energia z miodu. Element 10 z 12 tej ścieżki."]
-			x: 0.0d
-			y: 11.0d
+			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Energia z miodu” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 15.0d
+			y: 20.0d
 			icon: "productivebees:honey_generator"
-			dependencies: ["A1300000000000B6"]
+			dependencies: ["A1300000000000B8"]
 			tasks: [{ id: "A1400000000000BA" type: "item" item: "productivebees:honey_generator" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000BA" type: "item" item: "minecraft:golden_carrot" count: 4 }]
 		}
 		{
 			id: "A1300000000000BB"
 			title: "Specjalne gniazdo"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: specjalne gniazdo. Element 11 z 12 tej ścieżki."]
-			x: 4.5d
-			y: 11.0d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Specjalne gniazdo” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 24.0d
 			icon: "productivebees:sugarbag_nest"
-			dependencies: ["A1300000000000B7"]
+			dependencies: ["A1300000000000B9", "A1300000000000BA"]
 			tasks: [{ id: "A1400000000000BB" type: "item" item: "productivebees:sugarbag_nest" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000BB" type: "item" item: "minecraft:honeycomb" count: 4 }]
 		}
 		{
 			id: "A1300000000000BC"
 			title: "Legendarna pasieka"
-			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: legendarna pasieka. Element 12 z 12 tej ścieżki."]
-			x: 7.0d
-			y: 15.5d
+			description: ["Pasieka stała się częścią twojego systemu produkcji. Ostatnia próba to „Legendarna pasieka”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			x: 8.0d
+			y: 28.0d
 			icon: "productivebees:dragon_egg_hive"
-			dependencies: ["A1300000000000B8", "A1300000000000B9", "A1300000000000BA", "A1300000000000BB"]
+			dependencies: ["A1300000000000BB"]
 			tasks: [{ id: "A1400000000000BC" type: "item" item: "productivebees:dragon_egg_hive" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000BC" type: "item" item: "minecraft:golden_apple" count: 2 }, { id: "A1600000000000BC" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}

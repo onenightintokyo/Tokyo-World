@@ -1,17 +1,17 @@
 {
 	filename: "factory_logic"
-	title: "&b&l08 &r&fSterowanie fabryką"
+	title: "&b&lMyślące maszyny"
 	group: "A110000000000002"
 	id: "A12000000000001A"
 	icon: "integrateddynamics:logic_programmer"
-	order_index: 7
+	order_index: 3
 	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000157"
 			title: "Pierwszy sygnał"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 1/16: Pierwszy sygnał. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 7.0d
+			description: ["Samo uruchomienie urządzenia to za mało. Czas nauczyć całą instalację, kiedy powinna działać i gdzie skierować materiały. Zacznij od „Pierwszy sygnał”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			x: 8.0d
 			y: 0.0d
 			icon: "minecraft:repeater"
 			dependencies: ["A130000000000080", "A130000000000030"]
@@ -21,8 +21,8 @@
 		{
 			id: "A130000000000158"
 			title: "Czujniki sieci"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 2/16: Czujniki sieci. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
+			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Czujniki sieci” i zachowaj trochę na dalszą rozbudowę."]
+			x: 1.0d
 			y: 4.0d
 			icon: "minecraft:comparator"
 			dependencies: ["A130000000000157"]
@@ -32,8 +32,8 @@
 		{
 			id: "A130000000000159"
 			title: "Przekaźniki danych"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 3/16: Przekaźniki danych. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
+			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Przekaźniki danych” i daj sobie chwilę na sprawdzenie efektu."]
+			x: 15.0d
 			y: 4.0d
 			icon: "integrateddynamics:cable"
 			dependencies: ["A130000000000157"]
@@ -43,143 +43,143 @@
 		{
 			id: "A13000000000015A"
 			title: "Programowanie reguł"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 4/16: Programowanie reguł. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 9.0d
-			y: 4.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Programowanie reguł” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			x: 1.0d
+			y: 8.0d
 			icon: "integrateddynamics:logic_programmer"
-			dependencies: ["A130000000000157"]
+			dependencies: ["A130000000000158"]
 			tasks: [{ id: "A14000000000015A" type: "item" item: "integrateddynamics:logic_programmer" count: 2L consume_items: false }, { id: "A18000000000015A" type: "item" item: "minecraft:copper_ingot" count: 8L consume_items: false }]
 			rewards: [{ id: "A15000000000015A" type: "item" item: "minecraft:ender_pearl" count: 8 }]
 		}
 		{
 			id: "A13000000000015B"
 			title: "Pamięć zmiennych"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 5/16: Pamięć zmiennych. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 13.5d
-			y: 4.0d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Pamięć zmiennych” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			x: 15.0d
+			y: 8.0d
 			icon: "integrateddynamics:variable"
-			dependencies: ["A130000000000157"]
+			dependencies: ["A130000000000159"]
 			tasks: [{ id: "A14000000000015B" type: "item" item: "integrateddynamics:variable" count: 16L consume_items: false }, { id: "A18000000000015B" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
 			rewards: [{ id: "A15000000000015B" type: "item" item: "minecraft:diamond" count: 1 }]
 		}
 		{
 			id: "A13000000000015C"
 			title: "Magazyn logiki"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 6/16: Magazyn logiki. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
-			y: 8.0d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Magazyn logiki” — teraz pracujesz już nad prawdziwym systemem."]
+			x: 1.0d
+			y: 12.0d
 			icon: "integrateddynamics:variablestore"
-			dependencies: ["A130000000000158"]
+			dependencies: ["A13000000000015A"]
 			tasks: [{ id: "A14000000000015C" type: "item" item: "integrateddynamics:variablestore" count: 4L consume_items: false }, { id: "A18000000000015C" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
 			rewards: [{ id: "A15000000000015C" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 		{
 			id: "A13000000000015D"
 			title: "Zasilanie sterowników"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 7/16: Zasilanie sterowników. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
-			y: 8.0d
+			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Zasilanie sterowników” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			x: 15.0d
+			y: 12.0d
 			icon: "integrateddynamics:energy_battery"
-			dependencies: ["A130000000000159"]
+			dependencies: ["A13000000000015B"]
 			tasks: [{ id: "A14000000000015D" type: "item" item: "integrateddynamics:energy_battery" count: 4L consume_items: false }, { id: "A18000000000015D" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
 			rewards: [{ id: "A15000000000015D" type: "item" item: "minecraft:emerald" count: 8 }]
 		}
 		{
 			id: "A13000000000015E"
 			title: "Przekierowania sieci"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 8/16: Przekierowania sieci. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 9.0d
-			y: 8.0d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Przekierowania sieci” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 16.0d
 			icon: "integrateddynamics:proxy"
-			dependencies: ["A13000000000015A"]
+			dependencies: ["A13000000000015C", "A13000000000015D"]
 			tasks: [{ id: "A14000000000015E" type: "item" item: "integrateddynamics:proxy" count: 4L consume_items: false }, { id: "A18000000000015E" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
 			rewards: [{ id: "A15000000000015E" type: "item" item: "create:andesite_alloy" count: 4 }]
 		}
 		{
 			id: "A13000000000015F"
 			title: "Serwer sterujący"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 9/16: Serwer sterujący. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 13.5d
-			y: 8.0d
+			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Serwer sterujący” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			x: 1.0d
+			y: 20.0d
 			icon: "ae2:controller"
-			dependencies: ["A13000000000015B"]
+			dependencies: ["A13000000000015E"]
 			tasks: [{ id: "A14000000000015F" type: "item" item: "ae2:controller" count: 2L consume_items: false }, { id: "A18000000000015F" type: "item" item: "minecraft:iron_ingot" count: 24L consume_items: false }]
 			rewards: [{ id: "A15000000000015F" type: "item" item: "minecraft:golden_carrot" count: 4 }]
 		}
 		{
 			id: "A130000000000160"
 			title: "Procesory logiczne"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 10/16: Procesory logiczne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
-			y: 12.0d
+			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Procesory logiczne” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 15.0d
+			y: 20.0d
 			icon: "ae2:logic_processor"
-			dependencies: ["A13000000000015C"]
+			dependencies: ["A13000000000015E"]
 			tasks: [{ id: "A140000000000160" type: "item" item: "ae2:logic_processor" count: 16L consume_items: false }, { id: "A180000000000160" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
 			rewards: [{ id: "A150000000000160" type: "item" item: "minecraft:ender_pearl" count: 8 }]
 		}
 		{
 			id: "A130000000000161"
 			title: "Procesory obliczeń"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 11/16: Procesory obliczeń. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
-			y: 12.0d
+			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Procesory obliczeń” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 1.0d
+			y: 24.0d
 			icon: "ae2:calculation_processor"
-			dependencies: ["A13000000000015D"]
+			dependencies: ["A13000000000015F"]
 			tasks: [{ id: "A140000000000161" type: "item" item: "ae2:calculation_processor" count: 12L consume_items: false }, { id: "A180000000000161" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
 			rewards: [{ id: "A150000000000161" type: "item" item: "minecraft:diamond" count: 1 }]
 		}
 		{
 			id: "A130000000000162"
 			title: "Procesory projektowe"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 12/16: Procesory projektowe. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 9.0d
-			y: 12.0d
+			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Procesory projektowe” i zachowaj trochę na dalszą rozbudowę."]
+			x: 15.0d
+			y: 24.0d
 			icon: "ae2:engineering_processor"
-			dependencies: ["A13000000000015E"]
+			dependencies: ["A130000000000160"]
 			tasks: [{ id: "A140000000000162" type: "item" item: "ae2:engineering_processor" count: 12L consume_items: false }, { id: "A180000000000162" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
 			rewards: [{ id: "A150000000000162" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 		{
 			id: "A130000000000163"
 			title: "Terminale sterujące"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 13/16: Terminale sterujące. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 13.5d
-			y: 12.0d
+			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Terminale sterujące” i daj sobie chwilę na sprawdzenie efektu."]
+			x: 1.0d
+			y: 28.0d
 			icon: "ae2:terminal"
-			dependencies: ["A13000000000015F"]
+			dependencies: ["A130000000000161"]
 			tasks: [{ id: "A140000000000163" type: "item" item: "ae2:terminal" count: 4L consume_items: false }, { id: "A180000000000163" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
 			rewards: [{ id: "A150000000000163" type: "item" item: "minecraft:emerald" count: 8 }]
 		}
 		{
 			id: "A130000000000164"
 			title: "Magistrala sygnałów"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 14/16: Magistrala sygnałów. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
-			y: 16.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Magistrala sygnałów” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			x: 15.0d
+			y: 28.0d
 			icon: "xnet:connector"
-			dependencies: ["A130000000000160"]
+			dependencies: ["A130000000000162"]
 			tasks: [{ id: "A140000000000164" type: "item" item: "xnet:connector" count: 16L consume_items: false }, { id: "A180000000000164" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
 			rewards: [{ id: "A150000000000164" type: "item" item: "create:andesite_alloy" count: 4 }]
 		}
 		{
 			id: "A130000000000165"
 			title: "Kontroler kanałów"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 15/16: Kontroler kanałów. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
-			y: 16.0d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Kontroler kanałów” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 32.0d
 			icon: "xnet:controller"
-			dependencies: ["A130000000000161"]
+			dependencies: ["A130000000000163", "A130000000000164"]
 			tasks: [{ id: "A140000000000165" type: "item" item: "xnet:controller" count: 2L consume_items: false }, { id: "A180000000000165" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
 			rewards: [{ id: "A150000000000165" type: "item" item: "minecraft:golden_carrot" count: 4 }]
 		}
 		{
 			id: "A130000000000166"
 			title: "CENTRALNY SYSTEM STEROWANIA"
-			description: ["Zamień ręczne sterowanie na czujniki, zmienne i sieci logiczne. ETAP 16/16: CENTRALNY SYSTEM STEROWANIA. Wykonaj oba cele materiałowe. Nagroda finałowa po ukończeniu wszystkich czterech gałęzi."]
-			x: 7.0d
-			y: 21.5d
+			description: ["Maszyny nie czekają już przy każdej decyzji na człowieka. Ostatnia próba to „CENTRALNY SYSTEM STEROWANIA”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			x: 8.0d
+			y: 36.0d
 			icon: "ae2:pattern_provider"
-			dependencies: ["A130000000000164", "A130000000000165", "A130000000000162", "A130000000000163"]
+			dependencies: ["A130000000000165"]
 			tasks: [{ id: "A140000000000166" type: "item" item: "ae2:pattern_provider" count: 4L consume_items: false }, { id: "A180000000000166" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A190000000000166" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
 			rewards: [{ id: "A150000000000166" type: "item" item: "ae2:engineering_processor" count: 4 }, { id: "A160000000000166" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}

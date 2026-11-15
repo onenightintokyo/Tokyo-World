@@ -1,7 +1,7 @@
 {
 	filename: "me_data_center"
-	title: "&e&l07 &r&fCentrum danych ME"
-	group: "A110000000000003"
+	title: "&e&lCyfrowe serce bazy"
+	group: "A110000000000004"
 	id: "A12000000000001E"
 	icon: "ae2:controller"
 	order_index: 6
@@ -10,8 +10,8 @@
 		{
 			id: "A130000000000197"
 			title: "Kwarc Certus"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 1/16: Kwarc Certus. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 7.0d
+			description: ["Prawdziwy magazyn powinien wiedzieć, czego potrzeba do następnej budowy. Tutaj zaczyna się inteligentna produkcja. Zacznij od „Kwarc Certus”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			x: 8.0d
 			y: 0.0d
 			icon: "ae2:certus_quartz_crystal"
 			dependencies: ["A130000000000126", "A1300000000000EA"]
@@ -21,8 +21,8 @@
 		{
 			id: "A130000000000198"
 			title: "Kwarc ładowany"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 2/16: Kwarc ładowany. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
+			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Kwarc ładowany” — teraz pracujesz już nad prawdziwym systemem."]
+			x: 1.0d
 			y: 4.0d
 			icon: "ae2:charged_certus_quartz_crystal"
 			dependencies: ["A130000000000197"]
@@ -32,8 +32,8 @@
 		{
 			id: "A130000000000199"
 			title: "Kryształy Fluix"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 3/16: Kryształy Fluix. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
+			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Kryształy Fluix” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			x: 15.0d
 			y: 4.0d
 			icon: "ae2:fluix_crystal"
 			dependencies: ["A130000000000197"]
@@ -43,143 +43,143 @@
 		{
 			id: "A13000000000019A"
 			title: "Prasy procesorów"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 4/16: Prasy procesorów. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 9.0d
-			y: 4.0d
+			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Prasy procesorów” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			x: 1.0d
+			y: 8.0d
 			icon: "ae2:inscriber"
-			dependencies: ["A130000000000197"]
+			dependencies: ["A130000000000198"]
 			tasks: [{ id: "A14000000000019A" type: "item" item: "ae2:inscriber" count: 4L consume_items: false }, { id: "A18000000000019A" type: "item" item: "minecraft:iron_ingot" count: 8L consume_items: false }]
 			rewards: [{ id: "A15000000000019A" type: "item" item: "minecraft:emerald" count: 8 }]
 		}
 		{
 			id: "A13000000000019B"
 			title: "Procesory logiczne"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 5/16: Procesory logiczne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 13.5d
-			y: 4.0d
+			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Procesory logiczne” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			x: 15.0d
+			y: 8.0d
 			icon: "ae2:logic_processor"
-			dependencies: ["A130000000000197"]
+			dependencies: ["A130000000000199"]
 			tasks: [{ id: "A14000000000019B" type: "item" item: "ae2:logic_processor" count: 24L consume_items: false }, { id: "A18000000000019B" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
 			rewards: [{ id: "A15000000000019B" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A13000000000019C"
 			title: "Procesory kalkulacyjne"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 6/16: Procesory kalkulacyjne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
-			y: 8.0d
+			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Procesory kalkulacyjne” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 1.0d
+			y: 12.0d
 			icon: "ae2:calculation_processor"
-			dependencies: ["A130000000000198"]
+			dependencies: ["A13000000000019A"]
 			tasks: [{ id: "A14000000000019C" type: "item" item: "ae2:calculation_processor" count: 24L consume_items: false }, { id: "A18000000000019C" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
 			rewards: [{ id: "A15000000000019C" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 		{
 			id: "A13000000000019D"
 			title: "Procesory inżynieryjne"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 7/16: Procesory inżynieryjne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
-			y: 8.0d
+			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Procesory inżynieryjne” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 15.0d
+			y: 12.0d
 			icon: "ae2:engineering_processor"
-			dependencies: ["A130000000000199"]
+			dependencies: ["A13000000000019B"]
 			tasks: [{ id: "A14000000000019D" type: "item" item: "ae2:engineering_processor" count: 24L consume_items: false }, { id: "A18000000000019D" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
 			rewards: [{ id: "A15000000000019D" type: "item" item: "minecraft:lapis_lazuli" count: 8 }]
 		}
 		{
 			id: "A13000000000019E"
 			title: "Zasilanie ME"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 8/16: Zasilanie ME. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 9.0d
-			y: 8.0d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Zasilanie ME” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 16.0d
 			icon: "ae2:energy_acceptor"
-			dependencies: ["A13000000000019A"]
+			dependencies: ["A13000000000019C", "A13000000000019D"]
 			tasks: [{ id: "A14000000000019E" type: "item" item: "ae2:energy_acceptor" count: 4L consume_items: false }, { id: "A18000000000019E" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
 			rewards: [{ id: "A15000000000019E" type: "item" item: "ae2:fluix_crystal" count: 4 }]
 		}
 		{
 			id: "A13000000000019F"
 			title: "Kontrolery ME"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 9/16: Kontrolery ME. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 13.5d
-			y: 8.0d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Kontrolery ME” i daj sobie chwilę na sprawdzenie efektu."]
+			x: 1.0d
+			y: 20.0d
 			icon: "ae2:controller"
-			dependencies: ["A13000000000019B"]
+			dependencies: ["A13000000000019E"]
 			tasks: [{ id: "A14000000000019F" type: "item" item: "ae2:controller" count: 4L consume_items: false }, { id: "A18000000000019F" type: "item" item: "minecraft:copper_ingot" count: 24L consume_items: false }]
 			rewards: [{ id: "A15000000000019F" type: "item" item: "minecraft:emerald" count: 4 }]
 		}
 		{
 			id: "A1300000000001A0"
 			title: "Szafy nośników"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 10/16: Szafy nośników. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
-			y: 12.0d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Szafy nośników” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			x: 15.0d
+			y: 20.0d
 			icon: "ae2:drive"
-			dependencies: ["A13000000000019C"]
+			dependencies: ["A13000000000019E"]
 			tasks: [{ id: "A1400000000001A0" type: "item" item: "ae2:drive" count: 8L consume_items: false }, { id: "A1800000000001A0" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
 			rewards: [{ id: "A1500000000001A0" type: "item" item: "minecraft:ender_pearl" count: 8 }]
 		}
 		{
 			id: "A1300000000001A1"
 			title: "Terminale ME"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 11/16: Terminale ME. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
-			y: 12.0d
+			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Terminale ME” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			x: 1.0d
+			y: 24.0d
 			icon: "ae2:terminal"
-			dependencies: ["A13000000000019D"]
+			dependencies: ["A13000000000019F"]
 			tasks: [{ id: "A1400000000001A1" type: "item" item: "ae2:terminal" count: 4L consume_items: false }, { id: "A1800000000001A1" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
 			rewards: [{ id: "A1500000000001A1" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 		{
 			id: "A1300000000001A2"
 			title: "Terminale rzemiosła"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 12/16: Terminale rzemiosła. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 9.0d
-			y: 12.0d
+			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Terminale rzemiosła” — teraz pracujesz już nad prawdziwym systemem."]
+			x: 15.0d
+			y: 24.0d
 			icon: "ae2:crafting_terminal"
-			dependencies: ["A13000000000019E"]
+			dependencies: ["A1300000000001A0"]
 			tasks: [{ id: "A1400000000001A2" type: "item" item: "ae2:crafting_terminal" count: 4L consume_items: false }, { id: "A1800000000001A2" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
 			rewards: [{ id: "A1500000000001A2" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
 		}
 		{
 			id: "A1300000000001A3"
 			title: "Automatyczne składanie"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 13/16: Automatyczne składanie. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 13.5d
-			y: 12.0d
+			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Automatyczne składanie” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			x: 1.0d
+			y: 28.0d
 			icon: "ae2:molecular_assembler"
-			dependencies: ["A13000000000019F"]
+			dependencies: ["A1300000000001A1"]
 			tasks: [{ id: "A1400000000001A3" type: "item" item: "ae2:molecular_assembler" count: 12L consume_items: false }, { id: "A1800000000001A3" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
 			rewards: [{ id: "A1500000000001A3" type: "item" item: "ae2:fluix_crystal" count: 8 }]
 		}
 		{
 			id: "A1300000000001A4"
 			title: "Dostawcy wzorców"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 14/16: Dostawcy wzorców. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 0.0d
-			y: 16.0d
+			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Dostawcy wzorców” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			x: 15.0d
+			y: 28.0d
 			icon: "ae2:pattern_provider"
-			dependencies: ["A1300000000001A0"]
+			dependencies: ["A1300000000001A2"]
 			tasks: [{ id: "A1400000000001A4" type: "item" item: "ae2:pattern_provider" count: 8L consume_items: false }, { id: "A1800000000001A4" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
 			rewards: [{ id: "A1500000000001A4" type: "item" item: "minecraft:emerald" count: 4 }]
 		}
 		{
 			id: "A1300000000001A5"
 			title: "Interfejsy produkcyjne"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 15/16: Interfejsy produkcyjne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
-			x: 4.5d
-			y: 16.0d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Interfejsy produkcyjne” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 32.0d
 			icon: "ae2:interface"
-			dependencies: ["A1300000000001A1"]
+			dependencies: ["A1300000000001A3", "A1300000000001A4"]
 			tasks: [{ id: "A1400000000001A5" type: "item" item: "ae2:interface" count: 8L consume_items: false }, { id: "A1800000000001A5" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
 			rewards: [{ id: "A1500000000001A5" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A1300000000001A6"
 			title: "TOKYO DATA CENTER"
-			description: ["Cyfrowe przechowywanie oraz zautomatyzowana obsługa setek receptur. ETAP 16/16: TOKYO DATA CENTER. Wykonaj oba cele materiałowe. Nagroda finałowa po ukończeniu wszystkich czterech gałęzi."]
-			x: 7.0d
-			y: 21.5d
+			description: ["Masz własne centrum danych, które może przygotować pracę całego zakładu. Ostatnia próba to „TOKYO DATA CENTER”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			x: 8.0d
+			y: 36.0d
 			icon: "ae2:quantum_ring"
-			dependencies: ["A1300000000001A4", "A1300000000001A5", "A1300000000001A2", "A1300000000001A3"]
+			dependencies: ["A1300000000001A5"]
 			tasks: [{ id: "A1400000000001A6" type: "item" item: "ae2:quantum_ring" count: 16L consume_items: false }, { id: "A1800000000001A6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001A6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
 			rewards: [{ id: "A1500000000001A6" type: "item" item: "ae2:fluix_crystal" count: 4 }, { id: "A1600000000001A6" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}

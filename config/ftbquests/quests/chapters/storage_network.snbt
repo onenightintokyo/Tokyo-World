@@ -1,17 +1,17 @@
 {
 	filename: "storage_network"
-	title: "&e&l02 &r&fMagazyny i ekwipunek"
-	group: "A110000000000003"
+	title: "&e&lKoniec ze skrzyniami"
+	group: "A110000000000004"
 	id: "A120000000000011"
 	icon: "sophisticatedstorage:controller"
-	order_index: 1
+	order_index: 2
 	images: [ { image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000DB"
 			title: "Narzędzie magazynowe"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: narzędzie magazynowe. Element 1 z 16 tej ścieżki."]
-			x: 7.0d
+			description: ["Najważniejszy przedmiot zawsze jest w ostatniej skrzyni. Można to zmienić, jeśli magazyn zacznie działać jak system. Zacznij od „Narzędzie magazynowe”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			x: 8.0d
 			y: 0.0d
 			icon: "sophisticatedstorage:storage_tool"
 			dependencies: ["A130000000000008"]
@@ -21,8 +21,8 @@
 		{
 			id: "A1300000000000DC"
 			title: "Złącze magazynu"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: złącze magazynu. Element 2 z 16 tej ścieżki."]
-			x: 0.0d
+			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Złącze magazynu” — teraz pracujesz już nad prawdziwym systemem."]
+			x: 1.0d
 			y: 4.0d
 			icon: "sophisticatedstorage:storage_connector"
 			dependencies: ["A1300000000000DB"]
@@ -32,8 +32,8 @@
 		{
 			id: "A1300000000000DD"
 			title: "Kontroler magazynu"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: kontroler magazynu. Element 3 z 16 tej ścieżki."]
-			x: 4.5d
+			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Kontroler magazynu” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			x: 15.0d
 			y: 4.0d
 			icon: "sophisticatedstorage:controller"
 			dependencies: ["A1300000000000DB"]
@@ -43,143 +43,143 @@
 		{
 			id: "A1300000000000DE"
 			title: "Wejście i wyjście"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: wejście i wyjście. Element 4 z 16 tej ścieżki."]
-			x: 9.0d
-			y: 4.0d
+			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Wejście i wyjście” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			x: 1.0d
+			y: 8.0d
 			icon: "sophisticatedstorage:storage_io"
-			dependencies: ["A1300000000000DB"]
+			dependencies: ["A1300000000000DC"]
 			tasks: [{ id: "A1400000000000DE" type: "item" item: "sophisticatedstorage:storage_io" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000DE" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
 		}
 		{
 			id: "A1300000000000DF"
 			title: "Wejście magazynu"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: wejście magazynu. Element 5 z 16 tej ścieżki."]
-			x: 13.5d
-			y: 4.0d
+			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Wejście magazynu” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			x: 15.0d
+			y: 8.0d
 			icon: "sophisticatedstorage:storage_input"
-			dependencies: ["A1300000000000DB"]
+			dependencies: ["A1300000000000DD"]
 			tasks: [{ id: "A1400000000000DF" type: "item" item: "sophisticatedstorage:storage_input" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000DF" type: "item" item: "minecraft:experience_bottle" count: 8 }]
 		}
 		{
 			id: "A1300000000000E0"
 			title: "Wyjście magazynu"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: wyjście magazynu. Element 6 z 16 tej ścieżki."]
-			x: 0.0d
-			y: 7.5d
+			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Wyjście magazynu” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 1.0d
+			y: 12.0d
 			icon: "sophisticatedstorage:storage_output"
-			dependencies: ["A1300000000000DC"]
+			dependencies: ["A1300000000000DE"]
 			tasks: [{ id: "A1400000000000E0" type: "item" item: "sophisticatedstorage:storage_output" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000E0" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
 		}
 		{
 			id: "A1300000000000E1"
 			title: "Pierwszy plecak"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: pierwszy plecak. Element 7 z 16 tej ścieżki."]
-			x: 4.5d
-			y: 7.5d
+			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Pierwszy plecak” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 15.0d
+			y: 12.0d
 			icon: "sophisticatedbackpacks:backpack"
-			dependencies: ["A1300000000000DD"]
+			dependencies: ["A1300000000000DF"]
 			tasks: [{ id: "A1400000000000E1" type: "item" item: "sophisticatedbackpacks:backpack" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000E1" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
 		}
 		{
 			id: "A1300000000000E2"
 			title: "Plecak miedziany"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: plecak miedziany. Element 8 z 16 tej ścieżki."]
-			x: 9.0d
-			y: 7.5d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Plecak miedziany” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 16.0d
 			icon: "sophisticatedbackpacks:copper_backpack"
-			dependencies: ["A1300000000000DE"]
+			dependencies: ["A1300000000000E0", "A1300000000000E1"]
 			tasks: [{ id: "A1400000000000E2" type: "item" item: "sophisticatedbackpacks:copper_backpack" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000E2" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A1300000000000E3"
 			title: "Plecak żelazny"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: plecak żelazny. Element 9 z 16 tej ścieżki."]
-			x: 13.5d
-			y: 7.5d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Plecak żelazny” i daj sobie chwilę na sprawdzenie efektu."]
+			x: 1.0d
+			y: 20.0d
 			icon: "sophisticatedbackpacks:iron_backpack"
-			dependencies: ["A1300000000000DF"]
+			dependencies: ["A1300000000000E2"]
 			tasks: [{ id: "A1400000000000E3" type: "item" item: "sophisticatedbackpacks:iron_backpack" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000E3" type: "item" item: "minecraft:slime_ball" count: 8 }]
 		}
 		{
 			id: "A1300000000000E4"
 			title: "Plecak diamentowy"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: plecak diamentowy. Element 10 z 16 tej ścieżki."]
-			x: 0.0d
-			y: 11.0d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Plecak diamentowy” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			x: 15.0d
+			y: 20.0d
 			icon: "sophisticatedbackpacks:diamond_backpack"
-			dependencies: ["A1300000000000E0"]
+			dependencies: ["A1300000000000E2"]
 			tasks: [{ id: "A1400000000000E4" type: "item" item: "sophisticatedbackpacks:diamond_backpack" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000E4" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
 		}
 		{
 			id: "A1300000000000E5"
 			title: "Automatyczny odbiór"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: automatyczny odbiór. Element 11 z 16 tej ścieżki."]
-			x: 4.5d
-			y: 11.0d
+			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Automatyczny odbiór” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			x: 1.0d
+			y: 24.0d
 			icon: "sophisticatedbackpacks:advanced_pickup_upgrade"
-			dependencies: ["A1300000000000E1"]
+			dependencies: ["A1300000000000E3"]
 			tasks: [{ id: "A1400000000000E5" type: "item" item: "sophisticatedbackpacks:advanced_pickup_upgrade" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000E5" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A1300000000000E6"
 			title: "Zaawansowany filtr"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: zaawansowany filtr. Element 12 z 16 tej ścieżki."]
-			x: 9.0d
-			y: 11.0d
+			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Zaawansowany filtr” — teraz pracujesz już nad prawdziwym systemem."]
+			x: 15.0d
+			y: 24.0d
 			icon: "sophisticatedbackpacks:advanced_filter_upgrade"
-			dependencies: ["A1300000000000E2"]
+			dependencies: ["A1300000000000E4"]
 			tasks: [{ id: "A1400000000000E6" type: "item" item: "sophisticatedbackpacks:advanced_filter_upgrade" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000E6" type: "item" item: "minecraft:slime_ball" count: 4 }]
 		}
 		{
 			id: "A1300000000000E7"
 			title: "Crafting w plecaku"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: crafting w plecaku. Element 13 z 16 tej ścieżki."]
-			x: 13.5d
-			y: 11.0d
+			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Crafting w plecaku” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			x: 1.0d
+			y: 28.0d
 			icon: "sophisticatedbackpacks:crafting_upgrade"
-			dependencies: ["A1300000000000E3"]
+			dependencies: ["A1300000000000E5"]
 			tasks: [{ id: "A1400000000000E7" type: "item" item: "sophisticatedbackpacks:crafting_upgrade" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000E7" type: "item" item: "minecraft:amethyst_shard" count: 8 }]
 		}
 		{
 			id: "A1300000000000E8"
 			title: "Kompaktowanie w plecaku"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: kompaktowanie w plecaku. Element 14 z 16 tej ścieżki."]
-			x: 0.0d
-			y: 14.5d
+			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Kompaktowanie w plecaku” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			x: 15.0d
+			y: 28.0d
 			icon: "sophisticatedbackpacks:advanced_compacting_upgrade"
-			dependencies: ["A1300000000000E4"]
+			dependencies: ["A1300000000000E6"]
 			tasks: [{ id: "A1400000000000E8" type: "item" item: "sophisticatedbackpacks:advanced_compacting_upgrade" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000E8" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A1300000000000E9"
 			title: "Automatyczne uzupełnianie"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: automatyczne uzupełnianie. Element 15 z 16 tej ścieżki."]
-			x: 4.5d
-			y: 14.5d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Automatyczne uzupełnianie” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 32.0d
 			icon: "sophisticatedbackpacks:refill_upgrade"
-			dependencies: ["A1300000000000E5"]
+			dependencies: ["A1300000000000E7", "A1300000000000E8"]
 			tasks: [{ id: "A1400000000000E9" type: "item" item: "sophisticatedbackpacks:refill_upgrade" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000E9" type: "item" item: "minecraft:slime_ball" count: 4 }]
 		}
 		{
 			id: "A1300000000000EA"
 			title: "Usuwanie nadwyżek"
-			description: ["Rozbudowane magazynowanie, sortowanie oraz rozbudowa ekwipunku. Pozyskaj lub wytwórz: usuwanie nadwyżek. Element 16 z 16 tej ścieżki."]
-			x: 7.0d
-			y: 19.0d
+			description: ["Teraz łatwiej odnaleźć materiały niż zgubić je między skrzyniami. Ostatnia próba to „Usuwanie nadwyżek”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			x: 8.0d
+			y: 36.0d
 			icon: "sophisticatedbackpacks:void_upgrade"
-			dependencies: ["A1300000000000E6", "A1300000000000E7", "A1300000000000E8", "A1300000000000E9"]
+			dependencies: ["A1300000000000E9"]
 			tasks: [{ id: "A1400000000000EA" type: "item" item: "sophisticatedbackpacks:void_upgrade" count: 1L consume_items: false }]
 			rewards: [{ id: "A1500000000000EA" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A1600000000000EA" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}

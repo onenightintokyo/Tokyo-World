@@ -1,7 +1,7 @@
 {
 	filename: "immersive_industry"
-	title: "&b&l03 &r&fImmersive Engineering"
-	group: "A110000000000002"
+	title: "&c&lCiężar stali"
+	group: "A110000000000003"
 	id: "A120000000000007"
 	icon: "immersiveengineering:blast_furnace"
 	order_index: 2
@@ -12,8 +12,8 @@
 		{
 			id: "A130000000000045"
 			title: "Wielki piec"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: wielki piec. To etap 1 z 16 w tej gałęzi Tokyo World."]
-			x: 7.0d
+			description: ["Wielkie konstrukcje nie wybaczają prowizorki. Czas poznać stal, przewody i potężne urządzenia przemysłowe. Zacznij od „Wielki piec”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			x: 8.0d
 			y: 0.0d
 			icon: "immersiveengineering:blast_furnace"
 			dependencies: ["A130000000000008"]
@@ -23,8 +23,8 @@
 		{
 			id: "A130000000000046"
 			title: "Produkcja stali"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: produkcja stali. To etap 2 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Produkcja stali” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			x: 1.0d
 			y: 4.0d
 			icon: "immersiveengineering:ingot_steel"
 			dependencies: ["A130000000000045"]
@@ -34,8 +34,8 @@
 		{
 			id: "A130000000000047"
 			title: "Warsztat inżyniera"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: warsztat inżyniera. To etap 3 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Warsztat inżyniera” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 15.0d
 			y: 4.0d
 			icon: "immersiveengineering:workbench"
 			dependencies: ["A130000000000045"]
@@ -45,143 +45,143 @@
 		{
 			id: "A130000000000048"
 			title: "Przewody miedziane"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: przewody miedziane. To etap 4 z 16 w tej gałęzi Tokyo World."]
-			x: 9.0d
-			y: 4.0d
+			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Przewody miedziane” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 1.0d
+			y: 8.0d
 			icon: "immersiveengineering:wirecoil_copper"
-			dependencies: ["A130000000000045"]
+			dependencies: ["A130000000000046"]
 			tasks: [{ id: "A140000000000048" type: "item" item: "immersiveengineering:wirecoil_copper" count: 8L consume_items: false }]
 			rewards: [{ id: "A150000000000048" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A130000000000049"
 			title: "Złącza niskiego napięcia"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: złącza niskiego napięcia. To etap 5 z 16 w tej gałęzi Tokyo World."]
-			x: 13.5d
-			y: 4.0d
+			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Złącza niskiego napięcia” i zachowaj trochę na dalszą rozbudowę."]
+			x: 15.0d
+			y: 8.0d
 			icon: "immersiveengineering:connector_lv"
-			dependencies: ["A130000000000045"]
+			dependencies: ["A130000000000047"]
 			tasks: [{ id: "A140000000000049" type: "item" item: "immersiveengineering:connector_lv" count: 4L consume_items: false }]
 			rewards: [{ id: "A150000000000049" type: "item" item: "minecraft:glowstone_dust" count: 8 }]
 		}
 		{
 			id: "A13000000000004A"
 			title: "Akumulator LV"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: akumulator lv. To etap 6 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 7.5d
+			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Akumulator LV” i daj sobie chwilę na sprawdzenie efektu."]
+			x: 1.0d
+			y: 12.0d
 			icon: "immersiveengineering:capacitor_lv"
-			dependencies: ["A130000000000046"]
+			dependencies: ["A130000000000048"]
 			tasks: [{ id: "A14000000000004A" type: "item" item: "immersiveengineering:capacitor_lv" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000004A" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
 		}
 		{
 			id: "A13000000000004B"
 			title: "Akumulator MV"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: akumulator mv. To etap 7 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
-			y: 7.5d
+			description: ["Zanim rozstawisz resztę warsztatu, uporządkuj „Akumulator MV” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			x: 15.0d
+			y: 12.0d
 			icon: "immersiveengineering:capacitor_mv"
-			dependencies: ["A130000000000047"]
+			dependencies: ["A130000000000049"]
 			tasks: [{ id: "A14000000000004B" type: "item" item: "immersiveengineering:capacitor_mv" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000004B" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A13000000000004C"
 			title: "Akumulator HV"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: akumulator hv. To etap 8 z 16 w tej gałęzi Tokyo World."]
-			x: 9.0d
-			y: 7.5d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Akumulator HV” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 16.0d
 			icon: "immersiveengineering:capacitor_hv"
-			dependencies: ["A130000000000048"]
+			dependencies: ["A13000000000004A", "A13000000000004B"]
 			tasks: [{ id: "A14000000000004C" type: "item" item: "immersiveengineering:capacitor_hv" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000004C" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
 		}
 		{
 			id: "A13000000000004D"
 			title: "Przemysłowy rurociąg"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: przemysłowy rurociąg. To etap 9 z 16 w tej gałęzi Tokyo World."]
-			x: 13.5d
-			y: 7.5d
+			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Przemysłowy rurociąg” — teraz pracujesz już nad prawdziwym systemem."]
+			x: 1.0d
+			y: 20.0d
 			icon: "immersiveengineering:fluid_pipe"
-			dependencies: ["A130000000000049"]
+			dependencies: ["A13000000000004C"]
 			tasks: [{ id: "A14000000000004D" type: "item" item: "immersiveengineering:fluid_pipe" count: 12L consume_items: false }]
 			rewards: [{ id: "A15000000000004D" type: "item" item: "minecraft:ender_pearl" count: 8 }]
 		}
 		{
 			id: "A13000000000004E"
 			title: "Pompa przemysłowa"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: pompa przemysłowa. To etap 10 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 11.0d
+			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Pompa przemysłowa” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			x: 15.0d
+			y: 20.0d
 			icon: "immersiveengineering:fluid_pump"
-			dependencies: ["A13000000000004A"]
+			dependencies: ["A13000000000004C"]
 			tasks: [{ id: "A14000000000004E" type: "item" item: "immersiveengineering:fluid_pump" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000004E" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A13000000000004F"
 			title: "Prasa ciężka"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: prasa ciężka. To etap 11 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
-			y: 11.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Prasa ciężka” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			x: 1.0d
+			y: 24.0d
 			icon: "immersiveengineering:metal_press"
-			dependencies: ["A13000000000004B"]
+			dependencies: ["A13000000000004D"]
 			tasks: [{ id: "A14000000000004F" type: "item" item: "immersiveengineering:metal_press" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000004F" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
 		}
 		{
 			id: "A130000000000050"
 			title: "Kruszarka wieloblokowa"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: kruszarka wieloblokowa. To etap 12 z 16 w tej gałęzi Tokyo World."]
-			x: 9.0d
-			y: 11.0d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Kruszarka wieloblokowa” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			x: 15.0d
+			y: 24.0d
 			icon: "immersiveengineering:crusher"
-			dependencies: ["A13000000000004C"]
+			dependencies: ["A13000000000004E"]
 			tasks: [{ id: "A140000000000050" type: "item" item: "immersiveengineering:crusher" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000050" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A130000000000051"
 			title: "Rafineria"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: rafineria. To etap 13 z 16 w tej gałęzi Tokyo World."]
-			x: 13.5d
-			y: 11.0d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Rafineria” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 1.0d
+			y: 28.0d
 			icon: "immersiveengineering:refinery"
-			dependencies: ["A13000000000004D"]
+			dependencies: ["A13000000000004F"]
 			tasks: [{ id: "A140000000000051" type: "item" item: "immersiveengineering:refinery" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000051" type: "item" item: "minecraft:lapis_lazuli" count: 8 }]
 		}
 		{
 			id: "A130000000000052"
 			title: "Generator Diesla"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: generator diesla. To etap 14 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 14.5d
+			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Generator Diesla” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 15.0d
+			y: 28.0d
 			icon: "immersiveengineering:diesel_generator"
-			dependencies: ["A13000000000004E"]
+			dependencies: ["A130000000000050"]
 			tasks: [{ id: "A140000000000052" type: "item" item: "immersiveengineering:diesel_generator" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000052" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
 		}
 		{
 			id: "A130000000000053"
 			title: "Piec łukowy"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: piec łukowy. To etap 15 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
-			y: 14.5d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Piec łukowy” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 32.0d
 			icon: "immersiveengineering:arc_furnace"
-			dependencies: ["A13000000000004F"]
+			dependencies: ["A130000000000051", "A130000000000052"]
 			tasks: [{ id: "A140000000000053" type: "item" item: "immersiveengineering:arc_furnace" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000053" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A130000000000054"
 			title: "Wiertło geologiczne"
-			description: ["Wielkie maszyny i elektryka. Wytwórz lub zdobądź: wiertło geologiczne. To etap 16 z 16 w tej gałęzi Tokyo World."]
-			x: 7.0d
-			y: 19.0d
+			description: ["Huta staje się mocnym fundamentem dla kolejnych planów. Ostatnia próba to „Wiertło geologiczne”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			x: 8.0d
+			y: 36.0d
 			icon: "immersiveengineering:sample_drill"
-			dependencies: ["A130000000000050", "A130000000000051", "A130000000000052", "A130000000000053"]
+			dependencies: ["A130000000000053"]
 			tasks: [{ id: "A140000000000054" type: "item" item: "immersiveengineering:sample_drill" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000054" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A160000000000054" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}

@@ -2,27 +2,35 @@
 	chapter_groups: [
 		{
 			id: "A110000000000001"
-			title: "&6&l01  POCZĄTEK"
+			title: "&6&lPIERWSZY ŚLAD"
 		}
 		{
 			id: "A110000000000002"
-			title: "&b&l02  TECHNOLOGIA"
+			title: "&b&lMECHANIZMY"
 		}
 		{
 			id: "A110000000000003"
-			title: "&e&l03  ENERGIA I MAGAZYNY"
+			title: "&c&lOGIEŃ I STAL"
 		}
 		{
 			id: "A110000000000004"
-			title: "&a&l04  FARMING I BUDOWANIE"
+			title: "&e&lENERGIA I SIECI"
 		}
 		{
 			id: "A110000000000005"
-			title: "&d&l05  MAGIA I ALCHIMIA"
+			title: "&a&lŻYWA FABRYKA"
 		}
 		{
 			id: "A110000000000006"
-			title: "&c&l06  EKSPLORACJA I BOSSOWIE"
+			title: "&d&lSEKRETY MAGII"
+		}
+		{
+			id: "A110000000000007"
+			title: "&9&lPOZA HORYZONT"
+		}
+		{
+			id: "A110000000000008"
+			title: "&5&lDZIEDZICTWO TOKYO"
 		}
 	]
 }

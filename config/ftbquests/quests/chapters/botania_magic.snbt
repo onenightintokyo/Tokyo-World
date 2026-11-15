@@ -1,7 +1,7 @@
 {
 	filename: "botania_magic"
-	title: "&d&l01 &r&fBotania: Energia many"
-	group: "A110000000000005"
+	title: "&d&lKwiaty pełne many"
+	group: "A110000000000006"
 	id: "A12000000000000B"
 	icon: "botania:mana_pool"
 	order_index: 0
@@ -12,8 +12,8 @@
 		{
 			id: "A130000000000081"
 			title: "Kwiaty mistyczne"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: kwiaty mistyczne. To etap 1 z 16 w tej gałęzi Tokyo World."]
-			x: 7.0d
+			description: ["Nie każda energia płynie kablem. W tym świecie kwiaty potrafią zasilać własne urządzenia. Zacznij od „Kwiaty mistyczne”. Bez tego reszta planu zostanie tylko ładnym szkicem."]
+			x: 8.0d
 			y: 0.0d
 			icon: "botania:white_mystical_flower"
 			dependencies: ["A130000000000019"]
@@ -23,8 +23,8 @@
 		{
 			id: "A130000000000082"
 			title: "Rozpraszacz many"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: rozpraszacz many. To etap 2 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Rozpraszacz many” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 1.0d
 			y: 4.0d
 			icon: "botania:mana_spreader"
 			dependencies: ["A130000000000081"]
@@ -34,8 +34,8 @@
 		{
 			id: "A130000000000083"
 			title: "Zbiornik many"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: zbiornik many. To etap 3 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Zbiornik many” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 15.0d
 			y: 4.0d
 			icon: "botania:mana_pool"
 			dependencies: ["A130000000000081"]
@@ -45,143 +45,143 @@
 		{
 			id: "A130000000000084"
 			title: "Diament many"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: diament many. To etap 4 z 16 w tej gałęzi Tokyo World."]
-			x: 9.0d
-			y: 4.0d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Diament many” i zachowaj trochę na dalszą rozbudowę."]
+			x: 1.0d
+			y: 8.0d
 			icon: "botania:mana_diamond"
-			dependencies: ["A130000000000081"]
+			dependencies: ["A130000000000082"]
 			tasks: [{ id: "A140000000000084" type: "item" item: "botania:mana_diamond" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000084" type: "item" item: "minecraft:blaze_powder" count: 4 }]
 		}
 		{
 			id: "A130000000000085"
 			title: "Stal many"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: stal many. To etap 5 z 16 w tej gałęzi Tokyo World."]
-			x: 13.5d
-			y: 4.0d
+			description: ["Każda nowa maszyna stawia własne wymagania. Sprawdź, co daje „Stal many” i daj sobie chwilę na sprawdzenie efektu."]
+			x: 15.0d
+			y: 8.0d
 			icon: "botania:manasteel_ingot"
-			dependencies: ["A130000000000081"]
+			dependencies: ["A130000000000083"]
 			tasks: [{ id: "A140000000000085" type: "item" item: "botania:manasteel_ingot" count: 12L consume_items: false }]
 			rewards: [{ id: "A150000000000085" type: "item" item: "minecraft:experience_bottle" count: 8 }]
 		}
 		{
 			id: "A130000000000086"
 			title: "Ołtarz runiczny"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: ołtarz runiczny. To etap 6 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 7.5d
+			description: ["Nie wszystko da się zrobić jedną maszyną. Zajmij się „Ołtarz runiczny” — kiedy zabraknie go później, cała linia stanie w miejscu."]
+			x: 1.0d
+			y: 12.0d
 			icon: "botania:runic_altar"
-			dependencies: ["A130000000000082"]
+			dependencies: ["A130000000000084"]
 			tasks: [{ id: "A140000000000086" type: "item" item: "botania:runic_altar" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000086" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
 		}
 		{
 			id: "A130000000000087"
 			title: "Płyta przemian"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: płyta przemian. To etap 7 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
-			y: 7.5d
+			description: ["Tu nie chodzi o przypadkową sztabkę z kolejnej skrzyni. Zadbaj o „Płyta przemian” zanim przejdziesz dalej. Później wszystko powinno się ze sobą połączyć."]
+			x: 15.0d
+			y: 12.0d
 			icon: "botania:terra_plate"
-			dependencies: ["A130000000000083"]
+			dependencies: ["A130000000000085"]
 			tasks: [{ id: "A140000000000087" type: "item" item: "botania:terra_plate" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000087" type: "item" item: "minecraft:blaze_powder" count: 4 }]
 		}
 		{
 			id: "A130000000000088"
 			title: "Dystrybutor many"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: dystrybutor many. To etap 8 z 16 w tej gałęzi Tokyo World."]
-			x: 9.0d
-			y: 7.5d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Dystrybutor many” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 16.0d
 			icon: "botania:mana_distributor"
-			dependencies: ["A130000000000084"]
+			dependencies: ["A130000000000086", "A130000000000087"]
 			tasks: [{ id: "A140000000000088" type: "item" item: "botania:mana_distributor" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000088" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A130000000000089"
 			title: "Pylon many"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: pylon many. To etap 9 z 16 w tej gałęzi Tokyo World."]
-			x: 13.5d
-			y: 7.5d
+			description: ["Przy większej produkcji drobiazgi decydują o wszystkim. Wróć do tematu „Pylon many” i pomyśl, jak ten element przyda ci się przy następnej budowie."]
+			x: 1.0d
+			y: 20.0d
 			icon: "botania:mana_pylon"
-			dependencies: ["A130000000000085"]
+			dependencies: ["A130000000000088"]
 			tasks: [{ id: "A140000000000089" type: "item" item: "botania:mana_pylon" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000089" type: "item" item: "minecraft:ender_pearl" count: 8 }]
 		}
 		{
 			id: "A13000000000008A"
 			title: "Elficki rozpraszacz"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: elficki rozpraszacz. To etap 10 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 11.0d
+			description: ["Najlepsze rozwiązania bywają niepozorne. Przyjrzyj się „Elficki rozpraszacz” na tyle solidnie, żeby nie trzeba było do tego wracać po godzinie."]
+			x: 15.0d
+			y: 20.0d
 			icon: "botania:elven_spreader"
-			dependencies: ["A130000000000086"]
+			dependencies: ["A130000000000088"]
 			tasks: [{ id: "A14000000000008A" type: "item" item: "botania:elven_spreader" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000008A" type: "item" item: "minecraft:blaze_powder" count: 4 }]
 		}
 		{
 			id: "A13000000000008B"
 			title: "Mana i energia FE"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: mana i energia fe. To etap 11 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
-			y: 11.0d
+			description: ["W fabryce zawsze znajdzie się jakieś wąskie gardło. Spróbuj wykorzystać „Mana i energia FE” zamiast szukać obejścia przy każdym nowym urządzeniu."]
+			x: 1.0d
+			y: 24.0d
 			icon: "botania:mana_fluxfield"
-			dependencies: ["A130000000000087"]
+			dependencies: ["A130000000000089"]
 			tasks: [{ id: "A14000000000008B" type: "item" item: "botania:mana_fluxfield" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000008B" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A13000000000008C"
 			title: "Magazyn Corporea"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: magazyn corporea. To etap 12 z 16 w tej gałęzi Tokyo World."]
-			x: 9.0d
-			y: 11.0d
+			description: ["Nie przyspieszaj na siłę. Tu warto dopracować „Magazyn Corporea” zanim kolejny pomysł zamieni się w stertę niedokończonych maszyn."]
+			x: 15.0d
+			y: 24.0d
 			icon: "botania:corporea_spark"
-			dependencies: ["A130000000000088"]
+			dependencies: ["A13000000000008A"]
 			tasks: [{ id: "A14000000000008C" type: "item" item: "botania:corporea_spark" count: 6L consume_items: false }]
 			rewards: [{ id: "A15000000000008C" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A13000000000008D"
 			title: "Pylon Gai"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: pylon gai. To etap 13 z 16 w tej gałęzi Tokyo World."]
-			x: 13.5d
-			y: 11.0d
+			description: ["Dobrze mieć pomysł, lecz jeszcze lepiej zobaczyć go w praktyce. Przygotuj „Pylon Gai” i spróbuj od razu znaleźć dla tego zastosowanie w bazie."]
+			x: 1.0d
+			y: 28.0d
 			icon: "botania:gaia_pylon"
-			dependencies: ["A130000000000089"]
+			dependencies: ["A13000000000008B"]
 			tasks: [{ id: "A14000000000008D" type: "item" item: "botania:gaia_pylon" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000008D" type: "item" item: "minecraft:amethyst_shard" count: 8 }]
 		}
 		{
 			id: "A13000000000008E"
 			title: "Terrasteel"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: terrasteel. To etap 14 z 16 w tej gałęzi Tokyo World."]
-			x: 0.0d
-			y: 14.5d
+			description: ["Nie trzeba od razu budować wielkiego zakładu. Na razie skup się na „Terrasteel” i zachowaj trochę na dalszą rozbudowę."]
+			x: 15.0d
+			y: 28.0d
 			icon: "botania:terrasteel_ingot"
-			dependencies: ["A13000000000008A"]
+			dependencies: ["A13000000000008C"]
 			tasks: [{ id: "A14000000000008E" type: "item" item: "botania:terrasteel_ingot" count: 2L consume_items: false }]
 			rewards: [{ id: "A15000000000008E" type: "item" item: "minecraft:experience_bottle" count: 4 }]
 		}
 		{
 			id: "A13000000000008F"
 			title: "Rozpraszacz Gai"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: rozpraszacz gai. To etap 15 z 16 w tej gałęzi Tokyo World."]
-			x: 4.5d
-			y: 14.5d
+			description: ["Dwie ścieżki prac wreszcie spotykają się w jednym miejscu. „Rozpraszacz Gai” pozwoli połączyć wcześniejsze odkrycia w coś, co naprawdę działa."]
+			x: 8.0d
+			y: 32.0d
 			icon: "botania:gaia_spreader"
-			dependencies: ["A13000000000008B"]
+			dependencies: ["A13000000000008D", "A13000000000008E"]
 			tasks: [{ id: "A14000000000008F" type: "item" item: "botania:gaia_spreader" count: 1L consume_items: false }]
 			rewards: [{ id: "A15000000000008F" type: "item" item: "minecraft:ender_pearl" count: 4 }]
 		}
 		{
 			id: "A130000000000090"
 			title: "Zaklinanie many"
-			description: ["Mana jako alternatywna automatyzacja. Wytwórz lub zdobądź: zaklinanie many. To etap 16 z 16 w tej gałęzi Tokyo World."]
-			x: 7.0d
-			y: 19.0d
+			description: ["Mana zaczyna przypominać kolejną gałąź twojej technologii. Ostatnia próba to „Zaklinanie many”. Kiedy wszystko będzie gotowe, możesz spokojnie ruszyć dalej."]
+			x: 8.0d
+			y: 36.0d
 			icon: "botania:enchanter"
-			dependencies: ["A13000000000008C", "A13000000000008D", "A13000000000008E", "A13000000000008F"]
+			dependencies: ["A13000000000008F"]
 			tasks: [{ id: "A140000000000090" type: "item" item: "botania:enchanter" count: 1L consume_items: false }]
 			rewards: [{ id: "A150000000000090" type: "item" item: "minecraft:enchanted_golden_apple" count: 1 }, { id: "A160000000000090" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
