@@ -1,8 +1,9 @@
 {
 	filename: "tokyo_create"
+	title: "Create — Mechaniczna fabryka"
 	group: "A110000000000001"
 	id: "A120000000000002"
-	icon: { id: "create:andesite_alloy" }
+	icon: "create:andesite_alloy"
 	order_index: 1
 	images: [
 		{
@@ -18,15 +19,17 @@
 	quests: [
 		{
 			id: "A130000000000009"
+			title: "Stop andezytowy"
+			description: ["Pierwszy materiał napędzający mechaniczne maszyny Create."]
 			x: 0.0d
 			y: 0.0d
-			icon: { id: "create:andesite_alloy" }
+			icon: "create:andesite_alloy"
 			dependencies: ["A130000000000005"]
 			tasks: [
 				{
 					id: "A140000000000009"
 					type: "item"
-					item: { count: 1, id: "create:andesite_alloy" }
+					item: "create:andesite_alloy"
 					count: 8L
 					consume_items: false
 				}
@@ -35,22 +38,24 @@
 				{
 					id: "A150000000000009"
 					type: "item"
-					item: { count: 1, id: "minecraft:iron_ingot" }
+					item: "minecraft:iron_ingot"
 					count: 4
 				}
 			]
 		}
 		{
 			id: "A13000000000000A"
+			title: "Wały napędowe"
+			description: ["Zbuduj wały do przesyłania energii obrotowej."]
 			x: 3.5d
 			y: 0.0d
-			icon: { id: "create:shaft" }
+			icon: "create:shaft"
 			dependencies: ["A130000000000009"]
 			tasks: [
 				{
 					id: "A14000000000000A"
 					type: "item"
-					item: { count: 1, id: "create:shaft" }
+					item: "create:shaft"
 					count: 8L
 					consume_items: false
 				}
@@ -59,22 +64,24 @@
 				{
 					id: "A15000000000000A"
 					type: "item"
-					item: { count: 1, id: "minecraft:redstone" }
+					item: "minecraft:redstone"
 					count: 8
 				}
 			]
 		}
 		{
 			id: "A13000000000000B"
+			title: "Przekładnie"
+			description: ["Przełóż obroty na praktyczne układy maszynowe."]
 			x: 7.0d
 			y: 0.0d
-			icon: { id: "create:cogwheel" }
+			icon: "create:cogwheel"
 			dependencies: ["A13000000000000A"]
 			tasks: [
 				{
 					id: "A14000000000000B"
 					type: "item"
-					item: { count: 1, id: "create:cogwheel" }
+					item: "create:cogwheel"
 					count: 8L
 					consume_items: false
 				}
@@ -83,22 +90,24 @@
 				{
 					id: "A15000000000000B"
 					type: "item"
-					item: { count: 1, id: "minecraft:iron_ingot" }
+					item: "minecraft:iron_ingot"
 					count: 4
 				}
 			]
 		}
 		{
 			id: "A13000000000000C"
+			title: "Wytwarzanie obrotów"
+			description: ["Zbuduj koło wodne i podłącz prostą linię produkcyjną."]
 			x: 10.5d
 			y: 0.0d
-			icon: { id: "create:water_wheel" }
+			icon: "create:water_wheel"
 			dependencies: ["A13000000000000B"]
 			tasks: [
 				{
 					id: "A14000000000000C"
 					type: "item"
-					item: { count: 1, id: "create:water_wheel" }
+					item: "create:water_wheel"
 					count: 1L
 					consume_items: false
 				}
@@ -107,22 +116,24 @@
 				{
 					id: "A15000000000000C"
 					type: "item"
-					item: { count: 1, id: "minecraft:bucket" }
+					item: "minecraft:bucket"
 					count: 2
 				}
 			]
 		}
 		{
 			id: "A13000000000000D"
+			title: "Mechaniczna prasa"
+			description: ["Wprowadź automatyczne prasowanie metali."]
 			x: 0.0d
 			y: 3.0d
-			icon: { id: "create:mechanical_press" }
+			icon: "create:mechanical_press"
 			dependencies: ["A13000000000000C"]
 			tasks: [
 				{
 					id: "A14000000000000D"
 					type: "item"
-					item: { count: 1, id: "create:mechanical_press" }
+					item: "create:mechanical_press"
 					count: 1L
 					consume_items: false
 				}
@@ -131,22 +142,24 @@
 				{
 					id: "A15000000000000D"
 					type: "item"
-					item: { count: 1, id: "minecraft:gold_ingot" }
+					item: "minecraft:gold_ingot"
 					count: 2
 				}
 			]
 		}
 		{
 			id: "A13000000000000E"
+			title: "Przenośniki"
+			description: ["Przenieś transport przedmiotów z rąk gracza na taśmociągi."]
 			x: 3.5d
 			y: 3.0d
-			icon: { id: "create:belt_connector" }
+			icon: "create:belt_connector"
 			dependencies: ["A13000000000000D"]
 			tasks: [
 				{
 					id: "A14000000000000E"
 					type: "item"
-					item: { count: 1, id: "create:belt_connector" }
+					item: "create:belt_connector"
 					count: 4L
 					consume_items: false
 				}
@@ -155,22 +168,24 @@
 				{
 					id: "A15000000000000E"
 					type: "item"
-					item: { count: 1, id: "minecraft:iron_ingot" }
+					item: "minecraft:iron_ingot"
 					count: 6
 				}
 			]
 		}
 		{
 			id: "A13000000000000F"
+			title: "Mieszalnik"
+			description: ["Rozpocznij mieszanie materiałów w systemie Create."]
 			x: 7.0d
 			y: 3.0d
-			icon: { id: "create:mechanical_mixer" }
+			icon: "create:mechanical_mixer"
 			dependencies: ["A13000000000000E"]
 			tasks: [
 				{
 					id: "A14000000000000F"
 					type: "item"
-					item: { count: 1, id: "create:mechanical_mixer" }
+					item: "create:mechanical_mixer"
 					count: 1L
 					consume_items: false
 				}
@@ -179,22 +194,24 @@
 				{
 					id: "A15000000000000F"
 					type: "item"
-					item: { count: 1, id: "minecraft:blaze_powder" }
+					item: "minecraft:blaze_powder"
 					count: 4
 				}
 			]
 		}
 		{
 			id: "A130000000000010"
+			title: "Precyzyjne mechanizmy"
+			description: ["Automatyzacja produkcji precyzyjnych elementów będzie potrzebna w dalszej progresji."]
 			x: 10.5d
 			y: 3.0d
-			icon: { id: "create:precision_mechanism" }
+			icon: "create:precision_mechanism"
 			dependencies: ["A13000000000000F"]
 			tasks: [
 				{
 					id: "A140000000000010"
 					type: "item"
-					item: { count: 1, id: "create:precision_mechanism" }
+					item: "create:precision_mechanism"
 					count: 2L
 					consume_items: false
 				}
@@ -203,7 +220,7 @@
 				{
 					id: "A150000000000010"
 					type: "item"
-					item: { count: 1, id: "minecraft:diamond" }
+					item: "minecraft:diamond"
 					count: 2
 				}
 			]
