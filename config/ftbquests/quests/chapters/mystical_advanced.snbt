@@ -181,7 +181,7 @@
 			icon: "mysticalagriculture:awakening_pedestal"
 			dependencies: ["A1300000000000AC", "A1300000000000AD", "A1300000000000AE", "A1300000000000AF"]
 			tasks: [{ id: "A1400000000000B0" type: "item" item: "mysticalagriculture:awakening_pedestal" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000B0" type: "item" item: "minecraft:golden_apple" count: 2 } { id: "A1600000000000B0" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1500000000000B0" type: "item" item: "minecraft:golden_apple" count: 2 }, { id: "A1600000000000B0" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
