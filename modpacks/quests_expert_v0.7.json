@@ -1067,11 +1067,17 @@
       "icon": "draconicevolution:crafting_core",
       "image": "tech_automation",
       "gates": [
-        306,
-        318,
-        266,
-        116,
-        326
+        342,
+        358,
+        374,
+        390,
+        406,
+        422,
+        438,
+        454,
+        470,
+        486,
+        502
       ],
       "reward": "minecraft:netherite_scrap",
       "focus": "Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory.",
@@ -1159,5 +1165,5 @@
       ]
     }
   ],
-  "notes": "All item IDs are already present in the original 24 Tokyo World chapters or base Minecraft. Each quest uses a primary item plus a tiered resource contribution; quest IDs continue from 326, keeping earlier progress. New optional mods are NOT required by these quests."
+  "notes": "All item IDs are already present in the original 24 Tokyo World chapters or base Minecraft. Each quest uses a primary item plus a tiered resource contribution; quest IDs continue from 326, keeping earlier progress. New optional mods are NOT required by these quests. The grand finale is locked behind completion of the other 11 new project chapters, forming an endgame achievement for friends."
 }
