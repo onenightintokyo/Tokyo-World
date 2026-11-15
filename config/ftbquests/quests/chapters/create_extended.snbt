@@ -1,0 +1,211 @@
+{
+	filename: "create_extended"
+	title: "Create — Wielka automatyzacja"
+	group: "A110000000000001"
+	id: "A120000000000005"
+	icon: "create:deployer"
+	order_index: 4
+	images: [
+		{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
+	]
+	quests: [
+		{
+			id: "A13000000000001F"
+			title: "Mechaniczne ramię"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: mechaniczne ramię. To etap 1 z 18 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 0.0d
+			icon: "create:deployer"
+			dependencies: ["A130000000000010"]
+			tasks: [{ id: "A14000000000001F" type: "item" item: "create:deployer" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000001F" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000020"
+			title: "Automatyczny crafting"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: automatyczny crafting. To etap 2 z 18 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 0.0d
+			icon: "create:mechanical_crafter"
+			dependencies: ["A13000000000001F"]
+			tasks: [{ id: "A140000000000020" type: "item" item: "create:mechanical_crafter" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000020" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000021"
+			title: "Mosiężny lejek"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: mosiężny lejek. To etap 3 z 18 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 0.0d
+			icon: "create:brass_funnel"
+			dependencies: ["A130000000000020"]
+			tasks: [{ id: "A140000000000021" type: "item" item: "create:brass_funnel" count: 4L consume_items: false }]
+			rewards: [{ id: "A150000000000021" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000022"
+			title: "Inteligentny zsyp"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: inteligentny zsyp. To etap 4 z 18 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 0.0d
+			icon: "create:smart_chute"
+			dependencies: ["A130000000000021"]
+			tasks: [{ id: "A140000000000022" type: "item" item: "create:smart_chute" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000022" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000023"
+			title: "Wiertło mechaniczne"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: wiertło mechaniczne. To etap 5 z 18 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 0.0d
+			icon: "create:mechanical_drill"
+			dependencies: ["A130000000000022"]
+			tasks: [{ id: "A140000000000023" type: "item" item: "create:mechanical_drill" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000023" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000024"
+			title: "Mechaniczny żniwiarz"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: mechaniczny żniwiarz. To etap 6 z 18 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 3.0d
+			icon: "create:mechanical_harvester"
+			dependencies: ["A130000000000023"]
+			tasks: [{ id: "A140000000000024" type: "item" item: "create:mechanical_harvester" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000024" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000025"
+			title: "Mobilny interfejs magazynu"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: mobilny interfejs magazynu. To etap 7 z 18 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 3.0d
+			icon: "create:portable_storage_interface"
+			dependencies: ["A130000000000024"]
+			tasks: [{ id: "A140000000000025" type: "item" item: "create:portable_storage_interface" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000025" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000026"
+			title: "Zbiornik cieczy"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: zbiornik cieczy. To etap 8 z 18 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 3.0d
+			icon: "create:fluid_tank"
+			dependencies: ["A130000000000025"]
+			tasks: [{ id: "A140000000000026" type: "item" item: "create:fluid_tank" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000026" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000027"
+			title: "Pompa Create"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: pompa create. To etap 9 z 18 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 3.0d
+			icon: "create:mechanical_pump"
+			dependencies: ["A130000000000026"]
+			tasks: [{ id: "A140000000000027" type: "item" item: "create:mechanical_pump" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000027" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A130000000000028"
+			title: "Koła kruszące"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: koła kruszące. To etap 10 z 18 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 3.0d
+			icon: "create:crushing_wheel"
+			dependencies: ["A130000000000027"]
+			tasks: [{ id: "A140000000000028" type: "item" item: "create:crushing_wheel" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000028" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A130000000000029"
+			title: "Kontroler obrotów"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: kontroler obrotów. To etap 11 z 18 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 6.0d
+			icon: "create:rotation_speed_controller"
+			dependencies: ["A130000000000028"]
+			tasks: [{ id: "A140000000000029" type: "item" item: "create:rotation_speed_controller" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000029" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A13000000000002A"
+			title: "Sekwencyjna przekładnia"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: sekwencyjna przekładnia. To etap 12 z 18 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 6.0d
+			icon: "create:sequenced_gearshift"
+			dependencies: ["A130000000000029"]
+			tasks: [{ id: "A14000000000002A" type: "item" item: "create:sequenced_gearshift" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000002A" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A13000000000002B"
+			title: "Automatyczne manipulatory"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: automatyczne manipulatory. To etap 13 z 18 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 6.0d
+			icon: "create:mechanical_arm"
+			dependencies: ["A13000000000002A"]
+			tasks: [{ id: "A14000000000002B" type: "item" item: "create:mechanical_arm" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000002B" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000002C"
+			title: "Silnik parowy"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: silnik parowy. To etap 14 z 18 w tej gałęzi Tokyo World."]
+			x: 10.5d
+			y: 6.0d
+			icon: "create:steam_engine"
+			dependencies: ["A13000000000002B"]
+			tasks: [{ id: "A14000000000002C" type: "item" item: "create:steam_engine" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000002C" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A13000000000002D"
+			title: "Palnik Blaze"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: palnik blaze. To etap 15 z 18 w tej gałęzi Tokyo World."]
+			x: 14.0d
+			y: 6.0d
+			icon: "create:blaze_burner"
+			dependencies: ["A13000000000002C"]
+			tasks: [{ id: "A14000000000002D" type: "item" item: "create:blaze_burner" count: 1L consume_items: false }]
+			rewards: [{ id: "A15000000000002D" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+		{
+			id: "A13000000000002E"
+			title: "Ekrany fabryczne"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: ekrany fabryczne. To etap 16 z 18 w tej gałęzi Tokyo World."]
+			x: 0.0d
+			y: 9.0d
+			icon: "create:display_link"
+			dependencies: ["A13000000000002D"]
+			tasks: [{ id: "A14000000000002E" type: "item" item: "create:display_link" count: 2L consume_items: false }]
+			rewards: [{ id: "A15000000000002E" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A13000000000002F"
+			title: "Sieć kolejowa"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: sieć kolejowa. To etap 17 z 18 w tej gałęzi Tokyo World."]
+			x: 3.5d
+			y: 9.0d
+			icon: "create:track"
+			dependencies: ["A13000000000002E"]
+			tasks: [{ id: "A14000000000002F" type: "item" item: "create:track" count: 16L consume_items: false }]
+			rewards: [{ id: "A15000000000002F" type: "item" item: "minecraft:redstone" count: 3 }]
+		}
+		{
+			id: "A130000000000030"
+			title: "Rurociągi płynów"
+			description: ["Mechaniczne linie produkcyjne. Wytwórz lub zdobądź: rurociągi płynów. To etap 18 z 18 w tej gałęzi Tokyo World."]
+			x: 7.0d
+			y: 9.0d
+			icon: "create:fluid_pipe"
+			dependencies: ["A13000000000002F"]
+			tasks: [{ id: "A140000000000030" type: "item" item: "create:fluid_pipe" count: 12L consume_items: false }]
+			rewards: [{ id: "A150000000000030" type: "item" item: "minecraft:gold_ingot" count: 3 }]
+		}
+	]
+}
