@@ -137,7 +137,7 @@
 			icon: "productivebees:dragon_egg_hive"
 			dependencies: ["A1300000000000B8", "A1300000000000B9", "A1300000000000BA", "A1300000000000BB"]
 			tasks: [{ id: "A1400000000000BC" type: "item" item: "productivebees:dragon_egg_hive" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000BC" type: "item" item: "minecraft:golden_apple" count: 2 } { id: "A1600000000000BC" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1500000000000BC" type: "item" item: "minecraft:golden_apple" count: 2 }, { id: "A1600000000000BC" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
