@@ -25,6 +25,12 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
+      - name: Build custom TW icon for EXE and Minecraft
+        shell: pwsh
+        run: |
+          ./launcher-standalone/Assets/PrepareIcons.ps1
+          if (!(Test-Path launcher-standalone/Assets/TokyoWorldIcon.ico)) { throw "TW icon not generated" }
+          if (!(Test-Path launcher-standalone/Assets/TokyoWorldIcon.png)) { throw "TW PNG not generated" }
       - name: Restore Windows desktop project
         run: dotnet restore launcher-standalone/TokyoWorldLauncher.csproj -r win-x64
       - name: Publish single-file, self-contained EXE
