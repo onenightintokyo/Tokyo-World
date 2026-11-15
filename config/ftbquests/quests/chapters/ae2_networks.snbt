@@ -1,10 +1,10 @@
 {
 	filename: "ae2_networks"
-	title: "Applied Energistics 2 — Cyfrowa siec"
-	group: "A110000000000001"
+	title: "&e&l04 &r&fAE2: Sieci cyfrowe"
+	group: "A110000000000003"
 	id: "A120000000000015"
 	icon: "ae2:controller"
-	order_index: 20
+	order_index: 3
 	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
 	quests: [
 		{
