@@ -1,0 +1,143 @@
+{
+	filename: "bees_advanced"
+	title: "Productive Bees — Automatyczna pasieka"
+	group: "A110000000000001"
+	id: "A12000000000000E"
+	icon: "productivebees:centrifuge"
+	order_index: 13
+	images: [ { image: "tokyoworld:textures/gui/quests/building_farming.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
+	quests: [
+		{
+			id: "A1300000000000B1"
+			title: "Leśne gniazdo"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: leśne gniazdo. Element 1 z 12 tej ścieżki."]
+			x: 0.0d
+			y: 0.0d
+			icon: "productivebees:oak_wood_nest"
+			dependencies: ["A13000000000001A"]
+			tasks: [{ id: "A1400000000000B1" type: "item" item: "productivebees:oak_wood_nest" count: 2L consume_items: false }]
+			rewards: [{ id: "A1500000000000B1" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000B2"
+			title: "Gniazdo trzmieli"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: gniazdo trzmieli. Element 2 z 12 tej ścieżki."]
+			x: 3.5d
+			y: 0.0d
+			icon: "productivebees:bumble_bee_nest"
+			dependencies: ["A1300000000000B1"]
+			tasks: [{ id: "A1400000000000B2" type: "item" item: "productivebees:bumble_bee_nest" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000B2" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000B3"
+			title: "Łapacz pszczół"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: łapacz pszczół. Element 3 z 12 tej ścieżki."]
+			x: 7.0d
+			y: 0.0d
+			icon: "productivebees:catcher"
+			dependencies: ["A1300000000000B2"]
+			tasks: [{ id: "A1400000000000B3" type: "item" item: "productivebees:catcher" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000B3" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000B4"
+			title: "Pasieka bambusowa"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: pasieka bambusowa. Element 4 z 12 tej ścieżki."]
+			x: 10.5d
+			y: 0.0d
+			icon: "productivebees:bamboo_hive"
+			dependencies: ["A1300000000000B3"]
+			tasks: [{ id: "A1400000000000B4" type: "item" item: "productivebees:bamboo_hive" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000B4" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000000B5"
+			title: "Wirówka miodowa"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: wirówka miodowa. Element 5 z 12 tej ścieżki."]
+			x: 14.0d
+			y: 0.0d
+			icon: "productivebees:centrifuge"
+			dependencies: ["A1300000000000B4"]
+			tasks: [{ id: "A1400000000000B5" type: "item" item: "productivebees:centrifuge" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000B5" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000B6"
+			title: "Wirówka elektryczna"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: wirówka elektryczna. Element 6 z 12 tej ścieżki."]
+			x: 0.0d
+			y: 3.0d
+			icon: "productivebees:powered_centrifuge"
+			dependencies: ["A1300000000000B5"]
+			tasks: [{ id: "A1400000000000B6" type: "item" item: "productivebees:powered_centrifuge" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000B6" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000B7"
+			title: "Rozlewnia miodu"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: rozlewnia miodu. Element 7 z 12 tej ścieżki."]
+			x: 3.5d
+			y: 3.0d
+			icon: "productivebees:bottler"
+			dependencies: ["A1300000000000B6"]
+			tasks: [{ id: "A1400000000000B7" type: "item" item: "productivebees:bottler" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000B7" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000B8"
+			title: "Rozmnażanie pszczół"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: rozmnażanie pszczół. Element 8 z 12 tej ścieżki."]
+			x: 7.0d
+			y: 3.0d
+			icon: "productivebees:breeding_chamber"
+			dependencies: ["A1300000000000B7"]
+			tasks: [{ id: "A1400000000000B8" type: "item" item: "productivebees:breeding_chamber" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000B8" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000000B9"
+			title: "Wirówka podgrzewana"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: wirówka podgrzewana. Element 9 z 12 tej ścieżki."]
+			x: 10.5d
+			y: 3.0d
+			icon: "productivebees:heated_centrifuge"
+			dependencies: ["A1300000000000B8"]
+			tasks: [{ id: "A1400000000000B9" type: "item" item: "productivebees:heated_centrifuge" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000B9" type: "item" item: "minecraft:iron_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000BA"
+			title: "Energia z miodu"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: energia z miodu. Element 10 z 12 tej ścieżki."]
+			x: 14.0d
+			y: 3.0d
+			icon: "productivebees:honey_generator"
+			dependencies: ["A1300000000000B9"]
+			tasks: [{ id: "A1400000000000BA" type: "item" item: "productivebees:honey_generator" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000BA" type: "item" item: "minecraft:redstone" count: 4 }]
+		}
+		{
+			id: "A1300000000000BB"
+			title: "Specjalne gniazdo"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: specjalne gniazdo. Element 11 z 12 tej ścieżki."]
+			x: 0.0d
+			y: 6.0d
+			icon: "productivebees:sugarbag_nest"
+			dependencies: ["A1300000000000BA"]
+			tasks: [{ id: "A1400000000000BB" type: "item" item: "productivebees:sugarbag_nest" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000BB" type: "item" item: "minecraft:gold_ingot" count: 4 }]
+		}
+		{
+			id: "A1300000000000BC"
+			title: "Legendarna pasieka"
+			description: ["Automatyzacja pszczół oraz produkcji zasobów. Pozyskaj lub wytwórz: legendarna pasieka. Element 12 z 12 tej ścieżki."]
+			x: 3.5d
+			y: 6.0d
+			icon: "productivebees:dragon_egg_hive"
+			dependencies: ["A1300000000000BB"]
+			tasks: [{ id: "A1400000000000BC" type: "item" item: "productivebees:dragon_egg_hive" count: 1L consume_items: false }]
+			rewards: [{ id: "A1500000000000BC" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+	]
+}
