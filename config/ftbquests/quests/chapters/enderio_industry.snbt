@@ -1,10 +1,10 @@
 {
 	filename: "enderio_industry"
-	title: "Ender IO — Fabryka stopow"
-	group: "A110000000000001"
+	title: "&b&l05 &r&fEnder IO: Stopy i maszyny"
+	group: "A110000000000002"
 	id: "A120000000000016"
 	icon: "enderio:alloy_smelter"
-	order_index: 21
+	order_index: 4
 	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
 	quests: [
 		{
