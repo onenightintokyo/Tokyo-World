@@ -289,13 +289,56 @@ internal sealed class LauncherWindow : Form
             await sync.SynchronizeAsync(root, reporter);
             PostInstallTweaks.Apply(root, reporter);
 
+            // Recover already-owned original mod files before querying Modrinth.
+            // This is a one-time IMPORT, not an ongoing Prism dependency.
+            int localRecovered = await Task.Run(() => BaseModRecovery.ImportFromLocalCopies(root, reporter));
+            if (localRecovered > 0)
+                SetStatus($"Przywrócono {localRecovered} oryginalnych modów z lokalnej kopii.");
+
+            // If the owner still has the original exported pack ZIP, detect it
+            // automatically. Every JAR is checked against the exact SHA-1 lockfile.
+            int needed = await Task.Run(() => BaseModRecovery.CountMissing(root));
+            string? originalZip = needed > 0 ? BaseModRecovery.FindOriginalZip() : null;
+            if (originalZip != null)
+            {
+                SetStatus("Znaleziono oryginalny ZIP — uzupełniam pliki modów...");
+                await Task.Run(() => BaseModRecovery.ImportFromZip(root, originalZip, reporter));
+            }
+
             var modpack = new ModpackInstaller();
             var report = await modpack.InstallAsync(root, settings.InstallAllModules, reporter);
-            SetStatus($"Mody: +{report.Installed}, pominięto {report.SkippedOptional}, brakujących bazowych {report.MissingBase}.");
-            if (report.MissingBase > 0)
-                throw new InvalidOperationException(
-                    "Brakuje części oryginalnych modów Tokyo World. Aby uniknąć crasha, wymagany jest import bazowej paczki ZIP. Szczegóły w dzienniku i dokumentacji.");
+            needed = await Task.Run(() => BaseModRecovery.CountMissing(root));
+            SetStatus($"Mody: +{report.Installed}, pominięto {report.SkippedOptional}, brakuje {needed} bazowych.");
 
+            if (needed > 0)
+            {
+                var decision = MessageBox.Show(this,
+                    $"Brakuje {needed} oryginalnych modów, których nie można pobrać w dokładnej wersji z Modrinth.\n\n" +
+                    "Launcher może automatycznie zaimportować je z oryginalnego ZIP Tokyo World i sprawdzić sumy plików.\n\n" +
+                    "Czy chcesz wskazać archiwum Tokyo_World_Forge_1.20.1.zip?",
+                    "Tokyo World — uzupełnij brakujące mody",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (decision == DialogResult.Yes)
+                {
+                    using var dialog = new OpenFileDialog
+                    {
+                        Filter = "Paczka modów ZIP (*.zip)|*.zip",
+                        Title = "Wybierz oryginalną paczkę Tokyo World",
+                        CheckFileExists = true
+                    };
+                    if (dialog.ShowDialog(this) == DialogResult.OK)
+                    {
+                        await Task.Run(() => BaseModRecovery.ImportFromZip(root, dialog.FileName, reporter));
+                        needed = await Task.Run(() => BaseModRecovery.CountMissing(root));
+                    }
+                }
+            }
+            if (needed > 0)
+                throw new InvalidOperationException(
+                    $"Brakuje {needed} oryginalnych modów Tokyo World. Nie uruchamiam niekompletnej gry. " +
+                    "Wybierz przy następnym uruchomieniu oryginalne archiwum ZIP albo przywróć brakujące pliki do folderu mods.");
+
+            SetStatus("Wszystkie 66 oryginalnych modów są zweryfikowane — przygotowuję Forge...");
             await engine.PrepareGameAsync(root, reporter);
             var process = await engine.PlayAsync(root, settings.RamMb,
                 premium.Checked, settings.OfflineNickname.Trim(), reporter);
