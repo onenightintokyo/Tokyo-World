@@ -1,7 +1,7 @@
 # Tokyo World optional expansion installer — Windows PowerShell 5.1+
 # Preview by default; use -Apply to install. Existing mods, saves, configs are untouched.
 param(
-    [ValidateSet('Core','Expanded','Adventure','All')][string]$Profile = 'Core',
+    [ValidateSet('Core','Expanded','Adventure','Lab','World','All')][string]$Profile = 'Core',
     [switch]$Apply,
     [string]$GameDir = ''
 )
@@ -129,11 +129,13 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
     }
 }
 $wanted = @()
-foreach ($name in @('tech-core','tech-expanded','adventure')) {
+foreach ($name in @('tech-core','tech-expanded','adventure','tech-lab','world-explore')) {
     $use = ($Profile -eq 'All') -or
         ($Profile -eq 'Core' -and $name -eq 'tech-core') -or
         ($Profile -eq 'Expanded' -and $name -in @('tech-core','tech-expanded')) -or
-        ($Profile -eq 'Adventure' -and $name -eq 'adventure')
+        ($Profile -eq 'Adventure' -and $name -eq 'adventure') -or
+        ($Profile -eq 'Lab' -and $name -eq 'tech-lab') -or
+        ($Profile -eq 'World' -and $name -eq 'world-explore')
     if ($use) { $wanted += @($config.profiles.$name) }
 }
 Write-Host "[Tokyo World] Profile=$Profile, Minecraft=1.20.1, Forge, apply=$Apply"
