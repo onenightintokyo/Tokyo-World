@@ -167,7 +167,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000010" type: "item" item: "minecraft:diamond" count: 5 } { id: "A160000000000010" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000010" type: "item" item: "minecraft:diamond" count: 5 }, { id: "A160000000000010" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
