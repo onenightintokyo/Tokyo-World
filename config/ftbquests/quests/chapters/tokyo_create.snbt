@@ -1,6 +1,6 @@
 {
 	filename: "tokyo_create"
-	title: "Create — Mechaniczna fabryka"
+	title: "&6&l02 &r&fCreate: Mechanika"
 	group: "A110000000000001"
 	id: "A120000000000002"
 	icon: "create:andesite_alloy"
