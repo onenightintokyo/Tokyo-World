@@ -1,10 +1,10 @@
 {
 	filename: "create_extended"
-	title: "Create — Wielka automatyzacja"
-	group: "A110000000000001"
+	title: "&b&l01 &r&fCreate: Automatyzacja"
+	group: "A110000000000002"
 	id: "A120000000000005"
 	icon: "create:deployer"
-	order_index: 4
+	order_index: 0
 	images: [
 		{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
 	]
