@@ -1,0 +1,187 @@
+{
+	filename: "tokyo_ultimate_project"
+	title: "&e&l09 &r&fTokyo World: Finał Expert"
+	group: "A110000000000003"
+	id: "A120000000000024"
+	icon: "draconicevolution:crafting_core"
+	order_index: 8
+	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	quests: [
+		{
+			id: "A1300000000001F7"
+			title: "Plan rozbudowy fabryki"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 1/16: Plan rozbudowy fabryki. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 7.0d
+			y: 0.0d
+			icon: "minecraft:iron_block"
+			dependencies: ["A130000000000156", "A130000000000166", "A130000000000176", "A130000000000186", "A130000000000196", "A1300000000001A6", "A1300000000001B6", "A1300000000001C6", "A1300000000001D6", "A1300000000001E6", "A1300000000001F6"]
+			tasks: [{ id: "A1400000000001F7" type: "item" item: "minecraft:iron_block" count: 32L consume_items: false }, { id: "A1800000000001F7" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001F7" type: "item" item: "minecraft:lapis_lazuli" count: 8 }]
+		}
+		{
+			id: "A1300000000001F8"
+			title: "Magazyny produkcyjne"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 2/16: Magazyny produkcyjne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 4.0d
+			icon: "minecraft:hopper"
+			dependencies: ["A1300000000001F7"]
+			tasks: [{ id: "A1400000000001F8" type: "item" item: "minecraft:hopper" count: 48L consume_items: false }, { id: "A1800000000001F8" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001F8" type: "item" item: "ae2:fluix_crystal" count: 4 }]
+		}
+		{
+			id: "A1300000000001F9"
+			title: "Ramy technologiczne"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 3/16: Ramy technologiczne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 4.0d
+			icon: "mekanism:steel_casing"
+			dependencies: ["A1300000000001F7"]
+			tasks: [{ id: "A1400000000001F9" type: "item" item: "mekanism:steel_casing" count: 16L consume_items: false }, { id: "A1800000000001F9" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001F9" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A1300000000001FA"
+			title: "Precyzja Create"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 4/16: Precyzja Create. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 4.0d
+			icon: "create:precision_mechanism"
+			dependencies: ["A1300000000001F7"]
+			tasks: [{ id: "A1400000000001FA" type: "item" item: "create:precision_mechanism" count: 24L consume_items: false }, { id: "A1800000000001FA" type: "item" item: "minecraft:iron_ingot" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001FA" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+		}
+		{
+			id: "A1300000000001FB"
+			title: "Kontrolery AE2"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 5/16: Kontrolery AE2. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 4.0d
+			icon: "ae2:controller"
+			dependencies: ["A1300000000001F7"]
+			tasks: [{ id: "A1400000000001FB" type: "item" item: "ae2:controller" count: 4L consume_items: false }, { id: "A1800000000001FB" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001FB" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A1300000000001FC"
+			title: "Procesory najwyższej klasy"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 6/16: Procesory najwyższej klasy. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 8.0d
+			icon: "mekanism:ultimate_control_circuit"
+			dependencies: ["A1300000000001F8"]
+			tasks: [{ id: "A1400000000001FC" type: "item" item: "mekanism:ultimate_control_circuit" count: 12L consume_items: false }, { id: "A1800000000001FC" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001FC" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000001FD"
+			title: "Zasobniki energii"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 7/16: Zasobniki energii. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 8.0d
+			icon: "mekanism:ultimate_energy_cube"
+			dependencies: ["A1300000000001F9"]
+			tasks: [{ id: "A1400000000001FD" type: "item" item: "mekanism:ultimate_energy_cube" count: 4L consume_items: false }, { id: "A1800000000001FD" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001FD" type: "item" item: "ae2:fluix_crystal" count: 8 }]
+		}
+		{
+			id: "A1300000000001FE"
+			title: "Reaktory Powah"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 8/16: Reaktory Powah. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 8.0d
+			icon: "powah:reactor_nitro"
+			dependencies: ["A1300000000001FA"]
+			tasks: [{ id: "A1400000000001FE" type: "item" item: "powah:reactor_nitro" count: 2L consume_items: false }, { id: "A1800000000001FE" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001FE" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A1300000000001FF"
+			title: "Automatyzacja procesów"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 9/16: Automatyzacja procesów. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 8.0d
+			icon: "ae2:pattern_provider"
+			dependencies: ["A1300000000001FB"]
+			tasks: [{ id: "A1400000000001FF" type: "item" item: "ae2:pattern_provider" count: 8L consume_items: false }, { id: "A1800000000001FF" type: "item" item: "minecraft:copper_ingot" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001FF" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A130000000000200"
+			title: "Infrastruktura EnderIO"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 10/16: Infrastruktura EnderIO. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 12.0d
+			icon: "enderio:alloy_smelter"
+			dependencies: ["A1300000000001FC"]
+			tasks: [{ id: "A140000000000200" type: "item" item: "enderio:alloy_smelter" count: 4L consume_items: false }, { id: "A180000000000200" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
+			rewards: [{ id: "A150000000000200" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000201"
+			title: "Draconium"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 11/16: Draconium. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 12.0d
+			icon: "draconicevolution:draconium_ingot"
+			dependencies: ["A1300000000001FD"]
+			tasks: [{ id: "A140000000000201" type: "item" item: "draconicevolution:draconium_ingot" count: 24L consume_items: false }, { id: "A180000000000201" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
+			rewards: [{ id: "A150000000000201" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A130000000000202"
+			title: "Energia drakońska"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 12/16: Energia drakońska. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 12.0d
+			icon: "draconicevolution:draconic_energy_core"
+			dependencies: ["A1300000000001FE"]
+			tasks: [{ id: "A140000000000202" type: "item" item: "draconicevolution:draconic_energy_core" count: 1L consume_items: false }, { id: "A180000000000202" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
+			rewards: [{ id: "A150000000000202" type: "item" item: "ae2:fluix_crystal" count: 4 }]
+		}
+		{
+			id: "A130000000000203"
+			title: "Maszyny chemiczne"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 13/16: Maszyny chemiczne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 12.0d
+			icon: "mekanism:chemical_crystallizer"
+			dependencies: ["A1300000000001FF"]
+			tasks: [{ id: "A140000000000203" type: "item" item: "mekanism:chemical_crystallizer" count: 4L consume_items: false }, { id: "A180000000000203" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
+			rewards: [{ id: "A150000000000203" type: "item" item: "minecraft:emerald" count: 8 }]
+		}
+		{
+			id: "A130000000000204"
+			title: "Fabryka agrarna"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 14/16: Fabryka agrarna. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 16.0d
+			icon: "industrialforegoing:plant_gatherer"
+			dependencies: ["A130000000000200"]
+			tasks: [{ id: "A140000000000204" type: "item" item: "industrialforegoing:plant_gatherer" count: 8L consume_items: false }, { id: "A180000000000204" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
+			rewards: [{ id: "A150000000000204" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A130000000000205"
+			title: "Transport kwantowy"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 15/16: Transport kwantowy. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 16.0d
+			icon: "mekanism:quantum_entangloporter"
+			dependencies: ["A130000000000201"]
+			tasks: [{ id: "A140000000000205" type: "item" item: "mekanism:quantum_entangloporter" count: 4L consume_items: false }, { id: "A180000000000205" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
+			rewards: [{ id: "A150000000000205" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000206"
+			title: "ZŁOTA ERA TOKYO WORLD"
+			description: ["Łącz wszystkie dotychczasowe specjalizacje. Wspólny projekt ekipy na długie wieczory. ETAP 16/16: ZŁOTA ERA TOKYO WORLD. Wykonaj oba cele materiałowe. Nagroda finałowa po ukończeniu wszystkich czterech gałęzi."]
+			x: 7.0d
+			y: 21.5d
+			icon: "draconicevolution:crafting_core"
+			dependencies: ["A130000000000204", "A130000000000205", "A130000000000202", "A130000000000203"]
+			tasks: [{ id: "A140000000000206" type: "item" item: "draconicevolution:crafting_core" count: 2L consume_items: false }, { id: "A180000000000206" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A190000000000206" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000206" type: "item" item: "minecraft:netherite_scrap" count: 4 }, { id: "A160000000000206" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+		}
+	]
+}
