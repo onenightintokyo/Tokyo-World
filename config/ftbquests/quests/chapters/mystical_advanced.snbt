@@ -1,10 +1,10 @@
 {
 	filename: "mystical_advanced"
-	title: "Mystical Agriculture — Surowce z farm"
-	group: "A110000000000001"
+	title: "&a&l03 &r&fMystical Agriculture"
+	group: "A110000000000004"
 	id: "A12000000000000D"
 	icon: "mysticalagriculture:infusion_altar"
-	order_index: 12
+	order_index: 2
 	images: [ { image: "tokyoworld:textures/gui/quests/building_farming.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
 	quests: [
 		{
