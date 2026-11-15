@@ -1,0 +1,99 @@
+{
+	filename: "cataclysm_bosses"
+	title: "Cataclysm — Trofea bossow"
+	group: "A110000000000001"
+	id: "A120000000000018"
+	icon: "minecraft:nether_star"
+	order_index: 23
+	images: [{ image: "tokyoworld:textures/gui/quests/exploration_adventure.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
+	quests: [
+		{
+			id: "A13000000000013F"
+			title: "Przedmioty na wyprawe"
+			description: ["Zbuduj kolejny etap Tokyo World: Przedmioty na wyprawe. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 7.0d
+			y: 0.0d
+			icon: "minecraft:blaze_rod"
+			dependencies: ["A13000000000001D"]
+			tasks: [{ id: "A14000000000013F" type: "item" item: "minecraft:blaze_rod" count: 16L consume_items: false }]
+			rewards: [{ id: "A15000000000013F" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000140"
+			title: "Przygotuj zaopatrzenie"
+			description: ["Zbuduj kolejny etap Tokyo World: Przygotuj zaopatrzenie. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 0.0d
+			y: 4.0d
+			icon: "minecraft:golden_apple"
+			dependencies: ["A13000000000013F"]
+			tasks: [{ id: "A140000000000140" type: "item" item: "minecraft:golden_apple" count: 8L consume_items: false }]
+			rewards: [{ id: "A150000000000140" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A130000000000141"
+			title: "Ekipa na bossa"
+			description: ["Zbuduj kolejny etap Tokyo World: Ekipa na bossa. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 4.5d
+			y: 4.0d
+			icon: "minecraft:netherite_ingot"
+			dependencies: ["A13000000000013F"]
+			tasks: [{ id: "A140000000000141" type: "item" item: "minecraft:netherite_ingot" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000141" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A130000000000142"
+			title: "Starozytny metal"
+			description: ["Zbuduj kolejny etap Tokyo World: Starozytny metal. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 9.0d
+			y: 4.0d
+			icon: "cataclysm:ancient_metal_ingot"
+			dependencies: ["A13000000000013F"]
+			tasks: [{ id: "A140000000000142" type: "item" item: "cataclysm:ancient_metal_ingot" count: 4L consume_items: false }]
+			rewards: [{ id: "A150000000000142" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000143"
+			title: "Trofeum silnego przeciwnika"
+			description: ["Zbuduj kolejny etap Tokyo World: Trofeum silnego przeciwnika. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 13.5d
+			y: 4.0d
+			icon: "minecraft:nether_star"
+			dependencies: ["A13000000000013F"]
+			tasks: [{ id: "A140000000000143" type: "item" item: "minecraft:nether_star" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000143" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+		}
+		{
+			id: "A130000000000144"
+			title: "Ognisty metal"
+			description: ["Zbuduj kolejny etap Tokyo World: Ognisty metal. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 0.0d
+			y: 7.5d
+			icon: "cataclysm:ignitium_ingot"
+			dependencies: ["A130000000000140"]
+			tasks: [{ id: "A140000000000144" type: "item" item: "cataclysm:ignitium_ingot" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000144" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A130000000000145"
+			title: "Legendarny smok"
+			description: ["Zbuduj kolejny etap Tokyo World: Legendarny smok. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 4.5d
+			y: 7.5d
+			icon: "minecraft:dragon_head"
+			dependencies: ["A130000000000141"]
+			tasks: [{ id: "A140000000000145" type: "item" item: "minecraft:dragon_head" count: 1L consume_items: false }]
+			rewards: [{ id: "A150000000000145" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A130000000000146"
+			title: "Przeklete trofeum"
+			description: ["Zbuduj kolejny etap Tokyo World: Przeklete trofeum. Rownolegle rozwijaj inne galezie; final wymaga ich polaczenia."]
+			x: 7.0d
+			y: 12.0d
+			icon: "cataclysm:cursium_ingot"
+			dependencies: ["A130000000000142", "A130000000000143", "A130000000000144", "A130000000000145"]
+			tasks: [{ id: "A140000000000146" type: "item" item: "cataclysm:cursium_ingot" count: 2L consume_items: false }]
+			rewards: [{ id: "A150000000000146" type: "item" item: "minecraft:enchanted_golden_apple" count: 1 }, { id: "A160000000000146" type: "item" item: "minecraft:diamond" count: 5 }]
+		}
+	]
+}
