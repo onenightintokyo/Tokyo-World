@@ -185,7 +185,7 @@
 			icon_scale: 1.12d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
-			title: "Kolejny etap"
+			title: "Bramy przemysłu"
 			description: ["Masz już miejsce, do którego można wrócić po każdej wyprawie. Ostatni sprawdzian to „Kolejny etap”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d
 			y: 20.0d
@@ -200,7 +200,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000008" type: "item" item: "minecraft:diamond" count: 5 }, { id: "A160000000000008" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000008" type: "item" item: "minecraft:diamond" count: 1 }, { id: "A160000000000008" type: "item" item: "minecraft:experience_bottle" count: 10 }]
 		}
 	]
 }
