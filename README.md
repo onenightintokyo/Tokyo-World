@@ -1,27 +1,19 @@
-# Tokyo World
+# Tokyo World — Expert Fun Technology Modpack
 
-**Minecraft 1.20.1 • Forge 47.4.28 • Expert Fun Tech & Automation**
+Minecraft **1.20.1**, Forge **47.4.28**. Technologia i automatyzacja są głównym rdzeniem; eksploracja, bossowie, magia, farming i budowanie uzupełniają progresję.
 
-Autorski modpack oparty na automatyzacji, ogromnych fabrykach i rozwoju technologicznym, z magią, eksploracją, farmingiem i budowaniem jako dodatkami.
+## Aktualny stan: v0.5 — TESTY
 
-## Aktualny etap — v0.4 (do testowania)
+- **326 questów / 24 rozdziały**, w większości rozłożone na cztery gałęzie
+- KubeJS: autorskie receptury między Create, Mekanism, Ender IO, AE2, Draconic Evolution, Powah i innymi
+- FancyMenu: dedykowany plik `config/fancymenu/customization/tokyo_world.txt` i przygotowana grafika Tokyo World
+- Automatyczna synchronizacja GitHub → Prism Launcher przed uruchomieniem
+- Moduły instalowane dodatkowo: `INSTALUJ_TECH_LAB.cmd` i `INSTALUJ_DUNGEONY.cmd`
 
-- **278 questów / 20 rozdziałów** — pliki FTB Quests z nagrodami i progresją
-- **Niestandardowe receptury KubeJS**: Create × Mekanism × Powah × Industrial Foregoing × Ad Astra × Integrated Dynamics
-- **FancyMenu**: podłączenie grafiki Tokyo World i naprawa błędów ustawień
-- **Instalator brakujących modów**: profile Tech Core / Expanded / Adventure, Modrinth Forge 1.20.1, weryfikacja SHA-512, bez nadpisywania istniejących plików
-- **Bez zmian RAM, bez modyfikacji światów i save'ów**
+**Nie jest to ukończona, przetestowana paczka do dystrybucji.** Logi zgłaszają problemy Cucumber/NuclearCraft, a menu wymaga testu po aktualizacji.
 
-Aktualizator przedstartowy pobiera questy, konfiguracje, grafiki i skrypty. **Nie pobiera samodzielnie nowych modów JAR** — rozszerzenia wymagają jednokrotnego uruchomienia instalatora z parametrem `-Apply` po wcześniejszej kopii zapasowej świata.
+## Instrukcja aktualizacji
 
-## Dokumentacja
+[Tokyo World v0.5 — instalacja i lista zmian](docs/TOKYO_WORLD_v0.5.md)
 
-- [Instrukcja instalacji nowych modów i poprawy menu](docs/TECH_EXPANSION_v0.4.md)
-- [Automatyczna synchronizacja](docs/AUTOMATYCZNE_AKTUALIZACJE.md)
-- [Pierwszy questbook (historia v0.1)](docs/QUESTBOOK_v0.1.md)
-
-## Zakres obecnej paczki
-
-Główne technologie: Mekanism, Create, Immersive Engineering, Industrial Foregoing, Integrated Dynamics, Powah, Pipez, XNet. Rozszerzenie dodaje AE2, Ender IO, moduły Mekanism, NuclearCraft Neoteric i inne po instalacji modułów.
-
-Projekt jest nadal rozwijany, a wersja v0.4 nie została przetestowana na działającym kliencie Minecraft. Rozdziały, nowe receptury i instalator wymagają testów w lokalnej instancji.
+Starsza dokumentacja: [v0.4](docs/TECH_EXPANSION_v0.4.md), [automatyczna synchronizacja](docs/AUTOMATYCZNE_AKTUALIZACJE.md).
