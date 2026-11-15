@@ -801,8 +801,10 @@
       },
       {
         "project": "ends-delight",
-        "label": "End's Delight — kulinarna wyprawa do Endu",
-        "match": "^ends_delight[-_.]"
+        "label": "End's Delight 2.6 — kompatybilność z Delightful 3.8.1",
+        "match": "^ends_delight[-_.].*\\.jar$",
+        "versionId": "txuQ2GPU",
+        "note": "Pinned official Forge 1.20.1 2.6 beta, minimum 2.5 required by Delightful 3.8.1. Existing 2.4 must be replaced, not merely skipped."
       },
       {
         "project": "enders-delight",
