@@ -1,0 +1,212 @@
+{
+	filename: "tokyo_mekanism"
+	group: "A110000000000001"
+	id: "A120000000000003"
+	icon: { id: "mekanism:metallurgic_infuser" }
+	order_index: 2
+	images: [
+		{
+			image: "tokyoworld:textures/gui/quests/tech_automation.png"
+			width: 12.0d
+			height: 6.0d
+			x: 2.5d
+			y: -6.0d
+			order: -1
+		}
+	]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "A130000000000011"
+			x: 0.0d
+			y: 0.0d
+			icon: { id: "mekanism:metallurgic_infuser" }
+			dependencies: ["A130000000000010"]
+			tasks: [
+				{
+					id: "A140000000000011"
+					type: "item"
+					item: { count: 1, id: "mekanism:metallurgic_infuser" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000011"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 12
+				}
+			]
+		}
+		{
+			id: "A130000000000012"
+			x: 3.5d
+			y: 0.0d
+			icon: { id: "mekanism:enriched_redstone" }
+			dependencies: ["A130000000000011"]
+			tasks: [
+				{
+					id: "A140000000000012"
+					type: "item"
+					item: { count: 1, id: "mekanism:enriched_redstone" }
+					count: 2L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000012"
+					type: "item"
+					item: { count: 1, id: "minecraft:gold_ingot" }
+					count: 4
+				}
+			]
+		}
+		{
+			id: "A130000000000013"
+			x: 7.0d
+			y: 0.0d
+			icon: { id: "mekanism:basic_control_circuit" }
+			dependencies: ["A130000000000012"]
+			tasks: [
+				{
+					id: "A140000000000013"
+					type: "item"
+					item: { count: 1, id: "mekanism:basic_control_circuit" }
+					count: 4L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000013"
+					type: "item"
+					item: { count: 1, id: "minecraft:iron_ingot" }
+					count: 8
+				}
+			]
+		}
+		{
+			id: "A130000000000014"
+			x: 10.5d
+			y: 0.0d
+			icon: { id: "mekanism:steel_casing" }
+			dependencies: ["A130000000000013"]
+			tasks: [
+				{
+					id: "A140000000000014"
+					type: "item"
+					item: { count: 1, id: "mekanism:steel_casing" }
+					count: 2L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000014"
+					type: "item"
+					item: { count: 1, id: "minecraft:diamond" }
+					count: 2
+				}
+			]
+		}
+		{
+			id: "A130000000000015"
+			x: 0.0d
+			y: 3.0d
+			icon: { id: "mekanism:enrichment_chamber" }
+			dependencies: ["A130000000000014"]
+			tasks: [
+				{
+					id: "A140000000000015"
+					type: "item"
+					item: { count: 1, id: "mekanism:enrichment_chamber" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000015"
+					type: "item"
+					item: { count: 1, id: "minecraft:redstone" }
+					count: 16
+				}
+			]
+		}
+		{
+			id: "A130000000000016"
+			x: 3.5d
+			y: 3.0d
+			icon: { id: "mekanism:crusher" }
+			dependencies: ["A130000000000015"]
+			tasks: [
+				{
+					id: "A140000000000016"
+					type: "item"
+					item: { count: 1, id: "mekanism:crusher" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000016"
+					type: "item"
+					item: { count: 1, id: "minecraft:gold_ingot" }
+					count: 6
+				}
+			]
+		}
+		{
+			id: "A130000000000017"
+			x: 7.0d
+			y: 3.0d
+			icon: { id: "mekanism:basic_crushing_factory" }
+			dependencies: ["A130000000000016"]
+			tasks: [
+				{
+					id: "A140000000000017"
+					type: "item"
+					item: { count: 1, id: "mekanism:basic_crushing_factory" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000017"
+					type: "item"
+					item: { count: 1, id: "minecraft:diamond" }
+					count: 3
+				}
+			]
+		}
+		{
+			id: "A130000000000018"
+			x: 10.5d
+			y: 3.0d
+			icon: { id: "mekanism:basic_energy_cube" }
+			dependencies: ["A130000000000017"]
+			tasks: [
+				{
+					id: "A140000000000018"
+					type: "item"
+					item: { count: 1, id: "mekanism:basic_energy_cube" }
+					count: 1L
+					consume_items: false
+				}
+			]
+			rewards: [
+				{
+					id: "A150000000000018"
+					type: "item"
+					item: { count: 1, id: "minecraft:gold_ingot" }
+					count: 8
+				}
+			]
+		}
+	]
+}
