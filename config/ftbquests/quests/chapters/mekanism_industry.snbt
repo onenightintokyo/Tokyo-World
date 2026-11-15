@@ -227,7 +227,7 @@
 			icon: "mekanism:teleporter"
 			dependencies: ["A130000000000040", "A130000000000041", "A130000000000042", "A130000000000043"]
 			tasks: [{ id: "A140000000000044" type: "item" item: "mekanism:teleporter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000044" type: "item" item: "minecraft:diamond" count: 6 } { id: "A160000000000044" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A150000000000044" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A160000000000044" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
