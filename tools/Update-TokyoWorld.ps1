@@ -85,7 +85,7 @@ try {
             $backup = Join-Path $backupRoot $relative
             New-Item -ItemType Directory -Force -Path (Split-Path -Parent $backup) | Out-Null
             Copy-Item -LiteralPath $layout -Destination $backup -Force
-            [System.IO.File]::WriteAllText($layout, $after, (New-Object System.Text.UTF8Encoding($false)))
+            [System.IO.File]::WriteAllText($layout, $after, ([System.Text.UTF8Encoding]::new($false)))
             Write-Host '[Tokyo World] FancyMenu: activated Tokyo World background.'
         }
     }
@@ -106,7 +106,7 @@ try {
                 $backup = Join-Path $backupRoot 'options.txt'
                 New-Item -ItemType Directory -Force -Path (Split-Path -Parent $backup) | Out-Null
                 Copy-Item -LiteralPath $options -Destination $backup -Force
-                [System.IO.File]::WriteAllText($options, $after, (New-Object System.Text.UTF8Encoding($false)))
+                [System.IO.File]::WriteAllText($options, $after, ([System.Text.UTF8Encoding]::new($false)))
                 Write-Host '[Tokyo World] Enabled TokyoWorld_Visuals resource pack.'
             }
         }
