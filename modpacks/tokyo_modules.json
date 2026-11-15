@@ -3,7 +3,7 @@
   "name": "Tokyo World — Technology Expansion",
   "minecraft": "1.20.1",
   "loader": "forge",
-  "note": "Profile installer is opt-in. It downloads current compatible Forge 1.20.1 files from Modrinth, validates SHA-512, preserves existing mods and never touches saves. Treat as testing until a fully pinned lockfile is produced.",
+  "note": "Profile installer is opt-in. It downloads current compatible Forge 1.20.1 files from Modrinth, validates SHA-512, preserves existing mods and never touches saves. Treat as testing until a fully pinned lockfile is produced. Ender IO uses a specifically verified 1.20.1 beta. Steam Rails targets 1.7.3 release series.",
   "profiles": {
     "tech-core": [
       {
@@ -14,7 +14,8 @@
       {
         "project": "enderio",
         "label": "Ender IO",
-        "match": "^enderio[-_].*\\.jar$"
+        "match": "^enderio[-_].*\\.jar$",
+        "versionId": "nJnmg29v"
       },
       {
         "project": "mekanism-generators",
@@ -80,7 +81,7 @@
         "project": "create-steam-n-rails",
         "label": "Create: Steam 'n' Rails (Create 6)",
         "match": "^railways[-_].*\\.jar$",
-        "versionId": "TYMKdZTh"
+        "version": "1.7.3"
       }
     ],
     "adventure": [
