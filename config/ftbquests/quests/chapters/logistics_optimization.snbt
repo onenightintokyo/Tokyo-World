@@ -1,0 +1,187 @@
+{
+	filename: "logistics_optimization"
+	title: "&e&l08 &r&fOptymalizacja logistyki"
+	group: "A110000000000003"
+	id: "A12000000000001F"
+	icon: "pipez:universal_pipe"
+	order_index: 7
+	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	quests: [
+		{
+			id: "A1300000000001A7"
+			title: "Lejki transportowe"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 1/16: Lejki transportowe. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 7.0d
+			y: 0.0d
+			icon: "minecraft:hopper"
+			dependencies: ["A1300000000000FA", "A1300000000000EA"]
+			tasks: [{ id: "A1400000000001A7" type: "item" item: "minecraft:hopper" count: 48L consume_items: false }, { id: "A1800000000001A7" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001A7" type: "item" item: "minecraft:lapis_lazuli" count: 8 }]
+		}
+		{
+			id: "A1300000000001A8"
+			title: "Pojemniki buforowe"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 2/16: Pojemniki buforowe. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 4.0d
+			icon: "minecraft:barrel"
+			dependencies: ["A1300000000001A7"]
+			tasks: [{ id: "A1400000000001A8" type: "item" item: "minecraft:barrel" count: 32L consume_items: false }, { id: "A1800000000001A8" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001A8" type: "item" item: "ae2:fluix_crystal" count: 4 }]
+		}
+		{
+			id: "A1300000000001A9"
+			title: "Rury przedmiotów"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 3/16: Rury przedmiotów. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 4.0d
+			icon: "pipez:item_pipe"
+			dependencies: ["A1300000000001A7"]
+			tasks: [{ id: "A1400000000001A9" type: "item" item: "pipez:item_pipe" count: 64L consume_items: false }, { id: "A1800000000001A9" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001A9" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A1300000000001AA"
+			title: "Rury płynów"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 4/16: Rury płynów. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 4.0d
+			icon: "pipez:fluid_pipe"
+			dependencies: ["A1300000000001A7"]
+			tasks: [{ id: "A1400000000001AA" type: "item" item: "pipez:fluid_pipe" count: 48L consume_items: false }, { id: "A1800000000001AA" type: "item" item: "minecraft:iron_ingot" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001AA" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+		}
+		{
+			id: "A1300000000001AB"
+			title: "Rury energii"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 5/16: Rury energii. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 4.0d
+			icon: "pipez:energy_pipe"
+			dependencies: ["A1300000000001A7"]
+			tasks: [{ id: "A1400000000001AB" type: "item" item: "pipez:energy_pipe" count: 48L consume_items: false }, { id: "A1800000000001AB" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001AB" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A1300000000001AC"
+			title: "Rury gazów"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 6/16: Rury gazów. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 8.0d
+			icon: "pipez:gas_pipe"
+			dependencies: ["A1300000000001A8"]
+			tasks: [{ id: "A1400000000001AC" type: "item" item: "pipez:gas_pipe" count: 24L consume_items: false }, { id: "A1800000000001AC" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001AC" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000001AD"
+			title: "Rury uniwersalne"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 7/16: Rury uniwersalne. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 8.0d
+			icon: "pipez:universal_pipe"
+			dependencies: ["A1300000000001A9"]
+			tasks: [{ id: "A1400000000001AD" type: "item" item: "pipez:universal_pipe" count: 24L consume_items: false }, { id: "A1800000000001AD" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001AD" type: "item" item: "ae2:fluix_crystal" count: 8 }]
+		}
+		{
+			id: "A1300000000001AE"
+			title: "Zaawansowane ulepszenia"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 8/16: Zaawansowane ulepszenia. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 8.0d
+			icon: "pipez:advanced_upgrade"
+			dependencies: ["A1300000000001AA"]
+			tasks: [{ id: "A1400000000001AE" type: "item" item: "pipez:advanced_upgrade" count: 8L consume_items: false }, { id: "A1800000000001AE" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
+			rewards: [{ id: "A1500000000001AE" type: "item" item: "minecraft:emerald" count: 4 }]
+		}
+		{
+			id: "A1300000000001AF"
+			title: "Sortowanie sieci"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 9/16: Sortowanie sieci. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 8.0d
+			icon: "mekanism:logistical_sorter"
+			dependencies: ["A1300000000001AB"]
+			tasks: [{ id: "A1400000000001AF" type: "item" item: "mekanism:logistical_sorter" count: 6L consume_items: false }, { id: "A1800000000001AF" type: "item" item: "minecraft:copper_ingot" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001AF" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A1300000000001B0"
+			title: "System XNet"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 10/16: System XNet. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 12.0d
+			icon: "xnet:controller"
+			dependencies: ["A1300000000001AC"]
+			tasks: [{ id: "A1400000000001B0" type: "item" item: "xnet:controller" count: 2L consume_items: false }, { id: "A1800000000001B0" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001B0" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A1300000000001B1"
+			title: "Złącza XNet"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 11/16: Złącza XNet. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 12.0d
+			icon: "xnet:connector"
+			dependencies: ["A1300000000001AD"]
+			tasks: [{ id: "A1400000000001B1" type: "item" item: "xnet:connector" count: 24L consume_items: false }, { id: "A1800000000001B1" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001B1" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+		}
+		{
+			id: "A1300000000001B2"
+			title: "Kontroler składu"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 12/16: Kontroler składu. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 9.0d
+			y: 12.0d
+			icon: "sophisticatedstorage:controller"
+			dependencies: ["A1300000000001AE"]
+			tasks: [{ id: "A1400000000001B2" type: "item" item: "sophisticatedstorage:controller" count: 2L consume_items: false }, { id: "A1800000000001B2" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
+			rewards: [{ id: "A1500000000001B2" type: "item" item: "ae2:fluix_crystal" count: 4 }]
+		}
+		{
+			id: "A1300000000001B3"
+			title: "Cztery szuflady"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 13/16: Cztery szuflady. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 13.5d
+			y: 12.0d
+			icon: "functionalstorage:oak_4"
+			dependencies: ["A1300000000001AF"]
+			tasks: [{ id: "A1400000000001B3" type: "item" item: "functionalstorage:oak_4" count: 16L consume_items: false }, { id: "A1800000000001B3" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
+			rewards: [{ id: "A1500000000001B3" type: "item" item: "minecraft:emerald" count: 8 }]
+		}
+		{
+			id: "A1300000000001B4"
+			title: "Narzędzie magazynowe"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 14/16: Narzędzie magazynowe. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 0.0d
+			y: 16.0d
+			icon: "sophisticatedstorage:storage_tool"
+			dependencies: ["A1300000000001B0"]
+			tasks: [{ id: "A1400000000001B4" type: "item" item: "sophisticatedstorage:storage_tool" count: 4L consume_items: false }, { id: "A1800000000001B4" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
+			rewards: [{ id: "A1500000000001B4" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+		}
+		{
+			id: "A1300000000001B5"
+			title: "Interfejsy ME"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 15/16: Interfejsy ME. Wykonaj oba cele materiałowe. Rozwijaj tę specjalizację równolegle z pozostałymi gałęziami."]
+			x: 4.5d
+			y: 16.0d
+			icon: "ae2:interface"
+			dependencies: ["A1300000000001B1"]
+			tasks: [{ id: "A1400000000001B5" type: "item" item: "ae2:interface" count: 8L consume_items: false }, { id: "A1800000000001B5" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
+			rewards: [{ id: "A1500000000001B5" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+		}
+		{
+			id: "A1300000000001B6"
+			title: "TOKYO FREIGHT HUB"
+			description: ["Przepustowość, filtry, buforowanie i zarządzanie zasobami. ETAP 16/16: TOKYO FREIGHT HUB. Wykonaj oba cele materiałowe. Nagroda finałowa po ukończeniu wszystkich czterech gałęzi."]
+			x: 7.0d
+			y: 21.5d
+			icon: "mekanism:quantum_entangloporter"
+			dependencies: ["A1300000000001B4", "A1300000000001B5", "A1300000000001B2", "A1300000000001B3"]
+			tasks: [{ id: "A1400000000001B6" type: "item" item: "mekanism:quantum_entangloporter" count: 2L consume_items: false }, { id: "A1800000000001B6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001B6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }]
+			rewards: [{ id: "A1500000000001B6" type: "item" item: "minecraft:shulker_shell" count: 4 }, { id: "A1600000000001B6" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+		}
+	]
+}
