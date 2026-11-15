@@ -21,7 +21,7 @@
 			id: "A130000000000019"
 			title: "Zasiej przyszłość"
 			description: ["Zbierz plony na start samowystarczalnej kolonii."]
-			x: 0.0d
+			x: 7.0d
 			y: 0.0d
 			icon: "minecraft:wheat"
 			dependencies: ["A130000000000004"]
@@ -30,25 +30,18 @@
 					id: "A140000000000019"
 					type: "item"
 					item: "minecraft:wheat"
-					count: 32L
+					count: 48L
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A150000000000019"
-					type: "item"
-					item: "minecraft:bread"
-					count: 8
-				}
-			]
+			rewards: [{ id: "A150000000000019" type: "item" item: "minecraft:experience_bottle" count: 9 }]
 		}
 		{
 			id: "A13000000000001A"
 			title: "Warzywniak"
 			description: ["Rozszerz produkcję żywności."]
-			x: 3.5d
-			y: 0.0d
+			x: 0.0d
+			y: 4.0d
 			icon: "minecraft:carrot"
 			dependencies: ["A130000000000019"]
 			tasks: [
@@ -56,27 +49,20 @@
 					id: "A14000000000001A"
 					type: "item"
 					item: "minecraft:carrot"
-					count: 16L
+					count: 24L
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000001A"
-					type: "item"
-					item: "minecraft:bone_meal"
-					count: 12
-				}
-			]
+			rewards: [{ id: "A15000000000001A" type: "item" item: "minecraft:golden_carrot" count: 5 }]
 		}
 		{
 			id: "A13000000000001B"
 			title: "Automatyczny odbiór"
 			description: ["Zbieraj przedmioty przy pomocy lejów."]
-			x: 7.0d
-			y: 0.0d
+			x: 4.5d
+			y: 4.0d
 			icon: "minecraft:hopper"
-			dependencies: ["A13000000000001A"]
+			dependencies: ["A130000000000019"]
 			tasks: [
 				{
 					id: "A14000000000001B"
@@ -86,23 +72,16 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000001B"
-					type: "item"
-					item: "minecraft:chest"
-					count: 4
-				}
-			]
+			rewards: [{ id: "A15000000000001B" type: "item" item: "minecraft:honeycomb" count: 5 }]
 		}
 		{
 			id: "A13000000000001C"
 			title: "Gotowanie w dużej skali"
 			description: ["Postaw garnek z Farmer's Delight i rozbuduj kuchnię."]
-			x: 10.5d
-			y: 0.0d
+			x: 9.0d
+			y: 4.0d
 			icon: "farmersdelight:cooking_pot"
-			dependencies: ["A13000000000001B"]
+			dependencies: ["A130000000000019"]
 			tasks: [
 				{
 					id: "A14000000000001C"
@@ -112,49 +91,35 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000001C"
-					type: "item"
-					item: "minecraft:coal"
-					count: 16
-				}
-			]
+			rewards: [{ id: "A15000000000001C" type: "item" item: "minecraft:experience_bottle" count: 5 }]
 		}
 		{
 			id: "A13000000000001D"
 			title: "Magiczna uprawa"
 			description: ["Poznaj podstawy Mystical Agriculture."]
-			x: 0.0d
-			y: 3.0d
+			x: 13.5d
+			y: 4.0d
 			icon: "mysticalagriculture:inferium_essence"
-			dependencies: ["A13000000000001C"]
+			dependencies: ["A130000000000019"]
 			tasks: [
 				{
 					id: "A14000000000001D"
 					type: "item"
 					item: "mysticalagriculture:inferium_essence"
-					count: 32L
+					count: 48L
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000001D"
-					type: "item"
-					item: "minecraft:bone_meal"
-					count: 16
-				}
-			]
+			rewards: [{ id: "A15000000000001D" type: "item" item: "minecraft:bone_meal" count: 9 }]
 		}
 		{
 			id: "A13000000000001E"
 			title: "Magazyn zbiorów"
 			description: ["Rozbuduj przestrzeń przechowywania produktów farmy."]
-			x: 3.5d
-			y: 3.0d
+			x: 7.0d
+			y: 8.5d
 			icon: "minecraft:barrel"
-			dependencies: ["A13000000000001D"]
+			dependencies: ["A13000000000001A", "A13000000000001B", "A13000000000001C", "A13000000000001D"]
 			tasks: [
 				{
 					id: "A14000000000001E"
@@ -164,14 +129,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "A15000000000001E"
-					type: "item"
-					item: "minecraft:iron_ingot"
-					count: 6
-				}
-			]
+			rewards: [{ id: "A15000000000001E" type: "item" item: "minecraft:golden_carrot" count: 16 } { id: "A16000000000001E" type: "item" item: "minecraft:golden_apple" count: 2 }]
 		}
 	]
 }
