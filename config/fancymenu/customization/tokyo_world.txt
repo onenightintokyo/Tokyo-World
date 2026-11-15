@@ -10,10 +10,11 @@ layout-meta {
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 10
+  [loading_requirement_container_meta:90f07bfd-e20c-414d-b2fd-c67ada6356a8-1794741000000] = [groups:][instances:]
 }
 
 menu_background {
-  instance_identifier = tokyo_world_background_v05
+  instance_identifier = f80c1e61-99ec-4da0-88ab-12e738cf7700-1794741000000
   background_type = image
   show_background = true
   image_path = [source:local]/config/fancymenu/assets/tokyo_world_menu_background.png
