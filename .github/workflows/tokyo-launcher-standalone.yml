@@ -1,6 +1,10 @@
 name: Build Tokyo World Standalone Launcher
 
 on:
+  pull_request:
+    paths:
+      - 'launcher-standalone/**'
+      - '.github/workflows/tokyo-launcher-standalone.yml'
   workflow_dispatch:
   push:
     branches: [main]
