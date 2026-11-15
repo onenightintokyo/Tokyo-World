@@ -317,8 +317,28 @@ internal sealed class LauncherWindow : Form
                 await Task.Run(() => BaseModRecovery.ImportFromZip(root, originalZip, reporter));
             }
 
+            // Apply the lightweight policy before and after sync to prevent JAR reinstallation.
+            TokyoOptimization.ApplyModPolicy(root, settings.LightweightMode, reporter);
             var modpack = new ModpackInstaller();
-            var report = await modpack.InstallAsync(root, settings.InstallAllModules, reporter);
+            var report = await modpack.InstallAsync(root, settings.InstallAllModules, settings.LightweightMode, reporter);
+
+            if (!settings.LightweightMode && !settings.LightweightPromptShown && TokyoOptimization.HasEveryCompat(root))
+            {
+                settings.LightweightPromptShown = true;
+                var choice = MessageBox.Show(this,
+                    "Z ostatniego logu wynika, że Every Compat bardzo obciąża ładowanie tekstur.\n\n" +
+                    "Czy wyłączyć go tymczasowo w TRYBIE LEKKIM? Plik zostanie przeniesiony do kopii, a launcher nie pobierze go ponownie.\n\n" +
+                    "UWAGA: W trybie lekkim nie otwieraj starych światów zawierających bloki z tego moda. " +
+                    "Możesz cofnąć zmianę w Ustawieniach.",
+                    "Tokyo World — optymalizacja ładowania",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                settings.LightweightMode = choice == DialogResult.Yes;
+                settings.Save();
+            }
+            TokyoOptimization.ApplyModPolicy(root, settings.LightweightMode, reporter);
+            TokyoOptimization.ApplyGraphics(root, settings.OptimizeGraphics, reporter);
+            if (!settings.LightweightMode && TokyoOptimization.HasEveryCompat(root))
+                SetStatus("Every Compat może wydłużać ładowanie — tryb lekki znajdziesz w ⚙.");
             needed = await Task.Run(() => BaseModRecovery.CountMissing(root));
             SetStatus($"Mody: +{report.Installed}, pominięto {report.SkippedOptional}, brakuje {needed} bazowych.");
 
@@ -379,13 +399,15 @@ internal sealed class SettingsWindow : Form
     private readonly TextBox repository = new();
     private readonly TextBox token = new();
     private readonly CheckBox allMods = new();
+    private readonly CheckBox optimize = new();
+    private readonly CheckBox lightweight = new();
     private readonly Button save = new();
 
     public SettingsWindow(LauncherSettings data, bool firstRun)
     {
         settings = data;
         Text = firstRun ? "Tokyo World — pierwsza konfiguracja" : "Tokyo World — ustawienia";
-        ClientSize = new Size(650, 406);
+        ClientSize = new Size(650, 552);
         StartPosition = FormStartPosition.CenterParent;
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;
@@ -422,7 +444,47 @@ internal sealed class SettingsWindow : Form
         allMods.Checked = data.InstallAllModules;
         Controls.Add(allMods);
 
-        save = ActionButton("ZAPISZ", 25, 348, 593);
+        optimize.Text = "Optymalizacja grafiki (render 8 / symulacja 6 / 90 FPS)";
+        optimize.SetBounds(25, 332, 590, 27);
+        optimize.ForeColor = Color.White;
+        optimize.Checked = data.OptimizeGraphics;
+        Controls.Add(optimize);
+
+        lightweight.Text = "Tryb lekki: wyłącz Every Compat podczas ładowania";
+        lightweight.SetBounds(25, 365, 590, 27);
+        lightweight.ForeColor = Color.White;
+        lightweight.Checked = data.LightweightMode;
+        Controls.Add(lightweight);
+        Label("UWAGA: z wyłączonym modem nie otwieraj istniejących światów, tylko testuj menu.",
+            25, 394, 615, color: Color.FromArgb(237, 182, 109));
+
+        var restore = ActionButton("PRZYWRÓĆ PRZED OPTYMALIZACJĄ", 25, 435, 593);
+        restore.Click += (_, _) =>
+        {
+            if (MessageBox.Show(this,
+                "Przywrócić Every Compat i oryginalny options.txt? " +
+                "Jeśli zmieniałeś opcje Minecrafta po optymalizacji, zostaną nadpisane kopią zapasową.",
+                "Tokyo World — przywracanie",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
+            try
+            {
+                TokyoOptimization.RestoreAll(
+                    Path.GetFullPath(Environment.ExpandEnvironmentVariables(folder.Text.Trim())),
+                    new Progress<string>(message => MessageBox.Show(this, message, "Tokyo World")));
+                optimize.Checked = false;
+                lightweight.Checked = false;
+                data.OptimizeGraphics = false;
+                data.LightweightMode = false;
+                data.Save();
+                MessageBox.Show(this, "Przywrócono kopie. Profil optymalizacji wyłączony.", "Tokyo World");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, ex.Message, "Nie udało się przywrócić", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        };
+
+        save = ActionButton("ZAPISZ", 25, 484, 593);
         save.BackColor = Color.FromArgb(224, 48, 74);
         save.Click += (_, _) =>
         {
@@ -441,6 +503,8 @@ internal sealed class SettingsWindow : Form
             data.Repository = repository.Text.Trim();
             data.SetToken(token.Text);
             data.InstallAllModules = allMods.Checked;
+            data.OptimizeGraphics = optimize.Checked;
+            data.LightweightMode = lightweight.Checked;
             DialogResult = DialogResult.OK;
             Close();
         };

@@ -16,7 +16,11 @@ internal sealed class LauncherSettings
     // while the owner's original Tokyo-World source remains private.
     public string Repository { get; set; } = "onenightintokyo/Tokyo-World";
     public bool InstallAllModules { get; set; } = true;
-    public int RamMb { get; set; } = 4096;
+    public int RamMb { get; set; } = 10240;
+    public bool OptimizeGraphics { get; set; } = true;
+    public bool LightweightMode { get; set; } = false;
+    public bool LightweightPromptShown { get; set; } = false;
+    public bool PerfMigrationCompleted { get; set; } = false;
     public string GitHubTokenEncrypted { get; set; } = "";
 
     private static string SettingsFolder =>
@@ -28,7 +32,16 @@ internal sealed class LauncherSettings
         try
         {
             if (File.Exists(SettingsFile))
-                return JsonSerializer.Deserialize<LauncherSettings>(File.ReadAllText(SettingsFile)) ?? new();
+                {
+                    var loaded = JsonSerializer.Deserialize<LauncherSettings>(File.ReadAllText(SettingsFile)) ?? new();
+                    if (!loaded.PerfMigrationCompleted)
+                    {
+                        // Existing 14+ GB allocations are scaled down only once.
+                        if (loaded.RamMb > 12288) loaded.RamMb = 10240;
+                        loaded.PerfMigrationCompleted = true;
+                    }
+                    return loaded;
+                }
         }
         catch { /* An invalid preferences file must not block launch. */ }
         return new();
