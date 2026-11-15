@@ -3,7 +3,7 @@
   "name": "Tokyo World — Technology Expansion",
   "minecraft": "1.20.1",
   "loader": "forge",
-  "note": "Profile installer is opt-in. It downloads current compatible Forge 1.20.1 files from Modrinth, validates SHA-512, preserves existing mods and never touches saves. Treat as testing until a fully pinned lockfile is produced. Ender IO uses a specifically verified 1.20.1 beta. Steam Rails targets 1.7.3 release series.",
+  "note": "Opt-in modules. Tech Lab: AE2/Mekanism bridge and RFTools. World Explore: YUNG's redesigned structures (new chunks required). Select versions strictly for Forge 1.20.1, verify SHA-512; test on copied world first.",
   "profiles": {
     "tech-core": [
       {
@@ -89,6 +89,35 @@
         "project": "l_enders-cataclysm",
         "label": "L_Ender's Cataclysm",
         "match": "^(L_Enders_Cataclysm|cataclysm)[-_].*\\.jar$"
+      }
+    ],
+    "tech-lab": [
+      {
+        "project": "applied-mekanistics",
+        "label": "Applied Mekanistics — integracja ME z gazami Mekanism",
+        "match": "^appliedmekanistics[-_].*\\.jar$"
+      },
+      {
+        "project": "rftools-utility",
+        "label": "RFTools Utility — spawner, autocrafter, teleport",
+        "match": "^rftoolsutility[-_].*\\.jar$"
+      },
+      {
+        "project": "rftools-power",
+        "label": "RFTools Power — magazyn energii i generatory",
+        "match": "^rftoolspower[-_].*\\.jar$"
+      }
+    ],
+    "world-explore": [
+      {
+        "project": "yungs-better-dungeons",
+        "label": "YUNG's Better Dungeons",
+        "match": "^YungsBetterDungeons[-_].*\\.jar$"
+      },
+      {
+        "project": "yungs-better-strongholds",
+        "label": "YUNG's Better Strongholds",
+        "match": "^YungsBetterStrongholds[-_].*\\.jar$"
       }
     ]
   }
