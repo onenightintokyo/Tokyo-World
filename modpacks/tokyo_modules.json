@@ -816,6 +816,72 @@
         "label": "Villager Quests — poboczne zlecenia mieszkańców",
         "match": "^villagerquests[-_.]"
       }
+    ],
+    "tokyo-next-tech": [
+      {
+        "project": "create-diesel-generators",
+        "label": "Create Diesel Generators — ropa, paliwa i silniki diesla",
+        "match": "^(createdieselgenerators|create_diesel_generators)[-_.]",
+        "versionId": "DTQVvA5H"
+      },
+      {
+        "project": "flux-networks",
+        "label": "Flux Networks — globalne sieci energii",
+        "match": "^(FluxNetworks|fluxnetworks)[-_.]"
+      },
+      {
+        "project": "laserio",
+        "label": "LaserIO — zaawansowana logistyka laserowa",
+        "match": "^laserio[-_.]"
+      },
+      {
+        "project": "mining-gadgets",
+        "label": "Mining Gadgets — narzędzia energetyczne",
+        "match": "^mininggadgets[-_.]"
+      }
+    ],
+    "tokyo-next-adventure": [
+      {
+        "project": "stalwart-dungeons",
+        "label": "Stalwart Dungeons — niebezpieczne lochy Netheru",
+        "match": "^(stalwartdungeons|StalwartDungeons)[-_.]"
+      },
+      {
+        "project": "twilightforest",
+        "label": "The Twilight Forest — wymiar i bossowie",
+        "match": "^(twilightforest|twilight_forest)[-_.]"
+      }
+    ],
+    "performance-fps": [
+      {
+        "project": "immediatelyfast",
+        "label": "ImmediatelyFast — szybszy rendering UI i obiektów",
+        "match": "^ImmediatelyFast[-_.]"
+      },
+      {
+        "project": "fastsuite",
+        "label": "FastSuite — wydajniejsze dopasowywanie receptur",
+        "match": "^FastSuite[-_.]"
+      }
+    ],
+    "visual-extras": [
+      {
+        "project": "entity-model-features",
+        "label": "Entity Model Features — animowane modele (opcjonalnie)",
+        "match": "^(EMF|entity_model_features)[-_.]"
+      },
+      {
+        "project": "entitytexturefeatures",
+        "label": "Entity Texture Features — warianty tekstur (opcjonalnie)",
+        "match": "^(ETF|entity_texture_features)[-_.]"
+      }
+    ],
+    "visual-shaders": [
+      {
+        "project": "oculus",
+        "label": "Oculus — shadery na Forge z Embeddium (opcjonalnie)",
+        "match": "^oculus[-_.]"
+      }
     ]
   }
 }
