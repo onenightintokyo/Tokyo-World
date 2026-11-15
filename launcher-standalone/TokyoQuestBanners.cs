@@ -38,7 +38,7 @@ internal static class TokyoQuestBanners
                 g.DrawLine(thin, 0, y, 1200, y);
         }
         using (var halo = new SolidBrush(Color.FromArgb(55, accent)))
-            g.FillEllipse(780, -150, 510, 510);
+            g.FillEllipse(halo, 780, -150, 510, 510);
         using (var line = new Pen(accent, 6))
         {
             g.DrawLine(line, 66, 62, 66, 326);
