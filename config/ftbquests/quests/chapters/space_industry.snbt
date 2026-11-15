@@ -181,7 +181,7 @@
 			icon: "ad_astra:steel_cable"
 			dependencies: ["A1300000000000C8", "A1300000000000C9", "A1300000000000CA", "A1300000000000CB"]
 			tasks: [{ id: "A1400000000000CC" type: "item" item: "ad_astra:steel_cable" count: 18L consume_items: false }]
-			rewards: [{ id: "A1500000000000CC" type: "item" item: "minecraft:totem_of_undying" count: 1 } { id: "A1600000000000CC" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1500000000000CC" type: "item" item: "minecraft:totem_of_undying" count: 1 }, { id: "A1600000000000CC" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
