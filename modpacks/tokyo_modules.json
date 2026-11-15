@@ -3,7 +3,7 @@
   "name": "Tokyo World — Technology Expansion",
   "minecraft": "1.20.1",
   "loader": "forge",
-  "note": "Tokyo World WAVE: 36 candidate mods in industry/bosses/biomes/quality-of-life. All downloads are resolved for Forge 1.20.1 by Modrinth; missing projects may be skipped and should not be forcibly installed. Create 6.0.8 compatibility is not guaranteed merely by game version. No existing JARs or worlds overwritten.",
+  "note": "New optional Chapter Expansion: 15 candidates from Modrinth for Forge 1.20.1. Verify compatibility in game; installed only on explicit WAVE/Chapter/Mega selection. Tinkers Mantle requires matching release, dynamic trees pinned to verified Forge 1.20.1. Quests do not require missing optional mods.",
   "profiles": {
     "tech-core": [
       {
@@ -733,6 +733,86 @@
         "project": "crafting-tweaks",
         "label": "Crafting Tweaks — wygodniejsze receptury",
         "match": "^craftingtweaks[-_ .]"
+      }
+    ],
+    "chapter-engineering": [
+      {
+        "project": "tinkers-construct",
+        "label": "Tinkers' Construct — własne narzędzia i huta",
+        "match": "^(tconstruct|TConstruct)[-_.]"
+      },
+      {
+        "project": "mantle",
+        "label": "Mantle — wymagane przez Tinkers' Construct",
+        "match": "^Mantle[-_.]"
+      },
+      {
+        "project": "rats",
+        "label": "Rats — transport i automatyzacja przez oswojone szczury",
+        "match": "^rats[-_.]"
+      },
+      {
+        "project": "evilcraft",
+        "label": "EvilCraft — mroczna technologia i alchemia",
+        "match": "^EvilCraft[-_.]"
+      },
+      {
+        "project": "natures-aura",
+        "label": "Nature's Aura — energia środowiska i fabryki natury",
+        "match": "^naturesaura[-_.]"
+      },
+      {
+        "project": "productivetrees",
+        "label": "Productive Trees — krzyżowanie drzew i automatyzacja leśna",
+        "match": "^productivetrees[-_.]"
+      }
+    ],
+    "chapter-exploration": [
+      {
+        "project": "the-bumblezone",
+        "label": "The Bumblezone — nowy wymiar, struktury i wyzwania pszczół",
+        "match": "^(the_bumblezone|bumblezone)[-_.]"
+      },
+      {
+        "project": "dynamictrees",
+        "label": "Dynamic Trees — żywe lasy i realistyczny wzrost",
+        "match": "^DynamicTrees[-_.]",
+        "versionId": "iGSXZxgo"
+      },
+      {
+        "project": "serene-seasons",
+        "label": "Serene Seasons — pory roku i sezonowy farming",
+        "match": "^SereneSeasons[-_.]"
+      },
+      {
+        "project": "simple-voice-chat",
+        "label": "Simple Voice Chat — rozmowy głosowe ze znajomymi",
+        "match": "^voicechat[-_.]"
+      },
+      {
+        "project": "every-compat",
+        "label": "Every Compat — zgodność dekoracji i drewna",
+        "match": "^everycomp[-_.]"
+      },
+      {
+        "project": "immersive-paintings",
+        "label": "Immersive Paintings — własne obrazy w bazie",
+        "match": "^immersive_paintings[-_.]"
+      },
+      {
+        "project": "ends-delight",
+        "label": "End's Delight — kulinarna wyprawa do Endu",
+        "match": "^ends_delight[-_.]"
+      },
+      {
+        "project": "enders-delight",
+        "label": "Ender's Delight — jedzenie i polowania w Endzie",
+        "match": "^endersdelight[-_.]"
+      },
+      {
+        "project": "villager-quests",
+        "label": "Villager Quests — poboczne zlecenia mieszkańców",
+        "match": "^villagerquests[-_.]"
       }
     ]
   }
