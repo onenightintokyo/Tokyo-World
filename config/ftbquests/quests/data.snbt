@@ -5,7 +5,7 @@
 	default_reward_team: false
 	detection_delay: 20
 	disable_gui: false
-	grid_scale: 0.5d
+	grid_scale: 0.75d
 	pause_game: false
 	progression_mode: "linear"
 	show_lock_icons: true

@@ -856,7 +856,8 @@
       {
         "project": "immediatelyfast",
         "label": "ImmediatelyFast — szybszy rendering UI i obiektów",
-        "match": "^ImmediatelyFast[-_.]"
+        "match": "^ImmediatelyFast[-_.]",
+        "versionId": "NJ17fqEK"
       },
       {
         "project": "fastsuite",

@@ -6,7 +6,7 @@
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "minecraft:wheat"
-	order_index: 32
+	order_index: 1
 	images: [
 		{
 			image: "tokyoworld:textures/gui/quests/tokyo_early.png"
