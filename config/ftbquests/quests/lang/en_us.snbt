@@ -1,0 +1,67 @@
+{
+	chapter_group.A110000000000001.title: "TOKYO WORLD | PROGRESSION"
+	chapter.A120000000000001.title: "Tokyo World — Getting Started"
+	quest.A130000000000001.title: "First material"
+	quest.A130000000000001.quest_desc: ["Collect wood. Every factory starts with basic tools."]
+	quest.A130000000000002.title: "Engineer’s workbench"
+	quest.A130000000000002.quest_desc: ["Craft a crafting table and set up a workshop."]
+	quest.A130000000000003.title: "Stone foundations"
+	quest.A130000000000003.quest_desc: ["Gather cobblestone for a furnace and your first structures."]
+	quest.A130000000000004.title: "First smelting"
+	quest.A130000000000004.quest_desc: ["Build a furnace and begin processing materials."]
+	quest.A130000000000005.title: "Iron era"
+	quest.A130000000000005.quest_desc: ["Iron powers tools, mechanisms and the future power grid."]
+	quest.A130000000000006.title: "Copper for industry"
+	quest.A130000000000006.quest_desc: ["Collect copper for wiring and machine construction."]
+	quest.A130000000000007.title: "Redstone signal"
+	quest.A130000000000007.quest_desc: ["Take the first step toward automation logic."]
+	quest.A130000000000008.title: "Next stage"
+	quest.A130000000000008.quest_desc: ["Build a hopper to start automating logistics and farming."]
+	chapter.A120000000000002.title: "Create — Mechanical Factory"
+	quest.A130000000000009.title: "Andesite alloy"
+	quest.A130000000000009.quest_desc: ["The first building block for Create mechanical contraptions."]
+	quest.A13000000000000A.title: "Power shafts"
+	quest.A13000000000000A.quest_desc: ["Build shafts to distribute rotational force."]
+	quest.A13000000000000B.title: "Cogwheels"
+	quest.A13000000000000B.quest_desc: ["Use gears to route rotation through the factory."]
+	quest.A13000000000000C.title: "Generating rotation"
+	quest.A13000000000000C.quest_desc: ["Build a water wheel and connect your first production line."]
+	quest.A13000000000000D.title: "Mechanical press"
+	quest.A13000000000000D.quest_desc: ["Start automating metal pressing."]
+	quest.A13000000000000E.title: "Conveyor belts"
+	quest.A13000000000000E.quest_desc: ["Replace manual item transport with belts."]
+	quest.A13000000000000F.title: "Mechanical mixer"
+	quest.A13000000000000F.quest_desc: ["Create your first mechanical mixing setup."]
+	quest.A130000000000010.title: "Precision mechanisms"
+	quest.A130000000000010.quest_desc: ["Precision components are essential for later tech progression."]
+	chapter.A120000000000003.title: "Mekanism — Electrification"
+	quest.A130000000000011.title: "Introduction to Mekanism"
+	quest.A130000000000011.quest_desc: ["Build the Metallurgic Infuser to begin chemistry and electronics."]
+	quest.A130000000000012.title: "Enriched Redstone"
+	quest.A130000000000012.quest_desc: ["Improve production of circuit materials."]
+	quest.A130000000000013.title: "Basic circuits"
+	quest.A130000000000013.quest_desc: ["Create your first set of control circuits."]
+	quest.A130000000000014.title: "Steel framework"
+	quest.A130000000000014.quest_desc: ["Build steel casings for advanced machinery."]
+	quest.A130000000000015.title: "Enrichment chamber"
+	quest.A130000000000015.quest_desc: ["Start more efficient ore processing."]
+	quest.A130000000000016.title: "Crusher"
+	quest.A130000000000016.quest_desc: ["Expand your material-processing options."]
+	quest.A130000000000017.title: "Faster factory"
+	quest.A130000000000017.quest_desc: ["Upgrade from single machines to a Mekanism factory."]
+	quest.A130000000000018.title: "Energy storage"
+	quest.A130000000000018.quest_desc: ["Buffer your energy before expanding further."]
+	chapter.A120000000000004.title: "Farming — Self Sufficiency"
+	quest.A130000000000019.title: "Plant the future"
+	quest.A130000000000019.quest_desc: ["Gather crops to begin a self-sufficient settlement."]
+	quest.A13000000000001A.title: "Vegetable garden"
+	quest.A13000000000001A.quest_desc: ["Expand your food production."]
+	quest.A13000000000001B.title: "Automated collection"
+	quest.A13000000000001B.quest_desc: ["Collect farm output with hoppers."]
+	quest.A13000000000001C.title: "Cooking at scale"
+	quest.A13000000000001C.quest_desc: ["Build a Farmer's Delight cooking pot."]
+	quest.A13000000000001D.title: "Mystical cultivation"
+	quest.A13000000000001D.quest_desc: ["Start collecting the essence used by Mystical Agriculture."]
+	quest.A13000000000001E.title: "Crop storage"
+	quest.A13000000000001E.quest_desc: ["Expand storage for large crop harvests."]
+}
