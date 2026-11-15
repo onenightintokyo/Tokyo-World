@@ -1,31 +1,27 @@
 # Tokyo World
 
-**Minecraft 1.20.1 / Forge 47.4.28 — Tech • Automation • Adventure • Farming**
+**Minecraft 1.20.1 • Forge 47.4.28 • Expert Fun Tech & Automation**
 
-Autorska paczka technologiczna dla znajomych, rozwijana etapami. Mody techniczne są rdzeniem rozgrywki, a pozostałe systemy uzupełniają eksplorację, budowanie i rozgrywkę For Fun.
+Autorski modpack oparty na automatyzacji, ogromnych fabrykach i rozwoju technologicznym, z magią, eksploracją, farmingiem i budowaniem jako dodatkami.
 
-## Status — Questbook v0.1 (test)
+## Aktualny etap — v0.4 (do testowania)
 
-- 4 rozdziały: Początek, Create, Mekanism, Farming
-- 30 questów (zależności, nagrody, tłumaczenia PL/EN)
-- Grafiki rozdziałów z istniejącego pakietu zasobów `TokyoWorld_Visuals.zip`
-- Automatyczna synchronizacja plików przy uruchomieniu przez `tools/Update-TokyoWorld.ps1`
-- Aktualizator aktywuje istniejące tło FancyMenu i paczkę zasobów, o ile pliki są obecne w instancji
+- **278 questów / 20 rozdziałów** — pliki FTB Quests z nagrodami i progresją
+- **Niestandardowe receptury KubeJS**: Create × Mekanism × Powah × Industrial Foregoing × Ad Astra × Integrated Dynamics
+- **FancyMenu**: podłączenie grafiki Tokyo World i naprawa błędów ustawień
+- **Instalator brakujących modów**: profile Tech Core / Expanded / Adventure, Modrinth Forge 1.20.1, weryfikacja SHA-512, bez nadpisywania istniejących plików
+- **Bez zmian RAM, bez modyfikacji światów i save'ów**
 
-**To jeszcze nie jest pełny, przetestowany modpack.** Questbook czeka na pierwszy test w grze. Skrypt obecnie synchronizuje pliki projektowe, **nie pobiera automatycznie nowych modów .jar**.
-
-## Test
-
-1. Zrób kopię zapasową świata i zamknij Minecraft.
-2. Uruchom instancję w Prism Launcher. W konsoli sprawdź `[Tokyo World] Done. Files copied:`.
-3. Wejdź do świata i otwórz FTB Quests. Powinny być 4 rozdziały i 30 zadań.
-4. Jeśli coś się nie wczyta, przekaż `logs/latest.log`.
+Aktualizator przedstartowy pobiera questy, konfiguracje, grafiki i skrypty. **Nie pobiera samodzielnie nowych modów JAR** — rozszerzenia wymagają jednokrotnego uruchomienia instalatora z parametrem `-Apply` po wcześniejszej kopii zapasowej świata.
 
 ## Dokumentacja
 
-- [Questbook](docs/QUESTBOOK_v0.1.md)
-- [Automatyczne aktualizacje](docs/AUTOMATYCZNE_AKTUALIZACJE.md)
+- [Instrukcja instalacji nowych modów i poprawy menu](docs/TECH_EXPANSION_v0.4.md)
+- [Automatyczna synchronizacja](docs/AUTOMATYCZNE_AKTUALIZACJE.md)
+- [Pierwszy questbook (historia v0.1)](docs/QUESTBOOK_v0.1.md)
 
-## Następne kroki
+## Zakres obecnej paczki
 
-Weryfikacja questbooka w Minecraft, rozdziały Thermal / Immersive Engineering / Industrial Foregoing, kompletne przeróbki receptur, osobne rozdziały eksploracji i magii, a następnie pełny manifest Packwiz do automatycznych aktualizacji modów.
+Główne technologie: Mekanism, Create, Immersive Engineering, Industrial Foregoing, Integrated Dynamics, Powah, Pipez, XNet. Rozszerzenie dodaje AE2, Ender IO, moduły Mekanism, NuclearCraft Neoteric i inne po instalacji modułów.
+
+Projekt jest nadal rozwijany, a wersja v0.4 nie została przetestowana na działającym kliencie Minecraft. Rozdziały, nowe receptury i instalator wymagają testów w lokalnej instancji.
