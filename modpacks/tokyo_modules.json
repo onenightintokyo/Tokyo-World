@@ -820,36 +820,41 @@
     "tokyo-next-tech": [
       {
         "project": "create-diesel-generators",
-        "label": "Create Diesel Generators — ropa, paliwa i silniki diesla",
+        "label": "Create Diesel Generators — ropa i silniki spalinowe",
         "match": "^(createdieselgenerators|create_diesel_generators)[-_.]",
         "versionId": "DTQVvA5H"
       },
       {
-        "project": "flux-networks",
-        "label": "Flux Networks — globalne sieci energii",
-        "match": "^(FluxNetworks|fluxnetworks)[-_.]"
+        "project": "core-utilities",
+        "label": "Core Utilities — generatory, automatyzacja, logistyka",
+        "match": "^(coreutilities|core_utilities)[-_.]"
       },
       {
-        "project": "laserio",
-        "label": "LaserIO — zaawansowana logistyka laserowa",
-        "match": "^laserio[-_.]"
-      },
-      {
-        "project": "mining-gadgets",
-        "label": "Mining Gadgets — narzędzia energetyczne",
-        "match": "^mininggadgets[-_.]"
+        "project": "voltex",
+        "label": "Voltex — zaawansowane multibloki, nanity i energia",
+        "match": "^voltex[-_.]"
       }
     ],
     "tokyo-next-adventure": [
       {
         "project": "stalwart-dungeons",
-        "label": "Stalwart Dungeons — niebezpieczne lochy Netheru",
+        "label": "Stalwart Dungeons — trudne lochy Netheru",
         "match": "^(stalwartdungeons|StalwartDungeons)[-_.]"
       },
       {
-        "project": "twilightforest",
-        "label": "The Twilight Forest — wymiar i bossowie",
-        "match": "^(twilightforest|twilight_forest)[-_.]"
+        "project": "aquamirae",
+        "label": "Aquamirae — lodowy ocean, bossowie i relikty",
+        "match": "^aquamirae[-_.]"
+      },
+      {
+        "project": "dungeon-now-loading",
+        "label": "Dungeon Now Loading — nowe lochy i bossowie",
+        "match": "^(dungeon_now_loading|dungeonnowloading)[-_.]"
+      },
+      {
+        "project": "dungeon-descent",
+        "label": "Dungeon Descent — wielopoziomowa twierdza i bossowie",
+        "match": "^(dungeon_descent|dungeondescent)[-_.]"
       }
     ],
     "performance-fps": [
