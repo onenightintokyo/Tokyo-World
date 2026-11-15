@@ -1,16 +1,22 @@
 {
 	filename: "immersive_industry"
 	title: "&c&lCiężar stali"
-	group: "A110000000000003"
+	group: "A110000000000002"
 	id: "A120000000000007"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "immersiveengineering:blast_furnace"
-	order_index: 2
+	order_index: 14
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }
 	]
 	quests: [
 		{
 			id: "A130000000000045"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wielki piec"
 			description: ["Wielkie konstrukcje nie wybaczają prowizorki. Czas poznać stal, przewody i potężne urządzenia przemysłowe. Zacznij od sprawy „Wielki piec”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -22,6 +28,10 @@
 		}
 		{
 			id: "A130000000000046"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Produkcja stali"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Produkcja stali”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -33,6 +43,10 @@
 		}
 		{
 			id: "A130000000000047"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Warsztat inżyniera"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Warsztat inżyniera”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -44,6 +58,10 @@
 		}
 		{
 			id: "A130000000000048"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przewody miedziane"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Przewody miedziane”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -55,6 +73,10 @@
 		}
 		{
 			id: "A130000000000049"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Złącza niskiego napięcia"
 			description: ["Wcześniej zamknąłeś już sprawę „Warsztat inżyniera”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Złącza niskiego napięcia”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -66,6 +88,10 @@
 		}
 		{
 			id: "A13000000000004A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Akumulator LV"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Akumulator LV”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
@@ -77,6 +103,10 @@
 		}
 		{
 			id: "A13000000000004B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Akumulator MV"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Akumulator MV”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
@@ -88,6 +118,10 @@
 		}
 		{
 			id: "A13000000000004C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Akumulator HV"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Akumulator HV”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -99,6 +133,10 @@
 		}
 		{
 			id: "A13000000000004D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przemysłowy rurociąg"
 			description: ["Wcześniej zamknąłeś już sprawę „Akumulator HV”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Przemysłowy rurociąg”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
@@ -110,6 +148,10 @@
 		}
 		{
 			id: "A13000000000004E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pompa przemysłowa"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Pompa przemysłowa”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
@@ -121,6 +163,10 @@
 		}
 		{
 			id: "A13000000000004F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Prasa ciężka"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Prasa ciężka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -132,6 +178,10 @@
 		}
 		{
 			id: "A130000000000050"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kruszarka wieloblokowa"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Kruszarka wieloblokowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -143,6 +193,10 @@
 		}
 		{
 			id: "A130000000000051"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rafineria"
 			description: ["Wcześniej zamknąłeś już sprawę „Prasa ciężka”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Rafineria”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -154,6 +208,10 @@
 		}
 		{
 			id: "A130000000000052"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Generator Diesla"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Generator Diesla”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -165,6 +223,10 @@
 		}
 		{
 			id: "A130000000000053"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Piec łukowy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Piec łukowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -176,6 +238,10 @@
 		}
 		{
 			id: "A130000000000054"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wiertło geologiczne"
 			description: ["Huta staje się mocnym fundamentem dla kolejnych planów. Ostatni sprawdzian to „Wiertło geologiczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

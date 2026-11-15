@@ -1,14 +1,20 @@
 {
 	filename: "ae2_networks"
 	title: "&e&lPamięć kryształów"
-	group: "A110000000000004"
+	group: "A110000000000002"
 	id: "A120000000000015"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "ae2:controller"
-	order_index: 4
-	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
+	order_index: 0
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000117"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Krysztaly Certus"
 			description: ["Magazyn może zapamiętać więcej, niż potrafisz policzyć. Zacznij od kryształów i naucz je współpracować. Zacznij od sprawy „Krysztaly Certus”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A130000000000118"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ladowanie krysztalow"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Ladowanie krysztalow”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A130000000000119"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Paliwo sieci Fluix"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Paliwo sieci Fluix”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A13000000000011A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Prasa obwodow"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Prasa obwodow”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A13000000000011B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Procesory logiczne"
 			description: ["Wcześniej zamknąłeś już sprawę „Paliwo sieci Fluix”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Procesory logiczne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A13000000000011C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Procesory obliczeniowe"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Procesory obliczeniowe”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A13000000000011D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Procesory inzynierskie"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Procesory inzynierskie”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A13000000000011E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zasilanie sieci"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zasilanie sieci”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A13000000000011F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kontroler ME"
 			description: ["Wcześniej zamknąłeś już sprawę „Zasilanie sieci”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Kontroler ME”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A130000000000120"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Szafa dyskow"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Szafa dyskow”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A130000000000121"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Terminal sieci"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Terminal sieci”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A130000000000122"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Terminal craftingu"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Terminal craftingu”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A130000000000123"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Automatyzacja tworzenia"
 			description: ["Wcześniej zamknąłeś już sprawę „Terminal sieci”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Automatyzacja tworzenia”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A130000000000124"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wzorce automatyzacji"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Wzorce automatyzacji”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A130000000000125"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Interfejs sieci"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejs sieci”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A130000000000126"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Polaczenie kwantowe"
 			description: ["Sieć ME pozwala myśleć o produkcji, nie o szukaniu przedmiotów. Ostatni sprawdzian to „Polaczenie kwantowe”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

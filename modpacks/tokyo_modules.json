@@ -816,6 +816,88 @@
         "label": "Villager Quests — poboczne zlecenia mieszkańców",
         "match": "^villagerquests[-_.]"
       }
+    ],
+    "tokyo-next-tech": [
+      {
+        "project": "create-diesel-generators",
+        "label": "Create Diesel Generators — ropa i silniki spalinowe",
+        "match": "^(createdieselgenerators|create_diesel_generators)[-_.]",
+        "versionId": "DTQVvA5H"
+      },
+      {
+        "project": "core-utilities",
+        "label": "Core Utilities — generatory, automatyzacja, logistyka",
+        "match": "^(coreutilities|core_utilities)[-_.]"
+      },
+      {
+        "project": "voltex",
+        "label": "Voltex — zaawansowane multibloki, nanity i energia",
+        "match": "^voltex[-_.]"
+      }
+    ],
+    "tokyo-next-adventure": [
+      {
+        "project": "stalwart-dungeons",
+        "label": "Stalwart Dungeons — trudne lochy Netheru",
+        "match": "^(stalwartdungeons|StalwartDungeons)[-_.]"
+      },
+      {
+        "project": "aquamirae",
+        "label": "Aquamirae — lodowy ocean, bossowie i relikty",
+        "match": "^aquamirae[-_.]"
+      },
+      {
+        "project": "dungeon-now-loading",
+        "label": "Dungeon Now Loading — nowe lochy i bossowie",
+        "match": "^(dungeon_now_loading|dungeonnowloading)[-_.]"
+      },
+      {
+        "project": "dungeon-descent",
+        "label": "Dungeon Descent — wielopoziomowa twierdza i bossowie",
+        "match": "^(dungeon_descent|dungeondescent)[-_.]"
+      }
+    ],
+    "performance-fps": [
+      {
+        "project": "immediatelyfast",
+        "label": "ImmediatelyFast — szybszy rendering UI i obiektów",
+        "match": "^ImmediatelyFast[-_.]",
+        "versionId": "NJ17fqEK"
+      },
+      {
+        "project": "fastsuite",
+        "label": "FastSuite — wydajniejsze dopasowywanie receptur",
+        "match": "^FastSuite[-_.]"
+      }
+    ],
+    "visual-extras": [
+      {
+        "project": "entity-model-features",
+        "label": "Entity Model Features — animowane modele (opcjonalnie)",
+        "match": "^(EMF|entity_model_features)[-_.]"
+      },
+      {
+        "project": "entitytexturefeatures",
+        "label": "Entity Texture Features — warianty tekstur (opcjonalnie)",
+        "match": "^(ETF|entity_texture_features)[-_.]"
+      },
+      {
+        "project": "3dskinlayers",
+        "label": "3D Skin Layers — przestrzenne skiny graczy (opcjonalnie)",
+        "match": "^(skinlayers3d|3dskinlayers)[-_.]"
+      },
+      {
+        "project": "not-enough-animations",
+        "label": "Not Enough Animations — płynniejsze animacje postaci (opcjonalnie)",
+        "match": "^(notenoughanimations|NotEnoughAnimations)[-_.]"
+      }
+    ],
+    "visual-shaders": [
+      {
+        "project": "oculus",
+        "label": "Oculus — shadery na Forge z Embeddium (opcjonalnie)",
+        "match": "^oculus[-_.]"
+      }
     ]
   }
 }

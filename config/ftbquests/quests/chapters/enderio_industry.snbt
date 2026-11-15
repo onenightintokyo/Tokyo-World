@@ -1,14 +1,20 @@
 {
 	filename: "enderio_industry"
 	title: "&c&lOd iskry do stopu"
-	group: "A110000000000003"
+	group: "A110000000000002"
 	id: "A120000000000016"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "enderio:alloy_smelter"
-	order_index: 4
-	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
+	order_index: 11
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000127"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ziarna nieskonczonosci"
 			description: ["Zwykły piec nie przygotuje każdego materiału. W tej części fabryki trzeba cierpliwie łączyć zaawansowane składniki. Zacznij od sprawy „Ziarna nieskonczonosci”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A130000000000128"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Podstawowy kondensator"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Podstawowy kondensator”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A130000000000129"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wielofunkcyjna obudowa"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Wielofunkcyjna obudowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A13000000000012A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przemyslowy wytapiacz"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Przemyslowy wytapiacz”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A13000000000012B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Mlyn SAG"
 			description: ["Wcześniej zamknąłeś już sprawę „Wielofunkcyjna obudowa”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Mlyn SAG”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A13000000000012C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Generator Stirlinga"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Generator Stirlinga”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A13000000000012D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stop przewodzacy"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Stop przewodzacy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A13000000000012E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stop energetyczny"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Stop energetyczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A13000000000012F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stop pulsujacy"
 			description: ["Wcześniej zamknąłeś już sprawę „Stop przewodzacy”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Stop pulsujacy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A130000000000130"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rurociag przedmiotow"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Rurociag przedmiotow”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A130000000000131"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Energia przez conduit"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Energia przez conduit”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A130000000000132"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rzemioslo automatyczne"
 			description: ["Potrafisz wytwarzać stopy, od których zależą najlepsze urządzenia. Ostatni sprawdzian to „Rzemioslo automatyczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

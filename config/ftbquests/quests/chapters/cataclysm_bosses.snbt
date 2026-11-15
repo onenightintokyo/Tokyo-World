@@ -1,14 +1,20 @@
 {
 	filename: "cataclysm_bosses"
 	title: "&9&lCi, których lepiej nie budzić"
-	group: "A110000000000007"
+	group: "A110000000000003"
 	id: "A120000000000018"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "minecraft:nether_star"
-	order_index: 2
-	images: [{ image: "tokyoworld:textures/gui/quests/exploration_adventure.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }]
+	order_index: 6
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A13000000000013F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przedmioty na wyprawe"
 			description: ["Wielkie ruiny rzadko są puste. Zanim wejdziesz do środka, pomyśl o ekipie i drodze odwrotu. Zacznij od sprawy „Przedmioty na wyprawe”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A130000000000140"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przygotuj zaopatrzenie"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Przygotuj zaopatrzenie”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A130000000000141"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ekipa na bossa"
 			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Ekipa na bossa”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A130000000000142"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Starozytny metal"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Starozytny metal”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A130000000000143"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Trofeum silnego przeciwnika"
 			description: ["Wcześniej zamknąłeś już sprawę „Ekipa na bossa”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Trofeum silnego przeciwnika”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A130000000000144"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ognisty metal"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ognisty metal”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A130000000000145"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Legendarny smok"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Legendarny smok”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 8.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A130000000000146"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przeklete trofeum"
 			description: ["Znasz cenę każdego starcia z legendarnym przeciwnikiem. Ostatni sprawdzian to „Przeklete trofeum”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

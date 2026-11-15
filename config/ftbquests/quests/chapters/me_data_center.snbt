@@ -1,14 +1,20 @@
 {
 	filename: "me_data_center"
 	title: "&e&lCyfrowe serce bazy"
-	group: "A110000000000004"
+	group: "A110000000000003"
 	id: "A12000000000001E"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "ae2:controller"
-	order_index: 6
-	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	order_index: 20
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000197"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kwarc Certus"
 			description: ["Prawdziwy magazyn powinien wiedzieć, czego potrzeba do następnej budowy. Tutaj zaczyna się inteligentna produkcja. Zacznij od sprawy „Kwarc Certus”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A130000000000198"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kwarc ładowany"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Kwarc ładowany”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A130000000000199"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kryształy Fluix"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Kryształy Fluix”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A13000000000019A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Prasy procesorów"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Prasy procesorów”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A13000000000019B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Procesory logiczne"
 			description: ["Wcześniej zamknąłeś już sprawę „Kryształy Fluix”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Procesory logiczne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A13000000000019C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Procesory kalkulacyjne"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Procesory kalkulacyjne”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A13000000000019D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Procesory inżynieryjne"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Procesory inżynieryjne”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A13000000000019E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zasilanie ME"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zasilanie ME”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A13000000000019F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kontrolery ME"
 			description: ["Wcześniej zamknąłeś już sprawę „Zasilanie ME”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Kontrolery ME”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A1300000000001A0"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Szafy nośników"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Szafy nośników”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A1300000000001A1"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Terminale ME"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Terminale ME”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A1300000000001A2"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Terminale rzemiosła"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Terminale rzemiosła”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A1300000000001A3"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Automatyczne składanie"
 			description: ["Wcześniej zamknąłeś już sprawę „Terminale ME”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Automatyczne składanie”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A1300000000001A4"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Dostawcy wzorców"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Dostawcy wzorców”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A1300000000001A5"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Interfejsy produkcyjne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejsy produkcyjne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A1300000000001A6"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "TOKYO DATA CENTER"
 			description: ["Masz własne centrum danych, które może przygotować pracę całego zakładu. Ostatni sprawdzian to „TOKYO DATA CENTER”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d

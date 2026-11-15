@@ -1,16 +1,22 @@
 {
 	filename: "mekanism_industry"
 	title: "&c&lRytm przemysłu"
-	group: "A110000000000003"
+	group: "A110000000000002"
 	id: "A120000000000006"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "mekanism:advanced_control_circuit"
-	order_index: 1
+	order_index: 23
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }
 	]
 	quests: [
 		{
 			id: "A130000000000031"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kable energetyczne"
 			description: ["Sama kruszarka nie zbuduje potężnego zakładu. Najważniejsze jest to, co dzieje się między kolejnymi urządzeniami. Zacznij od sprawy „Kable energetyczne”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -22,6 +28,10 @@
 		}
 		{
 			id: "A130000000000032"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Obwody zaawansowane"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Obwody zaawansowane”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -33,6 +43,10 @@
 		}
 		{
 			id: "A130000000000033"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Elitarne obwody"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Elitarne obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -44,6 +58,10 @@
 		}
 		{
 			id: "A130000000000034"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Obwody najwyższej klasy"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Obwody najwyższej klasy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -55,6 +73,10 @@
 		}
 		{
 			id: "A130000000000035"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kompresor osmu"
 			description: ["Wcześniej zamknąłeś już sprawę „Elitarne obwody”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Kompresor osmu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -66,6 +88,10 @@
 		}
 		{
 			id: "A130000000000036"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Separator elektrolityczny"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Separator elektrolityczny”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
@@ -77,6 +103,10 @@
 		}
 		{
 			id: "A130000000000037"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Utleniacz chemiczny"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Utleniacz chemiczny”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
@@ -88,6 +118,10 @@
 		}
 		{
 			id: "A130000000000038"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Infuzor chemiczny"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Infuzor chemiczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -99,6 +133,10 @@
 		}
 		{
 			id: "A130000000000039"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Komora reakcji"
 			description: ["Wcześniej zamknąłeś już sprawę „Utleniacz chemiczny”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Komora reakcji”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -110,6 +148,10 @@
 		}
 		{
 			id: "A13000000000003A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kondensacja gazów"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kondensacja gazów”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -121,6 +163,10 @@
 		}
 		{
 			id: "A13000000000003B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rozpuszczanie chemiczne"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Rozpuszczanie chemiczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -132,6 +178,10 @@
 		}
 		{
 			id: "A13000000000003C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Krystalizacja chemiczna"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Krystalizacja chemiczna”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -143,6 +193,10 @@
 		}
 		{
 			id: "A13000000000003D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zbiornik płynów"
 			description: ["Wcześniej zamknąłeś już sprawę „Rozpuszczanie chemiczne”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Zbiornik płynów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -154,6 +208,10 @@
 		}
 		{
 			id: "A13000000000003E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magazyn energii"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Magazyn energii”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -165,6 +223,10 @@
 		}
 		{
 			id: "A13000000000003F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ogromny akumulator"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Ogromny akumulator”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
@@ -176,6 +238,10 @@
 		}
 		{
 			id: "A130000000000040"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Sortowanie materiałów"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Sortowanie materiałów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
@@ -187,6 +253,10 @@
 		}
 		{
 			id: "A130000000000041"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Cyfrowa koparka"
 			description: ["Wcześniej zamknąłeś już sprawę „Ogromny akumulator”. Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Cyfrowa koparka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -198,6 +268,10 @@
 		}
 		{
 			id: "A130000000000042"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Transport kwantowy"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Transport kwantowy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -209,6 +283,10 @@
 		}
 		{
 			id: "A130000000000043"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Sieć QIO"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sieć QIO”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -220,6 +298,10 @@
 		}
 		{
 			id: "A130000000000044"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Teleportacja technologiczna"
 			description: ["Procesy zaczynają się zazębiać i każda maszyna ma swoje miejsce. Ostatni sprawdzian to „Teleportacja technologiczna”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

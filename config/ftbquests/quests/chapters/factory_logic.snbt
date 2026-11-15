@@ -3,12 +3,18 @@
 	title: "&b&lMyślące maszyny"
 	group: "A110000000000002"
 	id: "A12000000000001A"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "integrateddynamics:logic_programmer"
-	order_index: 3
-	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	order_index: 12
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000157"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pierwszy sygnał"
 			description: ["Samo uruchomienie urządzenia to za mało. Czas nauczyć całą instalację, kiedy powinna działać i gdzie skierować materiały. Zacznij od sprawy „Pierwszy sygnał”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A130000000000158"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Czujniki sieci"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Czujniki sieci”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A130000000000159"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przekaźniki danych"
 			description: ["Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Przekaźniki danych”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A13000000000015A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Programowanie reguł"
 			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Programowanie reguł”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A13000000000015B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pamięć zmiennych"
 			description: ["Wcześniej zamknąłeś już sprawę „Przekaźniki danych”. W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Pamięć zmiennych”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A13000000000015C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magazyn logiki"
 			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Magazyn logiki”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A13000000000015D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zasilanie sterowników"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Zasilanie sterowników”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A13000000000015E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Przekierowania sieci"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Przekierowania sieci”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Uruchom zbudowaną instalację i sprawdź, czy rzeczywiście przekazuje materiał dalej. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A13000000000015F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Serwer sterujący"
 			description: ["Wcześniej zamknąłeś już sprawę „Przekierowania sieci”. Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Serwer sterujący”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A130000000000160"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Procesory logiczne"
 			description: ["W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Procesory logiczne”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A130000000000161"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Procesory obliczeń"
 			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Procesory obliczeń”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A130000000000162"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Procesory projektowe"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Procesory projektowe”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A130000000000163"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Terminale sterujące"
 			description: ["Wcześniej zamknąłeś już sprawę „Procesory obliczeń”. Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Terminale sterujące”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A130000000000164"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magistrala sygnałów"
 			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Magistrala sygnałów”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A130000000000165"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kontroler kanałów"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kontroler kanałów”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Uruchom zbudowaną instalację i sprawdź, czy rzeczywiście przekazuje materiał dalej. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A130000000000166"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "CENTRALNY SYSTEM STEROWANIA"
 			description: ["Maszyny nie czekają już przy każdej decyzji na człowieka. Ostatni sprawdzian to „CENTRALNY SYSTEM STEROWANIA”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Uruchom zbudowaną instalację i sprawdź, czy rzeczywiście przekazuje materiał dalej. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d

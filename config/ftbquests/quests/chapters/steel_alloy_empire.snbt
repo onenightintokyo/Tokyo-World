@@ -3,12 +3,18 @@
 	title: "&c&lImperium metalu"
 	group: "A110000000000003"
 	id: "A12000000000001C"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "enderio:alloy_smelter"
-	order_index: 6
-	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	order_index: 29
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000177"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pierwsza huta"
 			description: ["Najlepsze konstrukcje potrzebują materiałów, których nie znajdziesz w gotowej skrzyni. Zbuduj własne zaplecze hutnicze. Zacznij od sprawy „Pierwsza huta”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A130000000000178"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stal konstrukcyjna"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Stal konstrukcyjna”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A130000000000179"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Warsztat obróbki"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Warsztat obróbki”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A13000000000017A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Cewki wysokiego napięcia"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Cewki wysokiego napięcia”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A13000000000017B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kruszenie przemysłowe"
 			description: ["Wcześniej zamknąłeś już sprawę „Warsztat obróbki”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Kruszenie przemysłowe”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A13000000000017C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Prasy hutnicze"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Prasy hutnicze”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A13000000000017D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kondensatory Ender IO"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Kondensatory Ender IO”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A13000000000017E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Obudowy wielofunkcyjne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Obudowy wielofunkcyjne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A13000000000017F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wytapiacz stopów"
 			description: ["Wcześniej zamknąłeś już sprawę „Obudowy wielofunkcyjne”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Wytapiacz stopów”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A130000000000180"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Młyny SAG"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Młyny SAG”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A130000000000181"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stopy przewodzące"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Stopy przewodzące”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A130000000000182"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stopy energetyczne"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Stopy energetyczne”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A130000000000183"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stopy pulsujące"
 			description: ["Wcześniej zamknąłeś już sprawę „Stopy przewodzące”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Stopy pulsujące”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A130000000000184"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Elektrum techniczne"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Elektrum techniczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A130000000000185"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Invar specjalistyczny"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Invar specjalistyczny”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A130000000000186"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "TOKYO ALLOY CONGLOMERATE"
 			description: ["Jesteś przygotowany na maszyny wymagające naprawdę wyjątkowych stopów. Ostatni sprawdzian to „TOKYO ALLOY CONGLOMERATE”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d

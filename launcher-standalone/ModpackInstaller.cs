@@ -24,7 +24,8 @@ internal sealed class ModpackInstaller
     }
 
     public async Task<ModInstallResult> InstallAsync(string gameDir, bool includeAllModules,
-        bool lightweightMode, IProgress<string> progress, CancellationToken cancellation = default)
+        bool lightweightMode, bool extraVisualMods, bool enableShaders,
+        IProgress<string> progress, CancellationToken cancellation = default)
     {
         modsDir = Path.Combine(gameDir, "mods");
         suppressEveryCompat = lightweightMode;
@@ -46,8 +47,10 @@ internal sealed class ModpackInstaller
             foreach (var profile in profiles.EnumerateObject())
             {
                 // For initial installs the core and repair packages are mandatory.
-                bool required = profile.Name is "tech-core" or "tech-expanded" or "tech-lab" or "repair-dependencies" or "adventure";
-                if (!includeAllModules && !required) continue;
+                bool required = profile.Name is "tech-core" or "tech-expanded" or "tech-lab" or "repair-dependencies" or "adventure" or "performance-fps";
+                if (profile.Name == "visual-extras" && !extraVisualMods) continue;
+                if (profile.Name == "visual-shaders" && !enableShaders) continue;
+                if (!includeAllModules && !required && profile.Name is not ("visual-extras" or "visual-shaders")) continue;
                 foreach (var module in profile.Value.EnumerateArray())
                 {
                     var project = module.GetProperty("project").GetString() ?? "";

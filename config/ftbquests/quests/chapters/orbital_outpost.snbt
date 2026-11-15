@@ -1,14 +1,20 @@
 {
 	filename: "orbital_outpost"
 	title: "&9&lDom wśród gwiazd"
-	group: "A110000000000007"
+	group: "A110000000000003"
 	id: "A120000000000022"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "ad_astra:nasa_workbench"
-	order_index: 3
-	images: [{ image: "tokyoworld:textures/gui/quests/exploration_adventure.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	order_index: 26
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A1300000000001D7"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stal lotnicza"
 			description: ["Sam lot w kosmos nie jest jeszcze zwycięstwem. Prawdziwy sukces to miejsce, gdzie można bezpiecznie zostać. Zacznij od sprawy „Stal lotnicza”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A1300000000001D8"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Płyty poszycia"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Płyty poszycia”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A1300000000001D9"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Prasy komponentów"
 			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Prasy komponentów”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A1300000000001DA"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Silniki rakietowe"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Silniki rakietowe”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A1300000000001DB"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stateczniki"
 			description: ["Wcześniej zamknąłeś już sprawę „Prasy komponentów”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Stateczniki”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A1300000000001DC"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stoły NASA"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Stoły NASA”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A1300000000001DD"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rafinerie paliwa"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Rafinerie paliwa”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A1300000000001DE"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Generator bazy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Generator bazy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A1300000000001DF"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Urządzenia tlenowe"
 			description: ["Wcześniej zamknąłeś już sprawę „Generator bazy”. Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Urządzenia tlenowe”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A1300000000001E0"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ładowarki tlenu"
 			description: ["Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Ładowarki tlenu”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A1300000000001E1"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Dystrybutory tlenu"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Dystrybutory tlenu”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A1300000000001E2"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pompy wodne"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Pompy wodne”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A1300000000001E3"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kable infrastruktury"
 			description: ["Wcześniej zamknąłeś już sprawę „Dystrybutory tlenu”. Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Kable infrastruktury”. Nie wszystko, co świeci w ciemności, jest skarbem."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A1300000000001E4"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Panele solarne"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Panele solarne”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A1300000000001E5"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Sterowniki zaawansowane"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sterowniki zaawansowane”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A1300000000001E6"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "TOKYO ORBITAL BASE"
 			description: ["Pierwsza kosmiczna baza nie jest już tylko prowizorycznym obozem. Ostatni sprawdzian to „TOKYO ORBITAL BASE”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d

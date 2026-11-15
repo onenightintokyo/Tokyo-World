@@ -1,14 +1,20 @@
 {
 	filename: "tokyo_ultimate_project"
 	title: "&5&lProjekt Tokyo World"
-	group: "A110000000000008"
+	group: "A110000000000003"
 	id: "A120000000000024"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "draconicevolution:crafting_core"
-	order_index: 1
-	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	order_index: 35
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A1300000000001F7"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Plan rozbudowy fabryki"
 			description: ["Fabryki, wyprawy, pola i magia muszą w końcu zadziałać jako jedna całość. To wspólne dzieło całej ekipy. Zacznij od sprawy „Plan rozbudowy fabryki”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A1300000000001F8"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magazyny produkcyjne"
 			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Magazyny produkcyjne”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A1300000000001F9"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Ramy technologiczne"
 			description: ["Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Ramy technologiczne”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A1300000000001FA"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Precyzja Create"
 			description: ["Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Precyzja Create”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A1300000000001FB"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kontrolery AE2"
 			description: ["Wcześniej zamknąłeś już sprawę „Ramy technologiczne”. Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Kontrolery AE2”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A1300000000001FC"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Procesory najwyższej klasy"
 			description: ["Tu nie wystarczy pojedyncze urządzenie. Cała ekipa musi wykonać swoją część pracy. Zapisz w planie „Procesory najwyższej klasy”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A1300000000001FD"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zasobniki energii"
 			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Zasobniki energii”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A1300000000001FE"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Reaktory Powah"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Reaktory Powah”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź całą konstrukcję z ekipą. Dopiero gdy działa naprawdę, potwierdź ukończenie. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A1300000000001FF"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Automatyzacja procesów"
 			description: ["Wcześniej zamknąłeś już sprawę „Reaktory Powah”. Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Automatyzacja procesów”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A130000000000200"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Infrastruktura EnderIO"
 			description: ["Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Infrastruktura EnderIO”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A130000000000201"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Draconium"
 			description: ["Tu nie wystarczy pojedyncze urządzenie. Cała ekipa musi wykonać swoją część pracy. Zapisz w planie „Draconium”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A130000000000202"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Energia drakońska"
 			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Energia drakońska”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A130000000000203"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Maszyny chemiczne"
 			description: ["Wcześniej zamknąłeś już sprawę „Draconium”. Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Maszyny chemiczne”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A130000000000204"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Fabryka agrarna"
 			description: ["Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Fabryka agrarna”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A130000000000205"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Transport kwantowy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Transport kwantowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź całą konstrukcję z ekipą. Dopiero gdy działa naprawdę, potwierdź ukończenie. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A130000000000206"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "ZŁOTA ERA TOKYO WORLD"
 			description: ["Zbudowaliście coś więcej niż najdroższą maszynę. Zbudowaliście własny świat. Ostatni sprawdzian to „ZŁOTA ERA TOKYO WORLD”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Sprawdź całą konstrukcję z ekipą. Dopiero gdy działa naprawdę, potwierdź ukończenie. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d

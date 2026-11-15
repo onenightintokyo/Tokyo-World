@@ -1,14 +1,20 @@
 {
 	filename: "storage_network"
 	title: "&e&lKoniec ze skrzyniami"
-	group: "A110000000000004"
+	group: "A110000000000002"
 	id: "A120000000000011"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "sophisticatedstorage:controller"
-	order_index: 2
-	images: [ { image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 4.0d y: -6.0d order: -1 } ]
+	order_index: 30
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000DB"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Narzędzie magazynowe"
 			description: ["Najważniejszy przedmiot zawsze jest w ostatniej skrzyni. Można to zmienić, jeśli magazyn zacznie działać jak system. Zacznij od sprawy „Narzędzie magazynowe”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A1300000000000DC"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Złącze magazynu"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Złącze magazynu”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A1300000000000DD"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kontroler magazynu"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Kontroler magazynu”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A1300000000000DE"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wejście i wyjście"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Wejście i wyjście”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A1300000000000DF"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wejście magazynu"
 			description: ["Wcześniej zamknąłeś już sprawę „Kontroler magazynu”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Wejście magazynu”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A1300000000000E0"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Wyjście magazynu"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Wyjście magazynu”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A1300000000000E1"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pierwszy plecak"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Pierwszy plecak”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A1300000000000E2"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Plecak miedziany"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Plecak miedziany”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A1300000000000E3"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Plecak żelazny"
 			description: ["Wcześniej zamknąłeś już sprawę „Plecak miedziany”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Plecak żelazny”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A1300000000000E4"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Plecak diamentowy"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Plecak diamentowy”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A1300000000000E5"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Automatyczny odbiór"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Automatyczny odbiór”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A1300000000000E6"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zaawansowany filtr"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Zaawansowany filtr”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A1300000000000E7"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Crafting w plecaku"
 			description: ["Wcześniej zamknąłeś już sprawę „Automatyczny odbiór”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Crafting w plecaku”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A1300000000000E8"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kompaktowanie w plecaku"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Kompaktowanie w plecaku”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A1300000000000E9"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Automatyczne uzupełnianie"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Automatyczne uzupełnianie”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A1300000000000EA"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Usuwanie nadwyżek"
 			description: ["Teraz łatwiej odnaleźć materiały niż zgubić je między skrzyniami. Ostatni sprawdzian to „Usuwanie nadwyżek”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.0d

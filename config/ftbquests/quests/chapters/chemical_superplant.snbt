@@ -3,12 +3,18 @@
 	title: "&c&lReakcja łańcuchowa"
 	group: "A110000000000003"
 	id: "A12000000000001B"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "mekanism:chemical_dissolution_chamber"
-	order_index: 5
-	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	order_index: 8
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000167"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Bezpieczna stal"
 			description: ["Rudy kryją w sobie więcej, niż daje zwykłe przetopienie. Chemia pozwoli odzyskać to, co wcześniej trafiało na straty. Zacznij od sprawy „Bezpieczna stal”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A130000000000168"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Obudowy aparatury"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Obudowy aparatury”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A130000000000169"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Układy sterujące"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Układy sterujące”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A13000000000016A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Zaawansowany infuzor"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Zaawansowany infuzor”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A13000000000016B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Komora wzbogacania"
 			description: ["Wcześniej zamknąłeś już sprawę „Układy sterujące”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Komora wzbogacania”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A13000000000016C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Separator gazów"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Separator gazów”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A13000000000016D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Utlenianie"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Utlenianie”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A13000000000016E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Mieszanie chemiczne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Mieszanie chemiczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A13000000000016F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Kompresja osmu"
 			description: ["Wcześniej zamknąłeś już sprawę „Mieszanie chemiczne”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Kompresja osmu”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A130000000000170"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Komora reakcji"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Komora reakcji”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A130000000000171"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Skraplanie gazów"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Skraplanie gazów”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A130000000000172"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rozpuszczanie rud"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Rozpuszczanie rud”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A130000000000173"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Krystalizacja"
 			description: ["Wcześniej zamknąłeś już sprawę „Skraplanie gazów”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Krystalizacja”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A130000000000174"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magazyny surowców"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Magazyny surowców”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A130000000000175"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Sterowniki najwyższej klasy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sterowniki najwyższej klasy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A130000000000176"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "TOKYO CHEMICAL WORKS"
 			description: ["Laboratorium pracuje jak część fabryki, nie odizolowana ciekawostka. Ostatni sprawdzian to „TOKYO CHEMICAL WORKS”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d

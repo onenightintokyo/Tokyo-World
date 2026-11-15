@@ -1,14 +1,20 @@
 {
 	filename: "megawatt_network"
 	title: "&e&lElektrownia dla miasta"
-	group: "A110000000000004"
+	group: "A110000000000003"
 	id: "A12000000000001D"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
 	icon: "powah:reactor_nitro"
-	order_index: 5
-	images: [{ image: "tokyoworld:textures/gui/quests/tech_automation.png" width: 12.0d height: 6.0d x: 5.0d y: -7.0d order: -1 }]
+	order_index: 22
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000187"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pierwsze kable"
 			description: ["Mały generator przestaje wystarczać, kiedy baza żyje także w nocy. Pomyśl o rezerwie mocy. Zacznij od sprawy „Pierwsze kable”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
 			x: 8.0d
@@ -20,6 +26,10 @@
 		}
 		{
 			id: "A130000000000188"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Rezerwa energii"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Rezerwa energii”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
@@ -31,6 +41,10 @@
 		}
 		{
 			id: "A130000000000189"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Stalowe obudowy"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Stalowe obudowy”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
@@ -42,6 +56,10 @@
 		}
 		{
 			id: "A13000000000018A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Generatory cieplne"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Generatory cieplne”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
@@ -53,6 +71,10 @@
 		}
 		{
 			id: "A13000000000018B"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Panele słoneczne"
 			description: ["Wcześniej zamknąłeś już sprawę „Stalowe obudowy”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Panele słoneczne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
@@ -64,6 +86,10 @@
 		}
 		{
 			id: "A13000000000018C"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Elektroliza wodna"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Elektroliza wodna”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
@@ -75,6 +101,10 @@
 		}
 		{
 			id: "A13000000000018D"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Sfery energetyczne"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Sfery energetyczne”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
@@ -86,6 +116,10 @@
 		}
 		{
 			id: "A13000000000018E"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Pręty energetyczne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Pręty energetyczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -97,6 +131,10 @@
 		}
 		{
 			id: "A13000000000018F"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Reaktory startowe"
 			description: ["Wcześniej zamknąłeś już sprawę „Pręty energetyczne”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Reaktory startowe”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 1.0d
@@ -108,6 +146,10 @@
 		}
 		{
 			id: "A130000000000190"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Reaktory podstawowe"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Reaktory podstawowe”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 15.0d
@@ -119,6 +161,10 @@
 		}
 		{
 			id: "A130000000000191"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Reaktory utwardzane"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Reaktory utwardzane”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 1.0d
@@ -130,6 +176,10 @@
 		}
 		{
 			id: "A130000000000192"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Magazyny FE"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Magazyny FE”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
 			x: 15.0d
@@ -141,6 +191,10 @@
 		}
 		{
 			id: "A130000000000193"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Reaktory Blazing"
 			description: ["Wcześniej zamknąłeś już sprawę „Reaktory utwardzane”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Reaktory Blazing”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
 			x: 1.0d
@@ -152,6 +206,10 @@
 		}
 		{
 			id: "A130000000000194"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Reaktory Niotic"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Reaktory Niotic”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
 			x: 15.0d
@@ -163,6 +221,10 @@
 		}
 		{
 			id: "A130000000000195"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "Reaktory Nitro"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Reaktory Nitro”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d
@@ -174,6 +236,10 @@
 		}
 		{
 			id: "A130000000000196"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
 			title: "TOKYO ENERGY GRID"
 			description: ["Możesz rozbudowywać zakład bez ciągłego strachu przed brakiem energii. Ostatni sprawdzian to „TOKYO ENERGY GRID”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.0d

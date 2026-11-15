@@ -2,35 +2,15 @@
 	chapter_groups: [
 		{
 			id: "A110000000000001"
-			title: "&6&lPIERWSZY ŚLAD"
+			title: "&a&lI · EARLY GAME — POCZĄTEK"
 		}
 		{
 			id: "A110000000000002"
-			title: "&b&lMECHANIZMY"
+			title: "&6&lII · MID GAME — ROZWÓJ"
 		}
 		{
 			id: "A110000000000003"
-			title: "&c&lOGIEŃ I STAL"
-		}
-		{
-			id: "A110000000000004"
-			title: "&e&lENERGIA I SIECI"
-		}
-		{
-			id: "A110000000000005"
-			title: "&a&lŻYWA FABRYKA"
-		}
-		{
-			id: "A110000000000006"
-			title: "&d&lSEKRETY MAGII"
-		}
-		{
-			id: "A110000000000007"
-			title: "&9&lPOZA HORYZONT"
-		}
-		{
-			id: "A110000000000008"
-			title: "&5&lDZIEDZICTWO TOKYO"
+			title: "&5&lIII · LATE GAME — ENDGAME"
 		}
 	]
 }
