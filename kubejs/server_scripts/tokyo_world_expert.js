@@ -60,5 +60,42 @@ ServerEvents.recipes(event => {
     // No recipe changes yet: RFTools Builder is unlocked through dedicated quests.
   }
 
+
+  // Expert Fun tier 2: make special production lines depend on one another.
+  // Keep these late-game recipes gated; basic machines stay approachable.
+  shaped('mekanism:digital_miner',
+    ['EPE', 'CSC', 'EDE'],
+    { E: 'mekanism:elite_control_circuit',
+      P: 'create:precision_mechanism',
+      C: 'mekanism:steel_casing',
+      S: 'powah:energy_cell_basic',
+      D: 'minecraft:diamond_pickaxe' })
+
+  if (Platform.isLoaded('enderio')) {
+    shaped('enderio:alloy_smelter',
+      ['IFI', 'CPC', 'IFI'],
+      { I: 'mekanism:ingot_steel',
+        F: 'minecraft:furnace',
+        C: 'enderio:void_chassis',
+        P: 'create:precision_mechanism' })
+
+    shaped('enderio:sag_mill',
+      ['IGO', 'CPC', 'OGO'],
+      { I: 'minecraft:iron_ingot',
+        G: 'create:cogwheel',
+        O: 'minecraft:obsidian',
+        C: 'enderio:void_chassis',
+        P: 'minecraft:piston' })
+  }
+
+  if (Platform.isLoaded('draconicevolution') && Platform.isLoaded('ae2')) {
+    shaped('draconicevolution:crafting_core',
+      ['DCD', 'APA', 'DCD'],
+      { D: 'draconicevolution:draconium_ingot',
+        C: 'mekanism:ultimate_control_circuit',
+        A: 'draconicevolution:draconium_core',
+        P: 'ae2:controller' })
+  }
+
   console.info('[Tokyo World] Expert Fun recipes registered')
 })
