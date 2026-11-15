@@ -59,8 +59,8 @@ internal sealed class LauncherWindow : Form
             Image = TokyoBranding.LoadLogo(),
             SizeMode = PictureBoxSizeMode.Zoom,
             BackColor = Color.Transparent,
-            Location = new Point(18, 16),
-            Size = new Size(80, 80)
+            Location = new Point(29, 66),
+            Size = new Size(166, 166)
         };
         hero.Controls.Add(brand);
         brand.BringToFront();
