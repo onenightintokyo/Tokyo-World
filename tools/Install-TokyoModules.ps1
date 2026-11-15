@@ -1,7 +1,7 @@
 # Tokyo World optional expansion installer — Windows PowerShell 5.1+
 # Preview by default; use -Apply to install. Existing mods, saves, configs are untouched.
 param(
-    [ValidateSet('Core','Expanded','Adventure','Lab','World','Factory','Automation','Resources','Mega','All')][string]$Profile = 'Core',
+    [ValidateSet('Core','Expanded','Adventure','Lab','World','Factory','Automation','Resources','Repair','Mega','All')][string]$Profile = 'Core',
     [switch]$Apply,
     [string]$GameDir = ''
 )
@@ -34,6 +34,9 @@ $script:knownExisting = @{
     'ae2' = '^(appliedenergistics2|ae2)[-_]'
     'applied-energistics-2' = '^(appliedenergistics2|ae2)[-_]'
     'guideme' = '^guideme[-_]'
+    'irons-lib' = '^irons[_-]lib[-_]'
+    'playeranimator' = '^(player-animation-lib|playeranimator|player[_-]animator)[-_]'
+    'extended-ae' = '^ExtendedAE-1\.20-[0-9]'
     'applied-mekanistics' = '^Applied[-_]Mekanistics[-_]'
     'rftools-utility' = '^rftoolsutility[-_]'
     'rftools-power' = '^rftoolspower[-_]'
@@ -197,10 +200,10 @@ function Queue-Mod([string]$projectRef, [string]$exactVersionId, [string]$versio
 }
 $wanted = @()
 $megaGroups = @('tech-core','tech-expanded','tech-lab','world-explore',
-                'factory-next','automation-next','resources-next',
+                'factory-next','automation-next','resources-next','repair-dependencies',
                 'mega-technology','mega-magic','mega-adventure','mega-building')
 foreach ($name in @('tech-core','tech-expanded','adventure','tech-lab','world-explore',
-                    'factory-next','automation-next','resources-next',
+                    'factory-next','automation-next','resources-next','repair-dependencies',
                     'mega-technology','mega-magic','mega-adventure','mega-building')) {
     $use = ($Profile -eq 'All') -or
         ($Profile -eq 'Mega' -and $name -in $megaGroups) -or
@@ -211,7 +214,8 @@ foreach ($name in @('tech-core','tech-expanded','adventure','tech-lab','world-ex
         ($Profile -eq 'World' -and $name -eq 'world-explore') -or
         ($Profile -eq 'Factory' -and $name -eq 'factory-next') -or
         ($Profile -eq 'Automation' -and $name -eq 'automation-next') -or
-        ($Profile -eq 'Resources' -and $name -eq 'resources-next')
+        ($Profile -eq 'Resources' -and $name -eq 'resources-next') -or
+        ($Profile -eq 'Repair' -and $name -eq 'repair-dependencies')
     if ($use) { $wanted += @($config.profiles.$name) }
 }
 Write-Host "[Tokyo World] Profile=$Profile, Minecraft=1.20.1, Forge, apply=$Apply"
