@@ -181,7 +181,7 @@
 			icon: "pipez:wrench"
 			dependencies: ["A1300000000000F6", "A1300000000000F7", "A1300000000000F8", "A1300000000000F9"]
 			tasks: [{ id: "A1400000000000FA" type: "item" item: "pipez:wrench" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000FA" type: "item" item: "minecraft:diamond" count: 6 } { id: "A1600000000000FA" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1500000000000FA" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A1600000000000FA" type: "item" item: "minecraft:experience_bottle" count: 16 }]
 		}
 	]
 }
