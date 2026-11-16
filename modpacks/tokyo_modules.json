@@ -917,95 +917,112 @@
       {
         "project": "sophisticated-core",
         "label": "Biblioteka dla ulepszanych magazynów",
-        "match": "^(sophisticatedcore|sophisticated[_-]core)[-_ .]"
+        "match": "^(sophisticatedcore|sophisticated[_-]core)[-_ .]",
+        "versionId": "ojL0rfvp"
       },
       {
         "project": "sophisticated-backpacks",
         "label": "Plecaki z modułami automatycznego zbierania i craftingu",
-        "match": "^(sophisticatedbackpacks|sophisticated[_-]backpacks)[-_ .]"
+        "match": "^(sophisticatedbackpacks|sophisticated[_-]backpacks)[-_ .]",
+        "versionId": "xviLgqVd"
       },
       {
         "project": "sophisticated-storage",
         "label": "Sieć beczek, skrzyń i kontrolerów magazynu",
-        "match": "^(sophisticatedstorage|sophisticated[_-]storage)[-_ .]"
+        "match": "^(sophisticatedstorage|sophisticated[_-]storage)[-_ .]",
+        "versionId": "jLlJncYv"
       }
     ],
     "wave06-industrial-age": [
       {
         "project": "immersiveengineering",
         "label": "Immersive Engineering — prąd, silniki, multibloki i stal",
-        "match": "^(ImmersiveEngineering|immersiveengineering)[-_ .]"
+        "match": "^(ImmersiveEngineering|immersiveengineering)[-_ .]",
+        "versionId": "WUzj4tgJ"
       }
     ],
     "wave06-arcane-armory": [
       {
         "project": "fzzy-config",
         "label": "Fzzy Config — konfiguracja Simply Swords",
-        "match": "^(fzzy[_-]config|fzzyconfig)[-_ .]"
+        "match": "^(fzzy[_-]config|fzzyconfig)[-_ .]",
+        "versionId": "53kg5uoF"
       },
       {
         "project": "architectury-api",
         "label": "Architectury API — wymagany przez Simply Swords",
-        "match": "^(architectury|architectury[_-]api)[-_ .]"
+        "match": "^(architectury|architectury[_-]api)[-_ .]",
+        "versionId": "1MKTLiiG"
       },
       {
         "project": "paucal",
         "label": "PAUCAL — biblioteka Hex Casting",
-        "match": "^paucal[-_ .]"
+        "match": "^paucal[-_ .]",
+        "versionId": "HyBiJPtT"
       },
       {
         "project": "patchouli",
         "label": "Patchouli — poradniki magiczne i książki",
-        "match": "^Patchouli[-_ .]"
+        "match": "^Patchouli[-_ .]",
+        "versionId": "94dtOLgZ"
       },
       {
         "project": "kotlin-for-forge",
         "label": "Kotlin for Forge — biblioteka dla Hex Casting",
-        "match": "^(kotlinforforge|kotlin[_-]for[_-]forge)[-_ .]"
+        "match": "^(kotlinforforge|kotlin[_-]for[_-]forge)[-_ .]",
+        "versionId": "Zsh14XeQ"
       },
       {
         "project": "hex-casting",
         "label": "Hex Casting — programowalne zaklęcia i wzorce",
-        "match": "^(hexcasting|HexCasting)[-_ .]"
+        "match": "^(hexcasting|HexCasting)[-_ .]",
+        "versionId": "e41256fb"
       },
       {
         "project": "simply-swords",
         "label": "Simply Swords — broń i łupy dla Better Combat",
-        "match": "^(simplyswords|simply[_-]swords)[-_ .]"
+        "match": "^(simplyswords|simply[_-]swords)[-_ .]",
+        "versionId": "Na6e94J1"
       }
     ],
     "wave06-deep-frontiers": [
       {
         "project": "citadel",
         "label": "Citadel — animacje i zależność Alex's Caves",
-        "match": "^citadel[-_ .]"
+        "match": "^citadel[-_ .]",
+        "versionId": "lTAAe4sZ"
       },
       {
         "project": "alexs-caves",
         "label": "Alex's Caves — sześć rzadkich biomów podziemnych",
-        "match": "^(alexscaves|alexs[_-]caves)[-_ .]"
+        "match": "^(alexscaves|alexs[_-]caves)[-_ .]",
+        "versionId": "lC8HHXOF"
       }
     ],
     "wave06-space-age": [
       {
         "project": "resourceful-config",
         "label": "Resourceful Config — konfiguracja Ad Astra",
-        "match": "^(resourcefulconfig|resourceful[_-]config)[-_ .]"
+        "match": "^(resourcefulconfig|resourceful[_-]config)[-_ .]",
+        "versionId": "DERs8u7v"
       },
       {
         "project": "resourceful-lib",
         "label": "Resourceful Lib — obowiązkowa biblioteka Ad Astra",
-        "match": "^(resourcefullib|resourceful[_-]lib)[-_ .]"
+        "match": "^(resourcefullib|resourceful[_-]lib)[-_ .]",
+        "versionId": "OhsHaCcW"
       },
       {
         "project": "botarium",
         "label": "Botarium — biblioteka maszyn i paliw Ad Astra",
-        "match": "^botarium[-_ .]"
+        "match": "^botarium[-_ .]",
+        "versionId": "O7D6FTfW"
       },
       {
         "project": "ad-astra",
         "label": "Ad Astra — eksploracja kosmosu i tierowe rakiety",
-        "match": "^(ad_astra|adastra|Ad_Astra)[-_ .]"
+        "match": "^(ad_astra|adastra|Ad_Astra)[-_ .]",
+        "versionId": "8EwzHQkx"
       }
     ]
   },
@@ -1020,6 +1037,7 @@
       "deep-frontiers",
       "space-age"
     ],
-    "safety": "Nowe wymiary i generacja jaskiń pojawią się na nowych chunkach. Wykonaj kopię świata. Nie aktywuj wave-06 bez zgodności po stronie serwera."
+    "safety": "Nowe wymiary i generacja jaskiń pojawią się na nowych chunkach. Wykonaj kopię świata. Nie aktywuj wave-06 bez zgodności po stronie serwera.",
+    "pinnedVersions": "Expert Final 2026-11-16 — verified through Modrinth Forge 1.20.1 version metadata and SHA-512 checks"
   }
 }
