@@ -35,7 +35,7 @@ internal sealed class TokyoProgressBar : Control
             int w = Math.Max(9, bounds.Width * progress / 100);
             using var clip = Rounded(new Rectangle(0, 0, w, bounds.Height), 9);
             using var gradient = new LinearGradientBrush(new Rectangle(0, 0, Math.Max(1, w), bounds.Height),
-                Color.FromArgb(245, 42, 92), Color.FromArgb(75, 223, 235), LinearGradientMode.Horizontal);
+                Color.FromArgb(254, 55, 133), Color.FromArgb(127, 31, 100), LinearGradientMode.Horizontal);
             g.FillPath(gradient, clip);
         }
         using var font = new Font("Segoe UI Semibold", 9, FontStyle.Bold);
