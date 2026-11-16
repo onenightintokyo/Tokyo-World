@@ -543,6 +543,18 @@
         "match": "^ExtendedAE-1\\.20-[0-9].*\\.jar$"
       },
       {
+        "project": "guideme",
+        "label": "GuideME 20.1.15 — przewodniki AE2 i Extended AE",
+        "versionId": "i7Tp1AHw",
+        "match": "^guideme-20\\.1\\.15\\.jar$"
+      },
+      {
+        "project": "glodium",
+        "label": "Glodium 1.20-1.5-forge — biblioteka Extended AE",
+        "versionId": "eoUaDkZf",
+        "match": "^Glodium-1\\.20-1\\.5-forge\\.jar$"
+      },
+      {
         "project": "obscure-api",
         "label": "Obscure API 18 — wymagana biblioteka Aquamirae, Forge 1.20.1",
         "match": "^obscure_api-18\\.jar$",
