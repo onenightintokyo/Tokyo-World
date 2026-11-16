@@ -169,10 +169,14 @@ internal sealed class ModpackInstaller
         string file = Path.Combine(modsDir, fileName);
         if (File.Exists(file))
         {
-            if (!CheckSha1(file, sha1))
-                throw new InvalidDataException("Istniejący JAR FTB ma inny SHA1: " + fileName);
-            status?.Report("FTB już obecny: " + fileName);
-            return;
+            if (CheckSha1(file, sha1))
+            {
+                status?.Report("FTB już obecny: " + fileName);
+                return;
+            }
+            // If a previously installed copy was corrupted, download a
+            // verified replacement before stashing the invalid one below.
+            status?.Report("FTB: niezgodna suma starego JAR, przygotowuję naprawę: " + fileName);
         }
         string temporary = file + ".tokyo-download";
         try
