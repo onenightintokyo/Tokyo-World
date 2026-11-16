@@ -576,6 +576,12 @@
         "fileName": "twilightforest-1.20.1-4.3.2508-universal.jar",
         "url": "https://mediafilez.forgecdn.net/files/5468/648/twilightforest-1.20.1-4.3.2508-universal.jar",
         "sha1": "fa3b506a45d3e9c465551cd533fd50c899496e9f"
+      },
+      {
+        "project": "packet-fixer",
+        "label": "Packet Fixer 1.4.2 — większe pakiety sieciowe, wymagany na kliencie i serwerze",
+        "versionId": "AScUisZl",
+        "match": "(?i)^packetfixer(?:forge)?[-_.].*\\.jar$"
       }
     ],
     "wave-industry": [
