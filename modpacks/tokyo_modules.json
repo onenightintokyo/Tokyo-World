@@ -773,7 +773,8 @@
       {
         "project": "the-bumblezone",
         "label": "The Bumblezone — nowy wymiar, struktury i wyzwania pszczół",
-        "match": "^(the_bumblezone|bumblezone)[-_.]"
+        "match": "^(the_bumblezone|bumblezone)[-_.]",
+        "version": "7.15.2+1.20.1-forge"
       },
       {
         "project": "dynamictrees",
@@ -902,7 +903,7 @@
         "project": "sophisticated-core",
         "label": "Biblioteka dla ulepszanych magazynów",
         "match": "^(sophisticatedcore|sophisticated[_-]core)[-_ .]",
-        "versionId": "ojL0rfvp"
+        "version": "1.5.33.2475"
       },
       {
         "project": "sophisticated-backpacks",
