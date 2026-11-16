@@ -541,6 +541,13 @@
         "label": "Extended AE 1.20-1.4.18-forge (expatternprovider dla ExtendedAE Plus)",
         "versionId": "uq3lO4ER",
         "match": "^ExtendedAE-1\\.20-[0-9].*\\.jar$"
+      },
+      {
+        "project": "obscure-api",
+        "label": "Obscure API 18 — wymagana biblioteka Aquamirae, Forge 1.20.1",
+        "match": "^obscure_api-18\\.jar$",
+        "versionId": "7sZmDObM",
+        "note": "Required by Aquamirae (mod ID obscure_api >= 15). Always install even when Aquamirae jar is already present."
       }
     ],
     "wave-industry": [
@@ -840,6 +847,13 @@
         "project": "stalwart-dungeons",
         "label": "Stalwart Dungeons — trudne lochy Netheru",
         "match": "^(stalwartdungeons|StalwartDungeons)[-_.]"
+      },
+      {
+        "project": "obscure-api",
+        "label": "Obscure API 18 — wymagana biblioteka Aquamirae, Forge 1.20.1",
+        "match": "^obscure_api-18\\.jar$",
+        "versionId": "7sZmDObM",
+        "note": "Required by Aquamirae (mod ID obscure_api >= 15). Always install even when Aquamirae jar is already present."
       },
       {
         "project": "aquamirae",
