@@ -24,8 +24,8 @@ internal sealed partial class LauncherWindow
         SuspendLayout();
         Text = "TOKYO WORLD  •  LAUNCHER v1.7";
         ClientSize = new Size(1280, 790);
-        MinimumSize = new Size(1280, 790);
-        MaximumSize = new Size(1280, 790);
+        // FixedDialog already prevents resizing. Do not cap outer window size:
+        // ClientSize excludes the Windows titlebar/borders and must remain 1280x790.
         BackColor = CrimsonTheme.Background;
         ForeColor = CrimsonTheme.Foreground;
 
