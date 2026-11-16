@@ -4,12 +4,26 @@ name: Publish curated Tokyo World client pack
 # and configured both a destination variable and a dedicated publish secret.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'config/**'
+      - 'defaultconfigs/**'
+      - 'kubejs/**'
+      - 'resourcepacks/**'
+      - 'shaderpacks/**'
+      - 'modpacks/tokyo_modules.json'
+      - 'modpacks/base_mod_hashes.txt'
+      - '.github/workflows/tokyo-public-client-pack.yml'
 
 permissions:
   contents: read
 
 jobs:
   client-pack:
+    # The owner must create and authorize the separate public destination once.
+    # Until then, do not fail unrelated commits or leak private source content.
+    if: ${{ vars.TOKYO_PUBLIC_REPO != '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
