@@ -6,6 +6,7 @@ compatibility is separately checked by tools/verify_wave06_modrinth.py.
 """
 import json
 import re
+import tomllib
 from collections import defaultdict
 from pathlib import Path
 
@@ -70,9 +71,24 @@ for lines in patterns:
     assert len(rows) == 3 and all(len(row) == 3 for row in rows), \
         f"Incorrect 3x3 recipe: {rows!r}"
 
+# Real Forge-specific mod configuration — not a placeholder JSON.
+with (root / "config/sophisticatedbackpacks-common.toml").open("rb") as fp:
+    common_cfg = tomllib.load(fp)
+assert common_cfg["common"]["chestLootEnabled"] is False
+
+with (root / "defaultconfigs/sophisticatedbackpacks-server.toml").open("rb") as fp:
+    backpack_cfg = tomllib.load(fp)
+names = ("leatherBackpack", "copperBackpack", "ironBackpack",
+         "goldBackpack", "diamondBackpack", "netheriteBackpack")
+slots = [backpack_cfg["server"][name]["inventorySlotCount"] for name in names]
+upgrades = [backpack_cfg["server"][name]["upgradeSlotCount"] for name in names]
+assert slots == sorted(slots) and all(12 <= n <= 144 for n in slots)
+assert upgrades == sorted(upgrades) and all(0 <= n <= 10 for n in upgrades)
+
 # All configured files are synchronized by the existing launcher:
 # GitHubSynchronizer Managed = "kubejs/".
 sync = (root / "launcher-standalone/GitHubSynchronizer.cs").read_text("utf8")
-assert '"kubejs/"' in sync and '"config/"' in sync
+assert '"kubejs/"' in sync and '"config/"' in sync and '"defaultconfigs/"' in sync
+print(f"OK: Forge backpack TOML capacities {slots}; rare chest backpack loot disabled.")
 print(f"OK: Expert Final HARD world settings, {len(patterns)} Wave 06 recipe gates, "
       f"{len(outputs)} distinct KubeJS recipe outputs with no duplicates.")
