@@ -237,7 +237,8 @@ internal sealed class ModpackInstaller
             string slug = GetString(project.RootElement, "slug");
             string id = GetString(project.RootElement, "id");
             if (processed.Contains(id)) return;
-            if (IsInstalled(slug, matchPattern)) { processed.Add(id); return; }
+            bool enforceSharedVersion = slug is "the-bumblezone" or "sophisticated-core";
+            if (!enforceSharedVersion && IsInstalled(slug, matchPattern)) { processed.Add(id); return; }
 
             JsonDocument? version = null;
             try
@@ -295,16 +296,37 @@ internal sealed class ModpackInstaller
                 {
                     if (!CheckSha512(destination, sha512))
                         throw new InvalidDataException("Istniejący JAR ma inną sumę: " + filename);
+                    if (enforceSharedVersion) RetireOlderSharedJars(slug, destination);
                     processed.Add(id);
                     return;
                 }
                 status!.Report("Dodatek: " + slug + " → " + filename);
                 await DownloadCheckedAsync(GetString(primary, "url"), destination, sha512, "sha512");
+                if (enforceSharedVersion) RetireOlderSharedJars(slug, destination);
                 processed.Add(id);
             }
             finally { version?.Dispose(); }
         }
         finally { resolving.Remove(projectRef); }
+    }
+
+    private void RetireOlderSharedJars(string slug, string destination)
+    {
+        string pattern = slug == "the-bumblezone"
+            ? @"\A(?:the_bumblezone|bumblezone)[-_.].*\.jar\z"
+            : @"\Asophisticatedcore[-_.].*\.jar\z";
+        string backup = Path.Combine(Directory.GetParent(modsDir)!.FullName, ".tokyo",
+            "backups", "old-shared-mod-versions");
+        foreach (string candidate in Directory.EnumerateFiles(modsDir, "*.jar")
+            .Where(x => Regex.IsMatch(Path.GetFileName(x), pattern, RegexOptions.IgnoreCase))
+            .Where(x => !Path.GetFullPath(x).Equals(Path.GetFullPath(destination), StringComparison.OrdinalIgnoreCase))
+            .ToArray())
+        {
+            Directory.CreateDirectory(backup);
+            string target = Path.Combine(backup, Guid.NewGuid().ToString("N") + "-" + Path.GetFileName(candidate));
+            File.Move(candidate, target);
+            status?.Report("Zarchiwizowano niezgodną wersję moda: " + Path.GetFileName(candidate));
+        }
     }
 
     private bool IsInstalled(string slug, string match)
