@@ -49,6 +49,22 @@ CLIENT_ONLY = re.compile(
     r"cloth[_-]?config|creativecoreclient)(?:[-_. ]|$)",
     flags=re.I
 )
+CF_SLUGS = {
+    "compact-machines": "compact-machines",
+    "building-gadgets": "building-gadgets",
+    "mining-gadgets": "mining-gadgets",
+    "mob-grinding-utils": "mob-grinding-utils",
+    "flux-networks": "flux-networks",
+    "laserio": "laserio",
+    "ae2wtlib": "ae2wtlib",
+    "twilightforest": "the-twilight-forest",
+    "create-slice-and-dice": "slice-and-dice",
+    "iron-chests-restocked": "iron-chests-restocked",
+    "born-in-chaos": "born-in-chaos",
+    "the-graveyard": "the-graveyard",
+    "ftb-ultimine": "ftb-ultimine-forge",
+}
+
 ALL_MODS = {}
 ALL_META = {}
 ERRORS = []
@@ -167,6 +183,50 @@ def add_mod(version: dict, reason: str, exact_base_sha1: str | None = None) -> N
         raise
 
 
+
+def curseforge_version(project: str) -> dict:
+    """Find the actual Forge 1.20.1 JAR by the CurseForge community API.
+
+    CFWidget is metadata only; JAR bytes are fetched directly from the official
+    ForgeCDN host. The resulting SHA256 is recorded in the manifest and pack.
+    Never accept a Fabric/NeoForge/other-MC file when CFWidget falls back.
+    """
+    slug = CF_SLUGS[project]
+    url = ("https://api.cfwidget.com/minecraft/mc-mods/" + slug +
+           "?version=1.20.1&loader=forge")
+    details = api_get(url)
+    if not isinstance(details, dict):
+        raise ValueError("CurseForge discovery response is not an object")
+    file = details.get("download") or {}
+    print("CurseForge response", project, "project keys",
+          list(details.keys()), "release", str(file)[:900], flush=True)
+    if not file:
+        raise ValueError("No CurseForge release")
+    versions = file.get("versions") or file.get("gameVersions") or []
+    if not isinstance(versions, list):
+        versions = []
+    version_tokens = [str(v).lower() for v in versions]
+    if not any("1.20.1" in token for token in version_tokens):
+        raise ValueError("CurseForge file not marked Minecraft 1.20.1: " + str(versions))
+    if not any("forge" == token or "forge" in token for token in version_tokens):
+        raise ValueError("CurseForge file not marked Forge: " + str(versions))
+    filename = file.get("name") or file.get("fileName") or file.get("filename")
+    fileid = file.get("id")
+    if not isinstance(fileid, int) or not filename or not str(filename).endswith(".jar"):
+        raise ValueError("CurseForge file ID/filename missing: " + str(file))
+    if Path(filename).name != filename:
+        raise ValueError("Unsafe CurseForge filename")
+    path = f"{fileid//1000}/{fileid%1000}/{filename}"
+    source = f"https://mediafilez.forgecdn.net/files/{path}"
+    return {
+        "filename": filename,
+        "sha1": "",
+        "url": source,
+        "reason": "official CurseForge: " + project +
+            ", Forge 1.20.1, file id " + str(fileid),
+    }
+
+
 def resolve_all() -> None:
     manifest = json.loads((ROOT / "modpacks/tokyo_modules.json").read_text("utf8"))
     if manifest["minecraft"] != MINECRAFT or manifest["loader"] != "forge":
@@ -237,6 +297,16 @@ def resolve_all() -> None:
             except SkipClient:
                 print("Client-only project skipped:", project, flush=True)
             except Exception as exc:
+                if project in CF_SLUGS:
+                    try:
+                        ALL_META[project] = curseforge_version(project)
+                        print("Resolved official CurseForge:", project,
+                              ALL_META[project]["filename"], flush=True)
+                        continue
+                    except Exception as cf_exc:
+                        ERRORS.append(f"Failed {group}/{project}: Modrinth {exc}, "
+                                      f"CurseForge {cf_exc}")
+                        continue
                 ERRORS.append(f"Failed {group}/{project}: {exc}")
     with LOCK:
         for modid in [k for k,v in ALL_MODS.items() if v is None]:
@@ -256,7 +326,7 @@ def download_one(entry: dict) -> str:
     algorithm = "sha512" if entry.get("sha512") else "sha1"
     digest = entry[algorithm]
     if dest.exists():
-        if getattr(hashlib, algorithm)(dest.read_bytes()).hexdigest() == digest:
+        if not digest or getattr(hashlib, algorithm)(dest.read_bytes()).hexdigest() == digest:
             return filename
         raise ValueError("Conflicting contents for JAR " + filename)
     tmp = dest.with_suffix(".jar.download")
@@ -270,8 +340,11 @@ def download_one(entry: dict) -> str:
                 shutil.copyfileobj(response, fp)
             if tmp.stat().st_size > 100_000_000:
                 raise ValueError("Oversized JAR: " + filename)
-            if getattr(hashlib, algorithm)(tmp.read_bytes()).hexdigest().lower() != digest:
+            if digest and getattr(hashlib, algorithm)(tmp.read_bytes()).hexdigest().lower() != digest:
                 raise ValueError("SHA mismatch: " + filename)
+            if not zipfile.is_zipfile(tmp):
+                raise ValueError("Official CDN returned a non-JAR: " + filename)
+            entry["sha256"] = hashlib.sha256(tmp.read_bytes()).hexdigest()
             tmp.rename(dest)
             return filename
         except Exception:
@@ -374,6 +447,11 @@ def package() -> None:
     if ERRORS:
         print("STOP: JAR integrity or mod-ID checks failed.", flush=True)
         return
+    checksum_text = "".join(
+        hashlib.sha256((MODDIR/e["filename"]).read_bytes()).hexdigest() +
+        "  mods/" + e["filename"] + "\\n" for e in entries
+    )
+    (STAGE / "SHA256SUMS.txt").write_text(checksum_text)
     readme = (
         "TOKYO WORLD — SERVER PACK / Forge 1.20.1-47.4.28 / Java 17\n\n"
         "This ZIP contains mods/*.jar, config/, defaultconfigs/ and kubejs/.\n"
