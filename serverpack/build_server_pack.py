@@ -464,6 +464,14 @@ def package() -> None:
             ERRORS.append("Filename version conflict: " + x["filename"])
         uniq[x["filename"]] = x
     entries = list(uniq.values())
+    filenames = [e["filename"].lower() for e in entries]
+    expected_shared = {
+        "the_bumblezone-7.15.2+1.20.1-forge.jar": "The Bumblezone",
+        "sophisticatedcore-1.20.1-1.5.33.2475.jar": "Sophisticated Core",
+    }
+    for expected, label in expected_shared.items():
+        if filenames.count(expected) != 1:
+            ERRORS.append(f"Shared client/server mod mismatch: {label}: expected {expected}")
     # Fail closed: never ship any retired Every Compat variant, even if a
     # dependency resolver or stale baseline introduces it again.
     retired = [x["filename"] for x in entries if is_client(x["filename"]) and
