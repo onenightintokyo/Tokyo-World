@@ -81,6 +81,17 @@ internal sealed partial class LauncherWindow
         var close = new ConceptClickArea { Bounds = new Rectangle(1234, 0, 43, 34), HoverEnabled = true };
         close.Click += (_, _) => Close();
         conceptCanvas.Controls.Add(close);
+        var versionTag = new Label
+        {
+            Text = "v1.7.1",
+            Bounds = new Rectangle(168, 9, 66, 24),
+            AutoSize = false,
+            BackColor = Color.FromArgb(13, 12, 25),
+            ForeColor = Color.FromArgb(254, 75, 147),
+            Font = new Font("Segoe UI Semibold", 11, FontStyle.Bold),
+            TextAlign = ContentAlignment.MiddleLeft
+        };
+        conceptCanvas.Controls.Add(versionTag);
         var maximize = new ConceptClickArea { Bounds = new Rectangle(1195, 0, 36, 33), HoverEnabled = true };
         var tooltip = new ToolTip();
         tooltip.SetToolTip(maximize, "Stały rozmiar — interfejs dopasowany do konceptu");
@@ -115,16 +126,20 @@ internal sealed partial class LauncherWindow
         };
         var premiumArea = new ConceptClickArea
         {
-            Bounds = new Rectangle(229, 350, 224, 35),
+            Bounds = new Rectangle(267, 350, 186, 35),
             HoverEnabled = false
         };
         premiumArea.Click += (_, _) => premium.Checked = true;
         var offlineArea = new ConceptClickArea
         {
-            Bounds = new Rectangle(455, 350, 167, 35),
+            Bounds = new Rectangle(492, 350, 130, 35),
             HoverEnabled = false
         };
         offlineArea.Click += (_, _) => offline.Checked = true;
+        conceptPremiumDot.Cursor = Cursors.Hand;
+        conceptOfflineDot.Cursor = Cursors.Hand;
+        conceptPremiumDot.Click += (_, _) => premium.Checked = true;
+        conceptOfflineDot.Click += (_, _) => offline.Checked = true;
         conceptCanvas.Controls.Add(conceptPremiumDot);
         conceptCanvas.Controls.Add(conceptOfflineDot);
         conceptCanvas.Controls.Add(premiumArea);
