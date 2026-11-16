@@ -122,7 +122,12 @@ internal static class TokyoModIntegrity
             // appear as separate files in the top-level mods folder.
             foreach (var entry in archive.Entries)
             {
-                if (!entry.FullName.StartsWith("META-INF/jarjar/", StringComparison.OrdinalIgnoreCase) ||
+                // Forge plugins may bundle dependencies under either path:
+                // Create uses META-INF/jarjar (Flywheel/Ponder), while Create:
+                // New Age bundles ESL under META-INF/jars.
+                bool forgeJarJar = entry.FullName.StartsWith("META-INF/jarjar/", StringComparison.OrdinalIgnoreCase);
+                bool forgeNested = entry.FullName.StartsWith("META-INF/jars/", StringComparison.OrdinalIgnoreCase);
+                if ((!forgeJarJar && !forgeNested) ||
                     !entry.FullName.EndsWith(".jar", StringComparison.OrdinalIgnoreCase)) continue;
                 if (entry.Length <= 0 || entry.Length > MaximumEmbeddedJarLength)
                 {
