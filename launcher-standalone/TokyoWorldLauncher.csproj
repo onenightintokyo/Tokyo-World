@@ -9,7 +9,7 @@
     <RootNamespace>TokyoWorldLauncher</RootNamespace>
     <ApplicationTitle>Tokyo World Launcher</ApplicationTitle>
     <ApplicationIcon>Assets/TokyoWorldIcon.ico</ApplicationIcon>
-    <Version>1.8.0</Version>
+    <Version>1.8.1</Version>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>true</SelfContained>
     <PublishTrimmed>false</PublishTrimmed>
@@ -19,6 +19,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Assets/TokyoWorldIcon.ico" LogicalName="TokyoWorldLauncher.Icon" />
     <EmbeddedResource Include="Assets/TokyoWorldIcon.png" LogicalName="TokyoWorldLauncher.IconPng" />
+    <EmbeddedResource Include="Assets/TokyoWorldClientSnapshot.zip" LogicalName="TokyoWorldClientSnapshot" Condition="Exists('Assets/TokyoWorldClientSnapshot.zip')" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CmlLib.Core" Version="4.0.6" />

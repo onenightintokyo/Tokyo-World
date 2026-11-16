@@ -31,6 +31,19 @@ jobs:
           ./launcher-standalone/Assets/PrepareIcons.ps1
           if (!(Test-Path launcher-standalone/Assets/TokyoWorldIcon.ico)) { throw "TW icon not generated" }
           if (!(Test-Path launcher-standalone/Assets/TokyoWorldIcon.png)) { throw "TW PNG not generated" }
+      - name: Build safe token-free client snapshot inside launcher EXE
+        shell: pwsh
+        run: |
+          python tools/make_client_bootstrap.py
+          if (!(Test-Path launcher-standalone/Assets/TokyoWorldClientSnapshot.zip)) {
+            throw "Missing embedded client snapshot"
+          }
+          Add-Type -AssemblyName System.IO.Compression
+          $zip = [System.IO.Compression.ZipFile]::OpenRead((Resolve-Path launcher-standalone/Assets/TokyoWorldClientSnapshot.zip))
+          try {
+            if ($zip.Entries.Count -lt 30) { throw "Embedded snapshot unexpectedly small" }
+            Write-Host "Client snapshot files: $($zip.Entries.Count)"
+          } finally { $zip.Dispose() }
       - name: Restore Windows desktop project
         run: dotnet restore launcher-standalone/TokyoWorldLauncher.csproj -r win-x64
       - name: Publish single-file, self-contained EXE
