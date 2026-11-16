@@ -1,0 +1,29 @@
+name: Validate Tokyo World Modpack and Quest Trees
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'config/ftbquests/quests/**'
+      - 'modpacks/tokyo_modules.json'
+      - 'tools/validate_wave06.py'
+      - '.github/workflows/validate-tokyo-content.yml'
+  pull_request:
+    paths:
+      - 'config/ftbquests/quests/**'
+      - 'modpacks/tokyo_modules.json'
+      - 'tools/validate_wave06.py'
+      - '.github/workflows/validate-tokyo-content.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate Wave 06 manifest, SNBT structure, IDs and quest dependencies
+        run: python3 tools/validate_wave06.py
