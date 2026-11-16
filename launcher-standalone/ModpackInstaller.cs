@@ -85,7 +85,7 @@ internal sealed class ModpackInstaller
         // ExtendedAE Plus hard-depends on Extended AE (mod ID expatternprovider).
         // Fail the install before Minecraft starts instead of silently treating a
         // missing core dependency as an optional download error.
-        string extendedAeMatch = @"\\AExtendedAE-1\\.20-1\\.4\\.(?:[6-9]|[1-9][0-9])-forge\\.jar\\z";
+        string extendedAeMatch = @"\AExtendedAE-1\.20-1\.4\.(?:[6-9]|[1-9][0-9])-forge\.jar\z";
         if (!Directory.EnumerateFiles(modsDir, "*.jar").Any(file =>
             Regex.IsMatch(Path.GetFileName(file), extendedAeMatch, RegexOptions.IgnoreCase)))
         {
