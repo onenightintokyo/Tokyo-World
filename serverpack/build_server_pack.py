@@ -46,7 +46,7 @@ CLIENT_ONLY = re.compile(
     r"jei|justenoughitems|jade|3dskinlayers|skinlayers3d|"
     r"immediatelyfast|entity[_-]?model[_-]?features|"
     r"entity[_-]?texture[_-]?features|not[_-]?enough[_-]?animations|"
-    r"cloth[_-]?config|creativecoreclient)(?:[-_. ]|$)",
+    r"cloth[_-]?config|creativecoreclient|everycomp|every-compat)(?:[-_. ]|$)",
     flags=re.I
 )
 PROJECT_ALIASES = {
