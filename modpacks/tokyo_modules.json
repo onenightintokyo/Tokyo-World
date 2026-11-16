@@ -792,11 +792,6 @@
         "match": "^voicechat[-_.]"
       },
       {
-        "project": "every-compat",
-        "label": "Every Compat — zgodność dekoracji i drewna",
-        "match": "^everycomp[-_.]"
-      },
-      {
         "project": "immersive-paintings",
         "label": "Immersive Paintings — własne obrazy w bazie",
         "match": "^immersive_paintings[-_.]"
@@ -1016,6 +1011,15 @@
     ],
     "community-core": [
       {
+        "project": "ftb-quests",
+        "label": "FTB Quests — obowiązkowy questbook dla Tokyo World",
+        "match": "^ftb-quests[-_.]",
+        "source": "curseforge",
+        "fileName": "ftb-quests-forge-2001.4.22.jar",
+        "url": "https://mediafilez.forgecdn.net/files/8078/538/ftb-quests-forge-2001.4.22.jar",
+        "sha1": "70f3bd771ab3b5921ce1ff5f14166fab694ca1aa"
+      },
+      {
         "project": "ftb-library",
         "label": "FTB Library — biblioteka interfejsu i zespołów",
         "match": "^ftb-library[-_.]",
@@ -1100,5 +1104,14 @@
       "FTB Chunks/Teams/Library are official CurseForge releases, not Modrinth projects. Launcher v1.8 downloads exact official files over HTTPS and verifies SHA1 without bundling vendor JARs."
     ],
     "target": "Minecraft 1.20.1 / Forge"
+  },
+  "release181": {
+    "name": "Tokyo World Launcher v1.8.1 — public distribution and base recovery",
+    "contentSource": "onenightintokyo/Tokyo-World-Client",
+    "notes": [
+      "Never include/share private GitHub tokens in friend installers.",
+      "FTB Quests exact original SHA1 from official CurseForge; required for base integrity.",
+      "Every Compat removed from module graph; existing everycomp JARs automatically backed up."
+    ]
   }
 }
