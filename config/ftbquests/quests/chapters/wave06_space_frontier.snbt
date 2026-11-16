@@ -1,12 +1,12 @@
 {
 	filename: "wave06_space_frontier"
-	title: "&5&lPoza horyzontem"
+	title: "&c&l35 · Poza horyzontem"
 	group: "A110000000000003"
 	id: "A126000000000005"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "ad_astra:tier_1_rocket"
-	order_index: 42
+	order_index: 35
 	images: [{
 		image: "tokyoworld:textures/gui/quests/tokyo_late.png"
 		width: 20.0d
