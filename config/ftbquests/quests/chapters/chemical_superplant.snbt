@@ -1,12 +1,12 @@
 {
 	filename: "chemical_superplant"
-	title: "&c&lReakcja łańcuchowa"
+	title: "&c&l26 · Reakcja łańcuchowa"
 	group: "A110000000000003"
 	id: "A12000000000001B"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "mekanism:chemical_dissolution_chamber"
-	order_index: 8
+	order_index: 26
 	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
