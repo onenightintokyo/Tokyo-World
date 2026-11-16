@@ -46,7 +46,7 @@ CLIENT_ONLY = re.compile(
     r"jei|justenoughitems|jade|3dskinlayers|skinlayers3d|"
     r"immediatelyfast|entity[_-]?model[_-]?features|"
     r"entity[_-]?texture[_-]?features|not[_-]?enough[_-]?animations|"
-    r"cloth[_-]?config|creativecoreclient|everycomp|every-compat)(?:[-_. ]|$)",
+    r"cloth[_-]?config|creativecoreclient|everycomp(?:at)?|every[-_.]?compat)(?:[-_. ]|$)",
     flags=re.I
 )
 PROJECT_ALIASES = {
@@ -450,6 +450,12 @@ def package() -> None:
             ERRORS.append("Filename version conflict: " + x["filename"])
         uniq[x["filename"]] = x
     entries = list(uniq.values())
+    # Fail closed: never ship any retired Every Compat variant, even if a
+    # dependency resolver or stale baseline introduces it again.
+    retired = [x["filename"] for x in entries if is_client(x["filename"]) and
+               re.search(r"every[-_.]?compat|everycomp(?:at)?", x["filename"], re.I)]
+    if retired:
+        ERRORS.append("Retired Every Compat detected: " + ", ".join(retired))
     MODDIR.mkdir(parents=True, exist_ok=True)
     print(f"Resolved {len(entries)} server candidate JARs; unresolved: {len(ERRORS)}", flush=True)
     write_report(entries)
