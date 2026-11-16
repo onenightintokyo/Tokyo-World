@@ -418,7 +418,7 @@ def sanity_check_jars(entries: list[dict]) -> None:
         provider = declared.get("expatternprovider")
         if not provider:
             ERRORS.append("ExtendedAE Plus requires missing expatternprovider (Extended AE)")
-        elif not re.fullmatch(r"ExtendedAE-1\\.20-1\\.4\\.18-forge\\.jar",
+        elif not re.fullmatch(r"ExtendedAE-1\.20-1\.4\.18-forge\.jar",
                               provider, flags=re.I):
             ERRORS.append("ExtendedAE Plus requires pinned Extended AE 1.4.18, found: " + provider)
 
