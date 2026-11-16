@@ -76,12 +76,6 @@ internal sealed class TokyoModrinthClient : IDisposable
         string dir = Path.Combine(root, shader ? "shaderpacks" : "mods");
         Directory.CreateDirectory(dir);
 
-        if (!shader && HasInstalledMod(dir, slug))
-        {
-            log.Report("Zależność już obecna w grze: " + title);
-            return;
-        }
-
         string versionsUrl = Api + "/project/" + Uri.EscapeDataString(projectId) +
             "/version?game_versions=" + Uri.EscapeDataString("[\"1.20.1\"]");
         if (!shader) versionsUrl += "&loaders=" + Uri.EscapeDataString("[\"forge\"]");
@@ -108,6 +102,13 @@ internal sealed class TokyoModrinthClient : IDisposable
                         " nie ma projektu na Modrinth — sprawdź ją ręcznie.");
                 await InstallProjectAsync(root, requiredProject, false, visited, installed, log, cancel);
             }
+        }
+
+        // Resolve required dependencies even if the main mod is already installed.
+        if (!shader && HasInstalledMod(dir, slug))
+        {
+            log.Report("Mod już obecny, wymagane biblioteki sprawdzone: " + title);
+            return;
         }
 
         string extension = shader ? ".zip" : ".jar";
