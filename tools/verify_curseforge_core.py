@@ -10,6 +10,7 @@ FILES = [
  ("ftb-chunks-forge-2001.3.8.jar",8216874,"ee2d0cdac6d2ca31f43da30f76dff8c6bae9d687"),
  ("ftb-teams-forge-2001.3.2.jar",7499810,"c49023f5d471aa1ba7fc624d2565fe9e82b7117e"),
  ("ftb-library-forge-2001.2.13.jar",8226927,"a5427d5ff07eb044144ed0b54308370d88bce17e"),
+ ("ftb-quests-forge-2001.4.22.jar",8078538,"70f3bd771ab3b5921ce1ff5f14166fab694ca1aa"),
 ]
 failures=[]
 for filename,fileid,sha in FILES:
