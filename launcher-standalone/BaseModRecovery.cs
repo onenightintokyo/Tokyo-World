@@ -41,12 +41,15 @@ internal static class BaseModRecovery
         return Convert.ToHexString(SHA1.HashData(f)).Equals(sha1, StringComparison.OrdinalIgnoreCase);
     }
 
-    public static int CountMissing(string gameRoot)
+    public static string[] MissingNames(string gameRoot)
     {
         var items = ReadLock(gameRoot);
         string mods = Path.Combine(gameRoot, "mods");
-        return items.Values.Count(e => !Verified(Path.Combine(mods, e.Name), e.Sha1));
+        return items.Values.Where(e => !Verified(Path.Combine(mods, e.Name), e.Sha1))
+            .Select(e => e.Name).OrderBy(x => x, StringComparer.OrdinalIgnoreCase).ToArray();
     }
+
+    public static int CountMissing(string gameRoot) => MissingNames(gameRoot).Length;
 
     private static IEnumerable<string> ExistingModFolders(string gameRoot)
     {
