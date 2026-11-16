@@ -82,31 +82,9 @@ internal sealed class ModpackInstaller
                 }
             }
         }
-        // ExtendedAE Plus hard-depends on Extended AE (mod ID expatternprovider).
-        // Fail the install before Minecraft starts instead of silently treating a
-        // missing core dependency as an optional download error.
-        string extendedAeMatch = @"\AExtendedAE-1\.20-1\.4\.18-forge\.jar\z";
-        if (!Directory.EnumerateFiles(modsDir, "*.jar").Any(file =>
-            Regex.IsMatch(Path.GetFileName(file), extendedAeMatch, RegexOptions.IgnoreCase)))
-        {
-            try
-            {
-                // Retry the exact, known-good Forge 1.20.1 release.
-                processed.Remove("extended-ae");
-                await InstallProjectAsync("extended-ae", "uq3lO4ER", "", "");
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException(
-                    "Brakuje Extended AE (expatternprovider), wymaganego przez ExtendedAE Plus. " +
-                    "Instalacja została przerwana zamiast uruchamiać uszkodzoną paczkę: " + ex.Message, ex);
-            }
-            if (!Directory.EnumerateFiles(modsDir, "*.jar").Any(file =>
-                Regex.IsMatch(Path.GetFileName(file), extendedAeMatch, RegexOptions.IgnoreCase)))
-                throw new InvalidOperationException(
-                    "Brakuje ExtendedAE-1.20-1.4.18-forge.jar (expatternprovider). " +
-                    "Zaktualizuj klienta lub sprawdź log pobierania modów.");
-        }
+        // Verify the actual Forge mod ID and SHA512; a matching filename alone
+        // does not prove expatternprovider is installed or compatible.
+        await EnsureExtendedAeDependencyAsync(gameDir);
 
         // Reconcile pinned mod compatibility after optional modules have been resolved.
         // This fixes Delightful 3.8.1 vs End\u0027s Delight 2.4 and duplicate IntegratedTerminals.
@@ -334,6 +312,99 @@ internal sealed class ModpackInstaller
             finally { version?.Dispose(); }
         }
         finally { resolving.Remove(projectRef); }
+    }
+
+    private static bool ContainsForgeModId(string jarPath, string modId)
+    {
+        try
+        {
+            using var archive = ZipFile.OpenRead(jarPath);
+            var entry = archive.Entries.FirstOrDefault(e =>
+                e.FullName.Equals("META-INF/mods.toml", StringComparison.OrdinalIgnoreCase));
+            if (entry is null || entry.Length > 1_000_000) return false;
+            using var reader = new StreamReader(entry.Open());
+            string toml = reader.ReadToEnd();
+            return Regex.IsMatch(toml,
+                @"(?im)^\s*modId\s*=\s*[""']" + Regex.Escape(modId) + @"[""']\s*(?:#.*)?$");
+        }
+        catch (Exception ex) when (ex is IOException or InvalidDataException)
+        {
+            return false;
+        }
+    }
+
+    private async Task EnsureExtendedAeDependencyAsync(string gameDir)
+    {
+        const string expectedFile = "ExtendedAE-1.20-1.4.18-forge.jar";
+        const string expectedProject = "JiOqfoFM";
+        string installed = Path.Combine(modsDir, expectedFile);
+
+        // Fetch the pinned release itself, not the project slug. This bypasses
+        // stale processed/IsInstalled state and ExtendedAEPlus prefix collisions.
+        using var version = await GetJsonAsync("version/uq3lO4ER");
+        if (version is null)
+            throw new InvalidOperationException("Nie można pobrać metadanych Extended AE.");
+        var v = version.RootElement;
+        if (!GetString(v, "project_id").Equals(expectedProject, StringComparison.Ordinal) ||
+            !v.GetProperty("game_versions").EnumerateArray().Any(x => x.GetString() == "1.20.1") ||
+            !v.GetProperty("loaders").EnumerateArray().Any(x => x.GetString() == "forge"))
+            throw new InvalidDataException("Extended AE ma niezgodny identyfikator projektu, Minecraft lub loader.");
+
+        var candidates = v.GetProperty("files").EnumerateArray()
+            .Where(x => GetString(x, "filename").Equals(expectedFile, StringComparison.OrdinalIgnoreCase))
+            .ToArray();
+        if (candidates.Length != 1)
+            throw new InvalidDataException("Wersja Extended AE nie zawiera oczekiwanego JAR: " + expectedFile);
+        var fileInfo = candidates[0];
+        string sha512 = GetString(fileInfo.GetProperty("hashes"), "sha512");
+        string url = GetString(fileInfo, "url");
+        if (!Regex.IsMatch(sha512, @"\A[a-fA-F0-9]{128}\z"))
+            throw new InvalidDataException("Extended AE nie posiada poprawnej sumy SHA-512.");
+
+        if (File.Exists(installed) && CheckSha512(installed, sha512) &&
+            ContainsForgeModId(installed, "expatternprovider"))
+        {
+            RetireOlderSharedJars("extended-ae", installed);
+            status?.Report("Extended AE / expatternprovider: sprawdzono SHA-512 i mods.toml.");
+            return;
+        }
+
+        // Download and verify in a staging folder first. Never delete a working
+        // JAR before the replacement is available and its Forge metadata verified.
+        string staging = Path.Combine(gameDir, ".tokyo", "repair-staging");
+        Directory.CreateDirectory(staging);
+        string tempJar = Path.Combine(staging, Guid.NewGuid().ToString("N") + "-" + expectedFile);
+        try
+        {
+            status?.Report("Naprawiam brakujący Extended AE (expatternprovider)...");
+            await DownloadCheckedAsync(url, tempJar, sha512, "sha512");
+            if (!ContainsForgeModId(tempJar, "expatternprovider"))
+                throw new InvalidDataException("Pobrany Extended AE nie zawiera modId expatternprovider.");
+
+            string? prior = null;
+            if (File.Exists(installed))
+            {
+                string archive = Path.Combine(gameDir, ".tokyo", "backups", "invalid-extended-ae");
+                Directory.CreateDirectory(archive);
+                prior = Path.Combine(archive, Guid.NewGuid().ToString("N") + "-" + expectedFile);
+                File.Move(installed, prior);
+            }
+            try
+            {
+                File.Move(tempJar, installed);
+            }
+            catch
+            {
+                if (prior != null && !File.Exists(installed)) File.Move(prior, installed);
+                throw;
+            }
+            RetireOlderSharedJars("extended-ae", installed);
+            status?.Report("Zainstalowano Extended AE 1.4.18 — expatternprovider potwierdzony.");
+        }
+        finally
+        {
+            if (File.Exists(tempJar)) File.Delete(tempJar);
+        }
     }
 
     private void RetireOlderSharedJars(string slug, string destination)
