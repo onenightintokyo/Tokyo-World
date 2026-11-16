@@ -309,6 +309,18 @@ def resolve_all() -> None:
                 # The SHA1-locked 1.5.33.2475 JAR is already resolved from
                 # base_mod_hashes.txt. Do not add an unpinned newer release.
                 continue
+            if project == "the-bumblezone":
+                # Exact 7.15.2 Forge build, matching the existing Tokyo World client.
+                # Modrinth sometimes does not index the same historical release.
+                # Official CurseForge file 9339180, SHA1 pinned for integrity.
+                ALL_META[project] = {
+                    "filename": "the_bumblezone-7.15.2+1.20.1-forge.jar",
+                    "sha1": "166ea07d23857c357712a7d59ff671927357f7c6",
+                    "url": ("https://mediafilez.forgecdn.net/files/9339/180/"
+                            "the_bumblezone-7.15.2+1.20.1-forge.jar"),
+                    "reason": "exact shared client Forge 1.20.1 version"
+                }
+                continue
             if entry.get("source") == "curseforge":
                 sha1 = entry.get("sha1", "").lower()
                 if not re.fullmatch(r"[a-fA-F0-9]{40}", sha1):
@@ -486,6 +498,8 @@ def package() -> None:
     print(f"Resolved {len(entries)} server candidate JARs; unresolved: {len(ERRORS)}", flush=True)
     write_report(entries)
     if ERRORS:
+        for error in ERRORS:
+            print("SERVER PACK ERROR:", error, flush=True)
         print("STOP: cannot publish incomplete server pack. See serverpack/reports/MISSING_MODS.txt",
               flush=True)
         return
@@ -502,6 +516,8 @@ def package() -> None:
     copy_server_configs()
     write_report(entries)
     if ERRORS:
+        for error in ERRORS:
+            print("SERVER PACK ERROR:", error, flush=True)
         print("STOP: JAR integrity or mod-ID checks failed.", flush=True)
         return
     checksum_text = "".join(
