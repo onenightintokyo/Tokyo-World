@@ -1,0 +1,22 @@
+{
+	filename: "tokyo_industry"
+	id: "61A0000000000022"
+	loot_size: 1
+	order_index: 1
+	title: "TOKYO WORLD — INDUSTRIAL SUPPLIES"
+	use_title: true
+	rewards: [
+		{ id: "2100000000000001" item: { id: "minecraft:redstone" count: 1 } count: 12 weight: 10.0f }
+		{ id: "2100000000000002" item: { id: "minecraft:lapis_lazuli" count: 1 } count: 10 weight: 8.0f }
+		{ id: "2100000000000003" item: { id: "minecraft:iron_ingot" count: 1 } count: 7 weight: 9.0f }
+		{ id: "2100000000000004" item: { id: "minecraft:copper_ingot" count: 1 } count: 12 weight: 8.0f }
+		{ id: "2100000000000005" item: { id: "minecraft:gold_ingot" count: 1 } count: 4 weight: 4.0f }
+		{ id: "2100000000000006" item: { id: "minecraft:quartz" count: 1 } count: 12 weight: 7.0f }
+		{ id: "2100000000000007" item: { id: "minecraft:obsidian" count: 1 } count: 4 weight: 3.0f }
+		{ id: "2100000000000008" item: { id: "minecraft:glass" count: 1 } count: 16 weight: 7.0f }
+		{ id: "2100000000000009" item: { id: "minecraft:coal" count: 1 } count: 16 weight: 8.0f }
+		{ id: "210000000000000A" item: { id: "minecraft:slime_ball" count: 1 } count: 6 weight: 4.0f }
+		{ id: "210000000000000B" item: { id: "minecraft:blaze_powder" count: 1 } count: 3 weight: 2.0f }
+		{ id: "210000000000000C" item: { id: "minecraft:experience_bottle" count: 1 } count: 5 weight: 4.0f }
+	]
+}

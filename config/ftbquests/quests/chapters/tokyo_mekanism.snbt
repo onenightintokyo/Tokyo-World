@@ -1,6 +1,6 @@
 {
 	filename: "tokyo_mekanism"
-	title: "&e&l10 · Iskra elektryczności"
+	title: "&b&l10 · Iskra elektryczności"
 	group: "A110000000000002"
 	id: "A120000000000003"
 	default_hide_dependency_lines: false
@@ -9,11 +9,11 @@
 	order_index: 10
 	images: [
 		{
-			image: "tokyoworld:textures/gui/quests/tokyo_mid.png"
-			width: 20.0d
-			height: 7.0d
-			x: -2.0d
-			y: -9.0d
+			image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png"
+			width: 24.0d
+			height: 7.8d
+			x: 8.0d
+			y: -6.5d
 			order: -1
 		}
 	]
@@ -27,8 +27,8 @@
 			hide_dependent_lines: false
 			title: "Wprowadzenie do Mekanism"
 			description: ["Przekładnie mają swoje ograniczenia. Prąd otwiera technologie, o których zwykły warsztat może tylko pomarzyć. Zacznij od sprawy „Wprowadzenie do Mekanism”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "mekanism:metallurgic_infuser"
 			dependencies: ["A130000000000010"]
 			tasks: [
@@ -40,7 +40,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000011" type: "item" item: "minecraft:glowstone_dust" count: 9 }]
+			rewards: [{ id: "A170000000000011" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000012"
@@ -50,8 +50,8 @@
 			hide_dependent_lines: false
 			title: "Wzbogacony Redstone"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Wzbogacony Redstone”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "mekanism:enriched_redstone"
 			dependencies: ["A130000000000011"]
 			tasks: [
@@ -63,7 +63,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000012" type: "item" item: "minecraft:lapis_lazuli" count: 5 }]
+			rewards: [{ id: "A170000000000012" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000013"
@@ -73,8 +73,8 @@
 			hide_dependent_lines: false
 			title: "Podstawowe obwody"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Podstawowe obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "mekanism:basic_control_circuit"
 			dependencies: ["A130000000000011"]
 			tasks: [
@@ -86,7 +86,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000013" type: "item" item: "minecraft:ender_pearl" count: 5 }]
+			rewards: [{ id: "A170000000000013" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000014"
@@ -96,8 +96,8 @@
 			hide_dependent_lines: false
 			title: "Stalowa infrastruktura"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Stalowa infrastruktura”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "mekanism:steel_casing"
 			dependencies: ["A130000000000012"]
 			tasks: [
@@ -109,7 +109,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000014" type: "item" item: "minecraft:glowstone_dust" count: 5 }]
+			rewards: [{ id: "A170000000000014" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000015"
@@ -119,8 +119,8 @@
 			hide_dependent_lines: false
 			title: "Komora wzbogacania"
 			description: ["Wcześniej zamknąłeś już sprawę „Podstawowe obwody”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Komora wzbogacania”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "mekanism:enrichment_chamber"
 			dependencies: ["A130000000000013"]
 			tasks: [
@@ -132,7 +132,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000015" type: "item" item: "minecraft:experience_bottle" count: 9 }]
+			rewards: [{ id: "A170000000000015" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000016"
@@ -142,8 +142,8 @@
 			hide_dependent_lines: false
 			title: "Kruszarka"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kruszarka”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 12.0d
+			x: 8.00d
+			y: 9.36d
 			icon: "mekanism:crusher"
 			dependencies: ["A130000000000014", "A130000000000015"]
 			tasks: [
@@ -155,7 +155,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000016" type: "item" item: "minecraft:ender_pearl" count: 5 }]
+			rewards: [{ id: "A170000000000016" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000017"
@@ -165,8 +165,8 @@
 			hide_dependent_lines: false
 			title: "Szybsza fabryka"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Szybsza fabryka”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "mekanism:basic_crushing_factory"
 			dependencies: ["A130000000000016"]
 			tasks: [
@@ -178,7 +178,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000017" type: "item" item: "minecraft:glowstone_dust" count: 5 }]
+			rewards: [{ id: "A170000000000017" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000018"
@@ -188,8 +188,8 @@
 			hide_dependent_lines: false
 			title: "Magazyn energii"
 			description: ["Energia przestała być ciekawostką, a stała się częścią codziennej pracy. Ostatni sprawdzian to „Magazyn energii”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 20.0d
+			x: 8.00d
+			y: 15.60d
 			icon: "mekanism:basic_energy_cube"
 			dependencies: ["A130000000000017"]
 			tasks: [
@@ -201,7 +201,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000018" type: "item" item: "minecraft:diamond" count: 5 }, { id: "A160000000000018" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A170000000000018" type: "random" table_id: 7034622617952714786L }, { id: "A180000000000018" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

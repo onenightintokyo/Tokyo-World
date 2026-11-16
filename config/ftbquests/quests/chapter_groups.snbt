@@ -1,9 +1,8 @@
 {
 	chapter_groups: [
-		{ id: "A110000000000004" title: "&6&l━━ STARTOWE ━━" }
-		{ id: "A110000000000001" title: "&a&l━━ EARLY GAME ━━" }
-		{ id: "A110000000000002" title: "&e&l━━ MID GAME ━━" }
-		{ id: "A110000000000003" title: "&c&l━━ END GAME ━━" }
-		{ id: "A110000000000005" title: "&b&l━━ CREATIVE ━━" }
+		{ id: "A110000000000004" title: "&6&l━━ START / SURVIVAL ━━" }
+		{ id: "A110000000000002" title: "&b&l━━ INDUSTRY / AUTOMATION ━━" }
+		{ id: "A110000000000005" title: "&d&l━━ FARMING / MAGIC / EXPANSION ━━" }
+		{ id: "A110000000000003" title: "&c&l━━ ENDGAME / SPACE / LEGACY ━━" }
 	]
 }

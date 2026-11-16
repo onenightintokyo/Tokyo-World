@@ -1,13 +1,13 @@
 {
 	filename: "space_industry"
-	title: "&c&l34 · Bilet poza atmosferę"
+	title: "&c&l37 · Bilet poza atmosferę"
 	group: "A110000000000003"
 	id: "A12000000000000F"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "ad_astra:nasa_workbench"
-	order_index: 34
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
+	order_index: 37
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000BD"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Stal kosmiczna"
 			description: ["Zwykły warsztat nie przetrwa w próżni. Zbuduj sprzęt, od którego będzie zależało twoje bezpieczeństwo. Zacznij od sprawy „Stal kosmiczna”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "ad_astra:steel_ingot"
 			dependencies: ["A130000000000018"]
 			tasks: [{ id: "A1400000000000BD" type: "item" item: "ad_astra:steel_ingot" count: 24L consume_items: false }]
-			rewards: [{ id: "A1500000000000BD" type: "item" item: "minecraft:golden_carrot" count: 8 }]
+			rewards: [{ id: "A1700000000000BD" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000BE"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Płyty kosmiczne"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Płyty kosmiczne”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "ad_astra:steel_plate"
 			dependencies: ["A1300000000000BD"]
 			tasks: [{ id: "A1400000000000BE" type: "item" item: "ad_astra:steel_plate" count: 12L consume_items: false }]
-			rewards: [{ id: "A1500000000000BE" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A1700000000000BE" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000BF"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Kompresor technologiczny"
 			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Kompresor technologiczny”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "ad_astra:compressor"
 			dependencies: ["A1300000000000BD"]
 			tasks: [{ id: "A1400000000000BF" type: "item" item: "ad_astra:compressor" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000BF" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A1700000000000BF" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000C0"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Generator wyprawowy"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Generator wyprawowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "ad_astra:coal_generator"
 			dependencies: ["A1300000000000BE"]
 			tasks: [{ id: "A1400000000000C0" type: "item" item: "ad_astra:coal_generator" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C0" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A1700000000000C0" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000C1"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Warsztat rakietowy"
 			description: ["Wcześniej zamknąłeś już sprawę „Kompresor technologiczny”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Warsztat rakietowy”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "ad_astra:nasa_workbench"
 			dependencies: ["A1300000000000BF"]
 			tasks: [{ id: "A1400000000000C1" type: "item" item: "ad_astra:nasa_workbench" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C1" type: "item" item: "minecraft:glowstone_dust" count: 8 }]
+			rewards: [{ id: "A1700000000000C1" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000C2"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Rafineria paliwa"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Rafineria paliwa”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "ad_astra:fuel_refinery"
 			dependencies: ["A1300000000000C0"]
 			tasks: [{ id: "A1400000000000C2" type: "item" item: "ad_astra:fuel_refinery" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C2" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A1700000000000C2" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000C3"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Sprzęt tlenowy"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Sprzęt tlenowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "ad_astra:oxygen_gear"
 			dependencies: ["A1300000000000C1"]
 			tasks: [{ id: "A1400000000000C3" type: "item" item: "ad_astra:oxygen_gear" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C3" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A1700000000000C3" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000C4"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Ładowarka tlenu"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ładowarka tlenu”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "ad_astra:oxygen_loader"
 			dependencies: ["A1300000000000C2", "A1300000000000C3"]
 			tasks: [{ id: "A1400000000000C4" type: "item" item: "ad_astra:oxygen_loader" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C4" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
+			rewards: [{ id: "A1700000000000C4" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000C5"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Dystrybucja tlenu"
 			description: ["Wcześniej zamknąłeś już sprawę „Ładowarka tlenu”. Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Dystrybucja tlenu”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "ad_astra:oxygen_distributor"
 			dependencies: ["A1300000000000C4"]
 			tasks: [{ id: "A1400000000000C5" type: "item" item: "ad_astra:oxygen_distributor" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C5" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+			rewards: [{ id: "A1700000000000C5" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000C6"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Silnik rakietowy"
 			description: ["Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Silnik rakietowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "ad_astra:steel_engine"
 			dependencies: ["A1300000000000C4"]
 			tasks: [{ id: "A1400000000000C6" type: "item" item: "ad_astra:steel_engine" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C6" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A1700000000000C6" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000C7"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Stateczniki rakiety"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Stateczniki rakiety”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 1.0d
-			y: 24.0d
+			x: 2.12d
+			y: 18.72d
 			icon: "ad_astra:rocket_fin"
 			dependencies: ["A1300000000000C5"]
 			tasks: [{ id: "A1400000000000C7" type: "item" item: "ad_astra:rocket_fin" count: 4L consume_items: false }]
-			rewards: [{ id: "A1500000000000C7" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
+			rewards: [{ id: "A1700000000000C7" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000C8"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Dziób rakiety"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Dziób rakiety”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 15.0d
-			y: 24.0d
+			x: 13.88d
+			y: 18.72d
 			icon: "ad_astra:rocket_nose_cone"
 			dependencies: ["A1300000000000C6"]
 			tasks: [{ id: "A1400000000000C8" type: "item" item: "ad_astra:rocket_nose_cone" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C8" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A1700000000000C8" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000C9"
@@ -197,12 +197,12 @@
 			hide_dependent_lines: false
 			title: "Kosmiczne panele"
 			description: ["Wcześniej zamknąłeś już sprawę „Stateczniki rakiety”. Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Kosmiczne panele”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 1.0d
-			y: 28.0d
+			x: 2.12d
+			y: 21.84d
 			icon: "ad_astra:solar_panel"
 			dependencies: ["A1300000000000C7"]
 			tasks: [{ id: "A1400000000000C9" type: "item" item: "ad_astra:solar_panel" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000C9" type: "item" item: "minecraft:experience_bottle" count: 8 }]
+			rewards: [{ id: "A1700000000000C9" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000CA"
@@ -212,12 +212,12 @@
 			hide_dependent_lines: false
 			title: "Pompa wodna"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Pompa wodna”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 15.0d
-			y: 28.0d
+			x: 13.88d
+			y: 21.84d
 			icon: "ad_astra:water_pump"
 			dependencies: ["A1300000000000C8"]
 			tasks: [{ id: "A1400000000000CA" type: "item" item: "ad_astra:water_pump" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000CA" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
+			rewards: [{ id: "A1700000000000CA" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000CB"
@@ -227,12 +227,12 @@
 			hide_dependent_lines: false
 			title: "Paliwo kriogeniczne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Paliwo kriogeniczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 32.0d
+			x: 8.00d
+			y: 24.96d
 			icon: "ad_astra:cryo_fuel"
 			dependencies: ["A1300000000000C9", "A1300000000000CA"]
 			tasks: [{ id: "A1400000000000CB" type: "item" item: "ad_astra:cryo_fuel" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000CB" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A1700000000000CB" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A1300000000000CC"
@@ -242,12 +242,12 @@
 			hide_dependent_lines: false
 			title: "Okablowanie kosmiczne"
 			description: ["Rakieta przestaje być marzeniem zapisanym na kartce. Ostatni sprawdzian to „Okablowanie kosmiczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 36.0d
+			x: 8.00d
+			y: 28.08d
 			icon: "ad_astra:steel_cable"
 			dependencies: ["A1300000000000CB"]
 			tasks: [{ id: "A1400000000000CC" type: "item" item: "ad_astra:steel_cable" count: 18L consume_items: false }]
-			rewards: [{ id: "A1500000000000CC" type: "item" item: "minecraft:totem_of_undying" count: 1 }, { id: "A1600000000000CC" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1700000000000CC" type: "random" table_id: 7034622617952714820L }, { id: "A1800000000000CC" type: "item" item: "minecraft:experience_bottle" count: 10 }]
 		}
 	]
 }

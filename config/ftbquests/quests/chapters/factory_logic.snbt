@@ -1,13 +1,13 @@
 {
 	filename: "factory_logic"
-	title: "&e&l19 · Myślące maszyny"
+	title: "&b&l19 · Myślące maszyny"
 	group: "A110000000000002"
 	id: "A12000000000001A"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "integrateddynamics:logic_programmer"
 	order_index: 19
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000157"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Pierwszy sygnał"
 			description: ["Samo uruchomienie urządzenia to za mało. Czas nauczyć całą instalację, kiedy powinna działać i gdzie skierować materiały. Zacznij od sprawy „Pierwszy sygnał”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "minecraft:repeater"
 			dependencies: ["A130000000000080", "A130000000000030"]
 			tasks: [{ id: "A140000000000157" type: "item" item: "minecraft:repeater" count: 16L consume_items: false }, { id: "A180000000000157" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000157" type: "item" item: "minecraft:emerald" count: 8 }]
+			rewards: [{ id: "A170000000000157" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000158"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Czujniki sieci"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Czujniki sieci”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "minecraft:comparator"
 			dependencies: ["A130000000000157"]
 			tasks: [{ id: "A140000000000158" type: "item" item: "minecraft:comparator" count: 16L consume_items: false }, { id: "A180000000000158" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000158" type: "item" item: "create:andesite_alloy" count: 4 }]
+			rewards: [{ id: "A170000000000158" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000159"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Przekaźniki danych"
 			description: ["Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Przekaźniki danych”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "integrateddynamics:cable"
 			dependencies: ["A130000000000157"]
 			tasks: [{ id: "A140000000000159" type: "item" item: "integrateddynamics:cable" count: 24L consume_items: false }, { id: "A180000000000159" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000159" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A170000000000159" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000015A"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Programowanie reguł"
 			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Programowanie reguł”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "integrateddynamics:logic_programmer"
 			dependencies: ["A130000000000158"]
 			tasks: [{ id: "A14000000000015A" type: "item" item: "integrateddynamics:logic_programmer" count: 2L consume_items: false }, { id: "A18000000000015A" type: "item" item: "minecraft:copper_ingot" count: 8L consume_items: false }]
-			rewards: [{ id: "A15000000000015A" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+			rewards: [{ id: "A17000000000015A" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000015B"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Pamięć zmiennych"
 			description: ["Wcześniej zamknąłeś już sprawę „Przekaźniki danych”. W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Pamięć zmiennych”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "integrateddynamics:variable"
 			dependencies: ["A130000000000159"]
 			tasks: [{ id: "A14000000000015B" type: "item" item: "integrateddynamics:variable" count: 16L consume_items: false }, { id: "A18000000000015B" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000015B" type: "item" item: "minecraft:diamond" count: 1 }]
+			rewards: [{ id: "A17000000000015B" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000015C"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Magazyn logiki"
 			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Magazyn logiki”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "integrateddynamics:variablestore"
 			dependencies: ["A13000000000015A"]
 			tasks: [{ id: "A14000000000015C" type: "item" item: "integrateddynamics:variablestore" count: 4L consume_items: false }, { id: "A18000000000015C" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000015C" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A17000000000015C" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000015D"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Zasilanie sterowników"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Zasilanie sterowników”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "integrateddynamics:energy_battery"
 			dependencies: ["A13000000000015B"]
 			tasks: [{ id: "A14000000000015D" type: "item" item: "integrateddynamics:energy_battery" count: 4L consume_items: false }, { id: "A18000000000015D" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000015D" type: "item" item: "minecraft:emerald" count: 8 }]
+			rewards: [{ id: "A17000000000015D" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000015E"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Przekierowania sieci"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Przekierowania sieci”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Uruchom zbudowaną instalację i sprawdź, czy rzeczywiście przekazuje materiał dalej. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "integrateddynamics:proxy"
 			dependencies: ["A13000000000015C", "A13000000000015D"]
 			tasks: [{ id: "A14000000000015E" type: "item" item: "integrateddynamics:proxy" count: 4L consume_items: false }, { id: "A18000000000015E" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }, { id: "A1D000000000015E" type: "checkmark" }]
-			rewards: [{ id: "A15000000000015E" type: "item" item: "create:andesite_alloy" count: 4 }]
+			rewards: [{ id: "A17000000000015E" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000015F"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Serwer sterujący"
 			description: ["Wcześniej zamknąłeś już sprawę „Przekierowania sieci”. Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Serwer sterujący”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "ae2:controller"
 			dependencies: ["A13000000000015E"]
 			tasks: [{ id: "A14000000000015F" type: "item" item: "ae2:controller" count: 2L consume_items: false }, { id: "A18000000000015F" type: "item" item: "minecraft:iron_ingot" count: 24L consume_items: false }]
-			rewards: [{ id: "A15000000000015F" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A17000000000015F" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000160"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Procesory logiczne"
 			description: ["W hali słychać już przekładnie. Teraz trzeba sprawić, by nie zatrzymywały się co chwilę. Kolejny punkt planu to „Procesory logiczne”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "ae2:logic_processor"
 			dependencies: ["A13000000000015E"]
 			tasks: [{ id: "A140000000000160" type: "item" item: "ae2:logic_processor" count: 16L consume_items: false }, { id: "A180000000000160" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000160" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+			rewards: [{ id: "A170000000000160" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000161"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Procesory obliczeń"
 			description: ["Przy coraz dłuższej linii produkcyjnej przydaje się więcej niż jedna para rąk. Warto teraz pomyśleć o „Procesory obliczeń”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
-			x: 1.0d
-			y: 24.0d
+			x: 2.12d
+			y: 18.72d
 			icon: "ae2:calculation_processor"
 			dependencies: ["A13000000000015F"]
 			tasks: [{ id: "A140000000000161" type: "item" item: "ae2:calculation_processor" count: 12L consume_items: false }, { id: "A180000000000161" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000161" type: "item" item: "minecraft:diamond" count: 1 }]
+			rewards: [{ id: "A170000000000161" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000162"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Procesory projektowe"
 			description: ["Ruch da się przekazać dalej, jeśli zbudujesz porządne połączenia. Zapisz w planie „Procesory projektowe”. Dobrze, żeby materiał nie zatrzymywał się w połowie drogi."]
-			x: 15.0d
-			y: 24.0d
+			x: 13.88d
+			y: 18.72d
 			icon: "ae2:engineering_processor"
 			dependencies: ["A130000000000160"]
 			tasks: [{ id: "A140000000000162" type: "item" item: "ae2:engineering_processor" count: 12L consume_items: false }, { id: "A180000000000162" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000162" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000162" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000163"
@@ -197,12 +197,12 @@
 			hide_dependent_lines: false
 			title: "Terminale sterujące"
 			description: ["Wcześniej zamknąłeś już sprawę „Procesory obliczeń”. Wystarczy jeden źle ustawiony element, żeby cały napęd zmarnował swoją moc. Tym razem liczy się „Terminale sterujące”. Jeśli cały układ ma pracować sam, każde połączenie musi mieć sens."]
-			x: 1.0d
-			y: 28.0d
+			x: 2.12d
+			y: 21.84d
 			icon: "ae2:terminal"
 			dependencies: ["A130000000000161"]
 			tasks: [{ id: "A140000000000163" type: "item" item: "ae2:terminal" count: 4L consume_items: false }, { id: "A180000000000163" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
-			rewards: [{ id: "A150000000000163" type: "item" item: "minecraft:emerald" count: 8 }]
+			rewards: [{ id: "A170000000000163" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000164"
@@ -212,12 +212,12 @@
 			hide_dependent_lines: false
 			title: "Magistrala sygnałów"
 			description: ["Najpierw zaplanuj drogę materiału, potem dopiero stawiaj wokół niej maszyny. W notatkach pojawia się „Magistrala sygnałów”. Pomyśl, gdzie popłynie ruch, zanim ustawisz następny mechanizm."]
-			x: 15.0d
-			y: 28.0d
+			x: 13.88d
+			y: 21.84d
 			icon: "xnet:connector"
 			dependencies: ["A130000000000162"]
 			tasks: [{ id: "A140000000000164" type: "item" item: "xnet:connector" count: 16L consume_items: false }, { id: "A180000000000164" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
-			rewards: [{ id: "A150000000000164" type: "item" item: "create:andesite_alloy" count: 4 }]
+			rewards: [{ id: "A170000000000164" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000165"
@@ -227,12 +227,12 @@
 			hide_dependent_lines: false
 			title: "Kontroler kanałów"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kontroler kanałów”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Uruchom zbudowaną instalację i sprawdź, czy rzeczywiście przekazuje materiał dalej. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 32.0d
+			x: 8.00d
+			y: 24.96d
 			icon: "xnet:controller"
 			dependencies: ["A130000000000163", "A130000000000164"]
 			tasks: [{ id: "A140000000000165" type: "item" item: "xnet:controller" count: 2L consume_items: false }, { id: "A180000000000165" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }, { id: "A1D0000000000165" type: "checkmark" }]
-			rewards: [{ id: "A150000000000165" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A170000000000165" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000166"
@@ -242,12 +242,12 @@
 			hide_dependent_lines: false
 			title: "CENTRALNY SYSTEM STEROWANIA"
 			description: ["Maszyny nie czekają już przy każdej decyzji na człowieka. Ostatni sprawdzian to „CENTRALNY SYSTEM STEROWANIA”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Uruchom zbudowaną instalację i sprawdź, czy rzeczywiście przekazuje materiał dalej. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 36.0d
+			x: 8.00d
+			y: 28.08d
 			icon: "ae2:pattern_provider"
 			dependencies: ["A130000000000165"]
 			tasks: [{ id: "A140000000000166" type: "item" item: "ae2:pattern_provider" count: 4L consume_items: false }, { id: "A180000000000166" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A190000000000166" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D0000000000166" type: "checkmark" }]
-			rewards: [{ id: "A150000000000166" type: "item" item: "ae2:engineering_processor" count: 4 }, { id: "A160000000000166" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A170000000000166" type: "random" table_id: 7034622617952714786L }, { id: "A180000000000166" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

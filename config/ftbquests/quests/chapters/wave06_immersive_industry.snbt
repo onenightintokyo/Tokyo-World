@@ -1,6 +1,6 @@
 {
 	filename: "wave06_immersive_industry"
-	title: "&e&l14 · Stalowy ślad"
+	title: "&b&l14 · Stalowy ślad"
 	group: "A110000000000002"
 	id: "A126000000000002"
 	default_hide_dependency_lines: false
@@ -8,11 +8,11 @@
 	icon: "immersiveengineering:hammer"
 	order_index: 14
 	images: [{
-		image: "tokyoworld:textures/gui/quests/tokyo_mid.png"
-		width: 20.0d
-		height: 7.0d
-		x: -2.0d
-		y: -9.0d
+		image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png"
+		width: 24.0d
+		height: 7.8d
+		x: 8.0d
+		y: -6.5d
 		order: -1
 	}]
 	quest_links: [ ]
@@ -25,14 +25,14 @@
 			hide_dependent_lines: false
 			title: "Młotek inżyniera"
 			description: ["Stary młotek nie robi wrażenia. Ale bez niego nie postawisz porządnego multibloku i nie złożysz najważniejszych elementów fabryki."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "immersiveengineering:hammer"
 			dependencies: ["A130000000000018"]
 			tasks: [
 				{ id: "A146000000000101" type: "item" item: "immersiveengineering:hammer" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000101" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000101" type: "random" table_id: 7034622617952714786L }]
 		},
 		{
 			id: "A136000000000102"
@@ -42,14 +42,14 @@
 			hide_dependent_lines: false
 			title: "Pierwsze przewody"
 			description: ["Kiedy energia przestaje mieścić się w pojedynczej maszynie, pojawia się nowy problem: jak ją bezpiecznie rozprowadzić?"]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "immersiveengineering:wirecoil_copper"
 			dependencies: ["A136000000000101"]
 			tasks: [
 				{ id: "A146000000000102" type: "item" item: "immersiveengineering:wirecoil_copper" count: 8L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000102" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000102" type: "random" table_id: 7034622617952714786L }]
 		},
 		{
 			id: "A136000000000103"
@@ -59,14 +59,14 @@
 			hide_dependent_lines: false
 			title: "Żelazne komponenty"
 			description: ["Nie ma dobrej konstrukcji bez powtarzalnych części. Wyprodukuj serię komponentów i zacznij myśleć o większych urządzeniach."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "immersiveengineering:component_iron"
 			dependencies: ["A136000000000101"]
 			tasks: [
 				{ id: "A146000000000103" type: "item" item: "immersiveengineering:component_iron" count: 8L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000103" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000103" type: "random" table_id: 7034622617952714786L }]
 		},
 		{
 			id: "A136000000000104"
@@ -76,14 +76,14 @@
 			hide_dependent_lines: false
 			title: "Zapas prądu LV"
 			description: ["Pierwszy akumulator to nie luksus. Bez bufora krótka przerwa w dostawie zasilania zatrzyma całą linię."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "immersiveengineering:capacitor_lv"
 			dependencies: ["A136000000000102"]
 			tasks: [
 				{ id: "A146000000000104" type: "item" item: "immersiveengineering:capacitor_lv" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000104" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000104" type: "random" table_id: 7034622617952714786L }]
 		},
 		{
 			id: "A136000000000105"
@@ -93,14 +93,14 @@
 			hide_dependent_lines: false
 			title: "Linia montażowa"
 			description: ["Złóż podstawowe bloki konstrukcyjne. W tej gałęzi nie wystarczy już stolik rzemieślniczy — trzeba zapanować nad całą instalacją."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "immersiveengineering:light_engineering"
 			dependencies: ["A136000000000103"]
 			tasks: [
 				{ id: "A146000000000105" type: "item" item: "immersiveengineering:light_engineering" count: 4L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000105" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000105" type: "random" table_id: 7034622617952714786L }]
 		},
 		{
 			id: "A136000000000106"
@@ -110,14 +110,14 @@
 			hide_dependent_lines: false
 			title: "Średnie napięcie"
 			description: ["Mała elektrownia to dopiero początek. Przygotuj magazyn energii kolejnego poziomu i zaplanuj osobny obwód dla maszyn."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "immersiveengineering:capacitor_mv"
 			dependencies: ["A136000000000104"]
 			tasks: [
 				{ id: "A146000000000106" type: "item" item: "immersiveengineering:capacitor_mv" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000106" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000106" type: "random" table_id: 7034622617952714786L }]
 		},
 		{
 			id: "A136000000000107"
@@ -127,14 +127,14 @@
 			hide_dependent_lines: false
 			title: "Ciężki przemysł"
 			description: ["Przetwarzanie na większą skalę wymaga ram, które nie pękną po pierwszej dobie. Powstaje serce prawdziwej huty."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "immersiveengineering:heavy_engineering"
 			dependencies: ["A136000000000105"]
 			tasks: [
 				{ id: "A146000000000107" type: "item" item: "immersiveengineering:heavy_engineering" count: 4L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000107" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000107" type: "random" table_id: 7034622617952714786L }]
 		},
 		{
 			id: "A136000000000108"
@@ -144,14 +144,14 @@
 			hide_dependent_lines: false
 			title: "Wysokie napięcie"
 			description: ["Fabryka rośnie. W tym momencie źle poprowadzona energia kosztuje więcej niż cały wcześniejszy warsztat."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "immersiveengineering:capacitor_hv"
 			dependencies: ["A136000000000106", "A136000000000107"]
 			tasks: [
 				{ id: "A146000000000108" type: "item" item: "immersiveengineering:capacitor_hv" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000108" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000108" type: "random" table_id: 7034622617952714786L }]
 		},
 		{
 			id: "A136000000000109"
@@ -161,14 +161,14 @@
 			hide_dependent_lines: false
 			title: "Projekt multibloku"
 			description: ["Wybierz dużą maszynę Immersive Engineering — np. excavator lub arc furnace — i uruchom ją w swojej bazie. Sam zestaw bloków jeszcze nie oznacza działającej fabryki."]
-			x: 8.0d
-			y: 20.0d
+			x: 8.00d
+			y: 15.60d
 			icon: "minecraft:nether_star"
 			dependencies: ["A136000000000108"]
 			tasks: [
 				{ id: "A146000000000109" type: "checkmark" }
 			]
-			rewards: [{ id: "A156000000000109" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000109" type: "random" table_id: 7034622617952714786L }]
 		},
 		{
 			id: "A13600000000010A"
@@ -178,15 +178,15 @@
 			hide_dependent_lines: false
 			title: "Przemysł bez przestojów"
 			description: ["Doprowadź zasilanie i magazynowanie do działającego multibloku. Udowodnij, że twoje stalowe imperium może pracować całą noc."]
-			x: 8.0d
-			y: 24.0d
+			x: 8.00d
+			y: 18.72d
 			icon: "immersiveengineering:capacitor_hv"
 			dependencies: ["A136000000000109"]
 			tasks: [
 				{ id: "A14600000000010A" type: "item" item: "immersiveengineering:capacitor_hv" count: 1L consume_items: false },
 				{ id: "A18600000000010A" type: "checkmark" }
 			]
-			rewards: [{ id: "A15600000000010A" type: "item" item: "minecraft:experience_bottle" count: 12 }]
+			rewards: [{ id: "A17600000000010A" type: "random" table_id: 7034622617952714786L }, { id: "A18600000000010A" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

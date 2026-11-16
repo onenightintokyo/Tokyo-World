@@ -1,0 +1,73 @@
+name: Build Tokyo World Questbook v1.8
+
+on:
+  push:
+    branches:
+      - feature/questbook-four-stages-ftb-claims-rewards-art-v18
+    paths:
+      - 'tools/tokyo-questbook-v18.py'
+      - 'tools/render_tokyo_stage_banners.py'
+      - 'tools/validate_questbook_stages.py'
+      - '.github/workflows/build-questbook-v18.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-questbook:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout Tokyo World
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+      - name: Install Pillow
+        run: python3 -m pip install --user pillow
+      - name: Generate four quest stages and random reward tables
+        run: python3 tools/tokyo-questbook-v18.py
+      - name: Render Tokyo World neon/sakura stage artwork
+        run: python3 tools/render_tokyo_stage_banners.py
+      - name: Validate generated book, loot and banners
+        run: |
+          python3 tools/validate_questbook_stages.py
+          python3 tools/validate_wave06.py
+      - name: Verify quest IDs unchanged from main
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import re
+          import subprocess
+          from pathlib import Path
+          chapters = Path("config/ftbquests/quests/chapters")
+          pattern = re.compile(r'(?m)^\s*id: "(A13[0-9A-F]{13})"')
+          before = set()
+          after = set()
+          for path in chapters.glob("*.snbt"):
+              previous = subprocess.check_output(
+                  ["git","show",f"origin/main:{path.as_posix()}"],
+                  text=True)
+              before.update(pattern.findall(previous))
+              after.update(pattern.findall(path.read_text("utf8")))
+          assert before == after, f"Quest ID changes: -{before-after}, +{after-before}"
+          print(f"OK: preserved all {len(before)} quest IDs")
+          PY
+      - name: Commit the generated game assets to the feature branch
+        shell: bash
+        run: |
+          git config user.name "tokyo-world-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/ftbquests/quests kubejs/assets/tokyoworld/textures/gui/quests docs/TOKYO_WORLD_QUESTBOOK_V18.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Tokyo World v1.8: four stages, safe random loot, centered neon quest banners"
+            git push origin HEAD:feature/questbook-four-stages-ftb-claims-rewards-art-v18
+          fi
+      - name: Upload all four rendered stage banners for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-v18-stage-art
+          path: kubejs/assets/tokyoworld/textures/gui/quests/tokyo_stage_*.png
+          if-no-files-found: error
+          retention-days: 30

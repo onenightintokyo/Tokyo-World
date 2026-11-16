@@ -1,13 +1,13 @@
 {
 	filename: "steel_alloy_empire"
-	title: "&c&l27 · Imperium metalu"
+	title: "&c&l32 · Imperium metalu"
 	group: "A110000000000003"
 	id: "A12000000000001C"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "enderio:alloy_smelter"
-	order_index: 27
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
+	order_index: 32
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000177"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Pierwsza huta"
 			description: ["Najlepsze konstrukcje potrzebują materiałów, których nie znajdziesz w gotowej skrzyni. Zbuduj własne zaplecze hutnicze. Zacznij od sprawy „Pierwsza huta”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "immersiveengineering:blast_furnace"
 			dependencies: ["A130000000000132", "A130000000000054"]
 			tasks: [{ id: "A140000000000177" type: "item" item: "immersiveengineering:blast_furnace" count: 2L consume_items: false }, { id: "A180000000000177" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000177" type: "item" item: "minecraft:golden_carrot" count: 8 }]
+			rewards: [{ id: "A170000000000177" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000178"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Stal konstrukcyjna"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Stal konstrukcyjna”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "immersiveengineering:ingot_steel"
 			dependencies: ["A130000000000177"]
 			tasks: [{ id: "A140000000000178" type: "item" item: "immersiveengineering:ingot_steel" count: 48L consume_items: false }, { id: "A180000000000178" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000178" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000178" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000179"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Warsztat obróbki"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Warsztat obróbki”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "immersiveengineering:workbench"
 			dependencies: ["A130000000000177"]
 			tasks: [{ id: "A140000000000179" type: "item" item: "immersiveengineering:workbench" count: 2L consume_items: false }, { id: "A180000000000179" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000179" type: "item" item: "minecraft:diamond" count: 1 }]
+			rewards: [{ id: "A170000000000179" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000017A"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Cewki wysokiego napięcia"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Cewki wysokiego napięcia”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "immersiveengineering:capacitor_hv"
 			dependencies: ["A130000000000178"]
 			tasks: [{ id: "A14000000000017A" type: "item" item: "immersiveengineering:capacitor_hv" count: 2L consume_items: false }, { id: "A18000000000017A" type: "item" item: "minecraft:copper_ingot" count: 8L consume_items: false }]
-			rewards: [{ id: "A15000000000017A" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A17000000000017A" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000017B"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Kruszenie przemysłowe"
 			description: ["Wcześniej zamknąłeś już sprawę „Warsztat obróbki”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Kruszenie przemysłowe”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "immersiveengineering:crusher"
 			dependencies: ["A130000000000179"]
 			tasks: [{ id: "A14000000000017B" type: "item" item: "immersiveengineering:crusher" count: 2L consume_items: false }, { id: "A18000000000017B" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000017B" type: "item" item: "minecraft:emerald" count: 4 }]
+			rewards: [{ id: "A17000000000017B" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000017C"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Prasy hutnicze"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Prasy hutnicze”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "immersiveengineering:metal_press"
 			dependencies: ["A13000000000017A"]
 			tasks: [{ id: "A14000000000017C" type: "item" item: "immersiveengineering:metal_press" count: 2L consume_items: false }, { id: "A18000000000017C" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000017C" type: "item" item: "create:andesite_alloy" count: 4 }]
+			rewards: [{ id: "A17000000000017C" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000017D"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Kondensatory Ender IO"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Kondensatory Ender IO”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "enderio:basic_capacitor"
 			dependencies: ["A13000000000017B"]
 			tasks: [{ id: "A14000000000017D" type: "item" item: "enderio:basic_capacitor" count: 16L consume_items: false }, { id: "A18000000000017D" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000017D" type: "item" item: "minecraft:golden_carrot" count: 8 }]
+			rewards: [{ id: "A17000000000017D" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000017E"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Obudowy wielofunkcyjne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Obudowy wielofunkcyjne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "enderio:void_chassis"
 			dependencies: ["A13000000000017C", "A13000000000017D"]
 			tasks: [{ id: "A14000000000017E" type: "item" item: "enderio:void_chassis" count: 12L consume_items: false }, { id: "A18000000000017E" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }, { id: "A1D000000000017E" type: "checkmark" }]
-			rewards: [{ id: "A15000000000017E" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A17000000000017E" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000017F"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Wytapiacz stopów"
 			description: ["Wcześniej zamknąłeś już sprawę „Obudowy wielofunkcyjne”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Wytapiacz stopów”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "enderio:alloy_smelter"
 			dependencies: ["A13000000000017E"]
 			tasks: [{ id: "A14000000000017F" type: "item" item: "enderio:alloy_smelter" count: 4L consume_items: false }, { id: "A18000000000017F" type: "item" item: "minecraft:iron_ingot" count: 24L consume_items: false }]
-			rewards: [{ id: "A15000000000017F" type: "item" item: "minecraft:diamond" count: 1 }]
+			rewards: [{ id: "A17000000000017F" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000180"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Młyny SAG"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Młyny SAG”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "enderio:sag_mill"
 			dependencies: ["A13000000000017E"]
 			tasks: [{ id: "A140000000000180" type: "item" item: "enderio:sag_mill" count: 4L consume_items: false }, { id: "A180000000000180" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000180" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000180" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000181"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Stopy przewodzące"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Stopy przewodzące”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 24.0d
+			x: 2.12d
+			y: 18.72d
 			icon: "enderio:conductive_alloy_ingot"
 			dependencies: ["A13000000000017F"]
 			tasks: [{ id: "A140000000000181" type: "item" item: "enderio:conductive_alloy_ingot" count: 24L consume_items: false }, { id: "A180000000000181" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000181" type: "item" item: "minecraft:emerald" count: 4 }]
+			rewards: [{ id: "A170000000000181" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000182"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Stopy energetyczne"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Stopy energetyczne”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 24.0d
+			x: 13.88d
+			y: 18.72d
 			icon: "enderio:energetic_alloy_ingot"
 			dependencies: ["A130000000000180"]
 			tasks: [{ id: "A140000000000182" type: "item" item: "enderio:energetic_alloy_ingot" count: 24L consume_items: false }, { id: "A180000000000182" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000182" type: "item" item: "create:andesite_alloy" count: 4 }]
+			rewards: [{ id: "A170000000000182" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000183"
@@ -197,12 +197,12 @@
 			hide_dependent_lines: false
 			title: "Stopy pulsujące"
 			description: ["Wcześniej zamknąłeś już sprawę „Stopy przewodzące”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Stopy pulsujące”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 1.0d
-			y: 28.0d
+			x: 2.12d
+			y: 21.84d
 			icon: "enderio:vibrant_alloy_ingot"
 			dependencies: ["A130000000000181"]
 			tasks: [{ id: "A140000000000183" type: "item" item: "enderio:vibrant_alloy_ingot" count: 16L consume_items: false }, { id: "A180000000000183" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
-			rewards: [{ id: "A150000000000183" type: "item" item: "minecraft:golden_carrot" count: 8 }]
+			rewards: [{ id: "A170000000000183" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000184"
@@ -212,12 +212,12 @@
 			hide_dependent_lines: false
 			title: "Elektrum techniczne"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Elektrum techniczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 15.0d
-			y: 28.0d
+			x: 13.88d
+			y: 21.84d
 			icon: "thermal:electrum_ingot"
 			dependencies: ["A130000000000182"]
 			tasks: [{ id: "A140000000000184" type: "item" item: "thermal:electrum_ingot" count: 24L consume_items: false }, { id: "A180000000000184" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
-			rewards: [{ id: "A150000000000184" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000184" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000185"
@@ -227,12 +227,12 @@
 			hide_dependent_lines: false
 			title: "Invar specjalistyczny"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Invar specjalistyczny”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 32.0d
+			x: 8.00d
+			y: 24.96d
 			icon: "thermal:invar_ingot"
 			dependencies: ["A130000000000183", "A130000000000184"]
 			tasks: [{ id: "A140000000000185" type: "item" item: "thermal:invar_ingot" count: 32L consume_items: false }, { id: "A180000000000185" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }, { id: "A1D0000000000185" type: "checkmark" }]
-			rewards: [{ id: "A150000000000185" type: "item" item: "minecraft:diamond" count: 1 }]
+			rewards: [{ id: "A170000000000185" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000186"
@@ -242,12 +242,12 @@
 			hide_dependent_lines: false
 			title: "TOKYO ALLOY CONGLOMERATE"
 			description: ["Jesteś przygotowany na maszyny wymagające naprawdę wyjątkowych stopów. Ostatni sprawdzian to „TOKYO ALLOY CONGLOMERATE”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 36.0d
+			x: 8.00d
+			y: 28.08d
 			icon: "enderio:alloy_smelter"
 			dependencies: ["A130000000000185"]
 			tasks: [{ id: "A140000000000186" type: "item" item: "enderio:alloy_smelter" count: 8L consume_items: false }, { id: "A180000000000186" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A190000000000186" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D0000000000186" type: "checkmark" }]
-			rewards: [{ id: "A150000000000186" type: "item" item: "enderio:vibrant_alloy_ingot" count: 4 }, { id: "A160000000000186" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A170000000000186" type: "random" table_id: 7034622617952714820L }, { id: "A180000000000186" type: "item" item: "minecraft:experience_bottle" count: 10 }]
 		}
 	]
 }

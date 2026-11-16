@@ -1,18 +1,18 @@
 {
 	filename: "wave06_alex_caves"
-	title: "&c&l33 · Sześć głębin"
+	title: "&c&l36 · Sześć głębin"
 	group: "A110000000000003"
 	id: "A126000000000004"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "alexscaves:amber"
-	order_index: 33
+	order_index: 36
 	images: [{
-		image: "tokyoworld:textures/gui/quests/tokyo_late.png"
-		width: 20.0d
-		height: 7.0d
-		x: -2.0d
-		y: -9.0d
+		image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png"
+		width: 24.0d
+		height: 7.8d
+		x: 8.0d
+		y: -6.5d
 		order: -1
 	}]
 	quest_links: [ ]
@@ -25,15 +25,15 @@
 			hide_dependent_lines: false
 			title: "Mapa nieznanego"
 			description: ["Głębokie jaskinie nie pojawiają się obok każdego tunelu. Wyrusz po trop, przygotuj mapę i sprzęt na długą ekspedycję."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "minecraft:map"
 			dependencies: ["A130000000000146"]
 			tasks: [
 				{ id: "A146000000000301" type: "item" item: "minecraft:map" count: 1L consume_items: false },
 				{ id: "A186000000000301" type: "item" item: "minecraft:spyglass" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000301" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000301" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000302"
@@ -43,14 +43,14 @@
 			hide_dependent_lines: false
 			title: "Podziemny relikt"
 			description: ["Pierwsza rzadkość to dowód, że zwykłe kopanie prowadzi już do zupełnie innych miejsc. Odnajdź bursztyn z pradawnych jaskiń."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "alexscaves:amber"
 			dependencies: ["A136000000000301"]
 			tasks: [
 				{ id: "A146000000000302" type: "item" item: "alexscaves:amber" count: 4L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000302" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000302" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000303"
@@ -60,14 +60,14 @@
 			hide_dependent_lines: false
 			title: "Magnetyczny szlak"
 			description: ["W magnetycznych jaskiniach nawet zwykłe metale zachowują się niecodziennie. Zdobądź magnes i zrozum lokalne mechaniki."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "alexscaves:azure_magnet"
 			dependencies: ["A136000000000301"]
 			tasks: [
 				{ id: "A146000000000303" type: "item" item: "alexscaves:azure_magnet" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000303" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000303" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000304"
@@ -77,14 +77,14 @@
 			hide_dependent_lines: false
 			title: "Ciemność pod wodą"
 			description: ["Abyssal Chasm nie jest miejscem na lekki spacer. Zdobądź abyssmarine i przygotuj bezpieczną drogę powrotu."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "alexscaves:abyssmarine"
 			dependencies: ["A136000000000302"]
 			tasks: [
 				{ id: "A146000000000304" type: "item" item: "alexscaves:abyssmarine" count: 8L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000304" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000304" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000305"
@@ -94,14 +94,14 @@
 			hide_dependent_lines: false
 			title: "Radioaktywny pył"
 			description: ["W toksycznych jaskiniach bez ochrony lepiej nie zdejmować hełmu. Znajdź ślady radrocku i wróć do bazy cało."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "alexscaves:acidic_radrock"
 			dependencies: ["A136000000000303"]
 			tasks: [
 				{ id: "A146000000000305" type: "item" item: "alexscaves:acidic_radrock" count: 8L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000305" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000305" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000306"
@@ -111,14 +111,14 @@
 			hide_dependent_lines: false
 			title: "Słodka pułapka"
 			description: ["Candy Cavity wygląda jak sen, ale jest pełna rzeczy, które wcale nie chcą zostać znalezione. Przynieś fragment cukrowej scenerii."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "alexscaves:candy_cane"
 			dependencies: ["A136000000000303"]
 			tasks: [
 				{ id: "A146000000000306" type: "item" item: "alexscaves:candy_cane" count: 4L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000306" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000306" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000307"
@@ -128,14 +128,14 @@
 			hide_dependent_lines: false
 			title: "Nadzieja w mroku"
 			description: ["W Forlorn Hollows światło to coś więcej niż dekoracja. Przygotuj biologiczne pochodnie, zanim ruszysz w głąb."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "alexscaves:bioluminescent_torch"
 			dependencies: ["A136000000000304"]
 			tasks: [
 				{ id: "A146000000000307" type: "item" item: "alexscaves:bioluminescent_torch" count: 8L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000307" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000307" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000308"
@@ -145,8 +145,8 @@
 			hide_dependent_lines: false
 			title: "Sześć nieznanych światów"
 			description: ["Zbierz ślady z różnych biomów Alex's Caves. Jeżeli ominąłeś jakieś miejsce, powróć przygotowany, a nie z pustymi kieszeniami."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "alexscaves:amber"
 			dependencies: ["A136000000000305", "A136000000000306", "A136000000000307"]
 			tasks: [
@@ -154,7 +154,7 @@
 				{ id: "A186000000000308" type: "item" item: "alexscaves:amber" count: 1L consume_items: false },
 				{ id: "A196000000000308" type: "item" item: "alexscaves:abyssmarine" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000308" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000308" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000309"
@@ -164,15 +164,15 @@
 			hide_dependent_lines: false
 			title: "Powrót spod ziemi"
 			description: ["Twoja ekipa ma teraz własne podziemne archiwum. Zorganizuj magazyn znalezisk i udowodnij, że masz środki na kolejną wyprawę."]
-			x: 8.0d
-			y: 20.0d
+			x: 8.00d
+			y: 15.60d
 			icon: "sophisticatedstorage:controller"
 			dependencies: ["A136000000000308"]
 			tasks: [
 				{ id: "A146000000000309" type: "item" item: "sophisticatedstorage:controller" count: 1L consume_items: false },
 				{ id: "A186000000000309" type: "checkmark" }
 			]
-			rewards: [{ id: "A156000000000309" type: "item" item: "minecraft:experience_bottle" count: 12 }]
+			rewards: [{ id: "A176000000000309" type: "random" table_id: 7034622617952714820L }, { id: "A186000000000309" type: "item" item: "minecraft:experience_bottle" count: 10 }]
 		}
 	]
 }

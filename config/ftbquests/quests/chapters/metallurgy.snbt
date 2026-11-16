@@ -1,13 +1,13 @@
 {
 	filename: "metallurgy"
-	title: "&e&l12 · Sekrety stopów"
+	title: "&b&l12 · Sekrety stopów"
 	group: "A110000000000002"
 	id: "A120000000000013"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "thermal:tin_ingot"
 	order_index: 12
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000FB"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Cyna"
 			description: ["Nie każdy metal nadaje się do każdej maszyny. Czas zrozumieć, kiedy liczy się skład materiału, a nie jego ilość. Zacznij od sprawy „Cyna”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "thermal:tin_ingot"
 			dependencies: ["A130000000000006"]
 			tasks: [{ id: "A1400000000000FB" type: "item" item: "thermal:tin_ingot" count: 24L consume_items: false }]
-			rewards: [{ id: "A1500000000000FB" type: "item" item: "minecraft:lapis_lazuli" count: 8 }]
+			rewards: [{ id: "A1700000000000FB" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000FC"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Ołów"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Ołów”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "thermal:lead_ingot"
 			dependencies: ["A1300000000000FB"]
 			tasks: [{ id: "A1400000000000FC" type: "item" item: "thermal:lead_ingot" count: 24L consume_items: false }]
-			rewards: [{ id: "A1500000000000FC" type: "item" item: "minecraft:slime_ball" count: 4 }]
+			rewards: [{ id: "A1700000000000FC" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000FD"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Nikiel"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Nikiel”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "thermal:nickel_ingot"
 			dependencies: ["A1300000000000FB"]
 			tasks: [{ id: "A1400000000000FD" type: "item" item: "thermal:nickel_ingot" count: 24L consume_items: false }]
-			rewards: [{ id: "A1500000000000FD" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A1700000000000FD" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000FE"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Srebro"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Srebro”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "thermal:silver_ingot"
 			dependencies: ["A1300000000000FC"]
 			tasks: [{ id: "A1400000000000FE" type: "item" item: "thermal:silver_ingot" count: 18L consume_items: false }]
-			rewards: [{ id: "A1500000000000FE" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A1700000000000FE" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000FF"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Elektrum"
 			description: ["Wcześniej zamknąłeś już sprawę „Nikiel”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Elektrum”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "thermal:electrum_ingot"
 			dependencies: ["A1300000000000FD"]
 			tasks: [{ id: "A1400000000000FF" type: "item" item: "thermal:electrum_ingot" count: 12L consume_items: false }]
-			rewards: [{ id: "A1500000000000FF" type: "item" item: "minecraft:experience_bottle" count: 8 }]
+			rewards: [{ id: "A1700000000000FF" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000100"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Brąz"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Brąz”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "thermal:bronze_ingot"
 			dependencies: ["A1300000000000FE"]
 			tasks: [{ id: "A140000000000100" type: "item" item: "thermal:bronze_ingot" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000100" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A170000000000100" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000101"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Invar"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Invar”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "thermal:invar_ingot"
 			dependencies: ["A1300000000000FF"]
 			tasks: [{ id: "A140000000000101" type: "item" item: "thermal:invar_ingot" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000101" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A170000000000101" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000102"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Rudy cyny"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Rudy cyny”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "thermal:tin_ore"
 			dependencies: ["A130000000000100", "A130000000000101"]
 			tasks: [{ id: "A140000000000102" type: "item" item: "thermal:tin_ore" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000102" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A170000000000102" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000103"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Rudy srebra"
 			description: ["Wcześniej zamknąłeś już sprawę „Rudy cyny”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Rudy srebra”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "thermal:silver_ore"
 			dependencies: ["A130000000000102"]
 			tasks: [{ id: "A140000000000103" type: "item" item: "thermal:silver_ore" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000103" type: "item" item: "minecraft:slime_ball" count: 8 }]
+			rewards: [{ id: "A170000000000103" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000104"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Rudy niklu"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Rudy niklu”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "thermal:nickel_ore"
 			dependencies: ["A130000000000102"]
 			tasks: [{ id: "A140000000000104" type: "item" item: "thermal:nickel_ore" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000104" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A170000000000104" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000105"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Rudy ołowiu"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Rudy ołowiu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 24.0d
+			x: 2.12d
+			y: 18.72d
 			icon: "thermal:lead_ore"
 			dependencies: ["A130000000000103"]
 			tasks: [{ id: "A140000000000105" type: "item" item: "thermal:lead_ore" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000105" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A170000000000105" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000106"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Apatyt"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Apatyt”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 24.0d
+			x: 13.88d
+			y: 18.72d
 			icon: "thermal:apatite_ore"
 			dependencies: ["A130000000000104"]
 			tasks: [{ id: "A140000000000106" type: "item" item: "thermal:apatite_ore" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000106" type: "item" item: "minecraft:slime_ball" count: 4 }]
+			rewards: [{ id: "A170000000000106" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000107"
@@ -197,12 +197,12 @@
 			hide_dependent_lines: false
 			title: "Cynober"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Cynober”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 28.0d
+			x: 8.00d
+			y: 21.84d
 			icon: "thermal:cinnabar_ore"
 			dependencies: ["A130000000000105", "A130000000000106"]
 			tasks: [{ id: "A140000000000107" type: "item" item: "thermal:cinnabar_ore" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000107" type: "item" item: "minecraft:amethyst_shard" count: 8 }]
+			rewards: [{ id: "A170000000000107" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000108"
@@ -212,12 +212,12 @@
 			hide_dependent_lines: false
 			title: "Siarka"
 			description: ["Zamiast przypadkowych sztabek masz materiały dobrane do zadania. Ostatni sprawdzian to „Siarka”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 32.0d
+			x: 8.00d
+			y: 24.96d
 			icon: "thermal:sulfur_ore"
 			dependencies: ["A130000000000107"]
 			tasks: [{ id: "A140000000000108" type: "item" item: "thermal:sulfur_ore" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000108" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A160000000000108" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A170000000000108" type: "random" table_id: 7034622617952714786L }, { id: "A180000000000108" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

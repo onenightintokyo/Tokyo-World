@@ -1,0 +1,14 @@
+# Tokyo World — FTB Chunks 1.20.1 / Forge, default for new world.
+# Keep force-loaded chunks low on 40-player technology servers.
+{
+	max_claimed_chunks: 128
+	hard_team_claim_limit: 128
+	max_idle_days_before_unclaim: 45.0d
+	party_limit_mode: "largest"
+	force_loading: {
+		max_force_loaded_chunks: 4
+		hard_team_force_limit: 4
+		force_load_mode: "never"
+		max_idle_days_before_unforce: 7.0d
+	}
+}

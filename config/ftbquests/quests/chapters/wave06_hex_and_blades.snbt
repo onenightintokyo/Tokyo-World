@@ -1,18 +1,18 @@
 {
 	filename: "wave06_hex_and_blades"
-	title: "&e&l25 · Hexy i ostrza"
-	group: "A110000000000002"
+	title: "&d&l30 · Hexy i ostrza"
+	group: "A110000000000005"
 	id: "A126000000000003"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "minecraft:amethyst_shard"
-	order_index: 25
+	order_index: 30
 	images: [{
-		image: "tokyoworld:textures/gui/quests/tokyo_mid.png"
-		width: 20.0d
-		height: 7.0d
-		x: -2.0d
-		y: -9.0d
+		image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png"
+		width: 24.0d
+		height: 7.8d
+		x: 8.0d
+		y: -6.5d
 		order: -1
 	}]
 	quest_links: [ ]
@@ -25,14 +25,14 @@
 			hide_dependent_lines: false
 			title: "Szmer ametystu"
 			description: ["Zwykły kryształ w ręku maga potrafi znaczyć więcej niż bryła diamentu. Zbierz zapas do pierwszych eksperymentów."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "minecraft:amethyst_shard"
 			dependencies: ["A1300000000000A0"]
 			tasks: [
 				{ id: "A146000000000201" type: "item" item: "minecraft:amethyst_shard" count: 24L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000201" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000201" type: "random" table_id: 7034622617952714803L }]
 		},
 		{
 			id: "A136000000000202"
@@ -42,14 +42,14 @@
 			hide_dependent_lines: false
 			title: "Pył na dłoniach"
 			description: ["Hex Casting nie wybacza improwizacji. Naucz się przygotowywać własne media, zamiast liczyć na przypadkowe znaleziska."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "hexcasting:amethyst_dust"
 			dependencies: ["A136000000000201"]
 			tasks: [
 				{ id: "A146000000000202" type: "item" item: "hexcasting:amethyst_dust" count: 8L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000202" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000202" type: "random" table_id: 7034622617952714803L }]
 		},
 		{
 			id: "A136000000000203"
@@ -59,14 +59,14 @@
 			hide_dependent_lines: false
 			title: "Rysowanie rzeczywistości"
 			description: ["Pierwsze wzory wyglądają niewinnie, dopóki nie musisz powtórzyć ich w środku walki. Zbuduj różdżkę i poznaj zasady świata Hex."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "hexcasting:staff/oak"
 			dependencies: ["A136000000000202"]
 			tasks: [
 				{ id: "A146000000000203" type: "item" item: "hexcasting:staff/oak" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000203" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000203" type: "random" table_id: 7034622617952714803L }]
 		},
 		{
 			id: "A136000000000204"
@@ -76,14 +76,14 @@
 			hide_dependent_lines: false
 			title: "Zapamiętaj ten wzór"
 			description: ["Dobry mag nie próbuje wszystkiego od nowa. Przygotuj nośnik zaklęć i przetestuj swoje pierwsze stabilne kombinacje."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "hexcasting:cypher"
 			dependencies: ["A136000000000203"]
 			tasks: [
 				{ id: "A146000000000204" type: "item" item: "hexcasting:cypher" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000204" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000204" type: "random" table_id: 7034622617952714803L }]
 		},
 		{
 			id: "A136000000000205"
@@ -93,14 +93,14 @@
 			hide_dependent_lines: false
 			title: "Stal zamiast drewna"
 			description: ["Nie każde niebezpieczeństwo da się przekonać zaklęciem. Naucz się walczyć kataną, zanim spotkasz silniejszego przeciwnika."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "simplyswords:iron_katana"
 			dependencies: ["A136000000000201"]
 			tasks: [
 				{ id: "A146000000000205" type: "item" item: "simplyswords:iron_katana" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000205" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000205" type: "random" table_id: 7034622617952714803L }]
 		},
 		{
 			id: "A136000000000206"
@@ -110,14 +110,14 @@
 			hide_dependent_lines: false
 			title: "Długi zasięg"
 			description: ["Glewia wymaga miejsca i cierpliwości, lecz potrafi uratować życie przy nieprzyjemnym spotkaniu w lochach."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "simplyswords:iron_glaive"
 			dependencies: ["A136000000000205"]
 			tasks: [
 				{ id: "A146000000000206" type: "item" item: "simplyswords:iron_glaive" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000206" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000206" type: "random" table_id: 7034622617952714803L }]
 		},
 		{
 			id: "A136000000000207"
@@ -127,14 +127,14 @@
 			hide_dependent_lines: false
 			title: "Zaklęcie w ręku"
 			description: ["Kiedy wzory zaczynają mieć sens, potrzebujesz bezpieczniejszego miejsca do ich przechowywania. To pierwsza prawdziwa biblioteka maga."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "hexcasting:spellbook"
 			dependencies: ["A136000000000204"]
 			tasks: [
 				{ id: "A146000000000207" type: "item" item: "hexcasting:spellbook" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000207" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000207" type: "random" table_id: 7034622617952714803L }]
 		},
 		{
 			id: "A136000000000208"
@@ -144,14 +144,14 @@
 			hide_dependent_lines: false
 			title: "Diamentowa broń"
 			description: ["Zbyt wiele wypraw kończy się, bo najlepsze ostrze zostało w domu. Zbuduj mocniejszą broń, ale nie zastępuj nią przygotowania."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "simplyswords:diamond_katana"
 			dependencies: ["A136000000000206"]
 			tasks: [
 				{ id: "A146000000000208" type: "item" item: "simplyswords:diamond_katana" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000208" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000208" type: "random" table_id: 7034622617952714803L }]
 		},
 		{
 			id: "A136000000000209"
@@ -161,15 +161,15 @@
 			hide_dependent_lines: false
 			title: "Dwa style, jedna drużyna"
 			description: ["Przećwicz z ekipą walkę z użyciem przygotowanych zaklęć i broni. Zdobycie przedmiotów to tylko połowa nauki."]
-			x: 8.0d
-			y: 20.0d
+			x: 8.00d
+			y: 15.60d
 			icon: "hexcasting:spellbook"
 			dependencies: ["A136000000000207", "A136000000000208"]
 			tasks: [
 				{ id: "A146000000000209" type: "checkmark" },
 				{ id: "A186000000000209" type: "item" item: "hexcasting:spellbook" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000209" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000209" type: "random" table_id: 7034622617952714803L }]
 		},
 		{
 			id: "A13600000000020A"
@@ -179,15 +179,15 @@
 			hide_dependent_lines: false
 			title: "Arkanista i wojownik"
 			description: ["Przed następnym bossem przygotuj i pełny zestaw bojowy, i działającą księgę wzorów. Niech obie ścieżki współpracują."]
-			x: 8.0d
-			y: 24.0d
+			x: 8.00d
+			y: 18.72d
 			icon: "simplyswords:diamond_glaive"
 			dependencies: ["A136000000000209"]
 			tasks: [
 				{ id: "A14600000000020A" type: "item" item: "simplyswords:diamond_glaive" count: 1L consume_items: false },
 				{ id: "A18600000000020A" type: "checkmark" }
 			]
-			rewards: [{ id: "A15600000000020A" type: "item" item: "minecraft:experience_bottle" count: 12 }]
+			rewards: [{ id: "A17600000000020A" type: "random" table_id: 7034622617952714803L }, { id: "A18600000000020A" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

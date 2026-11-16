@@ -1,13 +1,13 @@
 {
 	filename: "mystical_advanced"
-	title: "&c&l30 · Nasiona niemożliwego"
-	group: "A110000000000003"
+	title: "&d&l27 · Nasiona niemożliwego"
+	group: "A110000000000005"
 	id: "A12000000000000D"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "mysticalagriculture:infusion_altar"
-	order_index: 30
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
+	order_index: 27
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000A1"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Esencja Inferium"
 			description: ["Niektóre plony dają więcej niż jedzenie. Magia roślin wymaga jednak cierpliwości i właściwego podłoża. Zacznij od sprawy „Esencja Inferium”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "mysticalagriculture:inferium_essence"
 			dependencies: ["A13000000000001E"]
 			tasks: [{ id: "A1400000000000A1" type: "item" item: "mysticalagriculture:inferium_essence" count: 48L consume_items: false }]
-			rewards: [{ id: "A1500000000000A1" type: "item" item: "minecraft:golden_carrot" count: 8 }]
+			rewards: [{ id: "A1700000000000A1" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000A2"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Kryształy Prosperity"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Kryształy Prosperity”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "mysticalagriculture:prosperity_gemstone"
 			dependencies: ["A1300000000000A1"]
 			tasks: [{ id: "A1400000000000A2" type: "item" item: "mysticalagriculture:prosperity_gemstone" count: 4L consume_items: false }]
-			rewards: [{ id: "A1500000000000A2" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A1700000000000A2" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000A3"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Kryształ infuzji"
 			description: ["Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Kryształ infuzji”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "mysticalagriculture:infusion_crystal"
 			dependencies: ["A1300000000000A1"]
 			tasks: [{ id: "A1400000000000A3" type: "item" item: "mysticalagriculture:infusion_crystal" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000A3" type: "item" item: "minecraft:bone_meal" count: 4 }]
+			rewards: [{ id: "A1700000000000A3" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000A4"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Pierwsze podłoże esencji"
 			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Pierwsze podłoże esencji”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "mysticalagriculture:inferium_farmland"
 			dependencies: ["A1300000000000A2"]
 			tasks: [{ id: "A1400000000000A4" type: "item" item: "mysticalagriculture:inferium_farmland" count: 4L consume_items: false }]
-			rewards: [{ id: "A1500000000000A4" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A1700000000000A4" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000A5"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Ulepszone podłoże esencji"
 			description: ["Wcześniej zamknąłeś już sprawę „Kryształ infuzji”. Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Ulepszone podłoże esencji”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "mysticalagriculture:prudentium_farmland"
 			dependencies: ["A1300000000000A3"]
 			tasks: [{ id: "A1400000000000A5" type: "item" item: "mysticalagriculture:prudentium_farmland" count: 4L consume_items: false }]
-			rewards: [{ id: "A1500000000000A5" type: "item" item: "minecraft:honeycomb" count: 8 }]
+			rewards: [{ id: "A1700000000000A5" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000A6"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Ołtarz infuzji"
 			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Ołtarz infuzji”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "mysticalagriculture:infusion_altar"
 			dependencies: ["A1300000000000A4"]
 			tasks: [{ id: "A1400000000000A6" type: "item" item: "mysticalagriculture:infusion_altar" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000A6" type: "item" item: "minecraft:bone_meal" count: 4 }]
+			rewards: [{ id: "A1700000000000A6" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000A7"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Piedestały infuzji"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Piedestały infuzji”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "mysticalagriculture:infusion_pedestal"
 			dependencies: ["A1300000000000A5"]
 			tasks: [{ id: "A1400000000000A7" type: "item" item: "mysticalagriculture:infusion_pedestal" count: 4L consume_items: false }]
-			rewards: [{ id: "A1500000000000A7" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A1700000000000A7" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000A8"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Naczynie esencji"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Naczynie esencji”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "mysticalagriculture:essence_vessel"
 			dependencies: ["A1300000000000A6", "A1300000000000A7"]
 			tasks: [{ id: "A1400000000000A8" type: "item" item: "mysticalagriculture:essence_vessel" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000A8" type: "item" item: "minecraft:honeycomb" count: 4 }]
+			rewards: [{ id: "A1700000000000A8" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000A9"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Przerób nasion"
 			description: ["Wcześniej zamknąłeś już sprawę „Naczynie esencji”. Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Przerób nasion”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "mysticalagriculture:seed_reprocessor"
 			dependencies: ["A1300000000000A8"]
 			tasks: [{ id: "A1400000000000A9" type: "item" item: "mysticalagriculture:seed_reprocessor" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000A9" type: "item" item: "minecraft:experience_bottle" count: 8 }]
+			rewards: [{ id: "A1700000000000A9" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000AA"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Żniwiarz mistyczny"
 			description: ["Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Żniwiarz mistyczny”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "mysticalagriculture:harvester"
 			dependencies: ["A1300000000000A8"]
 			tasks: [{ id: "A1400000000000AA" type: "item" item: "mysticalagriculture:harvester" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000AA" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A1700000000000AA" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000AB"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Esencja Tertium"
 			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Esencja Tertium”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 1.0d
-			y: 24.0d
+			x: 2.12d
+			y: 18.72d
 			icon: "mysticalagriculture:tertium_essence"
 			dependencies: ["A1300000000000A9"]
 			tasks: [{ id: "A1400000000000AB" type: "item" item: "mysticalagriculture:tertium_essence" count: 12L consume_items: false }]
-			rewards: [{ id: "A1500000000000AB" type: "item" item: "minecraft:honeycomb" count: 4 }]
+			rewards: [{ id: "A1700000000000AB" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000AC"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Esencja Imperium"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Esencja Imperium”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 15.0d
-			y: 24.0d
+			x: 13.88d
+			y: 18.72d
 			icon: "mysticalagriculture:imperium_essence"
 			dependencies: ["A1300000000000AA"]
 			tasks: [{ id: "A1400000000000AC" type: "item" item: "mysticalagriculture:imperium_essence" count: 6L consume_items: false }]
-			rewards: [{ id: "A1500000000000AC" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A1700000000000AC" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000AD"
@@ -197,12 +197,12 @@
 			hide_dependent_lines: false
 			title: "Esencja Supremium"
 			description: ["Wcześniej zamknąłeś już sprawę „Esencja Tertium”. Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Esencja Supremium”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 1.0d
-			y: 28.0d
+			x: 2.12d
+			y: 21.84d
 			icon: "mysticalagriculture:supremium_essence"
 			dependencies: ["A1300000000000AB"]
 			tasks: [{ id: "A1400000000000AD" type: "item" item: "mysticalagriculture:supremium_essence" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000AD" type: "item" item: "minecraft:bone_meal" count: 8 }]
+			rewards: [{ id: "A1700000000000AD" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000AE"
@@ -212,12 +212,12 @@
 			hide_dependent_lines: false
 			title: "Supremium farmland"
 			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Supremium farmland”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 15.0d
-			y: 28.0d
+			x: 13.88d
+			y: 21.84d
 			icon: "mysticalagriculture:supremium_farmland"
 			dependencies: ["A1300000000000AC"]
 			tasks: [{ id: "A1400000000000AE" type: "item" item: "mysticalagriculture:supremium_farmland" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000AE" type: "item" item: "minecraft:honeycomb" count: 4 }]
+			rewards: [{ id: "A1700000000000AE" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000AF"
@@ -227,12 +227,12 @@
 			hide_dependent_lines: false
 			title: "Mistrzowski kryształ"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Mistrzowski kryształ”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 32.0d
+			x: 8.00d
+			y: 24.96d
 			icon: "mysticalagriculture:master_infusion_crystal"
 			dependencies: ["A1300000000000AD", "A1300000000000AE"]
 			tasks: [{ id: "A1400000000000AF" type: "item" item: "mysticalagriculture:master_infusion_crystal" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000AF" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A1700000000000AF" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000B0"
@@ -242,12 +242,12 @@
 			hide_dependent_lines: false
 			title: "Piedestał przebudzenia"
 			description: ["Twoje pola potrafią produkować materiały, których kiedyś trzeba było szukać godzinami. Ostatni sprawdzian to „Piedestał przebudzenia”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 36.0d
+			x: 8.00d
+			y: 28.08d
 			icon: "mysticalagriculture:awakening_pedestal"
 			dependencies: ["A1300000000000AF"]
 			tasks: [{ id: "A1400000000000B0" type: "item" item: "mysticalagriculture:awakening_pedestal" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000B0" type: "item" item: "minecraft:golden_apple" count: 2 }, { id: "A1600000000000B0" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1700000000000B0" type: "random" table_id: 7034622617952714803L }, { id: "A1800000000000B0" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

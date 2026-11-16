@@ -1,13 +1,13 @@
 {
 	filename: "enderio_industry"
-	title: "&e&l16 · Od iskry do stopu"
+	title: "&b&l16 · Od iskry do stopu"
 	group: "A110000000000002"
 	id: "A120000000000016"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "enderio:alloy_smelter"
 	order_index: 16
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000127"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Ziarna nieskonczonosci"
 			description: ["Zwykły piec nie przygotuje każdego materiału. W tej części fabryki trzeba cierpliwie łączyć zaawansowane składniki. Zacznij od sprawy „Ziarna nieskonczonosci”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "enderio:grain_of_infinity"
 			dependencies: ["A130000000000010", "A130000000000030"]
 			tasks: [{ id: "A140000000000127" type: "item" item: "enderio:grain_of_infinity" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000127" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000127" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000128"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Podstawowy kondensator"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Podstawowy kondensator”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "enderio:basic_capacitor"
 			dependencies: ["A130000000000127"]
 			tasks: [{ id: "A140000000000128" type: "item" item: "enderio:basic_capacitor" count: 2L consume_items: false }]
-			rewards: [{ id: "A150000000000128" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A170000000000128" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000129"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Wielofunkcyjna obudowa"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Wielofunkcyjna obudowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "enderio:void_chassis"
 			dependencies: ["A130000000000127"]
 			tasks: [{ id: "A140000000000129" type: "item" item: "enderio:void_chassis" count: 2L consume_items: false }]
-			rewards: [{ id: "A150000000000129" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000129" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000012A"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Przemyslowy wytapiacz"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Przemyslowy wytapiacz”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "enderio:alloy_smelter"
 			dependencies: ["A130000000000128"]
 			tasks: [{ id: "A14000000000012A" type: "item" item: "enderio:alloy_smelter" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000012A" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A17000000000012A" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000012B"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Mlyn SAG"
 			description: ["Wcześniej zamknąłeś już sprawę „Wielofunkcyjna obudowa”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Mlyn SAG”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "enderio:sag_mill"
 			dependencies: ["A130000000000129"]
 			tasks: [{ id: "A14000000000012B" type: "item" item: "enderio:sag_mill" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000012B" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A17000000000012B" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000012C"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Generator Stirlinga"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Generator Stirlinga”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 12.0d
+			x: 8.00d
+			y: 9.36d
 			icon: "enderio:stirling_generator"
 			dependencies: ["A13000000000012A", "A13000000000012B"]
 			tasks: [{ id: "A14000000000012C" type: "item" item: "enderio:stirling_generator" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000012C" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A17000000000012C" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000012D"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Stop przewodzacy"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Stop przewodzacy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 1.0d
-			y: 16.0d
+			x: 2.12d
+			y: 12.48d
 			icon: "enderio:conductive_alloy_ingot"
 			dependencies: ["A13000000000012C"]
 			tasks: [{ id: "A14000000000012D" type: "item" item: "enderio:conductive_alloy_ingot" count: 8L consume_items: false }]
-			rewards: [{ id: "A15000000000012D" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A17000000000012D" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000012E"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Stop energetyczny"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Stop energetyczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 15.0d
-			y: 16.0d
+			x: 13.88d
+			y: 12.48d
 			icon: "enderio:energetic_alloy_ingot"
 			dependencies: ["A13000000000012C"]
 			tasks: [{ id: "A14000000000012E" type: "item" item: "enderio:energetic_alloy_ingot" count: 8L consume_items: false }]
-			rewards: [{ id: "A15000000000012E" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A17000000000012E" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000012F"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Stop pulsujacy"
 			description: ["Wcześniej zamknąłeś już sprawę „Stop przewodzacy”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Stop pulsujacy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "enderio:vibrant_alloy_ingot"
 			dependencies: ["A13000000000012D"]
 			tasks: [{ id: "A14000000000012F" type: "item" item: "enderio:vibrant_alloy_ingot" count: 4L consume_items: false }]
-			rewards: [{ id: "A15000000000012F" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A17000000000012F" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000130"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Rurociag przedmiotow"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Rurociag przedmiotow”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "enderio:item_conduit"
 			dependencies: ["A13000000000012E"]
 			tasks: [{ id: "A140000000000130" type: "item" item: "enderio:item_conduit" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000130" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000130" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000131"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Energia przez conduit"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Energia przez conduit”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 24.0d
+			x: 8.00d
+			y: 18.72d
 			icon: "enderio:conductive_alloy_energy_conduit"
 			dependencies: ["A13000000000012F", "A130000000000130"]
 			tasks: [{ id: "A140000000000131" type: "item" item: "enderio:conductive_alloy_energy_conduit" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000131" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A170000000000131" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000132"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Rzemioslo automatyczne"
 			description: ["Potrafisz wytwarzać stopy, od których zależą najlepsze urządzenia. Ostatni sprawdzian to „Rzemioslo automatyczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 28.0d
+			x: 8.00d
+			y: 21.84d
 			icon: "enderio:crafter"
 			dependencies: ["A130000000000131"]
 			tasks: [{ id: "A140000000000132" type: "item" item: "enderio:crafter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000132" type: "item" item: "minecraft:netherite_scrap" count: 1 }, { id: "A160000000000132" type: "item" item: "minecraft:diamond" count: 5 }]
+			rewards: [{ id: "A170000000000132" type: "random" table_id: 7034622617952714786L }, { id: "A180000000000132" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }
