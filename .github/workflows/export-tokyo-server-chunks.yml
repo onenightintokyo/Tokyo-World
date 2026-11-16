@@ -1,0 +1,72 @@
+name: Export verified Tokyo World server ZIP in transferable chunks
+on:
+  push:
+    paths:
+      - '.github/workflows/export-tokyo-server-chunks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout same pack verifier
+        uses: actions/checkout@v4
+      - name: Download previously verified complete server ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          gh release download "tokyo-world-server-1.20.1-forge-47.4.28" \
+            --pattern 'TokyoWorld-Server-1.20.1-Forge-47.4.28.zip' \
+            --dir dist
+          python serverpack/verify_server_pack.py
+          sha256sum dist/TokyoWorld-Server-1.20.1-Forge-47.4.28.zip
+      - name: Split the exact server ZIP into sub-512MiB transfer parts
+        run: |
+          set -euo pipefail
+          mkdir -p dist/chunks
+          split -b 240m -d -a 2 \
+            dist/TokyoWorld-Server-1.20.1-Forge-47.4.28.zip \
+            dist/chunks/TokyoWorld-Server.zip.part-
+          test "$(find dist/chunks -type f | wc -l)" -eq 5
+          sha256sum dist/chunks/* | tee dist/chunks/SHA256CHUNKS.txt
+          ls -lh dist/chunks
+      - uses: actions/upload-artifact@v4
+        name: Upload server transfer part 00
+        with:
+          name: TokyoWorldServerPart00
+          path: dist/chunks/TokyoWorld-Server.zip.part-00
+          compression-level: 0
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        name: Upload server transfer part 01
+        with:
+          name: TokyoWorldServerPart01
+          path: dist/chunks/TokyoWorld-Server.zip.part-01
+          compression-level: 0
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        name: Upload server transfer part 02
+        with:
+          name: TokyoWorldServerPart02
+          path: dist/chunks/TokyoWorld-Server.zip.part-02
+          compression-level: 0
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        name: Upload server transfer part 03
+        with:
+          name: TokyoWorldServerPart03
+          path: dist/chunks/TokyoWorld-Server.zip.part-03
+          compression-level: 0
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        name: Upload server transfer part 04
+        with:
+          name: TokyoWorldServerPart04
+          path: dist/chunks/TokyoWorld-Server.zip.part-04
+          compression-level: 0
+          retention-days: 7
