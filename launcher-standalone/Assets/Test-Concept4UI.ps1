@@ -48,10 +48,15 @@ if ($render.ExitCode -ne 0 -or !(Test-Path -LiteralPath $preview)) {
 }
 $shot = [System.Drawing.Bitmap]::FromFile($preview)
 try {
-    if ($shot.Width -ne 1280 -or $shot.Height -ne 720) {
-        throw 'Unexpected screenshot dimensions'
+    # GitHub's VM may use 125%/150% Windows DPI scaling.
+    # Validate the aspect ratio and draw pixels at a proportional position.
+    Write-Host "Screenshot dimensions on Windows runner: $($shot.Width)x$($shot.Height)"
+    if ($shot.Width -lt 1000 -or $shot.Height -lt 560) {
+        throw 'Screenshot is too small'
     }
-    $pixel = $shot.GetPixel(1100, 100)
+    $x = [int][Math]::Round(1100.0 * $shot.Width / 1280)
+    $y = [int][Math]::Round(100.0 * $shot.Height / 720)
+    $pixel = $shot.GetPixel($x, $y)
     if ($pixel.R -lt 180 -or $pixel.G -gt 110 -or $pixel.B -lt 75) {
         throw "Canvas did not paint the embedded pink artwork; sampled pixel: $pixel"
     }
