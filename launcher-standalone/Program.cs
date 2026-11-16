@@ -436,8 +436,10 @@ internal sealed partial class LauncherWindow : Form
             }
             if (needed > 0)
                 throw new InvalidOperationException(
-                    $"Brakuje {needed} oryginalnych modów Tokyo World. Nie uruchamiam niekompletnej gry. " +
-                    "Wybierz przy następnym uruchomieniu oryginalne archiwum ZIP albo przywróć brakujące pliki do folderu mods.");
+                    $"Brakuje {needed} oryginalnych modów Tokyo World: " +
+                    string.Join(", ", BaseModRecovery.MissingNames(root).Take(6)) + ". " +
+                    "Nie uruchamiam niekompletnej gry. Sprawdź połączenie z CurseForge/Modrinth " +
+                    "albo wskaż oryginalne archiwum ZIP.");
 
             SetStatus("Wszystkie 66 oryginalnych modów są zweryfikowane — przygotowuję Forge...");
             await engine.PrepareGameAsync(root, reporter);
@@ -504,12 +506,12 @@ internal sealed class SettingsWindow : Form
 
         Label("Repozytorium plików paczki (właściciel/nazwa)", 25, 110, 590);
         Field(repository, 25, 138, 593, data.Repository);
-        Label("Publiczne repo dystrybucyjne nie wymaga tokenu u znajomych.", 25, 175, 610, color: Color.FromArgb(155, 165, 182));
+        Label("Pierwsza instalacja działa bez tokenu. Online: użyj publicznego repo.", 25, 175, 610, color: Color.FromArgb(155, 165, 182));
 
-        Label("Token GitHub — tylko gdy repo jest prywatne", 25, 208, 595);
+        Label("Token GitHub — opcjonalny, tylko do aktualizacji z prywatnego repo", 25, 208, 595);
         Field(token, 25, 236, 593, data.GetToken());
         token.UseSystemPasswordChar = true;
-        Label("Nie umieszczaj własnego tokenu w EXE ani nie przesyłaj go znajomym.", 25, 272, 610, color: Color.FromArgb(155, 165, 182));
+        Label("Token zostaje tylko na tym komputerze. Nie udostępniaj go znajomym.", 25, 272, 610, color: Color.FromArgb(155, 165, 182));
 
         allMods.Text = "Pełna paczka (MEGA + WAVE)";
         allMods.SetBounds(25, 303, 590, 26);
