@@ -28,7 +28,7 @@
 			x: 8.0d
 			y: 0.0d
 			icon: "ad_astra:steel_ingot"
-			dependencies: ["A1300000000000CC"]
+			dependencies: ["A136000000000107", "A1300000000000BF"]
 			tasks: [
 				{ id: "A146000000000401" type: "item" item: "ad_astra:steel_ingot" count: 32L consume_items: false }
 			]
