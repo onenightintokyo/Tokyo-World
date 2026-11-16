@@ -63,8 +63,13 @@ internal sealed class ModpackInstaller
                 cancellation.ThrowIfCancellationRequested();
                 try
                 {
-                    await InstallProjectAsync(entry.Key, GetString(entry.Value, "versionId"),
-                        GetString(entry.Value, "version"), GetString(entry.Value, "match"));
+                    if (GetString(entry.Value, "source").Equals("curseforge", StringComparison.OrdinalIgnoreCase))
+                        await InstallOfficialCurseForgeAsync(gameDir, entry.Key,
+                            GetString(entry.Value, "fileName"), GetString(entry.Value, "url"),
+                            GetString(entry.Value, "sha1"));
+                    else
+                        await InstallProjectAsync(entry.Key, GetString(entry.Value, "versionId"),
+                            GetString(entry.Value, "version"), GetString(entry.Value, "match"));
                 }
                 catch (Exception ex)
                 {
@@ -104,6 +109,11 @@ internal sealed class ModpackInstaller
             if (parts.Length != 2 || !SafeName(parts[0]) || !Regex.IsMatch(parts[1], @"\A[a-fA-F0-9]{40}\z"))
                 throw new InvalidDataException("Nieprawidłowy wpis indeksu modów: " + line);
             string path = Path.Combine(modsDir, parts[0]);
+            // FTB Library/Teams are distributed officially via CurseForge rather
+            // than Modrinth. They will be fetched by the signed SHA1 CurseForge
+            // manifest below, even when missing from a fresh installation.
+            if (Regex.IsMatch(parts[0], @"\Aftb-(library|teams)-forge-", RegexOptions.IgnoreCase))
+                continue;
             if (File.Exists(path) && CheckSha1(path, parts[1])) continue;
             if (File.Exists(path))
                 throw new InvalidDataException("Inny plik już istnieje w mods: " + parts[0] + ". Nie nadpisuję go.");
@@ -136,6 +146,74 @@ internal sealed class ModpackInstaller
             }
         }
         return missing;
+    }
+
+
+    private async Task InstallOfficialCurseForgeAsync(
+        string gameDir, string projectRef, string fileName, string url, string sha1)
+    {
+        // Only three official FTB components are allowed through this path.
+        // They are 1.20.1 Forge releases and their SHA1 is pinned in our manifest.
+        if (projectRef is not ("ftb-library" or "ftb-teams" or "ftb-chunks"))
+            throw new InvalidDataException("Niezatwierdzony projekt CurseForge: " + projectRef);
+        if (!SafeName(fileName) || !Regex.IsMatch(sha1, @"\A[a-fA-F0-9]{40}\z"))
+            throw new InvalidDataException("Niepoprawna nazwa lub SHA1 CurseForge: " + fileName);
+        if (!fileName.StartsWith(projectRef + "-forge-", StringComparison.OrdinalIgnoreCase))
+            throw new InvalidDataException("Niepoprawny plik FTB: " + fileName);
+        if (!Uri.TryCreate(url, UriKind.Absolute, out var uri) ||
+            uri.Scheme != Uri.UriSchemeHttps ||
+            uri.Host != "mediafilez.forgecdn.net" ||
+            !Regex.IsMatch(uri.AbsolutePath,
+                @"\A/files/[0-9]+/[0-9]+/[A-Za-z0-9_.-]+\.jar\z") ||
+            !uri.AbsolutePath.EndsWith("/" + fileName, StringComparison.Ordinal))
+            throw new InvalidDataException("Nieautoryzowany adres pobierania FTB: " + url);
+
+        string file = Path.Combine(modsDir, fileName);
+        if (File.Exists(file))
+        {
+            if (!CheckSha1(file, sha1))
+                throw new InvalidDataException("Istniejący JAR FTB ma inny SHA1: " + fileName);
+            status?.Report("FTB już obecny: " + fileName);
+            return;
+        }
+        string temporary = file + ".tokyo-download";
+        try
+        {
+            status?.Report("Pobieram oficjalny FTB: " + fileName);
+            using var response = await http.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead, cancel);
+            response.EnsureSuccessStatusCode();
+            var finalUri = response.RequestMessage?.RequestUri;
+            if (finalUri?.Scheme != Uri.UriSchemeHttps ||
+                finalUri.Host is not ("mediafilez.forgecdn.net" or "edge.forgecdn.net" or "media.forgecdn.net"))
+                throw new InvalidDataException("Nieautoryzowane przekierowanie CurseForge.");
+            if (response.Content.Headers.ContentLength is > 25_000_000)
+                throw new InvalidDataException("FTB: plik jest zbyt duży.");
+            await using (var src = await response.Content.ReadAsStreamAsync(cancel))
+            await using (var dst = File.Create(temporary))
+                await src.CopyToAsync(dst, cancel);
+            if (new FileInfo(temporary).Length is <= 0 or > 25_000_000 ||
+                !CheckSha1(temporary, sha1))
+                throw new CryptographicException("FTB: SHA1 nie zgadza się dla " + fileName);
+
+            // Avoid duplicate versions of one Forge mod ID. The old copy is
+            // moved only AFTER the new one has been downloaded and checked.
+            string pattern = @"\A" + Regex.Escape(projectRef) +
+                @"-forge-[^/\\]+\.jar\z";
+            string backup = Path.Combine(gameDir, ".tokyo", "backups",
+                "official-ftb", DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff"));
+            foreach (string old in Directory.EnumerateFiles(modsDir, "*.jar")
+                .Where(x => Regex.IsMatch(Path.GetFileName(x), pattern, RegexOptions.IgnoreCase)))
+            {
+                Directory.CreateDirectory(backup);
+                File.Move(old, Path.Combine(backup, Path.GetFileName(old)));
+            }
+            File.Move(temporary, file);
+            status?.Report("FTB zainstalowany: " + fileName);
+        }
+        finally
+        {
+            if (File.Exists(temporary)) File.Delete(temporary);
+        }
     }
 
     private async Task InstallProjectAsync(string projectRef, string versionId, string versionNeed, string matchPattern)
