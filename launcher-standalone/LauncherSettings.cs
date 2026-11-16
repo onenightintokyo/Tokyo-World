@@ -14,7 +14,9 @@ internal sealed class LauncherSettings
     public bool FirstRunCompleted { get; set; } = false;
     // Friends can use a separate PUBLIC read-only distribution repository,
     // while the owner's original Tokyo-World source remains private.
-    public string Repository { get; set; } = "onenightintokyo/Tokyo-World";
+    public const string PublicDistributionRepository = "onenightintokyo/Tokyo-World-Client";
+    public const string PrivateSourceRepository = "onenightintokyo/Tokyo-World";
+    public string Repository { get; set; } = PublicDistributionRepository;
     public bool InstallAllModules { get; set; } = true;
     public int RamMb { get; set; } = 10240;
     public bool OptimizeGraphics { get; set; } = true;
@@ -38,6 +40,13 @@ internal sealed class LauncherSettings
             if (File.Exists(SettingsFile))
                 {
                     var loaded = JsonSerializer.Deserialize<LauncherSettings>(File.ReadAllText(SettingsFile)) ?? new();
+                    // Keep the owner's private source when their Windows account
+                    // has a valid local token. Friends never need the owner's token;
+                    // they use the separate public read-only modpack distribution.
+                    if (string.IsNullOrWhiteSpace(loaded.GitHubTokenEncrypted) &&
+                        string.Equals(loaded.Repository, PrivateSourceRepository,
+                            StringComparison.OrdinalIgnoreCase))
+                        loaded.Repository = PublicDistributionRepository;
                     if (!loaded.PerfMigrationCompleted)
                     {
                         // Existing 14+ GB allocations are scaled down only once.
