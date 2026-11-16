@@ -13,127 +13,118 @@ internal static class LauncherAutoUpdater
     // Never hardcode a private token into the EXE.
     public static async Task<bool> TryUpdateAsync(LauncherSettings settings, IProgress<string> report)
     {
-        string token = settings.GetToken();
-        if (string.IsNullOrWhiteSpace(token))
-        {
-            report.Report("Launcher działa bez tokenu. Aktualizacje EXE z prywatnego repo są niedostępne — do automatycznych aktualizacji znajomych potrzebne jest publiczne źródło wydań.");
-            return false;
-        }
-        if (!System.Text.RegularExpressions.Regex.IsMatch(settings.Repository ?? "", @"\A[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\z"))
-            return false;
+        // GitHub Releases work for everybody once the repository is public.
+        // A personal token remains optional for the owner of a private repo.
+        if (!System.Text.RegularExpressions.Regex.IsMatch(settings.Repository ?? "",
+                @"\A[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\z"))
+            throw new InvalidDataException("Nieprawidłowa nazwa repozytorium aktualizacji.");
 
-        using var http = new HttpClient { Timeout = TimeSpan.FromMinutes(6) };
-        http.DefaultRequestHeaders.UserAgent.ParseAdd("TokyoWorldLauncher/1.6");
-        http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        using var http = new HttpClient { Timeout = TimeSpan.FromMinutes(10) };
+        http.DefaultRequestHeaders.UserAgent.ParseAdd("TokyoWorldLauncher/PublicReleaseUpdater");
         http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.github+json"));
         http.DefaultRequestHeaders.Add("X-GitHub-Api-Version", "2022-11-28");
+        string token = settings.GetToken();
+        if (!string.IsNullOrWhiteSpace(token))
+            http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
         string api = "https://api.github.com/repos/" + settings.Repository;
-        using var latest = await GetJson(http,
-            api + "/actions/workflows/tokyo-launcher-standalone.yml/runs?branch=main&status=success&per_page=5");
-        long runId = 0;
-        foreach (var run in latest.RootElement.GetProperty("workflow_runs").EnumerateArray())
+        using var releasesResponse = await http.GetAsync(api + "/releases?per_page=50");
+        if (releasesResponse.StatusCode == System.Net.HttpStatusCode.NotFound)
         {
-            if (run.GetProperty("conclusion").GetString() != "success") continue;
-            runId = run.GetProperty("id").GetInt64();
-            break;
+            report.Report("Źródło aktualizacji jest prywatne. Po ustawieniu publicznego repo znajomi będą aktualizować EXE bez tokenu.");
+            return false;
         }
-        if (runId == 0) return false;
-        string runningExe = Environment.ProcessPath ?? "";
-        if (runId <= settings.LastLauncherRunId)
+        releasesResponse.EnsureSuccessStatusCode();
+        using var releases = JsonDocument.Parse(await releasesResponse.Content.ReadAsStreamAsync());
+        JsonElement selectedAsset = default;
+        Version? publishedVersion = null;
+        string selectedTag = "";
+        foreach (var release in releases.RootElement.EnumerateArray())
         {
-            if (string.IsNullOrEmpty(settings.PendingUpdateHash) || !File.Exists(runningExe))
-                return false;
-            await using var running = File.OpenRead(runningExe);
-            string runningHash = Convert.ToHexString(await SHA256.HashDataAsync(running));
-            if (runningHash.Equals(settings.PendingUpdateHash, StringComparison.OrdinalIgnoreCase))
+            if (release.GetProperty("draft").GetBoolean() || release.GetProperty("prerelease").GetBoolean())
+                continue;
+            string tag = release.GetProperty("tag_name").GetString() ?? "";
+            var match = System.Text.RegularExpressions.Regex.Match(tag,
+                @"\Atokyo-world-launcher-v(?<version>\d+\.\d+\.\d+)\z",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+            if (!match.Success || !Version.TryParse(match.Groups["version"].Value + ".0", out Version? version))
+                continue;
+            if (publishedVersion is not null && version <= publishedVersion) continue;
+            var assets = release.GetProperty("assets").EnumerateArray().Where(a =>
+                a.GetProperty("name").GetString() == "TokyoWorldLauncher.exe").ToArray();
+            if (assets.Length != 1) continue;
+            selectedAsset = assets[0].Clone();
+            publishedVersion = version;
+            selectedTag = tag;
+        }
+        if (publishedVersion is null) return false;
+        string checksum = selectedAsset.TryGetProperty("digest", out var digest)
+            ? digest.GetString() ?? "" : "";
+        long size = selectedAsset.GetProperty("size").GetInt64();
+        string downloadUrl = selectedAsset.GetProperty("browser_download_url").GetString() ?? "";
+        if (!System.Text.RegularExpressions.Regex.IsMatch(checksum,
+                @"\Asha256:[a-f0-9]{64}\z",
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
+            size < 10_000_000 || size > 350_000_000 ||
+            !Uri.TryCreate(downloadUrl, UriKind.Absolute, out Uri? parsed) ||
+            parsed.Scheme != Uri.UriSchemeHttps || parsed.Host != "github.com" ||
+            !parsed.AbsolutePath.StartsWith(
+                "/" + settings.Repository + "/releases/download/" + selectedTag + "/",
+                StringComparison.Ordinal) ||
+            !parsed.AbsolutePath.EndsWith("/TokyoWorldLauncher.exe", StringComparison.Ordinal))
+            throw new InvalidDataException("Nieprawidłowe źródło lub SHA-256 aktualizacji.");
+
+        string current = Environment.ProcessPath ?? throw new InvalidOperationException("Nie znam ścieżki EXE.");
+        if (Version.TryParse(FileVersionInfo.GetVersionInfo(current).FileVersion, out var currentVersion) &&
+            publishedVersion < currentVersion)
+            return false;
+        await using (var running = File.OpenRead(current))
+        {
+            string currentHash = Convert.ToHexString(await SHA256.HashDataAsync(running));
+            if (currentHash.Equals(checksum[7..], StringComparison.OrdinalIgnoreCase))
             {
                 settings.PendingUpdateHash = "";
                 settings.Save();
+                report.Report("Launcher jest aktualny.");
                 return false;
             }
-            report.Report("Ponawiam aktualizację, której wcześniej nie udało się zastosować.");
-        }
-        using var artifacts = await GetJson(http, api + "/actions/runs/" + runId + "/artifacts?per_page=30");
-        JsonElement selected = default;
-        foreach (var artifact in artifacts.RootElement.GetProperty("artifacts").EnumerateArray())
-        {
-            if (artifact.GetProperty("name").GetString() != "TokyoWorld-Standalone-Windows-x64") continue;
-            if (artifact.GetProperty("expired").GetBoolean()) continue;
-            selected = artifact.Clone();
-            break;
-        }
-        if (selected.ValueKind != JsonValueKind.Object) return false;
-        long id = selected.GetProperty("id").GetInt64();
-        string checksum = selected.TryGetProperty("digest", out var digest)
-            ? digest.GetString() ?? "" : "";
-        if (!checksum.StartsWith("sha256:", StringComparison.OrdinalIgnoreCase) ||
-            checksum.Length != "sha256:".Length + 64)
-        {
-            report.Report("Aktualizacja EXE bez wiarygodnej sumy SHA-256 — pominięto.");
-            return false;
         }
 
-        report.Report("Znaleziono nowy launcher. Pobieram bezpieczną aktualizację...");
-        string stageFolder = Path.Combine(Path.GetTempPath(), "TokyoWorldUpdater", Guid.NewGuid().ToString("N"));
+        report.Report("Pobieram aktualizację Tokyo World " + publishedVersion + "...");
+        string stageFolder = Path.Combine(Path.GetTempPath(), "TokyoWorldUpdater",
+            Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(stageFolder);
-        string zipPath = Path.Combine(stageFolder, "update.zip");
+        string next = Path.Combine(stageFolder, "TokyoWorldLauncher.exe");
         try
         {
-            using var download = await http.GetAsync(api + "/actions/artifacts/" + id + "/zip",
+            using var download = await http.GetAsync(downloadUrl,
                 HttpCompletionOption.ResponseHeadersRead);
             download.EnsureSuccessStatusCode();
+            if (download.Content.Headers.ContentLength is long contentLength &&
+                contentLength != size)
+                throw new InvalidDataException("Rozmiar aktualizacji nie zgadza się z wydaniem.");
             await using (var input = await download.Content.ReadAsStreamAsync())
-            await using (var output = File.Create(zipPath))
+            await using (var output = File.Create(next))
                 await input.CopyToAsync(output);
-            await using (var verifyStream = File.OpenRead(zipPath))
+            if (new FileInfo(next).Length != size)
+                throw new InvalidDataException("Niekompletna aktualizacja EXE.");
+            await using (var check = File.OpenRead(next))
             {
-                string actual = Convert.ToHexString(await SHA256.HashDataAsync(verifyStream));
-                if (!actual.Equals(checksum["sha256:".Length..], StringComparison.OrdinalIgnoreCase))
-                    throw new CryptographicException("Suma SHA-256 archiwum aktualizacji jest nieprawidłowa.");
-            }
-            string next = Path.Combine(stageFolder, "TokyoWorldLauncher.exe");
-            using (var archive = ZipFile.OpenRead(zipPath))
-            {
-                var entries = archive.Entries.Where(e =>
-                    e.FullName.Equals("TokyoWorldLauncher.exe", StringComparison.OrdinalIgnoreCase)).ToArray();
-                if (entries.Length != 1 || entries[0].Length < 10_000_000 || entries[0].Length > 350_000_000)
-                    throw new InvalidDataException("Archiwum GitHub nie zawiera oczekiwanego programu EXE.");
-                entries[0].ExtractToFile(next);
+                string actual = Convert.ToHexString(await SHA256.HashDataAsync(check));
+                if (!actual.Equals(checksum[7..], StringComparison.OrdinalIgnoreCase))
+                    throw new CryptographicException("Suma SHA-256 aktualizacji jest niezgodna.");
             }
             using (var file = File.OpenRead(next))
             {
                 if (file.ReadByte() != 'M' || file.ReadByte() != 'Z')
-                    throw new InvalidDataException("Pobrany plik nie jest wykonywalnym programem Windows.");
+                    throw new InvalidDataException("Aktualizacja nie jest programem Windows.");
             }
-
-            string current = Environment.ProcessPath ?? throw new InvalidOperationException("Nie znam ścieżki EXE.");
-            var runningVersion = FileVersionInfo.GetVersionInfo(current).FileVersion;
-            var downloadedVersion = FileVersionInfo.GetVersionInfo(next).FileVersion;
-            if (Version.TryParse(runningVersion, out var currentNumber) &&
-                Version.TryParse(downloadedVersion, out var downloadedNumber) &&
-                downloadedNumber < currentNumber)
-            {
-                // Never downgrade to an older successful build from main.
-                report.Report("Nowszy launcher jest już zainstalowany — pomijam starszy build.");
-                settings.LastLauncherRunId = runId;
-                settings.PendingUpdateHash = "";
-                settings.Save();
-                return false;
-            }
-            using var currentStream = File.OpenRead(current);
-            using var newStream = File.OpenRead(next);
-            string currentHash = Convert.ToHexString(await SHA256.HashDataAsync(currentStream));
-            string newHash = Convert.ToHexString(await SHA256.HashDataAsync(newStream));
-            settings.LastLauncherRunId = runId;
-            settings.PendingUpdateHash = currentHash.Equals(newHash, StringComparison.OrdinalIgnoreCase)
-                ? "" : newHash;
+            if (Version.TryParse(FileVersionInfo.GetVersionInfo(next).FileVersion, out var downloadedVersion) &&
+                Version.TryParse(FileVersionInfo.GetVersionInfo(current).FileVersion, out var installedVersion) &&
+                downloadedVersion < installedVersion)
+                throw new InvalidDataException("Pobrana starsza wersja launchera została odrzucona.");
+            settings.PendingUpdateHash = checksum[7..];
             settings.Save();
-            if (currentHash.Equals(newHash, StringComparison.OrdinalIgnoreCase))
-            {
-                report.Report("Launcher jest już aktualny.");
-                return false;
-            }
 
             // The running EXE cannot replace itself on Windows. A short-lived local
             // PowerShell helper waits until it exits, replaces it, and restarts it.
