@@ -1,12 +1,12 @@
 {
 	filename: "powah_energy"
-	title: "&e&lPrąd pod kontrolą"
+	title: "&e&l11 · Prąd pod kontrolą"
 	group: "A110000000000002"
 	id: "A120000000000009"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "powah:reactor_starter"
-	order_index: 27
+	order_index: 11
 	images: [
 		{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }
 	]

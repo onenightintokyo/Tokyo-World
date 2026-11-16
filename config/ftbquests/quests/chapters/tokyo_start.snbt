@@ -1,12 +1,12 @@
 {
 	filename: "tokyo_start"
-	title: "&6&lPierwszy ślad"
-	group: "A110000000000001"
+	title: "&6&l01 · Pierwszy ślad"
+	group: "A110000000000004"
 	id: "A120000000000001"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "minecraft:crafting_table"
-	order_index: 0
+	order_index: 1
 	images: [
 		{
 			image: "tokyoworld:textures/gui/quests/tokyo_early.png"

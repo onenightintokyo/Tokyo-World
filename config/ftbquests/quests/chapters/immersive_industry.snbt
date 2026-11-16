@@ -1,12 +1,12 @@
 {
 	filename: "immersive_industry"
-	title: "&c&lCiężar stali"
+	title: "&e&l13 · Ciężar stali"
 	group: "A110000000000002"
 	id: "A120000000000007"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "immersiveengineering:blast_furnace"
-	order_index: 14
+	order_index: 13
 	images: [
 		{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }
 	]

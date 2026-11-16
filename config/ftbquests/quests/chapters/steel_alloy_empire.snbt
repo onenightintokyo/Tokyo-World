@@ -1,12 +1,12 @@
 {
 	filename: "steel_alloy_empire"
-	title: "&c&lImperium metalu"
+	title: "&c&l27 · Imperium metalu"
 	group: "A110000000000003"
 	id: "A12000000000001C"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "enderio:alloy_smelter"
-	order_index: 29
+	order_index: 27
 	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{

@@ -1,12 +1,12 @@
 {
 	filename: "draconic_endgame"
-	title: "&5&lMoc smoków"
+	title: "&c&l39 · Moc smoków"
 	group: "A110000000000003"
 	id: "A120000000000017"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "draconicevolution:draconium_core"
-	order_index: 10
+	order_index: 39
 	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{

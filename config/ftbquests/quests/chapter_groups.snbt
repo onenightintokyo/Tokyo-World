@@ -1,16 +1,9 @@
 {
 	chapter_groups: [
-		{
-			id: "A110000000000001"
-			title: "&a&lI · EARLY GAME — POCZĄTEK"
-		}
-		{
-			id: "A110000000000002"
-			title: "&6&lII · MID GAME — ROZWÓJ"
-		}
-		{
-			id: "A110000000000003"
-			title: "&5&lIII · LATE GAME — ENDGAME"
-		}
+		{ id: "A110000000000004" title: "&6&l━━ STARTOWE ━━" }
+		{ id: "A110000000000001" title: "&a&l━━ EARLY GAME ━━" }
+		{ id: "A110000000000002" title: "&e&l━━ MID GAME ━━" }
+		{ id: "A110000000000003" title: "&c&l━━ END GAME ━━" }
+		{ id: "A110000000000005" title: "&b&l━━ CREATIVE ━━" }
 	]
 }
