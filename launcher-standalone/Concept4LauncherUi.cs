@@ -1,4 +1,6 @@
 using System.ComponentModel;
+using System.Security.Cryptography;
+using System.Text;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
@@ -394,17 +396,66 @@ internal sealed class ConceptCanvas : Panel
             Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
                 "TokyoWorldLauncher", "CrimsonTokyoConcept4-UI.jpg")
         };
+        // An initial single-file EXE may carry the approved artwork as an
+        // authenticated JPEG payload. Cache it once in per-user AppData so future
+        // auto-updated EXEs preserve exactly the same appearance.
+        var artworkBytes = ReadEmbeddedArtwork();
+        if (artworkBytes != null)
+        {
+            try
+            {
+                using var ms = new MemoryStream(artworkBytes);
+                using var original = new Bitmap(ms);
+                background = new Bitmap(original);
+                string cache = candidates[1];
+                Directory.CreateDirectory(Path.GetDirectoryName(cache)!);
+                if (!File.Exists(cache)) File.WriteAllBytes(cache, artworkBytes);
+            }
+            catch { background = null; }
+        }
+        if (background != null) return;
         foreach (var path in candidates)
         {
             if (!File.Exists(path)) continue;
             try
             {
-                // Keep the file unlocked for future launcher self-updates.
-                background = new Bitmap(new MemoryStream(File.ReadAllBytes(path)));
+                using var ms = new MemoryStream(File.ReadAllBytes(path));
+                using var original = new Bitmap(ms);
+                background = new Bitmap(original);
                 break;
             }
-            catch { /* Embedded vector fallback remains available. */ }
+            catch { /* Local artwork unavailable; use vector fallback. */ }
         }
+    }
+
+    private static byte[]? ReadEmbeddedArtwork()
+    {
+        const int footerSize = 64;
+        byte[] magic = Encoding.ASCII.GetBytes("TOKYO_CRIMSON_ART_V171__");
+        try
+        {
+            string path = Environment.ProcessPath ?? "";
+            if (!File.Exists(path)) return null;
+            using var file = File.OpenRead(path);
+            if (file.Length < footerSize) return null;
+            file.Seek(-footerSize, SeekOrigin.End);
+            byte[] footer = new byte[footerSize];
+            file.ReadExactly(footer);
+            if (!footer.AsSpan(0, magic.Length).SequenceEqual(magic))
+                return null;
+            long length = BitConverter.ToInt64(footer, 24);
+            if (length < 8_000 || length > 8_000_000 || file.Length < length + footerSize)
+                return null;
+            file.Seek(-(length + footerSize), SeekOrigin.End);
+            byte[] art = new byte[(int)length];
+            file.ReadExactly(art);
+            byte[] expectedHash = footer.AsSpan(32, 32).ToArray();
+            if (!CryptographicOperations.FixedTimeEquals(
+                SHA256.HashData(art), expectedHash))
+                return null;
+            return art;
+        }
+        catch { return null; }
     }
 
     protected override void OnPaint(PaintEventArgs e)
