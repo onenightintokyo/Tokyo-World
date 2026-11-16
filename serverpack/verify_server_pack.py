@@ -18,7 +18,9 @@ REQUIRED = {
     "the_bumblezone-7.15.2+1.20.1-forge.jar",
     "sophisticatedcore-1.20.1-1.5.33.2475.jar",
     "ExtendedAE-1.20-1.4.18-forge.jar",
+    "twilightforest-1.20.1-4.3.2508-universal.jar",
 }
+TWILIGHT_SHA256 = "0bdc89263616d1b35c32ef82c5e9c14cbd20368e2fe8b468c72a28320be7a778"
 RETIRED = re.compile(r"every[-_.]?(?:compat|comp)", re.I)
 ALLOWED_ROOTS = {"mods", "config", "defaultconfigs", "kubejs"}
 ALLOWED_FILES = {"SHA256SUMS.txt", "README-SERWER.txt"}
@@ -68,6 +70,8 @@ def verify() -> None:
             digest = hashlib.sha256(zf.read(name)).hexdigest()
             if digest != checksums[name]:
                 raise RuntimeError("JAR SHA256 mismatch: " + name)
+            if name == "mods/twilightforest-1.20.1-4.3.2508-universal.jar" and digest != TWILIGHT_SHA256:
+                raise RuntimeError("Twilight Forest JAR differs from the verified client/server release")
         print(f"VERIFIED: {len(mods)} mod JARs, exact shared versions, no Every Compat, " +
               "no launcher/start files, all ZIP CRCs and SHA256 match")
 
