@@ -17,6 +17,8 @@ for group, entries in manifest["profiles"].items():
 
 pins = {
     "extended-ae": ("repair-dependencies", "versionId", "uq3lO4ER"),
+    "kotlin-for-forge": ("repair-dependencies", "versionId", "Zsh14XeQ"),
+    "thermal-foundation": ("repair-dependencies", "versionId", "44ilyZbi"),
     "guideme": ("repair-dependencies", "versionId", "i7Tp1AHw"),
     "glodium": ("repair-dependencies", "versionId", "eoUaDkZf"),
     "the-bumblezone": ("chapter-exploration", "version", "7.15.2+1.20.1-forge"),
