@@ -14,7 +14,7 @@ internal static class Program
     }
 }
 
-internal sealed class LauncherWindow : Form
+internal sealed partial class LauncherWindow : Form
 {
     private readonly LauncherSettings settings = LauncherSettings.Load();
     private readonly MinecraftEngine engine = new();
@@ -26,7 +26,7 @@ internal sealed class LauncherWindow : Form
     private readonly Label ramValue = new();
     private readonly Label status = new();
     private readonly TokyoProgressBar progress = new();
-    private readonly Button play = new();
+    private readonly CrimsonGradientButton play = new();
     private readonly Label gear = new();
     private readonly List<string> logs = new();
     private bool busy;
@@ -157,6 +157,8 @@ internal sealed class LauncherWindow : Form
         premium.Checked = settings.UseMicrosoft;
         offline.Checked = !settings.UseMicrosoft;
         UpdateMode();
+
+        BuildCrimsonUI();
 
         Shown += async (_, _) =>
         {
@@ -366,11 +368,8 @@ internal sealed class LauncherWindow : Form
             var modpack = new ModpackInstaller();
             var report = await modpack.InstallAsync(root, settings.InstallAllModules, settings.LightweightMode,
                 settings.ExtraVisualMods, settings.EnableShaders, reporter);
-            if (settings.EnableShaders)
-            {
-                try { await TokyoShaderInstaller.InstallAsync(root, reporter); }
-                catch (Exception ex) { SetStatus("Shadery opcjonalne: " + ex.Message); }
-            }
+            // v1.7: installed shaderpacks are user-selected in the SHADERY tab.
+            // Oculus is installed only when enabled; never overwrite the chosen pack.
             progress.Progress = Math.Max(progress.Progress, 70);
 
             if (!settings.LightweightMode && !settings.LightweightPromptShown && TokyoOptimization.HasEveryCompat(root))
