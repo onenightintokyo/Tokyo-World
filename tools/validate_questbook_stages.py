@@ -59,8 +59,11 @@ for name,(stage,g,color,art,number) in expected.items():
     m=re.search(r'(?m)^\s*order_index:\s*(\d+)',header)
     assert m and int(m[1])==number,name
     assert "tokyo_stage_"+art+".png" in header,name
-    assert re.search(r'(?m)^\s*x:\s*8\.0d',header),name
-    assert re.search(r'(?m)^\s*y:\s*-6\.5d',header),name
+    image=re.search(r'images:\s*\[([^\]]*)\]',header,re.S)
+    assert image,name
+    assert re.search(r'\bx:\s*8\.0d',image[1]),name
+    assert re.search(r'\by:\s*-6\.5d',image[1]),name
+    assert 'width: 24.0d' in image[1],name
     qids=re.findall(r'(?m)^\s*id:\s*"(A13[0-9A-F]{13})"',content)
     assert qids,name
     for qid in qids:
