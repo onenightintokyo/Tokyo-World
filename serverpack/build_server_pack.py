@@ -306,15 +306,8 @@ def resolve_all() -> None:
             if is_client(project):
                 continue
             if project == "sophisticated-core":
-                # Exact shared client baseline, not the latest Modrinth/CurseForge release.
-                # It matches modpacks/base_mod_hashes.txt and prevents version 2478.
-                ALL_META[project] = {
-                    "filename": "sophisticatedcore-1.20.1-1.5.33.2475.jar",
-                    "sha1": "bd67f2857cfb979b3479c8e17bb541dd6679ae3d",
-                    "url": ("https://mediafilez.forgecdn.net/files/9580/026/"
-                            "sophisticatedcore-1.20.1-1.5.33.2475.jar"),
-                    "reason": "exact shared client baseline Sophisticated Core"
-                }
+                # The SHA1-locked 1.5.33.2475 JAR is already resolved from
+                # base_mod_hashes.txt. Do not add an unpinned newer release.
                 continue
             if entry.get("source") == "curseforge":
                 sha1 = entry.get("sha1", "").lower()
@@ -329,10 +322,14 @@ def resolve_all() -> None:
                 }
                 continue
             try:
-                add_mod(resolve_version(PROJECT_ALIASES.get(project, project),
-                                        entry.get("versionId", ""),
-                                        entry.get("version", "") if project == "the-bumblezone" else "")),
-                        "manifest " + group + "/" + project)
+                add_mod(
+                    resolve_version(
+                        PROJECT_ALIASES.get(project, project),
+                        entry.get("versionId", ""),
+                        entry.get("version", "") if project == "the-bumblezone" else ""
+                    ),
+                    "manifest " + group + "/" + project
+                )
             except SkipClient:
                 print("Client-only project skipped:", project, flush=True)
             except Exception as exc:
