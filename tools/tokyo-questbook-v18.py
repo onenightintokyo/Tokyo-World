@@ -181,7 +181,7 @@ for locale in ("pl_pl","en_us"):
 reward_dir=ROOT/"reward_tables"
 reward_dir.mkdir(exist_ok=True)
 for stage_ix,(table_id,name,title,items) in enumerate(TABLES):
-    lines=['{', '\tid: "'+table_id+'"', '\tloot_size: 1',
+    lines=['{', '\tfilename: "tokyo_'+name+'"', '\tid: "'+table_id+'"', '\tloot_size: 1',
            '\torder_index: '+str(stage_ix),
            '\ttitle: "TOKYO WORLD — '+title+'"','\tuse_title: true','\trewards: [']
     for i,(item,qty,weight) in enumerate(items):
