@@ -1,0 +1,27 @@
+# Tokyo World — Wave 06 Expert Final
+# Imported by Forge into a NEW world's serverconfig on first creation.
+# Values are within the official Sophisticated Backpacks server config ranges.
+# Missing options are filled with the mod's defaults by Forge.
+[server.leatherBackpack]
+inventorySlotCount = 21
+upgradeSlotCount = 1
+
+[server.copperBackpack]
+inventorySlotCount = 36
+upgradeSlotCount = 1
+
+[server.ironBackpack]
+inventorySlotCount = 45
+upgradeSlotCount = 2
+
+[server.goldBackpack]
+inventorySlotCount = 63
+upgradeSlotCount = 2
+
+[server.diamondBackpack]
+inventorySlotCount = 81
+upgradeSlotCount = 4
+
+[server.netheriteBackpack]
+inventorySlotCount = 108
+upgradeSlotCount = 5
