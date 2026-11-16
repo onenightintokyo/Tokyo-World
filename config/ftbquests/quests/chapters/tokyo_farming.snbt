@@ -1,12 +1,12 @@
 {
 	filename: "tokyo_farming"
-	title: "&6&lZiemia i zapasy"
-	group: "A110000000000001"
+	title: "&6&l02 · Ziemia i zapasy"
+	group: "A110000000000004"
 	id: "A120000000000004"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "minecraft:wheat"
-	order_index: 1
+	order_index: 2
 	images: [
 		{
 			image: "tokyoworld:textures/gui/quests/tokyo_early.png"

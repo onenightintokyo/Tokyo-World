@@ -1,13 +1,13 @@
 {
 	filename: "storage_network"
-	title: "&e&lKoniec ze skrzyniami"
-	group: "A110000000000002"
+	title: "&a&l05 · Koniec ze skrzyniami"
+	group: "A110000000000001"
 	id: "A120000000000011"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "sophisticatedstorage:controller"
-	order_index: 30
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
+	order_index: 5
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_early.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000DB"
