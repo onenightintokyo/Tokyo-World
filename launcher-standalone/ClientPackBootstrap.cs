@@ -33,7 +33,8 @@ internal static class ClientPackBootstrap
         return AllowedRoots.Any(x => name.StartsWith(x, StringComparison.Ordinal)) ? name : null;
     }
 
-    public static int InstallMissing(string gameRoot, IProgress<string> progress)
+    public static int InstallMissing(string gameRoot, IProgress<string> progress,
+        bool refreshManagedFiles)
     {
         using var source = Assembly.GetExecutingAssembly().GetManifestResourceStream(Resource);
         if (source == null)
@@ -75,6 +76,9 @@ internal static class ClientPackBootstrap
             // files, preserving a reversible backup of prior local contents.
             if (File.Exists(dest))
             {
+                // Owners with a valid token use GitHub sync for updates, so
+                // never roll their newer files back to the embedded snapshot.
+                if (!refreshManagedFiles) continue;
                 using var existing = File.OpenRead(dest);
                 using var incoming = entry.Open();
                 byte[] oldHash = SHA256.HashData(existing);
