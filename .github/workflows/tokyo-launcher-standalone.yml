@@ -52,6 +52,16 @@ jobs:
           if (!(Test-Path dist/TokyoWorldLauncher.exe)) { throw "No TokyoWorldLauncher.exe produced" }
           Get-Item dist/TokyoWorldLauncher.exe | Select-Object Name,Length
           Get-FileHash dist/TokyoWorldLauncher.exe -Algorithm SHA256
+      - name: Test Concept 4 single-file artwork and screenshot
+        shell: pwsh
+        run: ./launcher-standalone/Assets/Test-Concept4UI.ps1
+      - name: Upload UI preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-CrimsonUI-Preview
+          path: dist/CrimsonTokyoUI-Preview.png
+          if-no-files-found: error
+          retention-days: 10
       - name: Upload Windows EXE
         uses: actions/upload-artifact@v4
         with:
