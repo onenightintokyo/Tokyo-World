@@ -388,7 +388,11 @@
       {
         "project": "twilightforest",
         "label": "Twilight Forest — wielka przygoda z bossami",
-        "match": "^(twilightforest|twilight[-_]forest)[-_ .]"
+        "match": "^(twilightforest|twilight[-_]forest)[-_ .]",
+        "source": "curseforge",
+        "fileName": "twilightforest-1.20.1-4.3.2508-universal.jar",
+        "url": "https://mediafilez.forgecdn.net/files/5468/648/twilightforest-1.20.1-4.3.2508-universal.jar",
+        "sha1": "fa3b506a45d3e9c465551cd533fd50c899496e9f"
       },
       {
         "project": "when-dungeons-arise",
