@@ -390,23 +390,8 @@ internal sealed partial class LauncherWindow : Form
             // Oculus is installed only when enabled; never overwrite the chosen pack.
             progress.Progress = Math.Max(progress.Progress, 70);
 
-            if (!settings.LightweightMode && !settings.LightweightPromptShown && TokyoOptimization.HasEveryCompat(root))
-            {
-                settings.LightweightPromptShown = true;
-                var choice = MessageBox.Show(this,
-                    "Z ostatniego logu wynika, że Every Compat bardzo obciąża ładowanie tekstur.\n\n" +
-                    "Czy wyłączyć go tymczasowo w TRYBIE LEKKIM? Plik zostanie przeniesiony do kopii, a launcher nie pobierze go ponownie.\n\n" +
-                    "UWAGA: W trybie lekkim nie otwieraj starych światów zawierających bloki z tego moda. " +
-                    "Możesz cofnąć zmianę w Ustawieniach.",
-                    "Tokyo World — optymalizacja ładowania",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                settings.LightweightMode = choice == DialogResult.Yes;
-                settings.Save();
-            }
             TokyoOptimization.ApplyModPolicy(root, settings.LightweightMode, reporter);
             TokyoOptimization.ApplyGraphics(root, settings.OptimizeGraphics, reporter);
-            if (!settings.LightweightMode && TokyoOptimization.HasEveryCompat(root))
-                SetStatus("Every Compat może wydłużać ładowanie — tryb lekki znajdziesz w ⚙.");
             needed = await Task.Run(() => BaseModRecovery.CountMissing(root));
             SetStatus($"Mody: +{report.Installed}, pominięto {report.SkippedOptional}, brakuje {needed} bazowych.");
 
@@ -436,7 +421,8 @@ internal sealed partial class LauncherWindow : Form
             if (needed > 0)
                 throw new InvalidOperationException(
                     $"Brakuje {needed} oryginalnych modów Tokyo World. Nie uruchamiam niekompletnej gry. " +
-                    "Wybierz przy następnym uruchomieniu oryginalne archiwum ZIP albo przywróć brakujące pliki do folderu mods.");
+                    "Brakujące pliki: " + string.Join(", ", BaseModRecovery.MissingNames(root)) + ". " +
+                    "Sprawdź folder .tokyo/missing-mods.txt lub przywróć oryginalne pliki.");
 
             SetStatus("Wszystkie 66 oryginalnych modów są zweryfikowane — przygotowuję Forge...");
             await engine.PrepareGameAsync(root, reporter);
@@ -503,7 +489,7 @@ internal sealed class SettingsWindow : Form
 
         Label("Repozytorium plików paczki (właściciel/nazwa)", 25, 110, 590);
         Field(repository, 25, 138, 593, data.Repository);
-        Label("Publiczne repo dystrybucyjne nie wymaga tokenu u znajomych.", 25, 175, 610, color: Color.FromArgb(155, 165, 182));
+        Label("Dla znajomych: Tokyo-World-Client (PUBLICZNE) — bez tokenu.", 25, 175, 610, color: Color.FromArgb(155, 165, 182));
 
         Label("Token GitHub — tylko gdy repo jest prywatne", 25, 208, 595);
         Field(token, 25, 236, 593, data.GetToken());
@@ -522,12 +508,12 @@ internal sealed class SettingsWindow : Form
         optimize.Checked = data.OptimizeGraphics;
         Controls.Add(optimize);
 
-        lightweight.Text = "Tryb lekki: wyłącz Every Compat podczas ładowania";
+        lightweight.Text = "Tryb lekki: priorytet dla płynności gry";
         lightweight.SetBounds(25, 365, 590, 27);
         lightweight.ForeColor = Color.White;
         lightweight.Checked = data.LightweightMode;
         Controls.Add(lightweight);
-        Label("UWAGA: z wyłączonym modem nie otwieraj istniejących światów, tylko testuj menu.",
+        Label("Every Compat usunięty z całej paczki (stary JAR trafia do kopii).",
             25, 394, 615, color: Color.FromArgb(237, 182, 109));
 
         extraVisuals.Text = "Dodatkowe modele i tekstury (opcjonalne)";
@@ -546,8 +532,8 @@ internal sealed class SettingsWindow : Form
         restore.Click += (_, _) =>
         {
             if (MessageBox.Show(this,
-                "Przywrócić Every Compat i oryginalny options.txt? " +
-                "Jeśli zmieniałeś opcje Minecrafta po optymalizacji, zostaną nadpisane kopią zapasową.",
+                "Przywrócić poprzednie ustawienia grafiki options.txt? " +
+                "Every Compat pozostanie wyłączony, aby nie spowalniać ładowania gry.",
                 "Tokyo World — przywracanie",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes) return;
             try
@@ -560,7 +546,7 @@ internal sealed class SettingsWindow : Form
                 data.OptimizeGraphics = false;
                 data.LightweightMode = false;
                 data.Save();
-                MessageBox.Show(this, "Przywrócono kopie. Profil optymalizacji wyłączony.", "Tokyo World");
+                MessageBox.Show(this, "Przywrócono ustawienia grafiki. Every Compat pozostaje wyłączony.", "Tokyo World");
             }
             catch (Exception ex)
             {
