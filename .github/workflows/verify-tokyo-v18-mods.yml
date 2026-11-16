@@ -1,0 +1,22 @@
+name: Verify Tokyo World 1.8 claim and HUD mods
+
+on:
+  push:
+    branches:
+      - feature/questbook-four-stages-ftb-claims-rewards-art-v18
+    paths:
+      - 'tools/verify_v18_core_mods.py'
+      - '.github/workflows/verify-tokyo-v18-mods.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-mods:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check all new claim/HUD module project IDs on Modrinth
+        run: python3 tools/verify_v18_core_mods.py
