@@ -39,7 +39,10 @@ jobs:
           sha256sum TokyoWorld-Server-1.20.1-Forge-47.4.28.zip > SERVER-ZIP-SHA256.txt
           split -b 300m -a 3 -d TokyoWorld-Server-1.20.1-Forge-47.4.28.zip TW-SERVER-part-
           test "$(find . -maxdepth 1 -name 'TW-SERVER-part-*' | wc -l)" -eq 4
-          cat TW-SERVER-part-* | sha256sum --check SERVER-ZIP-SHA256.txt
+          expected="$(cut -d' ' -f1 SERVER-ZIP-SHA256.txt)"
+          actual="$(cat TW-SERVER-part-* | sha256sum | cut -d' ' -f1)"
+          test "$actual" = "$expected" || { echo "ZIP SHA256 mismatch"; exit 1; }
+          echo "ZIP verified after recombining all four pieces."
           ls -lh TW-SERVER-part-*
       - name: Upload part 1
         uses: actions/upload-artifact@v4
