@@ -358,12 +358,14 @@ internal sealed partial class LauncherWindow : Form
             string root = GameRoot();
             Directory.CreateDirectory(root);
             SetStatus("Przygotowuję wbudowane pliki Tokyo World (bez tokenu)...");
-            ClientPackBootstrap.InstallMissing(root, reporter,
-                refreshManagedFiles: string.IsNullOrWhiteSpace(settings.GetToken()));
+            // Install missing game content from the bundled snapshot, but do not
+            // downgrade files that were already updated online on a previous run.
+            ClientPackBootstrap.InstallMissing(root, reporter, refreshManagedFiles: false);
             SetStatus("Sprawdzam aktualizacje Tokyo World...");
             var sync = new GitHubSynchronizer(settings.GetToken(), settings.Repository);
             try
             {
+                // Once Tokyo-World is public this works for friends without tokens.
                 await sync.SynchronizeAsync(root, reporter);
             }
             catch (InvalidOperationException ex) when (
@@ -371,9 +373,10 @@ internal sealed partial class LauncherWindow : Form
                 ex.Message.Contains("Nie można odczytać aktualizacji z GitHuba",
                     StringComparison.OrdinalIgnoreCase))
             {
-                reporter.Report("Prywatne repo wymaga tokenu tylko do aktualizacji online. "
-                    + "Gra użyje wbudowanych plików paczki. "
-                    + "Udostępnij publiczne repo dystrybucyjne, by znajomi mieli automatyczne aktualizacje.");
+                // Offline/private fallback: the bundled files are still usable.
+                // On newer EXEs update the snapshot, avoiding stale manifests.
+                ClientPackBootstrap.InstallMissing(root, reporter, refreshManagedFiles: true);
+                reporter.Report("Aktualizacja online niedostępna. Używam bezpiecznej, wbudowanej paczki.");
             }
             progress.Progress = Math.Max(progress.Progress, 25);
             PostInstallTweaks.Apply(root, reporter);
