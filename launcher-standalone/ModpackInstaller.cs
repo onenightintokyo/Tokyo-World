@@ -262,8 +262,8 @@ internal sealed class ModpackInstaller
             if (project is null) throw new InvalidOperationException("Nie znaleziono projektu Modrinth");
             string slug = GetString(project.RootElement, "slug");
             string id = GetString(project.RootElement, "id");
-            if (processed.Contains(id) && !enforceSharedVersion) return;
             bool enforceSharedVersion = slug is "the-bumblezone" or "sophisticated-core" or "extended-ae";
+            if (processed.Contains(id) && !enforceSharedVersion) return;
             if (!enforceSharedVersion && IsInstalled(slug, matchPattern)) { processed.Add(id); return; }
 
             JsonDocument? version = null;
