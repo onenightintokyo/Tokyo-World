@@ -10,7 +10,8 @@ namespace TokyoWorldLauncher;
 /// It contains only public/shareable configs, FTB Quests, KubeJS, resourcepacks,
 /// shaderpacks and the mod version manifest. No token or private source code.
 /// Fresh installations can use it without a private GitHub account.
-/// Live updates still require a public distribution repository or per-user auth.
+/// Each new EXE updates managed files with a backup; true live updates
+/// still require a public distribution repository or per-user auth.
 /// </summary>
 internal static class ClientPackBootstrap
 {
@@ -67,7 +68,26 @@ internal static class ClientPackBootstrap
             string dest = Path.GetFullPath(Path.Combine(root, relative.Replace('/', Path.DirectorySeparatorChar)));
             if (!dest.StartsWith(rootPrefix, StringComparison.OrdinalIgnoreCase))
                 throw new InvalidDataException("Ścieżka wykracza poza folder gry: " + name);
-            if (File.Exists(dest)) continue; // Never overwrite player settings/worlds.
+            // The snapshot contains ONLY managed game content, not saves,
+            // accounts or player preferences. Old clients have outdated
+            // .tokyo/modules.json and won't receive the FTB Quests fix if we
+            // merely skip files that already exist. Refresh all changed managed
+            // files, preserving a reversible backup of prior local contents.
+            if (File.Exists(dest))
+            {
+                using var existing = File.OpenRead(dest);
+                using var incoming = entry.Open();
+                byte[] oldHash = SHA256.HashData(existing);
+                byte[] newHash = SHA256.HashData(incoming);
+                if (oldHash.SequenceEqual(newHash)) continue;
+
+                string backup = Path.Combine(root, ".tokyo", "backups",
+                    "client-snapshot", DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff"),
+                    relative.Replace('/', Path.DirectorySeparatorChar));
+                Directory.CreateDirectory(Path.GetDirectoryName(backup)!);
+                File.Copy(dest, backup, overwrite: false);
+                progress.Report("Kopia starszego pliku paczki: " + relative);
+            }
 
             Directory.CreateDirectory(Path.GetDirectoryName(dest)!);
             string temp = dest + ".tokyo-bootstrap";
@@ -76,7 +96,7 @@ internal static class ClientPackBootstrap
                 using (var input = entry.Open())
                 using (var output = new FileStream(temp, FileMode.Create, FileAccess.Write))
                     input.CopyTo(output);
-                File.Move(temp, dest, overwrite: false);
+                File.Move(temp, dest, overwrite: true);
                 files++;
             }
             finally
@@ -91,7 +111,7 @@ internal static class ClientPackBootstrap
                 throw new InvalidDataException("Niepełny launcher: brak " + required);
 
         progress.Report("Tokyo World: wbudowana paczka klienta gotowa (" + files
-            + " nowych plików), bez prywatnego tokenu.");
+            + " nowych/zmienionych plików), bez prywatnego tokenu.");
         return files;
     }
 }
