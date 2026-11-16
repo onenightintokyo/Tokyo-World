@@ -334,16 +334,16 @@ def resolve_all() -> None:
                 # base_mod_hashes.txt. Do not add an unpinned newer release.
                 continue
             if project == "the-bumblezone":
-                # Exact 7.15.2 Forge build, matching the existing Tokyo World client.
-                # Modrinth sometimes does not index the same historical release.
-                # Official CurseForge file 9339180, SHA1 pinned for integrity.
-                ALL_META[project] = {
-                    "filename": "the_bumblezone-7.15.2+1.20.1-forge.jar",
-                    "sha1": "166ea07d23857c357712a7d59ff671927357f7c6",
-                    "url": ("https://mediafilez.forgecdn.net/files/9339/180/"
-                            "the_bumblezone-7.15.2+1.20.1-forge.jar"),
-                    "reason": "exact shared client Forge 1.20.1 version"
-                }
+                # The CurseForge CDN returns HTTP 403 to GitHub Actions for
+                # file 9339180. Resolve the SAME exact Forge version on
+                # Modrinth instead and verify the publisher SHA-512.
+                try:
+                    add_mod(resolve_version("the-bumblezone", "",
+                                            "7.15.2+1.20.1-forge"),
+                            "exact shared client Bumblezone release")
+                except Exception as exc:
+                    ERRORS.append("Cannot resolve Bumblezone 7.15.2 from Modrinth: "
+                                  + str(exc))
                 continue
             if entry.get("source") == "curseforge":
                 sha1 = entry.get("sha1", "").lower()
