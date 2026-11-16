@@ -54,7 +54,10 @@ internal sealed class ModpackInstaller
                 foreach (var module in profile.Value.EnumerateArray())
                 {
                     var project = module.GetProperty("project").GetString() ?? "";
-                    if (project.Length > 0 && !modules.ContainsKey(project))
+                    if (project.Length > 0 &&
+                        !project.Equals("every-compat", StringComparison.OrdinalIgnoreCase) &&
+                        !project.Equals("everycomp", StringComparison.OrdinalIgnoreCase) &&
+                        !modules.ContainsKey(project))
                         modules[project] = module.Clone();
                 }
             }
@@ -112,7 +115,7 @@ internal sealed class ModpackInstaller
             // FTB Library/Teams are distributed officially via CurseForge rather
             // than Modrinth. They will be fetched by the signed SHA1 CurseForge
             // manifest below, even when missing from a fresh installation.
-            if (Regex.IsMatch(parts[0], @"\Aftb-(library|teams)-forge-", RegexOptions.IgnoreCase))
+            if (Regex.IsMatch(parts[0], @"\Aftb-(library|teams|quests)-forge-", RegexOptions.IgnoreCase))
                 continue;
             if (File.Exists(path) && CheckSha1(path, parts[1])) continue;
             if (File.Exists(path))
@@ -154,7 +157,7 @@ internal sealed class ModpackInstaller
     {
         // Only three official FTB components are allowed through this path.
         // They are 1.20.1 Forge releases and their SHA1 is pinned in our manifest.
-        if (projectRef is not ("ftb-library" or "ftb-teams" or "ftb-chunks"))
+        if (projectRef is not ("ftb-library" or "ftb-teams" or "ftb-chunks" or "ftb-quests"))
             throw new InvalidDataException("Niezatwierdzony projekt CurseForge: " + projectRef);
         if (!SafeName(fileName) || !Regex.IsMatch(sha1, @"\A[a-fA-F0-9]{40}\z"))
             throw new InvalidDataException("Niepoprawna nazwa lub SHA1 CurseForge: " + fileName);
@@ -219,8 +222,8 @@ internal sealed class ModpackInstaller
     private async Task InstallProjectAsync(string projectRef, string versionId, string versionNeed, string matchPattern)
     {
         // Never reinstall an intentionally disabled optional mod on update.
-        if (suppressEveryCompat && (projectRef.Equals("every-compat", StringComparison.OrdinalIgnoreCase)
-            || projectRef.Equals("everycomp", StringComparison.OrdinalIgnoreCase))) return;
+        if (projectRef.Equals("every-compat", StringComparison.OrdinalIgnoreCase)
+            || projectRef.Equals("everycomp", StringComparison.OrdinalIgnoreCase)) return;
         if (processed.Contains(projectRef) || resolving.Contains(projectRef)) return;
         resolving.Add(projectRef);
         try
