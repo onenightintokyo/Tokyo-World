@@ -3,9 +3,12 @@ name: Build Tokyo World complete server pack
 on:
   push:
     branches:
+      - main
       - feature/tokyo-world-server-pack-1201-40p
     paths:
       - 'serverpack/**'
+      - 'modpacks/tokyo_modules.json'
+      - 'modpacks/base_mod_hashes.txt'
       - '.github/workflows/build-tokyo-server-pack.yml'
   workflow_dispatch:
 
