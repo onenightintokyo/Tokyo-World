@@ -116,7 +116,7 @@ def is_client(name: str) -> bool:
     return bool(CLIENT_ONLY.search(name or ""))
 
 
-def resolve_version(project: str, pinned: str = "") -> dict:
+def resolve_version(project: str, pinned: str = "", version_need: str = "") -> dict:
     details = api_get(API + "project/" + urllib.parse.quote(project))
     if details["project_type"] != "mod":
         raise ValueError("Not a Forge mod project: " + project)
@@ -134,8 +134,10 @@ def resolve_version(project: str, pinned: str = "") -> dict:
         choices = api_get(API + "project/" + urllib.parse.quote(details["id"]) + "/version?" + q)
         choices = [v for v in choices if "forge" in v.get("loaders", [])
                    and MINECRAFT in v.get("game_versions", [])]
+        if version_need:
+            choices = [v for v in choices if v.get("version_number", "") == version_need]
         if not choices:
-            raise ValueError("No Forge 1.20.1 version: " + project)
+            raise ValueError("No matching Forge 1.20.1 version: " + project + " / " + version_need)
         releases = [v for v in choices if v.get("version_type") == "release"]
         version = max(releases or choices, key=lambda x: x.get("date_published", ""))
     if "forge" not in version.get("loaders", []) or MINECRAFT not in version.get("game_versions", []):
@@ -303,6 +305,17 @@ def resolve_all() -> None:
             project = entry["project"]
             if is_client(project):
                 continue
+            if project == "sophisticated-core":
+                # Exact shared client baseline, not the latest Modrinth/CurseForge release.
+                # It matches modpacks/base_mod_hashes.txt and prevents version 2478.
+                ALL_META[project] = {
+                    "filename": "sophisticatedcore-1.20.1-1.5.33.2475.jar",
+                    "sha1": "bd67f2857cfb979b3479c8e17bb541dd6679ae3d",
+                    "url": ("https://mediafilez.forgecdn.net/files/9580/026/"
+                            "sophisticatedcore-1.20.1-1.5.33.2475.jar"),
+                    "reason": "exact shared client baseline Sophisticated Core"
+                }
+                continue
             if entry.get("source") == "curseforge":
                 sha1 = entry.get("sha1", "").lower()
                 if not re.fullmatch(r"[a-fA-F0-9]{40}", sha1):
@@ -317,7 +330,8 @@ def resolve_all() -> None:
                 continue
             try:
                 add_mod(resolve_version(PROJECT_ALIASES.get(project, project),
-                                        entry.get("versionId", "")),
+                                        entry.get("versionId", ""),
+                                        entry.get("version", "")),
                         "manifest " + group + "/" + project)
             except SkipClient:
                 print("Client-only project skipped:", project, flush=True)
