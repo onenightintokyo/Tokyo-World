@@ -15,6 +15,9 @@ for name in ["community-core","client-hud"]:
 found=[]
 missing=[]
 for slug,o in all_mods.items():
+    if o.get("source") == "curseforge":
+        print("Official CurseForge: handled by separate SHA1 verifier:",slug,flush=True)
+        continue
     try:
         req=urllib.request.Request(
             "https://api.modrinth.com/v2/project/"+urllib.parse.quote(slug),
