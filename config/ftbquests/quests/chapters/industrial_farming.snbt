@@ -1,12 +1,12 @@
 {
 	filename: "industrial_farming"
-	title: "&a&lPola bez gospodarza"
+	title: "&e&l21 · Pola bez gospodarza"
 	group: "A110000000000002"
 	id: "A120000000000008"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "industrialforegoing:plant_gatherer"
-	order_index: 15
+	order_index: 21
 	images: [
 		{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }
 	]
