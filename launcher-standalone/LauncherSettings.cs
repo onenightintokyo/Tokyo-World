@@ -43,10 +43,16 @@ internal sealed class LauncherSettings
                     // Keep the owner's private source when their Windows account
                     // has a valid local token. Friends never need the owner's token;
                     // they use the separate public read-only modpack distribution.
-                    if (string.IsNullOrWhiteSpace(loaded.GitHubTokenEncrypted) &&
+                    // Windows DPAPI secrets cannot travel between Windows users or PCs.
+                    // On a friend's machine an undecryptable copied token is not usable;
+                    // migrate to the public distribution instead of prompting for owner PAT.
+                    if (string.IsNullOrWhiteSpace(loaded.GetToken()) &&
                         string.Equals(loaded.Repository, PrivateSourceRepository,
                             StringComparison.OrdinalIgnoreCase))
+                    {
                         loaded.Repository = PublicDistributionRepository;
+                        loaded.GitHubTokenEncrypted = "";
+                    }
                     if (!loaded.PerfMigrationCompleted)
                     {
                         // Existing 14+ GB allocations are scaled down only once.
