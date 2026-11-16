@@ -30,6 +30,17 @@ for slug, (group, key, pinned) in pins.items():
     actual_group, entry = values[0]
     assert actual_group == group and entry.get(key) == pinned, (
         f"{slug}: unexpected group/version {actual_group}: {entry.get(key)}")
+# Twilight's custom registries must match the dedicated-server JAR exactly.
+twilight = projects.get("twilightforest", [])
+assert len(twilight) == 1, "Expected one Twilight Forest entry"
+_, twilight_entry = twilight[0]
+assert twilight_entry.get("source") == "curseforge"
+assert twilight_entry.get("fileName") == "twilightforest-1.20.1-4.3.2508-universal.jar"
+assert twilight_entry.get("sha1") == "fa3b506a45d3e9c465551cd533fd50c899496e9f"
+assert twilight_entry.get("url") == (
+    "https://mediafilez.forgecdn.net/files/5468/648/"
+    "twilightforest-1.20.1-4.3.2508-universal.jar"
+), "Unexpected Twilight Forest source"
 assert "extendedae-plus" in projects, "Missing Extended AE Plus"
 assert "ae2" in projects, "Missing AE2"
 baseline = (ROOT / "modpacks/base_mod_hashes.txt").read_text("utf-8")
