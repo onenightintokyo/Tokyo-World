@@ -786,7 +786,8 @@
         "project": "the-bumblezone",
         "label": "The Bumblezone — nowy wymiar, struktury i wyzwania pszczół",
         "match": "^(the_bumblezone|bumblezone)[-_.]",
-        "version": "7.15.2+1.20.1-forge"
+        "version": "7.15.2+1.20.1-forge",
+        "versionId": "XiIv5rDL"
       },
       {
         "project": "dynamictrees",
