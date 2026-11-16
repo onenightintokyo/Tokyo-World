@@ -14,7 +14,6 @@ internal sealed class ModpackInstaller
     private readonly HashSet<string> resolving = new(StringComparer.OrdinalIgnoreCase);
     private readonly List<string> skipped = new();
     private string modsDir = "";
-    private bool suppressEveryCompat;
     private IProgress<string>? status;
     private CancellationToken cancel;
 
@@ -28,7 +27,6 @@ internal sealed class ModpackInstaller
         IProgress<string> progress, CancellationToken cancellation = default)
     {
         modsDir = Path.Combine(gameDir, "mods");
-        suppressEveryCompat = lightweightMode;
         Directory.CreateDirectory(modsDir);
         status = progress;
         cancel = cancellation;
@@ -112,7 +110,7 @@ internal sealed class ModpackInstaller
             // FTB Library/Teams are distributed officially via CurseForge rather
             // than Modrinth. They will be fetched by the signed SHA1 CurseForge
             // manifest below, even when missing from a fresh installation.
-            if (Regex.IsMatch(parts[0], @"\Aftb-(library|teams)-forge-", RegexOptions.IgnoreCase))
+            if (Regex.IsMatch(parts[0], @"\Aftb-(library|teams|quests)-forge-", RegexOptions.IgnoreCase))
                 continue;
             if (File.Exists(path) && CheckSha1(path, parts[1])) continue;
             if (File.Exists(path))
@@ -152,9 +150,9 @@ internal sealed class ModpackInstaller
     private async Task InstallOfficialCurseForgeAsync(
         string gameDir, string projectRef, string fileName, string url, string sha1)
     {
-        // Only three official FTB components are allowed through this path.
+        // Four pinned original FTB files are distributed officially by CurseForge.
         // They are 1.20.1 Forge releases and their SHA1 is pinned in our manifest.
-        if (projectRef is not ("ftb-library" or "ftb-teams" or "ftb-chunks"))
+        if (projectRef is not ("ftb-library" or "ftb-teams" or "ftb-chunks" or "ftb-quests"))
             throw new InvalidDataException("Niezatwierdzony projekt CurseForge: " + projectRef);
         if (!SafeName(fileName) || !Regex.IsMatch(sha1, @"\A[a-fA-F0-9]{40}\z"))
             throw new InvalidDataException("Niepoprawna nazwa lub SHA1 CurseForge: " + fileName);
@@ -219,8 +217,11 @@ internal sealed class ModpackInstaller
     private async Task InstallProjectAsync(string projectRef, string versionId, string versionNeed, string matchPattern)
     {
         // Never reinstall an intentionally disabled optional mod on update.
-        if (suppressEveryCompat && (projectRef.Equals("every-compat", StringComparison.OrdinalIgnoreCase)
-            || projectRef.Equals("everycomp", StringComparison.OrdinalIgnoreCase))) return;
+        // Every Compat is intentionally discontinued in Tokyo World. Never reinstall
+        // it, even if an older local manifest still lists it as a module.
+        if (projectRef.Equals("every-compat", StringComparison.OrdinalIgnoreCase)
+            || projectRef.Equals("everycomp", StringComparison.OrdinalIgnoreCase))
+            return;
         if (processed.Contains(projectRef) || resolving.Contains(projectRef)) return;
         resolving.Add(projectRef);
         try
