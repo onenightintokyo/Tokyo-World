@@ -1,0 +1,6 @@
+# Tokyo World — Wave 06 Expert Final.
+# Verified Sophisticated Backpacks COMMON config schema for Forge.
+# Forbids free backpack items injected into vanilla chest loot tables.
+# Players must obtain their backpacks through tier-gated crafting.
+[common]
+chestLootEnabled = false

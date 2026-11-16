@@ -19,17 +19,6 @@ ServerEvents.recipes(event => {
       })
   }
 
-  if (Platform.isLoaded('ae2') && Platform.isLoaded('mekanism')) {
-    gate('ae2:quantum_ring',
-      ['FCF', 'SES', 'FCF'],
-      {
-        F: 'ae2:fluix_crystal',
-        C: 'mekanism:advanced_control_circuit',
-        S: 'mekanism:ingot_steel',
-        E: 'minecraft:ender_eye'
-      })
-  }
-
   if (Platform.isLoaded('industrialforegoing') && Platform.isLoaded('mekanism')) {
     // The advanced frame is not a day-one machine upgrade.
     gate('industrialforegoing:machine_frame_advanced',
@@ -41,15 +30,6 @@ ServerEvents.recipes(event => {
         F: 'industrialforegoing:machine_frame_simple'
       })
 
-    gate('industrialforegoing:mob_duplicator',
-      ['PCP', 'FSF', 'PNP'],
-      {
-        P: 'industrialforegoing:plastic',
-        C: 'mekanism:elite_control_circuit',
-        F: 'industrialforegoing:machine_frame_advanced',
-        S: 'minecraft:nether_star',
-        N: 'minecraft:ender_eye'
-      })
   }
 
   if (Platform.isLoaded('powah') && Platform.isLoaded('mekanism') &&

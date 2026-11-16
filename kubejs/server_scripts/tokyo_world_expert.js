@@ -24,23 +24,11 @@ ServerEvents.recipes(event => {
     { I: 'minecraft:iron_ingot', C: 'mekanism:basic_control_circuit',
       E: 'powah:energy_cell_starter', R: 'minecraft:redstone_block' })
 
-  // A logistical storage controller is not available on day one.
-  shaped('sophisticatedstorage:controller',
-    ['ICI', 'CRC', 'ICI'],
-    { I: 'minecraft:iron_ingot', C: 'create:precision_mechanism',
-      R: 'minecraft:redstone_block' })
-
   // Logic requires Create's more precise machinery.
   shaped('integrateddynamics:logic_programmer',
     ['IRI', 'CPC', 'IRI'],
     { I: 'minecraft:iron_ingot', R: 'minecraft:redstone',
       C: 'create:andesite_alloy', P: 'create:precision_mechanism' })
-
-  // Build a space industry from pre-existing electrical machinery.
-  shaped('ad_astra:nasa_workbench',
-    ['SCS', 'PWP', 'SCS'],
-    { S: 'ad_astra:steel_ingot', C: 'mekanism:advanced_control_circuit',
-      P: 'ad_astra:steel_plate', W: 'minecraft:crafting_table' })
 
   // Power your bee industry using factory parts rather than only iron.
   shaped('productivebees:centrifuge',
@@ -63,14 +51,6 @@ ServerEvents.recipes(event => {
 
   // Expert Fun tier 2: make special production lines depend on one another.
   // Keep these late-game recipes gated; basic machines stay approachable.
-  shaped('mekanism:digital_miner',
-    ['EPE', 'CSC', 'EDE'],
-    { E: 'mekanism:elite_control_circuit',
-      P: 'create:precision_mechanism',
-      C: 'mekanism:steel_casing',
-      S: 'powah:energy_cell_basic',
-      D: 'minecraft:diamond_pickaxe' })
-
   if (Platform.isLoaded('enderio')) {
     shaped('enderio:alloy_smelter',
       ['IFI', 'CPC', 'IFI'],
