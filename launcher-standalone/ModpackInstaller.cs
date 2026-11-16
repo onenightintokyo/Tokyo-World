@@ -162,13 +162,22 @@ internal sealed class ModpackInstaller
     private async Task InstallOfficialCurseForgeAsync(
         string gameDir, string projectRef, string fileName, string url, string sha1)
     {
-        // Only three official FTB components are allowed through this path.
-        // They are 1.20.1 Forge releases and their SHA1 is pinned in our manifest.
-        if (projectRef is not ("ftb-library" or "ftb-teams" or "ftb-chunks" or "ftb-quests"))
+        // Only pinned, publisher SHA1-verified CurseForge releases are accepted.
+        // The exact Twilight Forest JAR must match the verified dedicated server
+        // or joining fails with missing twilight:magic_paintings/restrictions.
+        bool isTwilight = projectRef.Equals("twilightforest", StringComparison.OrdinalIgnoreCase);
+        if (!isTwilight &&
+            projectRef is not ("ftb-library" or "ftb-teams" or "ftb-chunks" or "ftb-quests"))
             throw new InvalidDataException("Niezatwierdzony projekt CurseForge: " + projectRef);
         if (!SafeName(fileName) || !Regex.IsMatch(sha1, @"\A[a-fA-F0-9]{40}\z"))
             throw new InvalidDataException("Niepoprawna nazwa lub SHA1 CurseForge: " + fileName);
-        if (!fileName.StartsWith(projectRef + "-forge-", StringComparison.OrdinalIgnoreCase))
+        if (isTwilight)
+        {
+            if (fileName != "twilightforest-1.20.1-4.3.2508-universal.jar" ||
+                !sha1.Equals("fa3b506a45d3e9c465551cd533fd50c899496e9f", StringComparison.OrdinalIgnoreCase))
+                throw new InvalidDataException("Twilight Forest wymaga dokładnego JAR-a 4.3.2508 używanego na serwerze.");
+        }
+        else if (!fileName.StartsWith(projectRef + "-forge-", StringComparison.OrdinalIgnoreCase))
             throw new InvalidDataException("Niepoprawny plik FTB: " + fileName);
         if (!Uri.TryCreate(url, UriKind.Absolute, out var uri) ||
             uri.Scheme != Uri.UriSchemeHttps ||
@@ -183,7 +192,8 @@ internal sealed class ModpackInstaller
         {
             if (CheckSha1(file, sha1))
             {
-                status?.Report("FTB już obecny: " + fileName);
+                if (isTwilight) RetireOlderSharedJars("twilightforest", file);
+                status?.Report("Zweryfikowano SHA1: " + fileName);
                 return;
             }
             // Incorrect/stale FTB JAR? Verify a replacement before moving
@@ -211,8 +221,9 @@ internal sealed class ModpackInstaller
 
             // Avoid duplicate versions of one Forge mod ID. The old copy is
             // moved only AFTER the new one has been downloaded and checked.
-            string pattern = @"\A" + Regex.Escape(projectRef) +
-                @"-forge-[^/\\]+\.jar\z";
+            string pattern = isTwilight
+                ? @"\A(?:twilightforest|twilight[_-]forest)[-_.].*\.jar\z"
+                : @"\A" + Regex.Escape(projectRef) + @"-forge-[^/\\]+\.jar\z";
             string backup = Path.Combine(gameDir, ".tokyo", "backups",
                 "official-ftb", DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff"));
             foreach (string old in Directory.EnumerateFiles(modsDir, "*.jar")
@@ -222,7 +233,8 @@ internal sealed class ModpackInstaller
                 File.Move(old, Path.Combine(backup, Path.GetFileName(old)));
             }
             File.Move(temporary, file);
-            status?.Report("FTB zainstalowany: " + fileName);
+            if (isTwilight) RetireOlderSharedJars("twilightforest", file);
+            status?.Report("Zainstalowano i sprawdzono SHA1: " + fileName);
         }
         finally
         {
@@ -415,6 +427,7 @@ internal sealed class ModpackInstaller
         string pattern = slug switch
         {
             "the-bumblezone" => @"\A(?:the_bumblezone|bumblezone)[-_.].*\.jar\z",
+            "twilightforest" => @"\A(?:twilightforest|twilight[_-]forest)[-_.].*\.jar\z",
             "extended-ae" => @"\AExtendedAE-1\.20-.*\.jar\z",
             "guideme" => @"\Aguideme[-_.].*\.jar\z",
             "glodium" => @"\AGlodium[-_.].*\.jar\z",
