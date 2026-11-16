@@ -151,8 +151,8 @@ for group in GROUPS:
 
 group_headers='{\n\tchapter_groups: [\n'
 for group in GROUPS:
-    group_headers+='\t\t{ id: "A11000000000000'+str(group["id"])+
-                    '" title: "&'+group["color"]+'&l━━ '+group["name"]+' ━━" }\n'
+    group_headers+=('\t\t{ id: "A11000000000000'+str(group["id"])+
+                    '" title: "&'+group["color"]+'&l━━ '+group["name"]+' ━━" }\n')
 group_headers+='\t]\n}\n'
 (ROOT/"chapter_groups.snbt").write_text(group_headers,"utf8")
 
