@@ -51,5 +51,9 @@ try {
     if ($shot.Width -ne 1280 -or $shot.Height -ne 720) {
         throw 'Unexpected screenshot dimensions'
     }
+    $pixel = $shot.GetPixel(1100, 100)
+    if ($pixel.R -lt 180 -or $pixel.G -gt 110 -or $pixel.B -lt 75) {
+        throw "Canvas did not paint the embedded pink artwork; sampled pixel: $pixel"
+    }
 } finally { $shot.Dispose() }
 Write-Host 'Crimson Concept 4 screenshot generated successfully.'
