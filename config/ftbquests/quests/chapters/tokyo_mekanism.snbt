@@ -1,12 +1,12 @@
 {
 	filename: "tokyo_mekanism"
-	title: "&c&lIskra elektryczności"
+	title: "&e&l10 · Iskra elektryczności"
 	group: "A110000000000002"
 	id: "A120000000000003"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "mekanism:metallurgic_infuser"
-	order_index: 33
+	order_index: 10
 	images: [
 		{
 			image: "tokyoworld:textures/gui/quests/tokyo_mid.png"

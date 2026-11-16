@@ -1,12 +1,12 @@
 {
 	filename: "logistics_optimization"
-	title: "&e&lNic się nie marnuje"
+	title: "&e&l08 · Nic się nie marnuje"
 	group: "A110000000000002"
 	id: "A12000000000001F"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "pipez:universal_pipe"
-	order_index: 17
+	order_index: 8
 	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
