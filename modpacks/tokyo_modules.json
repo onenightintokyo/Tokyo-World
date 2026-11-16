@@ -977,12 +977,6 @@
         "versionId": "94dtOLgZ"
       },
       {
-        "project": "kotlin-for-forge",
-        "label": "Kotlin for Forge — biblioteka dla Hex Casting",
-        "match": "^(kotlinforforge|kotlin[_-]for[_-]forge)[-_ .]",
-        "versionId": "Zsh14XeQ"
-      },
-      {
         "project": "hex-casting",
         "label": "Hex Casting — programowalne zaklęcia i wzorce",
         "match": "^(hexcasting|HexCasting)[-_ .]",
