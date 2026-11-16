@@ -1,0 +1,80 @@
+name: Split completed Tokyo World server ZIP for direct download
+
+on:
+  push:
+    branches:
+      - feature/tokyo-world-server-pack-1201-40p
+    paths:
+      - '.github/workflows/split-tokyo-server-pack.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve the already verified 1.13 GB server ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          gh run download 43838808608 --repo "$GITHUB_REPOSITORY" \
+            --name TokyoWorld-Server-1.20.1-Forge-47.4.28 \
+            --dir dist
+          ls -lh dist
+          test -s dist/TokyoWorld-Server-1.20.1-Forge-47.4.28.zip
+      - name: Verify ZIP and split into under-512-MB parts
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dist
+          zipinfo -t TokyoWorld-Server-1.20.1-Forge-47.4.28.zip
+          sha256sum TokyoWorld-Server-1.20.1-Forge-47.4.28.zip > SERVER-ZIP-SHA256.txt
+          split -b 300m -a 3 -d TokyoWorld-Server-1.20.1-Forge-47.4.28.zip TW-SERVER-part-
+          test "$(find . -maxdepth 1 -name 'TW-SERVER-part-*' | wc -l)" -eq 4
+          expected="$(cut -d' ' -f1 SERVER-ZIP-SHA256.txt)"
+          actual="$(cat TW-SERVER-part-* | sha256sum | cut -d' ' -f1)"
+          test "$actual" = "$expected" || { echo "ZIP SHA256 mismatch"; exit 1; }
+          echo "ZIP verified after recombining all four pieces."
+          ls -lh TW-SERVER-part-*
+      - name: Upload part 1
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-Server-PART-001
+          path: dist/TW-SERVER-part-000
+          compression-level: 0
+          retention-days: 30
+      - name: Upload part 2
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-Server-PART-002
+          path: dist/TW-SERVER-part-001
+          compression-level: 0
+          retention-days: 30
+      - name: Upload part 3
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-Server-PART-003
+          path: dist/TW-SERVER-part-002
+          compression-level: 0
+          retention-days: 30
+      - name: Upload part 4
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-Server-PART-004
+          path: dist/TW-SERVER-part-003
+          compression-level: 0
+          retention-days: 30
+      - name: Upload SHA256 verification file
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-Server-SHA256
+          path: dist/SERVER-ZIP-SHA256.txt
+          retention-days: 30

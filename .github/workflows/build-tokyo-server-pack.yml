@@ -1,0 +1,44 @@
+name: Build Tokyo World complete server pack
+
+on:
+  push:
+    branches:
+      - feature/tokyo-world-server-pack-1201-40p
+    paths:
+      - 'serverpack/**'
+      - '.github/workflows/build-tokyo-server-pack.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    name: Forge 47.4.28 dedicated server ZIP
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout source configuration and mod manifests
+        uses: actions/checkout@v4
+      - name: Use Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Resolve every mod, verify original hashes and build server ZIP
+        run: python serverpack/build_server_pack.py
+      - name: Upload FULL verified server ZIP
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-Server-1.20.1-Forge-47.4.28
+          path: dist/TokyoWorld-Server-1.20.1-Forge-47.4.28.zip
+          retention-days: 30
+          if-no-files-found: error
+      - name: Upload missing-mod report if builder cannot make a complete ZIP
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-Server-Integrity-Report
+          path: serverpack/reports/*
+          retention-days: 30
+          if-no-files-found: warn
