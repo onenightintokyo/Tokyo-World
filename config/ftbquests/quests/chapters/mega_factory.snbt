@@ -1,12 +1,12 @@
 {
 	filename: "mega_factory"
-	title: "&b&lHala Tokyo"
+	title: "&c&l38 · Hala Tokyo"
 	group: "A110000000000003"
 	id: "A120000000000019"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "create:mechanical_crafter"
-	order_index: 21
+	order_index: 38
 	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
 	quests: [
 		{
