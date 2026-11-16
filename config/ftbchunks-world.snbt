@@ -1,0 +1,16 @@
+# Tokyo World 1.8 — FTB Chunks server defaults for new 40-player worlds.
+# Keep the forced chunk limit tight to protect MSPT on heavily modded servers.
+{
+  claiming: {
+    max_claimed_chunks: 128
+    hard_team_claim_limit: 128
+    max_idle_days_before_unclaim: 45.0d
+    party_limit_mode: "largest"
+  }
+  force_loading: {
+    max_force_loaded_chunks: 4
+    hard_team_force_limit: 4
+    force_load_mode: "never"
+    max_idle_days_before_unforce: 7.0d
+  }
+}
