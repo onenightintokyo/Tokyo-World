@@ -84,7 +84,7 @@ internal sealed class MinecraftEngine
             MinimumRamMb = 512,
             MaximumRamMb = ramMb,
             GameLauncherName = "TokyoWorldLauncher",
-            GameLauncherVersion = "1.7"
+            GameLauncherVersion = "1.7.1"
         });
         if (!command.Start()) throw new InvalidOperationException("Nie udało się uruchomić procesu Minecraft.");
         TokyoBranding.WatchMinecraftWindow(command, log);
