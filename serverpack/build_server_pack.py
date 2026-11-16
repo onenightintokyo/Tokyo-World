@@ -331,7 +331,7 @@ def resolve_all() -> None:
             try:
                 add_mod(resolve_version(PROJECT_ALIASES.get(project, project),
                                         entry.get("versionId", ""),
-                                        entry.get("version", "")),
+                                        entry.get("version", "") if project == "the-bumblezone" else "")),
                         "manifest " + group + "/" + project)
             except SkipClient:
                 print("Client-only project skipped:", project, flush=True)
