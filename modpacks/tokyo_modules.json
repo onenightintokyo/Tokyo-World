@@ -560,6 +560,18 @@
         "match": "^obscure_api-18\\.jar$",
         "versionId": "7sZmDObM",
         "note": "Required by Aquamirae (mod ID obscure_api >= 15). Always install even when Aquamirae jar is already present."
+      },
+      {
+        "project": "kotlin-for-forge",
+        "label": "Kotlin for Forge 4.12.0 — obowiązkowy dla Fzzy Config",
+        "versionId": "Zsh14XeQ",
+        "match": "^kotlinforforge-4\\.12\\.0-all\\.jar$"
+      },
+      {
+        "project": "thermal-foundation",
+        "label": "Thermal Foundation 11.0.6 — wspólna baza Thermal Dynamics/Cultivation",
+        "versionId": "44ilyZbi",
+        "match": "^thermal_foundation-1\\.20\\.1-11\\.0\\.6\\.70\\.jar$"
       }
     ],
     "wave-industry": [
