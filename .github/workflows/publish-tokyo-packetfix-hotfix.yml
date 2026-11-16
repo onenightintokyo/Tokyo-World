@@ -1,0 +1,47 @@
+name: Publish Tokyo World Packet Fixer server hotfix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'serverpack/build_packetfix_hotfix.py'
+      - '.github/workflows/publish-tokyo-packetfix-hotfix.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  hotfix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check hotfix script syntax
+        run: python -m py_compile serverpack/build_packetfix_hotfix.py
+      - name: Fetch exact Forge JAR, verify SHA512, create small ZIP
+        run: python serverpack/build_packetfix_hotfix.py
+      - name: Upload server hotfix ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-Server-PacketFixer-Hotfix
+          path: dist/TokyoWorld-Server-PacketFixer-Hotfix.zip
+          if-no-files-found: error
+      - name: Publish hotfix ZIP in GitHub Releases
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag="tokyo-world-server-packetfixer-hotfix"
+          zip="dist/TokyoWorld-Server-PacketFixer-Hotfix.zip"
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --target "$GITHUB_SHA" \
+              --title "Tokyo World Server Hotfix — Packet Fixer 1.4.2" \
+              --notes "Forge 1.20.1 — only mods/PacketFixer*.jar. Requires matching client mod; restart server."
+          fi
+          gh release upload "$tag" "$zip" --clobber
+          gh release edit "$tag" --notes "Packet Fixer 1.4.2 for Forge 1.20.1. Extract the mods/ directory into the dedicated server root, back up first, and restart. Source commit: $GITHUB_SHA"
