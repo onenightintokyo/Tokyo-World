@@ -85,7 +85,7 @@ internal sealed class ModpackInstaller
         // ExtendedAE Plus hard-depends on Extended AE (mod ID expatternprovider).
         // Fail the install before Minecraft starts instead of silently treating a
         // missing core dependency as an optional download error.
-        string extendedAeMatch = @"\AExtendedAE-1\.20-1\.4\.(?:[6-9]|[1-9][0-9])-forge\.jar\z";
+        string extendedAeMatch = @"\AExtendedAE-1\.20-1\.4\.18-forge\.jar\z";
         if (!Directory.EnumerateFiles(modsDir, "*.jar").Any(file =>
             Regex.IsMatch(Path.GetFileName(file), extendedAeMatch, RegexOptions.IgnoreCase)))
         {
@@ -262,8 +262,8 @@ internal sealed class ModpackInstaller
             if (project is null) throw new InvalidOperationException("Nie znaleziono projektu Modrinth");
             string slug = GetString(project.RootElement, "slug");
             string id = GetString(project.RootElement, "id");
-            if (processed.Contains(id)) return;
-            bool enforceSharedVersion = slug is "the-bumblezone" or "sophisticated-core";
+            if (processed.Contains(id) && !enforceSharedVersion) return;
+            bool enforceSharedVersion = slug is "the-bumblezone" or "sophisticated-core" or "extended-ae";
             if (!enforceSharedVersion && IsInstalled(slug, matchPattern)) { processed.Add(id); return; }
 
             JsonDocument? version = null;
@@ -338,9 +338,12 @@ internal sealed class ModpackInstaller
 
     private void RetireOlderSharedJars(string slug, string destination)
     {
-        string pattern = slug == "the-bumblezone"
-            ? @"\A(?:the_bumblezone|bumblezone)[-_.].*\.jar\z"
-            : @"\Asophisticatedcore[-_.].*\.jar\z";
+        string pattern = slug switch
+        {
+            "the-bumblezone" => @"\A(?:the_bumblezone|bumblezone)[-_.].*\.jar\z",
+            "extended-ae" => @"\AExtendedAE-1\.20-.*\.jar\z",
+            _ => @"\Asophisticatedcore[-_.].*\.jar\z"
+        };
         string backup = Path.Combine(Directory.GetParent(modsDir)!.FullName, ".tokyo",
             "backups", "old-shared-mod-versions");
         foreach (string candidate in Directory.EnumerateFiles(modsDir, "*.jar")
@@ -363,8 +366,15 @@ internal sealed class ModpackInstaller
             try { if (names.Any(x => Regex.IsMatch(x, match, RegexOptions.IgnoreCase))) return true; }
             catch (ArgumentException) { /* Ignore faulty manifest matcher. */ }
         }
+        // Never treat ExtendedAEPlus as ExtendedAE: a valid slug must end at a
+        // version/file-name boundary, not in the middle of another mod name.
         string simple = Regex.Replace(slug, @"[-_ ]", "");
-        return names.Any(x => Regex.Replace(x!, @"[-_ ]", "").StartsWith(simple, StringComparison.OrdinalIgnoreCase));
+        return names.Any(x =>
+        {
+            string normalized = Regex.Replace(x!, @"[-_ ]", "");
+            return normalized.StartsWith(simple, StringComparison.OrdinalIgnoreCase)
+                && (normalized.Length == simple.Length || !char.IsLetter(normalized[simple.Length]));
+        });
     }
 
     private async Task<JsonDocument?> GetJsonAsync(string api, bool optional = false)
