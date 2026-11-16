@@ -1018,6 +1018,47 @@
         "match": "^(ad_astra|adastra|Ad_Astra)[-_ .]",
         "versionId": "8EwzHQkx"
       }
+    ],
+    "community-core": [
+      {
+        "project": "ftb-library",
+        "label": "FTB Library — biblioteka interfejsu i zespołów",
+        "match": "^ftb-library[-_.]"
+      },
+      {
+        "project": "ftb-teams",
+        "label": "FTB Teams — drużyny i wspólne claimy",
+        "match": "^ftb-teams[-_.]"
+      },
+      {
+        "project": "ftb-chunks",
+        "label": "FTB Chunks — chronione działki, mapa i chunki zespołu",
+        "match": "^ftb-chunks[-_.]"
+      },
+      {
+        "project": "spark",
+        "label": "spark — profiler TPS/MSPT i wydajności dla serwera",
+        "match": "^spark[-_.]"
+      }
+    ],
+    "client-hud": [
+      {
+        "project": "betterf3",
+        "label": "BetterF3 — czytelne FPS, RAM, współrzędne, biome i statystyki (klient)",
+        "versionId": "xo6HmgWj",
+        "match": "^(BetterF3|betterf3)[-_.]"
+      },
+      {
+        "project": "cloth-config",
+        "label": "Cloth Config — konfiguracja BetterF3",
+        "versionId": "t8TXrZvZ",
+        "match": "^cloth-config[-_.]"
+      },
+      {
+        "project": "appleskin",
+        "label": "AppleSkin — głód i saturacja",
+        "match": "^appleskin[-_.]"
+      }
     ]
   },
   "wave06": {
@@ -1041,5 +1082,15 @@
       "immediatelyfast"
     ],
     "action": "Launcher 1.7.2 moves existing ImmediatelyFast JAR to .tokyo/backups/mod-conflicts before launching if Oculus is installed. Older launchers: run tools/Napraw-TokyoWorld-Start.ps1 once."
+  },
+  "update18": {
+    "title": "Tokyo World 1.8 — Four Stage Quests & Community Server",
+    "notes": [
+      "FTB Chunks + FTB Teams + FTB Library and spark are core for LAN/servers.",
+      "BetterF3 & Cloth Config are client-only and must not be copied to a dedicated server.",
+      "FTB Chunks force-loading capped to 4 chunks/team and offline forcing disabled to protect 40-player TPS.",
+      "Four large quest stages and modest random reward tables preserve all existing quest IDs."
+    ],
+    "target": "Minecraft 1.20.1 / Forge"
   }
 }
