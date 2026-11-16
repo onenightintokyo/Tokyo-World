@@ -939,6 +939,16 @@
     ],
     "wave06-arcane-armory": [
       {
+        "project": "fzzy-config",
+        "label": "Fzzy Config — konfiguracja Simply Swords",
+        "match": "^(fzzy[_-]config|fzzyconfig)[-_ .]"
+      },
+      {
+        "project": "architectury-api",
+        "label": "Architectury API — wymagany przez Simply Swords",
+        "match": "^(architectury|architectury[_-]api)[-_ .]"
+      },
+      {
         "project": "paucal",
         "label": "PAUCAL — biblioteka Hex Casting",
         "match": "^paucal[-_ .]"
@@ -977,6 +987,16 @@
       }
     ],
     "wave06-space-age": [
+      {
+        "project": "resourceful-config",
+        "label": "Resourceful Config — konfiguracja Ad Astra",
+        "match": "^(resourcefulconfig|resourceful[_-]config)[-_ .]"
+      },
+      {
+        "project": "resourceful-lib",
+        "label": "Resourceful Lib — obowiązkowa biblioteka Ad Astra",
+        "match": "^(resourcefullib|resourceful[_-]lib)[-_ .]"
+      },
       {
         "project": "botarium",
         "label": "Botarium — biblioteka maszyn i paliw Ad Astra",
