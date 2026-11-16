@@ -7,12 +7,18 @@ on:
       - 'config/ftbquests/quests/**'
       - 'modpacks/tokyo_modules.json'
       - 'tools/validate_wave06.py'
+      - 'tools/verify_wave06_modrinth.py'
+      - 'tools/validate_expert_final.py'
+      - 'kubejs/**'
       - '.github/workflows/validate-tokyo-content.yml'
   pull_request:
     paths:
       - 'config/ftbquests/quests/**'
       - 'modpacks/tokyo_modules.json'
       - 'tools/validate_wave06.py'
+      - 'tools/verify_wave06_modrinth.py'
+      - 'tools/validate_expert_final.py'
+      - 'kubejs/**'
       - '.github/workflows/validate-tokyo-content.yml'
   workflow_dispatch:
 
@@ -27,3 +33,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate Wave 06 manifest, SNBT structure, IDs and quest dependencies
         run: python3 tools/validate_wave06.py
+      - name: Syntax-check every KubeJS server script
+        run: |
+          for f in kubejs/server_scripts/*.js; do
+            echo "Checking $f"
+            node --check "$f"
+          done
+      - name: Check the complete Expert Final configuration and recipe uniqueness
+        run: python3 tools/validate_expert_final.py
+      - name: Confirm Modrinth Forge 1.20.1 builds and required dependencies
+        run: python3 tools/verify_wave06_modrinth.py
