@@ -43,7 +43,17 @@ internal sealed class GitHubSynchronizer
         using var response = await http.GetAsync(
             $"https://api.github.com/repos/{repo}/git/trees/main?recursive=1", cancellation);
         if (response.StatusCode is HttpStatusCode.NotFound or HttpStatusCode.Unauthorized or HttpStatusCode.Forbidden)
-            throw new InvalidOperationException("Nie można odczytać aktualizacji z GitHuba. Ustaw publiczne repozytorium dystrybucyjne lub podaj własny token z uprawnieniem Contents: Read w ustawieniach (⚙). Nie umieszczaj tokenu w EXE.");
+        {
+            if (repo.Equals(LauncherSettings.PublicDistributionRepository,
+                    StringComparison.OrdinalIgnoreCase))
+                throw new InvalidOperationException(
+                    "Publiczne repozytorium aktualizacji Tokyo World Client nie jest jeszcze dostępne. " +
+                    "Właściciel paczki musi utworzyć PUBLICZNE repo Tokyo-World-Client i uruchomić workflow publikacji. " +
+                    "Znajomi NIE powinni otrzymywać prywatnego tokenu GitHub.");
+            throw new InvalidOperationException(
+                "Nie można pobrać aktualizacji z prywatnego repozytorium. " +
+                "Tylko właściciel powinien używać własnego tokenu, lub wybierz publiczne źródło Tokyo-World-Client.");
+        }
         response.EnsureSuccessStatusCode();
         using var tree = JsonDocument.Parse(await response.Content.ReadAsStreamAsync(cancellation));
         if (tree.RootElement.TryGetProperty("truncated", out var trunc) && trunc.GetBoolean())
