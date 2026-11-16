@@ -39,8 +39,11 @@ try {
 } finally { $stream.Dispose() }
 
 # The GUI renders to a PNG with its real WinForms controls (without login/network).
-& $testExe '--render-preview' $preview
-if ($LASTEXITCODE -ne 0 -or !(Test-Path -LiteralPath $preview)) {
+# WinExe runs as a GUI subsystem process: use -Wait so the screenshot file
+# exists before asserting it. Direct invocation in PowerShell may return early.
+$render = Start-Process -FilePath $testExe -ArgumentList @(
+    '--render-preview', ('"' + $preview + '"')) -PassThru -Wait
+if ($render.ExitCode -ne 0 -or !(Test-Path -LiteralPath $preview)) {
     throw 'Concept UI render failed after attaching artwork to single EXE'
 }
 $shot = [System.Drawing.Bitmap]::FromFile($preview)
