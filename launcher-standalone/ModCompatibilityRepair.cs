@@ -40,6 +40,38 @@ internal static class ModCompatibilityRepair
         string modsDir = Path.Combine(gameDir, "mods");
         if (!Directory.Exists(modsDir)) return;
 
+        // Startup incident 2026-11-16: ImmediatelyFast 1.2.4 on Oculus 1.8.0
+        // references Iris's removed class net.coderbot.iris.vertices.ImmediateState.
+        // Both are optional client-only render mods. Keep Oculus for shaderpacks,
+        // remove ImmediatelyFast from *active* mods and preserve the original JAR.
+        // The synchronized module manifest no longer reinstalls ImmediatelyFast.
+        var oculusFiles = Directory.EnumerateFiles(modsDir, "*.jar")
+            .Where(f => Regex.IsMatch(Path.GetFileName(f),
+                @"\Aoculus[-_.].*\.jar\z", RegexOptions.IgnoreCase)).ToArray();
+        if (oculusFiles.Length > 0)
+        {
+            var immediateFiles = Directory.EnumerateFiles(modsDir, "*.jar")
+                .Where(f => Regex.IsMatch(Path.GetFileName(f),
+                    @"\AImmediatelyFast[-_.].*\.jar\z", RegexOptions.IgnoreCase)).ToArray();
+            if (immediateFiles.Length > 0)
+            {
+                var movedFast = new List<(string Source, string Backup)>();
+                try
+                {
+                    foreach (var file in immediateFiles)
+                        Stash(gameDir, file, movedFast, report);
+                    report.Report("Naprawiono konflikt grafiki: Oculus pozostaje aktywny, ImmediatelyFast bezpiecznie wyłączony.");
+                }
+                catch
+                {
+                    foreach (var entry in movedFast.AsEnumerable().Reverse())
+                        if (!File.Exists(entry.Source) && File.Exists(entry.Backup))
+                            File.Move(entry.Backup, entry.Source);
+                    throw;
+                }
+            }
+        }
+
         var endFiles = Directory.EnumerateFiles(modsDir, "*.jar")
             .Where(x => EndDelightFile.IsMatch(Path.GetFileName(x))).ToArray();
 

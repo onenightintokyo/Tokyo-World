@@ -873,12 +873,6 @@
     ],
     "performance-fps": [
       {
-        "project": "immediatelyfast",
-        "label": "ImmediatelyFast — szybszy rendering UI i obiektów",
-        "match": "^ImmediatelyFast[-_.]",
-        "versionId": "NJ17fqEK"
-      },
-      {
         "project": "fastsuite",
         "label": "FastSuite — wydajniejsze dopasowywanie receptur",
         "match": "^FastSuite[-_.]"
@@ -1039,5 +1033,13 @@
     ],
     "safety": "Nowe wymiary i generacja jaskiń pojawią się na nowych chunkach. Wykonaj kopię świata. Nie aktywuj wave-06 bez zgodności po stronie serwera.",
     "pinnedVersions": "Expert Final 2026-11-16 — verified through Modrinth Forge 1.20.1 version metadata and SHA-512 checks"
+  },
+  "startupCompatibility": {
+    "note": "Oculus 1.8.0 + ImmediatelyFast 1.2.4 produces IrisCompat ClassNotFoundException net.coderbot.iris.vertices.ImmediateState. ImmediatelyFast deliberately excluded; baseline FerriteCore, ModernFix, Embeddium, FastSuite remain.",
+    "conflictingPair": [
+      "oculus",
+      "immediatelyfast"
+    ],
+    "action": "Launcher 1.7.2 moves existing ImmediatelyFast JAR to .tokyo/backups/mod-conflicts before launching if Oculus is installed. Older launchers: run tools/Napraw-TokyoWorld-Start.ps1 once."
   }
 }
