@@ -362,14 +362,17 @@ internal sealed partial class LauncherWindow : Form
             // downgrade files that were already updated online on a previous run.
             ClientPackBootstrap.InstallMissing(root, reporter, refreshManagedFiles: false);
             SetStatus("Sprawdzam aktualizacje Tokyo World...");
-            var sync = new GitHubSynchronizer(settings.GetToken(), settings.Repository);
+            // Public official repo needs no credentials. Never send an old,
+            // revoked private token when it may break an anonymous request.
+            string syncToken = settings.Repository.Equals("onenightintokyo/Tokyo-World",
+                StringComparison.OrdinalIgnoreCase) ? "" : settings.GetToken();
+            var sync = new GitHubSynchronizer(syncToken, settings.Repository);
             try
             {
-                // Once Tokyo-World is public this works for friends without tokens.
                 await sync.SynchronizeAsync(root, reporter);
             }
             catch (InvalidOperationException ex) when (
-                string.IsNullOrWhiteSpace(settings.GetToken()) &&
+                string.IsNullOrWhiteSpace(syncToken) &&
                 ex.Message.Contains("Nie można odczytać aktualizacji z GitHuba",
                     StringComparison.OrdinalIgnoreCase))
             {
