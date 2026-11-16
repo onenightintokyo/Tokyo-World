@@ -4,7 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'config/ftbquests/quests/**'
+      - 'config/**'
+      - 'defaultconfigs/**'
       - 'modpacks/tokyo_modules.json'
       - 'tools/validate_wave06.py'
       - 'tools/verify_wave06_modrinth.py'
@@ -14,7 +15,8 @@ on:
       - '.github/workflows/validate-tokyo-content.yml'
   pull_request:
     paths:
-      - 'config/ftbquests/quests/**'
+      - 'config/**'
+      - 'defaultconfigs/**'
       - 'modpacks/tokyo_modules.json'
       - 'tools/validate_wave06.py'
       - 'tools/verify_wave06_modrinth.py'
