@@ -243,7 +243,7 @@ internal sealed class ModpackInstaller
             if (project is null) throw new InvalidOperationException("Nie znaleziono projektu Modrinth");
             string slug = GetString(project.RootElement, "slug");
             string id = GetString(project.RootElement, "id");
-            bool enforceSharedVersion = slug is "the-bumblezone" or "sophisticated-core" or "extended-ae";
+            bool enforceSharedVersion = slug is "the-bumblezone" or "sophisticated-core" or "extended-ae" or "guideme" or "glodium";
             if (processed.Contains(id) && !enforceSharedVersion) return;
             if (!enforceSharedVersion && IsInstalled(slug, matchPattern)) { processed.Add(id); return; }
 
@@ -416,6 +416,8 @@ internal sealed class ModpackInstaller
         {
             "the-bumblezone" => @"\A(?:the_bumblezone|bumblezone)[-_.].*\.jar\z",
             "extended-ae" => @"\AExtendedAE-1\.20-.*\.jar\z",
+            "guideme" => @"\Aguideme[-_.].*\.jar\z",
+            "glodium" => @"\AGlodium[-_.].*\.jar\z",
             _ => @"\Asophisticatedcore[-_.].*\.jar\z"
         };
         string backup = Path.Combine(Directory.GetParent(modsDir)!.FullName, ".tokyo",
