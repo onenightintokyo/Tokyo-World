@@ -76,6 +76,10 @@ internal sealed class ModpackInstaller
                 }
                 catch (Exception ex)
                 {
+                    if (entry.Key.Equals("packet-fixer", StringComparison.OrdinalIgnoreCase))
+                        throw new InvalidOperationException(
+                            "Brakuje Packet Fixer (obowiązkowy dla połączenia z serwerem Tokyo World). " +
+                            "Sprawdź internet i ponów aktualizację. Szczegóły: " + ex.Message, ex);
                     string message = $"{entry.Key}: {ex.Message}";
                     skipped.Add(message);
                     status.Report("Niedostępny dodatek: " + message);
@@ -255,7 +259,7 @@ internal sealed class ModpackInstaller
             if (project is null) throw new InvalidOperationException("Nie znaleziono projektu Modrinth");
             string slug = GetString(project.RootElement, "slug");
             string id = GetString(project.RootElement, "id");
-            bool enforceSharedVersion = slug is "the-bumblezone" or "sophisticated-core" or "extended-ae" or "guideme" or "glodium" or "kotlin-for-forge" or "thermal-foundation";
+            bool enforceSharedVersion = slug is "the-bumblezone" or "sophisticated-core" or "extended-ae" or "guideme" or "glodium" or "kotlin-for-forge" or "thermal-foundation" or "packet-fixer";
             if (processed.Contains(id) && !enforceSharedVersion) return;
             if (!enforceSharedVersion && IsInstalled(slug, matchPattern)) { processed.Add(id); return; }
 
@@ -433,6 +437,7 @@ internal sealed class ModpackInstaller
             "glodium" => @"\AGlodium[-_.].*\.jar\z",
             "kotlin-for-forge" => @"\Akotlinforforge[-_.].*\.jar\z",
             "thermal-foundation" => @"\Athermal_foundation[-_.].*\.jar\z",
+            "packet-fixer" => @"\Apacketfixer(?:forge)?[-_.].*\.jar\z",
             _ => @"\Asophisticatedcore[-_.].*\.jar\z"
         };
         string backup = Path.Combine(Directory.GetParent(modsDir)!.FullName, ".tokyo",
