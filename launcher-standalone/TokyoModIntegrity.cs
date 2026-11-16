@@ -103,7 +103,17 @@ internal static class TokyoModIntegrity
                         string key = id.Groups["id"].Value;
                         if (declared.TryGetValue(key, out string? previous) &&
                             !previous.Equals(origin, StringComparison.OrdinalIgnoreCase))
-                            errors.Add("Duplikat " + key + ": " + previous + " / " + origin);
+                        {
+                            // Forge JarJar resolves duplicate embedded libraries.
+                            // Only two directly installed top-level JARs with the
+                            // same modId are an unconditional duplicate error.
+                            bool previousEmbedded = previous.Contains("!/", StringComparison.Ordinal);
+                            bool currentEmbedded = origin.Contains("!/", StringComparison.Ordinal);
+                            if (!previousEmbedded && !currentEmbedded)
+                                errors.Add("Duplikat " + key + ": " + previous + " / " + origin);
+                            if (previousEmbedded && !currentEmbedded)
+                                declared[key] = origin;
+                        }
                         else
                             declared[key] = origin;
                     }
