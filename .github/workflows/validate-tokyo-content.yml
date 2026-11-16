@@ -8,6 +8,7 @@ on:
       - 'modpacks/tokyo_modules.json'
       - 'tools/validate_wave06.py'
       - 'tools/verify_wave06_modrinth.py'
+      - 'tools/check_wave06_jar_items.py'
       - 'tools/validate_expert_final.py'
       - 'kubejs/**'
       - '.github/workflows/validate-tokyo-content.yml'
@@ -17,6 +18,7 @@ on:
       - 'modpacks/tokyo_modules.json'
       - 'tools/validate_wave06.py'
       - 'tools/verify_wave06_modrinth.py'
+      - 'tools/check_wave06_jar_items.py'
       - 'tools/validate_expert_final.py'
       - 'kubejs/**'
       - '.github/workflows/validate-tokyo-content.yml'
@@ -43,3 +45,5 @@ jobs:
         run: python3 tools/validate_expert_final.py
       - name: Confirm Modrinth Forge 1.20.1 builds and required dependencies
         run: python3 tools/verify_wave06_modrinth.py
+      - name: Inspect actual pinned Forge JARs for new quest items
+        run: python3 tools/check_wave06_jar_items.py
