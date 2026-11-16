@@ -48,6 +48,12 @@ def verify() -> None:
         for required in REQUIRED:
             if mods.count("mods/" + required) != 1:
                 raise RuntimeError("Missing exact shared client/server version: " + required)
+        # The same pinned Packet Fixer release is installed from Modrinth on
+        # clients, and must also be present in this server-only pack.
+        packetfixers = [name for name in mods if re.fullmatch(
+            r"mods/packetfixer(?:forge)?[-_.].*\.jar", name, flags=re.I)]
+        if len(packetfixers) != 1:
+            raise RuntimeError("Expected exactly one Packet Fixer Forge 1.20.1 JAR in server ZIP")
         retired = [n for n in mods if RETIRED.search(Path(n).name)]
         if retired:
             raise RuntimeError("Retired Every Compat found: " + ", ".join(retired))
