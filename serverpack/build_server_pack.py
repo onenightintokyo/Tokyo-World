@@ -49,6 +49,21 @@ CLIENT_ONLY = re.compile(
     r"cloth[_-]?config|creativecoreclient)(?:[-_. ]|$)",
     flags=re.I
 )
+PROJECT_ALIASES = {
+    "ae2wtlib": "applied-energistics-2-wireless-terminals",
+}
+# Official CurseForge file IDs when the metadata mirror does not index a
+# valid Forge release, or when the newest release adds new dependencies.
+CF_PINNED = {
+    "the-graveyard": {
+        "filename": "The_Graveyard_3.1_(FORGE)_for_1.20.1.jar",
+        "id": 5114579,
+    },
+    "ftb-ultimine": {
+        "filename": "ftb-ultimine-forge-2001.1.8.jar",
+        "id": 7880472,
+    },
+}
 CF_SLUGS = {
     "compact-machines": "compact-machines",
     "building-gadgets": "building-gadgets",
@@ -59,7 +74,7 @@ CF_SLUGS = {
     "ae2wtlib": "ae2wtlib",
     "twilightforest": "the-twilight-forest",
     "create-slice-and-dice": "slice-and-dice",
-    "iron-chests-restocked": "iron-chests-restocked",
+    "iron-chests-restocked": "ironchests",
     "born-in-chaos": "born-in-chaos",
     "the-graveyard": "the-graveyard",
     "ftb-ultimine": "ftb-ultimine-forge",
@@ -191,6 +206,15 @@ def curseforge_version(project: str) -> dict:
     ForgeCDN host. The resulting SHA256 is recorded in the manifest and pack.
     Never accept a Fabric/NeoForge/other-MC file when CFWidget falls back.
     """
+    if project in CF_PINNED:
+        pinned = CF_PINNED[project]
+        filename, fileid = pinned["filename"], pinned["id"]
+        return {
+            "filename": filename, "sha1": "",
+            "url": (f"https://mediafilez.forgecdn.net/files/"
+                    f"{fileid//1000}/{fileid%1000}/{filename}"),
+            "reason": f"official CurseForge pinned {project} ({fileid})"
+        }
     slug = CF_SLUGS[project]
     url = ("https://api.cfwidget.com/minecraft/mc-mods/" + slug +
            "?version=1.20.1&loader=forge")
@@ -292,7 +316,8 @@ def resolve_all() -> None:
                 }
                 continue
             try:
-                add_mod(resolve_version(project, entry.get("versionId", "")),
+                add_mod(resolve_version(PROJECT_ALIASES.get(project, project),
+                                        entry.get("versionId", "")),
                         "manifest " + group + "/" + project)
             except SkipClient:
                 print("Client-only project skipped:", project, flush=True)
