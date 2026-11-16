@@ -163,6 +163,17 @@ def add_mod(version: dict, reason: str, exact_base_sha1: str | None = None) -> N
     project = version["project_id"]
     with LOCK:
         if project in ALL_MODS:
+            # A dependency can be discovered before an exact baseline entry.
+            # Never silently treat an incompatible newer JAR as the pinned JAR.
+            current = ALL_MODS[project]
+            if exact_base_sha1 and current is not None and (
+                current.get("sha1", "").lower() != exact_base_sha1.lower()
+            ):
+                raise ValueError(
+                    "Pinned baseline version collision: " + reason +
+                    " expected SHA1 " + exact_base_sha1 +
+                    " but dependency already selected " + current["filename"]
+                )
             return
         ALL_MODS[project] = None  # guard against cycles
     try:
@@ -266,6 +277,13 @@ def resolve_all() -> None:
             raise ValueError("Bad SHA1 for " + name)
         if not is_client(name):
             baselines.append((name, sha1))
+    # Load the exact client Sophisticated Core baseline BEFORE Backpacks or
+    # Storage can resolve a newer Core as a transitive dependency.
+    CORE_NAME = "sophisticatedcore-1.20.1-1.5.33.2475.jar"
+    CORE_SHA1 = "bd67f2857cfb979b3479c8e17bb541dd6679ae3d"
+    if (CORE_NAME, CORE_SHA1) not in baselines:
+        ERRORS.append("Missing exact shared Sophisticated Core baseline in base_mod_hashes.txt")
+    baselines.sort(key=lambda item: (item[0] != CORE_NAME, item[0]))
     print(f"Original baseline: {len(baselines)} server candidate JARs", flush=True)
     for name, sha1 in baselines:
         try:
@@ -287,12 +305,18 @@ def resolve_all() -> None:
                               " | " + sha1)
                 continue
             if version.get("project_id"):
-                if version.get("server_side") == "unsupported":
+                if version.get("server_side") == "unsupported" and name != CORE_NAME:
                     continue
                 if MINECRAFT not in version.get("game_versions", []):
                     ERRORS.append("Baseline wrong game version: " + name)
                     continue
                 add_mod(version, "original baseline " + name, sha1)
+                if name == CORE_NAME:
+                    selected = ALL_MODS.get(version.get("project_id"))
+                    if selected is None or selected.get("filename") != CORE_NAME or (
+                        selected.get("sha1", "").lower() != CORE_SHA1
+                    ):
+                        ERRORS.append("Sophisticated Core baseline was not preserved exactly")
         except Exception as exc:
             ERRORS.append("Cannot resolve original baseline " + name + ": " + str(exc))
     print("Original baseline resolved, errors:", len(ERRORS), flush=True)
