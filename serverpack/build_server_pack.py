@@ -393,7 +393,7 @@ def sanity_check_jars(entries: list[dict]) -> None:
                 # Auxiliary Forge library metadata could be elsewhere; warn.
                 print("WARN: no mods.toml in", dest.name, flush=True)
                 continue
-            data = tomllib.loads(jar.read(candidates[0]).decode("utf8-sig"))
+            data = tomllib.loads(jar.read(candidates[0]).decode("utf-8-sig"))
             for item in data.get("mods", []):
                 modid = item.get("modId")
                 if modid in ("minecraft", "forge", None):
