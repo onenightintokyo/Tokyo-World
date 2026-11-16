@@ -425,8 +425,8 @@ internal sealed partial class LauncherWindow
             {
                 if (lightweight && !settings.LightweightMode &&
                     MessageBox.Show(this,
-                        "Tryb lekki wyłącza Every Compat. Nie otwieraj istniejących światów " +
-                        "z jego przedmiotami bez ponownego włączenia moda.\n\nWłączyć tryb lekki?",
+                        "Tryb lekki ogranicza dodatki kosmetyczne i podnosi płynność gry. " +
+                        "Every Compat jest usunięty ze wszystkich profili, niezależnie od tego ustawienia.\n\nWłączyć tryb lekki?",
                         "Tokyo World — wydajność", MessageBoxButtons.YesNo,
                         MessageBoxIcon.Warning) != DialogResult.Yes)
                     return;
