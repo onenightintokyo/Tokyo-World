@@ -358,7 +358,8 @@ internal sealed partial class LauncherWindow : Form
             string root = GameRoot();
             Directory.CreateDirectory(root);
             SetStatus("Przygotowuję wbudowane pliki Tokyo World (bez tokenu)...");
-            ClientPackBootstrap.InstallMissing(root, reporter);
+            ClientPackBootstrap.InstallMissing(root, reporter,
+                refreshManagedFiles: string.IsNullOrWhiteSpace(settings.GetToken()));
             SetStatus("Sprawdzam aktualizacje Tokyo World...");
             var sync = new GitHubSynchronizer(settings.GetToken(), settings.Repository);
             try
