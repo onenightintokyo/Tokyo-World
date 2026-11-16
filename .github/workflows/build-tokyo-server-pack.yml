@@ -27,6 +27,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Validate server pack builder Python syntax
+        run: python -m py_compile serverpack/build_server_pack.py
       - name: Resolve every mod, verify original hashes and build server ZIP
         run: python serverpack/build_server_pack.py
       - name: Upload FULL verified server ZIP
