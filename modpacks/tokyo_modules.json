@@ -792,11 +792,6 @@
         "match": "^voicechat[-_.]"
       },
       {
-        "project": "every-compat",
-        "label": "Every Compat — zgodność dekoracji i drewna",
-        "match": "^everycomp[-_.]"
-      },
-      {
         "project": "immersive-paintings",
         "label": "Immersive Paintings — własne obrazy w bazie",
         "match": "^immersive_paintings[-_.]"
@@ -1016,6 +1011,15 @@
     ],
     "community-core": [
       {
+        "project": "ftb-quests",
+        "label": "FTB Quests (Forge 1.20.1) — questbook core, official pinned SHA1",
+        "source": "curseforge",
+        "fileName": "ftb-quests-forge-2001.4.22.jar",
+        "url": "https://mediafilez.forgecdn.net/files/8078/538/ftb-quests-forge-2001.4.22.jar",
+        "sha1": "70f3bd771ab3b5921ce1ff5f14166fab694ca1aa",
+        "match": "^ftb-quests[-_.]"
+      },
+      {
         "project": "ftb-library",
         "label": "FTB Library — biblioteka interfejsu i zespołów",
         "match": "^ftb-library[-_.]",
@@ -1100,5 +1104,11 @@
       "FTB Chunks/Teams/Library are official CurseForge releases, not Modrinth projects. Launcher v1.8 downloads exact official files over HTTPS and verifies SHA1 without bundling vendor JARs."
     ],
     "target": "Minecraft 1.20.1 / Forge"
+  },
+  "update181": {
+    "edition": "1.8.1 — Tokenless first installation and Every Compat removal",
+    "removed": "Every Compat (every-compat/everycomp) removed from all profiles; launcher archives installed JARs automatically on existing clients.",
+    "bootstrap": "Launcher EXE includes verified curated configs and mod manifests so friends can install modpack without access to private source/token. Live updates need a public curated distribution repository.",
+    "ftbquests": "FTB Quests exact Forge 2001.4.22 downloaded directly from official CurseForge with pinned SHA1 to fix missing 1 original mod."
   }
 }
