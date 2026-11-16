@@ -82,6 +82,32 @@ internal sealed class ModpackInstaller
                 }
             }
         }
+        // ExtendedAE Plus hard-depends on Extended AE (mod ID expatternprovider).
+        // Fail the install before Minecraft starts instead of silently treating a
+        // missing core dependency as an optional download error.
+        string extendedAeMatch = @"\\AExtendedAE-1\\.20-1\\.4\\.(?:[6-9]|[1-9][0-9])-forge\\.jar\\z";
+        if (!Directory.EnumerateFiles(modsDir, "*.jar").Any(file =>
+            Regex.IsMatch(Path.GetFileName(file), extendedAeMatch, RegexOptions.IgnoreCase)))
+        {
+            try
+            {
+                // Retry the exact, known-good Forge 1.20.1 release.
+                processed.Remove("extended-ae");
+                await InstallProjectAsync("extended-ae", "uq3lO4ER", "", "");
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException(
+                    "Brakuje Extended AE (expatternprovider), wymaganego przez ExtendedAE Plus. " +
+                    "Instalacja została przerwana zamiast uruchamiać uszkodzoną paczkę: " + ex.Message, ex);
+            }
+            if (!Directory.EnumerateFiles(modsDir, "*.jar").Any(file =>
+                Regex.IsMatch(Path.GetFileName(file), extendedAeMatch, RegexOptions.IgnoreCase)))
+                throw new InvalidOperationException(
+                    "Brakuje ExtendedAE-1.20-1.4.18-forge.jar (expatternprovider). " +
+                    "Zaktualizuj klienta lub sprawdź log pobierania modów.");
+        }
+
         // Reconcile pinned mod compatibility after optional modules have been resolved.
         // This fixes Delightful 3.8.1 vs End\u0027s Delight 2.4 and duplicate IntegratedTerminals.
         await ModCompatibilityRepair.ApplyAsync(gameDir, progress, cancellation);
