@@ -119,8 +119,16 @@ for group in GROUPS:
             raise ValueError("Missing quests: "+name)
         header, body = text[:pos],text[pos:]
         # FTB image coordinates specify the centre, so x=8 aligns it with nodes.
-        header = re.sub(r'(?m)^(\s*x:\s*)[-\d.]+d',r'\g<1>8.0d',header,count=1)
-        header = re.sub(r'(?m)^(\s*y:\s*)[-\d.]+d',r'\g<1>-6.5d',header,count=1)
+        # FTB chapters use both compact one-line and multi-line image tags.
+        # Only replace coordinates inside the banner image block, not quest nodes.
+        def center_banner(match):
+            image = match[0]
+            image = re.sub(r'(?<![a-z])x:\s*-?[\d.]+d', 'x: 8.0d', image, count=1)
+            image = re.sub(r'(?<![a-z])y:\s*-?[\d.]+d', 'y: -6.5d', image, count=1)
+            image = re.sub(r'width:\s*[\d.]+d', 'width: 24.0d', image, count=1)
+            image = re.sub(r'height:\s*[\d.]+d', 'height: 7.8d', image, count=1)
+            return image
+        header = re.sub(r'images:\s*\[[^\]]*\]', center_banner, header, count=1)
         text=header+body
         count = len(QUEST_ID.findall(text))
         if not count:
