@@ -32,6 +32,9 @@ internal sealed class TokyoScreenshotGallery : UserControl
     {
         gameRoot = root;
         BackColor = CrimsonTheme.Background;
+        // WinForms applies Anchor offsets relative to the size at creation.
+        // Use the actual page size BEFORE positioning anchored controls.
+        Size = new Size(1067, 505);
         Dock = DockStyle.Fill;
         var title = CrimsonTheme.Label("SCREENSHOTY", 20, true);
         title.SetBounds(24, 16, 400, 39);

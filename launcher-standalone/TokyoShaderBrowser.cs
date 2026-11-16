@@ -30,6 +30,9 @@ internal sealed class TokyoShaderBrowser : UserControl
     {
         root = gameRoot;
         settings = launcherSettings;
+        // WinForms applies Anchor offsets relative to the size at creation.
+        // Use the actual page size BEFORE positioning anchored controls.
+        Size = new Size(1067, 505);
         Dock = DockStyle.Fill;
         BackColor = CrimsonTheme.Background;
 
