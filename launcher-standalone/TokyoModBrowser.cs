@@ -26,6 +26,9 @@ internal sealed class TokyoModBrowser : UserControl
     public TokyoModBrowser(string gameRoot)
     {
         root = gameRoot;
+        // WinForms applies Anchor offsets relative to the size at creation.
+        // Use the actual page size BEFORE positioning anchored controls.
+        Size = new Size(1067, 505);
         Dock = DockStyle.Fill;
         BackColor = CrimsonTheme.Background;
         var title = CrimsonTheme.Label("MODY  /  FORGE 1.20.1", 19, true);
