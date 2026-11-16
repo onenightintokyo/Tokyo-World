@@ -16,7 +16,10 @@ internal static class LauncherAutoUpdater
         string token = settings.GetToken();
         if (string.IsNullOrWhiteSpace(token))
         {
-            report.Report("Automatyczna aktualizacja EXE wymaga tokenu GitHub dla prywatnego repo.");
+            // Public client files can be synchronized without an account.
+            // Updating an EXE from private Actions artifacts is a separate owner-
+            // authenticated operation; never ask friends for the owner's PAT.
+            report.Report("Paczka klienta aktualizuje się bez tokenu. Aktualizacje samego EXE będą publikowane oddzielnie.");
             return false;
         }
         if (!System.Text.RegularExpressions.Regex.IsMatch(settings.Repository ?? "", @"\A[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\z"))
