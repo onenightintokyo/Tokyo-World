@@ -4,12 +4,24 @@ on:
   pull_request:
     paths:
       - 'launcher-standalone/**'
+      - 'modpacks/**'
+      - 'config/**'
+      - 'defaultconfigs/**'
+      - 'kubejs/**'
+      - 'tools/make_client_bootstrap.py'
+      - 'tools/validate_tokyo_client_manifest.py'
       - '.github/workflows/tokyo-launcher-standalone.yml'
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - 'launcher-standalone/**'
+      - 'modpacks/**'
+      - 'config/**'
+      - 'defaultconfigs/**'
+      - 'kubejs/**'
+      - 'tools/make_client_bootstrap.py'
+      - 'tools/validate_tokyo_client_manifest.py'
       - '.github/workflows/tokyo-launcher-standalone.yml'
 
 permissions:
