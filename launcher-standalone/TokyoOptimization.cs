@@ -10,7 +10,7 @@ namespace TokyoWorldLauncher;
 internal static class TokyoOptimization
 {
     private static readonly Regex EveryCompatFile = new(
-        @"\Aeverycomp[-_.].*\.jar\z",
+        @"\A(?:everycomp(?:at)?|every[-_.]?compat)[-_.]?.*\.jar\z",
         RegexOptions.IgnoreCase | RegexOptions.CultureInvariant);
 
     private static string StateFolder(string root) => Path.Combine(root, ".tokyo", "optimizer-v15");
