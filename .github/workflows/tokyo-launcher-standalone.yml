@@ -31,6 +31,9 @@ jobs:
           ./launcher-standalone/Assets/PrepareIcons.ps1
           if (!(Test-Path launcher-standalone/Assets/TokyoWorldIcon.ico)) { throw "TW icon not generated" }
           if (!(Test-Path launcher-standalone/Assets/TokyoWorldIcon.png)) { throw "TW PNG not generated" }
+      - name: Verify pinned client dependencies and excluded mods
+        shell: pwsh
+        run: python tools/validate_tokyo_client_manifest.py
       - name: Build safe token-free client snapshot inside launcher EXE
         shell: pwsh
         run: |
