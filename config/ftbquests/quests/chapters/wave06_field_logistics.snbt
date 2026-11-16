@@ -1,0 +1,193 @@
+{
+	filename: "wave06_field_logistics"
+	title: "&a&lWyprawa, nie wycieczka"
+	group: "A110000000000001"
+	id: "A126000000000001"
+	default_hide_dependency_lines: false
+	default_quest_size: 1.65d
+	icon: "sophisticatedbackpacks:backpack"
+	order_index: 38
+	images: [{
+		image: "tokyoworld:textures/gui/quests/tokyo_early.png"
+		width: 20.0d
+		height: 7.0d
+		x: -2.0d
+		y: -9.0d
+		order: -1
+	}]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "A136000000000001"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
+			title: "Pakunek na drogę"
+			description: ["Na dalekiej trasie zabraknie najpierw miejsca, a dopiero potem odwagi. Zbierz zapas skóry i przygotuj skrzynie, zanim opuścisz bazę."]
+			x: 8.0d
+			y: 0.0d
+			icon: "minecraft:leather"
+			dependencies: ["A130000000000007"]
+			tasks: [
+				{ id: "A146000000000001" type: "item" item: "minecraft:leather" count: 16L consume_items: false },
+				{ id: "A186000000000001" type: "item" item: "minecraft:chest" count: 2L consume_items: false }
+			]
+			rewards: [{ id: "A156000000000001" type: "item" item: "minecraft:torch" count: 8 }]
+		},
+		{
+			id: "A136000000000002"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
+			title: "Pierwszy plecak"
+			description: ["Wyprawy przestaną kończyć się po pierwszej jaskini. Zrób plecak i sprawdź, jak zachowuje się przy zbieraniu większej ilości materiałów."]
+			x: 1.0d
+			y: 4.0d
+			icon: "sophisticatedbackpacks:backpack"
+			dependencies: ["A136000000000001"]
+			tasks: [
+				{ id: "A146000000000002" type: "item" item: "sophisticatedbackpacks:backpack" count: 1L consume_items: false }
+			]
+			rewards: [{ id: "A156000000000002" type: "item" item: "minecraft:bread" count: 4 }]
+		},
+		{
+			id: "A136000000000003"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
+			title: "Plecak nie z papieru"
+			description: ["Żelazne wzmocnienie ma sens dopiero wtedy, kiedy masz co nosić. Nie kupuj wygody za ostatnią sztabkę."]
+			x: 15.0d
+			y: 4.0d
+			icon: "sophisticatedbackpacks:iron_backpack"
+			dependencies: ["A136000000000002"]
+			tasks: [
+				{ id: "A146000000000003" type: "item" item: "sophisticatedbackpacks:iron_backpack" count: 1L consume_items: false }
+			]
+			rewards: [{ id: "A156000000000003" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+		},
+		{
+			id: "A136000000000004"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
+			title: "Sam zbiera, sam odkłada"
+			description: ["Kiedy wydobycie przyspiesza, czas przestać podnosić każdy kamień osobno. Wypróbuj moduł automatycznego zbierania."]
+			x: 1.0d
+			y: 8.0d
+			icon: "sophisticatedbackpacks:pickup_upgrade"
+			dependencies: ["A136000000000003"]
+			tasks: [
+				{ id: "A146000000000004" type: "item" item: "sophisticatedbackpacks:pickup_upgrade" count: 1L consume_items: false }
+			]
+			rewards: [{ id: "A156000000000004" type: "item" item: "minecraft:torch" count: 8 }]
+		},
+		{
+			id: "A136000000000005"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
+			title: "Magazyn pod ścianą"
+			description: ["Nie każdy materiał musi trafiać do osobnej skrzyni. Własny rząd beczek zdejmuje z głowy większość chaosu."]
+			x: 15.0d
+			y: 8.0d
+			icon: "sophisticatedstorage:barrel"
+			dependencies: ["A136000000000002"]
+			tasks: [
+				{ id: "A146000000000005" type: "item" item: "sophisticatedstorage:barrel" count: 4L consume_items: false }
+			]
+			rewards: [{ id: "A156000000000005" type: "item" item: "minecraft:bread" count: 4 }]
+		},
+		{
+			id: "A136000000000006"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
+			title: "Porządek w żelazie"
+			description: ["Rozbuduj stałe składowanie, żeby następne maszyny nie żyły między stertami przedmiotów."]
+			x: 1.0d
+			y: 12.0d
+			icon: "sophisticatedstorage:iron_chest"
+			dependencies: ["A136000000000005"]
+			tasks: [
+				{ id: "A146000000000006" type: "item" item: "sophisticatedstorage:iron_chest" count: 2L consume_items: false }
+			]
+			rewards: [{ id: "A156000000000006" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+		},
+		{
+			id: "A136000000000007"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
+			title: "Daleka wyprawa"
+			description: ["Złoty plecak nie jest trofeum — to przygotowanie do podróży, z której planujesz wrócić z łupem."]
+			x: 15.0d
+			y: 12.0d
+			icon: "sophisticatedbackpacks:gold_backpack"
+			dependencies: ["A136000000000004"]
+			tasks: [
+				{ id: "A146000000000007" type: "item" item: "sophisticatedbackpacks:gold_backpack" count: 1L consume_items: false }
+			]
+			rewards: [{ id: "A156000000000007" type: "item" item: "minecraft:torch" count: 8 }]
+		},
+		{
+			id: "A136000000000008"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
+			title: "Połączone zapasy"
+			description: ["Skoro magazyn się rozrasta, połącz kilka sekcji zamiast biegać między nimi bez końca."]
+			x: 8.0d
+			y: 16.0d
+			icon: "sophisticatedstorage:storage_link"
+			dependencies: ["A136000000000006"]
+			tasks: [
+				{ id: "A146000000000008" type: "item" item: "sophisticatedstorage:storage_link" count: 1L consume_items: false }
+			]
+			rewards: [{ id: "A156000000000008" type: "item" item: "minecraft:bread" count: 4 }]
+		},
+		{
+			id: "A136000000000009"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
+			title: "Jeden kontroler"
+			description: ["Dobra baza pozwala znaleźć rzecz w kilka sekund. Zbuduj kontroler i uporządkuj podłączony magazyn."]
+			x: 8.0d
+			y: 20.0d
+			icon: "sophisticatedstorage:controller"
+			dependencies: ["A136000000000008"]
+			tasks: [
+				{ id: "A146000000000009" type: "item" item: "sophisticatedstorage:controller" count: 1L consume_items: false }
+			]
+			rewards: [{ id: "A156000000000009" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+		},
+		{
+			id: "A13600000000000A"
+			size: 1.65d
+			icon_scale: 1.12d
+			hide_dependency_lines: false
+			hide_dependent_lines: false
+			title: "Ekwipunek na każdą drogę"
+			description: ["Przygotuj diamentowy plecak oraz działający magazyn. Teraz możesz planować wyprawy, nie licząc każdego wolnego slotu."]
+			x: 8.0d
+			y: 24.0d
+			icon: "sophisticatedbackpacks:diamond_backpack"
+			dependencies: ["A136000000000007", "A136000000000009"]
+			tasks: [
+				{ id: "A14600000000000A" type: "item" item: "sophisticatedbackpacks:diamond_backpack" count: 1L consume_items: false },
+				{ id: "A18600000000000A" type: "item" item: "sophisticatedstorage:controller" count: 1L consume_items: false }
+			]
+			rewards: [{ id: "A15600000000000A" type: "item" item: "minecraft:experience_bottle" count: 12 }]
+		}
+	]
+}
