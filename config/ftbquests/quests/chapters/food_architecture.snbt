@@ -1,12 +1,12 @@
 {
 	filename: "food_architecture"
-	title: "&a&lDom między maszynami"
-	group: "A110000000000001"
+	title: "&b&l41 · Dom między maszynami"
+	group: "A110000000000005"
 	id: "A120000000000014"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "farmersdelight:stove"
-	order_index: 4
+	order_index: 41
 	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_early.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
 	quests: [
 		{
