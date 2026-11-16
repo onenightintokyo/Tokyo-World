@@ -6,6 +6,8 @@ on:
       - feature/questbook-four-stages-ftb-claims-rewards-art-v18
     paths:
       - 'tools/verify_v18_core_mods.py'
+      - 'tools/verify_curseforge_core.py'
+      - 'modpacks/tokyo_modules.json'
       - '.github/workflows/verify-tokyo-v18-mods.yml'
   workflow_dispatch:
 
@@ -20,3 +22,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check all new claim/HUD module project IDs on Modrinth
         run: python3 tools/verify_v18_core_mods.py
+      - name: Verify official CurseForge FTB JAR downloads and SHA1
+        run: python3 tools/verify_curseforge_core.py
