@@ -1,13 +1,13 @@
 {
 	filename: "cataclysm_bosses"
-	title: "&c&l31 · Ci, których lepiej nie budzić"
+	title: "&c&l34 · Ci, których lepiej nie budzić"
 	group: "A110000000000003"
 	id: "A120000000000018"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "minecraft:nether_star"
-	order_index: 31
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
+	order_index: 34
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A13000000000013F"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Przedmioty na wyprawe"
 			description: ["Wielkie ruiny rzadko są puste. Zanim wejdziesz do środka, pomyśl o ekipie i drodze odwrotu. Zacznij od sprawy „Przedmioty na wyprawe”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "minecraft:blaze_rod"
 			dependencies: ["A13000000000001D"]
 			tasks: [{ id: "A14000000000013F" type: "item" item: "minecraft:blaze_rod" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000013F" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A17000000000013F" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000140"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Przygotuj zaopatrzenie"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Przygotuj zaopatrzenie”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "minecraft:golden_apple"
 			dependencies: ["A13000000000013F"]
 			tasks: [{ id: "A140000000000140" type: "item" item: "minecraft:golden_apple" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000140" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A170000000000140" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000141"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Ekipa na bossa"
 			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Ekipa na bossa”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "minecraft:netherite_ingot"
 			dependencies: ["A13000000000013F"]
 			tasks: [{ id: "A140000000000141" type: "item" item: "minecraft:netherite_ingot" count: 2L consume_items: false }]
-			rewards: [{ id: "A150000000000141" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000141" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000142"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Starozytny metal"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Starozytny metal”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "cataclysm:ancient_metal_ingot"
 			dependencies: ["A130000000000140"]
 			tasks: [{ id: "A140000000000142" type: "item" item: "cataclysm:ancient_metal_ingot" count: 4L consume_items: false }]
-			rewards: [{ id: "A150000000000142" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000142" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000143"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Trofeum silnego przeciwnika"
 			description: ["Wcześniej zamknąłeś już sprawę „Ekipa na bossa”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Trofeum silnego przeciwnika”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "minecraft:nether_star"
 			dependencies: ["A130000000000141"]
 			tasks: [{ id: "A140000000000143" type: "item" item: "minecraft:nether_star" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000143" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A170000000000143" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000144"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Ognisty metal"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ognisty metal”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 12.0d
+			x: 8.00d
+			y: 9.36d
 			icon: "cataclysm:ignitium_ingot"
 			dependencies: ["A130000000000142", "A130000000000143"]
 			tasks: [{ id: "A140000000000144" type: "item" item: "cataclysm:ignitium_ingot" count: 2L consume_items: false }]
-			rewards: [{ id: "A150000000000144" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000144" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000145"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Legendarny smok"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Legendarny smok”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "minecraft:dragon_head"
 			dependencies: ["A130000000000144"]
 			tasks: [{ id: "A140000000000145" type: "item" item: "minecraft:dragon_head" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000145" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000145" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000146"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Przeklete trofeum"
 			description: ["Znasz cenę każdego starcia z legendarnym przeciwnikiem. Ostatni sprawdzian to „Przeklete trofeum”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 20.0d
+			x: 8.00d
+			y: 15.60d
 			icon: "cataclysm:cursium_ingot"
 			dependencies: ["A130000000000145"]
 			tasks: [{ id: "A140000000000146" type: "item" item: "cataclysm:cursium_ingot" count: 2L consume_items: false }]
-			rewards: [{ id: "A150000000000146" type: "item" item: "minecraft:enchanted_golden_apple" count: 1 }, { id: "A160000000000146" type: "item" item: "minecraft:diamond" count: 5 }]
+			rewards: [{ id: "A170000000000146" type: "random" table_id: 7034622617952714820L }, { id: "A180000000000146" type: "item" item: "minecraft:experience_bottle" count: 10 }]
 		}
 	]
 }

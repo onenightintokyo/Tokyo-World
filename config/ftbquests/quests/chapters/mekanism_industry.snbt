@@ -1,6 +1,6 @@
 {
 	filename: "mekanism_industry"
-	title: "&e&l15 · Rytm przemysłu"
+	title: "&b&l15 · Rytm przemysłu"
 	group: "A110000000000002"
 	id: "A120000000000006"
 	default_hide_dependency_lines: false
@@ -8,7 +8,7 @@
 	icon: "mekanism:advanced_control_circuit"
 	order_index: 15
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }
 	]
 	quests: [
 		{
@@ -19,12 +19,12 @@
 			hide_dependent_lines: false
 			title: "Kable energetyczne"
 			description: ["Sama kruszarka nie zbuduje potężnego zakładu. Najważniejsze jest to, co dzieje się między kolejnymi urządzeniami. Zacznij od sprawy „Kable energetyczne”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "mekanism:basic_universal_cable"
 			dependencies: ["A130000000000018"]
 			tasks: [{ id: "A140000000000031" type: "item" item: "mekanism:basic_universal_cable" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000031" type: "item" item: "minecraft:experience_bottle" count: 8 }]
+			rewards: [{ id: "A170000000000031" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000032"
@@ -34,12 +34,12 @@
 			hide_dependent_lines: false
 			title: "Obwody zaawansowane"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Obwody zaawansowane”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "mekanism:advanced_control_circuit"
 			dependencies: ["A130000000000031"]
 			tasks: [{ id: "A140000000000032" type: "item" item: "mekanism:advanced_control_circuit" count: 4L consume_items: false }]
-			rewards: [{ id: "A150000000000032" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000032" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000033"
@@ -49,12 +49,12 @@
 			hide_dependent_lines: false
 			title: "Elitarne obwody"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Elitarne obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "mekanism:elite_control_circuit"
 			dependencies: ["A130000000000031"]
 			tasks: [{ id: "A140000000000033" type: "item" item: "mekanism:elite_control_circuit" count: 2L consume_items: false }]
-			rewards: [{ id: "A150000000000033" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A170000000000033" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000034"
@@ -64,12 +64,12 @@
 			hide_dependent_lines: false
 			title: "Obwody najwyższej klasy"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Obwody najwyższej klasy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "mekanism:ultimate_control_circuit"
 			dependencies: ["A130000000000032"]
 			tasks: [{ id: "A140000000000034" type: "item" item: "mekanism:ultimate_control_circuit" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000034" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A170000000000034" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000035"
@@ -79,12 +79,12 @@
 			hide_dependent_lines: false
 			title: "Kompresor osmu"
 			description: ["Wcześniej zamknąłeś już sprawę „Elitarne obwody”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Kompresor osmu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "mekanism:osmium_compressor"
 			dependencies: ["A130000000000033"]
 			tasks: [{ id: "A140000000000035" type: "item" item: "mekanism:osmium_compressor" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000035" type: "item" item: "minecraft:glowstone_dust" count: 8 }]
+			rewards: [{ id: "A170000000000035" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000036"
@@ -94,12 +94,12 @@
 			hide_dependent_lines: false
 			title: "Separator elektrolityczny"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Separator elektrolityczny”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "mekanism:electrolytic_separator"
 			dependencies: ["A130000000000034"]
 			tasks: [{ id: "A140000000000036" type: "item" item: "mekanism:electrolytic_separator" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000036" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A170000000000036" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000037"
@@ -109,12 +109,12 @@
 			hide_dependent_lines: false
 			title: "Utleniacz chemiczny"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Utleniacz chemiczny”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "mekanism:chemical_oxidizer"
 			dependencies: ["A130000000000035"]
 			tasks: [{ id: "A140000000000037" type: "item" item: "mekanism:chemical_oxidizer" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000037" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A170000000000037" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000038"
@@ -124,12 +124,12 @@
 			hide_dependent_lines: false
 			title: "Infuzor chemiczny"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Infuzor chemiczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 16.0d
+			x: 2.12d
+			y: 12.48d
 			icon: "mekanism:chemical_infuser"
 			dependencies: ["A130000000000036"]
 			tasks: [{ id: "A140000000000038" type: "item" item: "mekanism:chemical_infuser" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000038" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
+			rewards: [{ id: "A170000000000038" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000039"
@@ -139,12 +139,12 @@
 			hide_dependent_lines: false
 			title: "Komora reakcji"
 			description: ["Wcześniej zamknąłeś już sprawę „Utleniacz chemiczny”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Komora reakcji”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 16.0d
+			x: 13.88d
+			y: 12.48d
 			icon: "mekanism:pressurized_reaction_chamber"
 			dependencies: ["A130000000000037"]
 			tasks: [{ id: "A140000000000039" type: "item" item: "mekanism:pressurized_reaction_chamber" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000039" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+			rewards: [{ id: "A170000000000039" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000003A"
@@ -154,12 +154,12 @@
 			hide_dependent_lines: false
 			title: "Kondensacja gazów"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kondensacja gazów”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 20.0d
+			x: 8.00d
+			y: 15.60d
 			icon: "mekanism:rotary_condensentrator"
 			dependencies: ["A130000000000038", "A130000000000039"]
 			tasks: [{ id: "A14000000000003A" type: "item" item: "mekanism:rotary_condensentrator" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000003A" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A17000000000003A" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000003B"
@@ -169,12 +169,12 @@
 			hide_dependent_lines: false
 			title: "Rozpuszczanie chemiczne"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Rozpuszczanie chemiczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 24.0d
+			x: 2.12d
+			y: 18.72d
 			icon: "mekanism:chemical_dissolution_chamber"
 			dependencies: ["A13000000000003A"]
 			tasks: [{ id: "A14000000000003B" type: "item" item: "mekanism:chemical_dissolution_chamber" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000003B" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
+			rewards: [{ id: "A17000000000003B" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000003C"
@@ -184,12 +184,12 @@
 			hide_dependent_lines: false
 			title: "Krystalizacja chemiczna"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Krystalizacja chemiczna”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 24.0d
+			x: 13.88d
+			y: 18.72d
 			icon: "mekanism:chemical_crystallizer"
 			dependencies: ["A13000000000003A"]
 			tasks: [{ id: "A14000000000003C" type: "item" item: "mekanism:chemical_crystallizer" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000003C" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A17000000000003C" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000003D"
@@ -199,12 +199,12 @@
 			hide_dependent_lines: false
 			title: "Zbiornik płynów"
 			description: ["Wcześniej zamknąłeś już sprawę „Rozpuszczanie chemiczne”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Zbiornik płynów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 1.0d
-			y: 28.0d
+			x: 2.12d
+			y: 21.84d
 			icon: "mekanism:basic_fluid_tank"
 			dependencies: ["A13000000000003B"]
 			tasks: [{ id: "A14000000000003D" type: "item" item: "mekanism:basic_fluid_tank" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000003D" type: "item" item: "minecraft:lapis_lazuli" count: 8 }]
+			rewards: [{ id: "A17000000000003D" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000003E"
@@ -214,12 +214,12 @@
 			hide_dependent_lines: false
 			title: "Magazyn energii"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Magazyn energii”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 15.0d
-			y: 28.0d
+			x: 13.88d
+			y: 21.84d
 			icon: "mekanism:advanced_energy_cube"
 			dependencies: ["A13000000000003C"]
 			tasks: [{ id: "A14000000000003E" type: "item" item: "mekanism:advanced_energy_cube" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000003E" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
+			rewards: [{ id: "A17000000000003E" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000003F"
@@ -229,12 +229,12 @@
 			hide_dependent_lines: false
 			title: "Ogromny akumulator"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Ogromny akumulator”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 1.0d
-			y: 32.0d
+			x: 2.12d
+			y: 24.96d
 			icon: "mekanism:ultimate_energy_cube"
 			dependencies: ["A13000000000003D"]
 			tasks: [{ id: "A14000000000003F" type: "item" item: "mekanism:ultimate_energy_cube" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000003F" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A17000000000003F" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000040"
@@ -244,12 +244,12 @@
 			hide_dependent_lines: false
 			title: "Sortowanie materiałów"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Sortowanie materiałów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 15.0d
-			y: 32.0d
+			x: 13.88d
+			y: 24.96d
 			icon: "mekanism:logistical_sorter"
 			dependencies: ["A13000000000003E"]
 			tasks: [{ id: "A140000000000040" type: "item" item: "mekanism:logistical_sorter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000040" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A170000000000040" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000041"
@@ -259,12 +259,12 @@
 			hide_dependent_lines: false
 			title: "Cyfrowa koparka"
 			description: ["Wcześniej zamknąłeś już sprawę „Ogromny akumulator”. Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Cyfrowa koparka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 36.0d
+			x: 2.12d
+			y: 28.08d
 			icon: "mekanism:digital_miner"
 			dependencies: ["A13000000000003F"]
 			tasks: [{ id: "A140000000000041" type: "item" item: "mekanism:digital_miner" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000041" type: "item" item: "minecraft:experience_bottle" count: 8 }]
+			rewards: [{ id: "A170000000000041" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000042"
@@ -274,12 +274,12 @@
 			hide_dependent_lines: false
 			title: "Transport kwantowy"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Transport kwantowy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 36.0d
+			x: 13.88d
+			y: 28.08d
 			icon: "mekanism:quantum_entangloporter"
 			dependencies: ["A130000000000040"]
 			tasks: [{ id: "A140000000000042" type: "item" item: "mekanism:quantum_entangloporter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000042" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000042" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000043"
@@ -289,12 +289,12 @@
 			hide_dependent_lines: false
 			title: "Sieć QIO"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sieć QIO”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 40.0d
+			x: 8.00d
+			y: 31.20d
 			icon: "mekanism:qio_drive_array"
 			dependencies: ["A130000000000041", "A130000000000042"]
 			tasks: [{ id: "A140000000000043" type: "item" item: "mekanism:qio_drive_array" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000043" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A170000000000043" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000044"
@@ -304,12 +304,12 @@
 			hide_dependent_lines: false
 			title: "Teleportacja technologiczna"
 			description: ["Procesy zaczynają się zazębiać i każda maszyna ma swoje miejsce. Ostatni sprawdzian to „Teleportacja technologiczna”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 44.0d
+			x: 8.00d
+			y: 34.32d
 			icon: "mekanism:teleporter"
 			dependencies: ["A130000000000043"]
 			tasks: [{ id: "A140000000000044" type: "item" item: "mekanism:teleporter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000044" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A160000000000044" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A170000000000044" type: "random" table_id: 7034622617952714786L }, { id: "A180000000000044" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

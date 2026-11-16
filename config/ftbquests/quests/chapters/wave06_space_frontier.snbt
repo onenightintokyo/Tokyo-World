@@ -1,18 +1,18 @@
 {
 	filename: "wave06_space_frontier"
-	title: "&c&l35 · Poza horyzontem"
+	title: "&c&l38 · Poza horyzontem"
 	group: "A110000000000003"
 	id: "A126000000000005"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "ad_astra:tier_1_rocket"
-	order_index: 35
+	order_index: 38
 	images: [{
-		image: "tokyoworld:textures/gui/quests/tokyo_late.png"
-		width: 20.0d
-		height: 7.0d
-		x: -2.0d
-		y: -9.0d
+		image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png"
+		width: 24.0d
+		height: 7.8d
+		x: 8.0d
+		y: -6.5d
 		order: -1
 	}]
 	quest_links: [ ]
@@ -25,14 +25,14 @@
 			hide_dependent_lines: false
 			title: "Stal na gwiazdy"
 			description: ["Samo marzenie o Księżycu nie uniesie rakiety. Uruchom regularną produkcję stali i przygotuj zapasy na niejedną próbę."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "ad_astra:steel_ingot"
 			dependencies: ["A136000000000107", "A1300000000000BF"]
 			tasks: [
 				{ id: "A146000000000401" type: "item" item: "ad_astra:steel_ingot" count: 32L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000401" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000401" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000402"
@@ -42,14 +42,14 @@
 			hide_dependent_lines: false
 			title: "Płyty konstrukcyjne"
 			description: ["Kadłub musi znieść więcej niż zwykły deszcz. Zacznij tłoczyć metalowe płyty i kontrolować ich zużycie."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "ad_astra:steel_plate"
 			dependencies: ["A136000000000401"]
 			tasks: [
 				{ id: "A146000000000402" type: "item" item: "ad_astra:steel_plate" count: 16L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000402" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000402" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000403"
@@ -59,14 +59,14 @@
 			hide_dependent_lines: false
 			title: "Prąd dla bazy"
 			description: ["Kosmiczny warsztat nie może polegać na przypadkowych bateriach. Zbuduj generator i zostaw zapas energii na długi cykl."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "ad_astra:coal_generator"
 			dependencies: ["A136000000000401"]
 			tasks: [
 				{ id: "A146000000000403" type: "item" item: "ad_astra:coal_generator" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000403" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000403" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000404"
@@ -76,14 +76,14 @@
 			hide_dependent_lines: false
 			title: "Powietrze na sprzedaż"
 			description: ["Bez aparatury tlenowej nawet najlepszy kombinezon nie wystarczy. Zbuduj ładowarkę tlenu i sprawdź proces uzupełniania."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "ad_astra:oxygen_loader"
 			dependencies: ["A136000000000402", "A136000000000403"]
 			tasks: [
 				{ id: "A146000000000404" type: "item" item: "ad_astra:oxygen_loader" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000404" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000404" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000405"
@@ -93,14 +93,14 @@
 			hide_dependent_lines: false
 			title: "Stół NASA"
 			description: ["Kiedy jest już zasilanie i stal, pora złożyć stanowisko do produkcji rakiet. Zanim ruszysz dalej, poznaj dokładnie jego receptury."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "ad_astra:nasa_workbench"
 			dependencies: ["A136000000000402"]
 			tasks: [
 				{ id: "A146000000000405" type: "item" item: "ad_astra:nasa_workbench" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000405" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000405" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000406"
@@ -110,14 +110,14 @@
 			hide_dependent_lines: false
 			title: "Atmosfera pod kontrolą"
 			description: ["Baza na obcej planecie wymaga czegoś więcej niż czterech ścian. Postaw dystrybutor tlenu i sprawdź szczelność pomieszczenia."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "ad_astra:oxygen_distributor"
 			dependencies: ["A136000000000404"]
 			tasks: [
 				{ id: "A146000000000406" type: "item" item: "ad_astra:oxygen_distributor" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000406" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000406" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000407"
@@ -127,14 +127,14 @@
 			hide_dependent_lines: false
 			title: "Pierwsza rakieta"
 			description: ["Zbuduj rakietę pierwszego poziomu. Zanim ją odpalisz, zadbaj o zapas paliwa, platformę i sprzęt na powrót."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "ad_astra:tier_1_rocket"
 			dependencies: ["A136000000000405", "A136000000000406"]
 			tasks: [
 				{ id: "A146000000000407" type: "item" item: "ad_astra:tier_1_rocket" count: 1L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000407" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A176000000000407" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000408"
@@ -144,14 +144,14 @@
 			hide_dependent_lines: false
 			title: "Ślady na Księżycu"
 			description: ["Pierwszy lot to dopiero początek. Przywieź księżycowy materiał do bazy i nie zapomnij zaopatrzenia na drogę powrotną."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "ad_astra:moon_stone"
 			dependencies: ["A136000000000407"]
 			tasks: [
 				{ id: "A146000000000408" type: "item" item: "ad_astra:moon_stone" count: 32L consume_items: false }
 			]
-			rewards: [{ id: "A156000000000408" type: "item" item: "minecraft:bread" count: 4 }]
+			rewards: [{ id: "A176000000000408" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A136000000000409"
@@ -161,15 +161,15 @@
 			hide_dependent_lines: false
 			title: "Baza poza Ziemią"
 			description: ["Zbuduj działające schronienie z tlenem, zasilaniem i zapasami na Księżycu. Odhacz zadanie dopiero po prawdziwym teście."]
-			x: 8.0d
-			y: 20.0d
+			x: 8.00d
+			y: 15.60d
 			icon: "ad_astra:oxygen_distributor"
 			dependencies: ["A136000000000408"]
 			tasks: [
 				{ id: "A146000000000409" type: "item" item: "ad_astra:oxygen_distributor" count: 1L consume_items: false },
 				{ id: "A186000000000409" type: "checkmark" }
 			]
-			rewards: [{ id: "A156000000000409" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A176000000000409" type: "random" table_id: 7034622617952714820L }]
 		},
 		{
 			id: "A13600000000040A"
@@ -179,15 +179,15 @@
 			hide_dependent_lines: false
 			title: "Wyprawa na Marsa"
 			description: ["Przygotuj rakietę drugiego poziomu i plan drogi przez kolejną planetę. Nie wystarczy wystartować — trzeba też móc wrócić."]
-			x: 8.0d
-			y: 24.0d
+			x: 8.00d
+			y: 18.72d
 			icon: "ad_astra:tier_2_rocket"
 			dependencies: ["A136000000000409"]
 			tasks: [
 				{ id: "A14600000000040A" type: "item" item: "ad_astra:tier_2_rocket" count: 1L consume_items: false },
 				{ id: "A18600000000040A" type: "checkmark" }
 			]
-			rewards: [{ id: "A15600000000040A" type: "item" item: "minecraft:experience_bottle" count: 12 }]
+			rewards: [{ id: "A17600000000040A" type: "random" table_id: 7034622617952714820L }, { id: "A18600000000040A" type: "item" item: "minecraft:experience_bottle" count: 10 }]
 		}
 	]
 }

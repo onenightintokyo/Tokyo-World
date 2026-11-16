@@ -1,14 +1,14 @@
 {
 	filename: "botania_magic"
-	title: "&e&l23 · Kwiaty pełne many"
-	group: "A110000000000002"
+	title: "&d&l28 · Kwiaty pełne many"
+	group: "A110000000000005"
 	id: "A12000000000000B"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "botania:mana_pool"
-	order_index: 23
+	order_index: 28
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }
 	]
 	quests: [
 		{
@@ -19,12 +19,12 @@
 			hide_dependent_lines: false
 			title: "Kwiaty mistyczne"
 			description: ["Nie każda energia płynie kablem. W tym świecie kwiaty potrafią zasilać własne urządzenia. Zacznij od sprawy „Kwiaty mistyczne”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "botania:white_mystical_flower"
 			dependencies: ["A130000000000019"]
 			tasks: [{ id: "A140000000000081" type: "item" item: "botania:white_mystical_flower" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000081" type: "item" item: "minecraft:blaze_powder" count: 8 }]
+			rewards: [{ id: "A170000000000081" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A130000000000082"
@@ -34,12 +34,12 @@
 			hide_dependent_lines: false
 			title: "Rozpraszacz many"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Rozpraszacz many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "botania:mana_spreader"
 			dependencies: ["A130000000000081"]
 			tasks: [{ id: "A140000000000082" type: "item" item: "botania:mana_spreader" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000082" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000082" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A130000000000083"
@@ -49,12 +49,12 @@
 			hide_dependent_lines: false
 			title: "Zbiornik many"
 			description: ["Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Zbiornik many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "botania:mana_pool"
 			dependencies: ["A130000000000081"]
 			tasks: [{ id: "A140000000000083" type: "item" item: "botania:mana_pool" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000083" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A170000000000083" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A130000000000084"
@@ -64,12 +64,12 @@
 			hide_dependent_lines: false
 			title: "Diament many"
 			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Diament many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "botania:mana_diamond"
 			dependencies: ["A130000000000082"]
 			tasks: [{ id: "A140000000000084" type: "item" item: "botania:mana_diamond" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000084" type: "item" item: "minecraft:blaze_powder" count: 4 }]
+			rewards: [{ id: "A170000000000084" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A130000000000085"
@@ -79,12 +79,12 @@
 			hide_dependent_lines: false
 			title: "Stal many"
 			description: ["Wcześniej zamknąłeś już sprawę „Zbiornik many”. W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Stal many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "botania:manasteel_ingot"
 			dependencies: ["A130000000000083"]
 			tasks: [{ id: "A140000000000085" type: "item" item: "botania:manasteel_ingot" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000085" type: "item" item: "minecraft:experience_bottle" count: 8 }]
+			rewards: [{ id: "A170000000000085" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A130000000000086"
@@ -94,12 +94,12 @@
 			hide_dependent_lines: false
 			title: "Ołtarz runiczny"
 			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Ołtarz runiczny”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "botania:runic_altar"
 			dependencies: ["A130000000000084"]
 			tasks: [{ id: "A140000000000086" type: "item" item: "botania:runic_altar" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000086" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A170000000000086" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A130000000000087"
@@ -109,12 +109,12 @@
 			hide_dependent_lines: false
 			title: "Płyta przemian"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Płyta przemian”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "botania:terra_plate"
 			dependencies: ["A130000000000085"]
 			tasks: [{ id: "A140000000000087" type: "item" item: "botania:terra_plate" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000087" type: "item" item: "minecraft:blaze_powder" count: 4 }]
+			rewards: [{ id: "A170000000000087" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A130000000000088"
@@ -124,12 +124,12 @@
 			hide_dependent_lines: false
 			title: "Dystrybutor many"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Dystrybutor many”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "botania:mana_distributor"
 			dependencies: ["A130000000000086", "A130000000000087"]
 			tasks: [{ id: "A140000000000088" type: "item" item: "botania:mana_distributor" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000088" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A170000000000088" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A130000000000089"
@@ -139,12 +139,12 @@
 			hide_dependent_lines: false
 			title: "Pylon many"
 			description: ["Wcześniej zamknąłeś już sprawę „Dystrybutor many”. Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Pylon many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "botania:mana_pylon"
 			dependencies: ["A130000000000088"]
 			tasks: [{ id: "A140000000000089" type: "item" item: "botania:mana_pylon" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000089" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+			rewards: [{ id: "A170000000000089" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A13000000000008A"
@@ -154,12 +154,12 @@
 			hide_dependent_lines: false
 			title: "Elficki rozpraszacz"
 			description: ["W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Elficki rozpraszacz”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "botania:elven_spreader"
 			dependencies: ["A130000000000088"]
 			tasks: [{ id: "A14000000000008A" type: "item" item: "botania:elven_spreader" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000008A" type: "item" item: "minecraft:blaze_powder" count: 4 }]
+			rewards: [{ id: "A17000000000008A" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A13000000000008B"
@@ -169,12 +169,12 @@
 			hide_dependent_lines: false
 			title: "Mana i energia FE"
 			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Mana i energia FE”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 1.0d
-			y: 24.0d
+			x: 2.12d
+			y: 18.72d
 			icon: "botania:mana_fluxfield"
 			dependencies: ["A130000000000089"]
 			tasks: [{ id: "A14000000000008B" type: "item" item: "botania:mana_fluxfield" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000008B" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A17000000000008B" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A13000000000008C"
@@ -184,12 +184,12 @@
 			hide_dependent_lines: false
 			title: "Magazyn Corporea"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Magazyn Corporea”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 15.0d
-			y: 24.0d
+			x: 13.88d
+			y: 18.72d
 			icon: "botania:corporea_spark"
 			dependencies: ["A13000000000008A"]
 			tasks: [{ id: "A14000000000008C" type: "item" item: "botania:corporea_spark" count: 6L consume_items: false }]
-			rewards: [{ id: "A15000000000008C" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A17000000000008C" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A13000000000008D"
@@ -199,12 +199,12 @@
 			hide_dependent_lines: false
 			title: "Pylon Gai"
 			description: ["Wcześniej zamknąłeś już sprawę „Mana i energia FE”. Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Pylon Gai”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 1.0d
-			y: 28.0d
+			x: 2.12d
+			y: 21.84d
 			icon: "botania:gaia_pylon"
 			dependencies: ["A13000000000008B"]
 			tasks: [{ id: "A14000000000008D" type: "item" item: "botania:gaia_pylon" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000008D" type: "item" item: "minecraft:amethyst_shard" count: 8 }]
+			rewards: [{ id: "A17000000000008D" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A13000000000008E"
@@ -214,12 +214,12 @@
 			hide_dependent_lines: false
 			title: "Terrasteel"
 			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Terrasteel”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 15.0d
-			y: 28.0d
+			x: 13.88d
+			y: 21.84d
 			icon: "botania:terrasteel_ingot"
 			dependencies: ["A13000000000008C"]
 			tasks: [{ id: "A14000000000008E" type: "item" item: "botania:terrasteel_ingot" count: 2L consume_items: false }]
-			rewards: [{ id: "A15000000000008E" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A17000000000008E" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A13000000000008F"
@@ -229,12 +229,12 @@
 			hide_dependent_lines: false
 			title: "Rozpraszacz Gai"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Rozpraszacz Gai”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 32.0d
+			x: 8.00d
+			y: 24.96d
 			icon: "botania:gaia_spreader"
 			dependencies: ["A13000000000008D", "A13000000000008E"]
 			tasks: [{ id: "A14000000000008F" type: "item" item: "botania:gaia_spreader" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000008F" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A17000000000008F" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A130000000000090"
@@ -244,12 +244,12 @@
 			hide_dependent_lines: false
 			title: "Zaklinanie many"
 			description: ["Mana zaczyna przypominać kolejną gałąź twojej technologii. Ostatni sprawdzian to „Zaklinanie many”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 36.0d
+			x: 8.00d
+			y: 28.08d
 			icon: "botania:enchanter"
 			dependencies: ["A13000000000008F"]
 			tasks: [{ id: "A140000000000090" type: "item" item: "botania:enchanter" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000090" type: "item" item: "minecraft:enchanted_golden_apple" count: 1 }, { id: "A160000000000090" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A170000000000090" type: "random" table_id: 7034622617952714803L }, { id: "A180000000000090" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

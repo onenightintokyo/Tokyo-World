@@ -9,11 +9,11 @@
 	order_index: 2
 	images: [
 		{
-			image: "tokyoworld:textures/gui/quests/tokyo_early.png"
-			width: 20.0d
-			height: 7.0d
-			x: -2.0d
-			y: -9.0d
+			image: "tokyoworld:textures/gui/quests/tokyo_stage_survival.png"
+			width: 24.0d
+			height: 7.8d
+			x: 8.0d
+			y: -6.5d
 			order: -1
 		}
 	]
@@ -27,8 +27,8 @@
 			hide_dependent_lines: false
 			title: "Zasiej przyszłość"
 			description: ["Nikt nie postawi wielkiej fabryki o pustym żołądku. Zacznij od gospodarstwa, które utrzyma całą ekipę. Zacznij od sprawy „Zasiej przyszłość”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "minecraft:wheat"
 			dependencies: ["A130000000000004"]
 			tasks: [
@@ -40,7 +40,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000019" type: "item" item: "minecraft:experience_bottle" count: 9 }]
+			rewards: [{ id: "A170000000000019" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A13000000000001A"
@@ -50,8 +50,8 @@
 			hide_dependent_lines: false
 			title: "Warzywniak"
 			description: ["W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać. Warto teraz pomyśleć o „Warzywniak”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "minecraft:carrot"
 			dependencies: ["A130000000000019"]
 			tasks: [
@@ -63,7 +63,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A15000000000001A" type: "item" item: "minecraft:golden_carrot" count: 5 }]
+			rewards: [{ id: "A17000000000001A" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A13000000000001B"
@@ -73,8 +73,8 @@
 			hide_dependent_lines: false
 			title: "Automatyczny odbiór"
 			description: ["Na początku każda zdobycz może zdecydować, czy przetrwasz kolejną noc. Zapisz w planie „Automatyczny odbiór”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "minecraft:hopper"
 			dependencies: ["A130000000000019"]
 			tasks: [
@@ -86,7 +86,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A15000000000001B" type: "item" item: "minecraft:honeycomb" count: 5 }]
+			rewards: [{ id: "A17000000000001B" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A13000000000001C"
@@ -96,8 +96,8 @@
 			hide_dependent_lines: false
 			title: "Gotowanie w dużej skali"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Gotowanie w dużej skali”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 8.0d
+			x: 8.00d
+			y: 6.24d
 			icon: "farmersdelight:cooking_pot"
 			dependencies: ["A13000000000001A", "A13000000000001B"]
 			tasks: [
@@ -109,7 +109,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A15000000000001C" type: "item" item: "minecraft:experience_bottle" count: 5 }]
+			rewards: [{ id: "A17000000000001C" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A13000000000001D"
@@ -119,8 +119,8 @@
 			hide_dependent_lines: false
 			title: "Magiczna uprawa"
 			description: ["Wcześniej zamknąłeś już sprawę „Gotowanie w dużej skali”. Zanim ruszysz dalej, doprowadź do porządku swoje najbliższe otoczenie. W notatkach pojawia się „Magiczna uprawa”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
-			x: 8.0d
-			y: 12.0d
+			x: 8.00d
+			y: 9.36d
 			icon: "mysticalagriculture:inferium_essence"
 			dependencies: ["A13000000000001C"]
 			tasks: [
@@ -132,7 +132,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A15000000000001D" type: "item" item: "minecraft:bone_meal" count: 9 }]
+			rewards: [{ id: "A17000000000001D" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A13000000000001E"
@@ -142,8 +142,8 @@
 			hide_dependent_lines: false
 			title: "Magazyn zbiorów"
 			description: ["Zbiory stały się pewnym zapleczem, a nie kwestią szczęścia. Ostatni sprawdzian to „Magazyn zbiorów”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "minecraft:barrel"
 			dependencies: ["A13000000000001D"]
 			tasks: [
@@ -155,7 +155,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A15000000000001E" type: "item" item: "minecraft:golden_carrot" count: 16 }, { id: "A16000000000001E" type: "item" item: "minecraft:golden_apple" count: 2 }]
+			rewards: [{ id: "A17000000000001E" type: "random" table_id: 7034622617952714769L }, { id: "A18000000000001E" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

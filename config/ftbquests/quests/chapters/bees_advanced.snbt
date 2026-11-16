@@ -1,13 +1,13 @@
 {
 	filename: "bees_advanced"
-	title: "&e&l22 · Fabryka w ulu"
-	group: "A110000000000002"
+	title: "&d&l26 · Fabryka w ulu"
+	group: "A110000000000005"
 	id: "A12000000000000E"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "productivebees:centrifuge"
-	order_index: 22
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
+	order_index: 26
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000B1"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Leśne gniazdo"
 			description: ["Pszczoły nie znają grafiku pracownika, a jednak dostarczają niesamowite zasoby. Przygotuj im odpowiednie warunki. Zacznij od sprawy „Leśne gniazdo”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "productivebees:oak_wood_nest"
 			dependencies: ["A13000000000001A"]
 			tasks: [{ id: "A1400000000000B1" type: "item" item: "productivebees:oak_wood_nest" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000B1" type: "item" item: "minecraft:golden_carrot" count: 8 }]
+			rewards: [{ id: "A1700000000000B1" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000B2"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Gniazdo trzmieli"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Gniazdo trzmieli”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "productivebees:bumble_bee_nest"
 			dependencies: ["A1300000000000B1"]
 			tasks: [{ id: "A1400000000000B2" type: "item" item: "productivebees:bumble_bee_nest" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000B2" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A1700000000000B2" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000B3"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Łapacz pszczół"
 			description: ["Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Łapacz pszczół”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "productivebees:catcher"
 			dependencies: ["A1300000000000B1"]
 			tasks: [{ id: "A1400000000000B3" type: "item" item: "productivebees:catcher" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000B3" type: "item" item: "minecraft:bone_meal" count: 4 }]
+			rewards: [{ id: "A1700000000000B3" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000B4"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Pasieka bambusowa"
 			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Pasieka bambusowa”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "productivebees:bamboo_hive"
 			dependencies: ["A1300000000000B2"]
 			tasks: [{ id: "A1400000000000B4" type: "item" item: "productivebees:bamboo_hive" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000B4" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A1700000000000B4" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000B5"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Wirówka miodowa"
 			description: ["Wcześniej zamknąłeś już sprawę „Łapacz pszczół”. Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Wirówka miodowa”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "productivebees:centrifuge"
 			dependencies: ["A1300000000000B3"]
 			tasks: [{ id: "A1400000000000B5" type: "item" item: "productivebees:centrifuge" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000B5" type: "item" item: "minecraft:honeycomb" count: 8 }]
+			rewards: [{ id: "A1700000000000B5" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000B6"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Wirówka elektryczna"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Wirówka elektryczna”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 12.0d
+			x: 8.00d
+			y: 9.36d
 			icon: "productivebees:powered_centrifuge"
 			dependencies: ["A1300000000000B4", "A1300000000000B5"]
 			tasks: [{ id: "A1400000000000B6" type: "item" item: "productivebees:powered_centrifuge" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000B6" type: "item" item: "minecraft:bone_meal" count: 4 }]
+			rewards: [{ id: "A1700000000000B6" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000B7"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Rozlewnia miodu"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Rozlewnia miodu”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 1.0d
-			y: 16.0d
+			x: 2.12d
+			y: 12.48d
 			icon: "productivebees:bottler"
 			dependencies: ["A1300000000000B6"]
 			tasks: [{ id: "A1400000000000B7" type: "item" item: "productivebees:bottler" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000B7" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A1700000000000B7" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000B8"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Rozmnażanie pszczół"
 			description: ["Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Rozmnażanie pszczół”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 15.0d
-			y: 16.0d
+			x: 13.88d
+			y: 12.48d
 			icon: "productivebees:breeding_chamber"
 			dependencies: ["A1300000000000B6"]
 			tasks: [{ id: "A1400000000000B8" type: "item" item: "productivebees:breeding_chamber" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000B8" type: "item" item: "minecraft:honeycomb" count: 4 }]
+			rewards: [{ id: "A1700000000000B8" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000B9"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Wirówka podgrzewana"
 			description: ["Wcześniej zamknąłeś już sprawę „Rozlewnia miodu”. Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Wirówka podgrzewana”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "productivebees:heated_centrifuge"
 			dependencies: ["A1300000000000B7"]
 			tasks: [{ id: "A1400000000000B9" type: "item" item: "productivebees:heated_centrifuge" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000B9" type: "item" item: "minecraft:experience_bottle" count: 8 }]
+			rewards: [{ id: "A1700000000000B9" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000BA"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Energia z miodu"
 			description: ["Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Energia z miodu”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "productivebees:honey_generator"
 			dependencies: ["A1300000000000B8"]
 			tasks: [{ id: "A1400000000000BA" type: "item" item: "productivebees:honey_generator" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000BA" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A1700000000000BA" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000BB"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Specjalne gniazdo"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Specjalne gniazdo”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 24.0d
+			x: 8.00d
+			y: 18.72d
 			icon: "productivebees:sugarbag_nest"
 			dependencies: ["A1300000000000B9", "A1300000000000BA"]
 			tasks: [{ id: "A1400000000000BB" type: "item" item: "productivebees:sugarbag_nest" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000BB" type: "item" item: "minecraft:honeycomb" count: 4 }]
+			rewards: [{ id: "A1700000000000BB" type: "random" table_id: 7034622617952714803L }]
 		}
 		{
 			id: "A1300000000000BC"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Legendarna pasieka"
 			description: ["Pasieka stała się częścią twojego systemu produkcji. Ostatni sprawdzian to „Legendarna pasieka”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 28.0d
+			x: 8.00d
+			y: 21.84d
 			icon: "productivebees:dragon_egg_hive"
 			dependencies: ["A1300000000000BB"]
 			tasks: [{ id: "A1400000000000BC" type: "item" item: "productivebees:dragon_egg_hive" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000BC" type: "item" item: "minecraft:golden_apple" count: 2 }, { id: "A1600000000000BC" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1700000000000BC" type: "random" table_id: 7034622617952714803L }, { id: "A1800000000000BC" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

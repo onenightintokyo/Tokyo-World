@@ -1,13 +1,13 @@
 {
 	filename: "draconic_endgame"
-	title: "&c&l39 · Moc smoków"
+	title: "&c&l40 · Moc smoków"
 	group: "A110000000000003"
 	id: "A120000000000017"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "draconicevolution:draconium_core"
-	order_index: 39
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
+	order_index: 40
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000133"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Slady draconium"
 			description: ["Wszystkie wcześniejsze projekty prowadziły do materiałów, których zwykła technologia nie potrafi okiełznać. Zacznij od sprawy „Slady draconium”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "draconicevolution:draconium_dust"
 			dependencies: ["A130000000000044", "A1300000000000A0"]
 			tasks: [{ id: "A140000000000133" type: "item" item: "draconicevolution:draconium_dust" count: 16L consume_items: false }]
-			rewards: [{ id: "A150000000000133" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000133" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000134"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Rafinacja draconium"
 			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Rafinacja draconium”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "draconicevolution:draconium_ingot"
 			dependencies: ["A130000000000133"]
 			tasks: [{ id: "A140000000000134" type: "item" item: "draconicevolution:draconium_ingot" count: 12L consume_items: false }]
-			rewards: [{ id: "A150000000000134" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A170000000000134" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000135"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Rdzenie draconium"
 			description: ["Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Rdzenie draconium”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "draconicevolution:draconium_core"
 			dependencies: ["A130000000000133"]
 			tasks: [{ id: "A140000000000135" type: "item" item: "draconicevolution:draconium_core" count: 4L consume_items: false }]
-			rewards: [{ id: "A150000000000135" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000135" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000136"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Pierwsze iniektory"
 			description: ["Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Pierwsze iniektory”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "draconicevolution:basic_crafting_injector"
 			dependencies: ["A130000000000134"]
 			tasks: [{ id: "A140000000000136" type: "item" item: "draconicevolution:basic_crafting_injector" count: 4L consume_items: false }]
-			rewards: [{ id: "A150000000000136" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000136" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000137"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Rdzen syntezy"
 			description: ["Wcześniej zamknąłeś już sprawę „Rdzenie draconium”. Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Rdzen syntezy”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "draconicevolution:crafting_core"
 			dependencies: ["A130000000000135"]
 			tasks: [{ id: "A140000000000137" type: "item" item: "draconicevolution:crafting_core" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000137" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A170000000000137" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000138"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Bezprzewodowe przesylanie energii"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Bezprzewodowe przesylanie energii”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 12.0d
+			x: 8.00d
+			y: 9.36d
 			icon: "draconicevolution:basic_relay_crystal"
 			dependencies: ["A130000000000136", "A130000000000137"]
 			tasks: [{ id: "A140000000000138" type: "item" item: "draconicevolution:basic_relay_crystal" count: 4L consume_items: false }]
-			rewards: [{ id: "A150000000000138" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000138" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A130000000000139"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Przebudzone draconium"
 			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Przebudzone draconium”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
-			x: 1.0d
-			y: 16.0d
+			x: 2.12d
+			y: 12.48d
 			icon: "draconicevolution:awakened_draconium_ingot"
 			dependencies: ["A130000000000138"]
 			tasks: [{ id: "A140000000000139" type: "item" item: "draconicevolution:awakened_draconium_ingot" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000139" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000139" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000013A"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Przebudzony rdzen"
 			description: ["Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Przebudzony rdzen”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
-			x: 15.0d
-			y: 16.0d
+			x: 13.88d
+			y: 12.48d
 			icon: "draconicevolution:awakened_core"
 			dependencies: ["A130000000000138"]
 			tasks: [{ id: "A14000000000013A" type: "item" item: "draconicevolution:awakened_core" count: 2L consume_items: false }]
-			rewards: [{ id: "A15000000000013A" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A17000000000013A" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000013B"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Iniektory wyzszej klasy"
 			description: ["Wcześniej zamknąłeś już sprawę „Przebudzone draconium”. Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Iniektory wyzszej klasy”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "draconicevolution:awakened_crafting_injector"
 			dependencies: ["A130000000000139"]
 			tasks: [{ id: "A14000000000013B" type: "item" item: "draconicevolution:awakened_crafting_injector" count: 4L consume_items: false }]
-			rewards: [{ id: "A15000000000013B" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A17000000000013B" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000013C"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Magazyn olbrzymiej mocy"
 			description: ["Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Magazyn olbrzymiej mocy”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "draconicevolution:draconic_energy_core"
 			dependencies: ["A13000000000013A"]
 			tasks: [{ id: "A14000000000013C" type: "item" item: "draconicevolution:draconic_energy_core" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000013C" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A17000000000013C" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000013D"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Zaawansowany teleport"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zaawansowany teleport”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 24.0d
+			x: 8.00d
+			y: 18.72d
 			icon: "draconicevolution:advanced_dislocator"
 			dependencies: ["A13000000000013B", "A13000000000013C"]
 			tasks: [{ id: "A14000000000013D" type: "item" item: "draconicevolution:advanced_dislocator" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000013D" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A17000000000013D" type: "random" table_id: 7034622617952714820L }]
 		}
 		{
 			id: "A13000000000013E"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Zwyciestwo nad chaosem"
 			description: ["Masz w rękach potęgę, której użycie wymaga rozsądku. Ostatni sprawdzian to „Zwyciestwo nad chaosem”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 28.0d
+			x: 8.00d
+			y: 21.84d
 			icon: "draconicevolution:chaos_shard"
 			dependencies: ["A13000000000013D"]
 			tasks: [{ id: "A14000000000013E" type: "item" item: "draconicevolution:chaos_shard" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000013E" type: "item" item: "minecraft:netherite_scrap" count: 1 }, { id: "A16000000000013E" type: "item" item: "minecraft:diamond" count: 5 }]
+			rewards: [{ id: "A17000000000013E" type: "random" table_id: 7034622617952714820L }, { id: "A18000000000013E" type: "item" item: "minecraft:experience_bottle" count: 10 }]
 		}
 	]
 }

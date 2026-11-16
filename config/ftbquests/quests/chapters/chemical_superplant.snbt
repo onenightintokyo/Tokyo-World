@@ -1,13 +1,13 @@
 {
 	filename: "chemical_superplant"
-	title: "&c&l26 · Reakcja łańcuchowa"
-	group: "A110000000000003"
+	title: "&b&l23 · Reakcja łańcuchowa"
+	group: "A110000000000002"
 	id: "A12000000000001B"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "mekanism:chemical_dissolution_chamber"
-	order_index: 26
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
+	order_index: 23
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000167"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Bezpieczna stal"
 			description: ["Rudy kryją w sobie więcej, niż daje zwykłe przetopienie. Chemia pozwoli odzyskać to, co wcześniej trafiało na straty. Zacznij od sprawy „Bezpieczna stal”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "mekanism:ingot_steel"
 			dependencies: ["A130000000000044", "A130000000000054"]
 			tasks: [{ id: "A140000000000167" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }, { id: "A180000000000167" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000167" type: "item" item: "create:andesite_alloy" count: 8 }]
+			rewards: [{ id: "A170000000000167" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000168"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Obudowy aparatury"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Obudowy aparatury”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "mekanism:steel_casing"
 			dependencies: ["A130000000000167"]
 			tasks: [{ id: "A140000000000168" type: "item" item: "mekanism:steel_casing" count: 12L consume_items: false }, { id: "A180000000000168" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000168" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A170000000000168" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000169"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Układy sterujące"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Układy sterujące”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "mekanism:advanced_control_circuit"
 			dependencies: ["A130000000000167"]
 			tasks: [{ id: "A140000000000169" type: "item" item: "mekanism:advanced_control_circuit" count: 12L consume_items: false }, { id: "A180000000000169" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000169" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000169" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000016A"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Zaawansowany infuzor"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Zaawansowany infuzor”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "mekanism:metallurgic_infuser"
 			dependencies: ["A130000000000168"]
 			tasks: [{ id: "A14000000000016A" type: "item" item: "mekanism:metallurgic_infuser" count: 4L consume_items: false }, { id: "A18000000000016A" type: "item" item: "minecraft:copper_ingot" count: 8L consume_items: false }]
-			rewards: [{ id: "A15000000000016A" type: "item" item: "minecraft:diamond" count: 1 }]
+			rewards: [{ id: "A17000000000016A" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000016B"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Komora wzbogacania"
 			description: ["Wcześniej zamknąłeś już sprawę „Układy sterujące”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Komora wzbogacania”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "mekanism:enrichment_chamber"
 			dependencies: ["A130000000000169"]
 			tasks: [{ id: "A14000000000016B" type: "item" item: "mekanism:enrichment_chamber" count: 4L consume_items: false }, { id: "A18000000000016B" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000016B" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A17000000000016B" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000016C"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Separator gazów"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Separator gazów”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "mekanism:electrolytic_separator"
 			dependencies: ["A13000000000016A"]
 			tasks: [{ id: "A14000000000016C" type: "item" item: "mekanism:electrolytic_separator" count: 2L consume_items: false }, { id: "A18000000000016C" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000016C" type: "item" item: "minecraft:emerald" count: 4 }]
+			rewards: [{ id: "A17000000000016C" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000016D"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Utlenianie"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Utlenianie”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "mekanism:chemical_oxidizer"
 			dependencies: ["A13000000000016B"]
 			tasks: [{ id: "A14000000000016D" type: "item" item: "mekanism:chemical_oxidizer" count: 2L consume_items: false }, { id: "A18000000000016D" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000016D" type: "item" item: "create:andesite_alloy" count: 8 }]
+			rewards: [{ id: "A17000000000016D" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000016E"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Mieszanie chemiczne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Mieszanie chemiczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "mekanism:chemical_infuser"
 			dependencies: ["A13000000000016C", "A13000000000016D"]
 			tasks: [{ id: "A14000000000016E" type: "item" item: "mekanism:chemical_infuser" count: 2L consume_items: false }, { id: "A18000000000016E" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }, { id: "A1D000000000016E" type: "checkmark" }]
-			rewards: [{ id: "A15000000000016E" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A17000000000016E" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000016F"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Kompresja osmu"
 			description: ["Wcześniej zamknąłeś już sprawę „Mieszanie chemiczne”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Kompresja osmu”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "mekanism:osmium_compressor"
 			dependencies: ["A13000000000016E"]
 			tasks: [{ id: "A14000000000016F" type: "item" item: "mekanism:osmium_compressor" count: 2L consume_items: false }, { id: "A18000000000016F" type: "item" item: "minecraft:iron_ingot" count: 24L consume_items: false }]
-			rewards: [{ id: "A15000000000016F" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A17000000000016F" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000170"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Komora reakcji"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Komora reakcji”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "mekanism:pressurized_reaction_chamber"
 			dependencies: ["A13000000000016E"]
 			tasks: [{ id: "A140000000000170" type: "item" item: "mekanism:pressurized_reaction_chamber" count: 2L consume_items: false }, { id: "A180000000000170" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000170" type: "item" item: "minecraft:diamond" count: 1 }]
+			rewards: [{ id: "A170000000000170" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000171"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Skraplanie gazów"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Skraplanie gazów”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 1.0d
-			y: 24.0d
+			x: 2.12d
+			y: 18.72d
 			icon: "mekanism:rotary_condensentrator"
 			dependencies: ["A13000000000016F"]
 			tasks: [{ id: "A140000000000171" type: "item" item: "mekanism:rotary_condensentrator" count: 2L consume_items: false }, { id: "A180000000000171" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000171" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000171" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000172"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Rozpuszczanie rud"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Rozpuszczanie rud”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 15.0d
-			y: 24.0d
+			x: 13.88d
+			y: 18.72d
 			icon: "mekanism:chemical_dissolution_chamber"
 			dependencies: ["A130000000000170"]
 			tasks: [{ id: "A140000000000172" type: "item" item: "mekanism:chemical_dissolution_chamber" count: 2L consume_items: false }, { id: "A180000000000172" type: "item" item: "create:andesite_alloy" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000172" type: "item" item: "minecraft:emerald" count: 4 }]
+			rewards: [{ id: "A170000000000172" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000173"
@@ -197,12 +197,12 @@
 			hide_dependent_lines: false
 			title: "Krystalizacja"
 			description: ["Wcześniej zamknąłeś już sprawę „Skraplanie gazów”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Krystalizacja”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 1.0d
-			y: 28.0d
+			x: 2.12d
+			y: 21.84d
 			icon: "mekanism:chemical_crystallizer"
 			dependencies: ["A130000000000171"]
 			tasks: [{ id: "A140000000000173" type: "item" item: "mekanism:chemical_crystallizer" count: 2L consume_items: false }, { id: "A180000000000173" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
-			rewards: [{ id: "A150000000000173" type: "item" item: "create:andesite_alloy" count: 8 }]
+			rewards: [{ id: "A170000000000173" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000174"
@@ -212,12 +212,12 @@
 			hide_dependent_lines: false
 			title: "Magazyny surowców"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Magazyny surowców”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 15.0d
-			y: 28.0d
+			x: 13.88d
+			y: 21.84d
 			icon: "mekanism:basic_fluid_tank"
 			dependencies: ["A130000000000172"]
 			tasks: [{ id: "A140000000000174" type: "item" item: "mekanism:basic_fluid_tank" count: 8L consume_items: false }, { id: "A180000000000174" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }]
-			rewards: [{ id: "A150000000000174" type: "item" item: "minecraft:golden_carrot" count: 4 }]
+			rewards: [{ id: "A170000000000174" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000175"
@@ -227,12 +227,12 @@
 			hide_dependent_lines: false
 			title: "Sterowniki najwyższej klasy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sterowniki najwyższej klasy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 32.0d
+			x: 8.00d
+			y: 24.96d
 			icon: "mekanism:ultimate_control_circuit"
 			dependencies: ["A130000000000173", "A130000000000174"]
 			tasks: [{ id: "A140000000000175" type: "item" item: "mekanism:ultimate_control_circuit" count: 8L consume_items: false }, { id: "A180000000000175" type: "item" item: "mekanism:ingot_steel" count: 32L consume_items: false }, { id: "A1D0000000000175" type: "checkmark" }]
-			rewards: [{ id: "A150000000000175" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000175" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000176"
@@ -242,12 +242,12 @@
 			hide_dependent_lines: false
 			title: "TOKYO CHEMICAL WORKS"
 			description: ["Laboratorium pracuje jak część fabryki, nie odizolowana ciekawostka. Ostatni sprawdzian to „TOKYO CHEMICAL WORKS”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Sprawdź w świecie przynajmniej jeden pełny cykl produkcji, a nie tylko zawartość skrzyni. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 36.0d
+			x: 8.00d
+			y: 28.08d
 			icon: "mekanism:chemical_infuser"
 			dependencies: ["A130000000000175"]
 			tasks: [{ id: "A140000000000176" type: "item" item: "mekanism:chemical_infuser" count: 4L consume_items: false }, { id: "A180000000000176" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A190000000000176" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D0000000000176" type: "checkmark" }]
-			rewards: [{ id: "A150000000000176" type: "item" item: "mekanism:advanced_control_circuit" count: 4 }, { id: "A160000000000176" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A170000000000176" type: "random" table_id: 7034622617952714786L }, { id: "A180000000000176" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

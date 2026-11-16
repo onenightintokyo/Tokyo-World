@@ -1,13 +1,13 @@
 {
 	filename: "logistics_pro"
-	title: "&e&l20 · Droga materiału"
+	title: "&b&l20 · Droga materiału"
 	group: "A110000000000002"
 	id: "A120000000000012"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "pipez:universal_pipe"
 	order_index: 20
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 } ]
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000EB"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Rury przedmiotowe"
 			description: ["Każdy surowiec ma swoją trasę. Dopóki nosisz go sam, twoja fabryka jest tylko dużym warsztatem. Zacznij od sprawy „Rury przedmiotowe”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "pipez:item_pipe"
 			dependencies: ["A130000000000010"]
 			tasks: [{ id: "A1400000000000EB" type: "item" item: "pipez:item_pipe" count: 24L consume_items: false }]
-			rewards: [{ id: "A1500000000000EB" type: "item" item: "minecraft:lapis_lazuli" count: 8 }]
+			rewards: [{ id: "A1700000000000EB" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000EC"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Rury płynowe"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Rury płynowe”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "pipez:fluid_pipe"
 			dependencies: ["A1300000000000EB"]
 			tasks: [{ id: "A1400000000000EC" type: "item" item: "pipez:fluid_pipe" count: 12L consume_items: false }]
-			rewards: [{ id: "A1500000000000EC" type: "item" item: "minecraft:slime_ball" count: 4 }]
+			rewards: [{ id: "A1700000000000EC" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000ED"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Rury energetyczne"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Rury energetyczne”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "pipez:energy_pipe"
 			dependencies: ["A1300000000000EB"]
 			tasks: [{ id: "A1400000000000ED" type: "item" item: "pipez:energy_pipe" count: 12L consume_items: false }]
-			rewards: [{ id: "A1500000000000ED" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A1700000000000ED" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000EE"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Rurociągi gazowe"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Rurociągi gazowe”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "pipez:gas_pipe"
 			dependencies: ["A1300000000000EC"]
 			tasks: [{ id: "A1400000000000EE" type: "item" item: "pipez:gas_pipe" count: 6L consume_items: false }]
-			rewards: [{ id: "A1500000000000EE" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A1700000000000EE" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000EF"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Rury uniwersalne"
 			description: ["Wcześniej zamknąłeś już sprawę „Rury energetyczne”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Rury uniwersalne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "pipez:universal_pipe"
 			dependencies: ["A1300000000000ED"]
 			tasks: [{ id: "A1400000000000EF" type: "item" item: "pipez:universal_pipe" count: 6L consume_items: false }]
-			rewards: [{ id: "A1500000000000EF" type: "item" item: "minecraft:experience_bottle" count: 8 }]
+			rewards: [{ id: "A1700000000000EF" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000F0"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Pierwszy upgrade rur"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Pierwszy upgrade rur”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "pipez:basic_upgrade"
 			dependencies: ["A1300000000000EE"]
 			tasks: [{ id: "A1400000000000F0" type: "item" item: "pipez:basic_upgrade" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000F0" type: "item" item: "minecraft:amethyst_shard" count: 4 }]
+			rewards: [{ id: "A1700000000000F0" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000F1"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Usprawnione rury"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Usprawnione rury”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "pipez:improved_upgrade"
 			dependencies: ["A1300000000000EF"]
 			tasks: [{ id: "A1400000000000F1" type: "item" item: "pipez:improved_upgrade" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000F1" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A1700000000000F1" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000F2"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Szybka logistyka"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Szybka logistyka”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "pipez:advanced_upgrade"
 			dependencies: ["A1300000000000F0", "A1300000000000F1"]
 			tasks: [{ id: "A1400000000000F2" type: "item" item: "pipez:advanced_upgrade" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000F2" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A1700000000000F2" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000F3"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Najwyższa przepustowość"
 			description: ["Wcześniej zamknąłeś już sprawę „Szybka logistyka”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Najwyższa przepustowość”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "pipez:ultimate_upgrade"
 			dependencies: ["A1300000000000F2"]
 			tasks: [{ id: "A1400000000000F3" type: "item" item: "pipez:ultimate_upgrade" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000F3" type: "item" item: "minecraft:slime_ball" count: 8 }]
+			rewards: [{ id: "A1700000000000F3" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000F4"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Złącze XNet"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Złącze XNet”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "xnet:connector"
 			dependencies: ["A1300000000000F2"]
 			tasks: [{ id: "A1400000000000F4" type: "item" item: "xnet:connector" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000F4" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A1700000000000F4" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000F5"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Kontroler XNet"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Kontroler XNet”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 1.0d
-			y: 24.0d
+			x: 2.12d
+			y: 18.72d
 			icon: "xnet:controller"
 			dependencies: ["A1300000000000F3"]
 			tasks: [{ id: "A1400000000000F5" type: "item" item: "xnet:controller" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000F5" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A1700000000000F5" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000F6"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Zaawansowane złącze"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Zaawansowane złącze”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 15.0d
-			y: 24.0d
+			x: 13.88d
+			y: 18.72d
 			icon: "xnet:advanced_connector"
 			dependencies: ["A1300000000000F4"]
 			tasks: [{ id: "A1400000000000F6" type: "item" item: "xnet:advanced_connector" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000F6" type: "item" item: "minecraft:slime_ball" count: 4 }]
+			rewards: [{ id: "A1700000000000F6" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000F7"
@@ -197,12 +197,12 @@
 			hide_dependent_lines: false
 			title: "Magazyn kompresyjny"
 			description: ["Wcześniej zamknąłeś już sprawę „Kontroler XNet”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Magazyn kompresyjny”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 1.0d
-			y: 28.0d
+			x: 2.12d
+			y: 21.84d
 			icon: "functionalstorage:compacting_drawer"
 			dependencies: ["A1300000000000F5"]
 			tasks: [{ id: "A1400000000000F7" type: "item" item: "functionalstorage:compacting_drawer" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000F7" type: "item" item: "minecraft:amethyst_shard" count: 8 }]
+			rewards: [{ id: "A1700000000000F7" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000F8"
@@ -212,12 +212,12 @@
 			hide_dependent_lines: false
 			title: "Rozszerzenie magazynu"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Rozszerzenie magazynu”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 15.0d
-			y: 28.0d
+			x: 13.88d
+			y: 21.84d
 			icon: "functionalstorage:controller_extension"
 			dependencies: ["A1300000000000F6"]
 			tasks: [{ id: "A1400000000000F8" type: "item" item: "functionalstorage:controller_extension" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000F8" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A1700000000000F8" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000F9"
@@ -227,12 +227,12 @@
 			hide_dependent_lines: false
 			title: "Router modułowy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Router modułowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 32.0d
+			x: 8.00d
+			y: 24.96d
 			icon: "modularrouters:modular_router"
 			dependencies: ["A1300000000000F7", "A1300000000000F8"]
 			tasks: [{ id: "A1400000000000F9" type: "item" item: "modularrouters:modular_router" count: 2L consume_items: false }]
-			rewards: [{ id: "A1500000000000F9" type: "item" item: "minecraft:slime_ball" count: 4 }]
+			rewards: [{ id: "A1700000000000F9" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000000FA"
@@ -242,12 +242,12 @@
 			hide_dependent_lines: false
 			title: "Klucz do rur"
 			description: ["Przedmioty znajdują drogę do odpowiednich maszyn bez twojej pomocy. Ostatni sprawdzian to „Klucz do rur”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 36.0d
+			x: 8.00d
+			y: 28.08d
 			icon: "pipez:wrench"
 			dependencies: ["A1300000000000F9"]
 			tasks: [{ id: "A1400000000000FA" type: "item" item: "pipez:wrench" count: 1L consume_items: false }]
-			rewards: [{ id: "A1500000000000FA" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A1600000000000FA" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1700000000000FA" type: "random" table_id: 7034622617952714786L }, { id: "A1800000000000FA" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

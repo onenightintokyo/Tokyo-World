@@ -1,6 +1,6 @@
 {
 	filename: "integrated_logic"
-	title: "&e&l17 · Logika zamiast dźwigni"
+	title: "&b&l17 · Logika zamiast dźwigni"
 	group: "A110000000000002"
 	id: "A12000000000000A"
 	default_hide_dependency_lines: false
@@ -8,7 +8,7 @@
 	icon: "integrateddynamics:logic_programmer"
 	order_index: 17
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tokyo_mid.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }
 	]
 	quests: [
 		{
@@ -19,12 +19,12 @@
 			hide_dependent_lines: false
 			title: "Kabel logiczny"
 			description: ["Nie musisz stać przy każdej maszynie. Naucz się przekazywać informację, zanim zbudujesz większy system. Zacznij od sprawy „Kabel logiczny”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "integrateddynamics:cable"
 			dependencies: ["A130000000000010"]
 			tasks: [{ id: "A140000000000075" type: "item" item: "integrateddynamics:cable" count: 18L consume_items: false }]
-			rewards: [{ id: "A150000000000075" type: "item" item: "minecraft:experience_bottle" count: 8 }]
+			rewards: [{ id: "A170000000000075" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000076"
@@ -34,12 +34,12 @@
 			hide_dependent_lines: false
 			title: "Programowanie logiki"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Programowanie logiki”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "integrateddynamics:logic_programmer"
 			dependencies: ["A130000000000075"]
 			tasks: [{ id: "A140000000000076" type: "item" item: "integrateddynamics:logic_programmer" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000076" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A170000000000076" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000077"
@@ -49,12 +49,12 @@
 			hide_dependent_lines: false
 			title: "Karty zmiennych"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Karty zmiennych”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "integrateddynamics:variable"
 			dependencies: ["A130000000000075"]
 			tasks: [{ id: "A140000000000077" type: "item" item: "integrateddynamics:variable" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000077" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A170000000000077" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000078"
@@ -64,12 +64,12 @@
 			hide_dependent_lines: false
 			title: "Magazyn zmiennych"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Magazyn zmiennych”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "integrateddynamics:variablestore"
 			dependencies: ["A130000000000076"]
 			tasks: [{ id: "A140000000000078" type: "item" item: "integrateddynamics:variablestore" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000078" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A170000000000078" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000079"
@@ -79,12 +79,12 @@
 			hide_dependent_lines: false
 			title: "Bateria sieciowa"
 			description: ["Wcześniej zamknąłeś już sprawę „Karty zmiennych”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Bateria sieciowa”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "integrateddynamics:energy_battery"
 			dependencies: ["A130000000000077"]
 			tasks: [{ id: "A140000000000079" type: "item" item: "integrateddynamics:energy_battery" count: 1L consume_items: false }]
-			rewards: [{ id: "A150000000000079" type: "item" item: "minecraft:glowstone_dust" count: 8 }]
+			rewards: [{ id: "A170000000000079" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000007A"
@@ -94,12 +94,12 @@
 			hide_dependent_lines: false
 			title: "Generator logiczny"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Generator logiczny”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 12.0d
+			x: 8.00d
+			y: 9.36d
 			icon: "integrateddynamics:coal_generator"
 			dependencies: ["A130000000000078", "A130000000000079"]
 			tasks: [{ id: "A14000000000007A" type: "item" item: "integrateddynamics:coal_generator" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000007A" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A17000000000007A" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000007B"
@@ -109,12 +109,12 @@
 			hide_dependent_lines: false
 			title: "Materializacja zmiennych"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Materializacja zmiennych”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 1.0d
-			y: 16.0d
+			x: 2.12d
+			y: 12.48d
 			icon: "integrateddynamics:materializer"
 			dependencies: ["A13000000000007A"]
 			tasks: [{ id: "A14000000000007B" type: "item" item: "integrateddynamics:materializer" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000007B" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A17000000000007B" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000007C"
@@ -124,12 +124,12 @@
 			hide_dependent_lines: false
 			title: "Proxy sygnałów"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Proxy sygnałów”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 15.0d
-			y: 16.0d
+			x: 13.88d
+			y: 12.48d
 			icon: "integrateddynamics:proxy"
 			dependencies: ["A13000000000007A"]
 			tasks: [{ id: "A14000000000007C" type: "item" item: "integrateddynamics:proxy" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000007C" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
+			rewards: [{ id: "A17000000000007C" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000007D"
@@ -139,12 +139,12 @@
 			hide_dependent_lines: false
 			title: "Kryształy Menril"
 			description: ["Wcześniej zamknąłeś już sprawę „Materializacja zmiennych”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Kryształy Menril”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "integrateddynamics:crystalized_menril_chunk"
 			dependencies: ["A13000000000007B"]
 			tasks: [{ id: "A14000000000007D" type: "item" item: "integrateddynamics:crystalized_menril_chunk" count: 12L consume_items: false }]
-			rewards: [{ id: "A15000000000007D" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+			rewards: [{ id: "A17000000000007D" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000007E"
@@ -154,12 +154,12 @@
 			hide_dependent_lines: false
 			title: "Kryształy Chorus"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Kryształy Chorus”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "integrateddynamics:crystalized_chorus_chunk"
 			dependencies: ["A13000000000007C"]
 			tasks: [{ id: "A14000000000007E" type: "item" item: "integrateddynamics:crystalized_chorus_chunk" count: 12L consume_items: false }]
-			rewards: [{ id: "A15000000000007E" type: "item" item: "minecraft:experience_bottle" count: 4 }]
+			rewards: [{ id: "A17000000000007E" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000007F"
@@ -169,12 +169,12 @@
 			hide_dependent_lines: false
 			title: "Programowanie mobilne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Programowanie mobilne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 24.0d
+			x: 8.00d
+			y: 18.72d
 			icon: "integrateddynamics:portable_logic_programmer"
 			dependencies: ["A13000000000007D", "A13000000000007E"]
 			tasks: [{ id: "A14000000000007F" type: "item" item: "integrateddynamics:portable_logic_programmer" count: 1L consume_items: false }]
-			rewards: [{ id: "A15000000000007F" type: "item" item: "minecraft:glowstone_dust" count: 4 }]
+			rewards: [{ id: "A17000000000007F" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000080"
@@ -184,12 +184,12 @@
 			hide_dependent_lines: false
 			title: "Drewno Menril"
 			description: ["Sygnał wykonuje za ciebie pracę, która kiedyś wymagała kilkunastu przełączników. Ostatni sprawdzian to „Drewno Menril”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 28.0d
+			x: 8.00d
+			y: 21.84d
 			icon: "integrateddynamics:menril_log"
 			dependencies: ["A13000000000007F"]
 			tasks: [{ id: "A140000000000080" type: "item" item: "integrateddynamics:menril_log" count: 24L consume_items: false }]
-			rewards: [{ id: "A150000000000080" type: "item" item: "minecraft:diamond" count: 6 }, { id: "A160000000000080" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A170000000000080" type: "random" table_id: 7034622617952714786L }, { id: "A180000000000080" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

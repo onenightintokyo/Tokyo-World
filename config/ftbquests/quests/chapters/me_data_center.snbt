@@ -1,13 +1,13 @@
 {
 	filename: "me_data_center"
-	title: "&c&l29 · Cyfrowe serce bazy"
-	group: "A110000000000003"
+	title: "&b&l21 · Cyfrowe serce bazy"
+	group: "A110000000000002"
 	id: "A12000000000001E"
 	default_hide_dependency_lines: false
 	default_quest_size: 1.65d
 	icon: "ae2:controller"
-	order_index: 29
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_late.png" width: 20.0d height: 7.0d x: -2.0d y: -9.0d order: -1 }]
+	order_index: 21
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000197"
@@ -17,12 +17,12 @@
 			hide_dependent_lines: false
 			title: "Kwarc Certus"
 			description: ["Prawdziwy magazyn powinien wiedzieć, czego potrzeba do następnej budowy. Tutaj zaczyna się inteligentna produkcja. Zacznij od sprawy „Kwarc Certus”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "ae2:certus_quartz_crystal"
 			dependencies: ["A130000000000126", "A1300000000000EA"]
 			tasks: [{ id: "A140000000000197" type: "item" item: "ae2:certus_quartz_crystal" count: 64L consume_items: false }, { id: "A180000000000197" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000197" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A170000000000197" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000198"
@@ -32,12 +32,12 @@
 			hide_dependent_lines: false
 			title: "Kwarc ładowany"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Kwarc ładowany”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "ae2:charged_certus_quartz_crystal"
 			dependencies: ["A130000000000197"]
 			tasks: [{ id: "A140000000000198" type: "item" item: "ae2:charged_certus_quartz_crystal" count: 24L consume_items: false }, { id: "A180000000000198" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000198" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A170000000000198" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A130000000000199"
@@ -47,12 +47,12 @@
 			hide_dependent_lines: false
 			title: "Kryształy Fluix"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Kryształy Fluix”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "ae2:fluix_crystal"
 			dependencies: ["A130000000000197"]
 			tasks: [{ id: "A140000000000199" type: "item" item: "ae2:fluix_crystal" count: 32L consume_items: false }, { id: "A180000000000199" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
-			rewards: [{ id: "A150000000000199" type: "item" item: "ae2:fluix_crystal" count: 4 }]
+			rewards: [{ id: "A170000000000199" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000019A"
@@ -62,12 +62,12 @@
 			hide_dependent_lines: false
 			title: "Prasy procesorów"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Prasy procesorów”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "ae2:inscriber"
 			dependencies: ["A130000000000198"]
 			tasks: [{ id: "A14000000000019A" type: "item" item: "ae2:inscriber" count: 4L consume_items: false }, { id: "A18000000000019A" type: "item" item: "minecraft:iron_ingot" count: 8L consume_items: false }]
-			rewards: [{ id: "A15000000000019A" type: "item" item: "minecraft:emerald" count: 8 }]
+			rewards: [{ id: "A17000000000019A" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000019B"
@@ -77,12 +77,12 @@
 			hide_dependent_lines: false
 			title: "Procesory logiczne"
 			description: ["Wcześniej zamknąłeś już sprawę „Kryształy Fluix”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Procesory logiczne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "ae2:logic_processor"
 			dependencies: ["A130000000000199"]
 			tasks: [{ id: "A14000000000019B" type: "item" item: "ae2:logic_processor" count: 24L consume_items: false }, { id: "A18000000000019B" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000019B" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A17000000000019B" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000019C"
@@ -92,12 +92,12 @@
 			hide_dependent_lines: false
 			title: "Procesory kalkulacyjne"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Procesory kalkulacyjne”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 1.0d
-			y: 12.0d
+			x: 2.12d
+			y: 9.36d
 			icon: "ae2:calculation_processor"
 			dependencies: ["A13000000000019A"]
 			tasks: [{ id: "A14000000000019C" type: "item" item: "ae2:calculation_processor" count: 24L consume_items: false }, { id: "A18000000000019C" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000019C" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A17000000000019C" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000019D"
@@ -107,12 +107,12 @@
 			hide_dependent_lines: false
 			title: "Procesory inżynieryjne"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Procesory inżynieryjne”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 15.0d
-			y: 12.0d
+			x: 13.88d
+			y: 9.36d
 			icon: "ae2:engineering_processor"
 			dependencies: ["A13000000000019B"]
 			tasks: [{ id: "A14000000000019D" type: "item" item: "ae2:engineering_processor" count: 24L consume_items: false }, { id: "A18000000000019D" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
-			rewards: [{ id: "A15000000000019D" type: "item" item: "minecraft:lapis_lazuli" count: 8 }]
+			rewards: [{ id: "A17000000000019D" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000019E"
@@ -122,12 +122,12 @@
 			hide_dependent_lines: false
 			title: "Zasilanie ME"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zasilanie ME”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "ae2:energy_acceptor"
 			dependencies: ["A13000000000019C", "A13000000000019D"]
 			tasks: [{ id: "A14000000000019E" type: "item" item: "ae2:energy_acceptor" count: 4L consume_items: false }, { id: "A18000000000019E" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }, { id: "A1D000000000019E" type: "checkmark" }]
-			rewards: [{ id: "A15000000000019E" type: "item" item: "ae2:fluix_crystal" count: 4 }]
+			rewards: [{ id: "A17000000000019E" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A13000000000019F"
@@ -137,12 +137,12 @@
 			hide_dependent_lines: false
 			title: "Kontrolery ME"
 			description: ["Wcześniej zamknąłeś już sprawę „Zasilanie ME”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Kontrolery ME”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 1.0d
-			y: 20.0d
+			x: 2.12d
+			y: 15.60d
 			icon: "ae2:controller"
 			dependencies: ["A13000000000019E"]
 			tasks: [{ id: "A14000000000019F" type: "item" item: "ae2:controller" count: 4L consume_items: false }, { id: "A18000000000019F" type: "item" item: "minecraft:copper_ingot" count: 24L consume_items: false }]
-			rewards: [{ id: "A15000000000019F" type: "item" item: "minecraft:emerald" count: 4 }]
+			rewards: [{ id: "A17000000000019F" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000001A0"
@@ -152,12 +152,12 @@
 			hide_dependent_lines: false
 			title: "Szafy nośników"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Szafy nośników”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 15.0d
-			y: 20.0d
+			x: 13.88d
+			y: 15.60d
 			icon: "ae2:drive"
 			dependencies: ["A13000000000019E"]
 			tasks: [{ id: "A1400000000001A0" type: "item" item: "ae2:drive" count: 8L consume_items: false }, { id: "A1800000000001A0" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
-			rewards: [{ id: "A1500000000001A0" type: "item" item: "minecraft:ender_pearl" count: 8 }]
+			rewards: [{ id: "A1700000000001A0" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000001A1"
@@ -167,12 +167,12 @@
 			hide_dependent_lines: false
 			title: "Terminale ME"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Terminale ME”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 1.0d
-			y: 24.0d
+			x: 2.12d
+			y: 18.72d
 			icon: "ae2:terminal"
 			dependencies: ["A13000000000019F"]
 			tasks: [{ id: "A1400000000001A1" type: "item" item: "ae2:terminal" count: 4L consume_items: false }, { id: "A1800000000001A1" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
-			rewards: [{ id: "A1500000000001A1" type: "item" item: "minecraft:experience_bottle" count: 6 }]
+			rewards: [{ id: "A1700000000001A1" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000001A2"
@@ -182,12 +182,12 @@
 			hide_dependent_lines: false
 			title: "Terminale rzemiosła"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Terminale rzemiosła”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 15.0d
-			y: 24.0d
+			x: 13.88d
+			y: 18.72d
 			icon: "ae2:crafting_terminal"
 			dependencies: ["A1300000000001A0"]
 			tasks: [{ id: "A1400000000001A2" type: "item" item: "ae2:crafting_terminal" count: 4L consume_items: false }, { id: "A1800000000001A2" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
-			rewards: [{ id: "A1500000000001A2" type: "item" item: "minecraft:lapis_lazuli" count: 4 }]
+			rewards: [{ id: "A1700000000001A2" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000001A3"
@@ -197,12 +197,12 @@
 			hide_dependent_lines: false
 			title: "Automatyczne składanie"
 			description: ["Wcześniej zamknąłeś już sprawę „Terminale ME”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Automatyczne składanie”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 1.0d
-			y: 28.0d
+			x: 2.12d
+			y: 21.84d
 			icon: "ae2:molecular_assembler"
 			dependencies: ["A1300000000001A1"]
 			tasks: [{ id: "A1400000000001A3" type: "item" item: "ae2:molecular_assembler" count: 12L consume_items: false }, { id: "A1800000000001A3" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
-			rewards: [{ id: "A1500000000001A3" type: "item" item: "ae2:fluix_crystal" count: 8 }]
+			rewards: [{ id: "A1700000000001A3" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000001A4"
@@ -212,12 +212,12 @@
 			hide_dependent_lines: false
 			title: "Dostawcy wzorców"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Dostawcy wzorców”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 15.0d
-			y: 28.0d
+			x: 13.88d
+			y: 21.84d
 			icon: "ae2:pattern_provider"
 			dependencies: ["A1300000000001A2"]
 			tasks: [{ id: "A1400000000001A4" type: "item" item: "ae2:pattern_provider" count: 8L consume_items: false }, { id: "A1800000000001A4" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
-			rewards: [{ id: "A1500000000001A4" type: "item" item: "minecraft:emerald" count: 4 }]
+			rewards: [{ id: "A1700000000001A4" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000001A5"
@@ -227,12 +227,12 @@
 			hide_dependent_lines: false
 			title: "Interfejsy produkcyjne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejsy produkcyjne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 32.0d
+			x: 8.00d
+			y: 24.96d
 			icon: "ae2:interface"
 			dependencies: ["A1300000000001A3", "A1300000000001A4"]
 			tasks: [{ id: "A1400000000001A5" type: "item" item: "ae2:interface" count: 8L consume_items: false }, { id: "A1800000000001A5" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A1D00000000001A5" type: "checkmark" }]
-			rewards: [{ id: "A1500000000001A5" type: "item" item: "minecraft:ender_pearl" count: 4 }]
+			rewards: [{ id: "A1700000000001A5" type: "random" table_id: 7034622617952714786L }]
 		}
 		{
 			id: "A1300000000001A6"
@@ -242,12 +242,12 @@
 			hide_dependent_lines: false
 			title: "TOKYO DATA CENTER"
 			description: ["Masz własne centrum danych, które może przygotować pracę całego zakładu. Ostatni sprawdzian to „TOKYO DATA CENTER”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
-			x: 8.0d
-			y: 36.0d
+			x: 8.00d
+			y: 28.08d
 			icon: "ae2:quantum_ring"
 			dependencies: ["A1300000000001A5"]
 			tasks: [{ id: "A1400000000001A6" type: "item" item: "ae2:quantum_ring" count: 16L consume_items: false }, { id: "A1800000000001A6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001A6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D00000000001A6" type: "checkmark" }]
-			rewards: [{ id: "A1500000000001A6" type: "item" item: "ae2:fluix_crystal" count: 4 }, { id: "A1600000000001A6" type: "item" item: "minecraft:experience_bottle" count: 16 }]
+			rewards: [{ id: "A1700000000001A6" type: "random" table_id: 7034622617952714786L }, { id: "A1800000000001A6" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }

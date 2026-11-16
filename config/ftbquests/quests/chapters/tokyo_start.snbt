@@ -9,11 +9,11 @@
 	order_index: 1
 	images: [
 		{
-			image: "tokyoworld:textures/gui/quests/tokyo_early.png"
-			width: 20.0d
-			height: 7.0d
-			x: -2.0d
-			y: -9.0d
+			image: "tokyoworld:textures/gui/quests/tokyo_stage_survival.png"
+			width: 24.0d
+			height: 7.8d
+			x: 8.0d
+			y: -6.5d
 			order: -1
 		}
 	]
@@ -27,8 +27,8 @@
 			hide_dependent_lines: false
 			title: "Pierwszy surowiec"
 			description: ["Nie ma jeszcze fabryki, tylko kawałek ziemi i pomysł. Wszystko zaczyna się od prostego warsztatu. Zacznij od sprawy „Pierwszy surowiec”. Bez tego dalsze pomysły zostałyby tylko szkicem."]
-			x: 8.0d
-			y: 0.0d
+			x: 8.00d
+			y: 0.00d
 			icon: "minecraft:oak_log"
 			tasks: [
 				{
@@ -39,7 +39,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000001" type: "item" item: "minecraft:torch" count: 8 }]
+			rewards: [{ id: "A170000000000001" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A130000000000002"
@@ -49,8 +49,8 @@
 			hide_dependent_lines: false
 			title: "Warsztat inżyniera"
 			description: ["W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać. Warto teraz pomyśleć o „Warsztat inżyniera”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
-			x: 1.0d
-			y: 4.0d
+			x: 2.12d
+			y: 3.12d
 			icon: "minecraft:crafting_table"
 			dependencies: ["A130000000000001"]
 			tasks: [
@@ -62,7 +62,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000002" type: "item" item: "minecraft:bread" count: 3 }]
+			rewards: [{ id: "A170000000000002" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A130000000000003"
@@ -72,8 +72,8 @@
 			hide_dependent_lines: false
 			title: "Kamienne fundamenty"
 			description: ["Na początku każda zdobycz może zdecydować, czy przetrwasz kolejną noc. Zapisz w planie „Kamienne fundamenty”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
-			x: 15.0d
-			y: 4.0d
+			x: 13.88d
+			y: 3.12d
 			icon: "minecraft:cobblestone"
 			dependencies: ["A130000000000001"]
 			tasks: [
@@ -85,7 +85,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000003" type: "item" item: "minecraft:coal" count: 8 }]
+			rewards: [{ id: "A170000000000003" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A130000000000004"
@@ -95,8 +95,8 @@
 			hide_dependent_lines: false
 			title: "Pierwsze wytapianie"
 			description: ["Warsztat powoli przestaje być prowizorką. Warto zatroszczyć się o kolejny szczegół. Tym razem liczy się „Pierwsze wytapianie”. Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później."]
-			x: 1.0d
-			y: 8.0d
+			x: 2.12d
+			y: 6.24d
 			icon: "minecraft:furnace"
 			dependencies: ["A130000000000002"]
 			tasks: [
@@ -108,7 +108,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000004" type: "item" item: "minecraft:coal" count: 4 }]
+			rewards: [{ id: "A170000000000004" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A130000000000005"
@@ -118,8 +118,8 @@
 			hide_dependent_lines: false
 			title: "Era żelaza"
 			description: ["Wcześniej zamknąłeś już sprawę „Kamienne fundamenty”. Zanim ruszysz dalej, doprowadź do porządku swoje najbliższe otoczenie. W notatkach pojawia się „Era żelaza”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
-			x: 15.0d
-			y: 8.0d
+			x: 13.88d
+			y: 6.24d
 			icon: "minecraft:iron_ingot"
 			dependencies: ["A130000000000003"]
 			tasks: [
@@ -131,7 +131,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000005" type: "item" item: "minecraft:redstone" count: 6 }]
+			rewards: [{ id: "A170000000000005" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A130000000000006"
@@ -141,8 +141,8 @@
 			hide_dependent_lines: false
 			title: "Miedź dla przemysłu"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Miedź dla przemysłu”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
-			x: 8.0d
-			y: 12.0d
+			x: 8.00d
+			y: 9.36d
 			icon: "minecraft:copper_ingot"
 			dependencies: ["A130000000000004", "A130000000000005"]
 			tasks: [
@@ -154,7 +154,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000006" type: "item" item: "minecraft:lapis_lazuli" count: 6 }]
+			rewards: [{ id: "A170000000000006" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A130000000000007"
@@ -164,8 +164,8 @@
 			hide_dependent_lines: false
 			title: "Sygnał Redstone"
 			description: ["W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać. Warto teraz pomyśleć o „Sygnał Redstone”. Nie musisz się spieszyć; dobry warsztat oszczędzi czasu później."]
-			x: 8.0d
-			y: 16.0d
+			x: 8.00d
+			y: 12.48d
 			icon: "minecraft:redstone"
 			dependencies: ["A130000000000006"]
 			tasks: [
@@ -177,7 +177,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000007" type: "item" item: "minecraft:experience_bottle" count: 3 }]
+			rewards: [{ id: "A170000000000007" type: "random" table_id: 7034622617952714769L }]
 		}
 		{
 			id: "A130000000000008"
@@ -187,8 +187,8 @@
 			hide_dependent_lines: false
 			title: "Bramy przemysłu"
 			description: ["Masz już miejsce, do którego można wrócić po każdej wyprawie. Ostatni sprawdzian to „Kolejny etap”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
-			x: 8.0d
-			y: 20.0d
+			x: 8.00d
+			y: 15.60d
 			icon: "minecraft:hopper"
 			dependencies: ["A130000000000007"]
 			tasks: [
@@ -200,7 +200,7 @@
 					consume_items: false
 				}
 			]
-			rewards: [{ id: "A150000000000008" type: "item" item: "minecraft:diamond" count: 1 }, { id: "A160000000000008" type: "item" item: "minecraft:experience_bottle" count: 10 }]
+			rewards: [{ id: "A170000000000008" type: "random" table_id: 7034622617952714769L }, { id: "A180000000000008" type: "item" item: "minecraft:experience_bottle" count: 6 }]
 		}
 	]
 }
