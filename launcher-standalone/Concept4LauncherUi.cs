@@ -129,17 +129,17 @@ internal sealed partial class LauncherWindow
             Bounds = new Rectangle(267, 350, 186, 35),
             HoverEnabled = false
         };
-        premiumArea.Click += (_, _) => premium.Checked = true;
+        premiumArea.Click += (_, _) => SelectConceptPremium(true);
         var offlineArea = new ConceptClickArea
         {
             Bounds = new Rectangle(492, 350, 130, 35),
             HoverEnabled = false
         };
-        offlineArea.Click += (_, _) => offline.Checked = true;
+        offlineArea.Click += (_, _) => SelectConceptPremium(false);
         conceptPremiumDot.Cursor = Cursors.Hand;
         conceptOfflineDot.Cursor = Cursors.Hand;
-        conceptPremiumDot.Click += (_, _) => premium.Checked = true;
-        conceptOfflineDot.Click += (_, _) => offline.Checked = true;
+        conceptPremiumDot.Click += (_, _) => SelectConceptPremium(true);
+        conceptOfflineDot.Click += (_, _) => SelectConceptPremium(false);
         conceptCanvas.Controls.Add(conceptPremiumDot);
         conceptCanvas.Controls.Add(conceptOfflineDot);
         conceptCanvas.Controls.Add(premiumArea);
@@ -283,6 +283,23 @@ internal sealed partial class LauncherWindow
         SetConceptNavigation("home");
         UpdateConceptRadios();
         ResumeLayout(true);
+    }
+
+    private void SelectConceptPremium(bool useMicrosoft)
+    {
+        // RadioButton controls are detached from the old layout: explicitly
+        // keep them mutually exclusive instead of relying on WinForms grouping.
+        if (useMicrosoft)
+        {
+            offline.Checked = false;
+            premium.Checked = true;
+        }
+        else
+        {
+            premium.Checked = false;
+            offline.Checked = true;
+        }
+        UpdateConceptRadios();
     }
 
     private void UpdateConceptRadios()
