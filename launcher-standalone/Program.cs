@@ -7,9 +7,18 @@ namespace TokyoWorldLauncher;
 internal static class Program
 {
     [STAThread]
-    private static void Main()
+    private static void Main(string[] args)
     {
         ApplicationConfiguration.Initialize();
+        if (args.Length == 2 && args[0] == "--render-preview")
+        {
+            using var window = new LauncherWindow();
+            window.CreateControl();
+            using var bitmap = new Bitmap(window.ClientSize.Width, window.ClientSize.Height);
+            window.DrawToBitmap(bitmap, new Rectangle(0, 0, bitmap.Width, bitmap.Height));
+            bitmap.Save(args[1], System.Drawing.Imaging.ImageFormat.Png);
+            return;
+        }
         Application.Run(new LauncherWindow());
     }
 }
@@ -158,7 +167,7 @@ internal sealed partial class LauncherWindow : Form
         offline.Checked = !settings.UseMicrosoft;
         UpdateMode();
 
-        BuildCrimsonUI();
+        BuildConcept4Ui();
 
         Shown += async (_, _) =>
         {
@@ -217,7 +226,7 @@ internal sealed partial class LauncherWindow : Form
         nickname.Text = isPremium
             ? (string.IsNullOrWhiteSpace(settings.PremiumNickname) ? "Konto Microsoft" : settings.PremiumNickname)
             : settings.OfflineNickname;
-        nickname.BackColor = isPremium ? Color.FromArgb(21, 24, 36) : Surface;
+        nickname.BackColor = Color.FromArgb(26, 25, 43);
         nickname.ForeColor = isPremium && string.IsNullOrWhiteSpace(settings.PremiumNickname) ? Gray : Ink;
         premium.ForeColor = isPremium ? Cyan : Gray;
         offline.ForeColor = isPremium ? Gray : Cyan;
