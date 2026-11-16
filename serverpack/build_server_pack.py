@@ -522,7 +522,7 @@ def package() -> None:
         return
     checksum_text = "".join(
         hashlib.sha256((MODDIR/e["filename"]).read_bytes()).hexdigest() +
-        "  mods/" + e["filename"] + "\\n" for e in entries
+        "  mods/" + e["filename"] + "\n" for e in entries
     )
     (STAGE / "SHA256SUMS.txt").write_text(checksum_text)
     readme = (
