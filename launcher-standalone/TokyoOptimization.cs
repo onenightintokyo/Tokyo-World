@@ -25,25 +25,22 @@ internal static class TokyoOptimization
 
     public static void ApplyModPolicy(string root, bool lightweightMode, IProgress<string> log)
     {
+        // Every Compat has been removed from the official modpack for all profiles.
+        // Always quarantine previously installed copies; do not restore them
+        // when toggling the optional graphics-performance profile.
         string mods = Path.Combine(root, "mods");
-        if (lightweightMode)
+        if (!Directory.Exists(mods)) return;
+        foreach (string file in Directory.EnumerateFiles(mods, "*.jar")
+            .Where(path => EveryCompatFile.IsMatch(Path.GetFileName(path))).ToArray())
         {
-            if (!Directory.Exists(mods)) return;
-            foreach (string file in Directory.EnumerateFiles(mods, "*.jar")
-                .Where(path => EveryCompatFile.IsMatch(Path.GetFileName(path))).ToArray())
-            {
-                string storage = DisabledFolder(root);
-                Directory.CreateDirectory(storage);
-                string destination = Path.Combine(storage, Path.GetFileName(file));
-                if (File.Exists(destination))
-                    throw new IOException("Kopia Every Compat już istnieje; nie nadpisuję moda: " + destination);
-                File.Move(file, destination);
-                log.Report("Tryb lekki: wyłączono Every Compat (zachowano JAR w kopii).");
-            }
-        }
-        else
-        {
-            RestoreEveryCompat(root, log);
+            string storage = DisabledFolder(root);
+            Directory.CreateDirectory(storage);
+            string target = Path.Combine(storage, Path.GetFileName(file));
+            if (File.Exists(target))
+                target = Path.Combine(storage,
+                    Guid.NewGuid().ToString("N") + "-" + Path.GetFileName(file));
+            File.Move(file, target);
+            log.Report("Every Compat wyłączony na stałe (kopię zachowano): " + Path.GetFileName(file));
         }
     }
 
@@ -104,28 +101,8 @@ internal static class TokyoOptimization
         log.Report("Profil wydajności: render ≤8, symulacja ≤6, mipmap ≤2, FPS ≤90. Zapisano kopię.");
     }
 
-    private static void RestoreEveryCompat(string root, IProgress<string> log)
-    {
-        string disabled = DisabledFolder(root);
-        if (!Directory.Exists(disabled)) return;
-        string mods = Path.Combine(root, "mods");
-        Directory.CreateDirectory(mods);
-        foreach (string archived in Directory.EnumerateFiles(disabled, "*.jar").ToArray())
-        {
-            string destination = Path.Combine(mods, Path.GetFileName(archived));
-            if (File.Exists(destination))
-            {
-                log.Report("Nie przywrócono Every Compat: plik już istnieje w mods. Kopia pozostała bez zmian.");
-                continue;
-            }
-            File.Move(archived, destination);
-            log.Report("Przywrócono Every Compat z kopii zapasowej.");
-        }
-    }
-
     public static void RestoreAll(string root, IProgress<string> log)
     {
-        RestoreEveryCompat(root, log);
         string options = Path.Combine(root, "options.txt");
         string backup = Path.Combine(StateFolder(root), "options.original.txt");
         if (File.Exists(backup))
