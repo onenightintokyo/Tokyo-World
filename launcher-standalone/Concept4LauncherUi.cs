@@ -282,6 +282,24 @@ internal sealed partial class LauncherWindow
 
         SetConceptNavigation("home");
         UpdateConceptRadios();
+
+        // Fit the entire approved 1280×720 scene proportionally on smaller
+        // displays, instead of allowing Windows to silently clip the right side.
+        var work = Screen.FromControl(this).WorkingArea;
+        float fit = Math.Min(1f, Math.Min(
+            (work.Width - 24f) / 1280f, (work.Height - 24f) / 720f));
+        if (fit > 0.35f && fit < 0.999f)
+        {
+            conceptCanvas.Dock = DockStyle.None;
+            conceptCanvas.Bounds = new Rectangle(0, 0, 1280, 720);
+            conceptCanvas.Scale(new SizeF(fit, fit));
+            var fittedSize = new Size(
+                (int)Math.Floor(1280 * fit),
+                (int)Math.Floor(720 * fit));
+            ClientSize = fittedSize;
+            conceptCanvas.Bounds = new Rectangle(Point.Empty, fittedSize);
+            conceptCanvas.Dock = DockStyle.Fill;
+        }
         ResumeLayout(true);
     }
 
@@ -365,7 +383,19 @@ internal sealed partial class LauncherWindow
                 "shaders" => new TokyoShaderBrowser(root, settings),
                 _ => new Panel { BackColor = Color.FromArgb(12, 12, 27) }
             };
-            page.Dock = DockStyle.Fill;
+            // Tab content uses a 1067×505 logical viewport. On smaller
+            // monitors, retain its full controls and enable scrolling.
+            if (conceptPage.Width < 1040 || conceptPage.Height < 500)
+            {
+                conceptPage.AutoScroll = true;
+                page.Dock = DockStyle.None;
+                page.Size = new Size(1067, 505);
+            }
+            else
+            {
+                conceptPage.AutoScroll = false;
+                page.Dock = DockStyle.Fill;
+            }
             conceptPage.Controls.Add(page);
             conceptPage.BringToFront();
         }
@@ -589,11 +619,12 @@ internal sealed class ConceptNavItem : Control
             g.FillPath(brush, path);
             g.DrawPath(p, path);
         }
-        using var iconFont = new Font("Segoe UI Symbol", 18, FontStyle.Regular);
-        using var textFont = new Font("Segoe UI Semibold", 11, FontStyle.Bold);
+        float scale = Math.Min(1f, Width / 163f);
+        using var iconFont = new Font("Segoe UI Symbol", 18 * scale, FontStyle.Regular);
+        using var textFont = new Font("Segoe UI Semibold", 11 * scale, FontStyle.Bold);
         using var white = new SolidBrush(selected ? Color.White : Color.FromArgb(209, 203, 219));
-        g.DrawString(symbol, iconFont, white, 11, 8);
-        g.DrawString(caption, textFont, white, 47, 12);
+        g.DrawString(symbol, iconFont, white, 11 * scale, 8 * scale);
+        g.DrawString(caption, textFont, white, 47 * scale, 12 * scale);
     }
 }
 
