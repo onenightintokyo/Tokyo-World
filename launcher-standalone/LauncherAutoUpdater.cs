@@ -23,7 +23,10 @@ internal static class LauncherAutoUpdater
         http.DefaultRequestHeaders.UserAgent.ParseAdd("TokyoWorldLauncher/PublicReleaseUpdater");
         http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.github+json"));
         http.DefaultRequestHeaders.Add("X-GitHub-Api-Version", "2022-11-28");
-        string token = settings.GetToken();
+        // The official Tokyo World source is public. Ignore any previously
+        // saved token so a revoked credential cannot break anonymous updates.
+        string token = settings.Repository.Equals("onenightintokyo/Tokyo-World",
+            StringComparison.OrdinalIgnoreCase) ? "" : settings.GetToken();
         if (!string.IsNullOrWhiteSpace(token))
             http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
