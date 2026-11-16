@@ -414,6 +414,13 @@ def sanity_check_jars(entries: list[dict]) -> None:
                     ERRORS.append(f"Duplicate Forge modId {modid}: {prev} / {dest.name}")
                 else:
                     declared[modid] = dest.name
+    if "extendedae_plus" in declared:
+        provider = declared.get("expatternprovider")
+        if not provider:
+            ERRORS.append("ExtendedAE Plus requires missing expatternprovider (Extended AE)")
+        elif not re.fullmatch(r"ExtendedAE-1\\.20-1\\.4\\.18-forge\\.jar",
+                              provider, flags=re.I):
+            ERRORS.append("ExtendedAE Plus requires pinned Extended AE 1.4.18, found: " + provider)
 
 
 def copy_server_configs() -> int:
