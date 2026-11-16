@@ -47,7 +47,7 @@ internal sealed class ModpackInstaller
             foreach (var profile in profiles.EnumerateObject())
             {
                 // For initial installs the core and repair packages are mandatory.
-                bool required = profile.Name is "tech-core" or "tech-expanded" or "tech-lab" or "repair-dependencies" or "adventure" or "performance-fps";
+                bool required = profile.Name is "tech-core" or "tech-expanded" or "tech-lab" or "repair-dependencies" or "adventure" or "performance-fps" or "community-core" or "client-hud";
                 if (profile.Name == "visual-extras" && !extraVisualMods) continue;
                 if (profile.Name == "visual-shaders" && !enableShaders) continue;
                 if (!includeAllModules && !required && profile.Name is not ("visual-extras" or "visual-shaders")) continue;
