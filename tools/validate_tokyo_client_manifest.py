@@ -31,6 +31,29 @@ for slug, (group, key, pinned) in pins.items():
     actual_group, entry = values[0]
     assert actual_group == group and entry.get(key) == pinned, (
         f"{slug}: unexpected group/version {actual_group}: {entry.get(key)}")
+# Forge handshake channels: all 8 mods must be installed on EVERY client,
+# with the exact publisher JAR bytes present in the verified dedicated-server pack.
+multiplayer_pins = {
+    "compact-machines": ("compactmachines-forge-6.0.3.jar", "41debe12bc7b013c39998788ed02ee971a11518f"),
+    "building-gadgets": ("buildinggadgets2-1.0.8.jar", "d06a806e8ca84a9e96a69c32da4b43226a51e0c9"),
+    "mining-gadgets": ("mininggadgets-1.15.6.jar", "79cfc6e0afc3ed3fc86bbda274ef3fccdc8260dd"),
+    "flux-networks": ("FluxNetworks-1.20.1-7.2.1.15.jar", "65cea2d3da2a6d6fd274ef1dad37a516466be22c"),
+    "laserio": ("laserio-1.6.8.jar", "f9e8dc07506eaa058f64e875e1f46dcd44ab6003"),
+    "iron-chests-restocked": ("ironchests-5.0.2-forge.jar", "610aa09a1d83253db6bf32f6b12c84d446fa99b6"),
+    "born-in-chaos": ("born_in_chaos_[Forge]1.20.1_1.7.5.jar", "4d616e1ccef4c55e14b04ca63228d826f4fdda5e"),
+    "the-graveyard": ("The_Graveyard_3.1_(FORGE)_for_1.20.1.jar", "11ae4c94aa94b38b78cf9b901dad4612b679f8ac"),
+}
+for project, (filename, sha1) in multiplayer_pins.items():
+    entries = projects.get(project, [])
+    assert len(entries) == 1, f"{project}: expected one client mod, got {len(entries)}"
+    group, entry = entries[0]
+    assert group == "repair-dependencies", f"{project}: must be mandatory, not optional"
+    assert entry.get("requiredForMultiplayer") is True, f"{project}: not mandatory"
+    assert entry.get("source") == "curseforge", f"{project}: wrong source"
+    assert entry.get("fileName") == filename, f"{project}: wrong server filename"
+    assert entry.get("sha1") == sha1, f"{project}: checksum differs from server"
+    assert entry.get("url", "").startswith("https://mediafilez.forgecdn.net/files/")
+
 # Twilight's custom registries must match the dedicated-server JAR exactly.
 twilight = projects.get("twilightforest", [])
 assert len(twilight) == 1, "Expected one Twilight Forest entry"
