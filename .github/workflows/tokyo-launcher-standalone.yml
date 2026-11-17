@@ -12,6 +12,7 @@ on:
       - 'tools/validate_tokyo_client_manifest.py'
       - 'tools/verify_shared_modrinth_hashes.py'
       - 'tools/build_client_update_index.py'
+      - 'tools/test_client_update_index.py'
       - 'tools/publish_public_update_feeds.py'
       - 'resourcepacks/**'
       - 'shaderpacks/**'
@@ -29,6 +30,7 @@ on:
       - 'tools/validate_tokyo_client_manifest.py'
       - 'tools/verify_shared_modrinth_hashes.py'
       - 'tools/build_client_update_index.py'
+      - 'tools/test_client_update_index.py'
       - 'tools/publish_public_update_feeds.py'
       - 'resourcepacks/**'
       - 'shaderpacks/**'
@@ -137,7 +139,10 @@ jobs:
       # these static JSON files cannot cause another launcher build.
       - name: Build immutable public client update index
         if: github.ref == 'refs/heads/main'
-        run: python tools/build_client_update_index.py
+        shell: pwsh
+        run: |
+          python tools/build_client_update_index.py
+          python tools/test_client_update_index.py
       - name: Publish public token-free launcher and game update feeds
         if: github.ref == 'refs/heads/main'
         env:
