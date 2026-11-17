@@ -9,7 +9,12 @@
       {
         "project": "ae2",
         "label": "Applied Energistics 2",
-        "match": "^(ae2|appliedenergistics2)[-_].*\\.jar$"
+        "match": "^(ae2|appliedenergistics2)[-_].*\\.jar$",
+        "source": "modrinth-sha1",
+        "fileName": "appliedenergistics2-forge-15.4.12.jar",
+        "sha1": "4e81984691e35c729880a11f72deb52dcc74d41f",
+        "sha256": "b9c5928893a20d3feb0b4393e2c23d756a16d9abee24d9c14c98e6096d53844d",
+        "requiredForMultiplayer": true
       },
       {
         "project": "enderio",
@@ -196,11 +201,6 @@
         "match": "^(megacells|mega_cells|mega[-_]cells)[-_ .]"
       },
       {
-        "project": "advancedae",
-        "label": "Advanced AE — rozbudowana automatyzacja ME",
-        "match": "^(AdvancedAE|advancedae)[-_ .]"
-      },
-      {
         "project": "super-factory-manager",
         "label": "Super Factory Manager — programowanie fabryk",
         "match": "^(SuperFactoryManager|super[_-]factory[_-]manager)[-_ .]"
@@ -246,11 +246,6 @@
         "match": "^entangled[-_ .]"
       },
       {
-        "project": "mob-grinding-utils",
-        "label": "Mob Grinding Utils — przemysłowe farmy mobów",
-        "match": "^(mobgrindingutils|mob[-_]grinding[-_]utils)[-_ .]"
-      },
-      {
         "project": "applied-botanics",
         "label": "Applied Botanics — sieci ME i mana",
         "match": "^(appliedbotanics|applied[-_]botanics)[-_ .]"
@@ -264,11 +259,6 @@
         "project": "extendedae-plus",
         "label": "ExtendedAE Plus — maszyny ME i superautocrafting",
         "match": "^(extendedaeplus|extendedae[-_]plus)[-_ .]"
-      },
-      {
-        "project": "ae2wtlib",
-        "label": "AE2 Wireless Terminals Library",
-        "match": "^(ae2wtlib|ae2[-_]wtlib)[-_ .]"
       },
       {
         "project": "createaddition",
@@ -645,6 +635,50 @@
         "sha1": "11ae4c94aa94b38b78cf9b901dad4612b679f8ac",
         "sha256": "f26aace5460890b9a46094586530708517b58fc1e8752055882fd4f03912f07d",
         "requiredForMultiplayer": true
+      },
+      {
+        "project": "ae2wtlib",
+        "label": "AE2 Wireless Terminals Library",
+        "match": "^(ae2wtlib|ae2[-_]wtlib)[-_ .]",
+        "source": "curseforge",
+        "fileName": "ae2wtlib-15.3.3-forge.jar",
+        "url": "https://mediafilez.forgecdn.net/files/7251/206/ae2wtlib-15.3.3-forge.jar",
+        "sha1": "1a546af04844677542b6914191783c7de15364fc",
+        "sha256": "39e5cede37d5c6a07592d6c1e83398791e037f3d434bc44f7460cd085a4de5f4",
+        "requiredForMultiplayer": true
+      },
+      {
+        "project": "mob-grinding-utils",
+        "label": "Mob Grinding Utils — przemysłowe farmy mobów",
+        "match": "^(mobgrindingutils|mob[-_]grinding[-_]utils)[-_ .]",
+        "source": "curseforge",
+        "fileName": "mob_grinding_utils-1.20.1-1.1.0.jar",
+        "url": "https://mediafilez.forgecdn.net/files/5131/447/mob_grinding_utils-1.20.1-1.1.0.jar",
+        "sha1": "58991a3a94e1f982d0e558bed7b60226a097ae49",
+        "sha256": "6e0fa6a245fd56cce99d60ac908b5028bc6392a59833c45e0bc3e27ec7f0a2f9",
+        "requiredForMultiplayer": true
+      },
+      {
+        "project": "create-slice-and-dice",
+        "label": "Create Slice & Dice — automatyczna kuchnia",
+        "match": "^(sliceanddice|slice_and_dice)[-_ .]",
+        "note": "Addon Create — testuj z Create 6.0.8",
+        "source": "curseforge",
+        "fileName": "sliceanddice-forge-3.6.0.jar",
+        "url": "https://mediafilez.forgecdn.net/files/7184/951/sliceanddice-forge-3.6.0.jar",
+        "sha1": "a4e47dbf4382ebe092b6c2cb71919e412b456d84",
+        "sha256": "bafdcbeda044603b59eb16059829a6698c1a58d1ce865b8658e598f2718d315a",
+        "requiredForMultiplayer": true
+      },
+      {
+        "project": "advancedae",
+        "label": "Advanced AE — rozbudowana automatyzacja ME",
+        "match": "^(AdvancedAE|advancedae)[-_ .]",
+        "source": "modrinth-sha1",
+        "fileName": "AdvancedAE-1.3.6-1.20.1.jar",
+        "sha1": "d8d9612c37a6cece6cd885f33e52c1489467a13f",
+        "sha256": "e216f95ac73eb4c1e8f3db22cc3d30f37f2612a7cb1762b9ebce148d0d5657b2",
+        "requiredForMultiplayer": true
       }
     ],
     "wave-industry": [
@@ -668,12 +702,6 @@
         "project": "copycats",
         "label": "Create: Copycats+ — części do konstrukcji",
         "match": "^(copycats|copycatsplus)[-_ .]",
-        "note": "Addon Create — testuj z Create 6.0.8"
-      },
-      {
-        "project": "create-slice-and-dice",
-        "label": "Create Slice & Dice — automatyczna kuchnia",
-        "match": "^(sliceanddice|slice_and_dice)[-_ .]",
         "note": "Addon Create — testuj z Create 6.0.8"
       },
       {
