@@ -10,6 +10,10 @@ on:
       - 'kubejs/**'
       - 'tools/make_client_bootstrap.py'
       - 'tools/validate_tokyo_client_manifest.py'
+      - 'tools/build_client_update_index.py'
+      - 'tools/publish_public_update_feeds.py'
+      - 'resourcepacks/**'
+      - 'shaderpacks/**'
       - '.github/workflows/tokyo-launcher-standalone.yml'
   workflow_dispatch:
   push:
@@ -22,6 +26,10 @@ on:
       - 'kubejs/**'
       - 'tools/make_client_bootstrap.py'
       - 'tools/validate_tokyo_client_manifest.py'
+      - 'tools/build_client_update_index.py'
+      - 'tools/publish_public_update_feeds.py'
+      - 'resourcepacks/**'
+      - 'shaderpacks/**'
       - '.github/workflows/tokyo-launcher-standalone.yml'
 
 permissions:
@@ -59,6 +67,8 @@ jobs:
             if ($zip.Entries.Count -lt 30) { throw "Embedded snapshot unexpectedly small" }
             Write-Host "Client snapshot files: $($zip.Entries.Count)"
           } finally { $zip.Dispose() }
+      - name: Verify public update publisher Python syntax
+        run: python -m py_compile tools/build_client_update_index.py tools/publish_public_update_feeds.py
       - name: Restore Windows desktop project
         run: dotnet restore launcher-standalone/TokyoWorldLauncher.csproj -r win-x64
       - name: Publish single-file, self-contained EXE
@@ -117,4 +127,15 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Could not upload launcher EXE' }
           gh release edit $tag --notes "Windows x64 self-contained launcher. Source revision: $env:GITHUB_SHA"
           if ($LASTEXITCODE -ne 0) { throw 'Could not update launcher release metadata' }
+
+      # The public update feed is NOT in a watched workflow path: committing
+      # these static JSON files cannot cause another launcher build.
+      - name: Build immutable public client update index
+        if: github.ref == 'refs/heads/main'
+        run: python tools/build_client_update_index.py
+      - name: Publish public token-free launcher and game update feeds
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/publish_public_update_feeds.py
 
