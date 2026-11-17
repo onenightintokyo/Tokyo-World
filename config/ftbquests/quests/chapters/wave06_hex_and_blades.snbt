@@ -4,13 +4,13 @@
 	group: "A110000000000005"
 	id: "A126000000000003"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "minecraft:amethyst_shard"
 	order_index: 30
 	images: [{
 		image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png"
-		width: 24.0d
-		height: 7.8d
+		width: 25.5d
+		height: 8.2d
 		x: 8.0d
 		y: -6.5d
 		order: -1
@@ -19,8 +19,8 @@
 	quests: [
 		{
 			id: "A136000000000201"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Szmer ametystu"
@@ -36,14 +36,14 @@
 		},
 		{
 			id: "A136000000000202"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pył na dłoniach"
 			description: ["Hex Casting nie wybacza improwizacji. Naucz się przygotowywać własne media, zamiast liczyć na przypadkowe znaleziska."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "hexcasting:amethyst_dust"
 			dependencies: ["A136000000000201"]
 			tasks: [
@@ -53,14 +53,14 @@
 		},
 		{
 			id: "A136000000000203"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rysowanie rzeczywistości"
 			description: ["Pierwsze wzory wyglądają niewinnie, dopóki nie musisz powtórzyć ich w środku walki. Zbuduj różdżkę i poznaj zasady świata Hex."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "hexcasting:staff/oak"
 			dependencies: ["A136000000000202"]
 			tasks: [
@@ -70,14 +70,14 @@
 		},
 		{
 			id: "A136000000000204"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zapamiętaj ten wzór"
 			description: ["Dobry mag nie próbuje wszystkiego od nowa. Przygotuj nośnik zaklęć i przetestuj swoje pierwsze stabilne kombinacje."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "hexcasting:cypher"
 			dependencies: ["A136000000000203"]
 			tasks: [
@@ -87,14 +87,14 @@
 		},
 		{
 			id: "A136000000000205"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stal zamiast drewna"
 			description: ["Nie każde niebezpieczeństwo da się przekonać zaklęciem. Naucz się walczyć kataną, zanim spotkasz silniejszego przeciwnika."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "simplyswords:iron_katana"
 			dependencies: ["A136000000000201"]
 			tasks: [
@@ -104,14 +104,14 @@
 		},
 		{
 			id: "A136000000000206"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Długi zasięg"
 			description: ["Glewia wymaga miejsca i cierpliwości, lecz potrafi uratować życie przy nieprzyjemnym spotkaniu w lochach."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "simplyswords:iron_glaive"
 			dependencies: ["A136000000000205"]
 			tasks: [
@@ -121,14 +121,14 @@
 		},
 		{
 			id: "A136000000000207"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zaklęcie w ręku"
 			description: ["Kiedy wzory zaczynają mieć sens, potrzebujesz bezpieczniejszego miejsca do ich przechowywania. To pierwsza prawdziwa biblioteka maga."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "hexcasting:spellbook"
 			dependencies: ["A136000000000204"]
 			tasks: [
@@ -138,14 +138,14 @@
 		},
 		{
 			id: "A136000000000208"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Diamentowa broń"
 			description: ["Zbyt wiele wypraw kończy się, bo najlepsze ostrze zostało w domu. Zbuduj mocniejszą broń, ale nie zastępuj nią przygotowania."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "simplyswords:diamond_katana"
 			dependencies: ["A136000000000206"]
 			tasks: [
@@ -155,14 +155,14 @@
 		},
 		{
 			id: "A136000000000209"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Dwa style, jedna drużyna"
 			description: ["Przećwicz z ekipą walkę z użyciem przygotowanych zaklęć i broni. Zdobycie przedmiotów to tylko połowa nauki."]
 			x: 8.00d
-			y: 15.60d
+			y: 12.17d
 			icon: "hexcasting:spellbook"
 			dependencies: ["A136000000000207", "A136000000000208"]
 			tasks: [
@@ -173,14 +173,14 @@
 		},
 		{
 			id: "A13600000000020A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Arkanista i wojownik"
 			description: ["Przed następnym bossem przygotuj i pełny zestaw bojowy, i działającą księgę wzorów. Niech obie ścieżki współpracują."]
 			x: 8.00d
-			y: 18.72d
+			y: 14.60d
 			icon: "simplyswords:diamond_glaive"
 			dependencies: ["A136000000000209"]
 			tasks: [

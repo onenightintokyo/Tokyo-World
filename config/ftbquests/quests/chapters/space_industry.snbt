@@ -4,15 +4,15 @@
 	group: "A110000000000003"
 	id: "A12000000000000F"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "ad_astra:nasa_workbench"
 	order_index: 37
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 } ]
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000BD"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stal kosmiczna"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A1300000000000BE"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Płyty kosmiczne"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Płyty kosmiczne”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "ad_astra:steel_plate"
 			dependencies: ["A1300000000000BD"]
 			tasks: [{ id: "A1400000000000BE" type: "item" item: "ad_astra:steel_plate" count: 12L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A1300000000000BF"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kompresor technologiczny"
 			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Kompresor technologiczny”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "ad_astra:compressor"
 			dependencies: ["A1300000000000BD"]
 			tasks: [{ id: "A1400000000000BF" type: "item" item: "ad_astra:compressor" count: 1L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A1300000000000C0"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Generator wyprawowy"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Generator wyprawowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "ad_astra:coal_generator"
 			dependencies: ["A1300000000000BE"]
 			tasks: [{ id: "A1400000000000C0" type: "item" item: "ad_astra:coal_generator" count: 1L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A1300000000000C1"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Warsztat rakietowy"
 			description: ["Wcześniej zamknąłeś już sprawę „Kompresor technologiczny”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Warsztat rakietowy”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "ad_astra:nasa_workbench"
 			dependencies: ["A1300000000000BF"]
 			tasks: [{ id: "A1400000000000C1" type: "item" item: "ad_astra:nasa_workbench" count: 1L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A1300000000000C2"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rafineria paliwa"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Rafineria paliwa”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "ad_astra:fuel_refinery"
 			dependencies: ["A1300000000000C0"]
 			tasks: [{ id: "A1400000000000C2" type: "item" item: "ad_astra:fuel_refinery" count: 1L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A1300000000000C3"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Sprzęt tlenowy"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Sprzęt tlenowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "ad_astra:oxygen_gear"
 			dependencies: ["A1300000000000C1"]
 			tasks: [{ id: "A1400000000000C3" type: "item" item: "ad_astra:oxygen_gear" count: 1L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A1300000000000C4"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ładowarka tlenu"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ładowarka tlenu”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "ad_astra:oxygen_loader"
 			dependencies: ["A1300000000000C2", "A1300000000000C3"]
 			tasks: [{ id: "A1400000000000C4" type: "item" item: "ad_astra:oxygen_loader" count: 1L consume_items: false }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A1300000000000C5"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Dystrybucja tlenu"
 			description: ["Wcześniej zamknąłeś już sprawę „Ładowarka tlenu”. Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Dystrybucja tlenu”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "ad_astra:oxygen_distributor"
 			dependencies: ["A1300000000000C4"]
 			tasks: [{ id: "A1400000000000C5" type: "item" item: "ad_astra:oxygen_distributor" count: 1L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A1300000000000C6"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Silnik rakietowy"
 			description: ["Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Silnik rakietowy”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "ad_astra:steel_engine"
 			dependencies: ["A1300000000000C4"]
 			tasks: [{ id: "A1400000000000C6" type: "item" item: "ad_astra:steel_engine" count: 1L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A1300000000000C7"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stateczniki rakiety"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Stateczniki rakiety”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "ad_astra:rocket_fin"
 			dependencies: ["A1300000000000C5"]
 			tasks: [{ id: "A1400000000000C7" type: "item" item: "ad_astra:rocket_fin" count: 4L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A1300000000000C8"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Dziób rakiety"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Dziób rakiety”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "ad_astra:rocket_nose_cone"
 			dependencies: ["A1300000000000C6"]
 			tasks: [{ id: "A1400000000000C8" type: "item" item: "ad_astra:rocket_nose_cone" count: 1L consume_items: false }]
@@ -191,14 +191,14 @@
 		}
 		{
 			id: "A1300000000000C9"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kosmiczne panele"
 			description: ["Wcześniej zamknąłeś już sprawę „Stateczniki rakiety”. Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Kosmiczne panele”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "ad_astra:solar_panel"
 			dependencies: ["A1300000000000C7"]
 			tasks: [{ id: "A1400000000000C9" type: "item" item: "ad_astra:solar_panel" count: 1L consume_items: false }]
@@ -206,14 +206,14 @@
 		}
 		{
 			id: "A1300000000000CA"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pompa wodna"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Pompa wodna”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "ad_astra:water_pump"
 			dependencies: ["A1300000000000C8"]
 			tasks: [{ id: "A1400000000000CA" type: "item" item: "ad_astra:water_pump" count: 1L consume_items: false }]
@@ -221,14 +221,14 @@
 		}
 		{
 			id: "A1300000000000CB"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Paliwo kriogeniczne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Paliwo kriogeniczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "ad_astra:cryo_fuel"
 			dependencies: ["A1300000000000C9", "A1300000000000CA"]
 			tasks: [{ id: "A1400000000000CB" type: "item" item: "ad_astra:cryo_fuel" count: 1L consume_items: false }]
@@ -236,14 +236,14 @@
 		}
 		{
 			id: "A1300000000000CC"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Okablowanie kosmiczne"
 			description: ["Rakieta przestaje być marzeniem zapisanym na kartce. Ostatni sprawdzian to „Okablowanie kosmiczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "ad_astra:steel_cable"
 			dependencies: ["A1300000000000CB"]
 			tasks: [{ id: "A1400000000000CC" type: "item" item: "ad_astra:steel_cable" count: 18L consume_items: false }]

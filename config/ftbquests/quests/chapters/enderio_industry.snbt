@@ -4,15 +4,15 @@
 	group: "A110000000000002"
 	id: "A120000000000016"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "enderio:alloy_smelter"
 	order_index: 16
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000127"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ziarna nieskonczonosci"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A130000000000128"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Podstawowy kondensator"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Podstawowy kondensator”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "enderio:basic_capacitor"
 			dependencies: ["A130000000000127"]
 			tasks: [{ id: "A140000000000128" type: "item" item: "enderio:basic_capacitor" count: 2L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A130000000000129"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Wielofunkcyjna obudowa"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Wielofunkcyjna obudowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "enderio:void_chassis"
 			dependencies: ["A130000000000127"]
 			tasks: [{ id: "A140000000000129" type: "item" item: "enderio:void_chassis" count: 2L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A13000000000012A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Przemyslowy wytapiacz"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Przemyslowy wytapiacz”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "enderio:alloy_smelter"
 			dependencies: ["A130000000000128"]
 			tasks: [{ id: "A14000000000012A" type: "item" item: "enderio:alloy_smelter" count: 1L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A13000000000012B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Mlyn SAG"
 			description: ["Wcześniej zamknąłeś już sprawę „Wielofunkcyjna obudowa”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Mlyn SAG”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "enderio:sag_mill"
 			dependencies: ["A130000000000129"]
 			tasks: [{ id: "A14000000000012B" type: "item" item: "enderio:sag_mill" count: 1L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A13000000000012C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Generator Stirlinga"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Generator Stirlinga”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 9.36d
+			y: 7.30d
 			icon: "enderio:stirling_generator"
 			dependencies: ["A13000000000012A", "A13000000000012B"]
 			tasks: [{ id: "A14000000000012C" type: "item" item: "enderio:stirling_generator" count: 1L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A13000000000012D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stop przewodzacy"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Stop przewodzacy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 2.12d
-			y: 12.48d
+			x: 3.06d
+			y: 9.73d
 			icon: "enderio:conductive_alloy_ingot"
 			dependencies: ["A13000000000012C"]
 			tasks: [{ id: "A14000000000012D" type: "item" item: "enderio:conductive_alloy_ingot" count: 8L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A13000000000012E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stop energetyczny"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Stop energetyczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 13.88d
-			y: 12.48d
+			x: 12.94d
+			y: 9.73d
 			icon: "enderio:energetic_alloy_ingot"
 			dependencies: ["A13000000000012C"]
 			tasks: [{ id: "A14000000000012E" type: "item" item: "enderio:energetic_alloy_ingot" count: 8L consume_items: false }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A13000000000012F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stop pulsujacy"
 			description: ["Wcześniej zamknąłeś już sprawę „Stop przewodzacy”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Stop pulsujacy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "enderio:vibrant_alloy_ingot"
 			dependencies: ["A13000000000012D"]
 			tasks: [{ id: "A14000000000012F" type: "item" item: "enderio:vibrant_alloy_ingot" count: 4L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A130000000000130"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rurociag przedmiotow"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Rurociag przedmiotow”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "enderio:item_conduit"
 			dependencies: ["A13000000000012E"]
 			tasks: [{ id: "A140000000000130" type: "item" item: "enderio:item_conduit" count: 8L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A130000000000131"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Energia przez conduit"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Energia przez conduit”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 18.72d
+			y: 14.60d
 			icon: "enderio:conductive_alloy_energy_conduit"
 			dependencies: ["A13000000000012F", "A130000000000130"]
 			tasks: [{ id: "A140000000000131" type: "item" item: "enderio:conductive_alloy_energy_conduit" count: 8L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A130000000000132"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rzemioslo automatyczne"
 			description: ["Potrafisz wytwarzać stopy, od których zależą najlepsze urządzenia. Ostatni sprawdzian to „Rzemioslo automatyczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 21.84d
+			y: 17.04d
 			icon: "enderio:crafter"
 			dependencies: ["A130000000000131"]
 			tasks: [{ id: "A140000000000132" type: "item" item: "enderio:crafter" count: 1L consume_items: false }]

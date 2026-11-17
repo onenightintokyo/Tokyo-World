@@ -4,15 +4,15 @@
 	group: "A110000000000002"
 	id: "A120000000000015"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "ae2:controller"
 	order_index: 18
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000117"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Krysztaly Certus"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A130000000000118"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ladowanie krysztalow"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Ladowanie krysztalow”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "ae2:charged_certus_quartz_crystal"
 			dependencies: ["A130000000000117"]
 			tasks: [{ id: "A140000000000118" type: "item" item: "ae2:charged_certus_quartz_crystal" count: 8L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A130000000000119"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Paliwo sieci Fluix"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Paliwo sieci Fluix”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "ae2:fluix_crystal"
 			dependencies: ["A130000000000117"]
 			tasks: [{ id: "A140000000000119" type: "item" item: "ae2:fluix_crystal" count: 12L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A13000000000011A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Prasa obwodow"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Prasa obwodow”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "ae2:inscriber"
 			dependencies: ["A130000000000118"]
 			tasks: [{ id: "A14000000000011A" type: "item" item: "ae2:inscriber" count: 1L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A13000000000011B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Procesory logiczne"
 			description: ["Wcześniej zamknąłeś już sprawę „Paliwo sieci Fluix”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Procesory logiczne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "ae2:logic_processor"
 			dependencies: ["A130000000000119"]
 			tasks: [{ id: "A14000000000011B" type: "item" item: "ae2:logic_processor" count: 8L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A13000000000011C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Procesory obliczeniowe"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Procesory obliczeniowe”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "ae2:calculation_processor"
 			dependencies: ["A13000000000011A"]
 			tasks: [{ id: "A14000000000011C" type: "item" item: "ae2:calculation_processor" count: 8L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A13000000000011D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Procesory inzynierskie"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Procesory inzynierskie”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "ae2:engineering_processor"
 			dependencies: ["A13000000000011B"]
 			tasks: [{ id: "A14000000000011D" type: "item" item: "ae2:engineering_processor" count: 8L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A13000000000011E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zasilanie sieci"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zasilanie sieci”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "ae2:energy_acceptor"
 			dependencies: ["A13000000000011C", "A13000000000011D"]
 			tasks: [{ id: "A14000000000011E" type: "item" item: "ae2:energy_acceptor" count: 1L consume_items: false }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A13000000000011F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kontroler ME"
 			description: ["Wcześniej zamknąłeś już sprawę „Zasilanie sieci”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Kontroler ME”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "ae2:controller"
 			dependencies: ["A13000000000011E"]
 			tasks: [{ id: "A14000000000011F" type: "item" item: "ae2:controller" count: 1L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A130000000000120"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Szafa dyskow"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Szafa dyskow”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "ae2:drive"
 			dependencies: ["A13000000000011E"]
 			tasks: [{ id: "A140000000000120" type: "item" item: "ae2:drive" count: 1L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A130000000000121"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Terminal sieci"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Terminal sieci”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "ae2:terminal"
 			dependencies: ["A13000000000011F"]
 			tasks: [{ id: "A140000000000121" type: "item" item: "ae2:terminal" count: 1L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A130000000000122"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Terminal craftingu"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Terminal craftingu”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "ae2:crafting_terminal"
 			dependencies: ["A130000000000120"]
 			tasks: [{ id: "A140000000000122" type: "item" item: "ae2:crafting_terminal" count: 1L consume_items: false }]
@@ -191,14 +191,14 @@
 		}
 		{
 			id: "A130000000000123"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Automatyzacja tworzenia"
 			description: ["Wcześniej zamknąłeś już sprawę „Terminal sieci”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Automatyzacja tworzenia”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "ae2:molecular_assembler"
 			dependencies: ["A130000000000121"]
 			tasks: [{ id: "A140000000000123" type: "item" item: "ae2:molecular_assembler" count: 1L consume_items: false }]
@@ -206,14 +206,14 @@
 		}
 		{
 			id: "A130000000000124"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Wzorce automatyzacji"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Wzorce automatyzacji”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "ae2:pattern_provider"
 			dependencies: ["A130000000000122"]
 			tasks: [{ id: "A140000000000124" type: "item" item: "ae2:pattern_provider" count: 1L consume_items: false }]
@@ -221,14 +221,14 @@
 		}
 		{
 			id: "A130000000000125"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Interfejs sieci"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejs sieci”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "ae2:interface"
 			dependencies: ["A130000000000123", "A130000000000124"]
 			tasks: [{ id: "A140000000000125" type: "item" item: "ae2:interface" count: 1L consume_items: false }]
@@ -236,14 +236,14 @@
 		}
 		{
 			id: "A130000000000126"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Polaczenie kwantowe"
 			description: ["Sieć ME pozwala myśleć o produkcji, nie o szukaniu przedmiotów. Ostatni sprawdzian to „Polaczenie kwantowe”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "ae2:quantum_ring"
 			dependencies: ["A130000000000125"]
 			tasks: [{ id: "A140000000000126" type: "item" item: "ae2:quantum_ring" count: 8L consume_items: false }]

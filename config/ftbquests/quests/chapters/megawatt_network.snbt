@@ -4,15 +4,15 @@
 	group: "A110000000000002"
 	id: "A12000000000001D"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "powah:reactor_nitro"
 	order_index: 22
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000187"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pierwsze kable"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A130000000000188"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rezerwa energii"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Rezerwa energii”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "powah:energy_cell_starter"
 			dependencies: ["A130000000000187"]
 			tasks: [{ id: "A140000000000188" type: "item" item: "powah:energy_cell_starter" count: 8L consume_items: false }, { id: "A180000000000188" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A130000000000189"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stalowe obudowy"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Stalowe obudowy”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "mekanism:steel_casing"
 			dependencies: ["A130000000000187"]
 			tasks: [{ id: "A140000000000189" type: "item" item: "mekanism:steel_casing" count: 16L consume_items: false }, { id: "A180000000000189" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A13000000000018A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Generatory cieplne"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Generatory cieplne”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "powah:thermo_generator_starter"
 			dependencies: ["A130000000000188"]
 			tasks: [{ id: "A14000000000018A" type: "item" item: "powah:thermo_generator_starter" count: 8L consume_items: false }, { id: "A18000000000018A" type: "item" item: "minecraft:iron_ingot" count: 8L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A13000000000018B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Panele słoneczne"
 			description: ["Wcześniej zamknąłeś już sprawę „Stalowe obudowy”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Panele słoneczne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "powah:solar_panel_starter"
 			dependencies: ["A130000000000189"]
 			tasks: [{ id: "A14000000000018B" type: "item" item: "powah:solar_panel_starter" count: 8L consume_items: false }, { id: "A18000000000018B" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A13000000000018C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Elektroliza wodna"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Elektroliza wodna”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "mekanism:electrolytic_separator"
 			dependencies: ["A13000000000018A"]
 			tasks: [{ id: "A14000000000018C" type: "item" item: "mekanism:electrolytic_separator" count: 4L consume_items: false }, { id: "A18000000000018C" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A13000000000018D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Sfery energetyczne"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Sfery energetyczne”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "powah:energizing_orb"
 			dependencies: ["A13000000000018B"]
 			tasks: [{ id: "A14000000000018D" type: "item" item: "powah:energizing_orb" count: 4L consume_items: false }, { id: "A18000000000018D" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A13000000000018E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pręty energetyczne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Pręty energetyczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "powah:energizing_rod_starter"
 			dependencies: ["A13000000000018C", "A13000000000018D"]
 			tasks: [{ id: "A14000000000018E" type: "item" item: "powah:energizing_rod_starter" count: 12L consume_items: false }, { id: "A18000000000018E" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }, { id: "A1D000000000018E" type: "checkmark" }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A13000000000018F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktory startowe"
 			description: ["Wcześniej zamknąłeś już sprawę „Pręty energetyczne”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Reaktory startowe”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "powah:reactor_starter"
 			dependencies: ["A13000000000018E"]
 			tasks: [{ id: "A14000000000018F" type: "item" item: "powah:reactor_starter" count: 4L consume_items: false }, { id: "A18000000000018F" type: "item" item: "minecraft:copper_ingot" count: 24L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A130000000000190"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktory podstawowe"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Reaktory podstawowe”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "powah:reactor_basic"
 			dependencies: ["A13000000000018E"]
 			tasks: [{ id: "A140000000000190" type: "item" item: "powah:reactor_basic" count: 4L consume_items: false }, { id: "A180000000000190" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A130000000000191"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktory utwardzane"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Reaktory utwardzane”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "powah:reactor_hardened"
 			dependencies: ["A13000000000018F"]
 			tasks: [{ id: "A140000000000191" type: "item" item: "powah:reactor_hardened" count: 2L consume_items: false }, { id: "A180000000000191" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A130000000000192"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magazyny FE"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Magazyny FE”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "mekanism:advanced_energy_cube"
 			dependencies: ["A130000000000190"]
 			tasks: [{ id: "A140000000000192" type: "item" item: "mekanism:advanced_energy_cube" count: 6L consume_items: false }, { id: "A180000000000192" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
@@ -191,14 +191,14 @@
 		}
 		{
 			id: "A130000000000193"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktory Blazing"
 			description: ["Wcześniej zamknąłeś już sprawę „Reaktory utwardzane”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Reaktory Blazing”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "powah:reactor_blazing"
 			dependencies: ["A130000000000191"]
 			tasks: [{ id: "A140000000000193" type: "item" item: "powah:reactor_blazing" count: 2L consume_items: false }, { id: "A180000000000193" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
@@ -206,14 +206,14 @@
 		}
 		{
 			id: "A130000000000194"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktory Niotic"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Reaktory Niotic”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "powah:reactor_niotic"
 			dependencies: ["A130000000000192"]
 			tasks: [{ id: "A140000000000194" type: "item" item: "powah:reactor_niotic" count: 2L consume_items: false }, { id: "A180000000000194" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
@@ -221,14 +221,14 @@
 		}
 		{
 			id: "A130000000000195"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktory Nitro"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Reaktory Nitro”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "powah:reactor_nitro"
 			dependencies: ["A130000000000193", "A130000000000194"]
 			tasks: [{ id: "A140000000000195" type: "item" item: "powah:reactor_nitro" count: 1L consume_items: false }, { id: "A180000000000195" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A1D0000000000195" type: "checkmark" }]
@@ -236,14 +236,14 @@
 		}
 		{
 			id: "A130000000000196"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "TOKYO ENERGY GRID"
 			description: ["Możesz rozbudowywać zakład bez ciągłego strachu przed brakiem energii. Ostatni sprawdzian to „TOKYO ENERGY GRID”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "mekanism:ultimate_energy_cube"
 			dependencies: ["A130000000000195"]
 			tasks: [{ id: "A140000000000196" type: "item" item: "mekanism:ultimate_energy_cube" count: 8L consume_items: false }, { id: "A180000000000196" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A190000000000196" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D0000000000196" type: "checkmark" }]

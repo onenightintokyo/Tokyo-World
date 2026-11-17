@@ -1,0 +1,9 @@
+{
+  "revision": 2,
+  "images": {
+    "tokyo_stage_survival.png": "eed2046f1e3a3985258df086842c2eda931b2bce885b7cfd90a008f2d7248384",
+    "tokyo_stage_industry.png": "a2493b3a9ec667af829eba5c8acf04ee51962b926d5e5d9056ddf26ca729b64a",
+    "tokyo_stage_magic.png": "07237021c2b1b87a203c67fb8c7e57bea09e920c1eac2d2e3f03772816aef712",
+    "tokyo_stage_endgame.png": "d9f0297369cf4c2a16a93053694bf8532cb2ed6e9c36304499978113e7aa2377"
+  }
+}

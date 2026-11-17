@@ -4,15 +4,15 @@
 	group: "A110000000000004"
 	id: "A120000000000010"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "alexscaves:spelunkery_table"
 	order_index: 3
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_survival.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 } ]
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_survival.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000CD"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stół speleologa"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A1300000000000CE"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Skała galenowa"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Skała galenowa”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "alexscaves:galena"
 			dependencies: ["A1300000000000CD"]
 			tasks: [{ id: "A1400000000000CE" type: "item" item: "alexscaves:galena" count: 16L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A1300000000000CF"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Przysmak biomowy"
 			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Przysmak biomowy”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "alexscaves:biome_treat"
 			dependencies: ["A1300000000000CD"]
 			tasks: [{ id: "A1400000000000CF" type: "item" item: "alexscaves:biome_treat" count: 1L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A1300000000000D0"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pancerz nurka"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Pancerz nurka”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "alexscaves:diving_chestplate"
 			dependencies: ["A1300000000000CE"]
 			tasks: [{ id: "A1400000000000D0" type: "item" item: "alexscaves:diving_chestplate" count: 1L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A1300000000000D1"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rdzeń wulkaniczny"
 			description: ["Wcześniej zamknąłeś już sprawę „Przysmak biomowy”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Rdzeń wulkaniczny”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "alexscaves:volcanic_core"
 			dependencies: ["A1300000000000CF"]
 			tasks: [{ id: "A1400000000000D1" type: "item" item: "alexscaves:volcanic_core" count: 1L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A1300000000000D2"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Materiały syntetyczne"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Materiały syntetyczne”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "alexscaves:polymer_plate"
 			dependencies: ["A1300000000000D0"]
 			tasks: [{ id: "A1400000000000D2" type: "item" item: "alexscaves:polymer_plate" count: 6L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A1300000000000D3"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ochrona przed skażeniem"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Ochrona przed skażeniem”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "alexscaves:hazmat_chestplate"
 			dependencies: ["A1300000000000D1"]
 			tasks: [{ id: "A1400000000000D3" type: "item" item: "alexscaves:hazmat_chestplate" count: 1L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A1300000000000D4"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Piec jądrowy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Piec jądrowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "alexscaves:nuclear_furnace"
 			dependencies: ["A1300000000000D2", "A1300000000000D3"]
 			tasks: [{ id: "A1400000000000D4" type: "item" item: "alexscaves:nuclear_furnace" count: 1L consume_items: false }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A1300000000000D5"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rdzeń rozszczepienia"
 			description: ["Wcześniej zamknąłeś już sprawę „Piec jądrowy”. Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Rdzeń rozszczepienia”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "alexscaves:fissile_core"
 			dependencies: ["A1300000000000D4"]
 			tasks: [{ id: "A1400000000000D5" type: "item" item: "alexscaves:fissile_core" count: 1L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A1300000000000D6"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rdzeń teleportacji"
 			description: ["Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Rdzeń teleportacji”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "alexscaves:telecore"
 			dependencies: ["A1300000000000D4"]
 			tasks: [{ id: "A1400000000000D6" type: "item" item: "alexscaves:telecore" count: 1L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A1300000000000D7"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Klejnot okultystyczny"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Klejnot okultystyczny”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "alexscaves:occult_gem"
 			dependencies: ["A1300000000000D5"]
 			tasks: [{ id: "A1400000000000D7" type: "item" item: "alexscaves:occult_gem" count: 1L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A1300000000000D8"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Świetlista esencja"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Świetlista esencja”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "alexscaves:radiant_essence"
 			dependencies: ["A1300000000000D6"]
 			tasks: [{ id: "A1400000000000D8" type: "item" item: "alexscaves:radiant_essence" count: 2L consume_items: false }]
@@ -191,14 +191,14 @@
 		}
 		{
 			id: "A1300000000000D9"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Konsola z jaskini"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Konsola z jaskini”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 21.84d
+			y: 17.04d
 			icon: "alexscaves:game_controller"
 			dependencies: ["A1300000000000D7", "A1300000000000D8"]
 			tasks: [{ id: "A1400000000000D9" type: "item" item: "alexscaves:game_controller" count: 1L consume_items: false }]
@@ -206,14 +206,14 @@
 		}
 		{
 			id: "A1300000000000DA"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pociąg prehistoryczny"
 			description: ["Wracasz z wyprawy bogatszy o rzeczy, których nie znajdziesz na powierzchni. Ostatni sprawdzian to „Pociąg prehistoryczny”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "alexscaves:dinosaur_train"
 			dependencies: ["A1300000000000D9"]
 			tasks: [{ id: "A1400000000000DA" type: "item" item: "alexscaves:dinosaur_train" count: 1L consume_items: false }]

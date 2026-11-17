@@ -18,5 +18,9 @@
 		{ id: "410000000000000A" item: { id: "minecraft:gold_ingot" count: 1 } count: 9 weight: 7.0f }
 		{ id: "410000000000000B" item: { id: "minecraft:copper_block" count: 1 } count: 3 weight: 6.0f }
 		{ id: "410000000000000C" item: { id: "minecraft:amethyst_shard" count: 1 } count: 12 weight: 7.0f }
+		{ id: "410000000000000D" item: { id: "minecraft:ender_eye" count: 1 } count: 4 weight: 4.0f }
+		{ id: "410000000000000E" item: { id: "minecraft:golden_apple" count: 1 } count: 2 weight: 3.0f }
+		{ id: "410000000000000F" item: { id: "minecraft:crying_obsidian" count: 1 } count: 6 weight: 4.0f }
+		{ id: "4100000000000010" item: { id: "minecraft:prismarine_crystals" count: 1 } count: 12 weight: 5.0f }
 	]
 }

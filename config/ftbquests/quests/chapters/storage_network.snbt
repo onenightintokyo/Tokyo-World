@@ -4,15 +4,15 @@
 	group: "A110000000000004"
 	id: "A120000000000011"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "sophisticatedstorage:controller"
 	order_index: 5
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_survival.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 } ]
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_survival.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000DB"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Narzędzie magazynowe"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A1300000000000DC"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Złącze magazynu"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Złącze magazynu”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "sophisticatedstorage:storage_connector"
 			dependencies: ["A1300000000000DB"]
 			tasks: [{ id: "A1400000000000DC" type: "item" item: "sophisticatedstorage:storage_connector" count: 2L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A1300000000000DD"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kontroler magazynu"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Kontroler magazynu”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "sophisticatedstorage:controller"
 			dependencies: ["A1300000000000DB"]
 			tasks: [{ id: "A1400000000000DD" type: "item" item: "sophisticatedstorage:controller" count: 1L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A1300000000000DE"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Wejście i wyjście"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Wejście i wyjście”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "sophisticatedstorage:storage_io"
 			dependencies: ["A1300000000000DC"]
 			tasks: [{ id: "A1400000000000DE" type: "item" item: "sophisticatedstorage:storage_io" count: 1L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A1300000000000DF"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Wejście magazynu"
 			description: ["Wcześniej zamknąłeś już sprawę „Kontroler magazynu”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Wejście magazynu”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "sophisticatedstorage:storage_input"
 			dependencies: ["A1300000000000DD"]
 			tasks: [{ id: "A1400000000000DF" type: "item" item: "sophisticatedstorage:storage_input" count: 1L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A1300000000000E0"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Wyjście magazynu"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Wyjście magazynu”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "sophisticatedstorage:storage_output"
 			dependencies: ["A1300000000000DE"]
 			tasks: [{ id: "A1400000000000E0" type: "item" item: "sophisticatedstorage:storage_output" count: 1L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A1300000000000E1"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pierwszy plecak"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Pierwszy plecak”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "sophisticatedbackpacks:backpack"
 			dependencies: ["A1300000000000DF"]
 			tasks: [{ id: "A1400000000000E1" type: "item" item: "sophisticatedbackpacks:backpack" count: 1L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A1300000000000E2"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Plecak miedziany"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Plecak miedziany”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "sophisticatedbackpacks:copper_backpack"
 			dependencies: ["A1300000000000E0", "A1300000000000E1"]
 			tasks: [{ id: "A1400000000000E2" type: "item" item: "sophisticatedbackpacks:copper_backpack" count: 1L consume_items: false }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A1300000000000E3"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Plecak żelazny"
 			description: ["Wcześniej zamknąłeś już sprawę „Plecak miedziany”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Plecak żelazny”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "sophisticatedbackpacks:iron_backpack"
 			dependencies: ["A1300000000000E2"]
 			tasks: [{ id: "A1400000000000E3" type: "item" item: "sophisticatedbackpacks:iron_backpack" count: 1L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A1300000000000E4"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Plecak diamentowy"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Plecak diamentowy”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "sophisticatedbackpacks:diamond_backpack"
 			dependencies: ["A1300000000000E2"]
 			tasks: [{ id: "A1400000000000E4" type: "item" item: "sophisticatedbackpacks:diamond_backpack" count: 1L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A1300000000000E5"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Automatyczny odbiór"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Automatyczny odbiór”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "sophisticatedbackpacks:advanced_pickup_upgrade"
 			dependencies: ["A1300000000000E3"]
 			tasks: [{ id: "A1400000000000E5" type: "item" item: "sophisticatedbackpacks:advanced_pickup_upgrade" count: 1L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A1300000000000E6"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zaawansowany filtr"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Zaawansowany filtr”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "sophisticatedbackpacks:advanced_filter_upgrade"
 			dependencies: ["A1300000000000E4"]
 			tasks: [{ id: "A1400000000000E6" type: "item" item: "sophisticatedbackpacks:advanced_filter_upgrade" count: 1L consume_items: false }]
@@ -191,14 +191,14 @@
 		}
 		{
 			id: "A1300000000000E7"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Crafting w plecaku"
 			description: ["Wcześniej zamknąłeś już sprawę „Automatyczny odbiór”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Crafting w plecaku”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "sophisticatedbackpacks:crafting_upgrade"
 			dependencies: ["A1300000000000E5"]
 			tasks: [{ id: "A1400000000000E7" type: "item" item: "sophisticatedbackpacks:crafting_upgrade" count: 1L consume_items: false }]
@@ -206,14 +206,14 @@
 		}
 		{
 			id: "A1300000000000E8"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kompaktowanie w plecaku"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Kompaktowanie w plecaku”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "sophisticatedbackpacks:advanced_compacting_upgrade"
 			dependencies: ["A1300000000000E6"]
 			tasks: [{ id: "A1400000000000E8" type: "item" item: "sophisticatedbackpacks:advanced_compacting_upgrade" count: 1L consume_items: false }]
@@ -221,14 +221,14 @@
 		}
 		{
 			id: "A1300000000000E9"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Automatyczne uzupełnianie"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Automatyczne uzupełnianie”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "sophisticatedbackpacks:refill_upgrade"
 			dependencies: ["A1300000000000E7", "A1300000000000E8"]
 			tasks: [{ id: "A1400000000000E9" type: "item" item: "sophisticatedbackpacks:refill_upgrade" count: 1L consume_items: false }]
@@ -236,14 +236,14 @@
 		}
 		{
 			id: "A1300000000000EA"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Usuwanie nadwyżek"
 			description: ["Teraz łatwiej odnaleźć materiały niż zgubić je między skrzyniami. Ostatni sprawdzian to „Usuwanie nadwyżek”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "sophisticatedbackpacks:void_upgrade"
 			dependencies: ["A1300000000000E9"]
 			tasks: [{ id: "A1400000000000EA" type: "item" item: "sophisticatedbackpacks:void_upgrade" count: 1L consume_items: false }]

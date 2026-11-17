@@ -4,17 +4,17 @@
 	group: "A110000000000005"
 	id: "A12000000000000C"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "ars_nouveau:novice_spell_book"
 	order_index: 29
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }
 	]
 	quests: [
 		{
 			id: "A130000000000091"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pierwsza księga zaklęć"
@@ -28,14 +28,14 @@
 		}
 		{
 			id: "A130000000000092"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Klejnot źródła"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Klejnot źródła”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "ars_nouveau:source_gem"
 			dependencies: ["A130000000000091"]
 			tasks: [{ id: "A140000000000092" type: "item" item: "ars_nouveau:source_gem" count: 8L consume_items: false }]
@@ -43,14 +43,14 @@
 		}
 		{
 			id: "A130000000000093"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magazyn Source"
 			description: ["Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Magazyn Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "ars_nouveau:source_jar"
 			dependencies: ["A130000000000091"]
 			tasks: [{ id: "A140000000000093" type: "item" item: "ars_nouveau:source_jar" count: 1L consume_items: false }]
@@ -58,14 +58,14 @@
 		}
 		{
 			id: "A130000000000094"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Komora nasycania"
 			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Komora nasycania”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "ars_nouveau:imbuement_chamber"
 			dependencies: ["A130000000000092"]
 			tasks: [{ id: "A140000000000094" type: "item" item: "ars_nouveau:imbuement_chamber" count: 1L consume_items: false }]
@@ -73,14 +73,14 @@
 		}
 		{
 			id: "A130000000000095"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Aparat zaklinania"
 			description: ["Wcześniej zamknąłeś już sprawę „Magazyn Source”. W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Aparat zaklinania”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "ars_nouveau:enchanting_apparatus"
 			dependencies: ["A130000000000093"]
 			tasks: [{ id: "A140000000000095" type: "item" item: "ars_nouveau:enchanting_apparatus" count: 1L consume_items: false }]
@@ -88,14 +88,14 @@
 		}
 		{
 			id: "A130000000000096"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magiczne piedestały"
 			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Magiczne piedestały”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "ars_nouveau:arcane_pedestal"
 			dependencies: ["A130000000000094"]
 			tasks: [{ id: "A140000000000096" type: "item" item: "ars_nouveau:arcane_pedestal" count: 4L consume_items: false }]
@@ -103,14 +103,14 @@
 		}
 		{
 			id: "A130000000000097"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rdzeń magiczny"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Rdzeń magiczny”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "ars_nouveau:arcane_core"
 			dependencies: ["A130000000000095"]
 			tasks: [{ id: "A140000000000097" type: "item" item: "ars_nouveau:arcane_core" count: 1L consume_items: false }]
@@ -118,14 +118,14 @@
 		}
 		{
 			id: "A130000000000098"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Przekazywanie Source"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Przekazywanie Source”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "ars_nouveau:relay"
 			dependencies: ["A130000000000096", "A130000000000097"]
 			tasks: [{ id: "A140000000000098" type: "item" item: "ars_nouveau:relay" count: 2L consume_items: false }]
@@ -133,14 +133,14 @@
 		}
 		{
 			id: "A130000000000099"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zbieracz Source"
 			description: ["Wcześniej zamknąłeś już sprawę „Przekazywanie Source”. Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Zbieracz Source”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "ars_nouveau:relay_collector"
 			dependencies: ["A130000000000098"]
 			tasks: [{ id: "A140000000000099" type: "item" item: "ars_nouveau:relay_collector" count: 1L consume_items: false }]
@@ -148,14 +148,14 @@
 		}
 		{
 			id: "A13000000000009A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Farma energii magicznej"
 			description: ["W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Farma energii magicznej”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "ars_nouveau:agronomic_sourcelink"
 			dependencies: ["A130000000000098"]
 			tasks: [{ id: "A14000000000009A" type: "item" item: "ars_nouveau:agronomic_sourcelink" count: 1L consume_items: false }]
@@ -163,14 +163,14 @@
 		}
 		{
 			id: "A13000000000009B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Wieża zaklęć"
 			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Wieża zaklęć”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "ars_nouveau:spell_turret"
 			dependencies: ["A130000000000099"]
 			tasks: [{ id: "A14000000000009B" type: "item" item: "ars_nouveau:spell_turret" count: 1L consume_items: false }]
@@ -178,14 +178,14 @@
 		}
 		{
 			id: "A13000000000009C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pryzmat zaklęć"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Pryzmat zaklęć”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "ars_nouveau:spell_prism"
 			dependencies: ["A13000000000009A"]
 			tasks: [{ id: "A14000000000009C" type: "item" item: "ars_nouveau:spell_prism" count: 1L consume_items: false }]
@@ -193,14 +193,14 @@
 		}
 		{
 			id: "A13000000000009D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zaawansowane zaklęcia"
 			description: ["Wcześniej zamknąłeś już sprawę „Wieża zaklęć”. Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Zaawansowane zaklęcia”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "ars_nouveau:apprentice_spell_book"
 			dependencies: ["A13000000000009B"]
 			tasks: [{ id: "A14000000000009D" type: "item" item: "ars_nouveau:apprentice_spell_book" count: 1L consume_items: false }]
@@ -208,14 +208,14 @@
 		}
 		{
 			id: "A13000000000009E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magiczny magazyn"
 			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Magiczny magazyn”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "ars_nouveau:storage_lectern"
 			dependencies: ["A13000000000009C"]
 			tasks: [{ id: "A14000000000009E" type: "item" item: "ars_nouveau:storage_lectern" count: 1L consume_items: false }]
@@ -223,14 +223,14 @@
 		}
 		{
 			id: "A13000000000009F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Arcymag"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Arcymag”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "ars_nouveau:archmage_spell_book"
 			dependencies: ["A13000000000009D", "A13000000000009E"]
 			tasks: [{ id: "A14000000000009F" type: "item" item: "ars_nouveau:archmage_spell_book" count: 1L consume_items: false }]
@@ -238,14 +238,14 @@
 		}
 		{
 			id: "A1300000000000A0"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Miecz zaklinacza"
 			description: ["Księga przestała być zabawką, a stała się prawdziwym narzędziem. Ostatni sprawdzian to „Miecz zaklinacza”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "ars_nouveau:enchanters_sword"
 			dependencies: ["A13000000000009F"]
 			tasks: [{ id: "A1400000000000A0" type: "item" item: "ars_nouveau:enchanters_sword" count: 1L consume_items: false }]

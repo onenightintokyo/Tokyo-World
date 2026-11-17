@@ -4,17 +4,17 @@
 	group: "A110000000000002"
 	id: "A120000000000009"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "powah:reactor_starter"
 	order_index: 11
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }
 	]
 	quests: [
 		{
 			id: "A130000000000065"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pierwsze kable FE"
@@ -28,14 +28,14 @@
 		}
 		{
 			id: "A130000000000066"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Generator paliwowy"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Generator paliwowy”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "powah:furnator_starter"
 			dependencies: ["A130000000000065"]
 			tasks: [{ id: "A140000000000066" type: "item" item: "powah:furnator_starter" count: 1L consume_items: false }]
@@ -43,14 +43,14 @@
 		}
 		{
 			id: "A130000000000067"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pierwsze panele słoneczne"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Pierwsze panele słoneczne”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "powah:solar_panel_starter"
 			dependencies: ["A130000000000065"]
 			tasks: [{ id: "A140000000000067" type: "item" item: "powah:solar_panel_starter" count: 1L consume_items: false }]
@@ -58,14 +58,14 @@
 		}
 		{
 			id: "A130000000000068"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Generator termoelektryczny"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Generator termoelektryczny”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "powah:thermo_generator_starter"
 			dependencies: ["A130000000000066"]
 			tasks: [{ id: "A140000000000068" type: "item" item: "powah:thermo_generator_starter" count: 1L consume_items: false }]
@@ -73,14 +73,14 @@
 		}
 		{
 			id: "A130000000000069"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ogniwo energii"
 			description: ["Wcześniej zamknąłeś już sprawę „Pierwsze panele słoneczne”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Ogniwo energii”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "powah:energy_cell_starter"
 			dependencies: ["A130000000000067"]
 			tasks: [{ id: "A140000000000069" type: "item" item: "powah:energy_cell_starter" count: 1L consume_items: false }]
@@ -88,14 +88,14 @@
 		}
 		{
 			id: "A13000000000006A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Sfera energetyzacji"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Sfera energetyzacji”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "powah:energizing_orb"
 			dependencies: ["A130000000000068"]
 			tasks: [{ id: "A14000000000006A" type: "item" item: "powah:energizing_orb" count: 1L consume_items: false }]
@@ -103,14 +103,14 @@
 		}
 		{
 			id: "A13000000000006B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pręty energii"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Pręty energii”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "powah:energizing_rod_starter"
 			dependencies: ["A130000000000069"]
 			tasks: [{ id: "A14000000000006B" type: "item" item: "powah:energizing_rod_starter" count: 1L consume_items: false }]
@@ -118,14 +118,14 @@
 		}
 		{
 			id: "A13000000000006C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Prosty reaktor"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Prosty reaktor”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "powah:reactor_starter"
 			dependencies: ["A13000000000006A", "A13000000000006B"]
 			tasks: [{ id: "A14000000000006C" type: "item" item: "powah:reactor_starter" count: 1L consume_items: false }]
@@ -133,14 +133,14 @@
 		}
 		{
 			id: "A13000000000006D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Sieć podstawowa"
 			description: ["Wcześniej zamknąłeś już sprawę „Prosty reaktor”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Sieć podstawowa”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "powah:energy_cable_basic"
 			dependencies: ["A13000000000006C"]
 			tasks: [{ id: "A14000000000006D" type: "item" item: "powah:energy_cable_basic" count: 12L consume_items: false }]
@@ -148,14 +148,14 @@
 		}
 		{
 			id: "A13000000000006E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pojemne ogniwo"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Pojemne ogniwo”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "powah:energy_cell_basic"
 			dependencies: ["A13000000000006C"]
 			tasks: [{ id: "A14000000000006E" type: "item" item: "powah:energy_cell_basic" count: 1L consume_items: false }]
@@ -163,14 +163,14 @@
 		}
 		{
 			id: "A13000000000006F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktor podstawowy"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Reaktor podstawowy”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "powah:reactor_basic"
 			dependencies: ["A13000000000006D"]
 			tasks: [{ id: "A14000000000006F" type: "item" item: "powah:reactor_basic" count: 1L consume_items: false }]
@@ -178,14 +178,14 @@
 		}
 		{
 			id: "A130000000000070"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zdalna energia"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Zdalna energia”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "powah:ender_cell_starter"
 			dependencies: ["A13000000000006E"]
 			tasks: [{ id: "A140000000000070" type: "item" item: "powah:ender_cell_starter" count: 1L consume_items: false }]
@@ -193,14 +193,14 @@
 		}
 		{
 			id: "A130000000000071"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktor wzmocniony"
 			description: ["Wcześniej zamknąłeś już sprawę „Reaktor podstawowy”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Reaktor wzmocniony”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "powah:reactor_hardened"
 			dependencies: ["A13000000000006F"]
 			tasks: [{ id: "A140000000000071" type: "item" item: "powah:reactor_hardened" count: 1L consume_items: false }]
@@ -208,14 +208,14 @@
 		}
 		{
 			id: "A130000000000072"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktor płomienny"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Reaktor płomienny”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "powah:reactor_blazing"
 			dependencies: ["A130000000000070"]
 			tasks: [{ id: "A140000000000072" type: "item" item: "powah:reactor_blazing" count: 1L consume_items: false }]
@@ -223,14 +223,14 @@
 		}
 		{
 			id: "A130000000000073"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktor Niotic"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Reaktor Niotic”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "powah:reactor_niotic"
 			dependencies: ["A130000000000071", "A130000000000072"]
 			tasks: [{ id: "A140000000000073" type: "item" item: "powah:reactor_niotic" count: 1L consume_items: false }]
@@ -238,14 +238,14 @@
 		}
 		{
 			id: "A130000000000074"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Energia najwyższego poziomu"
 			description: ["Sieć energetyczna zaczyna wyprzedzać potrzeby twojej fabryki. Ostatni sprawdzian to „Energia najwyższego poziomu”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "powah:reactor_nitro"
 			dependencies: ["A130000000000073"]
 			tasks: [{ id: "A140000000000074" type: "item" item: "powah:reactor_nitro" count: 1L consume_items: false }]

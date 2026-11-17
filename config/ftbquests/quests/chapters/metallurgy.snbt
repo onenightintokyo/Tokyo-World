@@ -4,15 +4,15 @@
 	group: "A110000000000002"
 	id: "A120000000000013"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "thermal:tin_ingot"
 	order_index: 12
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 } ]
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 } ]
 	quests: [
 		{
 			id: "A1300000000000FB"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Cyna"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A1300000000000FC"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ołów"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Ołów”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "thermal:lead_ingot"
 			dependencies: ["A1300000000000FB"]
 			tasks: [{ id: "A1400000000000FC" type: "item" item: "thermal:lead_ingot" count: 24L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A1300000000000FD"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Nikiel"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Nikiel”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "thermal:nickel_ingot"
 			dependencies: ["A1300000000000FB"]
 			tasks: [{ id: "A1400000000000FD" type: "item" item: "thermal:nickel_ingot" count: 24L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A1300000000000FE"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Srebro"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Srebro”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "thermal:silver_ingot"
 			dependencies: ["A1300000000000FC"]
 			tasks: [{ id: "A1400000000000FE" type: "item" item: "thermal:silver_ingot" count: 18L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A1300000000000FF"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Elektrum"
 			description: ["Wcześniej zamknąłeś już sprawę „Nikiel”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Elektrum”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "thermal:electrum_ingot"
 			dependencies: ["A1300000000000FD"]
 			tasks: [{ id: "A1400000000000FF" type: "item" item: "thermal:electrum_ingot" count: 12L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A130000000000100"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Brąz"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Brąz”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "thermal:bronze_ingot"
 			dependencies: ["A1300000000000FE"]
 			tasks: [{ id: "A140000000000100" type: "item" item: "thermal:bronze_ingot" count: 12L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A130000000000101"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Invar"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Invar”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "thermal:invar_ingot"
 			dependencies: ["A1300000000000FF"]
 			tasks: [{ id: "A140000000000101" type: "item" item: "thermal:invar_ingot" count: 12L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A130000000000102"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rudy cyny"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Rudy cyny”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "thermal:tin_ore"
 			dependencies: ["A130000000000100", "A130000000000101"]
 			tasks: [{ id: "A140000000000102" type: "item" item: "thermal:tin_ore" count: 12L consume_items: false }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A130000000000103"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rudy srebra"
 			description: ["Wcześniej zamknąłeś już sprawę „Rudy cyny”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Rudy srebra”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "thermal:silver_ore"
 			dependencies: ["A130000000000102"]
 			tasks: [{ id: "A140000000000103" type: "item" item: "thermal:silver_ore" count: 12L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A130000000000104"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rudy niklu"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Rudy niklu”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "thermal:nickel_ore"
 			dependencies: ["A130000000000102"]
 			tasks: [{ id: "A140000000000104" type: "item" item: "thermal:nickel_ore" count: 12L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A130000000000105"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rudy ołowiu"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Rudy ołowiu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "thermal:lead_ore"
 			dependencies: ["A130000000000103"]
 			tasks: [{ id: "A140000000000105" type: "item" item: "thermal:lead_ore" count: 12L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A130000000000106"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Apatyt"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Apatyt”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "thermal:apatite_ore"
 			dependencies: ["A130000000000104"]
 			tasks: [{ id: "A140000000000106" type: "item" item: "thermal:apatite_ore" count: 12L consume_items: false }]
@@ -191,14 +191,14 @@
 		}
 		{
 			id: "A130000000000107"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Cynober"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Cynober”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 21.84d
+			y: 17.04d
 			icon: "thermal:cinnabar_ore"
 			dependencies: ["A130000000000105", "A130000000000106"]
 			tasks: [{ id: "A140000000000107" type: "item" item: "thermal:cinnabar_ore" count: 12L consume_items: false }]
@@ -206,14 +206,14 @@
 		}
 		{
 			id: "A130000000000108"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Siarka"
 			description: ["Zamiast przypadkowych sztabek masz materiały dobrane do zadania. Ostatni sprawdzian to „Siarka”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "thermal:sulfur_ore"
 			dependencies: ["A130000000000107"]
 			tasks: [{ id: "A140000000000108" type: "item" item: "thermal:sulfur_ore" count: 12L consume_items: false }]

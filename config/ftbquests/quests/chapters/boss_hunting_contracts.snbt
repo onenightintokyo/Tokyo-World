@@ -4,15 +4,15 @@
 	group: "A110000000000003"
 	id: "A120000000000023"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "minecraft:nether_star"
 	order_index: 35
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A1300000000001E7"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zapasy ekspedycji"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A1300000000001E8"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Żelazne wsparcie"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Żelazne wsparcie”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "minecraft:iron_ingot"
 			dependencies: ["A1300000000001E7"]
 			tasks: [{ id: "A1400000000001E8" type: "item" item: "minecraft:iron_ingot" count: 64L consume_items: false }, { id: "A1800000000001E8" type: "item" item: "minecraft:torch" count: 8L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A1300000000001E9"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Obsydian ochronny"
 			description: ["Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Obsydian ochronny”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "minecraft:obsidian"
 			dependencies: ["A1300000000001E7"]
 			tasks: [{ id: "A1400000000001E9" type: "item" item: "minecraft:obsidian" count: 48L consume_items: false }, { id: "A1800000000001E9" type: "item" item: "minecraft:torch" count: 8L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A1300000000001EA"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Złote jabłka"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Złote jabłka”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "minecraft:golden_apple"
 			dependencies: ["A1300000000001E8"]
 			tasks: [{ id: "A1400000000001EA" type: "item" item: "minecraft:golden_apple" count: 12L consume_items: false }, { id: "A1800000000001EA" type: "item" item: "minecraft:golden_carrot" count: 8L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A1300000000001EB"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ogniste różdżki"
 			description: ["Wcześniej zamknąłeś już sprawę „Obsydian ochronny”. Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Ogniste różdżki”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "minecraft:blaze_rod"
 			dependencies: ["A1300000000001E9"]
 			tasks: [{ id: "A1400000000001EB" type: "item" item: "minecraft:blaze_rod" count: 32L consume_items: false }, { id: "A1800000000001EB" type: "item" item: "minecraft:golden_carrot" count: 16L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A1300000000001EC"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Perły Endera"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Perły Endera”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "minecraft:ender_pearl"
 			dependencies: ["A1300000000001EA"]
 			tasks: [{ id: "A1400000000001EC" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }, { id: "A1800000000001EC" type: "item" item: "minecraft:golden_carrot" count: 16L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A1300000000001ED"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Diamentowe wyposażenie"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Diamentowe wyposażenie”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "minecraft:diamond"
 			dependencies: ["A1300000000001EB"]
 			tasks: [{ id: "A1400000000001ED" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1800000000001ED" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A1300000000001EE"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Netherit do pancerzy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Netherit do pancerzy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "minecraft:netherite_ingot"
 			dependencies: ["A1300000000001EC", "A1300000000001ED"]
 			tasks: [{ id: "A1400000000001EE" type: "item" item: "minecraft:netherite_ingot" count: 4L consume_items: false }, { id: "A1800000000001EE" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }, { id: "A1D00000000001EE" type: "checkmark" }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A1300000000001EF"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Metal starożytnych"
 			description: ["Wcześniej zamknąłeś już sprawę „Netherit do pancerzy”. Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Metal starożytnych”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "cataclysm:ancient_metal_ingot"
 			dependencies: ["A1300000000001EE"]
 			tasks: [{ id: "A1400000000001EF" type: "item" item: "cataclysm:ancient_metal_ingot" count: 8L consume_items: false }, { id: "A1800000000001EF" type: "item" item: "minecraft:iron_ingot" count: 24L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A1300000000001F0"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Gwiazda Netheru"
 			description: ["Przed wyjściem na szlak warto raz jeszcze sprawdzić zapasy i sprzęt. Kolejny punkt planu to „Gwiazda Netheru”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "minecraft:nether_star"
 			dependencies: ["A1300000000001EE"]
 			tasks: [{ id: "A1400000000001F0" type: "item" item: "minecraft:nether_star" count: 2L consume_items: false }, { id: "A1800000000001F0" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A1300000000001F1"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Metal Ignitium"
 			description: ["Nie wszystko, co znajdziesz za horyzontem, będzie chciało cię tam widzieć. Warto teraz pomyśleć o „Metal Ignitium”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "cataclysm:ignitium_ingot"
 			dependencies: ["A1300000000001EF"]
 			tasks: [{ id: "A1400000000001F1" type: "item" item: "cataclysm:ignitium_ingot" count: 6L consume_items: false }, { id: "A1800000000001F1" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A1300000000001F2"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Głowa smoka"
 			description: ["Nie ma pośpiechu. Lepiej wrócić z mniejszym łupem niż nie wrócić wcale. Zapisz w planie „Głowa smoka”. Przygotuj się tak, żeby było czym wrócić, nie tylko z czym wyruszyć."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "minecraft:dragon_head"
 			dependencies: ["A1300000000001F0"]
 			tasks: [{ id: "A1400000000001F2" type: "item" item: "minecraft:dragon_head" count: 1L consume_items: false }, { id: "A1800000000001F2" type: "item" item: "minecraft:ender_pearl" count: 24L consume_items: false }]
@@ -191,14 +191,14 @@
 		}
 		{
 			id: "A1300000000001F3"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Metal Cursium"
 			description: ["Wcześniej zamknąłeś już sprawę „Metal Ignitium”. Na mapie pojawia się nowe miejsce, ale bez przygotowania szybko trzeba będzie zawrócić. Tym razem liczy się „Metal Cursium”. Nie wszystko, co świeci w ciemności, jest skarbem."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "cataclysm:cursium_ingot"
 			dependencies: ["A1300000000001F1"]
 			tasks: [{ id: "A1400000000001F3" type: "item" item: "cataclysm:cursium_ingot" count: 4L consume_items: false }, { id: "A1800000000001F3" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }]
@@ -206,14 +206,14 @@
 		}
 		{
 			id: "A1300000000001F4"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Materiały jaskiniowe"
 			description: ["Dobra ekspedycja zaczyna się dużo wcześniej niż przy wejściu do nieznanego miejsca. W notatkach pojawia się „Materiały jaskiniowe”. Dobra wyprawa zaczyna się dużo wcześniej niż przy wejściu do lochu."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "alexscaves:galena"
 			dependencies: ["A1300000000001F2"]
 			tasks: [{ id: "A1400000000001F4" type: "item" item: "alexscaves:galena" count: 48L consume_items: false }, { id: "A1800000000001F4" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }]
@@ -221,14 +221,14 @@
 		}
 		{
 			id: "A1300000000001F5"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Płytki syntetyczne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Płytki syntetyczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "alexscaves:polymer_plate"
 			dependencies: ["A1300000000001F3", "A1300000000001F4"]
 			tasks: [{ id: "A1400000000001F5" type: "item" item: "alexscaves:polymer_plate" count: 24L consume_items: false }, { id: "A1800000000001F5" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1D00000000001F5" type: "checkmark" }]
@@ -236,14 +236,14 @@
 		}
 		{
 			id: "A1300000000001F6"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "TOKYO BOSS COUNCIL"
 			description: ["Masz dowód, że nawet największe legendy można pokonać. Ostatni sprawdzian to „TOKYO BOSS COUNCIL”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Przygotuj wyprawę lub bazę i sprawdź jej działanie poza bezpiecznym warsztatem. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "minecraft:nether_star"
 			dependencies: ["A1300000000001F5"]
 			tasks: [{ id: "A1400000000001F6" type: "item" item: "minecraft:nether_star" count: 4L consume_items: false }, { id: "A1800000000001F6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001F6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D00000000001F6" type: "checkmark" }]

@@ -4,17 +4,17 @@
 	group: "A110000000000002"
 	id: "A120000000000007"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "immersiveengineering:blast_furnace"
 	order_index: 13
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }
 	]
 	quests: [
 		{
 			id: "A130000000000045"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Wielki piec"
@@ -28,14 +28,14 @@
 		}
 		{
 			id: "A130000000000046"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Produkcja stali"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Produkcja stali”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "immersiveengineering:ingot_steel"
 			dependencies: ["A130000000000045"]
 			tasks: [{ id: "A140000000000046" type: "item" item: "immersiveengineering:ingot_steel" count: 24L consume_items: false }]
@@ -43,14 +43,14 @@
 		}
 		{
 			id: "A130000000000047"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Warsztat inżyniera"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Warsztat inżyniera”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "immersiveengineering:workbench"
 			dependencies: ["A130000000000045"]
 			tasks: [{ id: "A140000000000047" type: "item" item: "immersiveengineering:workbench" count: 1L consume_items: false }]
@@ -58,14 +58,14 @@
 		}
 		{
 			id: "A130000000000048"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Przewody miedziane"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Przewody miedziane”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "immersiveengineering:wirecoil_copper"
 			dependencies: ["A130000000000046"]
 			tasks: [{ id: "A140000000000048" type: "item" item: "immersiveengineering:wirecoil_copper" count: 8L consume_items: false }]
@@ -73,14 +73,14 @@
 		}
 		{
 			id: "A130000000000049"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Złącza niskiego napięcia"
 			description: ["Wcześniej zamknąłeś już sprawę „Warsztat inżyniera”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Złącza niskiego napięcia”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "immersiveengineering:connector_lv"
 			dependencies: ["A130000000000047"]
 			tasks: [{ id: "A140000000000049" type: "item" item: "immersiveengineering:connector_lv" count: 4L consume_items: false }]
@@ -88,14 +88,14 @@
 		}
 		{
 			id: "A13000000000004A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Akumulator LV"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Akumulator LV”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "immersiveengineering:capacitor_lv"
 			dependencies: ["A130000000000048"]
 			tasks: [{ id: "A14000000000004A" type: "item" item: "immersiveengineering:capacitor_lv" count: 1L consume_items: false }]
@@ -103,14 +103,14 @@
 		}
 		{
 			id: "A13000000000004B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Akumulator MV"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Akumulator MV”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "immersiveengineering:capacitor_mv"
 			dependencies: ["A130000000000049"]
 			tasks: [{ id: "A14000000000004B" type: "item" item: "immersiveengineering:capacitor_mv" count: 1L consume_items: false }]
@@ -118,14 +118,14 @@
 		}
 		{
 			id: "A13000000000004C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Akumulator HV"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Akumulator HV”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "immersiveengineering:capacitor_hv"
 			dependencies: ["A13000000000004A", "A13000000000004B"]
 			tasks: [{ id: "A14000000000004C" type: "item" item: "immersiveengineering:capacitor_hv" count: 1L consume_items: false }]
@@ -133,14 +133,14 @@
 		}
 		{
 			id: "A13000000000004D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Przemysłowy rurociąg"
 			description: ["Wcześniej zamknąłeś już sprawę „Akumulator HV”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Przemysłowy rurociąg”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "immersiveengineering:fluid_pipe"
 			dependencies: ["A13000000000004C"]
 			tasks: [{ id: "A14000000000004D" type: "item" item: "immersiveengineering:fluid_pipe" count: 12L consume_items: false }]
@@ -148,14 +148,14 @@
 		}
 		{
 			id: "A13000000000004E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pompa przemysłowa"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Pompa przemysłowa”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "immersiveengineering:fluid_pump"
 			dependencies: ["A13000000000004C"]
 			tasks: [{ id: "A14000000000004E" type: "item" item: "immersiveengineering:fluid_pump" count: 1L consume_items: false }]
@@ -163,14 +163,14 @@
 		}
 		{
 			id: "A13000000000004F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Prasa ciężka"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Prasa ciężka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "immersiveengineering:metal_press"
 			dependencies: ["A13000000000004D"]
 			tasks: [{ id: "A14000000000004F" type: "item" item: "immersiveengineering:metal_press" count: 1L consume_items: false }]
@@ -178,14 +178,14 @@
 		}
 		{
 			id: "A130000000000050"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kruszarka wieloblokowa"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Kruszarka wieloblokowa”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "immersiveengineering:crusher"
 			dependencies: ["A13000000000004E"]
 			tasks: [{ id: "A140000000000050" type: "item" item: "immersiveengineering:crusher" count: 1L consume_items: false }]
@@ -193,14 +193,14 @@
 		}
 		{
 			id: "A130000000000051"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rafineria"
 			description: ["Wcześniej zamknąłeś już sprawę „Prasa ciężka”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Rafineria”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "immersiveengineering:refinery"
 			dependencies: ["A13000000000004F"]
 			tasks: [{ id: "A140000000000051" type: "item" item: "immersiveengineering:refinery" count: 1L consume_items: false }]
@@ -208,14 +208,14 @@
 		}
 		{
 			id: "A130000000000052"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Generator Diesla"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Generator Diesla”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "immersiveengineering:diesel_generator"
 			dependencies: ["A130000000000050"]
 			tasks: [{ id: "A140000000000052" type: "item" item: "immersiveengineering:diesel_generator" count: 1L consume_items: false }]
@@ -223,14 +223,14 @@
 		}
 		{
 			id: "A130000000000053"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Piec łukowy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Piec łukowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "immersiveengineering:arc_furnace"
 			dependencies: ["A130000000000051", "A130000000000052"]
 			tasks: [{ id: "A140000000000053" type: "item" item: "immersiveengineering:arc_furnace" count: 1L consume_items: false }]
@@ -238,14 +238,14 @@
 		}
 		{
 			id: "A130000000000054"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Wiertło geologiczne"
 			description: ["Huta staje się mocnym fundamentem dla kolejnych planów. Ostatni sprawdzian to „Wiertło geologiczne”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "immersiveengineering:sample_drill"
 			dependencies: ["A130000000000053"]
 			tasks: [{ id: "A140000000000054" type: "item" item: "immersiveengineering:sample_drill" count: 1L consume_items: false }]

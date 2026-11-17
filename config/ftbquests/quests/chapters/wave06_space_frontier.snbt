@@ -4,13 +4,13 @@
 	group: "A110000000000003"
 	id: "A126000000000005"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "ad_astra:tier_1_rocket"
 	order_index: 38
 	images: [{
 		image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png"
-		width: 24.0d
-		height: 7.8d
+		width: 25.5d
+		height: 8.2d
 		x: 8.0d
 		y: -6.5d
 		order: -1
@@ -19,8 +19,8 @@
 	quests: [
 		{
 			id: "A136000000000401"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stal na gwiazdy"
@@ -36,14 +36,14 @@
 		},
 		{
 			id: "A136000000000402"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Płyty konstrukcyjne"
 			description: ["Kadłub musi znieść więcej niż zwykły deszcz. Zacznij tłoczyć metalowe płyty i kontrolować ich zużycie."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "ad_astra:steel_plate"
 			dependencies: ["A136000000000401"]
 			tasks: [
@@ -53,14 +53,14 @@
 		},
 		{
 			id: "A136000000000403"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Prąd dla bazy"
 			description: ["Kosmiczny warsztat nie może polegać na przypadkowych bateriach. Zbuduj generator i zostaw zapas energii na długi cykl."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "ad_astra:coal_generator"
 			dependencies: ["A136000000000401"]
 			tasks: [
@@ -70,14 +70,14 @@
 		},
 		{
 			id: "A136000000000404"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Powietrze na sprzedaż"
 			description: ["Bez aparatury tlenowej nawet najlepszy kombinezon nie wystarczy. Zbuduj ładowarkę tlenu i sprawdź proces uzupełniania."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "ad_astra:oxygen_loader"
 			dependencies: ["A136000000000402", "A136000000000403"]
 			tasks: [
@@ -87,14 +87,14 @@
 		},
 		{
 			id: "A136000000000405"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stół NASA"
 			description: ["Kiedy jest już zasilanie i stal, pora złożyć stanowisko do produkcji rakiet. Zanim ruszysz dalej, poznaj dokładnie jego receptury."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "ad_astra:nasa_workbench"
 			dependencies: ["A136000000000402"]
 			tasks: [
@@ -104,14 +104,14 @@
 		},
 		{
 			id: "A136000000000406"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Atmosfera pod kontrolą"
 			description: ["Baza na obcej planecie wymaga czegoś więcej niż czterech ścian. Postaw dystrybutor tlenu i sprawdź szczelność pomieszczenia."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "ad_astra:oxygen_distributor"
 			dependencies: ["A136000000000404"]
 			tasks: [
@@ -121,14 +121,14 @@
 		},
 		{
 			id: "A136000000000407"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pierwsza rakieta"
 			description: ["Zbuduj rakietę pierwszego poziomu. Zanim ją odpalisz, zadbaj o zapas paliwa, platformę i sprzęt na powrót."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "ad_astra:tier_1_rocket"
 			dependencies: ["A136000000000405", "A136000000000406"]
 			tasks: [
@@ -138,14 +138,14 @@
 		},
 		{
 			id: "A136000000000408"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ślady na Księżycu"
 			description: ["Pierwszy lot to dopiero początek. Przywieź księżycowy materiał do bazy i nie zapomnij zaopatrzenia na drogę powrotną."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "ad_astra:moon_stone"
 			dependencies: ["A136000000000407"]
 			tasks: [
@@ -155,14 +155,14 @@
 		},
 		{
 			id: "A136000000000409"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Baza poza Ziemią"
 			description: ["Zbuduj działające schronienie z tlenem, zasilaniem i zapasami na Księżycu. Odhacz zadanie dopiero po prawdziwym teście."]
 			x: 8.00d
-			y: 15.60d
+			y: 12.17d
 			icon: "ad_astra:oxygen_distributor"
 			dependencies: ["A136000000000408"]
 			tasks: [
@@ -173,14 +173,14 @@
 		},
 		{
 			id: "A13600000000040A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Wyprawa na Marsa"
 			description: ["Przygotuj rakietę drugiego poziomu i plan drogi przez kolejną planetę. Nie wystarczy wystartować — trzeba też móc wrócić."]
 			x: 8.00d
-			y: 18.72d
+			y: 14.60d
 			icon: "ad_astra:tier_2_rocket"
 			dependencies: ["A136000000000409"]
 			tasks: [

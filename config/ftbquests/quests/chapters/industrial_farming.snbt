@@ -4,17 +4,17 @@
 	group: "A110000000000005"
 	id: "A120000000000008"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "industrialforegoing:plant_gatherer"
 	order_index: 25
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }
 	]
 	quests: [
 		{
 			id: "A130000000000055"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pierwsza rama maszynowa"
@@ -28,14 +28,14 @@
 		}
 		{
 			id: "A130000000000056"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Lateks i plastik"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Lateks i plastik”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "industrialforegoing:latex_processing_unit"
 			dependencies: ["A130000000000055"]
 			tasks: [{ id: "A140000000000056" type: "item" item: "industrialforegoing:latex_processing_unit" count: 1L consume_items: false }]
@@ -43,14 +43,14 @@
 		}
 		{
 			id: "A130000000000057"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Płyty plastikowe"
 			description: ["Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Płyty plastikowe”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "industrialforegoing:plastic"
 			dependencies: ["A130000000000055"]
 			tasks: [{ id: "A140000000000057" type: "item" item: "industrialforegoing:plastic" count: 24L consume_items: false }]
@@ -58,14 +58,14 @@
 		}
 		{
 			id: "A130000000000058"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rama prosta"
 			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Rama prosta”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "industrialforegoing:machine_frame_simple"
 			dependencies: ["A130000000000056"]
 			tasks: [{ id: "A140000000000058" type: "item" item: "industrialforegoing:machine_frame_simple" count: 2L consume_items: false }]
@@ -73,14 +73,14 @@
 		}
 		{
 			id: "A130000000000059"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Automatyczny siewnik"
 			description: ["Wcześniej zamknąłeś już sprawę „Płyty plastikowe”. Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Automatyczny siewnik”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "industrialforegoing:plant_sower"
 			dependencies: ["A130000000000057"]
 			tasks: [{ id: "A140000000000059" type: "item" item: "industrialforegoing:plant_sower" count: 1L consume_items: false }]
@@ -88,14 +88,14 @@
 		}
 		{
 			id: "A13000000000005A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Automatyczny zbiór"
 			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Automatyczny zbiór”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "industrialforegoing:plant_gatherer"
 			dependencies: ["A130000000000058"]
 			tasks: [{ id: "A14000000000005A" type: "item" item: "industrialforegoing:plant_gatherer" count: 1L consume_items: false }]
@@ -103,14 +103,14 @@
 		}
 		{
 			id: "A13000000000005B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Automatyczne karmienie"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Automatyczne karmienie”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "industrialforegoing:animal_feeder"
 			dependencies: ["A130000000000059"]
 			tasks: [{ id: "A14000000000005B" type: "item" item: "industrialforegoing:animal_feeder" count: 1L consume_items: false }]
@@ -118,14 +118,14 @@
 		}
 		{
 			id: "A13000000000005C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kruszarka mobów"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kruszarka mobów”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "industrialforegoing:mob_crusher"
 			dependencies: ["A13000000000005A", "A13000000000005B"]
 			tasks: [{ id: "A14000000000005C" type: "item" item: "industrialforegoing:mob_crusher" count: 1L consume_items: false }]
@@ -133,14 +133,14 @@
 		}
 		{
 			id: "A13000000000005D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Przetwarzanie mobów"
 			description: ["Wcześniej zamknąłeś już sprawę „Kruszarka mobów”. Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Przetwarzanie mobów”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "industrialforegoing:mob_slaughter_factory"
 			dependencies: ["A13000000000005C"]
 			tasks: [{ id: "A14000000000005D" type: "item" item: "industrialforegoing:mob_slaughter_factory" count: 1L consume_items: false }]
@@ -148,14 +148,14 @@
 		}
 		{
 			id: "A13000000000005E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Duplikacja mobów"
 			description: ["Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Duplikacja mobów”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "industrialforegoing:mob_duplicator"
 			dependencies: ["A13000000000005C"]
 			tasks: [{ id: "A14000000000005E" type: "item" item: "industrialforegoing:mob_duplicator" count: 1L consume_items: false }]
@@ -163,14 +163,14 @@
 		}
 		{
 			id: "A13000000000005F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Komora rozpuszczania"
 			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Komora rozpuszczania”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "industrialforegoing:dissolution_chamber"
 			dependencies: ["A13000000000005D"]
 			tasks: [{ id: "A14000000000005F" type: "item" item: "industrialforegoing:dissolution_chamber" count: 1L consume_items: false }]
@@ -178,14 +178,14 @@
 		}
 		{
 			id: "A130000000000060"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Laser górniczy"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Laser górniczy”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "industrialforegoing:laser_drill"
 			dependencies: ["A13000000000005E"]
 			tasks: [{ id: "A140000000000060" type: "item" item: "industrialforegoing:laser_drill" count: 1L consume_items: false }]
@@ -193,14 +193,14 @@
 		}
 		{
 			id: "A130000000000061"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Logistyka czarnej dziury"
 			description: ["Wcześniej zamknąłeś już sprawę „Komora rozpuszczania”. Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Logistyka czarnej dziury”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "industrialforegoing:black_hole_controller"
 			dependencies: ["A13000000000005F"]
 			tasks: [{ id: "A140000000000061" type: "item" item: "industrialforegoing:black_hole_controller" count: 1L consume_items: false }]
@@ -208,14 +208,14 @@
 		}
 		{
 			id: "A130000000000062"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rama zaawansowana"
 			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Rama zaawansowana”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "industrialforegoing:machine_frame_advanced"
 			dependencies: ["A130000000000060"]
 			tasks: [{ id: "A140000000000062" type: "item" item: "industrialforegoing:machine_frame_advanced" count: 2L consume_items: false }]
@@ -223,14 +223,14 @@
 		}
 		{
 			id: "A130000000000063"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pole energetyczne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Pole energetyczne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "industrialforegoing:energy_field_provider"
 			dependencies: ["A130000000000061", "A130000000000062"]
 			tasks: [{ id: "A140000000000063" type: "item" item: "industrialforegoing:energy_field_provider" count: 1L consume_items: false }]
@@ -238,14 +238,14 @@
 		}
 		{
 			id: "A130000000000064"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Biopaliwo przemysłowe"
 			description: ["Rolnictwo naprawdę nadąża za rozwojem fabryki. Ostatni sprawdzian to „Biopaliwo przemysłowe”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "industrialforegoing:biofuel_generator"
 			dependencies: ["A130000000000063"]
 			tasks: [{ id: "A140000000000064" type: "item" item: "industrialforegoing:biofuel_generator" count: 1L consume_items: false }]

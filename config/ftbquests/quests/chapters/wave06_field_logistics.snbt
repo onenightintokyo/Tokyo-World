@@ -4,13 +4,13 @@
 	group: "A110000000000004"
 	id: "A126000000000001"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "sophisticatedbackpacks:backpack"
 	order_index: 6
 	images: [{
 		image: "tokyoworld:textures/gui/quests/tokyo_stage_survival.png"
-		width: 24.0d
-		height: 7.8d
+		width: 25.5d
+		height: 8.2d
 		x: 8.0d
 		y: -6.5d
 		order: -1
@@ -19,8 +19,8 @@
 	quests: [
 		{
 			id: "A136000000000001"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pakunek na drogę"
@@ -37,14 +37,14 @@
 		},
 		{
 			id: "A136000000000002"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pierwszy plecak"
 			description: ["Wyprawy przestaną kończyć się po pierwszej jaskini. Zrób plecak i sprawdź, jak zachowuje się przy zbieraniu większej ilości materiałów."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "sophisticatedbackpacks:backpack"
 			dependencies: ["A136000000000001"]
 			tasks: [
@@ -54,14 +54,14 @@
 		},
 		{
 			id: "A136000000000003"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Plecak nie z papieru"
 			description: ["Żelazne wzmocnienie ma sens dopiero wtedy, kiedy masz co nosić. Nie kupuj wygody za ostatnią sztabkę."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "sophisticatedbackpacks:iron_backpack"
 			dependencies: ["A136000000000002"]
 			tasks: [
@@ -71,14 +71,14 @@
 		},
 		{
 			id: "A136000000000004"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Sam zbiera, sam odkłada"
 			description: ["Kiedy wydobycie przyspiesza, czas przestać podnosić każdy kamień osobno. Wypróbuj moduł automatycznego zbierania."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "sophisticatedbackpacks:pickup_upgrade"
 			dependencies: ["A136000000000003"]
 			tasks: [
@@ -88,14 +88,14 @@
 		},
 		{
 			id: "A136000000000005"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magazyn pod ścianą"
 			description: ["Nie każdy materiał musi trafiać do osobnej skrzyni. Własny rząd beczek zdejmuje z głowy większość chaosu."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "sophisticatedstorage:barrel"
 			dependencies: ["A136000000000002"]
 			tasks: [
@@ -105,14 +105,14 @@
 		},
 		{
 			id: "A136000000000006"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Porządek w żelazie"
 			description: ["Rozbuduj stałe składowanie, żeby następne maszyny nie żyły między stertami przedmiotów."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "sophisticatedstorage:iron_chest"
 			dependencies: ["A136000000000005"]
 			tasks: [
@@ -122,14 +122,14 @@
 		},
 		{
 			id: "A136000000000007"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Daleka wyprawa"
 			description: ["Złoty plecak nie jest trofeum — to przygotowanie do podróży, z której planujesz wrócić z łupem."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "sophisticatedbackpacks:gold_backpack"
 			dependencies: ["A136000000000004"]
 			tasks: [
@@ -139,14 +139,14 @@
 		},
 		{
 			id: "A136000000000008"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Połączone zapasy"
 			description: ["Skoro magazyn się rozrasta, połącz kilka sekcji zamiast biegać między nimi bez końca."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "sophisticatedstorage:storage_link"
 			dependencies: ["A136000000000006"]
 			tasks: [
@@ -156,14 +156,14 @@
 		},
 		{
 			id: "A136000000000009"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Jeden kontroler"
 			description: ["Dobra baza pozwala znaleźć rzecz w kilka sekund. Zbuduj kontroler i uporządkuj podłączony magazyn."]
 			x: 8.00d
-			y: 15.60d
+			y: 12.17d
 			icon: "sophisticatedstorage:controller"
 			dependencies: ["A136000000000008"]
 			tasks: [
@@ -173,14 +173,14 @@
 		},
 		{
 			id: "A13600000000000A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ekwipunek na każdą drogę"
 			description: ["Przygotuj diamentowy plecak oraz działający magazyn. Teraz możesz planować wyprawy, nie licząc każdego wolnego slotu."]
 			x: 8.00d
-			y: 18.72d
+			y: 14.60d
 			icon: "sophisticatedbackpacks:diamond_backpack"
 			dependencies: ["A136000000000007", "A136000000000009"]
 			tasks: [

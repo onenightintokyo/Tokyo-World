@@ -4,13 +4,13 @@
 	group: "A110000000000002"
 	id: "A126000000000002"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "immersiveengineering:hammer"
 	order_index: 14
 	images: [{
 		image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png"
-		width: 24.0d
-		height: 7.8d
+		width: 25.5d
+		height: 8.2d
 		x: 8.0d
 		y: -6.5d
 		order: -1
@@ -19,8 +19,8 @@
 	quests: [
 		{
 			id: "A136000000000101"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Młotek inżyniera"
@@ -36,14 +36,14 @@
 		},
 		{
 			id: "A136000000000102"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pierwsze przewody"
 			description: ["Kiedy energia przestaje mieścić się w pojedynczej maszynie, pojawia się nowy problem: jak ją bezpiecznie rozprowadzić?"]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "immersiveengineering:wirecoil_copper"
 			dependencies: ["A136000000000101"]
 			tasks: [
@@ -53,14 +53,14 @@
 		},
 		{
 			id: "A136000000000103"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Żelazne komponenty"
 			description: ["Nie ma dobrej konstrukcji bez powtarzalnych części. Wyprodukuj serię komponentów i zacznij myśleć o większych urządzeniach."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "immersiveengineering:component_iron"
 			dependencies: ["A136000000000101"]
 			tasks: [
@@ -70,14 +70,14 @@
 		},
 		{
 			id: "A136000000000104"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zapas prądu LV"
 			description: ["Pierwszy akumulator to nie luksus. Bez bufora krótka przerwa w dostawie zasilania zatrzyma całą linię."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "immersiveengineering:capacitor_lv"
 			dependencies: ["A136000000000102"]
 			tasks: [
@@ -87,14 +87,14 @@
 		},
 		{
 			id: "A136000000000105"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Linia montażowa"
 			description: ["Złóż podstawowe bloki konstrukcyjne. W tej gałęzi nie wystarczy już stolik rzemieślniczy — trzeba zapanować nad całą instalacją."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "immersiveengineering:light_engineering"
 			dependencies: ["A136000000000103"]
 			tasks: [
@@ -104,14 +104,14 @@
 		},
 		{
 			id: "A136000000000106"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Średnie napięcie"
 			description: ["Mała elektrownia to dopiero początek. Przygotuj magazyn energii kolejnego poziomu i zaplanuj osobny obwód dla maszyn."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "immersiveengineering:capacitor_mv"
 			dependencies: ["A136000000000104"]
 			tasks: [
@@ -121,14 +121,14 @@
 		},
 		{
 			id: "A136000000000107"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ciężki przemysł"
 			description: ["Przetwarzanie na większą skalę wymaga ram, które nie pękną po pierwszej dobie. Powstaje serce prawdziwej huty."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "immersiveengineering:heavy_engineering"
 			dependencies: ["A136000000000105"]
 			tasks: [
@@ -138,14 +138,14 @@
 		},
 		{
 			id: "A136000000000108"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Wysokie napięcie"
 			description: ["Fabryka rośnie. W tym momencie źle poprowadzona energia kosztuje więcej niż cały wcześniejszy warsztat."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "immersiveengineering:capacitor_hv"
 			dependencies: ["A136000000000106", "A136000000000107"]
 			tasks: [
@@ -155,14 +155,14 @@
 		},
 		{
 			id: "A136000000000109"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Projekt multibloku"
 			description: ["Wybierz dużą maszynę Immersive Engineering — np. excavator lub arc furnace — i uruchom ją w swojej bazie. Sam zestaw bloków jeszcze nie oznacza działającej fabryki."]
 			x: 8.00d
-			y: 15.60d
+			y: 12.17d
 			icon: "minecraft:nether_star"
 			dependencies: ["A136000000000108"]
 			tasks: [
@@ -172,14 +172,14 @@
 		},
 		{
 			id: "A13600000000010A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Przemysł bez przestojów"
 			description: ["Doprowadź zasilanie i magazynowanie do działającego multibloku. Udowodnij, że twoje stalowe imperium może pracować całą noc."]
 			x: 8.00d
-			y: 18.72d
+			y: 14.60d
 			icon: "immersiveengineering:capacitor_hv"
 			dependencies: ["A136000000000109"]
 			tasks: [

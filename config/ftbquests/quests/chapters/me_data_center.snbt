@@ -4,15 +4,15 @@
 	group: "A110000000000002"
 	id: "A12000000000001E"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "ae2:controller"
 	order_index: 21
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A130000000000197"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kwarc Certus"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A130000000000198"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kwarc ładowany"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Kwarc ładowany”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "ae2:charged_certus_quartz_crystal"
 			dependencies: ["A130000000000197"]
 			tasks: [{ id: "A140000000000198" type: "item" item: "ae2:charged_certus_quartz_crystal" count: 24L consume_items: false }, { id: "A180000000000198" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A130000000000199"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kryształy Fluix"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Kryształy Fluix”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "ae2:fluix_crystal"
 			dependencies: ["A130000000000197"]
 			tasks: [{ id: "A140000000000199" type: "item" item: "ae2:fluix_crystal" count: 32L consume_items: false }, { id: "A180000000000199" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A13000000000019A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Prasy procesorów"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Prasy procesorów”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "ae2:inscriber"
 			dependencies: ["A130000000000198"]
 			tasks: [{ id: "A14000000000019A" type: "item" item: "ae2:inscriber" count: 4L consume_items: false }, { id: "A18000000000019A" type: "item" item: "minecraft:iron_ingot" count: 8L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A13000000000019B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Procesory logiczne"
 			description: ["Wcześniej zamknąłeś już sprawę „Kryształy Fluix”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Procesory logiczne”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "ae2:logic_processor"
 			dependencies: ["A130000000000199"]
 			tasks: [{ id: "A14000000000019B" type: "item" item: "ae2:logic_processor" count: 24L consume_items: false }, { id: "A18000000000019B" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A13000000000019C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Procesory kalkulacyjne"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Procesory kalkulacyjne”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "ae2:calculation_processor"
 			dependencies: ["A13000000000019A"]
 			tasks: [{ id: "A14000000000019C" type: "item" item: "ae2:calculation_processor" count: 24L consume_items: false }, { id: "A18000000000019C" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A13000000000019D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Procesory inżynieryjne"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Procesory inżynieryjne”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "ae2:engineering_processor"
 			dependencies: ["A13000000000019B"]
 			tasks: [{ id: "A14000000000019D" type: "item" item: "ae2:engineering_processor" count: 24L consume_items: false }, { id: "A18000000000019D" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A13000000000019E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zasilanie ME"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Zasilanie ME”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "ae2:energy_acceptor"
 			dependencies: ["A13000000000019C", "A13000000000019D"]
 			tasks: [{ id: "A14000000000019E" type: "item" item: "ae2:energy_acceptor" count: 4L consume_items: false }, { id: "A18000000000019E" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }, { id: "A1D000000000019E" type: "checkmark" }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A13000000000019F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kontrolery ME"
 			description: ["Wcześniej zamknąłeś już sprawę „Zasilanie ME”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Kontrolery ME”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "ae2:controller"
 			dependencies: ["A13000000000019E"]
 			tasks: [{ id: "A14000000000019F" type: "item" item: "ae2:controller" count: 4L consume_items: false }, { id: "A18000000000019F" type: "item" item: "minecraft:copper_ingot" count: 24L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A1300000000001A0"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Szafy nośników"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Szafy nośników”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "ae2:drive"
 			dependencies: ["A13000000000019E"]
 			tasks: [{ id: "A1400000000001A0" type: "item" item: "ae2:drive" count: 8L consume_items: false }, { id: "A1800000000001A0" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A1300000000001A1"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Terminale ME"
 			description: ["Dobrze zaplanowany magazyn potrafi oszczędzić więcej czasu niż nowa koparka. Tym razem liczy się „Terminale ME”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "ae2:terminal"
 			dependencies: ["A13000000000019F"]
 			tasks: [{ id: "A1400000000001A1" type: "item" item: "ae2:terminal" count: 4L consume_items: false }, { id: "A1800000000001A1" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A1300000000001A2"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Terminale rzemiosła"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Terminale rzemiosła”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "ae2:crafting_terminal"
 			dependencies: ["A1300000000001A0"]
 			tasks: [{ id: "A1400000000001A2" type: "item" item: "ae2:crafting_terminal" count: 4L consume_items: false }, { id: "A1800000000001A2" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
@@ -191,14 +191,14 @@
 		}
 		{
 			id: "A1300000000001A3"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Automatyczne składanie"
 			description: ["Wcześniej zamknąłeś już sprawę „Terminale ME”. Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Automatyczne składanie”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "ae2:molecular_assembler"
 			dependencies: ["A1300000000001A1"]
 			tasks: [{ id: "A1400000000001A3" type: "item" item: "ae2:molecular_assembler" count: 12L consume_items: false }, { id: "A1800000000001A3" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
@@ -206,14 +206,14 @@
 		}
 		{
 			id: "A1300000000001A4"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Dostawcy wzorców"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Dostawcy wzorców”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "ae2:pattern_provider"
 			dependencies: ["A1300000000001A2"]
 			tasks: [{ id: "A1400000000001A4" type: "item" item: "ae2:pattern_provider" count: 8L consume_items: false }, { id: "A1800000000001A4" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
@@ -221,14 +221,14 @@
 		}
 		{
 			id: "A1300000000001A5"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Interfejsy produkcyjne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Interfejsy produkcyjne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "ae2:interface"
 			dependencies: ["A1300000000001A3", "A1300000000001A4"]
 			tasks: [{ id: "A1400000000001A5" type: "item" item: "ae2:interface" count: 8L consume_items: false }, { id: "A1800000000001A5" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A1D00000000001A5" type: "checkmark" }]
@@ -236,14 +236,14 @@
 		}
 		{
 			id: "A1300000000001A6"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "TOKYO DATA CENTER"
 			description: ["Masz własne centrum danych, które może przygotować pracę całego zakładu. Ostatni sprawdzian to „TOKYO DATA CENTER”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Podłącz urządzenia i zobacz, czy zasilanie lub przepływ przedmiotów działa bez ręcznej pomocy. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "ae2:quantum_ring"
 			dependencies: ["A1300000000001A5"]
 			tasks: [{ id: "A1400000000001A6" type: "item" item: "ae2:quantum_ring" count: 16L consume_items: false }, { id: "A1800000000001A6" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A1900000000001A6" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D00000000001A6" type: "checkmark" }]

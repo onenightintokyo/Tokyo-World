@@ -4,13 +4,13 @@
 	group: "A110000000000003"
 	id: "A126000000000004"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "alexscaves:amber"
 	order_index: 36
 	images: [{
 		image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png"
-		width: 24.0d
-		height: 7.8d
+		width: 25.5d
+		height: 8.2d
 		x: 8.0d
 		y: -6.5d
 		order: -1
@@ -19,8 +19,8 @@
 	quests: [
 		{
 			id: "A136000000000301"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Mapa nieznanego"
@@ -37,14 +37,14 @@
 		},
 		{
 			id: "A136000000000302"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Podziemny relikt"
 			description: ["Pierwsza rzadkość to dowód, że zwykłe kopanie prowadzi już do zupełnie innych miejsc. Odnajdź bursztyn z pradawnych jaskiń."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "alexscaves:amber"
 			dependencies: ["A136000000000301"]
 			tasks: [
@@ -54,14 +54,14 @@
 		},
 		{
 			id: "A136000000000303"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magnetyczny szlak"
 			description: ["W magnetycznych jaskiniach nawet zwykłe metale zachowują się niecodziennie. Zdobądź magnes i zrozum lokalne mechaniki."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "alexscaves:azure_magnet"
 			dependencies: ["A136000000000301"]
 			tasks: [
@@ -71,14 +71,14 @@
 		},
 		{
 			id: "A136000000000304"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ciemność pod wodą"
 			description: ["Abyssal Chasm nie jest miejscem na lekki spacer. Zdobądź abyssmarine i przygotuj bezpieczną drogę powrotu."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "alexscaves:abyssmarine"
 			dependencies: ["A136000000000302"]
 			tasks: [
@@ -88,14 +88,14 @@
 		},
 		{
 			id: "A136000000000305"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Radioaktywny pył"
 			description: ["W toksycznych jaskiniach bez ochrony lepiej nie zdejmować hełmu. Znajdź ślady radrocku i wróć do bazy cało."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "alexscaves:acidic_radrock"
 			dependencies: ["A136000000000303"]
 			tasks: [
@@ -105,14 +105,14 @@
 		},
 		{
 			id: "A136000000000306"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Słodka pułapka"
 			description: ["Candy Cavity wygląda jak sen, ale jest pełna rzeczy, które wcale nie chcą zostać znalezione. Przynieś fragment cukrowej scenerii."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "alexscaves:candy_cane"
 			dependencies: ["A136000000000303"]
 			tasks: [
@@ -122,14 +122,14 @@
 		},
 		{
 			id: "A136000000000307"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Nadzieja w mroku"
 			description: ["W Forlorn Hollows światło to coś więcej niż dekoracja. Przygotuj biologiczne pochodnie, zanim ruszysz w głąb."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "alexscaves:bioluminescent_torch"
 			dependencies: ["A136000000000304"]
 			tasks: [
@@ -139,14 +139,14 @@
 		},
 		{
 			id: "A136000000000308"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Sześć nieznanych światów"
 			description: ["Zbierz ślady z różnych biomów Alex's Caves. Jeżeli ominąłeś jakieś miejsce, powróć przygotowany, a nie z pustymi kieszeniami."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "alexscaves:amber"
 			dependencies: ["A136000000000305", "A136000000000306", "A136000000000307"]
 			tasks: [
@@ -158,14 +158,14 @@
 		},
 		{
 			id: "A136000000000309"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Powrót spod ziemi"
 			description: ["Twoja ekipa ma teraz własne podziemne archiwum. Zorganizuj magazyn znalezisk i udowodnij, że masz środki na kolejną wyprawę."]
 			x: 8.00d
-			y: 15.60d
+			y: 12.17d
 			icon: "sophisticatedstorage:controller"
 			dependencies: ["A136000000000308"]
 			tasks: [

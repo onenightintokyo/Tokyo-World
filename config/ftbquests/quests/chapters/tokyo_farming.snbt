@@ -4,16 +4,16 @@
 	group: "A110000000000004"
 	id: "A120000000000004"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "minecraft:wheat"
 	order_index: 2
 	images: [
 		{
 			image: "tokyoworld:textures/gui/quests/tokyo_stage_survival.png"
-			width: 24.0d
-			height: 7.8d
-			x: 8.0d
-			y: -6.5d
+			width: 25.5d
+			height: 8.2d
+			x: 8.00d
+			y: -6.00d
 			order: -1
 		}
 	]
@@ -21,8 +21,8 @@
 	quests: [
 		{
 			id: "A130000000000019"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zasiej przyszłość"
@@ -44,14 +44,14 @@
 		}
 		{
 			id: "A13000000000001A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Warzywniak"
 			description: ["W pierwszych dniach najbardziej przydają się rzeczy, których zawsze zapomina się zabrać. Warto teraz pomyśleć o „Warzywniak”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "minecraft:carrot"
 			dependencies: ["A130000000000019"]
 			tasks: [
@@ -67,14 +67,14 @@
 		}
 		{
 			id: "A13000000000001B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Automatyczny odbiór"
 			description: ["Na początku każda zdobycz może zdecydować, czy przetrwasz kolejną noc. Zapisz w planie „Automatyczny odbiór”. Warto od razu zadbać o zapas — pierwsza noc potrafi zaskoczyć."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "minecraft:hopper"
 			dependencies: ["A130000000000019"]
 			tasks: [
@@ -90,14 +90,14 @@
 		}
 		{
 			id: "A13000000000001C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Gotowanie w dużej skali"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Gotowanie w dużej skali”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 6.24d
+			y: 4.87d
 			icon: "farmersdelight:cooking_pot"
 			dependencies: ["A13000000000001A", "A13000000000001B"]
 			tasks: [
@@ -113,14 +113,14 @@
 		}
 		{
 			id: "A13000000000001D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magiczna uprawa"
 			description: ["Wcześniej zamknąłeś już sprawę „Gotowanie w dużej skali”. Zanim ruszysz dalej, doprowadź do porządku swoje najbliższe otoczenie. W notatkach pojawia się „Magiczna uprawa”. Każda mała poprawka robi różnicę, kiedy nie masz jeszcze wielkiego zaplecza."]
 			x: 8.00d
-			y: 9.36d
+			y: 7.30d
 			icon: "mysticalagriculture:inferium_essence"
 			dependencies: ["A13000000000001C"]
 			tasks: [
@@ -136,14 +136,14 @@
 		}
 		{
 			id: "A13000000000001E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magazyn zbiorów"
 			description: ["Zbiory stały się pewnym zapleczem, a nie kwestią szczęścia. Ostatni sprawdzian to „Magazyn zbiorów”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "minecraft:barrel"
 			dependencies: ["A13000000000001D"]
 			tasks: [

@@ -4,17 +4,17 @@
 	group: "A110000000000005"
 	id: "A12000000000000B"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "botania:mana_pool"
 	order_index: 28
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_magic.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }
 	]
 	quests: [
 		{
 			id: "A130000000000081"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kwiaty mistyczne"
@@ -28,14 +28,14 @@
 		}
 		{
 			id: "A130000000000082"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rozpraszacz many"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Rozpraszacz many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "botania:mana_spreader"
 			dependencies: ["A130000000000081"]
 			tasks: [{ id: "A140000000000082" type: "item" item: "botania:mana_spreader" count: 1L consume_items: false }]
@@ -43,14 +43,14 @@
 		}
 		{
 			id: "A130000000000083"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zbiornik many"
 			description: ["Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Zbiornik many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "botania:mana_pool"
 			dependencies: ["A130000000000081"]
 			tasks: [{ id: "A140000000000083" type: "item" item: "botania:mana_pool" count: 1L consume_items: false }]
@@ -58,14 +58,14 @@
 		}
 		{
 			id: "A130000000000084"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Diament many"
 			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Diament many”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "botania:mana_diamond"
 			dependencies: ["A130000000000082"]
 			tasks: [{ id: "A140000000000084" type: "item" item: "botania:mana_diamond" count: 1L consume_items: false }]
@@ -73,14 +73,14 @@
 		}
 		{
 			id: "A130000000000085"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Stal many"
 			description: ["Wcześniej zamknąłeś już sprawę „Zbiornik many”. W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Stal many”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "botania:manasteel_ingot"
 			dependencies: ["A130000000000083"]
 			tasks: [{ id: "A140000000000085" type: "item" item: "botania:manasteel_ingot" count: 12L consume_items: false }]
@@ -88,14 +88,14 @@
 		}
 		{
 			id: "A130000000000086"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ołtarz runiczny"
 			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Ołtarz runiczny”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "botania:runic_altar"
 			dependencies: ["A130000000000084"]
 			tasks: [{ id: "A140000000000086" type: "item" item: "botania:runic_altar" count: 1L consume_items: false }]
@@ -103,14 +103,14 @@
 		}
 		{
 			id: "A130000000000087"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Płyta przemian"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Płyta przemian”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "botania:terra_plate"
 			dependencies: ["A130000000000085"]
 			tasks: [{ id: "A140000000000087" type: "item" item: "botania:terra_plate" count: 1L consume_items: false }]
@@ -118,14 +118,14 @@
 		}
 		{
 			id: "A130000000000088"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Dystrybutor many"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Dystrybutor many”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "botania:mana_distributor"
 			dependencies: ["A130000000000086", "A130000000000087"]
 			tasks: [{ id: "A140000000000088" type: "item" item: "botania:mana_distributor" count: 1L consume_items: false }]
@@ -133,14 +133,14 @@
 		}
 		{
 			id: "A130000000000089"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pylon many"
 			description: ["Wcześniej zamknąłeś już sprawę „Dystrybutor many”. Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Pylon many”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "botania:mana_pylon"
 			dependencies: ["A130000000000088"]
 			tasks: [{ id: "A140000000000089" type: "item" item: "botania:mana_pylon" count: 1L consume_items: false }]
@@ -148,14 +148,14 @@
 		}
 		{
 			id: "A13000000000008A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Elficki rozpraszacz"
 			description: ["W świecie magii najciekawsze odkrycia często zaczynają się od drobnej zmiany. W notatkach pojawia się „Elficki rozpraszacz”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "botania:elven_spreader"
 			dependencies: ["A130000000000088"]
 			tasks: [{ id: "A14000000000008A" type: "item" item: "botania:elven_spreader" count: 1L consume_items: false }]
@@ -163,14 +163,14 @@
 		}
 		{
 			id: "A13000000000008B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Mana i energia FE"
 			description: ["Księga podsuwa kolejny trop, ale samo jego przeczytanie nie wystarczy. Kolejny punkt planu to „Mana i energia FE”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "botania:mana_fluxfield"
 			dependencies: ["A130000000000089"]
 			tasks: [{ id: "A14000000000008B" type: "item" item: "botania:mana_fluxfield" count: 1L consume_items: false }]
@@ -178,14 +178,14 @@
 		}
 		{
 			id: "A13000000000008C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magazyn Corporea"
 			description: ["Mana i Source potrafią wiele, jeśli nie próbujesz zmuszać ich do pośpiechu. Warto teraz pomyśleć o „Magazyn Corporea”. Nawet najprostszy rytuał jest ciekawszy, gdy wiesz, po co go wykonujesz."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "botania:corporea_spark"
 			dependencies: ["A13000000000008A"]
 			tasks: [{ id: "A14000000000008C" type: "item" item: "botania:corporea_spark" count: 6L consume_items: false }]
@@ -193,14 +193,14 @@
 		}
 		{
 			id: "A13000000000008D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pylon Gai"
 			description: ["Wcześniej zamknąłeś już sprawę „Mana i energia FE”. Nie każda moc daje się zamknąć w kablu. Tu przydają się uważne próby i eksperymenty. Zapisz w planie „Pylon Gai”. Nie traktuj magii jak zwykłego przepisu — jej działanie często wymaga cierpliwości."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "botania:gaia_pylon"
 			dependencies: ["A13000000000008B"]
 			tasks: [{ id: "A14000000000008D" type: "item" item: "botania:gaia_pylon" count: 1L consume_items: false }]
@@ -208,14 +208,14 @@
 		}
 		{
 			id: "A13000000000008E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Terrasteel"
 			description: ["Rytuał wymaga czegoś więcej niż przypadkowo ułożonych składników. Tym razem liczy się „Terrasteel”. Kiedy już zrozumiesz źródło tej mocy, spróbuj wykorzystać je w bazie."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "botania:terrasteel_ingot"
 			dependencies: ["A13000000000008C"]
 			tasks: [{ id: "A14000000000008E" type: "item" item: "botania:terrasteel_ingot" count: 2L consume_items: false }]
@@ -223,14 +223,14 @@
 		}
 		{
 			id: "A13000000000008F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rozpraszacz Gai"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Rozpraszacz Gai”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "botania:gaia_spreader"
 			dependencies: ["A13000000000008D", "A13000000000008E"]
 			tasks: [{ id: "A14000000000008F" type: "item" item: "botania:gaia_spreader" count: 1L consume_items: false }]
@@ -238,14 +238,14 @@
 		}
 		{
 			id: "A130000000000090"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zaklinanie many"
 			description: ["Mana zaczyna przypominać kolejną gałąź twojej technologii. Ostatni sprawdzian to „Zaklinanie many”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "botania:enchanter"
 			dependencies: ["A13000000000008F"]
 			tasks: [{ id: "A140000000000090" type: "item" item: "botania:enchanter" count: 1L consume_items: false }]

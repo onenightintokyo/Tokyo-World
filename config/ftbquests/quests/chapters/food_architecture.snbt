@@ -4,15 +4,15 @@
 	group: "A110000000000004"
 	id: "A120000000000014"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "farmersdelight:stove"
 	order_index: 7
-	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_survival.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 } ]
+	images: [ { image: "tokyoworld:textures/gui/quests/tokyo_stage_survival.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 } ]
 	quests: [
 		{
 			id: "A130000000000109"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Deska do krojenia"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A13000000000010A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Patelnia"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Patelnia”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "farmersdelight:skillet"
 			dependencies: ["A130000000000109"]
 			tasks: [{ id: "A14000000000010A" type: "item" item: "farmersdelight:skillet" count: 1L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A13000000000010B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Piec kuchenny"
 			description: ["Jeśli chcesz wyruszać na dłużej, gospodarstwo musi umieć działać bez ciebie. Warto teraz pomyśleć o „Piec kuchenny”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "farmersdelight:stove"
 			dependencies: ["A130000000000109"]
 			tasks: [{ id: "A14000000000010B" type: "item" item: "farmersdelight:stove" count: 1L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A13000000000010C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Garnek do gotowania"
 			description: ["Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Garnek do gotowania”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "farmersdelight:cooking_pot"
 			dependencies: ["A13000000000010A"]
 			tasks: [{ id: "A14000000000010C" type: "item" item: "farmersdelight:cooking_pot" count: 1L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A13000000000010D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ryż"
 			description: ["Wcześniej zamknąłeś już sprawę „Piec kuchenny”. Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Ryż”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "farmersdelight:rice"
 			dependencies: ["A13000000000010B"]
 			tasks: [{ id: "A14000000000010D" type: "item" item: "farmersdelight:rice" count: 16L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A13000000000010E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Pomidory"
 			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Pomidory”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "farmersdelight:tomato"
 			dependencies: ["A13000000000010C"]
 			tasks: [{ id: "A14000000000010E" type: "item" item: "farmersdelight:tomato" count: 16L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A13000000000010F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kapusta"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Kapusta”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "farmersdelight:cabbage"
 			dependencies: ["A13000000000010D"]
 			tasks: [{ id: "A14000000000010F" type: "item" item: "farmersdelight:cabbage" count: 16L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A130000000000110"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ciasto na wypiek"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Ciasto na wypiek”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "farmersdelight:pie_crust"
 			dependencies: ["A13000000000010E", "A13000000000010F"]
 			tasks: [{ id: "A140000000000110" type: "item" item: "farmersdelight:pie_crust" count: 4L consume_items: false }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A130000000000111"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Szuflada magazynowa"
 			description: ["Wcześniej zamknąłeś już sprawę „Ciasto na wypiek”. Zbiór to dopiero połowa pracy. Trzeba jeszcze wiedzieć, co zrobić z plonami. Zapisz w planie „Szuflada magazynowa”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "functionalstorage:oak_1"
 			dependencies: ["A130000000000110"]
 			tasks: [{ id: "A140000000000111" type: "item" item: "functionalstorage:oak_1" count: 2L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A130000000000112"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Cztery szuflady"
 			description: ["Pszczoły i rośliny nie znają harmonogramu fabryki. Warto nauczyć się ich rytmu. Tym razem liczy się „Cztery szuflady”. Zadbaj o porządek w uprawach, żeby surowce nie ginęły między kolejnymi zbiorami."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "functionalstorage:oak_4"
 			dependencies: ["A130000000000110"]
 			tasks: [{ id: "A140000000000112" type: "item" item: "functionalstorage:oak_4" count: 2L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A130000000000113"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Gabloty na wyposażenie"
 			description: ["Na polach nie wszystko rośnie w tym samym tempie. Przyda się cierpliwość i dobry plan. W notatkach pojawia się „Gabloty na wyposażenie”. Najlepsze plony przychodzą wtedy, gdy pomyślisz o całym cyklu, nie tylko o zbiorach."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "functionalstorage:armory_cabinet"
 			dependencies: ["A130000000000111"]
 			tasks: [{ id: "A140000000000113" type: "item" item: "functionalstorage:armory_cabinet" count: 1L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A130000000000114"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kompaktowa przechowalnia"
 			description: ["Gospodarstwo staje się coraz większe, więc nawet drobiazg potrafi ułatwić cały dzień. Kolejny punkt planu to „Kompaktowa przechowalnia”. Gdy wyjedziesz na wyprawę, gospodarstwo nadal powinno sobie radzić."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "functionalstorage:compacting_drawer"
 			dependencies: ["A130000000000112"]
 			tasks: [{ id: "A140000000000114" type: "item" item: "functionalstorage:compacting_drawer" count: 2L consume_items: false }]
@@ -191,14 +191,14 @@
 		}
 		{
 			id: "A130000000000115"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kosz na plony"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kosz na plony”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 21.84d
+			y: 17.04d
 			icon: "farmersdelight:wooden_basket"
 			dependencies: ["A130000000000113", "A130000000000114"]
 			tasks: [{ id: "A140000000000115" type: "item" item: "farmersdelight:wooden_basket" count: 2L consume_items: false }]
@@ -206,14 +206,14 @@
 		}
 		{
 			id: "A130000000000116"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kuchenne szafki"
 			description: ["Dom jest gotowy, a wyprawy nie muszą zaczynać się od szukania jedzenia. Ostatni sprawdzian to „Kuchenne szafki”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "farmersdelight:oak_cabinet"
 			dependencies: ["A130000000000115"]
 			tasks: [{ id: "A140000000000116" type: "item" item: "farmersdelight:oak_cabinet" count: 2L consume_items: false }]

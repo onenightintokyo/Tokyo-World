@@ -18,5 +18,9 @@
 		{ id: "210000000000000A" item: { id: "minecraft:slime_ball" count: 1 } count: 6 weight: 4.0f }
 		{ id: "210000000000000B" item: { id: "minecraft:blaze_powder" count: 1 } count: 3 weight: 2.0f }
 		{ id: "210000000000000C" item: { id: "minecraft:experience_bottle" count: 1 } count: 5 weight: 4.0f }
+		{ id: "210000000000000D" item: { id: "minecraft:piston" count: 1 } count: 2 weight: 4.0f }
+		{ id: "210000000000000E" item: { id: "minecraft:hopper" count: 1 } count: 1 weight: 3.0f }
+		{ id: "210000000000000F" item: { id: "minecraft:comparator" count: 1 } count: 2 weight: 3.0f }
+		{ id: "2100000000000010" item: { id: "minecraft:redstone_block" count: 1 } count: 2 weight: 3.0f }
 	]
 }

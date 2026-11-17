@@ -4,15 +4,15 @@
 	group: "A110000000000003"
 	id: "A120000000000024"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "draconicevolution:crafting_core"
 	order_index: 41
-	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }]
+	images: [{ image: "tokyoworld:textures/gui/quests/tokyo_stage_endgame.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }]
 	quests: [
 		{
 			id: "A1300000000001F7"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Plan rozbudowy fabryki"
@@ -26,14 +26,14 @@
 		}
 		{
 			id: "A1300000000001F8"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magazyny produkcyjne"
 			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Magazyny produkcyjne”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "minecraft:hopper"
 			dependencies: ["A1300000000001F7"]
 			tasks: [{ id: "A1400000000001F8" type: "item" item: "minecraft:hopper" count: 48L consume_items: false }, { id: "A1800000000001F8" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
@@ -41,14 +41,14 @@
 		}
 		{
 			id: "A1300000000001F9"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ramy technologiczne"
 			description: ["Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Ramy technologiczne”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "mekanism:steel_casing"
 			dependencies: ["A1300000000001F7"]
 			tasks: [{ id: "A1400000000001F9" type: "item" item: "mekanism:steel_casing" count: 16L consume_items: false }, { id: "A1800000000001F9" type: "item" item: "minecraft:redstone" count: 8L consume_items: false }]
@@ -56,14 +56,14 @@
 		}
 		{
 			id: "A1300000000001FA"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Precyzja Create"
 			description: ["Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Precyzja Create”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "create:precision_mechanism"
 			dependencies: ["A1300000000001F8"]
 			tasks: [{ id: "A1400000000001FA" type: "item" item: "create:precision_mechanism" count: 24L consume_items: false }, { id: "A1800000000001FA" type: "item" item: "minecraft:iron_ingot" count: 8L consume_items: false }]
@@ -71,14 +71,14 @@
 		}
 		{
 			id: "A1300000000001FB"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kontrolery AE2"
 			description: ["Wcześniej zamknąłeś już sprawę „Ramy technologiczne”. Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Kontrolery AE2”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "ae2:controller"
 			dependencies: ["A1300000000001F9"]
 			tasks: [{ id: "A1400000000001FB" type: "item" item: "ae2:controller" count: 4L consume_items: false }, { id: "A1800000000001FB" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
@@ -86,14 +86,14 @@
 		}
 		{
 			id: "A1300000000001FC"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Procesory najwyższej klasy"
 			description: ["Tu nie wystarczy pojedyncze urządzenie. Cała ekipa musi wykonać swoją część pracy. Zapisz w planie „Procesory najwyższej klasy”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "mekanism:ultimate_control_circuit"
 			dependencies: ["A1300000000001FA"]
 			tasks: [{ id: "A1400000000001FC" type: "item" item: "mekanism:ultimate_control_circuit" count: 12L consume_items: false }, { id: "A1800000000001FC" type: "item" item: "minecraft:iron_ingot" count: 16L consume_items: false }]
@@ -101,14 +101,14 @@
 		}
 		{
 			id: "A1300000000001FD"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zasobniki energii"
 			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Zasobniki energii”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "mekanism:ultimate_energy_cube"
 			dependencies: ["A1300000000001FB"]
 			tasks: [{ id: "A1400000000001FD" type: "item" item: "mekanism:ultimate_energy_cube" count: 4L consume_items: false }, { id: "A1800000000001FD" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }]
@@ -116,14 +116,14 @@
 		}
 		{
 			id: "A1300000000001FE"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Reaktory Powah"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Reaktory Powah”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź całą konstrukcję z ekipą. Dopiero gdy działa naprawdę, potwierdź ukończenie. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 12.48d
+			y: 9.73d
 			icon: "powah:reactor_nitro"
 			dependencies: ["A1300000000001FC", "A1300000000001FD"]
 			tasks: [{ id: "A1400000000001FE" type: "item" item: "powah:reactor_nitro" count: 2L consume_items: false }, { id: "A1800000000001FE" type: "item" item: "minecraft:copper_ingot" count: 16L consume_items: false }, { id: "A1D00000000001FE" type: "checkmark" }]
@@ -131,14 +131,14 @@
 		}
 		{
 			id: "A1300000000001FF"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Automatyzacja procesów"
 			description: ["Wcześniej zamknąłeś już sprawę „Reaktory Powah”. Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Automatyzacja procesów”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "ae2:pattern_provider"
 			dependencies: ["A1300000000001FE"]
 			tasks: [{ id: "A1400000000001FF" type: "item" item: "ae2:pattern_provider" count: 8L consume_items: false }, { id: "A1800000000001FF" type: "item" item: "minecraft:copper_ingot" count: 24L consume_items: false }]
@@ -146,14 +146,14 @@
 		}
 		{
 			id: "A130000000000200"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Infrastruktura EnderIO"
 			description: ["Dotychczasowe odkrycia mają w końcu pracować na jeden wspólny cel. Warto teraz pomyśleć o „Infrastruktura EnderIO”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "enderio:alloy_smelter"
 			dependencies: ["A1300000000001FE"]
 			tasks: [{ id: "A140000000000200" type: "item" item: "enderio:alloy_smelter" count: 4L consume_items: false }, { id: "A180000000000200" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
@@ -161,14 +161,14 @@
 		}
 		{
 			id: "A130000000000201"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Draconium"
 			description: ["Tu nie wystarczy pojedyncze urządzenie. Cała ekipa musi wykonać swoją część pracy. Zapisz w planie „Draconium”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "draconicevolution:draconium_ingot"
 			dependencies: ["A1300000000001FF"]
 			tasks: [{ id: "A140000000000201" type: "item" item: "draconicevolution:draconium_ingot" count: 24L consume_items: false }, { id: "A180000000000201" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
@@ -176,14 +176,14 @@
 		}
 		{
 			id: "A130000000000202"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Energia drakońska"
 			description: ["Największy projekt wymaga pomysłów, które wcześniej wydawały się ze sobą niepowiązane. Tym razem liczy się „Energia drakońska”. Nie budujesz już pojedynczej maszyny — składasz w całość cały dotychczasowy świat."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "draconicevolution:draconic_energy_core"
 			dependencies: ["A130000000000200"]
 			tasks: [{ id: "A140000000000202" type: "item" item: "draconicevolution:draconic_energy_core" count: 1L consume_items: false }, { id: "A180000000000202" type: "item" item: "ae2:fluix_crystal" count: 24L consume_items: false }]
@@ -191,14 +191,14 @@
 		}
 		{
 			id: "A130000000000203"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Maszyny chemiczne"
 			description: ["Wcześniej zamknąłeś już sprawę „Draconium”. Nawet potężna technologia potrzebuje dobrze przygotowanych fundamentów. W notatkach pojawia się „Maszyny chemiczne”. Wielkie projekty są łatwiejsze, kiedy każdy z ekipy ma w nich własne zadanie."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "mekanism:chemical_crystallizer"
 			dependencies: ["A130000000000201"]
 			tasks: [{ id: "A140000000000203" type: "item" item: "mekanism:chemical_crystallizer" count: 4L consume_items: false }, { id: "A180000000000203" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
@@ -206,14 +206,14 @@
 		}
 		{
 			id: "A130000000000204"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Fabryka agrarna"
 			description: ["Prawdziwa skala przedsięwzięcia staje się jasna, gdy łączysz wcześniejsze konstrukcje. Kolejny punkt planu to „Fabryka agrarna”. Tu każde wcześniejsze odkrycie może znaleźć nowe zastosowanie."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "industrialforegoing:plant_gatherer"
 			dependencies: ["A130000000000202"]
 			tasks: [{ id: "A140000000000204" type: "item" item: "industrialforegoing:plant_gatherer" count: 8L consume_items: false }, { id: "A180000000000204" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }]
@@ -221,14 +221,14 @@
 		}
 		{
 			id: "A130000000000205"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Transport kwantowy"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Transport kwantowy”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem. Sprawdź całą konstrukcję z ekipą. Dopiero gdy działa naprawdę, potwierdź ukończenie. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 24.96d
+			y: 19.47d
 			icon: "mekanism:quantum_entangloporter"
 			dependencies: ["A130000000000203", "A130000000000204"]
 			tasks: [{ id: "A140000000000205" type: "item" item: "mekanism:quantum_entangloporter" count: 4L consume_items: false }, { id: "A180000000000205" type: "item" item: "minecraft:gold_ingot" count: 32L consume_items: false }, { id: "A1D0000000000205" type: "checkmark" }]
@@ -236,14 +236,14 @@
 		}
 		{
 			id: "A130000000000206"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "ZŁOTA ERA TOKYO WORLD"
 			description: ["Zbudowaliście coś więcej niż najdroższą maszynę. Zbudowaliście własny świat. Ostatni sprawdzian to „ZŁOTA ERA TOKYO WORLD”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens. Sprawdź całą konstrukcję z ekipą. Dopiero gdy działa naprawdę, potwierdź ukończenie. Po sprawdzeniu potwierdź wykonanie znacznikiem w questbooku."]
 			x: 8.00d
-			y: 28.08d
+			y: 21.90d
 			icon: "draconicevolution:crafting_core"
 			dependencies: ["A130000000000205"]
 			tasks: [{ id: "A140000000000206" type: "item" item: "draconicevolution:crafting_core" count: 2L consume_items: false }, { id: "A180000000000206" type: "item" item: "minecraft:diamond" count: 32L consume_items: false }, { id: "A190000000000206" type: "item" item: "minecraft:diamond" count: 8L consume_items: false }, { id: "A1D0000000000206" type: "checkmark" }]

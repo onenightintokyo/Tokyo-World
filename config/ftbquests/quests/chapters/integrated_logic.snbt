@@ -4,17 +4,17 @@
 	group: "A110000000000002"
 	id: "A12000000000000A"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "integrateddynamics:logic_programmer"
 	order_index: 17
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }
 	]
 	quests: [
 		{
 			id: "A130000000000075"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kabel logiczny"
@@ -28,14 +28,14 @@
 		}
 		{
 			id: "A130000000000076"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Programowanie logiki"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Programowanie logiki”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "integrateddynamics:logic_programmer"
 			dependencies: ["A130000000000075"]
 			tasks: [{ id: "A140000000000076" type: "item" item: "integrateddynamics:logic_programmer" count: 1L consume_items: false }]
@@ -43,14 +43,14 @@
 		}
 		{
 			id: "A130000000000077"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Karty zmiennych"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Karty zmiennych”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "integrateddynamics:variable"
 			dependencies: ["A130000000000075"]
 			tasks: [{ id: "A140000000000077" type: "item" item: "integrateddynamics:variable" count: 8L consume_items: false }]
@@ -58,14 +58,14 @@
 		}
 		{
 			id: "A130000000000078"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magazyn zmiennych"
 			description: ["Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Magazyn zmiennych”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "integrateddynamics:variablestore"
 			dependencies: ["A130000000000076"]
 			tasks: [{ id: "A140000000000078" type: "item" item: "integrateddynamics:variablestore" count: 1L consume_items: false }]
@@ -73,14 +73,14 @@
 		}
 		{
 			id: "A130000000000079"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Bateria sieciowa"
 			description: ["Wcześniej zamknąłeś już sprawę „Karty zmiennych”. Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Bateria sieciowa”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "integrateddynamics:energy_battery"
 			dependencies: ["A130000000000077"]
 			tasks: [{ id: "A140000000000079" type: "item" item: "integrateddynamics:energy_battery" count: 1L consume_items: false }]
@@ -88,14 +88,14 @@
 		}
 		{
 			id: "A13000000000007A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Generator logiczny"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Generator logiczny”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 9.36d
+			y: 7.30d
 			icon: "integrateddynamics:coal_generator"
 			dependencies: ["A130000000000078", "A130000000000079"]
 			tasks: [{ id: "A14000000000007A" type: "item" item: "integrateddynamics:coal_generator" count: 1L consume_items: false }]
@@ -103,14 +103,14 @@
 		}
 		{
 			id: "A13000000000007B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Materializacja zmiennych"
 			description: ["W sieci każdy przewód i każda skrzynia musi mieć swoje miejsce. W notatkach pojawia się „Materializacja zmiennych”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 2.12d
-			y: 12.48d
+			x: 3.06d
+			y: 9.73d
 			icon: "integrateddynamics:materializer"
 			dependencies: ["A13000000000007A"]
 			tasks: [{ id: "A14000000000007B" type: "item" item: "integrateddynamics:materializer" count: 1L consume_items: false }]
@@ -118,14 +118,14 @@
 		}
 		{
 			id: "A13000000000007C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Proxy sygnałów"
 			description: ["Czas zadbać nie tylko o moc, ale też o drogę, którą mają popłynąć zasoby. Kolejny punkt planu to „Proxy sygnałów”. Skrzynie, kable i sterowniki muszą w końcu mówić jednym językiem."]
-			x: 13.88d
-			y: 12.48d
+			x: 12.94d
+			y: 9.73d
 			icon: "integrateddynamics:proxy"
 			dependencies: ["A13000000000007A"]
 			tasks: [{ id: "A14000000000007C" type: "item" item: "integrateddynamics:proxy" count: 1L consume_items: false }]
@@ -133,14 +133,14 @@
 		}
 		{
 			id: "A13000000000007D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kryształy Menril"
 			description: ["Wcześniej zamknąłeś już sprawę „Materializacja zmiennych”. Na tablicy sterowania pojawia się kolejny sygnał, którego trzeba pilnować. Warto teraz pomyśleć o „Kryształy Menril”. Dobry system powinien wiedzieć, gdzie wysłać to, co właśnie wyprodukowałeś."]
-			x: 2.12d
-			y: 15.60d
+			x: 3.06d
+			y: 12.17d
 			icon: "integrateddynamics:crystalized_menril_chunk"
 			dependencies: ["A13000000000007B"]
 			tasks: [{ id: "A14000000000007D" type: "item" item: "integrateddynamics:crystalized_menril_chunk" count: 12L consume_items: false }]
@@ -148,14 +148,14 @@
 		}
 		{
 			id: "A13000000000007E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kryształy Chorus"
 			description: ["Gdy maszyny ruszą równocześnie, szybko wyjdzie na jaw najsłabsza część instalacji. Zapisz w planie „Kryształy Chorus”. Zadbaj o zapas i drogę awaryjną, zanim podłączysz kolejną maszynę."]
-			x: 13.88d
-			y: 15.60d
+			x: 12.94d
+			y: 12.17d
 			icon: "integrateddynamics:crystalized_chorus_chunk"
 			dependencies: ["A13000000000007C"]
 			tasks: [{ id: "A14000000000007E" type: "item" item: "integrateddynamics:crystalized_chorus_chunk" count: 12L consume_items: false }]
@@ -163,14 +163,14 @@
 		}
 		{
 			id: "A13000000000007F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Programowanie mobilne"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Programowanie mobilne”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 18.72d
+			y: 14.60d
 			icon: "integrateddynamics:portable_logic_programmer"
 			dependencies: ["A13000000000007D", "A13000000000007E"]
 			tasks: [{ id: "A14000000000007F" type: "item" item: "integrateddynamics:portable_logic_programmer" count: 1L consume_items: false }]
@@ -178,14 +178,14 @@
 		}
 		{
 			id: "A130000000000080"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Drewno Menril"
 			description: ["Sygnał wykonuje za ciebie pracę, która kiedyś wymagała kilkunastu przełączników. Ostatni sprawdzian to „Drewno Menril”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 21.84d
+			y: 17.04d
 			icon: "integrateddynamics:menril_log"
 			dependencies: ["A13000000000007F"]
 			tasks: [{ id: "A140000000000080" type: "item" item: "integrateddynamics:menril_log" count: 24L consume_items: false }]

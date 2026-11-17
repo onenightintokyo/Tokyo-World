@@ -4,17 +4,17 @@
 	group: "A110000000000002"
 	id: "A120000000000006"
 	default_hide_dependency_lines: false
-	default_quest_size: 1.65d
+	default_quest_size: 1.55d
 	icon: "mekanism:advanced_control_circuit"
 	order_index: 15
 	images: [
-		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 24.0d height: 7.8d x: 8.0d y: -6.5d order: -1 }
+		{ image: "tokyoworld:textures/gui/quests/tokyo_stage_industry.png" width: 25.5d height: 8.2d x: 8.0d y: -6.5d order: -1 }
 	]
 	quests: [
 		{
 			id: "A130000000000031"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kable energetyczne"
@@ -28,14 +28,14 @@
 		}
 		{
 			id: "A130000000000032"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Obwody zaawansowane"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Obwody zaawansowane”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 2.12d
-			y: 3.12d
+			x: 3.06d
+			y: 2.43d
 			icon: "mekanism:advanced_control_circuit"
 			dependencies: ["A130000000000031"]
 			tasks: [{ id: "A140000000000032" type: "item" item: "mekanism:advanced_control_circuit" count: 4L consume_items: false }]
@@ -43,14 +43,14 @@
 		}
 		{
 			id: "A130000000000033"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Elitarne obwody"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Elitarne obwody”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 13.88d
-			y: 3.12d
+			x: 12.94d
+			y: 2.43d
 			icon: "mekanism:elite_control_circuit"
 			dependencies: ["A130000000000031"]
 			tasks: [{ id: "A140000000000033" type: "item" item: "mekanism:elite_control_circuit" count: 2L consume_items: false }]
@@ -58,14 +58,14 @@
 		}
 		{
 			id: "A130000000000034"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Obwody najwyższej klasy"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Obwody najwyższej klasy”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 2.12d
-			y: 6.24d
+			x: 3.06d
+			y: 4.87d
 			icon: "mekanism:ultimate_control_circuit"
 			dependencies: ["A130000000000032"]
 			tasks: [{ id: "A140000000000034" type: "item" item: "mekanism:ultimate_control_circuit" count: 1L consume_items: false }]
@@ -73,14 +73,14 @@
 		}
 		{
 			id: "A130000000000035"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kompresor osmu"
 			description: ["Wcześniej zamknąłeś już sprawę „Elitarne obwody”. Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Kompresor osmu”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 13.88d
-			y: 6.24d
+			x: 12.94d
+			y: 4.87d
 			icon: "mekanism:osmium_compressor"
 			dependencies: ["A130000000000033"]
 			tasks: [{ id: "A140000000000035" type: "item" item: "mekanism:osmium_compressor" count: 1L consume_items: false }]
@@ -88,14 +88,14 @@
 		}
 		{
 			id: "A130000000000036"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Separator elektrolityczny"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Separator elektrolityczny”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 2.12d
-			y: 9.36d
+			x: 3.06d
+			y: 7.30d
 			icon: "mekanism:electrolytic_separator"
 			dependencies: ["A130000000000034"]
 			tasks: [{ id: "A140000000000036" type: "item" item: "mekanism:electrolytic_separator" count: 1L consume_items: false }]
@@ -103,14 +103,14 @@
 		}
 		{
 			id: "A130000000000037"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Utleniacz chemiczny"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Utleniacz chemiczny”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 13.88d
-			y: 9.36d
+			x: 12.94d
+			y: 7.30d
 			icon: "mekanism:chemical_oxidizer"
 			dependencies: ["A130000000000035"]
 			tasks: [{ id: "A140000000000037" type: "item" item: "mekanism:chemical_oxidizer" count: 1L consume_items: false }]
@@ -118,14 +118,14 @@
 		}
 		{
 			id: "A130000000000038"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Infuzor chemiczny"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Infuzor chemiczny”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 2.12d
-			y: 12.48d
+			x: 3.06d
+			y: 9.73d
 			icon: "mekanism:chemical_infuser"
 			dependencies: ["A130000000000036"]
 			tasks: [{ id: "A140000000000038" type: "item" item: "mekanism:chemical_infuser" count: 1L consume_items: false }]
@@ -133,14 +133,14 @@
 		}
 		{
 			id: "A130000000000039"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Komora reakcji"
 			description: ["Wcześniej zamknąłeś już sprawę „Utleniacz chemiczny”. Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Komora reakcji”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 13.88d
-			y: 12.48d
+			x: 12.94d
+			y: 9.73d
 			icon: "mekanism:pressurized_reaction_chamber"
 			dependencies: ["A130000000000037"]
 			tasks: [{ id: "A140000000000039" type: "item" item: "mekanism:pressurized_reaction_chamber" count: 1L consume_items: false }]
@@ -148,14 +148,14 @@
 		}
 		{
 			id: "A13000000000003A"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Kondensacja gazów"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Kondensacja gazów”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 15.60d
+			y: 12.17d
 			icon: "mekanism:rotary_condensentrator"
 			dependencies: ["A130000000000038", "A130000000000039"]
 			tasks: [{ id: "A14000000000003A" type: "item" item: "mekanism:rotary_condensentrator" count: 1L consume_items: false }]
@@ -163,14 +163,14 @@
 		}
 		{
 			id: "A13000000000003B"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Rozpuszczanie chemiczne"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Rozpuszczanie chemiczne”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 2.12d
-			y: 18.72d
+			x: 3.06d
+			y: 14.60d
 			icon: "mekanism:chemical_dissolution_chamber"
 			dependencies: ["A13000000000003A"]
 			tasks: [{ id: "A14000000000003B" type: "item" item: "mekanism:chemical_dissolution_chamber" count: 1L consume_items: false }]
@@ -178,14 +178,14 @@
 		}
 		{
 			id: "A13000000000003C"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Krystalizacja chemiczna"
 			description: ["Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Krystalizacja chemiczna”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 13.88d
-			y: 18.72d
+			x: 12.94d
+			y: 14.60d
 			icon: "mekanism:chemical_crystallizer"
 			dependencies: ["A13000000000003A"]
 			tasks: [{ id: "A14000000000003C" type: "item" item: "mekanism:chemical_crystallizer" count: 1L consume_items: false }]
@@ -193,14 +193,14 @@
 		}
 		{
 			id: "A13000000000003D"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Zbiornik płynów"
 			description: ["Wcześniej zamknąłeś już sprawę „Rozpuszczanie chemiczne”. Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Zbiornik płynów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 2.12d
-			y: 21.84d
+			x: 3.06d
+			y: 17.04d
 			icon: "mekanism:basic_fluid_tank"
 			dependencies: ["A13000000000003B"]
 			tasks: [{ id: "A14000000000003D" type: "item" item: "mekanism:basic_fluid_tank" count: 1L consume_items: false }]
@@ -208,14 +208,14 @@
 		}
 		{
 			id: "A13000000000003E"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Magazyn energii"
 			description: ["Nawet najdroższa maszyna stanie, gdy zabraknie jej jednego porządnego elementu. Kolejny punkt planu to „Magazyn energii”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 13.88d
-			y: 21.84d
+			x: 12.94d
+			y: 17.04d
 			icon: "mekanism:advanced_energy_cube"
 			dependencies: ["A13000000000003C"]
 			tasks: [{ id: "A14000000000003E" type: "item" item: "mekanism:advanced_energy_cube" count: 1L consume_items: false }]
@@ -223,14 +223,14 @@
 		}
 		{
 			id: "A13000000000003F"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Ogromny akumulator"
 			description: ["Wielkie urządzenia potrzebują dobrego materiału i cierpliwego inżyniera. Warto teraz pomyśleć o „Ogromny akumulator”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 2.12d
-			y: 24.96d
+			x: 3.06d
+			y: 19.47d
 			icon: "mekanism:ultimate_energy_cube"
 			dependencies: ["A13000000000003D"]
 			tasks: [{ id: "A14000000000003F" type: "item" item: "mekanism:ultimate_energy_cube" count: 1L consume_items: false }]
@@ -238,14 +238,14 @@
 		}
 		{
 			id: "A130000000000040"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Sortowanie materiałów"
 			description: ["W warsztacie zostaje coraz mniej miejsca, a lista potrzebnych komponentów rośnie. Zapisz w planie „Sortowanie materiałów”. W hucie błędy kosztują sporo paliwa i jeszcze więcej cierpliwości."]
-			x: 13.88d
-			y: 24.96d
+			x: 12.94d
+			y: 19.47d
 			icon: "mekanism:logistical_sorter"
 			dependencies: ["A13000000000003E"]
 			tasks: [{ id: "A140000000000040" type: "item" item: "mekanism:logistical_sorter" count: 1L consume_items: false }]
@@ -253,14 +253,14 @@
 		}
 		{
 			id: "A130000000000041"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Cyfrowa koparka"
 			description: ["Wcześniej zamknąłeś już sprawę „Ogromny akumulator”. Huta nabiera rozpędu. Przy takiej temperaturze na prowizorkę nie ma już miejsca. Tym razem liczy się „Cyfrowa koparka”. Zanim odpalisz wielką linię, przygotuj solidne komponenty."]
-			x: 2.12d
-			y: 28.08d
+			x: 3.06d
+			y: 21.90d
 			icon: "mekanism:digital_miner"
 			dependencies: ["A13000000000003F"]
 			tasks: [{ id: "A140000000000041" type: "item" item: "mekanism:digital_miner" count: 1L consume_items: false }]
@@ -268,14 +268,14 @@
 		}
 		{
 			id: "A130000000000042"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Transport kwantowy"
 			description: ["Stal w skrzyniach niczego nie zmieni, dopóki nie zacznie pracować w konstrukcji. W notatkach pojawia się „Transport kwantowy”. Przy tej skali produkcji nawet mały przestój szybko daje się we znaki."]
-			x: 13.88d
-			y: 28.08d
+			x: 12.94d
+			y: 21.90d
 			icon: "mekanism:quantum_entangloporter"
 			dependencies: ["A130000000000040"]
 			tasks: [{ id: "A140000000000042" type: "item" item: "mekanism:quantum_entangloporter" count: 1L consume_items: false }]
@@ -283,14 +283,14 @@
 		}
 		{
 			id: "A130000000000043"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Sieć QIO"
 			description: ["Dwie drogi rozwoju wreszcie spotykają się w jednym miejscu. Tym razem chodzi o „Sieć QIO”. Dopiero gdy obie części są gotowe, możesz przekonać się, jak pracują razem."]
 			x: 8.00d
-			y: 31.20d
+			y: 24.34d
 			icon: "mekanism:qio_drive_array"
 			dependencies: ["A130000000000041", "A130000000000042"]
 			tasks: [{ id: "A140000000000043" type: "item" item: "mekanism:qio_drive_array" count: 1L consume_items: false }]
@@ -298,14 +298,14 @@
 		}
 		{
 			id: "A130000000000044"
-			size: 1.65d
-			icon_scale: 1.12d
+			size: 1.55d
+			icon_scale: 1.08d
 			hide_dependency_lines: false
 			hide_dependent_lines: false
 			title: "Teleportacja technologiczna"
 			description: ["Procesy zaczynają się zazębiać i każda maszyna ma swoje miejsce. Ostatni sprawdzian to „Teleportacja technologiczna”. Niech będzie dowodem na to, że cała wcześniejsza praca miała sens."]
 			x: 8.00d
-			y: 34.32d
+			y: 26.77d
 			icon: "mekanism:teleporter"
 			dependencies: ["A130000000000043"]
 			tasks: [{ id: "A140000000000044" type: "item" item: "mekanism:teleporter" count: 1L consume_items: false }]
