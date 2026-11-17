@@ -54,6 +54,28 @@ for project, (filename, sha1) in multiplayer_pins.items():
     assert entry.get("sha1") == sha1, f"{project}: checksum differs from server"
     assert entry.get("url", "").startswith("https://mediafilez.forgecdn.net/files/")
 
+# Exact client/server binaries. Identical displayed version numbers do
+# not prove identical Forge networking or registry contents.
+binary_pins = {
+    "ae2wtlib": ("repair-dependencies", "curseforge", "ae2wtlib-15.3.3-forge.jar", "1a546af04844677542b6914191783c7de15364fc", "39e5cede37d5c6a07592d6c1e83398791e037f3d434bc44f7460cd085a4de5f4"),
+    "mob-grinding-utils": ("repair-dependencies", "curseforge", "mob_grinding_utils-1.20.1-1.1.0.jar", "58991a3a94e1f982d0e558bed7b60226a097ae49", "6e0fa6a245fd56cce99d60ac908b5028bc6392a59833c45e0bc3e27ec7f0a2f9"),
+    "create-slice-and-dice": ("repair-dependencies", "curseforge", "sliceanddice-forge-3.6.0.jar", "a4e47dbf4382ebe092b6c2cb71919e412b456d84", "bafdcbeda044603b59eb16059829a6698c1a58d1ce865b8658e598f2718d315a"),
+    "advancedae": ("repair-dependencies", "modrinth-sha1", "AdvancedAE-1.3.6-1.20.1.jar", "d8d9612c37a6cece6cd885f33e52c1489467a13f", "e216f95ac73eb4c1e8f3db22cc3d30f37f2612a7cb1762b9ebce148d0d5657b2"),
+    "ae2": ("tech-core", "modrinth-sha1", "appliedenergistics2-forge-15.4.12.jar", "4e81984691e35c729880a11f72deb52dcc74d41f", "b9c5928893a20d3feb0b4393e2c23d756a16d9abee24d9c14c98e6096d53844d"),
+}
+for project, (group_expected, source_expected, name_expected, sha1, sha256) in binary_pins.items():
+    entries = projects.get(project, [])
+    assert len(entries) == 1, f"{project}: expected exactly one manifest entry"
+    group, entry = entries[0]
+    assert group == group_expected, f"{project}: not in mandatory profile"
+    assert entry.get("source") == source_expected, f"{project}: wrong source"
+    assert entry.get("fileName") == name_expected, f"{project}: unexpected JAR"
+    assert entry.get("sha1") == sha1 and entry.get("sha256") == sha256, (
+        f"{project}: diverged from server SHA1/SHA256")
+    assert entry.get("requiredForMultiplayer") is True, f"{project}: multiplayer required flag absent"
+assert "create-1.20.1-6.0.8.jar|b13d912b9247a38d66d11598c121442585a1c1e9" in (
+    ROOT / "modpacks/base_mod_hashes.txt").read_text("utf-8"), "Server Create 6.0.8 hash mismatch"
+
 # Twilight's custom registries must match the dedicated-server JAR exactly.
 twilight = projects.get("twilightforest", [])
 assert len(twilight) == 1, "Expected one Twilight Forest entry"
