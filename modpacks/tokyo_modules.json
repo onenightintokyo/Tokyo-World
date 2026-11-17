@@ -241,39 +241,14 @@
         "match": "^botanytrees[-_ .]"
       },
       {
-        "project": "compact-machines",
-        "label": "Compact Machines — wielomaszynowe pokoje",
-        "match": "^(compactmachines|compact[-_]machines)[-_ .]"
-      },
-      {
         "project": "entangled",
         "label": "Entangled — bezprzewodowe linki do bloków",
         "match": "^entangled[-_ .]"
       },
       {
-        "project": "building-gadgets",
-        "label": "Building Gadgets — narzędzia do budowy baz",
-        "match": "^(buildinggadgets|building[-_]gadgets)[-_ .]"
-      },
-      {
-        "project": "mining-gadgets",
-        "label": "Mining Gadgets — techniczne kopanie",
-        "match": "^(mininggadgets|mining[-_]gadgets)[-_ .]"
-      },
-      {
         "project": "mob-grinding-utils",
         "label": "Mob Grinding Utils — przemysłowe farmy mobów",
         "match": "^(mobgrindingutils|mob[-_]grinding[-_]utils)[-_ .]"
-      },
-      {
-        "project": "flux-networks",
-        "label": "Flux Networks — bezprzewodowe FE",
-        "match": "^(fluxnetworks|flux[-_]networks)[-_ .]"
-      },
-      {
-        "project": "laserio",
-        "label": "LaserIO — laserowa logistyka fabryk",
-        "match": "^(laserio|laser[_-]io)[-_ .]"
       },
       {
         "project": "applied-botanics",
@@ -582,6 +557,94 @@
         "label": "Packet Fixer 1.4.2 — większe pakiety sieciowe, wymagany na kliencie i serwerze",
         "versionId": "AScUisZl",
         "match": "(?i)^packetfixer(?:forge)?[-_.].*\\.jar$"
+      },
+      {
+        "project": "compact-machines",
+        "label": "Compact Machines — wielomaszynowe pokoje",
+        "match": "^(compactmachines|compact[-_]machines)[-_ .]",
+        "source": "curseforge",
+        "fileName": "compactmachines-forge-6.0.3.jar",
+        "url": "https://mediafilez.forgecdn.net/files/6000/230/compactmachines-forge-6.0.3.jar",
+        "sha1": "41debe12bc7b013c39998788ed02ee971a11518f",
+        "sha256": "2661e00951be5e355bf68786fc4ffd573a22d41a86dbb414e954947dc7522f57",
+        "requiredForMultiplayer": true
+      },
+      {
+        "project": "building-gadgets",
+        "label": "Building Gadgets — narzędzia do budowy baz",
+        "match": "^(buildinggadgets|building[-_]gadgets)[-_ .]",
+        "source": "curseforge",
+        "fileName": "buildinggadgets2-1.0.8.jar",
+        "url": "https://mediafilez.forgecdn.net/files/6850/495/buildinggadgets2-1.0.8.jar",
+        "sha1": "d06a806e8ca84a9e96a69c32da4b43226a51e0c9",
+        "sha256": "59efb399a4acdb69a01a970b1f1e3c5584495aabc726ff40857ab4aed9372c83",
+        "requiredForMultiplayer": true
+      },
+      {
+        "project": "mining-gadgets",
+        "label": "Mining Gadgets — techniczne kopanie",
+        "match": "^(mininggadgets|mining[-_]gadgets)[-_ .]",
+        "source": "curseforge",
+        "fileName": "mininggadgets-1.15.6.jar",
+        "url": "https://mediafilez.forgecdn.net/files/4864/220/mininggadgets-1.15.6.jar",
+        "sha1": "79cfc6e0afc3ed3fc86bbda274ef3fccdc8260dd",
+        "sha256": "cd3b6bbea5fd439df793b8213ccc906c2d025811dfb09b766acb2364ec513019",
+        "requiredForMultiplayer": true
+      },
+      {
+        "project": "flux-networks",
+        "label": "Flux Networks — bezprzewodowe FE",
+        "match": "^(fluxnetworks|flux[-_]networks)[-_ .]",
+        "source": "curseforge",
+        "fileName": "FluxNetworks-1.20.1-7.2.1.15.jar",
+        "url": "https://mediafilez.forgecdn.net/files/5234/697/FluxNetworks-1.20.1-7.2.1.15.jar",
+        "sha1": "65cea2d3da2a6d6fd274ef1dad37a516466be22c",
+        "sha256": "8d24f39b6e1b2d83426a28a62ae0b65294b7e6e925e39a26b62f8ae077f54a89",
+        "requiredForMultiplayer": true
+      },
+      {
+        "project": "laserio",
+        "label": "LaserIO — laserowa logistyka fabryk",
+        "match": "^(laserio|laser[_-]io)[-_ .]",
+        "source": "curseforge",
+        "fileName": "laserio-1.6.8.jar",
+        "url": "https://mediafilez.forgecdn.net/files/5074/767/laserio-1.6.8.jar",
+        "sha1": "f9e8dc07506eaa058f64e875e1f46dcd44ab6003",
+        "sha256": "f07fc6cb7f2aa28197e87ffc3a35062390259ad803d8996b08b13473c0af6790",
+        "requiredForMultiplayer": true
+      },
+      {
+        "project": "iron-chests-restocked",
+        "label": "Iron Chests — skrzynie poziomowane",
+        "match": "^(ironchests|iron_chests)[-_ .]",
+        "source": "curseforge",
+        "fileName": "ironchests-5.0.2-forge.jar",
+        "url": "https://mediafilez.forgecdn.net/files/4638/51/ironchests-5.0.2-forge.jar",
+        "sha1": "610aa09a1d83253db6bf32f6b12c84d446fa99b6",
+        "sha256": "e2cba007df03cdfd57427f87b02bad21508cd76ab2bc5d54c0112acb308867b6",
+        "requiredForMultiplayer": true
+      },
+      {
+        "project": "born-in-chaos",
+        "label": "Born in Chaos — trudniejsze potwory",
+        "match": "^(Born_in_Chaos|borninchaos)[-_ .]",
+        "source": "curseforge",
+        "fileName": "born_in_chaos_[Forge]1.20.1_1.7.5.jar",
+        "url": "https://mediafilez.forgecdn.net/files/7917/933/born_in_chaos_%5BForge%5D1.20.1_1.7.5.jar",
+        "sha1": "4d616e1ccef4c55e14b04ca63228d826f4fdda5e",
+        "sha256": "9f242f4f3330f3d0d985f5f3ce9a92fe09016ff9c6162252f201d17009b28d7d",
+        "requiredForMultiplayer": true
+      },
+      {
+        "project": "the-graveyard",
+        "label": "The Graveyard — cmentarze i lochy",
+        "match": "^(graveyard|the_graveyard)[-_ .]",
+        "source": "curseforge",
+        "fileName": "The_Graveyard_3.1_(FORGE)_for_1.20.1.jar",
+        "url": "https://mediafilez.forgecdn.net/files/5114/579/The_Graveyard_3.1_(FORGE)_for_1.20.1.jar",
+        "sha1": "11ae4c94aa94b38b78cf9b901dad4612b679f8ac",
+        "sha256": "f26aace5460890b9a46094586530708517b58fc1e8752055882fd4f03912f07d",
+        "requiredForMultiplayer": true
       }
     ],
     "wave-industry": [
@@ -630,11 +693,6 @@
         "match": "^(toms_storage|tomsstorage)[-_ .]"
       },
       {
-        "project": "iron-chests-restocked",
-        "label": "Iron Chests — skrzynie poziomowane",
-        "match": "^(ironchests|iron_chests)[-_ .]"
-      },
-      {
         "project": "trash-cans",
         "label": "Trash Cans — automatyczne usuwanie nadmiaru",
         "match": "^(trashcans|trash_cans)[-_ .]"
@@ -657,19 +715,9 @@
         "match": "^(mowziesmobs|mowzies_mobs)[-_ .]"
       },
       {
-        "project": "born-in-chaos",
-        "label": "Born in Chaos — trudniejsze potwory",
-        "match": "^(Born_in_Chaos|borninchaos)[-_ .]"
-      },
-      {
         "project": "mutant-monsters",
         "label": "Mutant Monsters — potężniejsze wersje mobów",
         "match": "^(mutantmonsters|mutant_monsters)[-_ .]"
-      },
-      {
-        "project": "the-graveyard",
-        "label": "The Graveyard — cmentarze i lochy",
-        "match": "^(graveyard|the_graveyard)[-_ .]"
       },
       {
         "project": "guard-villagers",
