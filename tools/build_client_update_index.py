@@ -23,6 +23,13 @@ def main() -> None:
     ).strip()
     if len(commit) != 40 or any(c not in "0123456789abcdefABCDEF" for c in commit):
         raise ValueError("Not a full immutable commit SHA")
+    checkout_commit = subprocess.check_output(
+        ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
+    ).strip()
+    if checkout_commit.lower() != commit.lower():
+        raise ValueError(
+            "Build commit mismatch: GITHUB_SHA differs from checked-out HEAD"
+        )
     tracked = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT)
     entries = []
     for name in sorted(x.decode("utf-8") for x in tracked.split(b"\0") if x):
@@ -31,14 +38,18 @@ def main() -> None:
         file = ROOT / name
         if not file.is_file() or file.is_symlink():
             raise ValueError(f"Missing or symlinked managed file: {name}")
-        digest = hashlib.sha256()
-        with file.open("rb") as stream:
-            for chunk in iter(lambda: stream.read(1024 * 1024), b""):
-                digest.update(chunk)
+        # Hash immutable Git blob bytes, NOT the checked-out filesystem:
+        # Git for Windows can convert LF to CRLF during checkout, whereas
+        # raw.githubusercontent.com serves the original committed LF bytes.
+        canonical = subprocess.check_output(
+            ["git", "show", f"{commit}:{name}"], cwd=ROOT
+        )
+        if len(canonical) > 500_000_000:
+            raise ValueError(f"Managed Git blob too large: {name}")
         entries.append({
             "path": name,
-            "sha256": digest.hexdigest(),
-            "size": file.stat().st_size,
+            "sha256": hashlib.sha256(canonical).hexdigest(),
+            "size": len(canonical),
         })
     paths = {item["path"] for item in entries}
     if not EXTRAS.issubset(paths) or len(entries) < 10:
