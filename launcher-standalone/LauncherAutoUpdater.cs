@@ -9,72 +9,55 @@ namespace TokyoWorldLauncher;
 
 internal static class LauncherAutoUpdater
 {
-    // Fetch signed-in user's latest successful Windows build from the configured repo.
-    // Never hardcode a private token into the EXE.
+    // Fetch a pinned, SHA256-verified release through a static, public update feed.
+    // No user token, GitHub REST API calls, or hourly API limit are needed.
     public static async Task<bool> TryUpdateAsync(LauncherSettings settings, IProgress<string> report)
     {
-        // GitHub Releases work for everybody once the repository is public.
-        // A personal token remains optional for the owner of a private repo.
+        // Public immutable release feed, served as a static GitHub raw file.
+        // This DOES NOT call api.github.com and cannot consume the unauthenticated
+        // GitHub REST API quota (60 requests/hour per public IP).
+        // Game file updates use a companion public client-files.json feed.
         if (!System.Text.RegularExpressions.Regex.IsMatch(settings.Repository ?? "",
                 @"\A[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\z"))
             throw new InvalidDataException("Nieprawidłowa nazwa repozytorium aktualizacji.");
 
         using var http = new HttpClient { Timeout = TimeSpan.FromMinutes(10) };
-        http.DefaultRequestHeaders.UserAgent.ParseAdd("TokyoWorldLauncher/PublicReleaseUpdater");
-        http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/vnd.github+json"));
-        http.DefaultRequestHeaders.Add("X-GitHub-Api-Version", "2022-11-28");
-        // The official Tokyo World source is public. Ignore any previously
-        // saved token so a revoked credential cannot break anonymous updates.
-        string token = settings.Repository.Equals("onenightintokyo/Tokyo-World",
-            StringComparison.OrdinalIgnoreCase) ? "" : settings.GetToken();
-        if (!string.IsNullOrWhiteSpace(token))
-            http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-
-        string api = "https://api.github.com/repos/" + settings.Repository;
-        using var releasesResponse = await http.GetAsync(api + "/releases?per_page=50");
-        if (releasesResponse.StatusCode == System.Net.HttpStatusCode.NotFound)
-        {
-            report.Report("Źródło aktualizacji jest prywatne. Po ustawieniu publicznego repo znajomi będą aktualizować EXE bez tokenu.");
-            return false;
-        }
-        releasesResponse.EnsureSuccessStatusCode();
-        using var releases = JsonDocument.Parse(await releasesResponse.Content.ReadAsStreamAsync());
-        JsonElement selectedAsset = default;
-        Version? publishedVersion = null;
-        string selectedTag = "";
-        foreach (var release in releases.RootElement.EnumerateArray())
-        {
-            if (release.GetProperty("draft").GetBoolean() || release.GetProperty("prerelease").GetBoolean())
-                continue;
-            string tag = release.GetProperty("tag_name").GetString() ?? "";
-            var match = System.Text.RegularExpressions.Regex.Match(tag,
-                @"\Atokyo-world-launcher-v(?<version>\d+\.\d+\.\d+)\z",
-                System.Text.RegularExpressions.RegexOptions.IgnoreCase);
-            if (!match.Success || !Version.TryParse(match.Groups["version"].Value + ".0", out Version? version))
-                continue;
-            if (publishedVersion is not null && version <= publishedVersion) continue;
-            var assets = release.GetProperty("assets").EnumerateArray().Where(a =>
-                a.GetProperty("name").GetString() == "TokyoWorldLauncher.exe").ToArray();
-            if (assets.Length != 1) continue;
-            selectedAsset = assets[0].Clone();
-            publishedVersion = version;
-            selectedTag = tag;
-        }
-        if (publishedVersion is null) return false;
-        string checksum = selectedAsset.TryGetProperty("digest", out var digest)
-            ? digest.GetString() ?? "" : "";
-        long size = selectedAsset.GetProperty("size").GetInt64();
-        string downloadUrl = selectedAsset.GetProperty("browser_download_url").GetString() ?? "";
+        http.DefaultRequestHeaders.UserAgent.ParseAdd("TokyoWorldLauncher/StaticUpdateFeed");
+        string feedUrl = "https://raw.githubusercontent.com/" + settings.Repository +
+            "/main/.github/launcher-updates/latest.json";
+        using var feedResponse = await http.GetAsync(feedUrl, HttpCompletionOption.ResponseHeadersRead);
+        if (feedResponse.StatusCode == System.Net.HttpStatusCode.NotFound)
+            throw new InvalidOperationException(
+                "Brak publicznego pliku aktualizacji: .github/launcher-updates/latest.json.");
+        if (!feedResponse.IsSuccessStatusCode)
+            throw new HttpRequestException(
+                "Źródło aktualizacji nie odpowiada (" + (int)feedResponse.StatusCode +
+                "). Spróbuj ponownie później.");
+        if (feedResponse.Content.Headers.ContentLength is > 64_000)
+            throw new InvalidDataException("Zbyt duży manifest aktualizacji.");
+        await using var feedStream = await feedResponse.Content.ReadAsStreamAsync();
+        using var feed = await JsonDocument.ParseAsync(feedStream);
+        var metadata = feed.RootElement;
+        if (!metadata.TryGetProperty("schema", out var schema) || schema.GetInt32() != 1)
+            throw new InvalidDataException("Nieobsługiwana wersja manifestu aktualizacji.");
+        string versionText = metadata.GetProperty("version").GetString() ?? "";
+        if (!System.Text.RegularExpressions.Regex.IsMatch(versionText,
+                @"\A[0-9]+\.[0-9]+\.[0-9]+\z") ||
+            !Version.TryParse(versionText + ".0", out Version? publishedVersion))
+            throw new InvalidDataException("Błędny numer najnowszej wersji.");
+        string selectedTag = "tokyo-world-launcher-v" + versionText;
+        string checksum = "sha256:" + (metadata.GetProperty("sha256").GetString() ?? "");
+        long size = metadata.GetProperty("size").GetInt64();
+        string downloadUrl = metadata.GetProperty("download_url").GetString() ?? "";
         if (!System.Text.RegularExpressions.Regex.IsMatch(checksum,
                 @"\Asha256:[a-f0-9]{64}\z",
                 System.Text.RegularExpressions.RegexOptions.IgnoreCase) ||
             size < 10_000_000 || size > 350_000_000 ||
             !Uri.TryCreate(downloadUrl, UriKind.Absolute, out Uri? parsed) ||
             parsed.Scheme != Uri.UriSchemeHttps || parsed.Host != "github.com" ||
-            !parsed.AbsolutePath.StartsWith(
-                "/" + settings.Repository + "/releases/download/" + selectedTag + "/",
-                StringComparison.Ordinal) ||
-            !parsed.AbsolutePath.EndsWith("/TokyoWorldLauncher.exe", StringComparison.Ordinal))
+            !parsed.AbsolutePath.Equals(
+                "/" + settings.Repository + "/releases/download/" + selectedTag +
+                "/TokyoWorldLauncher.exe", StringComparison.OrdinalIgnoreCase))
             throw new InvalidDataException("Nieprawidłowe źródło lub SHA-256 aktualizacji.");
 
         string current = Environment.ProcessPath ?? throw new InvalidOperationException("Nie znam ścieżki EXE.");
