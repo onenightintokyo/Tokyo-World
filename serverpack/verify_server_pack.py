@@ -19,6 +19,7 @@ REQUIRED = {
     "sophisticatedcore-1.20.1-1.5.33.2475.jar",
     "ExtendedAE-1.20-1.4.18-forge.jar",
     "twilightforest-1.20.1-4.3.2508-universal.jar",
+    "jei-1.20.1-forge-15.74.0.234.jar",
     "ae2wtlib-15.3.3-forge.jar",
     "mob_grinding_utils-1.20.1-1.1.0.jar",
     "sliceanddice-forge-3.6.0.jar",
@@ -88,6 +89,10 @@ def verify() -> None:
         if bad_zip_file is not None:
             raise RuntimeError("Corrupt ZIP member: " + bad_zip_file)
         for name in mods:
+            if name == "mods/jei-1.20.1-forge-15.74.0.234.jar":
+                actual_jei_sha1 = hashlib.sha1(zf.read(name)).hexdigest()
+                if actual_jei_sha1 != "1ae408badfe8b57417f465a06fc4d03215dba993":
+                    raise RuntimeError("Server JEI SHA1 mismatched to client pinned 15.74.0.234")
             digest = hashlib.sha256(zf.read(name)).hexdigest()
             if digest != checksums[name]:
                 raise RuntimeError("JAR SHA256 mismatch: " + name)
