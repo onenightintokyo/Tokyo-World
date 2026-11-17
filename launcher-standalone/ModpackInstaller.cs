@@ -395,6 +395,13 @@ internal sealed class ModpackInstaller
             "Minecraft 1.20.1 / Forge 47.4.28"
         };
         var errors = new List<string>();
+        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        var requiredNetworkMods = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            "compact-machines", "building-gadgets", "mining-gadgets",
+            "flux-networks", "laserio", "iron-chests-restocked",
+            "born-in-chaos", "the-graveyard"
+        };
         if (!File.Exists(manifestPath))
         {
             errors.Add("Brakuje aktualnego manifestu modułów: " + manifestPath);
@@ -408,6 +415,11 @@ internal sealed class ModpackInstaller
                 if (!entry.TryGetProperty("requiredForMultiplayer", out var required) ||
                     required.ValueKind != JsonValueKind.True) continue;
                 string project = GetString(entry, "project");
+                if (!seen.Add(project))
+                {
+                    errors.Add(project + ": powielony obowiązkowy mod w manifeście");
+                    continue;
+                }
                 string filename = GetString(entry, "fileName");
                 string expectedSha1 = GetString(entry, "sha1");
                 string expectedSha256 = GetString(entry, "sha256");
@@ -439,6 +451,9 @@ internal sealed class ModpackInstaller
                 report.Add("OK " + project + ": " + filename + " (" + actualSha256.ToLowerInvariant() + ")");
             }
         }
+        foreach (string project in requiredNetworkMods)
+            if (!seen.Contains(project))
+                errors.Add(project + ": brak obowiązkowego wpisu w aktualnym manifeście klienta");
         report.AddRange(errors.Select(x => "ERROR " + x));
         Directory.CreateDirectory(Path.GetDirectoryName(reportPath)!);
         File.WriteAllLines(reportPath, report);
