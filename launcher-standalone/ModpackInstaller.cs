@@ -139,9 +139,10 @@ internal sealed class ModpackInstaller
             if (Regex.IsMatch(parts[0], @"\Aftb-(library|teams|quests)-forge-", RegexOptions.IgnoreCase))
                 continue;
             if (File.Exists(path) && CheckSha1(path, parts[1])) continue;
-            if (File.Exists(path))
-                throw new InvalidDataException("Inny plik już istnieje w mods: " + parts[0] + ". Nie nadpisuję go.");
-            status!.Report("Baza modów: " + parts[0]);
+            // A wrong file with the correct filename must be repaired, not
+            // accepted or used to abort the game. Keep the original as backup.
+            bool replacingExisting = File.Exists(path);
+            status!.Report((replacingExisting ? "Naprawiam bazowy mod: " : "Baza modów: ") + parts[0]);
             try
             {
                 string hash = parts[1];
@@ -161,7 +162,37 @@ internal sealed class ModpackInstaller
                     continue;
                 }
                 string url = GetString(match, "url");
-                await DownloadCheckedAsync(url, path, hash, algorithm: "sha1");
+                if (!replacingExisting)
+                {
+                    await DownloadCheckedAsync(url, path, hash, algorithm: "sha1");
+                }
+                else
+                {
+                    string repairDir = Path.Combine(gameDir, ".tokyo", "repair-staging");
+                    Directory.CreateDirectory(repairDir);
+                    string staged = Path.Combine(repairDir,
+                        Guid.NewGuid().ToString("N") + "-" + parts[0]);
+                    try
+                    {
+                        await DownloadCheckedAsync(url, staged, hash, algorithm: "sha1");
+                        string backupDir = Path.Combine(gameDir, ".tokyo", "backups", "invalid-base-mods");
+                        Directory.CreateDirectory(backupDir);
+                        string previous = Path.Combine(backupDir,
+                            Guid.NewGuid().ToString("N") + "-" + parts[0]);
+                        File.Move(path, previous);
+                        try { File.Move(staged, path); }
+                        catch
+                        {
+                            if (!File.Exists(path)) File.Move(previous, path);
+                            throw;
+                        }
+                        status.Report("Naprawiono bazowy JAR i zachowano kopię: " + parts[0]);
+                    }
+                    finally
+                    {
+                        if (File.Exists(staged)) File.Delete(staged);
+                    }
+                }
             }
             catch (Exception ex)
             {
