@@ -1,0 +1,67 @@
+name: Apply Tokyo World Questbook UI, graphics and random rewards
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/refresh_tokyo_quests.py'
+      - '.github/workflows/apply-tokyo-quest-refresh.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rewrite-quests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image renderer
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0
+      - name: Refresh quest trees, four random pools and four neon banners
+        run: python tools/refresh_tokyo_quests.py
+      - name: Validate quest IDs, dependencies and expanded rewards
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          root = Path('config/ftbquests/quests')
+          chapters = sorted((root / 'chapters').glob('*.snbt'))
+          assert len(chapters) == 41
+          ids = []
+          for p in chapters:
+              text = p.read_text('utf8')
+              assert 'default_quest_size: 1.55d' in text, p.name
+              ids.extend(re.findall(r'^\t\t\tid: "([0-9A-F]+)"', text, re.M))
+              assert text.count('type: "random"') > 0
+          assert len(ids) == len(set(ids)) == 567
+          for p in (root / 'reward_tables').glob('*.snbt'):
+              assert p.read_text('utf8').count('item: { id:') >= 16, p.name
+          print('Validated 41 chapters and 567 stable quest IDs')
+          PY
+      - name: Commit updated quest config and game artwork
+        run: |
+          set -euo pipefail
+          git config user.name "TokyoWorld Quest Builder"
+          git config user.email "actions@users.noreply.github.com"
+          git add config/ftbquests/quests/chapters \
+            config/ftbquests/quests/reward_tables \
+            kubejs/assets/tokyoworld/textures/gui/quests \
+            tools/quest-art-revision.json
+          if git diff --cached --quiet; then
+            echo "Quest graphics and configs already up to date"
+            exit 0
+          fi
+          git commit -m "Questbook v2: dense trees, weighted random loot, refreshed Tokyo neon banners"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Main changed concurrently; retrying after rebase"
+            git pull --rebase origin main
+          done
+          exit 1
