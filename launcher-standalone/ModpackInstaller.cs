@@ -76,10 +76,12 @@ internal sealed class ModpackInstaller
                 }
                 catch (Exception ex)
                 {
-                    if (entry.Key.Equals("packet-fixer", StringComparison.OrdinalIgnoreCase))
+                    if (entry.Key.Equals("packet-fixer", StringComparison.OrdinalIgnoreCase) ||
+                        (entry.Value.TryGetProperty("requiredForMultiplayer", out var mandatory) &&
+                         mandatory.ValueKind == JsonValueKind.True))
                         throw new InvalidOperationException(
-                            "Brakuje Packet Fixer (obowiązkowy dla połączenia z serwerem Tokyo World). " +
-                            "Sprawdź internet i ponów aktualizację. Szczegóły: " + ex.Message, ex);
+                            "Brak obowiązkowego moda sieciowego Tokyo World: " + entry.Key + ". " +
+                            "Nie uruchamiam gry z niezgodną paczką. Szczegóły: " + ex.Message, ex);
                     string message = $"{entry.Key}: {ex.Message}";
                     skipped.Add(message);
                     status.Report("Niedostępny dodatek: " + message);
@@ -170,33 +172,55 @@ internal sealed class ModpackInstaller
         // The exact Twilight Forest JAR must match the verified dedicated server
         // or joining fails with missing twilight:magic_paintings/restrictions.
         bool isTwilight = projectRef.Equals("twilightforest", StringComparison.OrdinalIgnoreCase);
-        if (!isTwilight &&
+        // Only these exact file hashes, verified against the server ZIP, may
+        // supply Forge's mandatory multiplayer network channels. The manifest
+        // itself cannot silently change the approved binary or pick Fabric.
+        var networkPins = new Dictionary<string, (string Name, string Sha1)>(StringComparer.OrdinalIgnoreCase)
+        {
+            ["compact-machines"] = ("compactmachines-forge-6.0.3.jar", "41debe12bc7b013c39998788ed02ee971a11518f"),
+            ["building-gadgets"] = ("buildinggadgets2-1.0.8.jar", "d06a806e8ca84a9e96a69c32da4b43226a51e0c9"),
+            ["mining-gadgets"] = ("mininggadgets-1.15.6.jar", "79cfc6e0afc3ed3fc86bbda274ef3fccdc8260dd"),
+            ["flux-networks"] = ("FluxNetworks-1.20.1-7.2.1.15.jar", "65cea2d3da2a6d6fd274ef1dad37a516466be22c"),
+            ["laserio"] = ("laserio-1.6.8.jar", "f9e8dc07506eaa058f64e875e1f46dcd44ab6003"),
+            ["iron-chests-restocked"] = ("ironchests-5.0.2-forge.jar", "610aa09a1d83253db6bf32f6b12c84d446fa99b6"),
+            ["born-in-chaos"] = ("born_in_chaos_[Forge]1.20.1_1.7.5.jar", "4d616e1ccef4c55e14b04ca63228d826f4fdda5e"),
+            ["the-graveyard"] = ("The_Graveyard_3.1_(FORGE)_for_1.20.1.jar", "11ae4c94aa94b38b78cf9b901dad4612b679f8ac"),
+        };
+        bool isNetwork = networkPins.TryGetValue(projectRef, out var networkPin);
+        if (!isTwilight && !isNetwork &&
             projectRef is not ("ftb-library" or "ftb-teams" or "ftb-chunks" or "ftb-quests"))
             throw new InvalidDataException("Niezatwierdzony projekt CurseForge: " + projectRef);
         if (!SafeName(fileName) || !Regex.IsMatch(sha1, @"\A[a-fA-F0-9]{40}\z"))
             throw new InvalidDataException("Niepoprawna nazwa lub SHA1 CurseForge: " + fileName);
+        if (isNetwork &&
+            (fileName != networkPin.Name ||
+             !sha1.Equals(networkPin.Sha1, StringComparison.OrdinalIgnoreCase)))
+            throw new InvalidDataException("Mod sieciowy nie odpowiada wersji serwera: " + projectRef);
         if (isTwilight)
         {
             if (fileName != "twilightforest-1.20.1-4.3.2508-universal.jar" ||
                 !sha1.Equals("fa3b506a45d3e9c465551cd533fd50c899496e9f", StringComparison.OrdinalIgnoreCase))
                 throw new InvalidDataException("Twilight Forest wymaga dokładnego JAR-a 4.3.2508 używanego na serwerze.");
         }
-        else if (!fileName.StartsWith(projectRef + "-forge-", StringComparison.OrdinalIgnoreCase))
+        else if (!isNetwork && !fileName.StartsWith(projectRef + "-forge-", StringComparison.OrdinalIgnoreCase))
             throw new InvalidDataException("Niepoprawny plik FTB: " + fileName);
+
+        // URL-encoded square brackets/parentheses are expected in original
+        // CurseForge filenames (Born in Chaos, Graveyard).
         if (!Uri.TryCreate(url, UriKind.Absolute, out var uri) ||
             uri.Scheme != Uri.UriSchemeHttps ||
             uri.Host != "mediafilez.forgecdn.net" ||
-            !Regex.IsMatch(uri.AbsolutePath,
-                @"\A/files/[0-9]+/[0-9]+/[A-Za-z0-9_.-]+\.jar\z") ||
-            !uri.AbsolutePath.EndsWith("/" + fileName, StringComparison.Ordinal))
-            throw new InvalidDataException("Nieautoryzowany adres pobierania FTB: " + url);
+            !Regex.IsMatch(Uri.UnescapeDataString(uri.AbsolutePath),
+                @"\A/files/[0-9]+/[0-9]+/[^/]+\.jar\z") ||
+            !Uri.UnescapeDataString(uri.AbsolutePath).EndsWith("/" + fileName, StringComparison.Ordinal))
+            throw new InvalidDataException("Nieautoryzowany adres pobierania CurseForge: " + url);
 
         string file = Path.Combine(modsDir, fileName);
         if (File.Exists(file))
         {
             if (CheckSha1(file, sha1))
             {
-                if (isTwilight) RetireOlderSharedJars("twilightforest", file);
+                if (isTwilight || isNetwork) RetireOlderSharedJars(isTwilight ? "twilightforest" : projectRef, file);
                 status?.Report("Zweryfikowano SHA1: " + fileName);
                 return;
             }
@@ -438,6 +462,14 @@ internal sealed class ModpackInstaller
             "kotlin-for-forge" => @"\Akotlinforforge[-_.].*\.jar\z",
             "thermal-foundation" => @"\Athermal_foundation[-_.].*\.jar\z",
             "packet-fixer" => @"\Apacketfixer(?:forge)?[-_.].*\.jar\z",
+            "compact-machines" => @"\Acompactmachines[-_.].*\.jar\z",
+            "building-gadgets" => @"\A(?:buildinggadgets2|buildinggadgets)[-_.].*\.jar\z",
+            "mining-gadgets" => @"\Amininggadgets[-_.].*\.jar\z",
+            "flux-networks" => @"\AFluxNetworks[-_.].*\.jar\z",
+            "laserio" => @"\Alaserio[-_.].*\.jar\z",
+            "iron-chests-restocked" => @"\Aironchests[-_.].*\.jar\z",
+            "born-in-chaos" => @"\Aborn_in_chaos[-_.].*\.jar\z",
+            "the-graveyard" => @"\A(?:The_Graveyard|the-graveyard)[-_.].*\.jar\z",
             _ => @"\Asophisticatedcore[-_.].*\.jar\z"
         };
         string backup = Path.Combine(Directory.GetParent(modsDir)!.FullName, ".tokyo",
