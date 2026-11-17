@@ -10,6 +10,7 @@ on:
       - 'kubejs/**'
       - 'tools/make_client_bootstrap.py'
       - 'tools/validate_tokyo_client_manifest.py'
+      - 'tools/verify_shared_modrinth_hashes.py'
       - 'tools/build_client_update_index.py'
       - 'tools/publish_public_update_feeds.py'
       - 'resourcepacks/**'
@@ -26,6 +27,7 @@ on:
       - 'kubejs/**'
       - 'tools/make_client_bootstrap.py'
       - 'tools/validate_tokyo_client_manifest.py'
+      - 'tools/verify_shared_modrinth_hashes.py'
       - 'tools/build_client_update_index.py'
       - 'tools/publish_public_update_feeds.py'
       - 'resourcepacks/**'
@@ -54,6 +56,9 @@ jobs:
       - name: Verify pinned client dependencies and excluded mods
         shell: pwsh
         run: python tools/validate_tokyo_client_manifest.py
+      - name: Check exact AE2 and AdvancedAE server SHA1 resolutions
+        shell: pwsh
+        run: python tools/verify_shared_modrinth_hashes.py
       - name: Build safe token-free client snapshot inside launcher EXE
         shell: pwsh
         run: |
