@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "version": "1.9.1",
-  "sha256": "01a9fde0d78de98d6b0216c6a321f2c25bd7ad80426a6c146e0b52f54aed2fce",
+  "sha256": "562aecd1b95dbec81b1481c47bb65e780c23ccc6bddd347cc59903899c19521a",
   "size": 118853284,
   "download_url": "https://github.com/onenightintokyo/Tokyo-World/releases/download/tokyo-world-launcher-v1.9.1/TokyoWorldLauncher.exe",
-  "commit": "b97f5b36ccae6bff2158d38d4ac43f9c7378de72"
+  "commit": "7bc0965a560afe5df7a2e7fb419f0b9646328304"
 }
