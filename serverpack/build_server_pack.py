@@ -37,13 +37,16 @@ ALLOWED_HOSTS = {
     "mediafilez.forgecdn.net", "media.forgecdn.net", "edge.forgecdn.net"
 }
 CLIENT_PROFILE_NAMES = {"client-hud", "visual-extras", "visual-shaders"}
+# JEI (Forge 1.20.1) is deliberately server-supported and must be included
+# using the same SHA1 pinned in the client baseline. The client warning
+# "unknown server does not provide recipes to JEI" occurs without it.
 # Explicit extra exclusions for traditional client-only mods which may have
 # "optional" or unspecified Modrinth environment metadata.
 CLIENT_ONLY = re.compile(
     r"(?:^|[-_. ])(?:betterf3|appleskin|fancymenu|konkrete|melody|"
     r"oculus|embeddium|entityculling|mouse[_-]?tweaks|controlling|"
     r"searchables|betteradvancements|better[_-]?advancements|"
-    r"jei|justenoughitems|jade|3dskinlayers|skinlayers3d|"
+    r"jade|3dskinlayers|skinlayers3d|"
     r"immediatelyfast|entity[_-]?model[_-]?features|"
     r"entity[_-]?texture[_-]?features|not[_-]?enough[_-]?animations|"
     r"cloth[_-]?config|creativecoreclient|everycomp(?:at)?|every[-_.]?compat)(?:[-_. ]|$)",
