@@ -98,6 +98,9 @@ internal sealed class ModpackInstaller
         // Validate the installed binaries, not just the intended manifest.
         // Show all missing mandatory Forge mod IDs before starting the game.
         TokyoModIntegrity.Verify(gameDir);
+        // Forge channel parity is stricter than generic missing-mod checks:
+        // each multiplayer JAR must be byte-for-byte the verified server version.
+        VerifyMultiplayerParity(gameDir);
 
         string reportDir = Path.Combine(gameDir, ".tokyo");
         Directory.CreateDirectory(reportDir);
@@ -249,19 +252,44 @@ internal sealed class ModpackInstaller
 
             // Avoid duplicate versions of one Forge mod ID. The old copy is
             // moved only AFTER the new one has been downloaded and checked.
-            string pattern = isTwilight
-                ? @"\A(?:twilightforest|twilight[_-]forest)[-_.].*\.jar\z"
-                : @"\A" + Regex.Escape(projectRef) + @"-forge-[^/\\]+\.jar\z";
             string backup = Path.Combine(gameDir, ".tokyo", "backups",
-                "official-ftb", DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff"));
-            foreach (string old in Directory.EnumerateFiles(modsDir, "*.jar")
-                .Where(x => Regex.IsMatch(Path.GetFileName(x), pattern, RegexOptions.IgnoreCase)))
+                "replaced-official-mods", DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff"));
+            string? previous = null;
+            if (File.Exists(file))
             {
+                // A corrupt/stale JAR at the expected path must not block its
+                // verified replacement. Preserve a copy for recovery.
                 Directory.CreateDirectory(backup);
-                File.Move(old, Path.Combine(backup, Path.GetFileName(old)));
+                previous = Path.Combine(backup, fileName);
+                File.Move(file, previous);
             }
-            File.Move(temporary, file);
-            if (isTwilight) RetireOlderSharedJars("twilightforest", file);
+            try
+            {
+                File.Move(temporary, file);
+            }
+            catch
+            {
+                if (previous is not null && !File.Exists(file))
+                    File.Move(previous, file);
+                throw;
+            }
+            if (isTwilight || isNetwork)
+            {
+                // Retire OTHER versions, e.g. fluxnetworks-*.jar or
+                // born_in_chaos_*.jar; never retire the verified destination.
+                RetireOlderSharedJars(isTwilight ? "twilightforest" : projectRef, file);
+            }
+            else
+            {
+                string pattern = @"\A" + Regex.Escape(projectRef) + @"-forge-[^/\\]+\.jar\z";
+                foreach (string older in Directory.EnumerateFiles(modsDir, "*.jar")
+                    .Where(x => !Path.GetFullPath(x).Equals(Path.GetFullPath(file), StringComparison.OrdinalIgnoreCase))
+                    .Where(x => Regex.IsMatch(Path.GetFileName(x), pattern, RegexOptions.IgnoreCase)).ToArray())
+                {
+                    Directory.CreateDirectory(backup);
+                    File.Move(older, Path.Combine(backup, Path.GetFileName(older)));
+                }
+            }
             status?.Report("Zainstalowano i sprawdzono SHA1: " + fileName);
         }
         finally
@@ -355,6 +383,71 @@ internal sealed class ModpackInstaller
             finally { version?.Dispose(); }
         }
         finally { resolving.Remove(projectRef); }
+    }
+
+    private void VerifyMultiplayerParity(string gameDir)
+    {
+        string manifestPath = Path.Combine(gameDir, ".tokyo", "modules.json");
+        string reportPath = Path.Combine(gameDir, ".tokyo", "network-parity.txt");
+        var report = new List<string>
+        {
+            "Tokyo World — kontrola modów wymaganych przez kanały Forge",
+            "Minecraft 1.20.1 / Forge 47.4.28"
+        };
+        var errors = new List<string>();
+        if (!File.Exists(manifestPath))
+        {
+            errors.Add("Brakuje aktualnego manifestu modułów: " + manifestPath);
+        }
+        else
+        {
+            using var doc = JsonDocument.Parse(File.ReadAllText(manifestPath));
+            foreach (var group in doc.RootElement.GetProperty("profiles").EnumerateObject())
+            foreach (var entry in group.Value.EnumerateArray())
+            {
+                if (!entry.TryGetProperty("requiredForMultiplayer", out var required) ||
+                    required.ValueKind != JsonValueKind.True) continue;
+                string project = GetString(entry, "project");
+                string filename = GetString(entry, "fileName");
+                string expectedSha1 = GetString(entry, "sha1");
+                string expectedSha256 = GetString(entry, "sha256");
+                if (!SafeName(filename) ||
+                    !Regex.IsMatch(expectedSha1, @"\A[0-9a-f]{40}\z", RegexOptions.IgnoreCase) ||
+                    !Regex.IsMatch(expectedSha256, @"\A[0-9a-f]{64}\z", RegexOptions.IgnoreCase))
+                {
+                    errors.Add(project + ": niepoprawna konfiguracja obowiązkowego moda");
+                    continue;
+                }
+                string file = Path.Combine(modsDir, filename);
+                if (!File.Exists(file))
+                {
+                    errors.Add(project + ": BRAK " + filename);
+                    continue;
+                }
+                if (!CheckSha1(file, expectedSha1))
+                {
+                    errors.Add(project + ": niezgodna suma SHA1 " + filename);
+                    continue;
+                }
+                using var stream = File.OpenRead(file);
+                string actualSha256 = Convert.ToHexString(SHA256.HashData(stream));
+                if (!actualSha256.Equals(expectedSha256, StringComparison.OrdinalIgnoreCase))
+                {
+                    errors.Add(project + ": niezgodna suma SHA256 " + filename);
+                    continue;
+                }
+                report.Add("OK " + project + ": " + filename + " (" + actualSha256.ToLowerInvariant() + ")");
+            }
+        }
+        report.AddRange(errors.Select(x => "ERROR " + x));
+        Directory.CreateDirectory(Path.GetDirectoryName(reportPath)!);
+        File.WriteAllLines(reportPath, report);
+        if (errors.Count > 0)
+            throw new InvalidOperationException(
+                "Niezgodne mody sieciowe Tokyo World:\n" +
+                string.Join("\n", errors.Take(8)) +
+                "\nSzczegóły: .tokyo/network-parity.txt");
+        status?.Report("Kanały multiplayer: dokładne pliki JAR zgodne z serwerem.");
     }
 
     private static bool ContainsForgeModId(string jarPath, string modId)
