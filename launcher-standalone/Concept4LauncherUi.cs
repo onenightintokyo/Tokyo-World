@@ -26,6 +26,18 @@ internal sealed partial class LauncherWindow
     private ConceptRamSlider? conceptRam;
     private ConceptValueButton? conceptQuality;
     private Label? conceptUpdateStatus;
+    // Read the version embedded in the currently running EXE, never hard-code
+    // a historical release number into the launcher artwork or title bar.
+    private static string CurrentLauncherVersion
+    {
+        get
+        {
+            Version version = typeof(LauncherWindow).Assembly.GetName().Version
+                ?? new Version(0, 0, 0);
+            return $"v{version.Major}.{version.Minor}.{Math.Max(version.Build, 0)}";
+        }
+    }
+
 
     [DllImport("user32.dll")]
     private static extern bool ReleaseCapture();
@@ -83,7 +95,7 @@ internal sealed partial class LauncherWindow
         conceptCanvas.Controls.Add(close);
         var versionTag = new Label
         {
-            Text = "v1.7.1",
+            Text = CurrentLauncherVersion,
             Bounds = new Rectangle(168, 9, 66, 24),
             AutoSize = false,
             BackColor = Color.FromArgb(13, 12, 25),
@@ -232,9 +244,7 @@ internal sealed partial class LauncherWindow
         conceptUpdateStatus = new Label
         {
             Bounds = new Rectangle(939, 462, 274, 25),
-            Text = settings.GetToken().Length > 0
-                ? "✓  Aktualizacje automatyczne"
-                : "Aktualizacje przy uruchomieniu",
+            Text = "Sprawdź aktualizacje",
             BackColor = Color.FromArgb(21, 20, 35),
             ForeColor = Color.FromArgb(101, 229, 178),
             TextAlign = ContentAlignment.MiddleLeft,
