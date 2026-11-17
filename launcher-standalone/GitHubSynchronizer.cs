@@ -13,7 +13,12 @@ namespace TokyoWorldLauncher;
 internal sealed class GitHubSynchronizer
 {
     private readonly string repo;
-    private readonly HttpClient http = new() { Timeout = TimeSpan.FromMinutes(10) };
+    private readonly HttpClient http = new(new HttpClientHandler
+    {
+        // Some GitHub/CDN edges use compression during transfer. The header
+        // Content-Length may represent encoded bytes, not decoded file bytes.
+        AutomaticDecompression = DecompressionMethods.All
+    }) { Timeout = TimeSpan.FromMinutes(10) };
 
     private static readonly string[] Managed =
     {
@@ -112,21 +117,37 @@ internal sealed class GitHubSynchronizer
             using var fileResponse = await http.GetAsync(url,
                 HttpCompletionOption.ResponseHeadersRead, cancellation);
             fileResponse.EnsureSuccessStatusCode();
-            if (fileResponse.Content.Headers.ContentLength is long length &&
-                length != expectedSize)
-                throw new InvalidDataException("Zły rozmiar pliku paczki: " + name);
+            // Never reject a verified file based on HTTP Content-Length alone:
+            // proxies and CDN edges can report compressed transfer bytes.
+            // Validate the decoded stream size and its pinned SHA-256 instead.
 
             Directory.CreateDirectory(Path.GetDirectoryName(destination)!);
             string temporary = destination + ".tw-download";
             try
             {
+                long received = 0;
                 await using (var input = await fileResponse.Content.ReadAsStreamAsync(cancellation))
                 await using (var output = new FileStream(temporary, FileMode.Create, FileAccess.Write, FileShare.None))
-                    await input.CopyToAsync(output, cancellation);
+                {
+                    byte[] buffer = new byte[128 * 1024];
+                    int read;
+                    while ((read = await input.ReadAsync(buffer.AsMemory(), cancellation)) > 0)
+                    {
+                        received += read;
+                        if (received > expectedSize)
+                            throw new InvalidDataException(
+                                "Pobrany plik przekracza dozwolony rozmiar: " + name);
+                        await output.WriteAsync(buffer.AsMemory(0, read), cancellation);
+                    }
+                }
 
-                if (new FileInfo(temporary).Length != expectedSize ||
-                    !CheckSha256(temporary, sha256))
-                    throw new CryptographicException("Pobrany plik nie zgadza się z SHA-256: " + name);
+                if (received != expectedSize)
+                    throw new InvalidDataException(
+                        "Niekompletny plik aktualizacji: " + name +
+                        " (otrzymano " + received + " B; oczekiwano " + expectedSize + " B)");
+                if (!CheckSha256(temporary, sha256))
+                    throw new CryptographicException(
+                        "Suma SHA-256 nie zgadza się po pobraniu: " + name);
 
                 if (File.Exists(destination))
                 {
