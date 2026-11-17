@@ -1,0 +1,53 @@
+name: Publish Tokyo World JEI + Quest Overlays
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'config/ftbquests/quests/**'
+      - 'kubejs/assets/tokyoworld/textures/gui/quests/**'
+      - 'config/cucumber-tags.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  overlays:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check hotfix generator syntax
+        run: python -m py_compile serverpack/build_jei_quest_hotfix.py
+      - name: Build and verify exact JEI 15.74.0.234 + quest overlay archives
+        run: python serverpack/build_jei_quest_hotfix.py
+      - name: Upload both validated overlay ZIPs
+        uses: actions/upload-artifact@v4
+        with:
+          name: TokyoWorld-JEI-Quest-Patches
+          path: |
+            dist/TokyoWorld-Server-JEI-Quest-Hotfix.zip
+            dist/TokyoWorld-Client-JEI-Quest-Fallback.zip
+          if-no-files-found: error
+          retention-days: 30
+      - name: Publish both files as direct downloads
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag="tokyo-world-jei-quests-1201"
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --target "$GITHUB_SHA" \
+              --title "Tokyo World JEI + Questbook — Forge 1.20.1" \
+              --notes "Same JEI 15.74.0.234 on both sides. Server overlay and optional client backup overlay."
+          fi
+          gh release upload "$tag" \
+            dist/TokyoWorld-Server-JEI-Quest-Hotfix.zip \
+            dist/TokyoWorld-Client-JEI-Quest-Fallback.zip --clobber
+          gh release edit "$tag" --notes \
+            "Server: stop, back up, extract Server overlay in server root. Client: launcher updates automatically; Client fallback only if necessary. Keeps 567 FTB quest IDs and progress. Built from $GITHUB_SHA"
