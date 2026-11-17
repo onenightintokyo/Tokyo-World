@@ -9,6 +9,9 @@ on:
       - 'serverpack/**'
       - 'modpacks/tokyo_modules.json'
       - 'modpacks/base_mod_hashes.txt'
+      - 'config/ftbquests/quests/**'
+      - 'config/cucumber-tags.json'
+      - 'kubejs/assets/tokyoworld/textures/gui/quests/**'
       - '.github/workflows/build-tokyo-server-pack.yml'
   workflow_dispatch:
 
