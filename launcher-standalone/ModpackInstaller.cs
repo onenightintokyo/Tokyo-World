@@ -66,10 +66,15 @@ internal sealed class ModpackInstaller
                 cancellation.ThrowIfCancellationRequested();
                 try
                 {
-                    if (GetString(entry.Value, "source").Equals("curseforge", StringComparison.OrdinalIgnoreCase))
+                    string source = GetString(entry.Value, "source");
+                    if (source.Equals("curseforge", StringComparison.OrdinalIgnoreCase))
                         await InstallOfficialCurseForgeAsync(gameDir, entry.Key,
                             GetString(entry.Value, "fileName"), GetString(entry.Value, "url"),
                             GetString(entry.Value, "sha1"));
+                    else if (source.Equals("modrinth-sha1", StringComparison.OrdinalIgnoreCase))
+                        await InstallPinnedModrinthHashAsync(gameDir, entry.Key,
+                            GetString(entry.Value, "fileName"), GetString(entry.Value, "sha1"),
+                            GetString(entry.Value, "sha256"));
                     else
                         await InstallProjectAsync(entry.Key, GetString(entry.Value, "versionId"),
                             GetString(entry.Value, "version"), GetString(entry.Value, "match"));
@@ -188,6 +193,9 @@ internal sealed class ModpackInstaller
             ["iron-chests-restocked"] = ("ironchests-5.0.2-forge.jar", "610aa09a1d83253db6bf32f6b12c84d446fa99b6"),
             ["born-in-chaos"] = ("born_in_chaos_[Forge]1.20.1_1.7.5.jar", "4d616e1ccef4c55e14b04ca63228d826f4fdda5e"),
             ["the-graveyard"] = ("The_Graveyard_3.1_(FORGE)_for_1.20.1.jar", "11ae4c94aa94b38b78cf9b901dad4612b679f8ac"),
+            ["ae2wtlib"] = ("ae2wtlib-15.3.3-forge.jar", "1a546af04844677542b6914191783c7de15364fc"),
+            ["mob-grinding-utils"] = ("mob_grinding_utils-1.20.1-1.1.0.jar", "58991a3a94e1f982d0e558bed7b60226a097ae49"),
+            ["create-slice-and-dice"] = ("sliceanddice-forge-3.6.0.jar", "a4e47dbf4382ebe092b6c2cb71919e412b456d84"),
         };
         bool isNetwork = networkPins.TryGetValue(projectRef, out var networkPin);
         if (!isTwilight && !isNetwork &&
@@ -385,6 +393,93 @@ internal sealed class ModpackInstaller
         finally { resolving.Remove(projectRef); }
     }
 
+    // The server's exact binaries are pinned by SHA-1 and SHA-256, rather than
+    // selecting "latest" or trusting mod version labels that can be identical
+    // while binary content differs. Modrinth resolves the original publisher
+    // file by hash; a network/download error prevents an unsafe game launch.
+    private async Task InstallPinnedModrinthHashAsync(
+        string gameDir, string project, string fileName, string sha1, string sha256)
+    {
+        if (!SafeName(fileName) ||
+            !Regex.IsMatch(sha1, @"\A[a-f0-9]{40}\z", RegexOptions.IgnoreCase) ||
+            !Regex.IsMatch(sha256, @"\A[a-f0-9]{64}\z", RegexOptions.IgnoreCase))
+            throw new InvalidDataException("Zła konfiguracja wersji klient/serwer: " + project);
+
+        string target = Path.Combine(modsDir, fileName);
+        if (File.Exists(target) && CheckSha1(target, sha1))
+        {
+            using var existing = File.OpenRead(target);
+            if (Convert.ToHexString(SHA256.HashData(existing))
+                .Equals(sha256, StringComparison.OrdinalIgnoreCase))
+            {
+                RetireOlderSharedJars(project, target);
+                status?.Report("Wersja serwerowa sprawdzona: " + fileName);
+                return;
+            }
+        }
+
+        using var metadata = await GetJsonAsync(
+            "version_file/" + Uri.EscapeDataString(sha1) + "?algorithm=sha1");
+        if (metadata is null)
+            throw new InvalidOperationException("Nie znaleziono pliku na Modrinth: " + fileName);
+        var version = metadata.RootElement;
+        if (!version.GetProperty("game_versions").EnumerateArray()
+                .Any(v => v.GetString() == "1.20.1") ||
+            !version.GetProperty("loaders").EnumerateArray()
+                .Any(v => v.GetString() == "forge"))
+            throw new InvalidDataException("Błędny loader/wersja Minecraft dla " + project);
+
+        var matches = version.GetProperty("files").EnumerateArray()
+            .Where(v => GetString(v, "filename").Equals(fileName, StringComparison.OrdinalIgnoreCase) &&
+                GetString(v.GetProperty("hashes"), "sha1").Equals(sha1,
+                    StringComparison.OrdinalIgnoreCase)).ToArray();
+        if (matches.Length != 1)
+            throw new InvalidDataException("Wersja wydawcy nie zawiera pliku SHA-1: " + fileName);
+        var publisherFile = matches[0];
+        string url = GetString(publisherFile, "url");
+        string sha512 = GetString(publisherFile.GetProperty("hashes"), "sha512");
+        if (!Regex.IsMatch(sha512, @"\A[a-f0-9]{128}\z", RegexOptions.IgnoreCase))
+            throw new InvalidDataException("Brak SHA-512 wydawcy: " + fileName);
+
+        string stageFolder = Path.Combine(gameDir, ".tokyo", "repair-staging");
+        Directory.CreateDirectory(stageFolder);
+        string staging = Path.Combine(stageFolder, Guid.NewGuid().ToString("N") + "-" + fileName);
+        try
+        {
+            status?.Report("Pobieram dokładną wersję serwera: " + fileName);
+            await DownloadCheckedAsync(url, staging, sha512, "sha512");
+            if (!CheckSha1(staging, sha1))
+                throw new CryptographicException("SHA-1 nie zgadza się z serwerem: " + fileName);
+            using (var input = File.OpenRead(staging))
+            {
+                string actual = Convert.ToHexString(SHA256.HashData(input));
+                if (!actual.Equals(sha256, StringComparison.OrdinalIgnoreCase))
+                    throw new CryptographicException("SHA-256 nie zgadza się z serwerem: " + fileName);
+            }
+
+            string? original = null;
+            if (File.Exists(target))
+            {
+                string backupDir = Path.Combine(gameDir, ".tokyo", "backups", "old-shared-mod-versions");
+                Directory.CreateDirectory(backupDir);
+                original = Path.Combine(backupDir, Guid.NewGuid().ToString("N") + "-" + fileName);
+                File.Move(target, original);
+            }
+            try { File.Move(staging, target); }
+            catch
+            {
+                if (original != null && !File.Exists(target)) File.Move(original, target);
+                throw;
+            }
+            RetireOlderSharedJars(project, target);
+            status?.Report("Potwierdzono zgodność klient/serwer: " + fileName);
+        }
+        finally
+        {
+            if (File.Exists(staging)) File.Delete(staging);
+        }
+    }
+
     private void VerifyMultiplayerParity(string gameDir)
     {
         string manifestPath = Path.Combine(gameDir, ".tokyo", "modules.json");
@@ -400,7 +495,9 @@ internal sealed class ModpackInstaller
         {
             "compact-machines", "building-gadgets", "mining-gadgets",
             "flux-networks", "laserio", "iron-chests-restocked",
-            "born-in-chaos", "the-graveyard"
+            "born-in-chaos", "the-graveyard",
+            "ae2wtlib", "mob-grinding-utils", "create-slice-and-dice",
+            "advancedae", "ae2"
         };
         if (!File.Exists(manifestPath))
         {
@@ -454,6 +551,22 @@ internal sealed class ModpackInstaller
         foreach (string project in requiredNetworkMods)
             if (!seen.Contains(project))
                 errors.Add(project + ": brak obowiązkowego wpisu w aktualnym manifeście klienta");
+        // Create is a base mod (not an optional manifest profile). Validate
+        // its actual publisher bytes against the server, not just the 6.0.8 label.
+        string createJar = Path.Combine(modsDir, "create-1.20.1-6.0.8.jar");
+        if (!File.Exists(createJar) ||
+            !CheckSha1(createJar, "b13d912b9247a38d66d11598c121442585a1c1e9"))
+            errors.Add("create: brak lub błędny JAR Create 6.0.8 używany na serwerze");
+        else
+        {
+            using var createStream = File.OpenRead(createJar);
+            if (!Convert.ToHexString(SHA256.HashData(createStream))
+                .Equals("6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+                    StringComparison.OrdinalIgnoreCase))
+                errors.Add("create: SHA-256 różni się od serwera");
+            else report.Add("OK create: create-1.20.1-6.0.8.jar");
+        }
+
         report.AddRange(errors.Select(x => "ERROR " + x));
         Directory.CreateDirectory(Path.GetDirectoryName(reportPath)!);
         File.WriteAllLines(reportPath, report);
@@ -578,6 +691,11 @@ internal sealed class ModpackInstaller
             "iron-chests-restocked" => @"\Aironchests[-_.].*\.jar\z",
             "born-in-chaos" => @"\Aborn_in_chaos[-_.].*\.jar\z",
             "the-graveyard" => @"\A(?:The_Graveyard|the-graveyard)[-_.].*\.jar\z",
+            "ae2wtlib" => @"\Aae2wtlib[-_.].*\.jar\z",
+            "mob-grinding-utils" => @"\Amob_grinding_utils[-_.].*\.jar\z",
+            "create-slice-and-dice" => @"\A(?:sliceanddice|slice_and_dice)[-_.].*\.jar\z",
+            "advancedae" => @"\AAdvancedAE[-_.].*\.jar\z",
+            "ae2" => @"\A(?:appliedenergistics2|ae2)[-_.].*\.jar\z",
             _ => @"\Asophisticatedcore[-_.].*\.jar\z"
         };
         string backup = Path.Combine(Directory.GetParent(modsDir)!.FullName, ".tokyo",
