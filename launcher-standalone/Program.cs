@@ -194,6 +194,11 @@ internal sealed partial class LauncherWindow : Form
         busy = true;
         play.Enabled = false;
         gear.Enabled = false;
+        if (conceptUpdateStatus != null)
+        {
+            conceptUpdateStatus.Text = "Sprawdzam aktualizacje...";
+            conceptUpdateStatus.ForeColor = Color.FromArgb(249, 196, 120);
+        }
         try
         {
             progress.Progress = 5;
@@ -203,10 +208,22 @@ internal sealed partial class LauncherWindow : Form
                 Application.Exit();
                 return;
             }
+            if (conceptUpdateStatus != null)
+            {
+                conceptUpdateStatus.Text = "✓  Sprawdzanie zakończone";
+                conceptUpdateStatus.ForeColor = Color.FromArgb(101, 229, 178);
+            }
         }
         catch (Exception ex)
         {
             SetStatus("Sprawdzenie EXE: " + ex.Message);
+            if (conceptUpdateStatus != null)
+            {
+                conceptUpdateStatus.Text = "⚠  Błąd aktualizacji — kliknij";
+                conceptUpdateStatus.ForeColor = Color.FromArgb(255, 152, 167);
+                var detail = new ToolTip();
+                detail.SetToolTip(conceptUpdateStatus, ex.Message);
+            }
         }
         finally
         {
