@@ -19,8 +19,23 @@ REQUIRED = {
     "sophisticatedcore-1.20.1-1.5.33.2475.jar",
     "ExtendedAE-1.20-1.4.18-forge.jar",
     "twilightforest-1.20.1-4.3.2508-universal.jar",
+    "ae2wtlib-15.3.3-forge.jar",
+    "mob_grinding_utils-1.20.1-1.1.0.jar",
+    "sliceanddice-forge-3.6.0.jar",
+    "AdvancedAE-1.3.6-1.20.1.jar",
+    "appliedenergistics2-forge-15.4.12.jar",
+    "create-1.20.1-6.0.8.jar",
 }
 TWILIGHT_SHA256 = "0bdc89263616d1b35c32ef82c5e9c14cbd20368e2fe8b468c72a28320be7a778"
+# Exact hashes from the published server ZIP, shared with the client manifest.
+NETWORK_PARITY_SHA256 = {
+    "mods/ae2wtlib-15.3.3-forge.jar": "39e5cede37d5c6a07592d6c1e83398791e037f3d434bc44f7460cd085a4de5f4",
+    "mods/mob_grinding_utils-1.20.1-1.1.0.jar": "6e0fa6a245fd56cce99d60ac908b5028bc6392a59833c45e0bc3e27ec7f0a2f9",
+    "mods/sliceanddice-forge-3.6.0.jar": "bafdcbeda044603b59eb16059829a6698c1a58d1ce865b8658e598f2718d315a",
+    "mods/AdvancedAE-1.3.6-1.20.1.jar": "e216f95ac73eb4c1e8f3db22cc3d30f37f2612a7cb1762b9ebce148d0d5657b2",
+    "mods/appliedenergistics2-forge-15.4.12.jar": "b9c5928893a20d3feb0b4393e2c23d756a16d9abee24d9c14c98e6096d53844d",
+    "mods/create-1.20.1-6.0.8.jar": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+}
 RETIRED = re.compile(r"every[-_.]?(?:compat|comp)", re.I)
 ALLOWED_ROOTS = {"mods", "config", "defaultconfigs", "kubejs"}
 ALLOWED_FILES = {"SHA256SUMS.txt", "README-SERWER.txt"}
@@ -78,6 +93,8 @@ def verify() -> None:
                 raise RuntimeError("JAR SHA256 mismatch: " + name)
             if name == "mods/twilightforest-1.20.1-4.3.2508-universal.jar" and digest != TWILIGHT_SHA256:
                 raise RuntimeError("Twilight Forest JAR differs from the verified client/server release")
+            if name in NETWORK_PARITY_SHA256 and digest != NETWORK_PARITY_SHA256[name]:
+                raise RuntimeError("Shared client/server JAR differs from pinned release: " + name)
         print(f"VERIFIED: {len(mods)} mod JARs, exact shared versions, no Every Compat, " +
               "no launcher/start files, all ZIP CRCs and SHA256 match")
 
